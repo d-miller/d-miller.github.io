@@ -13,9 +13,8 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf)). _Frontie
 
 **Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]([PDF]({{ site.baseurl }}/assets/MillerHalpern2014.pdf)). _Trends in Cognitive Sciences_, _18_, 37-45. 
 
-
 **Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
-undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)) _Learning and Individual Differences_, _26_, 141-152. Media coverage: [Association for Psychological Science](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [Psychology Today](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
+undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. Media coverage: [Association for Psychological Science](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [Psychology Today](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
 Uttal, D. H., **Miller, D. I.**, & Newcombe, N. S. (2013). [Exploring and enhancing spatial thinking: Links to
 STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf)) _Current Directions in Psychological Science_, _22_, 367-373. Media coverage: [Global Cognition](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [KQED MindShift](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [Quartz](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
@@ -45,4 +44,4 @@ International Society of the Learning Sciences.
 **Miller, D. I.**, & Halpern, D. F. (2011). Spatial thinking in physics: Longitudinal impacts of 3-D spatial
 training. In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of
 the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was
-turned into a full-length journal article – see above]
+turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
