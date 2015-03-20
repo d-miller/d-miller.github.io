@@ -9,16 +9,20 @@ I'll likely also talk about interesting data and research, especially about dive
 
 ## Academic Journal Publications
 
+* **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). Women’s representation in science predicts national
+gender-science stereotypes: Evidence from 66 nations. _Journal of Educational Psychology_. [[PDF]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf)]
+
 * **Miller, D. I.**, & Wai, J. (2015). The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
 men: A 30-Year analysis. _Frontiers in Psychology_, _6_, 36. [[PDF]({{ site.baseurl }}/assets/MillerWai2015.pdf)]
 
-Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
+* **Miller, D. I.**, & Halpern, D. F. (2014). The new science of cognitive sex differences. _Trends in Cognitive
+Sciences_, _18_, 37-45. [[PDF]({{ site.baseurl }}/assets/MillerHalpern2014.pdf)]
 
-I recently strengthened my data skills through University of Chicago’s [Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/) where I worked on [a machine learning project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school.
+* **Miller, D. I.**, & Halpern, D. F. (2013). Can spatial training improve long-term outcomes for gifted STEM
+undergraduates? _Learning and Individual Differences_, _26_, 141-152. [[PDF]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
 
-I'm a NSF Graduate Research Fellow, and [my research](https://northwestern.academia.edu/DavidMiller) has been covered by national and international news venues including [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Psychology Today](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we), [Quartz](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/), [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), and [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem). 
-
-I’ve also written for [public audiences](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). 
+* Uttal, D. H., **Miller, D. I.**, & Newcombe, N. S. (2013). Exploring and enhancing spatial thinking: Links to
+STEM achievement? _Current Directions in Psychological Science_, _22_, 367-373. [[PDF]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf)]
 
 ## Peer-Reviewed Conference Proceedings
 
