@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Visualizing and Thinking About Data
 ---
 
@@ -41,3 +42,20 @@ About myself:
 * My CV is [here]({{ site.baseurl }}/assets/MillerCV.pdf) for academic folk. Here’s some media coverage: [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Psychology Today](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we), [Quartz](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/), [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), and [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem). I’ve also written for [public audiences](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). 
 
 So stay tuned for the next post about how to make sexy interactive graphics!
+
+% if page.comments %
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    // Required: on line below, replace text in quotes with your forum shortname
+    var disqus_shortname = 'FORUM SHORTNAME GOES HERE';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+% endif %
