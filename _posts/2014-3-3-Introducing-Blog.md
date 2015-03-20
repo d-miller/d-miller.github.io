@@ -22,7 +22,7 @@ This is my blog’s target audience:
 **People with a variety of technical and non-technical backgrounds.**
 
 * I’ll focus on more advanced topics like machine learning and interactive visualization, but will provide links for learning more basic programming and statistics skills. 
-* So don’t be scared away if you don’t already have a strong technical background! Learning technical skills takes time, but several _free_ online resources can help you do that (e.g., [CodeAcademy](http://www.codecademy.com/)).
+* So don’t be scared away if you don’t already have strong technical training! Learning technical skills takes time, but several _free_ online resources can help you do that (e.g., [CodeAcademy](http://www.codecademy.com/)).
 
 <div align="center"><img src="{{ site.baseurl }}/images/doge-data.jpg" width="500"/></div>
 
