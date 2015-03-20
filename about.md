@@ -5,7 +5,7 @@ permalink: /about/
 
 This blog broadly targets people looking to strengthen their data skills, as detailed [here](http://d-miller.github.io/Introducing-Blog/). In particular, data visualization and machine learning will be core topics.  
 
-## About Me
+## About me
 
 I'm a Northwestern psychology Ph.D. student, currently investigating how and why some students move into and out of science and technology fields. 
 
