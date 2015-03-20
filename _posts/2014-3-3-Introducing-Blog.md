@@ -7,8 +7,6 @@ Have you ever looked a [_New York Times_ interactive graphic](http://www.nytimes
 
 I’m a physicist turned psychologist who’s decided to enter the blogosphere world. My first set of posts will focus on learning skills for creating interactive visualizations, like [this one](http://bl.ocks.org/d-miller/bb1a126a836761758904) I created (screenshot below). 
 
-![corrScat]({{ site.baseurl }}/images/corrScat.png)
-
 <link rel=stylesheet type="text/css" href="{{ site.baseurl }}/assets/corrScatGist/corr_w_scatter.css">
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="{{ site.baseurl }}/assets/corrScatGist/d3.extend.js" charset="utf-8"></script>
@@ -26,8 +24,6 @@ I’m a physicist turned psychologist who’s decided to enter the blogosphere w
 	<button id="shuffleDefault">Restore default</button>
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/corrScatGist/options.js"></script>
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/corrScatGist/corr_w_scatter.js"></script>
-
-<img src="{{ site.baseurl }}/images/corrScat.png">
 
 This is my blog’s target audience: 
 
