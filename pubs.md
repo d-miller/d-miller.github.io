@@ -10,7 +10,8 @@ gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/
 
 **Miller, D. I.**, & Wai, J. (2015). [The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
 men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontiers in Psychology_, _6_, 36. 
-	* Media coverage: [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [InsideHigerEd](https://www.insidehighered.com/news/2015/02/18/research-suggests-pipeline-science-talent-may-leak-men-and-women-same-rate), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem). Also see [my op-ed](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science), published in InsideHigherEd].
+
+* Media coverage: [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [InsideHigerEd](https://www.insidehighered.com/news/2015/02/18/research-suggests-pipeline-science-talent-may-leak-men-and-women-same-rate), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem). Also see [my op-ed](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science), published in InsideHigherEd.
 
 **Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]([PDF]({{ site.baseurl }}/assets/MillerHalpern2014.pdf)). _Trends in Cognitive Sciences_, _18_, 37-45. 
 
@@ -23,9 +24,7 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 ## Peer-Reviewed Conference Proceedings
 
-Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who,
-when, why: A machine learning approach to prioritizing students at risk of not graduating high
-school on time]({{ site.baseurl }}/assets/Aguiar2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
+Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/Aguiar2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
 
 Matuk, C. F., McElhaney, K. W., **Miller, D. I.**, Chen, J. K., Lim-Breitbart, J., Terashima, H., … , Linn, M. C. (2013). [Reflectively prototyping a tool for exchanging ideas]({{ site.baseurl }}/assets/Matuk2013.pdf). In _Proceedings of the 10th International Conference on Computer Supported Collaborative Learning_ (pp. 101-104). Madison, WI: International Society of the Learning Sciences.
 
@@ -33,5 +32,4 @@ Matuk, C. F., McElhaney, K. W., Chen, J. K., **Miller, D. I.**, Lim-Breitbart, J
 
 McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using the Idea Manager to promote coherent understanding of inquiry investigations]({{ site.baseurl }}/assets/McElhaney2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
 
-
-**Miller, D. I.**, & Halpern, D. F. (2011). Spatial thinking in physics: Longitudinal impacts of 3-D spatial training. In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
+**Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
