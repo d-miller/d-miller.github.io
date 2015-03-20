@@ -3,7 +3,7 @@
 ////////////////////
 
 //where is the data
-jsonFile = "dataNew.json";
+jsonFile = "{{ site.baseurl }}/assets/corrScatGist/dataNew.json";
 
 //dimension of SVG
 var h = 450;
