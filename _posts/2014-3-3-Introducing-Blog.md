@@ -5,7 +5,7 @@ title: Visualizing and Thinking About Data
 
 Have you ever looked a [_New York Times_ interactive graphic](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) and thought, “_Wow, that’s so cool_! I wish I knew how to create something like that”? Or are you interested in strengthening your data skills more broadly? If so, this blog may interest you. 
 
-I’m a physicist turned psychologist who’s decided to enter the blogosphere world. My first set of posts will focus on learning skills for **creating interactive visualizations**, like [this one](http://bl.ocks.org/d-miller/bb1a126a836761758904) I created (screenshot below). 
+I’m a physicist turned psychologist who’s decided to enter the blogosphere world. My first set of posts will focus on learning skills for **creating interactive visualizations**, like this one below that I created (kudos to Karl Broman for the inital [code](https://www.biostat.wisc.edu/~kbroman/D3/corr_w_scatter/) and idea!). 
 
 <iframe src="http://d-miller.github.io/assets/corrScatGist/" marginwidth="0" marginheight="0" scrolling="no" width="200" height="100"></iframe>
 
