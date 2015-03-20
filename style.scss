@@ -209,7 +209,9 @@ img {
 }
 
 .site-name {
-  margin: 0;
+  margin-top: -12px;
+  margin-bottom: 6px;
+  /* margin: 0; */
   /*color: $darkGray;*/
   color: white;
   cursor: pointer;
