@@ -3,7 +3,7 @@ layout: page
 permalink: /about/
 ---
 
-This blog broadly targets people looking to strengthen their data skills, as detailed [here](http://d-miller.github.io/Introducing-Blog/). In particular, data visualization and machine learning will be core topics.  
+This blog broadly targets people looking to strengthen their data skills, as detailed [here](http://d-miller.github.io/Introducing-Blog/). In particular, data visualization and machine learning will be core topics. The posts are intended to reach people even with beginner technical skills.
 
 ## About me
 
