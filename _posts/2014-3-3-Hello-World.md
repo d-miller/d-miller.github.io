@@ -12,6 +12,7 @@ I’m a physicist turned psychologist who’s decided to enter the blogosphere w
 This is my blog’s target audience: 
 
 **People wanting to strengthen their data skills.**
+
 * This audience should be broad, given the rising importance of data skills in all employment fields.
 
 **People interested in thinking deeply about data.**
