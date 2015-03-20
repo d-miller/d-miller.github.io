@@ -6,7 +6,7 @@
 jsonFile = "http://d-miller.github.io/assets/corrScatGist/dataNew.json";
 
 //dimension of SVG
-var h = 450;
+var h = 300;
 var w = h;
 var pad = {left: 60, top: 60, right: 5, bottom: 105, middle: 120 };
 var corrInnerPad = 1;
