@@ -291,7 +291,7 @@ var updateCorrLabels = function(pos, name) {
 
   //update row variable text
   corrPlot.select(".y.corr.label")
-          .attr("transform", "rotate(-90) translate(-" + pos.y + ")")
+          .attr("transform", "rotate(-90) translate(-" + (pos.y+3) + ")")
           .text(name.y);
 
   //show the tooltip by turning changing "display"
