@@ -48,7 +48,7 @@ var initCorrLabels = function() {
   //append column variable text
   corrPlot.append("text")
           .attr("class", "x corr label")
-          .attr("y", h + pad.bottom * 0.2)
+          .attr("y", h + pad.bottom * 0.2 + 6)
           .attr("text-anchor", "middle");
 
   //append row variable text
