@@ -9,7 +9,7 @@ I’m a physicist turned psychologist who’s decided to enter the blogosphere w
 
 ![corrScat]({{ site.baseurl }}/images/corrScat.png)
 
-<iframe src="http://bl.ocks.org/d-miller/bb1a126a836761758904" marginwidth="0" marginheight="0" scrolling="no" width="600" height="400"></iframe>
+<iframe src="http://bl.ocks.org/d-miller/raw/bb1a126a836761758904/" marginwidth="0" marginheight="0" scrolling="no" width="600" height="400"></iframe>
 
 
 
