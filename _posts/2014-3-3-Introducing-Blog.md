@@ -7,23 +7,8 @@ Have you ever looked a [_New York Times_ interactive graphic](http://www.nytimes
 
 I’m a physicist turned psychologist who’s decided to enter the blogosphere world. My first set of posts will focus on learning skills for creating interactive visualizations, like [this one](http://bl.ocks.org/d-miller/bb1a126a836761758904) I created (screenshot below). 
 
-<link rel=stylesheet type="text/css" href="{{ site.baseurl }}/assets/corrScatGist/corr_w_scatter.css">
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="{{ site.baseurl }}/assets/corrScatGist/d3.extend.js" charset="utf-8"></script>
-	<div id="plot">
-		<div id="corrTooltip" class="tooltip">
-			<p><em>r</em> = <span class="value">0</span></p>
-		</div>
-		<div id="scatTooltip" class="tooltip">
-			<p>ID: <span class="value">value</span></p>
-		</div>
-		<div id="instrucs"></div>
-		<label id="showLineLabel"><input type="checkbox" id="showLine" />Show regression line</label>
-	</div>
-	<button id="shuffleCorr">Shuffle variable order</button>
-	<button id="shuffleDefault">Restore default</button>
-	<script type="text/javascript" src="{{ site.baseurl }}/assets/corrScatGist/options.js"></script>
-	<script type="text/javascript" src="{{ site.baseurl }}/assets/corrScatGist/corr_w_scatter.js"></script>
+<iframe src="http://d-miller.github.io/assets/corrScatGist/" marginwidth="0" marginheight="0" scrolling="no" width="600" height="400"></iframe>
+
 
 This is my blog’s target audience: 
 
