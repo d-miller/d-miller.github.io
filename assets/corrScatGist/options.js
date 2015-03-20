@@ -11,9 +11,9 @@ var w = h;
 var pad = {left: 60, top: 60, right: 5, bottom: 105, middle: 120 };
 var corrInnerPad = 1;
 var scatInnerPad = 10;
-var radius = 5;
-var highlightRadius = 9
-var brushRadius = 7;
+var radius = 4;
+var highlightRadius = 7;
+var brushRadius = 5;
 
 //Hack to make this example display correctly in an iframe on bl.ocks.org
 d3.select(self.frameElement).style("width", (w*2 + pad.left + pad.right + pad.middle + 75) + "px");
