@@ -9,6 +9,9 @@ I’m a physicist turned psychologist who’s decided to enter the blogosphere w
 
 ![corrScat]({{ site.baseurl }}/images/corrScat.png)
 
+<iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+
 This is my blog’s target audience: 
 
 **People wanting to strengthen their data skills.**
