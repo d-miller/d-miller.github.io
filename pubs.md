@@ -14,7 +14,7 @@ men: A 30-Year analysis. _Frontiers in Psychology_, _6_, 36. [[PDF]({{ site.base
 
 **Miller, D. I.**, & Halpern, D. F. (2014). The new science of cognitive sex differences. _Trends in Cognitive
 Sciences_, _18_, 37-45. [[PDF]({{ site.baseurl }}/assets/MillerHalpern2014.pdf)]
-*
+
 
 **Miller, D. I.**, & Halpern, D. F. (2013). Can spatial training improve long-term outcomes for gifted STEM
 undergraduates? _Learning and Individual Differences_, _26_, 141-152. [[PDF]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)] Media coverage: [Association for Psychological Science](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [Psychology Today](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
