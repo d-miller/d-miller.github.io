@@ -17,7 +17,7 @@ men: A 30-Year analysis. _Frontiers in Psychology_, _6_, 36. [[PDF]({{ site.base
 * [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052)
 * [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds)
 * [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem)
-* I also wrote [an op-ed](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) about the research for InsideHigherEd.
+* Also see, published in [InsideHigherEd](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science).
 
 **Miller, D. I.**, & Halpern, D. F. (2014). The new science of cognitive sex differences. _Trends in Cognitive
 Sciences_, _18_, 37-45. [[PDF]({{ site.baseurl }}/assets/MillerHalpern2014.pdf)]
