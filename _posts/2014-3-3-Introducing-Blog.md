@@ -7,7 +7,7 @@ Have you ever looked a [_New York Times_ interactive graphic](http://www.nytimes
 
 I’m a physicist turned psychologist who’s decided to enter the blogosphere world. My first set of posts will focus on learning skills for creating interactive visualizations, like [this one](http://bl.ocks.org/d-miller/bb1a126a836761758904) I created (screenshot below). 
 
-![corrScat]({{ site.baseurl }}/images/corrScat.png){: .center-image }
+![corrScat]({{ site.baseurl }}/images/corrScat.png)
 
 This is my blog’s target audience: 
 
@@ -24,7 +24,7 @@ This is my blog’s target audience:
 * I’ll focus on more advanced topics like machine learning and interactive visualization, but will provide links for learning more basic programming and statistics skills. 
 * So don’t be scared away if you don’t already have a strong technical background! Learning technical skills takes time, but several _free_ online resources can help you do that (e.g., [CodeAcademy](http://www.codecademy.com/)).
 
-![doge-data]({{ site.baseurl }}/images/doge-data.jpg){: .center-image }
+![doge-data]({{ site.baseurl }}/images/doge-data.jpg)
 
 About tools I will cover: 
 
