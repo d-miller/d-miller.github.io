@@ -9,7 +9,7 @@ I'll likely also talk about interesting data and research, especially about dive
 
 ## About me
 
-I'm a Northwestern psychology Ph.D. student, currently investigating how and why some students move into and out of science and technology fields. 
+I'm a Northwestern psychology Ph.D. student, [http://journal.frontiersin.org/article/10.3389/fpsyg.2015.00037/full](currently investigating) how and why some students move into and out of science and technology fields. 
 
 Before Northwestern, I received my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
