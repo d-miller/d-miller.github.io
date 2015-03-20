@@ -82,13 +82,13 @@ var initScatLabels = function() {
           .attr("id", "xTitle")
           .attr("class", "axes title")
           .attr("x", w / 2)
-          .attr("y", h + 48);
+          .attr("y", h + 40);
 
   //y axis title
   scatPlot.append("text")
           .attr("id", "yTitle")
           .attr("class", "axes title")
-          .attr("transform", "translate(" + (-63) + "," + (h/2) + ") rotate(270)");
+          .attr("transform", "translate(" + (-53) + "," + (h/2) + ") rotate(270)");
 
   //SVG element for displaying instructions
   scatPlot.append("text")
