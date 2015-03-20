@@ -7,7 +7,7 @@ Have you ever looked a [_New York Times_ interactive graphic](http://www.nytimes
 
 I’m a physicist turned psychologist who’s decided to enter the blogosphere world. My first set of posts will focus on learning skills for creating interactive visualizations, like [this one](http://bl.ocks.org/d-miller/bb1a126a836761758904) I created (screenshot below). 
 
-![Dashboard](http://i.imgur.com/050QiW1.png)
+![corrScat]({{ site.baseurl }}/images/corrScat.png){: .center-image }
 
 This is my blog’s target audience: 
 
