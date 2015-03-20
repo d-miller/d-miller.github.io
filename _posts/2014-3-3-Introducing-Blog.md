@@ -9,6 +9,7 @@ I’m a physicist turned psychologist who’s decided to enter the blogosphere w
 
 ![corrScat]({{ site.baseurl }}/images/corrScat.png)
 
+<link rel=stylesheet type="text/css" href="{{ site.baseurl }}/assets/corrScatGist/corr_w_scatter.css">
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 <img src="{{ site.baseurl }}/images/corrScat.png">
