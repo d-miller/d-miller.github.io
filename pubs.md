@@ -3,7 +3,7 @@ layout: page
 permalink: /pubs/
 ---
 
-## Academic Journal Publications
+## Journal Publications
 
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). [Women’s representation in science predicts national
 gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_.
