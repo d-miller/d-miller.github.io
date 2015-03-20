@@ -11,7 +11,7 @@ var w = h;
 var pad = {left: 0, top: 0, right: 5, bottom: 105, middle: 120 };
 var corrInnerPad = 1;
 var scatInnerPad = 10;
-var radius = 5;
+var radius = 3;
 var highlightRadius = 9
 var brushRadius = 7;
 
@@ -43,7 +43,8 @@ var pos2 = { left: (pad.left + w + pad.middle) + "px",   top: (pad.top + h + 80)
 var pos3 = { left: (pad.left)                  + "px",   top: (pad.top + h + 22) + "px" };
 var pos4 = { left: (pad.left+50)               + "px",   top: (pad.top + h + 40) + "px" };
 var style0 = {color: "black"};
-var style1 = {color: "black", "font-size": "40px"};
+//var style1 = {color: "black", "font-size": "40px"};
+var style1 = {color: "black", "font-size": "20px"};
 var instrucsDatum = [
   {prevStep: 0, text: "Loading data, please wait...", trans: false,  delay: 0,     fadeOut: 0,    fadeIn: 0,     style: style0,  pos: pos0},
   {prevStep: 1, text: "Hover above to begin",         trans: false,  delay: 0,     fadeOut: 0,    fadeIn: 0,     style: style1,  pos: pos1},
