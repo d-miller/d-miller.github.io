@@ -11,13 +11,13 @@ I’m a physicist turned psychologist who’s decided to enter the blogosphere w
 
 This is my blog’s target audience: 
 
-* People wanting to strengthen their data skills.*
+**People wanting to strengthen their data skills.**
 * This audience should be broad, given the rising importance of data skills in all employment fields.
 
-*People interested in thinking deeply about data.*
+**People interested in thinking deeply about data.**
 * I’ll talk about data and research that I find especially important and interesting. [My interests](https://northwestern.academia.edu/DavidMiller) focus on diversity in science and technology fields, but I may cover other topics as well.
 
-*People with a variety of technical and non-technical backgrounds.*
+**People with a variety of technical and non-technical backgrounds.**
 * I’ll focus on more advanced topics like machine learning and interactive visualization, but will provide links for learning more basic programming and statistics skills. 
 * So don’t be scared away if you don’t already have a strong technical background! Learning technical skills takes time, but several _free_ online resources can help you do that (e.g., [CodeAcademy](http://www.codecademy.com/)).
 
