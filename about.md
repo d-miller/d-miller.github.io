@@ -5,7 +5,7 @@ permalink: /about/
 
 This blog broadly targets people looking to strengthen their data skills, as detailed [here](http://d-miller.github.io/Introducing-Blog/). In particular, data visualization and machine learning will be core topics.  
 
-### My Background
+## About Me
 
 I'm a Northwestern psychology Ph.D. student, currently investigating how and why some students move into and out of science and technology fields. Before Northwestern, I received my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). I recently strengthened my data skills through [University of Chicago’s Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/) where I worked on [a machine learning project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school.
 
