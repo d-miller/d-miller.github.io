@@ -7,9 +7,10 @@ My blog broadly targets people looking to strengthen their data skills, as detai
 
 I'll likely also talk about interesting data and research, especially about diversity in science and technology fields. 
 
-## Journal Publications
+## Academic Journal Publications
 
-I'm a Northwestern psychology Ph.D. student, [currently investigating](http://journal.frontiersin.org/article/10.3389/fpsyg.2015.00037/full) how and why some students move into and out of science and technology fields. My C.V. is [here]({{ site.baseurl }}/assets/MillerCV.pdf).
+* **Miller, D. I.**, & Wai, J. (2015). The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
+men: A 30-Year analysis. _Frontiers in Psychology_, _6_, 36. [[PDF]({{ site.baseurl }}/assets/MillerWai2015.pdf)]
 
 Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
