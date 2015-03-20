@@ -40,7 +40,7 @@ var scatTransTime = 300;  //time for transitions in the scatter plot
 var pos0 = { left: (pad.left)                  + "px",   top: (pad.top + h/2)    + "px" };
 var pos1 = { left: (pad.left)                  + "px",   top: (pad.top + h + 40) + "px" };
 var pos2 = { left: (pad.left + w + pad.middle) + "px",   top: (pad.top + h + 60) + "px" };
-var pos3 = { left: (pad.left+50)               + "px",   top: (pad.top + h + 35) + "px" };
+var pos3 = { left: (pad.left+50)               + "px",   top: (pad.top + h + 40) + "px" };
 var pos4 = { left: (pad.left+50)               + "px",   top: (pad.top + h + 10) + "px" };
 var style0 = {color: "black"};
 var style1 = {color: "black", "font-size": "20px"};
@@ -62,7 +62,7 @@ var instrucEnd = function(y) {
           .style("font-size", 40)
           .style("opacity", 0)
           .attr("x", w/2+10)
-          .attr("y", h + 62)
+          .attr("y", h + 68)
         .transition()
           .delay(4000)
           .duration(2000)
