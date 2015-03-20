@@ -9,14 +9,7 @@ permalink: /pubs/
 gender-science stereotypes: Evidence from 66 nations. _Journal of Educational Psychology_. [[PDF]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf)]
 
 **Miller, D. I.**, & Wai, J. (2015). The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
-men: A 30-Year analysis. _Frontiers in Psychology_, _6_, 36. [[PDF]({{ site.baseurl }}/assets/MillerWai2015.pdf)]
-
-* [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html)
-* [InsideHigerEd](https://www.insidehighered.com/news/2015/02/18/research-suggests-pipeline-science-talent-may-leak-men-and-women-same-rate)
-* [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939)
-* [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052)
-* [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds)
-* [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem)
+men: A 30-Year analysis. _Frontiers in Psychology_, _6_, 36. [[PDF]({{ site.baseurl }}/assets/MillerWai2015.pdf)] Selected media coverage: [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [InsideHigerEd](https://www.insidehighered.com/news/2015/02/18/research-suggests-pipeline-science-talent-may-leak-men-and-women-same-rate), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem)
 * Also see, published in [InsideHigherEd](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science).
 
 **Miller, D. I.**, & Halpern, D. F. (2014). The new science of cognitive sex differences. _Trends in Cognitive
