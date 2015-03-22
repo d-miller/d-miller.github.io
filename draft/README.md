@@ -14,6 +14,7 @@ As detailed above, each route has its pros and cons, but both involve learning s
 * If you haven't programmed before, then great! Making visualizations is a fun way to learn programming. That's what Obama did.
 * If you have programmed, then making visualizations is a great way to extend your skills. 
 
+<div align="center"><img src="{{ site.baseurl }}/images/ObamaCode.jpg" width="500"/></div>
 Obama learns computer programming by making interactive visualizations with JavaScript. 
 
 When learning visualization skills, I found many great individual blog posts and tutorials, but struggled in finding a _curriculum_ that pieced together all of these learning resources. Hence, my blog will take will take a more "meta" approach that will outline various learning pathways and direct you to relevant resources.
