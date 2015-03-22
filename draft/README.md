@@ -21,12 +21,10 @@ When learning visualization skills, I found many great individual blog posts and
 
 My next post will focus on the first learning pathway: learning visualization through web development. In the meantime, here are some (_free!_) resources about learning more general web development skills:
  * [Codecademy](http://www.codecademy.com/): Provides interactive courses on [HTML/CSS](http://www.codecademy.com/tracks/web) and [JavaScript](http://www.codecademy.com/tracks/javascript) that (a) give some information (e.g., about HTML tags), (b) have you do an example exercise using that information, and (c) give you automated feedback about your code. I highly recommend it. You learn web development skills by actually practicing them, rather than just reading about them! 
-
+ 
  	* Codecademy's courses don't assume prior programming experience. However, as someone with prior programming experience, I still found them useful. Especially when learning the syntax of new languages like JavaScript. I was only mildly irrirated by the slow pace of the courses. But the somewhat slow pace suits a broad audience (e.g., they have over 24 million learners!). 
  	* Sidenote: JavaScript (JS) is easily the most important programming language for interactive data visualization. Basically, nearly all interactive data visualizations use JS, even if you don't know it. Packages in R and Python can create JS code for you, allowing you to never touch JS. But not knowing JS will limit you if you want to create highly customizable visualizations. 
-
  * [CodeSchool's course on Chrome DevTools](https://www.codeschool.com/courses/discover-devtools): I highly highly highly recommend that you learn how to use a web development environment like [Chrome DevTools](https://developer.chrome.com/devtools) or [Firebug](http://getfirebug.com/) before getting deep into making visualizations. I didn't myself, which was a rookie mistake that I now regret. Like Codecademy's courses, [CodeSchool's course](https://www.codeschool.com/courses/discover-devtools) on DevTools is interactive and I also highly recommend it.
-
  * [Chapter 3 from Scott Murray's book](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html): Provides a brief, highly accessible overview of core web development technologies. It's a fairly dense summary though, so I recommend using it as a "reference guide" for when you get deeper into more specific topics. 
 
 Think I've missed a route for learning interactive data visualization? Tell me so in the comments!
