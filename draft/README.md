@@ -13,7 +13,7 @@ Columns: description, flexibility, development time, learning time, what skills 
 As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then making visualizations will extend your skills and improve your abilities to communicate ideas about data. 
 
 <img src="https://s-media-cache-ak0.pinimg.com/736x/27/b4/31/27b431f659ca49426d01a7be28f0091d.jpg" width="700"/>
-<span style="font-size: 0.75em; display: block"><a href="http://qz.com/308904/heres-the-first-line-of-code-ever-written-by-a-us-president/">Obama learns computer programming by making visualizations with JavaScript.</a></span>
+<a href="http://qz.com/308904/heres-the-first-line-of-code-ever-written-by-a-us-president/"><span style="font-size: 0.75em; display: block">Obama learns computer programming by making visualizations with JavaScript.</span></a>
 
 When learning visualization skills, I found many great individual blog posts and tutorials, but struggled in finding a _curriculum_ that pieced together all of these learning resources. Hence, my blog will take will take a more "meta" approach that will outline various learning pathways and direct you to relevant resources.
 
