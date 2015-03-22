@@ -10,7 +10,7 @@ Data analysis:
 Columns: description, flexibility, development time, learning time, what skills you will pick up, core technologies/languages.
 
 
-As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then making visualizations will extend your skills. 
+As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then making visualizations will extend your skills and improve your abilities to communicate ideas about data. 
 
 <div align="center"><img src="https://s-media-cache-ak0.pinimg.com/736x/27/b4/31/27b431f659ca49426d01a7be28f0091d.jpg" width="500"/></div>
 <a href="http://qz.com/308904/heres-the-first-line-of-code-ever-written-by-a-us-president/"><span style="font-size: 0.75em;">Obama learns computer programming by making visualizations with JavaScript.</span></a>
