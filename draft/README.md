@@ -1,8 +1,3 @@
----
-layout: post
-title: Visualizing and Thinking About Data
----
-
 Making interactive visualizations is a fun, exciting way to improve your data skills. You can simultaneously develop graphics _and computer programming_ experience through two routes: (a) though web devevelopment and (b) through data analysis. 
 
 1. Web development: Learn core web languages like JavaScript and HTML to use libraries such as d3.js to create highly customizable visualizations.
@@ -31,6 +26,6 @@ My next post will focus on the first learning pathway: learning visualization th
 
  * [CodeSchool's course on Chrome DevTools](https://www.codeschool.com/courses/discover-devtools): I highly highly highly recommend that you learn how to use a web development environment like Chrome DevTools or Firebug before getting deep into making visualizations. I didn't myself, which was a rookie mistake that I now regret. Like Codecademy's courses, CodeSchool's course on DevTools is interactive and I also highly recommend it.
 
- * Chapter 3 from Scott Murray's book: Provides a brief, highly accessible overview of core web development technologies. It's a fairly dense summary though, so I recommend using it as a reference guide for when you get deeper into more specific topics. 
+ * [Chapter 3 from Scott Murray's book](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html): Provides a brief, highly accessible overview of core web development technologies. It's a fairly dense summary though, so I recommend using it as a "reference guide" for when you get deeper into more specific topics. 
 
- Think I've missed a route for learning interactive data visualization? Tell me so in the comments!
+Think I've missed a route for learning interactive data visualization? Tell me so in the comments!
