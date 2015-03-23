@@ -1,4 +1,4 @@
-Making interactive visualizations is a fun, exciting way to also learn computer programming. [That's what Obama did](http://www.wired.com/2014/12/obama-becomes-first-president-write-computer-program/). There are two main routes for simultaneously developing programming and interactive data visualization skills: (a) though web devevelopment and (b) through data analysis. 
+Making interactive visualizations is an exciting way to also learn computer programming. [That's what Obama did](http://www.wired.com/2014/12/obama-becomes-first-president-write-computer-program/). You can simultaneously develop programming and interactive data visualization skills in two ways: (a) though web devevelopment and (b) through data analysis. 
 
 1. Web development: Learn core web languages like JavaScript and HTML to use libraries such as d3.js to create highly customizable visualizations.
 2. Data analysis: Use packages in R and Python to create visualizations that are less customizable, but still cover many common uses. 
