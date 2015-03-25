@@ -13,9 +13,9 @@ Web development: Highly customizable,
 Data analysis: 
 
 <table>
-  <col style="width:50%">
-  <col style="width:30%">
   <col style="width:20%">
+  <col style="width:40%">
+  <col style="width:40%">
   <thead>
 	  <tr>
 	    <th>Learning pathway</th>
