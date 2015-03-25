@@ -72,9 +72,9 @@ As detailed above, each route has its pros and cons, but both involve learning s
 	<a href="http://qz.com/308904/heres-the-first-line-of-code-ever-written-by-a-us-president/"><span style="font-size: 0.75em; display: block">Obama learns computer programming by making visualizations with JavaScript.</span></a>
 </div>
 
-When learning visualization skills, I found many great individual blog posts and tutorials, but struggled in finding a _curriculum_ that pieced together all of these learning resources. Hence, my blog will take will take a more "meta" approach that will outline various learning pathways and direct you to relevant resources.
+When learning visualization skills, I found many great individual blog posts and tutorials, but struggled in finding a _curriculum_ that pieced together all of these learning resources. Hence, subsequent posts will take will take a more "meta" approach that will outline various learning pathways and direct you to relevant resources.
 
-My next post will focus on the first learning pathway: learning interactive visualization through web development. In the meantime, here are some (_free!_) resources about learning more general web development skills:
+**My next post will focus on the web development**. In the meantime, here are some (_free!_) resources about learning more general web development skills:
 
  * [Codecademy](http://www.codecademy.com/): Provides interactive courses on [HTML/CSS](http://www.codecademy.com/tracks/web) and [JavaScript](http://www.codecademy.com/tracks/javascript) that (a) give some information (e.g., about HTML tags), (b) have you do an example exercise using that information, and (c) give you automated feedback about your code. I highly recommend it. You learn web development skills by actually practicing them, rather than just reading about them! 
 
