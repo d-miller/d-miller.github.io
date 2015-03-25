@@ -5,13 +5,6 @@ title: Learn Programming by Making Visualizations
 
 Making interactive visualizations is an exciting way to also learn computer programming. [That's what Obama did](http://qz.com/308904/heres-the-first-line-of-code-ever-written-by-a-us-president/). You can learn both programming and visualization skills in two ways: (a) though web devevelopment and (b) through data analysis. 
 
-1. Web development: Learn core web languages like JavaScript and HTML to use libraries such as d3.js to create highly customizable visualizations.
-2. Data analysis: Use packages in R and Python to create visualizations that are less customizable, but still cover many common uses. 
-
-Table of pros and cons here:
-Web development: Highly customizable, 
-Data analysis: 
-
 <table>
   <col style="width:50%">
   <col style="width:50%">
@@ -23,14 +16,18 @@ Data analysis:
   </thead>
   <tr>
     <td>
-    <p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
-    <p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</p>
+    	<p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
+    	<p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</p>
     </td>
     <td><ul>
     	<li>learn computer programming skills more generally</li>
     	<li>develop user design and web development experience</li>
     	<li>create novel and highly customizable visualizations</li>
     </ul></td>
+  </tr>
+
+  <tr>
+  	<th colspan="2">Data analysis</th>
   </tr>
   <tr>
     <td>
@@ -39,7 +36,7 @@ Data analysis:
     </td>
     <td><ul>
     	<li>create interactive graphics rapidly with less concern for customizability</li>
-    	<li>learn the most important languages to the data science community (R & Python)</li>
+    	<li>learn the basics of the most important languages to the data science community (R & Python)</li>
     	<li>extend existing familiarity with R/Python</li>
     </ul></td>
   </th>
