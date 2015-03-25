@@ -71,7 +71,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tbody>
 </table>
 
-As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then learning interactive visualization skills will be even easier. 
+As detailed above, each route has its pros and cons, but **both involve learning some computer programming**. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then learning interactive visualization skills will be even easier. 
 
 <div align="center">
 	<img src="https://s-media-cache-ak0.pinimg.com/736x/27/b4/31/27b431f659ca49426d01a7be28f0091d.jpg" width="500"/>
