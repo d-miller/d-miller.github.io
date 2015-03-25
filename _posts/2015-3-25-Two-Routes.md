@@ -13,18 +13,15 @@ Web development: Highly customizable,
 Data analysis: 
 
 <table>
-  <col style="width:10%">
-  <col style="width:45%">
-  <col style="width:45%">
+  <col style="width:50%">
+  <col style="width:50%">
   <thead>
 	  <tr>
-	    <th></th>
 	    <th>Description</th>
 	    <th>Who will be most interested</th>
 	  </tr>
   </thead>
   <tr>
-  	<th>Web development</th>
     <td>
     <p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
     <p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</p>
@@ -38,7 +35,6 @@ Data analysis:
 	</td>
   </tr>
   <tr>
-    <th><div style="text-align:center;">Data analysis</div></th >
     <td>
     	<p>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</p>
     	<p>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</p>
