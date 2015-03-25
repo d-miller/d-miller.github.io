@@ -27,7 +27,7 @@ Data analysis:
   	<th>Web development</th>
     <td>
     <p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
-    <p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way. The potential for creating new types of graphics is almost limitless. Data might need to be preprocessed or analyzed first in R/Python.</p>
+    <p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</p>
     </td>
     <td>People aiming to…
     	<ul>
@@ -38,7 +38,7 @@ Data analysis:
 	</td>
   </tr>
   <tr>
-    <th><div style="transform: rotate(-90deg);">Data analysis</div></th >
+    <th><div style="text-align:center;">Data analysis</div></th >
     <td>
     	<p>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</p>
     	<p>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts). However, the much quicker development time is attractive, especially if you already know R/Python.</p>
