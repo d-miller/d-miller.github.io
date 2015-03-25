@@ -18,10 +18,10 @@ Making interactive visualizations is an exciting way to also learn computer prog
   	<th colspan="2">Learning through web development</th>
   </tr>
   <tr>
-    <td>
+    <td><ul>
     	<li>Use core web languages like JavaScript and HTML and libraries such as d3.js to create highly customizable visualizations.</li>
     	<li>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</li>
-    </td>
+    </ul></td>
     <td><ul>
     	<li>learn computer programming skills more generally</li>
     	<li>develop user design and web development experience</li>
@@ -33,10 +33,10 @@ Making interactive visualizations is an exciting way to also learn computer prog
   	<th colspan="2">Learning through data analysis</th>
   </tr>
   <tr>
-    <td>
+    <td><ul>
     	<li>Use R or Python and packages such as ggvis and rCharts to create visualizations that are less customizable, but still cover many common uses.</li>
     	<li>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</li>
-    </td>
+    </ul></td>
     <td><ul>
     	<li>create interactive graphics rapidly with less concern for customizability</li>
     	<li>learn the basics of the most important languages to the data science community (R & Python)</li>
