@@ -24,6 +24,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
 		/*padding: 50px;*/
 		padding-left: 5px;
 		padding-right: 5px;
+		font-size: 0.7em;
 	}
 </style>
 
