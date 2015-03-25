@@ -61,7 +61,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
     	<li>You can create sexy interactive graphics with just a few lines of codes, but can also be limited by the libraries' pre-existing graphics types (e.g., bar charts).</li>
     </ul></td>
     <td><ul>
-    	<li>Create interactive graphics rapidly with less concern for customizability.</li>
+    	<li>Create interactive graphics rapidly, but potentially with less customizability.</li>
     	<li>Learn the basics of the most important languages to the data science community (R & Python).</li>
     </ul></td>
   </th>
