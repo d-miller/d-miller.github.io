@@ -10,6 +10,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
 		border: 1px solid lightgrey;
 	}
 	thead {
+		  transform: translate(0,0.4em);
 		font-size: 1.5em;
 		font-weight: bold;
 	}
