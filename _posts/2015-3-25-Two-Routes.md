@@ -19,8 +19,8 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
   <tr>
     <td>
-    	<p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
-    	<p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</p>
+    	<li>Use core web languages like JavaScript and HTML and libraries such as d3.js to create highly customizable visualizations.</li>
+    	<li>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</li>
     </td>
     <td><ul>
     	<li>learn computer programming skills more generally</li>
@@ -33,14 +33,14 @@ Making interactive visualizations is an exciting way to also learn computer prog
   	<th colspan="2">Learning through data analysis</th>
   </tr>
   <tr>
-    <td>
-    	<p>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</p>
-    	<p>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</p>
-    </td>
+    <td><ul>
+    	<li>Use R or Python and packages such as ggvis and rCharts to create visualizations that are less customizable, but still cover many common uses.</li>
+    	<li>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</li>
+    </ul></td>
     <td><ul>
     	<li>create interactive graphics rapidly with less concern for customizability</li>
     	<li>learn the basics of the most important languages to the data science community (R & Python)</li>
-    	<li>extend existing familiarity with R/Python</li>
+    	<li>quickly extend existing R/Python skills (if you already know R/Python)</li>
     </ul></td>
   </th>
 </table>
