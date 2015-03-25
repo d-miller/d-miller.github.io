@@ -19,7 +19,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
 	}
 
 	td {
-		padding: 50px;
+		/*padding: 50px;*/
 	}
 </style>
 
