@@ -54,7 +54,7 @@ As detailed above, each route has its pros and cons, but both involve learning s
 
 When learning visualization skills, I found many great individual blog posts and tutorials, but struggled in finding a _curriculum_ that pieced together all of these learning resources. Hence, my blog will take will take a more "meta" approach that will outline various learning pathways and direct you to relevant resources.
 
-My next post will focus on the first learning pathway: learning visualization through web development. In the meantime, here are some (_free!_) resources about learning more general web development skills:
+My next post will focus on the first learning pathway: learning interactive visualization through web development. In the meantime, here are some (_free!_) resources about learning more general web development skills:
 
  * [Codecademy](http://www.codecademy.com/): Provides interactive courses on [HTML/CSS](http://www.codecademy.com/tracks/web) and [JavaScript](http://www.codecademy.com/tracks/javascript) that (a) give some information (e.g., about HTML tags), (b) have you do an example exercise using that information, and (c) give you automated feedback about your code. I highly recommend it. You learn web development skills by actually practicing them, rather than just reading about them! 
 
