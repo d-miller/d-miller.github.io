@@ -11,8 +11,8 @@ Making interactive visualizations is an exciting way to also learn computer prog
 		font-weight: bold;
 	}
 	.route {
-		font-size: 1.5em;
-		font-weight: bold;
+		font-size: 1.2em;
+		font-style: italic;
 	}
 </style>
 
