@@ -13,13 +13,18 @@ Web development: Highly customizable,
 Data analysis: 
 
 <table>
+  <col style="width:50%">
+  <col style="width:30%">
+  <col style="width:20%">
+  <thead>
+	  <tr>
+	    <th>Learning pathway</th>
+	    <th>Description</th>
+	    <th>Who will be most interested</th>
+	  </tr>
+  </thead>
   <tr>
-    <th>Learning pathway</th>
-    <th>Description</th>
-    <th>Who will be most interested</th>
-  </tr>
-  <tr>
-    <td>Web development</td>
+  	<td>Web development</td>
     <td>
     <p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
     <p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way. The potential for creating new types of graphics is almost limitless. Data might need to be preprocessed or analyzed first in R/Python.</p>
