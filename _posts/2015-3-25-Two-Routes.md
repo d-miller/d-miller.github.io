@@ -78,7 +78,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
 </table>
 <div style="font-size: 0.6em; margin-top: 0.5em;">DISCLAIMER: This distinction above is a helpful, but rough, one. For instance, JavaScript "wrapper" libraries like <a href="http://nvd3.org/">NVD3</a> and <a href="http://trifacta.github.io/vega/">Vega</a> more closely resemble R- and Python-based visualization packages than d3.js. R's <a href="http://shiny.rstudio.com/">Shiny package</a> further blurs this distinction.</div>
 
-As detailed above, each learning pathway has its pros and cons, but **both involve learning some computer programming**. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then learning interactive visualization skills will be even easier. 
+As detailed above, each learning pathway has its pros and cons, but **both involve learning some computer programming**. If you haven't programmed before, then great! Making visualizations is a fun way to start learning. If you have programmed, then learning interactive visualization skills will be even easier. 
 
 <div align="center">
 	<img src="https://s-media-cache-ak0.pinimg.com/736x/27/b4/31/27b431f659ca49426d01a7be28f0091d.jpg" width="500"/>
