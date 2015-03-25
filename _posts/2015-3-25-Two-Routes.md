@@ -55,7 +55,9 @@ As detailed above, each route has its pros and cons, but both involve learning s
 When learning visualization skills, I found many great individual blog posts and tutorials, but struggled in finding a _curriculum_ that pieced together all of these learning resources. Hence, my blog will take will take a more "meta" approach that will outline various learning pathways and direct you to relevant resources.
 
 My next post will focus on the first learning pathway: learning visualization through web development. In the meantime, here are some (_free!_) resources about learning more general web development skills:
+
  * [Codecademy](http://www.codecademy.com/): Provides interactive courses on [HTML/CSS](http://www.codecademy.com/tracks/web) and [JavaScript](http://www.codecademy.com/tracks/javascript) that (a) give some information (e.g., about HTML tags), (b) have you do an example exercise using that information, and (c) give you automated feedback about your code. I highly recommend it. You learn web development skills by actually practicing them, rather than just reading about them! 
+ 
  	* Codecademy's courses don't assume prior programming experience. However, as someone with prior programming experience, I still found them useful. Especially when learning the syntax of new languages like JavaScript. I was only mildly irrirated by the slow pace of the courses. But the somewhat slow pace suits a broad audience (e.g., they have over 24 million learners!). 
  	* Sidenote: JavaScript (JS) is easily the most important programming language for interactive data visualization. Basically, nearly all interactive data visualizations use JS, even if you don't know it. Packages in R and Python can create JS code for you, allowing you to never touch JS. But not knowing JS will limit you if you want to create highly customizable interactive visualizations. 
 
