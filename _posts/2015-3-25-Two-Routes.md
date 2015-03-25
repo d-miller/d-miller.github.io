@@ -59,7 +59,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
   <tr>
     <td><ul>
-    	<li>Use R or Python and associated packages such as <a href="http://ggvis.rstudio.com/">ggvis</a>, <a href="http://rcharts.io/">rCharts</a>, and <a href="http://shiny.rstudio.com/">Shiny</a>.</li>
+    	<li>Use <a href="https://www.codeschool.com/courses/try-r">R</a> or <a href="http://www.datarobot.com/blog/introduction-to-python-for-statistical-learning/">Python</a> and associated packages such as <a href="http://ggvis.rstudio.com/">ggvis</a>, <a href="http://rcharts.io/">rCharts</a>, and <a href="http://shiny.rstudio.com/">Shiny</a>.</li>
     	<li>You can create sexy interactive graphics with just a few lines of codes, but can also be limited by the libraries' pre-existing graphics types (e.g., bar charts).</li>
     </ul></td>
     <td><ul>
