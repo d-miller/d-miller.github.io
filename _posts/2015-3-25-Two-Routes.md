@@ -52,6 +52,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
     </ul></td>
   </tr>
 
+  <div style="transform: translate(0, -0.6em);">
   <tr>
   	<th colspan="2" class="route">Learning through data analysis</th>
   </tr>
@@ -64,7 +65,8 @@ Making interactive visualizations is an exciting way to also learn computer prog
     	<li>Create interactive graphics rapidly, but potentially with less customizability.</li>
     	<li>Learn the basics of the most important languages to the data science community (R & Python).</li>
     </ul></td>
-  </th>
+  </tr>
+  </div>
 </table>
 
 As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then learning interactive visualization skills will be even easier. 
