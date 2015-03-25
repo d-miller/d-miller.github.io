@@ -15,6 +15,9 @@ Making interactive visualizations is an exciting way to also learn computer prog
 	  </tr>
   </thead>
   <tr>
+  	<th colspan="2">Learning through web development</th>
+  </tr>
+  <tr>
     <td>
     	<p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
     	<p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</p>
@@ -27,7 +30,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
 
   <tr>
-  	<th colspan="2">Data analysis</th>
+  	<th colspan="2">Learning through data analysis</th>
   </tr>
   <tr>
     <td>
@@ -41,9 +44,6 @@ Making interactive visualizations is an exciting way to also learn computer prog
     </ul></td>
   </th>
 </table>
-
-Columns: description, flexibility, development time, learning time, what skills you will pick up, core technologies/languages.
-
 
 As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then making visualizations will extend both your programming and communication skills. 
 
