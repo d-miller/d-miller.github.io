@@ -29,6 +29,8 @@ Making interactive visualizations is an exciting way to also learn computer prog
 
 	hr.line{
 		border-color: green;
+		border-style: solid;
+		margin: 0 10px 0 10px;
 	}
 </style>
 
