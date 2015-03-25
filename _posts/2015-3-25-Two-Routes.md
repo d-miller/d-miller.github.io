@@ -14,14 +14,16 @@ Data analysis:
 
 <table>
   <tr>
-    <th>Route for learning interactive data visualization</th>
+    <th>Learning pathway</th>
     <th>Description</th>
-    <th>Who this learning pathway will most interest</th>
-    <th>Pros/Cons</th>
+    <th>Who will be most interested</th>
   </tr>
   <tr>
     <td>Web development</td>
-    <td>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</td>
+    <td>
+    <p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
+    <p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way. The potential for creating new types of graphics is almost limitless. Data might need to be preprocessed or analyzed first in R/Python.</p>
+    </td>
     <td>People aiming to…
     	<ul>
     		<li>learn computer programming skills more generally</li>
@@ -29,11 +31,13 @@ Data analysis:
     		<li>create novel and highly customizable visualizations</li>
     	</ul>
 	</td>
-    <td>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way. The potential for creating new types of graphics is almost limitless. Data might need to be preprocessed or analyzed first in R/Python.</td>
   </tr>
   <tr>
     <td>Data analysis</td>
-    <td>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</td>
+    <td>
+    	<p>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</p>
+    	<p>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts). However, the much quicker development time is attractive, especially if you already know R/Python.</p>
+    </td>
     <td>People aiming to…
     	<ul>
     		<li>create interactive graphics rapidly with less concern for customizability</li>
@@ -41,7 +45,6 @@ Data analysis:
     		<li>extend existing familiarity with R/Python</li>
     	</ul>
     </td>
-    <td>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts). However, the much quicker development time is attractive, especially if you already know R/Python.</td>
   </th>
 </table>
 
