@@ -17,13 +17,26 @@ Data analysis:
   <tr>
     <td>Web development</td>
     <td>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</td>
-    <td>3</td>
+    <td>People aiming to…
+    	<ul>
+    		<li>learn computer programming skills more generally</li>
+    		<li>develop user design and web development experience</li>
+    		<li>create novel and highly customizable visualizations</li>
+    	</ul>
+	</td>
     <td>3</td>
   </tr>
   <tr>
     <td>Data analysis</td>
-    <td>4</td>
-    <td>9</td>
+    <td>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</td>
+    <td>People aiming to…
+    People aiming to…
+    	<ul>
+    		<li>create interactive graphics rapidly with less concern for customizability</li>
+    		<li>learn the most important languages to the data science community (R & Python)</li>
+    		<li>extend existing familiarity with R/Python</li>
+    	</ul>
+    </td>
     <td>3</td>
   </th>
 </table>
