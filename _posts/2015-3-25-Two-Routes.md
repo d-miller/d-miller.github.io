@@ -37,6 +37,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
 	    <th>Key learning outcomes</th>
 	  </tr>
   </thead>
+  <tbody>
   <tr>
   	<th colspan="2" class="route">Learning through web development</th>
   </tr>
@@ -67,6 +68,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
     </ul></td>
   </tr>
   </div>
+  </tbody>
 </table>
 
 As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then learning interactive visualization skills will be even easier. 
