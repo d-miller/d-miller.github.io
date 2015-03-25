@@ -43,7 +43,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   <tr>
     <td><ul>
     	<li>Use JavaScript and HTML and libraries such as d3.js to create highly customizable visualizations.</li>
-    	<li>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</li>
+    	<li>Learning to make even a simple histogram can take time, but you develop core web and programming skills along the way.</li>
     </ul></td>
     <td><ul>
     	<li>Learn computer programming skills more generally.</li>
