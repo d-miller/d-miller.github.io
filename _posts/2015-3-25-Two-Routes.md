@@ -43,7 +43,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
   <tr>
     <td><ul>
-    	<li>Use JavaScript and HTML and libraries such as d3.js to create highly customizable visualizations.</li>
+    	<li>Use <a href="http://www.codecademy.com/tracks/javascript">JavaScript</a> and <a href="http://www.codecademy.com/tracks/web">HTML</a> and libraries such as <a href="https://github.com/mbostock/d3/wiki/Gallery">d3.js</a> to create highly customizable visualizations.</li>
     	<li>Learning to make even a simple chart can take time, but you develop core web and coding skills along the way.</li>
     </ul></td>
     <td><ul>
@@ -59,7 +59,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
   <tr>
     <td><ul>
-    	<li>Use R or Python and associated packages such as ggvis, rCharts, and Shiny.</li>
+    	<li>Use R or Python and associated packages such as <a href="http://ggvis.rstudio.com/">ggvis</a>, <a href="http://rcharts.io/">rCharts</a>, and <a href="http://shiny.rstudio.com/">Shiny</a>.</li>
     	<li>You can create sexy interactive graphics with just a few lines of codes, but can also be limited by the libraries' pre-existing graphics types (e.g., bar charts).</li>
     </ul></td>
     <td><ul>
@@ -70,6 +70,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </div>
   </tbody>
 </table>
+<div style="font-size: 0.5em;">DISCLAIMER: This distinction is above is a helpful, but rough, one. For instance, JavaScript "wrapper" libraries like <a href="http://nvd3.org/">NVD3</a> and <a href="http://trifacta.github.io/vega/">Vega</a> more closely resemble R- and Python-based visualization packages than d3.js. R's <a href="http://shiny.rstudio.com/">Shiny package</a> further blurs this distinction.</div>
 
 As detailed above, each route has its pros and cons, but **both involve learning some computer programming**. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then learning interactive visualization skills will be even easier. 
 
