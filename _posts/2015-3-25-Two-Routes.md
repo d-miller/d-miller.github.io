@@ -57,13 +57,12 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
   <tr>
     <td><ul>
-    	<li>Use R or Python and associated packages such as ggvis and rCharts.</li>
-    	<li>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</li>
+    	<li>Use R or Python and associated packages such as ggvis, Shiny, and rCharts.</li>
+    	<li>You can create sexy interactive graphics with just a few lines of codes, but can also be limited by the libraries' pre-existing graphics types (e.g., bar charts).</li>
     </ul></td>
     <td><ul>
     	<li>Create interactive graphics rapidly with less concern for customizability.</li>
     	<li>Learn the basics of the most important languages to the data science community (R & Python).</li>
-    	<li>Quickly extend existing R/Python skills (if you already know R/Python).</li>
     </ul></td>
   </th>
 </table>
