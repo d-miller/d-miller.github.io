@@ -54,7 +54,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
   <tr>
     <td><ul>
-    	<li>Use R or Python and packages such as ggvis and rCharts to create visualizations that are less customizable, but still cover many common uses.</li>
+    	<li>Use R or Python and associated packages such as ggvis and rCharts.</li>
     	<li>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</li>
     </ul></td>
     <td><ul>
