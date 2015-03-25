@@ -64,7 +64,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
     </ul></td>
     <td><ul>
     	<li>Create interactive graphics rapidly, but potentially with less customizability.</li>
-    	<li>Learn the basics of the most important languages to the data science community (R & Python).</li>
+    	<li>Learn the basics of the <a href="https://gist.github.com/hadley/820f09ded347c62c2864">most important languages</a> to the data science community (R & Python).</li>
     </ul></td>
   </tr>
   </div>
