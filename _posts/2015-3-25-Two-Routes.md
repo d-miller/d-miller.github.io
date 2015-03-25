@@ -6,6 +6,9 @@ title: Learn to Code by Making Visualizations
 Making interactive visualizations is an exciting way to also learn computer programming. [That's what Obama did](http://qz.com/308904/heres-the-first-line-of-code-ever-written-by-a-us-president/). You can learn both programming and visualization skills in two ways: (a) though web devevelopment and (b) through data analysis. 
 
 <style>
+	table {
+		border: 1px solid lightgrey;
+	}
 	thead {
 		font-size: 1.5em;
 		font-weight: bold;
