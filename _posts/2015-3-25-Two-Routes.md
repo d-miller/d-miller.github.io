@@ -1,3 +1,8 @@
+---
+layout: post
+title: Learn Programming by Making Visualizations
+---
+
 Making interactive visualizations is an exciting way to also learn computer programming. [That's what Obama did](http://www.wired.com/2014/12/obama-becomes-first-president-write-computer-program/). You can simultaneously develop programming and interactive data visualization skills in two ways: (a) though web devevelopment and (b) through data analysis. 
 
 1. Web development: Learn core web languages like JavaScript and HTML to use libraries such as d3.js to create highly customizable visualizations.
