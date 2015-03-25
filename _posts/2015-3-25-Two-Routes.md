@@ -18,7 +18,7 @@ Data analysis:
   <col style="width:40%">
   <thead>
 	  <tr>
-	    <th>Learning pathway</th>
+	    <th></th>
 	    <th>Description</th>
 	    <th>Who will be most interested</th>
 	  </tr>
@@ -41,7 +41,7 @@ Data analysis:
     <th><div style="text-align:center;">Data analysis</div></th >
     <td>
     	<p>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</p>
-    	<p>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts). However, the much quicker development time is attractive, especially if you already know R/Python.</p>
+    	<p>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</p>
     </td>
     <td>People aiming to…
     	<ul>
@@ -58,7 +58,7 @@ Columns: description, flexibility, development time, learning time, what skills 
 
 As detailed above, each route has its pros and cons, but both involve learning some computer programming. If you haven't programmed before, then great! Making visualizations is a fun way to learn. If you have programmed, then making visualizations will extend both your programming and communication skills. 
 
-<img src="https://s-media-cache-ak0.pinimg.com/736x/27/b4/31/27b431f659ca49426d01a7be28f0091d.jpg" width="800"/>
+<img src="https://s-media-cache-ak0.pinimg.com/736x/27/b4/31/27b431f659ca49426d01a7be28f0091d.jpg" width="500"/>
 <a href="http://qz.com/308904/heres-the-first-line-of-code-ever-written-by-a-us-president/"><span style="font-size: 0.75em; display: block">Obama learns computer programming by making visualizations with JavaScript.</span></a>
 
 When learning visualization skills, I found many great individual blog posts and tutorials, but struggled in finding a _curriculum_ that pieced together all of these learning resources. Hence, my blog will take will take a more "meta" approach that will outline various learning pathways and direct you to relevant resources.
