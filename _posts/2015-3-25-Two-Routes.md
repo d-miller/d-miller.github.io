@@ -18,7 +18,7 @@ Data analysis:
   <thead>
 	  <tr>
 	    <th>Description</th>
-	    <th>Who will be most interested</th>
+	    <th>Key learning outcomes</th>
 	  </tr>
   </thead>
   <tr>
@@ -26,26 +26,22 @@ Data analysis:
     <p>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</p>
     <p>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</p>
     </td>
-    <td>People aiming to…
-    	<ul>
-    		<li>learn computer programming skills more generally</li>
-    		<li>develop user design and web development experience</li>
-    		<li>create novel and highly customizable visualizations</li>
-    	</ul>
-	</td>
+    <td><ul>
+    	<li>learn computer programming skills more generally</li>
+    	<li>develop user design and web development experience</li>
+    	<li>create novel and highly customizable visualizations</li>
+    </ul></td>
   </tr>
   <tr>
     <td>
     	<p>Use packages such as ggvis and rCharts to create visualizations in R and Python that are less customizable, but still cover many common uses.</p>
     	<p>You can create sexy interactive graphics with just a few lines of codes, but will be limited by the libraries' pre-existing chart types (e.g., bar charts).</p>
     </td>
-    <td>People aiming to…
-    	<ul>
-    		<li>create interactive graphics rapidly with less concern for customizability</li>
-    		<li>learn the most important languages to the data science community (R & Python)</li>
-    		<li>extend existing familiarity with R/Python</li>
-    	</ul>
-    </td>
+    <td><ul>
+    	<li>create interactive graphics rapidly with less concern for customizability</li>
+    	<li>learn the most important languages to the data science community (R & Python)</li>
+    	<li>extend existing familiarity with R/Python</li>
+    </ul></td>
   </th>
 </table>
 
