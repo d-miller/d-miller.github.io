@@ -14,6 +14,10 @@ Making interactive visualizations is an exciting way to also learn computer prog
 		font-size: 1.2em;
 		font-style: italic;
 	}
+
+	td {
+		padding: 50px;
+	}
 </style>
 
 <table>
