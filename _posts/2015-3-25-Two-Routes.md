@@ -10,6 +10,10 @@ Making interactive visualizations is an exciting way to also learn computer prog
 		font-size: 1.5em;
 		font-weight: bold;
 	}
+	.route {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
 </style>
 
 <table>
@@ -22,7 +26,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
 	  </tr>
   </thead>
   <tr>
-  	<th colspan="2">Learning through web development</th>
+  	<th colspan="2" class="route">Learning through web development</th>
   </tr>
   <tr>
     <td><ul>
@@ -37,7 +41,7 @@ Making interactive visualizations is an exciting way to also learn computer prog
   </tr>
 
   <tr>
-  	<th colspan="2">Learning through data analysis</th>
+  	<th colspan="2" class="route">Learning through data analysis</th>
   </tr>
   <tr>
     <td><ul>
