@@ -18,10 +18,10 @@ Making interactive visualizations is an exciting way to also learn computer prog
   	<th colspan="2">Learning through web development</th>
   </tr>
   <tr>
-    <td>
+    <td><ul>
     	<li>Use core web languages like JavaScript and HTML and libraries such as d3.js to create highly customizable visualizations.</li>
     	<li>Learning to create even a simple histogram can take time, but you develop invaluable web and programming skills along the way.</li>
-    </td>
+    </ul></td>
     <td><ul>
     	<li>learn computer programming skills more generally</li>
     	<li>develop user design and web development experience</li>
