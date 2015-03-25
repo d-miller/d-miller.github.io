@@ -7,6 +7,27 @@ Table of pros and cons here:
 Web development: Highly customizable, 
 Data analysis: 
 
+<table>
+  <tr>
+    <th>Route for learning interactive data visualization</th>
+    <th>Description</th>
+    <th>Who this learning pathway will most interest</th>
+    <th>Pros/Cons</th>
+  </tr>
+  <tr>
+    <td>Web development</td>
+    <td>Learn core web languages like JavaScript and HTML to use libraries such as d3.js to   create highly customizable visualizations.</td>
+    <td>3</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Data analysis</td>
+    <td>4</td>
+    <td>9</td>
+    <td>3</td>
+  </th>
+</table>
+
 Columns: description, flexibility, development time, learning time, what skills you will pick up, core technologies/languages.
 
 
