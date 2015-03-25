@@ -11,11 +11,11 @@ Making interactive visualizations is an exciting way to also learn computer prog
 	}
 	thead {
 		  transform: translate(0,0.4em);
-		font-size: 1.5em;
+		font-size: 1.25em;
 		font-weight: bold;
 	}
 	.route {
-		font-size: 1.25em;
+		font-size: 1em;
 		font-style: italic;
 		transform: translate(0, 0.7em);
 	}
