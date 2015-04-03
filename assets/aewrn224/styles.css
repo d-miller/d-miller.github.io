@@ -313,6 +313,17 @@ body {
 	opacity: 0.6;
 }
 
+#tableNote {
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -2.5em;
+	margin-bottom: 1em;
+	font-family: "Helvetica Neue", Helvetica, Helvetica, sans-serif;
+	font-size: 0.8em;
+	opacity: 0.6;
+}
+
 #showMethods {
 	font-family: "Helvetica Neue", Helvetica, Helvetica, sans-serif;
 	cursor: pointer;
