@@ -279,7 +279,7 @@ body {
 }
 
 
-#title h1, #title h3 {
+#title h1, #title h3, #title h2 {
 	font-family: Helvetica;
     text-align: center;
 }
@@ -287,6 +287,10 @@ body {
 #title h1 {
 	font-size: 1.8em;
 	margin: 0px;
+}
+
+#title h2 {
+	font-size: 1.3em;
 }
 
 #title h3 {
@@ -374,16 +378,23 @@ body {
     pointer-events: all;
   }
 
+
+
   text {
     font-family: Helvetica;
-    font-size: 12;
-    text-anchor: middle;
+    font-size: 16;
+  }
+
+  .top25 text.name {
+    text-anchor: start;
+  }
+
+  .top25 text {
+  	text-anchor: middle;
     dominant-baseline: central;
   }
 
-  text.name {
-    text-anchor: start;
-  }
+
 
   text.prct {
     font-size: 25px;
@@ -400,5 +411,14 @@ body {
 
   .header text {
     font-weight: bold;
+  }
+
+  #eliteText {
+  	width: 750px; 
+  	margin-left: auto; 
+  	margin-right: auto;
+  	font-size: 14px;
+  	line-height: 1.5em;
+  	font-family: Helvetica Neue;
   }
 

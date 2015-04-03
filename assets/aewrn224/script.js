@@ -21,6 +21,7 @@ map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 map.zoomControl.setPosition('topright');
 map.options.minZoom = 4;
 map.options.maxZoom = 13;
+map.scrollWheelZoom.disable();
 
 //add schools
 d3.csv("data.csv", function(csv) {

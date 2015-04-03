@@ -22,7 +22,7 @@ var sizeTotal = d3.scale.linear().domain([50, 500]).range([11, 30]);
 var changeH = d3.scale.linear().domain([0, 13]).range([0, 18]);
 
 //create container elements
-var svg = d3.select("#table").append("svg")
+var svg = d3.select(".top25").append("svg")
     .attr("width", width + pad.left + pad.right)
     .attr("height", height + pad.top + pad.bottom);
 
