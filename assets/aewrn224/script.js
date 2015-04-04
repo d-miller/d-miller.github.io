@@ -1,3 +1,11 @@
+//jQuery for the navigation bar
+$(document).on("ready", function() {
+    $(".nav a").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+});
+
 //scale
 var scaleRB6 = ['rgb(178,24,43)','rgb(239,138,98)','rgb(253,219,199)','rgb(209,229,240)','rgb(103,169,207)','rgb(33,102,172)'];
 var colors = d3.scale.quantize().domain([30, 0]).range(scaleRB6);
