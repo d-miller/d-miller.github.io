@@ -4,8 +4,8 @@
   <link rel="stylesheet" href="styles.css">
   <script src='mapbox.js'></script>
   <script src="d3.v3.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
   <style>.leaflet-control-attribution { display: none; }</style> <!--remove Mapbox caption-->
   <style>
@@ -55,9 +55,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#mapCS">Map</a></li>
-            <li><a href="#elite">Elite Programs</a></li>
-            <li><a href="#top25rank">Top 25 Ranking</a></li>
+            <li id="link1" class="active"><a href="#mapCS">Map</a></li>
+            <li id="link2"><a href="#elite">Elite Programs</a></li>
+            <li id="link3"><a href="#top25rank">Top 25 Ranking</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="http://d-miller.github.io/about" target="blank_">By David Miller</a></li>
@@ -220,7 +220,7 @@
 
     <table>
       <col style="width: 330px;"><col style="width: 180px;">
-      <thead><tr><th>Participating BRAID Institutions</th><th>Women's Share of C.S. Degrees (2011-2013)</th></th></thead>
+      <thead><tr><th>Participating BRAID Institution</th><th>Women's Share of C.S. Degrees (2011-2013)</th></th></thead>
       <tr><td>Arizona State University</td><td><div style="background: rgb(103,169,207)">5.8%</div></td></tr>
       <tr><td>Missouri University of Science and Technology</td><td><div style="background: rgb(103,169,207)">8.1%</div></td></tr>
       <tr><td>New Jersey Institute of Technology</td><td><div style="background: rgb(103,169,207)">8.0%</div></td></tr>
