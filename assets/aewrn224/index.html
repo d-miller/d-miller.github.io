@@ -1,149 +1,46 @@
 <HTML>
 <head>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src='mapbox.js'></script>
-    <script src="d3.v3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
-    <style>.leaflet-control-attribution { display: none; }</style> <!--remove Mapbox caption-->
-    <style>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src='mapbox.js'></script>
+  <script src="d3.v3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+  <style>.leaflet-control-attribution { display: none; }</style> <!--remove Mapbox caption-->
+  <style>
+    .leaflet-right .leaflet-control {
+      margin-right: 5px;
+    }
 
-.legend {
-    line-height: 18px;
-    color: #555;
-    width: 85px;
-    font-size: 0.91em;
-}
-.legend i {
-    float: left;
-    margin-right: 8px;
-    background: white;
-    opacity: 0.7;
-    border-radius: 50%;
-  	width: 10px;
-  	height: 10px;
-  	margin-top: 4px;
-  	border: 1.5px solid black;
-}
-.legend .title {
-	font-weight: bold;
-}
-.legend .circles {
-	margin-left: 5px;
-}
+    .leaflet-bottom .leaflet-control {
+      margin-bottom: 5px;
+    }
 
-.legend .labelLegend div {
-	margin-left: 25px;
-	padding: 0;
-	position: absolute;
-}
+    .leaflet-popup-content {
+      padding: 0;
+    } 
 
-.legend .size div {
-	margin: 0;
-	margin-bottom: -12px;
-	padding: 0;
-	border-radius: 50%;
-	border: 1.5px solid black;
-}
-.leaflet-right .leaflet-control {
-  margin-right: 5px;
-}
+    .leaflet-popup-content-wrapper {
+      width: 200px;
+      border-radius: 10px;
+      border: 1px solid #a1a1a1;
+      box-shadow: 0 0 2px rgba(0,0,0,.3);
+      margin-top: -10px;
+      -moz-box-shadow: 0 0 2px rgba(0,0,0,.3);
+      -webkit-box-shadow: 0 0 2px rgba(0,0,0,.3);
+    }
 
-.leaflet-bottom .leaflet-control {
-  margin-bottom: 5px;
-}
+    .leaflet-popup-close-button {
+      display: none;
+    }
 
-.leaflet-popup-content {
-  padding: 0;
-} 
-
-.leaflet-popup-content-wrapper {
-  width: 200px;
-  border-radius: 10px;
-  border: 1px solid #a1a1a1;
-  box-shadow: 0 0 2px rgba(0,0,0,.3);
-  margin-top: -10px;
-  -moz-box-shadow: 0 0 2px rgba(0,0,0,.3);
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.3);
-}
-
-.leaflet-popup-close-button {
-  display: none;
-}
-
-.leaflet-popup-tip {
-  border-top: 10px solid lightgrey;
-}
-
-/*#navbar {
-  height: 45px; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-}*/
-
-#topbar {
-  height: 45px; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-}
-
-#topbar-container {
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 750px; 
-  margin-top: -.3em;
-}
-
-
-
-/*#navbar-container {
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 750px; 
-  margin-top: -.3em;
-}*/
-
-
-/*#nav {
-    margin-left: -37px;
-    text-align: justify;
-    min-width: 500px;
-    font-family: Helvetica;
-    font-size: 1.2em;
-}
-#nav:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-#nav li {
-    display: inline-block;
-    color: white;
-}*/
-
-
-</style>
+    .leaflet-popup-tip {
+      border-top: 10px solid lightgrey;
+    }
+  </style>
 </head>
 <body>
-<!--<
-  <div id="navbar" style="">
-  <div id="navbar-container">
-    <ul id="nav">
-        <li><a href="#">Interactive Map</a></li>
-        <li><a href="#">Trends At Elite Programs</a></li>
-        <li><a href="#">Top 25 Ranking</a></li>
-    </ul>
-  </div>
-</div>-->
-
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -154,7 +51,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">Women in Tech Majors</a>
+          <a class="navbar-brand">Women in Tech</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -273,7 +170,7 @@
   </div>
 
   <div id="eliteText" style="width: 750px; margin-left: auto; margin-right: auto; margin-top: 10px">
-  <p>Barriers preventing women from pursuing technology are <a href="http://www.aauw.org/research/solving-the-equation/" target="blank_">increasing</a>, despite the <a href="https://www.whitehouse.gov/the-press-office/2015/03/23/fact-sheet-president-obama-announces-over-240-million-new-stem-commitmen" target="blank_">millions of dollars</a> that are spent every year to reverse this trend.</p>
+  <p>Barriers preventing women from pursuing computing fields are <a href="http://www.aauw.org/research/solving-the-equation/" target="blank_">increasing</a>, despite the <a href="https://www.whitehouse.gov/the-press-office/2015/03/23/fact-sheet-president-obama-announces-over-240-million-new-stem-commitmen" target="blank_">millions of dollars</a> that are spent every year to reverse this trend.</p>
 
   <p>Women earned only 18% of the U.S.'s bachelor's degrees in computer and information sciences in 2013, down from 27% a decade prior. The numbers are even worse for data restricted to "pure" computer science (C.S.), which excludes related but distinct fields like information technology and computer graphics (see graph below).</p>
 
@@ -319,24 +216,28 @@
 
   <p id="showBRAID" style="color: #337ab7; cursor: pointer;">[What schools are participating in the BRAID initiative?]</p>
   <div id="BRAID" style="display: none">
-    <ul>
-      <li>Arizona State University: 15.8% women</li>
-      <li>Missouri University of Science and Technology: 8.1% women</li>
-      <li>New Jersey Institute of Technology: 8.0% women</li>
-      <li>University of California, Irvine: 10.5% women</li>
-      <li>University of Illinois at Chicago: 11.0% women</li>
-      <li>University of Maryland, Baltimore County: 12.9% women</li>
-      <li>University of Maryland, College Park: 12.5% women</li>
-      <li>University of Nebraska-Lincoln: 7.3% women</li>
-      <li>University of North Texas: 7.5% women</li>
-      <li>University of Rochester: 14.6% women</li>
-      <li>University of South Carolina: 12.5% women</li>
-      <li>University of Texas at El Paso: 20.4% women</li>
-      <li>University of Vermont: 6.0%</li>
-      <li>University of Wisconsin-Milwaukee: 6.2% women</li>
-      <li>Villanova University: 22.8% women</li>
-    </ul>
-    <p>Percentages above reflect statistics for 2011-2013 C.S. bachelor's degrees.</p>
+  <!--var scaleRB6 = ['rgb(178,24,43)','rgb(239,138,98)','rgb(253,219,199)','rgb(209,229,240)','rgb(103,169,207)','rgb(33,102,172)'];-->
+
+    <table>
+      <col style="width: 330px;"><col style="width: 180px;">
+      <thead><tr><th>Participating BRAID Institutions</th><th>Women's Share of C.S. Degrees (2011-2013)</th></th></thead>
+      <tr><td>Arizona State University</td><td><div style="background: rgb(103,169,207)">5.8%</div></td></tr>
+      <tr><td>Missouri University of Science and Technology</td><td><div style="background: rgb(103,169,207)">8.1%</div></td></tr>
+      <tr><td>New Jersey Institute of Technology</td><td><div style="background: rgb(103,169,207)">8.0%</div></td></tr>
+      <tr><td>University of California, Irvine</td><td><div style="background: rgb(209,229,240)">10.5%</div></td></tr>
+      <tr><td>University of Illinois at Chicago</td><td><div style="background: rgb(209,229,240)">11.0%</div></td></tr>
+      <tr><td>University of Maryland, Baltimore County</td><td><div style="background: rgb(209,229,240)">12.9%</div></td></tr>
+      <tr><td>University of Maryland, College Park</td><td><div style="background: rgb(209,229,240)">12.5%</div></td></tr>
+      <tr><td>University of Nebraska-Lincoln</td><td><div style="background: rgb(103,169,207)">7.3%</div></td></tr>
+      <tr><td>University of North Texas</td><td><div style="background: rgb(103,169,207)">7.5%</div></td></tr>
+      <tr><td>University of Rochester</td><td><div style="background: rgb(209,229,240)">14.6%</div></td></tr>
+      <tr><td>University of South Carolina</td><td><div style="background: rgb(209,229,240)">12.5%</div></td></tr>
+      <tr><td>University of Texas at El Paso</td><td><div style="background: rgb(239,138,98)">20.4%</div></td></tr>
+      <tr><td>University of Vermont</td><td><div style="background: rgb(103,169,207)">6.0%</div></td></tr>
+      <tr><td>University of Wisconsin-Milwaukee</td><td><div style="background: rgb(103,169,207)">6.2%</div></td></tr>
+      <tr><td>Villanova University</td><td><div style="background: rgb(239,138,98)">22.8%</div></td></tr>
+    </table>
+    <br>
   </div>
   <script>
     var displayBRAID = false;

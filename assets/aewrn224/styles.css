@@ -434,3 +434,73 @@ body {
   	font-family: Helvetica Neue;
   }
 
+.legend {
+    line-height: 18px;
+    color: #555;
+    width: 85px;
+    font-size: 0.91em;
+}
+.legend i {
+    float: left;
+    margin-right: 8px;
+    background: white;
+    opacity: 0.7;
+    border-radius: 50%;
+  	width: 10px;
+  	height: 10px;
+  	margin-top: 4px;
+  	border: 1.5px solid black;
+}
+.legend .title {
+	font-weight: bold;
+}
+.legend .circles {
+	margin-left: 5px;
+}
+
+.legend .labelLegend div {
+	margin-left: 25px;
+	padding: 0;
+	position: absolute;
+}
+
+.legend .size div {
+	margin: 0;
+	margin-bottom: -12px;
+	padding: 0;
+	border-radius: 50%;
+	border: 1.5px solid black;
+}
+
+#BRAID td, #BRAID th {
+	font-size: 14px;
+	font-weight: normal;
+	padding:3px 7px 2px 7px;
+}
+
+#BRAID td + td, #BRAID th + th {
+	text-align: center;
+}
+
+#BRAID {
+	margin-left: 100px;
+}
+
+#BRAID tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#BRAID table, #BRAID th, #BRAID td {
+   border: 1px solid black;
+}
+
+#BRAID td div {
+	width: 50px;
+  	background: green;
+  	margin-left: 58px;
+}
+
+#BRAID th {
+    background-color: #444;
+    color: white;
+}
