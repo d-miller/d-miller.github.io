@@ -16,23 +16,23 @@ $(function() {
   });
 });
 
-//jQuery for the navigation bar
+//jQuery for changing the active navigation link
 $(document).on("ready", function() {
 
 	//get scrolll positions of HTML sections
 	var pos2 = $("#elite").position().top - 30;
 	var pos3 = $("#top25rank").position().top - 30;
 
-  	//jQuery for changing the active navigation link
+  	//whenever the scroll position changes...
 	$(document).scroll(function() {
 	
-		//current position
+		//get current HTML section
 		var curr = $(document).scrollTop();
 		var section = 1;
 		if (curr > pos2) section = 2;
 		if (curr > pos3) section = 3;
 
-		//change active class if there's a difference
+		//change active class if there's a change in HTML section
 		var currSection = +$(".nav").find(".active").attr("num");
 		if (section != currSection) {
 			$(".nav").find(".active").removeClass("active");
