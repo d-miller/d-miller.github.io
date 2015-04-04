@@ -279,22 +279,22 @@ body {
 }
 
 
-#title h1, #title h3, #title h2 {
+#titleCustom h1, #titleCustom h3, #titleCustom h2 {
 	font-family: Helvetica;
     text-align: center;
 }
 
-#title h1 {
+#titleCustom h1 {
 	font-size: 1.8em;
 	margin: 0px;
 }
 
-#title h2 {
+#titleCustom h2 {
 	margin-bottom: 0;
 	font-size: 1.3em;
 }
 
-#title h3 {
+#titleCustom h3 {
 	font-weight: normal;
     font-size: 1.1em;
     color: #999;
@@ -309,7 +309,7 @@ body {
 	margin-top: 0.5em;
 	margin-bottom: 1em;
 	font-family: "Helvetica Neue", Helvetica, Helvetica, sans-serif;
-	font-size: 0.75em;
+	font-size: 0.85em;
 	border-top: 1px solid #ccc;
 	opacity: 0.6;
 }
@@ -328,7 +328,7 @@ body {
 #showMethods {
 	font-family: "Helvetica Neue", Helvetica, Helvetica, sans-serif;
 	cursor: pointer;
-	color: rgb(0, 0, 255);
+	color: #337ab7;
 
 }
 
@@ -336,9 +336,9 @@ body {
 	display: none;
 	margin-left: auto;
 	margin-right: auto; 
-	font-size: 0.75em; 
+	margin-bottom: 0px;
 	width: 750px; 
-	font-size: 0.8em; 
+	font-size: 0.9em; 
 	font-family: "Helvetica Neue", Helvetica, Helvetica, sans-serif;
 }
 
@@ -358,29 +358,29 @@ body {
   -webkit-box-shadow: 0 0 2px rgba(0,0,0,.3);
 }*/
 
-.tooltip {
+.tooltipLeaflet {
 	height: auto;
 	border-radius: 10px;
-	margin-top: -15px;
+	margin-top: -12px;
 	background: white;
 	padding: 3px;
 	font-family: Arial;
 }
 
-.tooltip .prctF {
+.tooltipLeaflet .prctF {
   font-size: 1.1em;
   text-align: left;
   background: lightblue; 
   padding: 0.2em;
 }
 
-.tooltip .name {
+.tooltipLeaflet .name {
   font-weight: normal;
   font-size: 0.9em;
 }
 
-.tooltip .degreeText {
-  padding-top: 0.3em;
+.tooltipLeaflet .degreeText {
+  padding-top: 0.7em;
   font-size: 0.7em;
   color: #666;
 }

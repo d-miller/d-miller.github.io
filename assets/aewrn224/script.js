@@ -41,7 +41,7 @@ d3.csv("data.csv", function(csv) {
   		var extremeColor = (colors(d.prct) == "rgb(178,24,43)") || (colors(d.prct) == "rgb(33,102,172)");
 		var prctStyle = 'style="background: ' + colors(d.prct) + '; color: ' + (extremeColor ? "white" : "black") + ';"';
 		var popupContent = 
-		'<div class="tooltip"><table><col style="width:90%"><col style="width:10%">' + 
+		'<div class="tooltipLeaflet"><table><col style="width:90%"><col style="width:10%">' + 
 		'<tr><td class="name">' + d.name + '</td>' + 
 		'<td><span class="prctF" ' + prctStyle + '>' + d.prctStr + '</span></td></tr>' + 
 		'<tr><td colspan="2" class="degreeText">' + d.numF + ' women (' + d.total + ' total), 2011-2013</td></tr></table></div>';
