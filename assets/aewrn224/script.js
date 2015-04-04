@@ -19,12 +19,6 @@ $(function() {
 //jQuery for the navigation bar
 $(document).on("ready", function() {
 
-	//event handler for clicking a navigation link
-    $(".nav a").on("click", function(){
-	    $(".nav").find(".active").removeClass("active");
-	    $(this).parent().addClass("active");
-  	});
-
 	//get scrolll positions of HTML sections
 	var pos2 = $("#elite").position().top - 30;
 	var pos3 = $("#top25rank").position().top - 30;
@@ -38,11 +32,14 @@ $(document).on("ready", function() {
 		if (curr > pos2) section = 2;
 		if (curr > pos3) section = 3;
 
-		//change active class
-		$(".nav").find(".active").removeClass("active");
-		if (section==1) $(".nav").find("#link1").addClass("active");
-		if (section==2) $(".nav").find("#link2").addClass("active");
-		if (section==3) $(".nav").find("#link3").addClass("active");
+		//change active class if there's a difference
+		var currSection = +$(".nav").find(".active").attr("num");
+		if (section != currSection) {
+			$(".nav").find(".active").removeClass("active");
+			if (section==1) $(".nav").find("#link1").addClass("active");
+			if (section==2) $(".nav").find("#link2").addClass("active");
+			if (section==3) $(".nav").find("#link3").addClass("active");
+		}
 	});
 });
 
