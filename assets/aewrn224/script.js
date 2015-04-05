@@ -101,6 +101,7 @@ buttonAll.on("click", showAll).style("cursor", "pointer");
 buttonTop25.on("click", showTop25).style("cursor", "pointer");
 
 //add schools
+var colleges = {};
 d3.csv("data.csv", function(csv) {
 	map.on('load', function(e) {
     	$('#map-ui').css({'display': 'block'});
@@ -118,9 +119,10 @@ d3.csv("data.csv", function(csv) {
 						opacity: 0.8,
 						fillColor: colors(d.prct),
 						fillOpacity: 0.8,
-						className: "leaflet-school-circle",
-						radius: getRad(d.numF)})
+						className: "leaflet-school-circle " + d.id,
+						radius: getRad(d.numF)});
 		college.addTo(map);
+		colleges[d.id] = college;
 
 		//configure tooltip
   		var extremeColor = (colors(d.prct) == "rgb(178,24,43)") || (colors(d.prct) == "rgb(33,102,172)");
@@ -131,8 +133,8 @@ d3.csv("data.csv", function(csv) {
 		'<td><span class="prctF" ' + prctStyle + '>' + d.prctStr + '</span></td></tr>' + 
 		'<tr><td colspan="2" class="degreeText">' + d.numF + ' women (' + d.total + ' total), 2011-2013</td></tr></table></div>';
 		college.bindPopup(popupContent);
-		college.on('mouseover', function (e) { this.openPopup();  });
-		college.on('mouseout', function (e) {  this.closePopup(); });
+		//college.on('mouseover', function (e) { this.openPopup();  });
+		//college.on('mouseout', function (e) {  this.closePopup(); });
 	}
 
 	//after circles have been added, bind data to them for using D3
@@ -172,12 +174,24 @@ function changeRegion(next) {
 	next.classed("g-selected", true);
 	if (regionNum==0) reset();
 	if (regionNum!=0) focus( +next.attr("data-num") );
-	d3.select(".g-view-title").text(next.attr("data-title"));
-	d3.select(".g-view-text").text(next.attr("data-text"));
+	d3.select(".g-view-title").html(next.attr("data-title"));
+	d3.select(".g-view-text").html(next.attr("data-text"));
+
+	//enable highlighting from the stepper text
+	d3.selectAll(".g-view-text a").on("mouseover", highlightSchl);
+	d3.selectAll(".g-view-text a").on("mouseout", deselectSchl);
 
 	//update the clicking buttons
 	d3.select(".g-prev").classed("g-disabled", regionNum == 0);
 	d3.select(".g-next").classed("g-disabled", regionNum == regionMax);
+}
+
+//helper function for highlighting school from stepper text
+function highlightSchl() {
+	colleges[d3.select(this).attr("schl")].openPopup();
+}
+function deselectSchl() {
+	colleges[d3.select(this).attr("schl")].closePopup();
 }
 
 //data on "focal" cities
