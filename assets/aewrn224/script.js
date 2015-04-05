@@ -133,8 +133,8 @@ d3.csv("data.csv", function(csv) {
 		'<td><span class="prctF" ' + prctStyle + '>' + d.prctStr + '</span></td></tr>' + 
 		'<tr><td colspan="2" class="degreeText">' + d.numF + ' women (' + d.total + ' total), 2011-2013</td></tr></table></div>';
 		college.bindPopup(popupContent);
-		//college.on('mouseover', function (e) { this.openPopup();  });
-		//college.on('mouseout', function (e) {  this.closePopup(); });
+		college.on('mouseover', function (e) { this.openPopup();  });
+		college.on('mouseout', function (e) {  this.closePopup(); });
 	}
 
 	//after circles have been added, bind data to them for using D3
