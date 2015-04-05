@@ -97,8 +97,8 @@ function showAll() {
 
 var buttonAll = d3.select("label[for='all']");
 var buttonTop25 = d3.select("label[for='top25']");
-buttonAll.on("click", showAll);
-buttonTop25.on("click", showTop25);
+buttonAll.on("click", showAll).style("cursor", "pointer");
+buttonTop25.on("click", showTop25).style("cursor", "pointer");
 
 //add schools
 d3.csv("data.csv", function(csv) {
