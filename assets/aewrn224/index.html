@@ -75,7 +75,20 @@
 	  <h1><strong>Where Should Tech Companies Recruit To Diversify?</strong></h1>
 	  <h3>Percent Women Among Computer Science (C.S.) College Graduates, 2011-2013</h3>
 	</div>
-  <div id="map"></div>
+  <div id="map">
+    <div id="map-ui">
+        <form class="toggle-year" action="">
+            <div class="active">
+                <input type="radio" name="year" id="y2000" value="y2000" class="radio"/>
+                <label for="y2000">All</label>
+            </div>
+            <div>
+                <input type="radio" name="year" id="y2014" value="y2014" class="radio" checked/>
+                <label for="y2014">Top 25</label>
+            </div>
+        </form>
+    </div>
+  </div>
 
   <!--Map legend for circles-->
   <div id='legend' style='display:none;'>

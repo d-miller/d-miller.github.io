@@ -74,21 +74,41 @@ map.options.minZoom = 4;
 map.options.maxZoom = 13;
 map.scrollWheelZoom.disable();
 
+//helper functions for showing all/top25 schools
+function showTop25() {
+	d3.selectAll(".leaflet-school-circle")
+	  .transition().duration(650)
+	  .style("opacity", function(d) { return (d.top25 == 1) ? 1 : 0});
+}
+function showAll() {
+	d3.selectAll(".leaflet-school-circle")
+	  .transition().duration(650)
+	  .style("opacity", 1);
+}
+
 //add schools
 d3.csv("data.csv", function(csv) {
+	map.on('load', function(e) {
+    	$('#map-ui').css({'display': 'block'});
+	});
+	
 	for (var i = 0; i < csv.length; i++) {
+
+		//grab data for individual school
 		var d = csv[i];
+
+		//add circle for the school to the map
 		var college = L.circleMarker([d.lat, d.lon], {
 						color: "black",
 						weight: 1.5,
 						opacity: 0.8,
 						fillColor: colors(d.prct),
 						fillOpacity: 0.8,
-						//stroke: false,
+						className: "leaflet-school-circle",
 						radius: getRad(d.numF)})
 		college.addTo(map);
 
-
+		//configure tooltip
   		var extremeColor = (colors(d.prct) == "rgb(178,24,43)") || (colors(d.prct) == "rgb(33,102,172)");
 		var prctStyle = 'style="background: ' + colors(d.prct) + '; color: ' + (extremeColor ? "white" : "black") + ';"';
 		var popupContent = 
@@ -96,18 +116,13 @@ d3.csv("data.csv", function(csv) {
 		'<tr><td class="name">' + d.name + '</td>' + 
 		'<td><span class="prctF" ' + prctStyle + '>' + d.prctStr + '</span></td></tr>' + 
 		'<tr><td colspan="2" class="degreeText">' + d.numF + ' women (' + d.total + ' total), 2011-2013</td></tr></table></div>';
-		/*var popupContent = 
-			'<table> <col style="width:90%"> <col style="width:90%">' + 
-			'<tr>' + 
-				'<td class="name">' + d.name + '</td>' + 
-				'<td><span class="prctF">' + d.prctStr + '</span></td>'
-			'</tr>' + 
-				'<tr><td colspan="2" class="degreeText"><span class="totDeg">645</span> total C.S. degrees, 2011-2013</td></tr>' +
-			'</table>';*/
 		college.bindPopup(popupContent);
 		college.on('mouseover', function (e) { this.openPopup();  });
 		college.on('mouseout', function (e) {  this.closePopup(); });
 	}
+
+	//after circles have been added, bind data to them for using D3
+	d3.selectAll(".leaflet-zoom-animated path").data(csv);
 
 });
 

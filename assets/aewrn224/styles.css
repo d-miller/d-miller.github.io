@@ -148,7 +148,7 @@ body {
 	z-index: 10;
 	top: 10;
 	left: 10;
-	display: none;
+	display: block;
 	color: #404040;
 	color: rgba(0,0,0,.75);
 	font-weight: 500;
