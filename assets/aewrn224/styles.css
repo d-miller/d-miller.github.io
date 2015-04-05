@@ -146,8 +146,8 @@ body {
 #map-ui {
 	position: relative;
 	z-index: 10;
-	top: 10;
-	left: 10;
+	top: 347;
+	left: 50;
 	display: block;
 	color: #404040;
 	color: rgba(0,0,0,.75);
@@ -168,7 +168,9 @@ body {
 	border: 1px solid #999;
 	border-color: rgba(0,0,0,.4);
 	border-radius: 3px;
-	padding: .5em 1em;
+	padding: .5em 0.5em;
+	width: 55px;
+	text-align: center;
 }
 
 #map-ui label[for='all'] {
@@ -176,19 +178,15 @@ body {
 	border-bottom-right-radius: 0px;
 	border-right: 1px solid #ddd;
 	border-right-color: rgba(0,0,0,.1);
-	width: 64px;
-	text-align: center;
 }
 
 #map-ui label[for='top25'] {
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	border-left: none;
-	width: 64px;
-	text-align: center;
 }
 
-#map-ui .active label {
+#map-ui label.active {
 	background-color: #a8a8a8;
 }
 

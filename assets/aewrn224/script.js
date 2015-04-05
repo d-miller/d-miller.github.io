@@ -64,34 +64,48 @@ map = L.mapbox.map('map', 'duner.k778d658');
 //L.mapbox.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
 //map = L.mapbox.map('map', 'd-miller.lkca85b8');
 
-var start = [38, -92.8];
+var start = [37, -93.4];
 map.setView(start, 4);
 map.legendControl.addLegend(document.getElementById('legend').innerHTML);
 
 //zooming options
-map.zoomControl.setPosition('topright');
+map.zoomControl.setPosition('bottomleft');
 map.options.minZoom = 4;
 map.options.maxZoom = 13;
 map.scrollWheelZoom.disable();
 
 //helper functions for showing all/top25 schools
 function showTop25() {
+	buttonTop25.classed("active", true);
+	buttonAll.classed("active", false);
 	d3.selectAll(".leaflet-school-circle")
-	  .transition().duration(650)
-	  .style("opacity", function(d) { return (d.top25 == 1) ? 1 : 0});
+	  .transition().duration(500)
+	  .style("opacity", function(d) { return (d.top25 == 1) ? 1 : 0})
+	  .each("end", function() {
+	  	d3.select(this).style("display", function(d) { return (d.top25 == 1) ? "" : "none"});
+	  });
+	  
 }
 function showAll() {
+	buttonTop25.classed("active", false);
+	buttonAll.classed("active", true);
 	d3.selectAll(".leaflet-school-circle")
-	  .transition().duration(650)
+	  .style("display", "")
+	  .transition().duration(500)
 	  .style("opacity", 1);
 }
+
+var buttonAll = d3.select("label[for='all']");
+var buttonTop25 = d3.select("label[for='top25']");
+buttonAll.on("click", showAll);
+buttonTop25.on("click", showTop25);
 
 //add schools
 d3.csv("data.csv", function(csv) {
 	map.on('load', function(e) {
     	$('#map-ui').css({'display': 'block'});
 	});
-	
+
 	for (var i = 0; i < csv.length; i++) {
 
 		//grab data for individual school
