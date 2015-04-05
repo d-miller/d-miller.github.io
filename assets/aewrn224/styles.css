@@ -171,17 +171,21 @@ body {
 	padding: .5em 1em;
 }
 
-#map-ui label[for='y2000'] {
+#map-ui label[for='all'] {
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-right: 1px solid #ddd;
 	border-right-color: rgba(0,0,0,.1);
+	width: 64px;
+	text-align: center;
 }
 
-#map-ui label[for='y2014'] {
+#map-ui label[for='top25'] {
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	border-left: none;
+	width: 64px;
+	text-align: center;
 }
 
 #map-ui .active label {
