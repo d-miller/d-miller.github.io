@@ -80,11 +80,11 @@
         <form class="toggle-year" action="">
             <div>
                 <input type="radio" class="radio"/>
-                <label for="all" class="active">All</label>
+                <label for="all" class="active" id="allButton">All</label>
             </div>
             <div>
                 <input type="radio" class="radio" checked/>
-                <label for="top25">Top 25</label>
+                <label for="top25" id="top25Button">Top 25</label>
             </div>
         </form>
     </div>
@@ -124,10 +124,10 @@
 	  <button class="g-prev g-disabled">Prev</button>
 	  <button class="g-next">Next</button>
 	    <div class="g-steps">
-	      <a class="g-step g-selected" data-num="0" data-title="The Nation" data-text="Only 14.2% of the U.S.'s computer science (C.S.) bachelor's degrees were awarded to women during 2011 to 2013, down from 24.2% a decade ago. The definition of &quot;C.S.&quot; used here excludes some related fields like information technology and computer graphics (see methodology).">The Nation</a>
+	      <a class="g-step g-selected" data-num="0" data-title="The Nation" data-text="Only 14.2% of the U.S.'s computer science (C.S.) bachelor's degrees were awarded to women during 2011 to 2013, down from 24.2% a decade ago. However, schools widely vary in attracting women to tech. Among <a id='top25Link'>top 25 C.S. programs</a>, <a schl='166683'>MIT</a> was #1 and <a schl='236948'>University of Washington</a> was #2 for graduating the most female C.S. majors.">The Nation</a>
 	      <a class="g-step" data-num="1" data-title="Boston" data-text="Some Boston universities such as <a schl='167358'>Northeastern</a> may want to adopt strategies from <a schl='166027'>Harvard</a> and <a schl='166683'>MIT</a> for recruiting women to tech. <a schl='166683'>MIT</a> is now #1 among top 25 C.S. programs for women's share of recent C.S. bachelor's degrees (32% women, up from 21% a decage ago).">Boston</a>
-	      <a class="g-step" data-num="2" data-title="New York City" data-text="Though some specific schools fall behind, most NYC universities exceed national averages in recruiting women to tech. Such successes could attract tech recruiters to NYC, especially considering the city's high production of C.S. degrees overall.">NYC</a>
-	      <a class="g-step" data-num="3" data-title="Washington D.C." data-text="D.C. beats all 50 states in women's share of recent C.S. bachelor's degrees at 25.0% women, compared to 14.2% nationally. However, one large D.C. school (<a schl='437097'>University of Management and Technology</a>) falls behind at 9.1% women.">DC</a>
+	      <a class="g-step" data-num="2" data-title="New York City" data-text="Though some specific schools fall behind, most NYC universities such as <a schl='190150'>Columbia</a> and <a schl='191241'>Fordham</a> exceed national averages in recruiting women to tech. Such successes could attract tech recruiters to NYC, especially considering the city's high production of C.S. degrees overall.">NYC</a>
+	      <a class="g-step" data-num="3" data-title="Washington D.C." data-text="D.C. beats all 50 states in women's share of recent C.S. bachelor's degrees at 25.0% women, compared to 14.2% nationally. SmartAsset also <a href='http://www.washingtonpost.com/news/capital-business/wp/2015/02/25/what-gender-wage-gap-d-c-is-the-best-city-for-women-in-technology/' target='_blank'>ranked</a> D.C. as the best city for women in technology based on U.S. Census Bureau data.">DC</a>
 	      <a class="g-step" data-num="4" data-title="Atlanta" data-text="<a schl='139940'>Georgia State</a> produced nearly three times as many female C.S. graduates than <a schl='139755'>Georgia Tech</a>, despite slightly fewer total C.S. graduates. <a schl='139755'>Georgia Tech's</a> prestigious C.S. program struggles in recruiting women to tech and has never exceeded national averages since at least 1987.">Atlanta</a>
 	      <a class="g-step" data-num="5" data-title="Chicago" data-text="Chicago overall meets national averages for awarding C.S. degrees to women (14% women). However, this comparision masks differences between higher performing schools such as <a schl='148627'>St Xavier</a> (28%) and <a schl='144050'>University of Chicago</a> (24%) and lower performing schools such as <a schl='144740'>DePaul</a> (7.2%) and <a schl='145600'>UIC</a> (11%).">Chicago</a>
 	      <a class="g-step" data-num="6" data-title="Salt Lake City" data-text="Men outnumbered women over 15 to 1 among Salt Lake City's recent C.S. graduates. Only 6.0% of these graduates were women, compared to 14% nationally. Neighboring universities such as <a schl='230038'>Brigham Young</a> (5.0% women) and <a schl='230728'>Utah State</a> (6.6% women) were also abysmal.">Salt Lake</a>

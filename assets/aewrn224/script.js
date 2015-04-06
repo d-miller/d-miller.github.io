@@ -149,11 +149,17 @@ d3.csv("data.csv", function(csv) {
 var region = d3.select(".g-step");
 var regionNum = 0;
 var regionMax = 9;
-d3.select(".g-view-title").text(region.attr("data-title"));
-d3.select(".g-view-text").text(region.attr("data-text"));
-//changeRegion();
 
-//add event listeners
+//initialize the view text
+d3.select(".g-view-title").text(region.attr("data-title"));
+d3.select(".g-view-text").html(region.attr("data-text"));
+d3.selectAll(".g-view-text a").on("mouseover", highlightSchl);
+d3.selectAll(".g-view-text a").on("mouseout", deselectSchl);
+d3.select("#top25Link").on("mouseover", function() { $("#top25Button").click(); })
+d3.select("#top25Link").on("mouseout", function() { $("#allButton").click(); })
+
+
+//add event listeners to the prev/next buttons
 d3.selectAll(".g-step").on("click", clickRegion);
 d3.select(".g-prev").on("click", prevRegion);
 d3.select(".g-next").on("click", nextRegion);
@@ -184,6 +190,10 @@ function changeRegion(next) {
 	//update the clicking buttons
 	d3.select(".g-prev").classed("g-disabled", regionNum == 0);
 	d3.select(".g-next").classed("g-disabled", regionNum == regionMax);
+
+	//enable highlighting of top 25 programs
+	d3.select("#top25Link").on("mouseover", function() { $("#top25Button").click(); })
+	d3.select("#top25Link").on("mouseout", function() { $("#allButton").click(); })
 }
 
 //helper function for highlighting school from stepper text
@@ -211,6 +221,7 @@ focal = [
 function focus(cityNum) {
 	var d = focal[cityNum];
 	map.setView([d.lat, d.lon], d.zoom);
+	//map.flyTo([d.lat, d.lon], d.zoom);
 }
 
 function reset() {

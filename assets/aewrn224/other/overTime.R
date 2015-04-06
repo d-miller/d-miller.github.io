@@ -11,7 +11,7 @@ graph <- function(ggvisObj, yTitle="", yLim=NULL) {
             layer_paths(  ~year, ~elite, stroke:="rgb(178,24,43)",  strokeWidth:=3) %>%
             layer_text(2000, ~nation[1]+1,   text := "National average",   fontSize:=15, font:="Arial", fill:="black") %>%
             layer_text(2000, ~elite[1]+0.8, text := "Elite programs", fontSize:=15, font:="Arial", fill:="rgb(178,24,43)") %>%
-            layer_text(2013, ~nation[14]-.7,   text := "14%",   fontSize:=15, font:="Arial", fill:="black") %>%
+            layer_text(2013, ~nation[14]-.6,   text := "14%",   fontSize:=15, font:="Arial", fill:="black") %>%
             layer_text(2013, ~elite[14]-.4, text := "17%", fontSize:=15, font:="Arial", fill:="rgb(178,24,43)") %>%
             add_axis("x", title="Year Earned Bachelor's Degree", title_offset=50, 
                      grid=FALSE, tick_size_end=0,

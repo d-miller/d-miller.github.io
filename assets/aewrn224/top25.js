@@ -20,6 +20,8 @@ var colors = d3.scale.quantize().domain([30, 0]).range(scaleRB6);
 var sizeNumF = d3.scale.linear().domain([10, 100]).range([11, 30]);
 var sizeTotal = d3.scale.linear().domain([50, 500]).range([11, 30]);
 var changeH = d3.scale.linear().domain([0, 13]).range([0, 18]);
+var prctBar = d3.scale.linear().domain([0, 32]).range([0, 25]);
+
 
 //create container elements
 var svg = d3.select(".top25").append("svg")
@@ -173,9 +175,7 @@ d3.csv("top25.csv", function(data) {
     s.append("rect")
       .attr("class", "change")
       .attr("x", xChange+40)
-      .attr("y", function(d) { 
-        return (d.incr==0) ?  0 : - changeH(Math.abs(d.change)); 
-      })
+      .attr("y", function(d) { return (d.incr==0) ?  0 : - changeH(Math.abs(d.change)); })
       .attr("width", 5)
       .attr("height", function(d) { return changeH(Math.abs(d.change)); })
       .style("fill", function(d) { return (d.incr==1) ? scaleRB6[0] : scaleRB6[5]; });
@@ -183,6 +183,15 @@ d3.csv("top25.csv", function(data) {
       .attr("class", "change")
       .attr({x1: xChange+40-3, x2: xChange+40+8, class: "change"})
       .style({"stroke-width": 1, stroke: "#111"});
+
+    //change percent bars
+    /*s.append("rect")
+      .attr("class", "change")
+      .attr("x", xPrct+40)
+      .attr("y", function(d) { return 7-prctBar(Math.abs(d.prct)); })
+      .attr("width", 5)
+      .attr("height", function(d) { return prctBar(Math.abs(d.prct)); });*/
+
   });
 
 });
