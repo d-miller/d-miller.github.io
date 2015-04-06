@@ -208,7 +208,7 @@ function deselectSchl() {
 focal = [
   {num: 0, name: "Chicago", lat: 41.8369, lon: -87.6847, zoom: 5},
   {num: 1, name: "Boston", lat: 42.3601, lon: -71.0589-.08, zoom: 11},
-  {num: 2, name: "New York City", lat: 40.7127, lon: -74.0059+.1, zoom: 10},
+  {num: 2, name: "New York City", lat: 40.7127+.04, lon: -74.0059+.1, zoom: 10},
   {num: 3, name: "Washington D.C.", lat: 38.9047, lon: -77.0164-.1, zoom: 11},
   {num: 4, name: "Atlanta", lat: 33.7550+.1, lon: -84.3900, zoom: 10},
   {num: 5, name: "Chicago", lat: 41.8369+.05, lon: -87.6847, zoom: 10},
