@@ -91,7 +91,7 @@ var g = svg.append("g").attr("transform", "translate(" + pad.left + ", " + pad.t
 
 
 //load data...
-d3.csv("top25.csv", function(data) {
+d3.csv("data/top25.csv", function(data) {
 
   ///////////////////////////////
   //  FIXED POSITION ELEMENTS  //
