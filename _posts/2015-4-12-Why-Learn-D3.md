@@ -23,7 +23,7 @@ Here's a secret (<i>sssh!</i>) about creating great data visualizations: take id
 
 Remember that scatterplot visualization on my <a target="_blank" href="http://d-miller.github.io/Introducing-Blog/">first blog post</a>? Think I created that from scatch? Pssh, as if! Karl Broman's <a href="https://www.biostat.wisc.edu/~kbroman/D3/corr_w_scatter/" target="_blank">initial code</a> served as the basis for that project.
 
-<div align="center"><img src="clueless.gif" /></div>
+<div align="center"><img src="../images/clueless.gif" /></div>
 
 And that's the great news about D3: there are thousands - <i><a href="http://christopheviau.com/d3list/gallery.html" target="_blank">thousands!</a></i> - of great D3 examples to work from. That <a target="_blank" href="http://d-miller.github.io/Introducing-Blog/">scatterplot example</a>? Yup that was D3. The New York Times' <a href="http://benschmidt.org/profGender/" target="_blank">512 paths</a> to the White House visualization? Yup D3. Visualization of gendered language in <a href="http://benschmidt.org/profGender/" target="_blank">RateMyProfessor reviews</a>? You should know the answer by now.
 
@@ -70,7 +70,7 @@ You learn these broader skills because D3 exposes you to the internals of a webp
 
 Not all JavaScript libraries are like D3 in this regard. Case in point: I was working with <a href="http://leafletjs.com/" target="_blank">Leaflet</a> the other day, which is a JavaScript library for making pretty maps. I thought its circle function would make "circles" on the webpage. Silly me, it actually makes "paths." Confused? Don't worry, so was I.
 
-<div align="center"><img src="leaflet.png" /></div>
+<div align="center"><img src="../assets/leaflet.png" /></div>
 
 The same confusion doesn't happen with D3. When you append a "circle" using D3, you really are adding a "circle" to the webpage, not some mischievous "path" masquerading as a "circle." I'll talk more about this in the next post about <i>how</i> to learn D3!<
 
