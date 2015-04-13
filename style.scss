@@ -216,7 +216,7 @@ img {
   @include mobile {
     float: none;
     display: block;
-    margin: 5px auto;
+    margin: 3px auto;
   }
 }
 
@@ -253,7 +253,7 @@ nav {
 
   @include mobile {
     float: none;
-    margin-top: 5px;
+    margin-top: 3px;
     display: block;
     font-size: 16px;
   }
