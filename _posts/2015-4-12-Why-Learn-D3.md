@@ -72,6 +72,6 @@ Not all JavaScript libraries are like D3 in this regard. Case in point: I was wo
 
 <div align="center"><img src="../images/leaflet.png" /></div>
 
-The same confusion doesn't happen with D3. When you append a "circle" using D3, you really are adding a "circle" to the webpage, not some mischievous "path" masquerading as a "circle." I'll talk more about this in the next post about <i>how</i> to learn D3!<
+The same confusion doesn't happen with D3. When you append a "circle" using D3, you really are adding a "circle" to the webpage, not some mischievous "path" masquerading as a "circle." I'll talk more about this in the next post about <i>how</i> to learn D3!
 
 Bottom line: you learn a lot about foundational web skills when learning about D3, unlike some other visualization frameworks.
