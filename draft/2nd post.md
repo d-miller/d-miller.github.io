@@ -1,29 +1,32 @@
-The JavaScript library d3.js or D3 is arguably the most influential tool for creating interactive data visualziations. This post focuses on (a) what is d3.js, (b) why you should learn it, and (c) what other coding and web skills you will learn along the way. 
+5 Reasons Why You Should Learn D3.js
+
+The JavaScript library D3.js or simply D3 is arguably the most influential tool for creating interactive data visualziations. This post focuses on what is d3.js and why you should learn it. Oh and Koalas. This post is also about Koalas. 
 
 # What is d3.js?
 
-D3 stands for Data-Driven Documents ()
+D3 stands for Data-Driven Documents. 
 
 Mike Bostock
 
-(so you know you're learning from the best)
+# What is d3.js?
+
+1. Lots of examples.
+
+Why that's important
+
+2. Large open-source community. 
+
+As of April 2015, D3 has been forked over 9,000 on GitHub. In slightly less technical lingo, that means the has been used by other developers a lot of freaking times. 
+
+Even if you're not a developer, this large open-source community is great news for you.
 
 
- d3.js, (b) w
+3. Seriously, so many examples.
+
+No good post is complete with fun visuals, right? Also 
 
 
-10 = 3
-30 = 5.2
-50 = 6.7
-70 = 7.9
-90 = 9
+4. Knowing D3 = hirable skills.
 
-12.5 = 3
-37.5 = 5.2
-62.5 = 6.7
-87.5
+5. You learn core web development skills along the way. 
 
-
-
-
- 'rgb(178,24,43)','rgb(239,138,98)','rgb(253,219,199)','rgb(209,229,240)','rgb(103,169,207)','rgb(33,102,172)'
