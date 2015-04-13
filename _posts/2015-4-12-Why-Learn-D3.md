@@ -7,7 +7,7 @@ The JavaScript library D3.js is arguably the most influential tool for creating 
 
 D3 stands for <a href="http://d3js.org/" target="_blank">Data-Driven Documents</a> and is widely used to create interactive data visualizations on the web. Its main author, <a href="http://bost.ocks.org/mike/" target="_blank">Mike Bostock</a>, is a New York Times graphics editor. In other words, D3 is used by top people in the field.
 
-<div align="center"><img src="D3.png" /></div>
+<div align="center"><img src="../images/D3.png" /></div>
 
 Learning D3 is ideal for people who also want to develop web development and some JavaScript programming skills. There are other web visualization frameworks, so below are top 5 reasons why D3 is so great. The next post will focus on <i>how</i> to learn D3.
 
