@@ -70,7 +70,7 @@ You learn these broader skills because D3 exposes you to the internals of a webp
 
 Not all JavaScript libraries are like D3 in this regard. Case in point: I was working with <a href="http://leafletjs.com/" target="_blank">Leaflet</a> the other day, which is a JavaScript library for making pretty maps. I thought its circle function would make "circles" on the webpage. Silly me, it actually makes "paths." Confused? Don't worry, so was I.
 
-<div align="center"><img src="../assets/leaflet.png" /></div>
+<div align="center"><img src="../images/leaflet.png" /></div>
 
 The same confusion doesn't happen with D3. When you append a "circle" using D3, you really are adding a "circle" to the webpage, not some mischievous "path" masquerading as a "circle." I'll talk more about this in the next post about <i>how</i> to learn D3!<
 
