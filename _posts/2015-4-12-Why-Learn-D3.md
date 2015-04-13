@@ -3,10 +3,9 @@ layout: post
 title: 5 Reasons To Learn D3.js For Interactive Visualization
 ---
 
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <p>The JavaScript library D3.js is arguably the most influential tool for creating interactive data visualziations. This post focuses on what D3 is and why you should learn it. Oh and koalas. This post is also about koalas. And lots of eye candy.</p>
+The JavaScript library D3.js is arguably the most influential tool for creating interactive data visualziations. This post focuses on what D3 is and why you should learn it. Oh and koalas. This post is also about koalas. And lots of eye candy.
 
-    <p>D3 stands for <a href="http://d3js.org/" target="_blank">Data-Driven Documents</a> and is widely used to create interactive data visualizations on the web. Its main author, <a href="http://bost.ocks.org/mike/" target="_blank">Mike Bostock</a>, is a New York Times graphics editor. In other words, D3 is used by top people in the field.</p>
+D3 stands for <a href="http://d3js.org/" target="_blank">Data-Driven Documents</a> and is widely used to create interactive data visualizations on the web. Its main author, <a href="http://bost.ocks.org/mike/" target="_blank">Mike Bostock</a>, is a New York Times graphics editor. In other words, D3 is used by top people in the field.
 
     <div align="center"><img src="D3.png" /></div>
 
