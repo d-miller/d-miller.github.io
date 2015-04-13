@@ -9,41 +9,41 @@ D3 stands for <a href="http://d3js.org/" target="_blank">Data-Driven Documents</
 
 <div align="center"><img src="D3.png" /></div>
 
-    <p>Learning D3 is ideal for people who also want to develop web development and some JavaScript programming skills. There are other web visualization frameworks, so below are top 5 reasons why D3 is so great. The next post will focus on <i>how</i> to learn D3.</p>
+Learning D3 is ideal for people who also want to develop web development and some JavaScript programming skills. There are other web visualization frameworks, so below are top 5 reasons why D3 is so great. The next post will focus on <i>how</i> to learn D3.
 
-    <p>Learning D3 can take time, especially if you have no prior web development experience. Hence, D3 is probably not for people who want to just quickly expand their visualization skills. (But there are <a href="http://d-miller.github.io/Two-Routes/" target="_blank">other pathways</a> for learning interactive visualization skills.)</p>
+Learning D3 can take time, especially if you have no prior web development experience. Hence, D3 is probably not for people who want to just quickly expand their visualization skills. (But there are <a href="http://d-miller.github.io/Two-Routes/" target="_blank">other pathways</a> for learning interactive visualization skills.)
 
-    <p><a href="http://d-miller.github.io/Two-Routes/">[RELATED POST: Two Routes For Learning Interactive Data Visualization]</a></p>
+<a href="http://d-miller.github.io/Two-Routes/">[RELATED POST: Two Routes For Learning Interactive Data Visualization]</a>
 
-    <p>But don't let that scare you away just yet. You haven't even gotten to the koalas! So check out the eye candy below, regardless of what learning pathway you choose. Now back to the top 5 reasons for learning D3...</p> 
+But don't let that scare you away just yet. You haven't even gotten to the koalas! So check out the eye candy below, regardless of what learning pathway you choose. Now back to the top 5 reasons for learning D3...
 
-    <p><strong>1. Lots of examples.</strong></p>
+<strong>1. Lots of examples.</strong>
 
-    <p>Here's a secret (<i>sssh!</i>) about creating great data visualizations: take ideas from other examples you've liked! That's often the most effective way to make you look like and become a master data visualizer.</p>
+Here's a secret (<i>sssh!</i>) about creating great data visualizations: take ideas from other examples you've liked! That's often the most effective way to make you look like and become a master data visualizer.
 
-    <p>Remember that scatterplot visualization on my <a target="_blank" href="http://d-miller.github.io/Introducing-Blog/">first blog post</a>? Think I created that from scatch? Pssh, as if! Karl Broman's <a href="https://www.biostat.wisc.edu/~kbroman/D3/corr_w_scatter/" target="_blank">initial code</a> served as the basis for that project.</p>
+Remember that scatterplot visualization on my <a target="_blank" href="http://d-miller.github.io/Introducing-Blog/">first blog post</a>? Think I created that from scatch? Pssh, as if! Karl Broman's <a href="https://www.biostat.wisc.edu/~kbroman/D3/corr_w_scatter/" target="_blank">initial code</a> served as the basis for that project.
 
-    <div align="center"><img src="clueless.gif" /></div>
+<div align="center"><img src="clueless.gif" /></div>
 
-    <p>And that's the great news about D3: there are thousands - <i><a href="http://christopheviau.com/d3list/gallery.html" target="_blank">thousands!</a></i> - of great D3 examples to work from. That <a target="_blank" href="http://d-miller.github.io/Introducing-Blog/">scatterplot example</a>? Yup that was D3. The New York Times' <a href="http://benschmidt.org/profGender/" target="_blank">512 paths</a> to the White House visualization? Yup D3. Visualization of gendered language in <a href="http://benschmidt.org/profGender/" target="_blank">RateMyProfessor reviews</a>? You should know the answer by now.</p>
+And that's the great news about D3: there are thousands - <i><a href="http://christopheviau.com/d3list/gallery.html" target="_blank">thousands!</a></i> - of great D3 examples to work from. That <a target="_blank" href="http://d-miller.github.io/Introducing-Blog/">scatterplot example</a>? Yup that was D3. The New York Times' <a href="http://benschmidt.org/profGender/" target="_blank">512 paths</a> to the White House visualization? Yup D3. Visualization of gendered language in <a href="http://benschmidt.org/profGender/" target="_blank">RateMyProfessor reviews</a>? You should know the answer by now.
 
-    <p>See excellent curated lists of D3 examples <a href="https://github.com/mbostock/d3/wiki/Gallery" target="_blank">here</a> and <a href="http://christopheviau.com/d3list/gallery.html" target="_blank">here</a>. Many of these examples are posted online because developers <i>want</i> others to re-use their code. Just be sure to give credit where credit is due :)</p>
+See excellent curated lists of D3 examples <a href="https://github.com/mbostock/d3/wiki/Gallery" target="_blank">here</a> and <a href="http://christopheviau.com/d3list/gallery.html" target="_blank">here</a>. Many of these examples are posted online because developers <i>want</i> others to re-use their code. Just be sure to give credit where credit is due :)
 
-    <p><strong>2. Vibrant open-source community.</strong></p>
+<strong>2. Vibrant open-source community.</strong>
     
-    <p>When I have a question about D3 ("How do I use D3 together with Leaflet???"), I often Google the issue and then quickly find a great <a href="http://stackoverflow.com/questions/21216347/achieving-animated-zoom-with-d3-and-leaflet" target="_blank">StackOverflow</a> or <a href="http://bost.ocks.org/mike/leaflet/" target="_blank">blog post</a> that addresses it. These extensive (<i>free!</i>) resources are available because of the very large and vibrant open-source community behind D3.</p>
-    <p>D3 has been forked over 9,000 times on <a target="_blank" href="https://github.com/mbostock/d3">Github</a>, meaning that other developers are also constantly extending D3. For instance, third-party "wrapper" libraries such as <a target="_blank" href="http://nvd3.org/">NVD3</a> and <a target="_blank" href="http://trifacta.github.io/vega/">Vega</a> aim to speed up development time for creating common types of D3 visualizations. These wrapper libraries sometimes have limited customizability, but that may not be a concern depending on the project.
-    </p>
+When I have a question about D3 ("How do I use D3 together with Leaflet???"), I often Google the issue and then quickly find a great <a href="http://stackoverflow.com/questions/21216347/achieving-animated-zoom-with-d3-and-leaflet" target="_blank">StackOverflow</a> or <a href="http://bost.ocks.org/mike/leaflet/" target="_blank">blog post</a> that addresses it. These extensive (<i>free!</i>) resources are available because of the very large and vibrant open-source community behind D3.
 
-    <p><strong>3. Seriously, so many examples.</strong></p>
+D3 has been forked over 9,000 times on <a target="_blank" href="https://github.com/mbostock/d3">Github</a>, meaning that other developers are also constantly extending D3. For instance, third-party "wrapper" libraries such as <a target="_blank" href="http://nvd3.org/">NVD3</a> and <a target="_blank" href="http://trifacta.github.io/vega/">Vega</a> aim to speed up development time for creating common types of D3 visualizations. These wrapper libraries sometimes have limited customizability, but that may not be a concern depending on the project.
 
-    <p>OK enough text for now. More eye candy! Remember the promise of koalas? Well find them by splitting circles with your mouse cursor below. All the examples below used D3.</p>
-    <iframe src="http://www.koalastothemax.com/" width="760" height="600" style="margin-left: 0px;" scrolling="no"></iframe>
-    <br>
+<strong>3. Seriously, so many examples.</strong>
 
-    <p>The showreel below is also gratuitous eye candy, but also shows a range of charts for showing time series comparisons (<a target="_blank" href="http://bl.ocks.org/mbostock/raw/1256572/">original link</a>).</p>
-    <iframe src="http://bl.ocks.org/mbostock/raw/1256572/" width="960" height="500" style="margin-left: -105px;" scrolling="no"></iframe>
-    <br>
+OK enough text for now. More eye candy! Remember the promise of koalas? Well find them by splitting circles with your mouse cursor below. All the examples below used D3.
+<iframe src="http://www.koalastothemax.com/" width="760" height="600" style="margin-left: 0px;" scrolling="no"></iframe>
+<br>
+
+The showreel below is also gratuitous eye candy, but also shows a range of charts for showing time series comparisons (<a target="_blank" href="http://bl.ocks.org/mbostock/raw/1256572/">original link</a>).
+<iframe src="http://bl.ocks.org/mbostock/raw/1256572/" width="960" height="500" style="margin-left: -105px;" scrolling="no"></iframe>
+<br>
 
     <p>I find these wind patterns beautiful and easy to understand (<a target="_blank" href="http://air.nullschool.net/">original link</a>). The New York Times also used this idea to show <a target="_blank" href="http://www.nytimes.com/interactive/2012/11/11/sunday-review/counties-moving.html">changing U.S. presidential voting patterns</a>.</p>
     <iframe src="http://air.nullschool.net/" width="960" height="500" style="margin-left: -105px;" scrolling="no"></iframe>
