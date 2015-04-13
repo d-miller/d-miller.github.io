@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 Reasons To Learn D3.js
+title: 5 Reasons to Learn D3.js
 ---
 
 The JavaScript library D3.js is arguably the most influential tool for creating interactive data visualziations. This post focuses on what D3 is and why you should learn it. Oh and koalas. This post is also about koalas. And lots of eye candy.
