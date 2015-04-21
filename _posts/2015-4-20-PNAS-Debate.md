@@ -3,7 +3,7 @@ layout: post
 title: Data Review: Preference for Female Tenure-Track Applicants Is Robust
 ---
 
-I respond to Dr. Zuleyka Zevallos’s critique of the [PNAS study](dx.doi.org/10.1073/pnas.1418878112) on STEM faculty hiring bias by Drs. Wendy Williams and Stephen Ceci. On April 19th, 2015, I submitted the below text as a comment to [her blog post](http://othersociologist.com/2015/04/16/myth-about-women-in-science/). The comment was not published.
+I respond to Dr. Zuleyka Zevallos’s critique of the PNAS study on STEM faculty hiring bias by Drs. Wendy Williams and Stephen Ceci. On April 19th, 2015, I submitted the below text as a comment to her blog post. The comment was not published.
 
 Zuleyka, thank you for your engaging and well researched perspective. On Twitter, you mentioned that you were interested in my take on the study’s methods. So here are my thoughts.
 
@@ -47,8 +47,6 @@ You raise a valuable point, though, that we should be cautious about generalizin
 
 Scientists prefer *actual* female tenure-track applicants too. As I’ve noted elsewhere, “the proportion of women among tenure-track applicants increased substantially as jobseekers advanced through the process from applying to receiving job offers.”
 
-https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212
-
 This real-world preference for female applicants may come as a surprise to some. You wouldn’t learn about these real-world data by reading the introduction or discussion sections of the 2012 PNAS study, for instance. 
 
 That paper’s introduction section does acknowledge a scholarly debate about gender bias. But it doesn’t discuss the data that surround the debate. The discussion section makes one very brief reference to correlational data, but is silent beyond that. 
@@ -60,8 +58,6 @@ She acknowledged knowing about those real-world data, but quickly dismissed them
 Unfortunately, however, I’ve found that dismissing evidence simply because it’s “correlational” can stunt productive discussion. In one instance, an academic journal declined to even send a manuscript of mine out for peer review “due to the strictly correlational nature of the data.” No specific concerns were mentioned, other than the study being merely “correlational.”
 
 Moss-Racusin’s most recent paper on gender bias pretends that a scholarly debate doesn’t even exist. Her most recent paper cites an earlier paper by Ceci and Williams, but only to say that “among other factors (Ceci & Williams, 2011), gender bias may play a role in constraining women’s STEM opportunities.”
-
-dx.doi.org/10.1177/0361684314565777
 
 Failing to acknowledge this debate prevents newcomers to this conversation from learning about the real-world, “correlational” data. All data points should be discussed, including both the earlier and new PNAS studies on gender bias. The real-world data, no doubt, have ambiguity attached to them. But they deserve discussion nevertheless. 
 
@@ -83,7 +79,6 @@ That reviewer still has a few other concerns. For instance, the reviewer noted t
 
 The PNAS study was notable for having seven reviewers because the norm is two. The earlier 2012 PNAS study had two reviewers. I’ve reviewed for PNAS myself (not on a gender bias study). The journal published that study with only myself and one other scholar as the peer reviewers. The journal’s website even notes that having two reviewers is common at PNAS.
 
-http://www.pnas.org/site/authors/guidelines.xhtml
 
 So having seven reviewers is extremely uncommon. My guess is that the journal’s editorial board knew that the results would be controversial and therefore took heroic efforts to protect the reputation of the journal. PNAS has come under fire by multiple scientists who repeatedly criticize the journal for letting studies simply “slip by” and get published because of an old boy’s network. 
 
@@ -104,5 +99,3 @@ So that’s my take on the methods. I welcome your thoughts in response. I doubt
 But the current study’s diverse methods and robust results indicate that hiring STEM faculty is likely not one of those contexts.
 
 Disclaimer: Ceci was the editor of a study I recently published in Frontiers in Psychology. I have been in email conversation with Williams and Ceci, but did not send them a draft of this comment before posting. I was not asked by them to write this comment.
-
-dx.doi.org/10.3389/fpsyg.2015.00037
