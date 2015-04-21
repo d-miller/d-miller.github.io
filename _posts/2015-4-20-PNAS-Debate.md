@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Review: 
+title: Data Review 
 ---
 
 I respond to Dr. Zuleyka Zevallos’s critique of the PNAS study on STEM faculty hiring bias by Drs. Wendy Williams and Stephen Ceci. On April 19th, 2015, I submitted the below text as a comment to her blog post. The comment was not published.
