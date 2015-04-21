@@ -19,7 +19,7 @@ You note how emails were sent out to 2,090 professors in the first three of five
 
 You critique this control experiment because, “including psychology as a control is not a true reflection of gender bias in broader STEM fields.” Would that experiment have been better if it incorporated other STEM fields? Sure.
 
-But there’s other data that also speak to this issue. Analyses reported in the Supporting Information found that respondents and nonrespondents were similar “in terms of their gender, rank, and discipline.” And that finding held true across all four sampled STEM fields, not just psychology. 
+But there’s other data that also speak to this issue. Analyses reported in the [Supporting Information](http://www.pnas.org/content/suppl/2015/04/08/1418878112.DCSupplemental/pnas.1418878112.sapp.pdf) found that respondents and nonrespondents were similar “in terms of their gender, rank, and discipline.” And that finding held true across all four sampled STEM fields, not just psychology. 
 
 The authors note this type of analysis “has often been the only validation check researchers have utilized in experimental email surveys.” And often such analyses aren’t even done in many studies. Hence, the control experiment with psychology was their attempt to improve prior methodological approaches and was only one part of their strategy for assessing self-selection bias.
 
@@ -27,9 +27,9 @@ The authors note this type of analysis “has often been the only validation che
 
 You noted that, for faculty raters, “it is very easy to see from their study design that the researchers were examining gender bias in hiring.” I agree this might be a potential concern. 
 
-But they did have data addressing that issue. As noted in the Supporting Information, “when a subset of 30 respondents was asked to guess the hypothesis of the study, none suspected it was related to applicant gender.” Many of those surveyed did think the study was about hiring biases for “analytic powerhouses” or “socially-skilled colleagues.” But not about gender biases, specifically. In fact, these descriptors were added to mask the true purpose of the study. And importantly, the gendered descriptors were counter-balanced.
+But they did have data addressing that issue. As noted in the [Supporting Information](http://www.pnas.org/content/suppl/2015/04/08/1418878112.DCSupplemental/pnas.1418878112.sapp.pdf), “when a subset of 30 respondents was asked to guess the hypothesis of the study, none suspected it was related to applicant gender.” Many of those surveyed did think the study was about hiring biases for “analytic powerhouses” or “socially-skilled colleagues.” But not about gender biases, specifically. In fact, these descriptors were added to mask the true purpose of the study. And importantly, the gendered descriptors were counter-balanced.
 
-The fifth experiment also addresses this concern by presenting raters with only one applicant. This methodological feature meant that raters couldn’t compare different applicants and then infer that the study was about gender bias. A female preference was still found even in this setup that more closely matched the earlier 2012 PNAS study.
+The fifth experiment also addresses this concern by presenting raters with only one applicant. This methodological feature meant that raters couldn’t compare different applicants and then infer that the study was about gender bias. A female preference was still found even in this setup that more closely matched the earlier [2012 PNAS study](http://dx.doi.org/10.1073/pnas.1211286109).
 
 # C. How well did the study simulate the real world?
 
@@ -41,7 +41,7 @@ In that experiment, 35 engineering professors favored women by 3-to-1.
 
 Could the evidence for CV evaluation be strengthened? Absolutely. With the right resources (time; money), any empirical evidence can be strengthened. That experiment with CVs could have sampled more faculty or other fields of study. But let’s also consider that this study had 5 experiments involving 873 participants, which took three years for data collection. 
 
-Now let’s contrast the resources invested in the widely reported 2012 PNAS study. That study had 1 experiment involving 127 participants, which took two months for data collection. In other words, this current PNAS study invested more resources than the earlier one by almost 7:1 for number of participants and over 18:1 for time collecting data. The current PNAS study also replicated its findings across five experiments, whereas the earlier study had no replication experiment. 
+Now let’s contrast the resources invested in the widely reported [2012 PNAS study](http://dx.doi.org/10.1073/pnas.1211286109). That study had 1 experiment involving 127 participants, which took two months for data collection. In other words, this current PNAS study invested more resources than the earlier one by almost 7:1 for number of participants and over 18:1 for time collecting data. The current PNAS study also replicated its findings across five experiments, whereas the earlier study had no replication experiment. 
 
 My point is this: the available data show that the results for narrative summaries extend to CVs. Evidence for the CV results could be strengthened, but that involves substantial time and effort. Perhaps the results don’t extend to evaluation of CVs in, say, biology. But we have no particular reason to suspect that. 
 
