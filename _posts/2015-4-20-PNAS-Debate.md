@@ -77,15 +77,15 @@ Enter data, stage Experiment 5.
 
 That experiment more closely resembled the earlier 2012 PNAS paper and still found similar results by presenting only one applicant to each rater. These new data definitely did help assuage the critical reviewer’s concerns. 
 
-That reviewer still has a few other concerns. For instance, the reviewer noted the importance of “true” audit studies, like Shelley Correll’s excellent work on motherhood discrimination. However, a “true” audit study might be impossible for the tenure-track hiring context because of the small size of academia.
+That reviewer still has a few other concerns. For instance, the reviewer noted the importance of “true” audit studies, like Shelley Correll’s [excellent work](http://dx.doi.org/10.1086/511799) on motherhood discrimination. However, a “true” audit study might be impossible for the tenure-track hiring context because of the small size of academia.
 
-The PNAS study was notable for having seven reviewers because the norm is two. The earlier 2012 PNAS study had two reviewers. I’ve reviewed for PNAS myself (not on a gender bias study). The journal published that study with only myself and one other scholar as the peer reviewers. The [journal’s website](http://www.pnas.org/site/authors/guidelines.xhtml) even notes that having two reviewers is common at PNAS.
+The [PNAS study]() was notable for having seven reviewers because the norm is two. The earlier [2012 PNAS study]() had two reviewers. I’ve reviewed for PNAS myself (not on a gender bias study). The journal published that study with only myself and one other scholar as the peer reviewers. The [journal’s website](http://www.pnas.org/site/authors/guidelines.xhtml) even notes that having two reviewers is common at PNAS.
 
 So having seven reviewers is extremely uncommon. My guess is that the journal’s editorial board knew that the results would be controversial and therefore took heroic efforts to protect the reputation of the journal. PNAS has come under fire by multiple scientists who repeatedly criticize the journal for letting studies simply “slip by” and get published because of an old boy’s network. 
 
 The editorial board probably knew that would be a concern for this current study, regardless of the study’s actual methodological strengths. This suspicion is further supported by some other facts about the study’s review process.
 
-External statisticians evaluated the data analyses, for instance. This is not common. Quoting from the Supporting Information, “an independent statistician requested these raw data through a third party associated with the peer review process in order to replicate the results. His analyses did in fact replicate these findings using R rather than the SAS we used.”
+External statisticians evaluated the data analyses, for instance. This is not common. Quoting from the [Supporting Information](), “an independent statistician requested these raw data through a third party associated with the peer review process in order to replicate the results. His analyses did in fact replicate these findings using R rather than the SAS we used.”
 
 Now I embrace methodological scrutiny in the peer review process. Frankly, I’m disappointed when I get peer reviews back and all I get is “methods were great.” I want people to critique my work! Critique helps improve it. But the scrutiny given to this study seems extreme, especially considering all the authors did to address the concerns such as collecting data for a fifth experiment. 
 
