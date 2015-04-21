@@ -3,42 +3,106 @@ layout: post
 title: Visualizing and Thinking About Data
 ---
 
-Have you ever looked at a [_New York Times_ interactive graphic](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html) and thought, “_Wow, that’s so cool_! I wish I knew how to create something like that”? Or are you interested in strengthening your data skills more broadly? If so, this blog may interest you. 
+I respond to Dr. Zuleyka Zevallos’s critique of the [PNAS study](dx.doi.org/10.1073/pnas.1418878112) on STEM faculty hiring bias by Drs. Wendy Williams and Stephen Ceci. On April 19th, 2015, I submitted the below text as a comment to [her blog post](http://othersociologist.com/2015/04/16/myth-about-women-in-science/). The comment was not published.
 
-I’m a physicist turned psychologist who’s decided to enter the blogosphere world. My first set of posts will focus on learning skills for **creating interactive visualizations**, like the one below which I created (kudos to Karl Broman for the [inital code](https://www.biostat.wisc.edu/~kbroman/D3/corr_w_scatter/) and idea!). 
+Zuleyka, thank you for your engaging and well researched perspective. On Twitter, you mentioned that you were interested in my take on the study’s methods. So here are my thoughts.
 
-<iframe src="http://d-miller.github.io/assets/corrScatGist/" marginwidth="0" marginheight="0" scrolling="no" width="200" height="100"></iframe>
+I’ll respond to your methodological critiques point-by-point in the same order as you: (a) self-selection bias is a concern, (b) raters likely suspected study’s purpose, and (c) study did not simulate the real world. Have I missed anything? If so, let me know. Then I’ll also discuss the rigor of the peer review process.
 
-This is my blog’s target audience: 
+As a forewarning to readers, the first half of this comment may come across as a boring methods discussion. However, the second half talks a little bit about the relevant players in this story and how the story has unfolded over time. Hence, the second half of this comment may interest a broader readership than the first half. But nevertheless, let’s dig into the methods.
 
-**People wanting to strengthen their data skills.**
+(a) WAS SELF-SELECTION A CONCERN?
 
-* This audience should be broad, given the rising importance of data skills in all employment fields.
+You note how emails were sent out to 2,090 professors in the first three of five experiments, of which 711 provided data yielding a response rate of 34%. You also note a control experiment involving psychology professors that aimed to assess self-selection bias.
 
-**People interested in thinking deeply about data.**
+You critique this control experiment because, “including psychology as a control is not a true reflection of gender bias in broader STEM fields.” Would that experiment have been better if it incorporated other STEM fields? Sure.
 
-* I’ll talk about data and research that I find especially important and interesting. [My interests](https://northwestern.academia.edu/DavidMiller) focus on diversity in science and technology fields, but I may cover other topics as well.
+But there’s other data that also speak to this issue. Analyses reported in the Supporting Information found that respondents and nonrespondents were similar “in terms of their gender, rank, and discipline.” And that finding held true across all four sampled STEM fields, not just psychology. 
 
-**People with a variety of technical and non-technical backgrounds.**
+The authors note this type of analysis “has often been the only validation check researchers have utilized in experimental email surveys.” And often such analyses aren’t even done in many studies. Hence, the control experiment with psychology was their attempt to improve prior methodological approaches and was only one part of their strategy for assessing self-selection bias.
 
-* I’ll focus on more advanced topics like machine learning and interactive visualization, but will provide links for learning more basic programming and statistics skills. 
-* So don’t be scared away if you don’t already have strong technical training! Learning technical skills takes time, but several _free_ online resources can help you do that (e.g., [Codecademy](http://www.codecademy.com/)).
+(b) DID RATERS GUESS THE STUDY’S PURPOSE?
 
-<div align="center"><img src="{{ site.baseurl }}/images/doge-data.jpg" width="400"/></div>
+You noted that, for faculty raters, “it is very easy to see from their study design that the researchers were examining gender bias in hiring.” I agree this might be a potential concern. 
 
-About tools I will cover: 
+But they did have data addressing that issue. As noted in the Supporting Information, “when a subset of 30 respondents was asked to guess the hypothesis of the study, none suspected it was related to applicant gender.” Many of those surveyed did think the study was about hiring biases for “analytic powerhouses” or “socially-skilled colleagues.” But not about gender biases, specifically. In fact, these descriptors were added to mask the true purpose of the study. And importantly, the gendered descriptors were counter-balanced.
 
-* I’ll talk about using d3.js, HTML/CSS, JavaScript, R, and (maybe) Python. 
-* Don’t worry if you don’t know those names already!
-* My blog will not focus on using SPSS and Stata, but may talk about how to transition to new languages from them (that’s what I did). 
+The fifth experiment also addresses this concern by presenting raters with only one applicant. This methodological feature meant that raters couldn’t compare different applicants and then infer that the study was about gender bias. A female preference was still found even in this setup that more closely matched the earlier 2012 PNAS study.
 
-About myself:
+(c) HOW WELL DID THE STUDY SIMULATE THE REAL WORLD?
 
-* I'm a Northwestern psychology Ph.D. student, [researching](https://northwestern.academia.edu/DavidMiller) how to improve diversity – especially gender diversity – in science and technology fields. 
-* I first learned data skills as an undergraduate [playing around](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0CCsQFjAD&url=https%3A%2F%2Fwww.phenix.bnl.gov%2FWWW%2FTPCHBD%2FMiller_HBD_Mtg_8-5-08.ppt&ei=3kMLVbG1IoOfgwS4y4LQAQ&usg=AFQjCNE2W8dlSQ8xNwmYU9Z3xAHSQ_vdjw&sig2=SP3Q8EUxRZwGVZxJN8fTJQ) with massive datasets about high-energy particle physics (read more [here]({{ site.baseurl }}/assets/PriorResearchNSF.pdf) if you're so inclined).
-* After earning my bachelor’s in physics at Harvey Mudd College, I pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
-* At Berkeley, I created interactive visualizations for [high school chemistry classrooms](http://wise.berkeley.edu/previewproject.html?projectId=155). I'm now in my third year in Northwestern's psychology program. 
-* I strengthened my data skills through University of Chicago’s [Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/). I learned core machine learning skills by working with a team of talented fellows on [a project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school. 
-* My C.V. is [here]({{ site.baseurl }}/assets/MillerCV.pdf) for academic folk. Here’s some media coverage: [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Psychology Today](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we), [Quartz](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/), [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), and [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem). I’ve also written for [public audiences](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). 
+You note scientists hire based on CVs, not short narratives. Do the results extend to evaluation of CVs?
 
-So stay tuned for the next post about how to make sexy interactive graphics!
+There’s some evidence they do. From Experiment 4. 
+
+In that experiment, 35 engineering professors favored women by 3-to-1. 
+
+Could the evidence for CV evaluation be strengthened? Absolutely. With the right resources (time; money), any empirical evidence can be strengthened. That experiment with CVs could have sampled more faculty or other fields of study. But let’s also consider that this study had 5 experiments involving 873 participants, which took three years for data collection. 
+
+Now let’s contrast the resources invested in the widely reported 2012 PNAS study. That study had 1 experiment involving 127 participants, which took two months for data collection. In other words, this current PNAS study invested more resources than the earlier one by almost 7:1 for number of participants and over 18:1 for time collecting data. The current PNAS study also replicated its findings across five experiments, whereas the earlier study had no replication experiment. 
+
+My point is this: the available data show that the results for narrative summaries extend to CVs. Evidence for the CV results could be strengthened, but that involves substantial time and effort. Perhaps the results don’t extend to evaluation of CVs in, say, biology. But we have no particular reason to suspect that. 
+
+You raise a valuable point, though, that we should be cautious about generalizing from studies of hypothetical scenarios to real-world outcomes. So what do the real-world data show?
+
+Scientists prefer *actual* female tenure-track applicants too. As I’ve noted elsewhere, “the proportion of women among tenure-track applicants increased substantially as jobseekers advanced through the process from applying to receiving job offers.”
+
+https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212
+
+This real-world preference for female applicants may come as a surprise to some. You wouldn’t learn about these real-world data by reading the introduction or discussion sections of the 2012 PNAS study, for instance. 
+
+That paper’s introduction section does acknowledge a scholarly debate about gender bias. But it doesn’t discuss the data that surround the debate. The discussion section makes one very brief reference to correlational data, but is silent beyond that. 
+
+Feeling somewhat unsatisfied with the lack of discussion, I was eager to hear what those authors had to say about those real-world data in more depth. So I talked with that study’s lead author, Corinne Moss-Racusin, in person after her talk at a social psychology conference in 2013.
+
+She acknowledged knowing about those real-world data, but quickly dismissed them as correlational. She had a fair point. Correlational data can be ambiguous. These ambiguous interpretations are discussed at length in the Supporting Information for the most recent PNAS paper.
+
+Unfortunately, however, I’ve found that dismissing evidence simply because it’s “correlational” can stunt productive discussion. In one instance, an academic journal declined to even send a manuscript of mine out for peer review “due to the strictly correlational nature of the data.” No specific concerns were mentioned, other than the study being merely “correlational.”
+
+Moss-Racusin’s most recent paper on gender bias pretends that a scholarly debate doesn’t even exist. Her most recent paper cites an earlier paper by Ceci and Williams, but only to say that “among other factors (Ceci & Williams, 2011), gender bias may play a role in constraining women’s STEM opportunities.”
+
+dx.doi.org/10.1177/0361684314565777
+
+Failing to acknowledge this debate prevents newcomers to this conversation from learning about the real-world, “correlational” data. All data points should be discussed, including both the earlier and new PNAS studies on gender bias. The real-world data, no doubt, have ambiguity attached to them. But they deserve discussion nevertheless. 
+
+WAS THE PEER REVIEW PROCESS RIGOROUS?
+
+Peer review is a cornerstone of producing valid science. But was the peer review process rigorous in this case? I have some knowledge on that. 
+
+I’ve talked at some length with two of the seven anonymous peer reviewers for this study. Both of them are extremely well respected scholars in my field (psychology), but had very different takes on the study and its methods. 
+
+One reviewer embraced the study, while the other said to reject it. This is common in peer review. The reviewer recommending rejection echoed your concern that raters might guess the purpose of the study if they saw two men and one woman as applicants. 
+
+You know what Williams and Ceci did to address that concern? They did another study. 
+
+Enter data, stage Experiment 5. 
+
+That experiment more closely resembled the earlier 2012 PNAS paper and still found similar results by presenting only one applicant to each rater. These new data definitely did help assuage the critical reviewer’s concerns. 
+
+That reviewer still has a few other concerns. For instance, the reviewer noted the importance of “true” audit studies, like Shelley Correll’s excellent work on motherhood discrimination. However, a “true” audit study might be impossible for the tenure-track hiring context because of the small size of academia.
+
+The PNAS study was notable for having seven reviewers because the norm is two. The earlier 2012 PNAS study had two reviewers. I’ve reviewed for PNAS myself (not on a gender bias study). The journal published that study with only myself and one other scholar as the peer reviewers. The journal’s website even notes that having two reviewers is common at PNAS.
+
+http://www.pnas.org/site/authors/guidelines.xhtml
+
+So having seven reviewers is extremely uncommon. My guess is that the journal’s editorial board knew that the results would be controversial and therefore took heroic efforts to protect the reputation of the journal. PNAS has come under fire by multiple scientists who repeatedly criticize the journal for letting studies simply “slip by” and get published because of an old boy’s network. 
+
+The editorial board probably knew that would be a concern for this current study, regardless of the study’s actual methodological strengths. This suspicion is further supported by some other facts about the study’s review process.
+
+External statisticians evaluated the data analyses, for instance. This is not common. Quoting from the Supporting Information, “an independent statistician requested these raw data through a third party associated with the peer review process in order to replicate the results. His analyses did in fact replicate these findings using R rather than the SAS we used.”
+
+Now I embrace methodological scrutiny in the peer review process. Frankly, I’m disappointed when I get peer reviews back and all I get is “methods were great.” I want people to critique my work! Critique helps improve it. But the scrutiny given to this study seems extreme, especially considering all the authors did to address the concerns such as collecting data for a fifth experiment. 
+
+I plan on independently analyzing the data myself, but I trust the integrity of the analyses based on the information that I’ve read so far. 
+
+SO WHAT’S MY OVERALL ASSESSMENT?
+
+Bloggers have brought up valid methodological concerns about the new PNAS paper. I am impressed with the time and effort put into producing detailed posts such as yours. However, my overall assessment is that these methodological concerns are not persuasive in the grand scheme. But other scholars may disagree. 
+
+So that’s my take on the methods. I welcome your thoughts in response. I doubt this current study will end debate about sex bias in science. Nor should it. We still have a lot to learn about what contexts might undermine women. 
+
+But the current study’s diverse methods and robust results indicate that hiring STEM faculty is likely not one of those contexts.
+
+Disclaimer: Ceci was the editor of a study I recently published in Frontiers in Psychology. I have been in email conversation with Williams and Ceci, but did not send them a draft of this comment before posting. I was not asked by them to write this comment.
+
+dx.doi.org/10.3389/fpsyg.2015.00037
