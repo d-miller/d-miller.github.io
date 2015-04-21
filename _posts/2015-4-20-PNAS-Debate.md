@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualizing and Thinking About Data
+title: Data Review: Preference for Female Tenure-Track Applicants Is Robust
 ---
 
 I respond to Dr. Zuleyka Zevallos’s critique of the [PNAS study](dx.doi.org/10.1073/pnas.1418878112) on STEM faculty hiring bias by Drs. Wendy Williams and Stephen Ceci. On April 19th, 2015, I submitted the below text as a comment to [her blog post](http://othersociologist.com/2015/04/16/myth-about-women-in-science/). The comment was not published.
