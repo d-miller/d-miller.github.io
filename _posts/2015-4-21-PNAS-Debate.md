@@ -49,6 +49,8 @@ You raise a valuable point, though, that we should be cautious about generalizin
 
 Scientists prefer *actual* female tenure-track applicants too. As I’ve noted [elsewhere](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212), “the proportion of women among tenure-track applicants increased substantially as jobseekers advanced through the process from applying to receiving job offers.”
 
+<img src="http://i.imgur.com/zGWwyd5.png" />
+
 This real-world preference for female applicants may come as a surprise to some. You wouldn’t learn about these real-world data by reading the introduction or discussion sections of the [2012 PNAS study](http://dx.doi.org/10.1073/pnas.1211286109), for instance. 
 
 That paper’s introduction section does acknowledge a scholarly debate about gender bias. But it doesn’t discuss the data that surround the debate. The discussion section makes one very brief reference to correlational data, but is silent beyond that. 
