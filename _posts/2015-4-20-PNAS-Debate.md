@@ -3,9 +3,7 @@ layout: post
 title: Robust Preference for Female Faculty Applicants
 ---
 
-I respond to Dr. Zuleyka Zevallos’s critique of the PNAS study on STEM faculty hiring bias by Drs. Wendy Williams and Stephen Ceci. On April 19th, 2015, I submitted the below text as a comment to her  blog post on April 19th, 2015. This comment was not published.
-
-http://othersociologist.com/2015/04/16/myth-about-women-in-science/]
+I respond to Dr. Zuleyka Zevallos’s critique of the PNAS study on STEM faculty hiring bias by Drs. Wendy Williams and Stephen Ceci. On April 19th, 2015, I submitted the below text as a comment to [her blog post](http://othersociologist.com/2015/04/16/myth-about-women-in-science/). This comment was not published.
 
 Zuleyka, thank you for your engaging and well researched perspective. On Twitter, you mentioned that you were interested in my take on the study’s methods. So here are my thoughts.
 
