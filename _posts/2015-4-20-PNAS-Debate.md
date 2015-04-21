@@ -49,13 +49,13 @@ You raise a valuable point, though, that we should be cautious about generalizin
 
 Scientists prefer *actual* female tenure-track applicants too. As I’ve noted [elsewhere](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212), “the proportion of women among tenure-track applicants increased substantially as jobseekers advanced through the process from applying to receiving job offers.”
 
-This real-world preference for female applicants may come as a surprise to some. You wouldn’t learn about these real-world data by reading the introduction or discussion sections of the 2012 PNAS study, for instance. 
+This real-world preference for female applicants may come as a surprise to some. You wouldn’t learn about these real-world data by reading the introduction or discussion sections of the [2012 PNAS study](http://dx.doi.org/10.1073/pnas.1211286109), for instance. 
 
 That paper’s introduction section does acknowledge a scholarly debate about gender bias. But it doesn’t discuss the data that surround the debate. The discussion section makes one very brief reference to correlational data, but is silent beyond that. 
 
 Feeling somewhat unsatisfied with the lack of discussion, I was eager to hear what those authors had to say about those real-world data in more depth. So I talked with that study’s lead author, Corinne Moss-Racusin, in person after her talk at a social psychology conference in 2013.
 
-She acknowledged knowing about those real-world data, but quickly dismissed them as correlational. She had a fair point. Correlational data can be ambiguous. These ambiguous interpretations are discussed at length in the Supporting Information for the most recent PNAS paper.
+She acknowledged knowing about those real-world data, but quickly dismissed them as correlational. She had a fair point. Correlational data can be ambiguous. These ambiguous interpretations are discussed at length in the [Supporting Information](http://www.pnas.org/content/suppl/2015/04/08/1418878112.DCSupplemental/pnas.1418878112.sapp.pdf) for the most recent PNAS paper.
 
 Unfortunately, however, I’ve found that dismissing evidence simply because it’s “correlational” can stunt productive discussion. In one instance, an academic journal declined to even send a manuscript of mine out for peer review “due to the strictly correlational nature of the data.” No specific concerns were mentioned, other than the study being merely “correlational.”
 
