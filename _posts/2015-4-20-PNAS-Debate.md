@@ -11,7 +11,7 @@ I’ll respond to your methodological critiques point-by-point in the same order
 
 As a forewarning to readers, the first half of this comment may come across as a boring methods discussion. However, the second half talks a little bit about the relevant players in this story and how the story has unfolded over time. Hence, the second half of this comment may interest a broader readership than the first half. But nevertheless, let’s dig into the methods.
 
-(a) WAS SELF-SELECTION A CONCERN?
+# A. Was self-selection a concern?
 
 You note how emails were sent out to 2,090 professors in the first three of five experiments, of which 711 provided data yielding a response rate of 34%. You also note a control experiment involving psychology professors that aimed to assess self-selection bias.
 
@@ -21,7 +21,7 @@ But there’s other data that also speak to this issue. Analyses reported in the
 
 The authors note this type of analysis “has often been the only validation check researchers have utilized in experimental email surveys.” And often such analyses aren’t even done in many studies. Hence, the control experiment with psychology was their attempt to improve prior methodological approaches and was only one part of their strategy for assessing self-selection bias.
 
-(b) DID RATERS GUESS THE STUDY’S PURPOSE?
+# B. Did raters guess the study's purpose?
 
 You noted that, for faculty raters, “it is very easy to see from their study design that the researchers were examining gender bias in hiring.” I agree this might be a potential concern. 
 
@@ -29,7 +29,7 @@ But they did have data addressing that issue. As noted in the Supporting Informa
 
 The fifth experiment also addresses this concern by presenting raters with only one applicant. This methodological feature meant that raters couldn’t compare different applicants and then infer that the study was about gender bias. A female preference was still found even in this setup that more closely matched the earlier 2012 PNAS study.
 
-(c) HOW WELL DID THE STUDY SIMULATE THE REAL WORLD?
+# C. How well did the study simulate the real world?
 
 You note scientists hire based on CVs, not short narratives. Do the results extend to evaluation of CVs?
 
@@ -45,9 +45,7 @@ My point is this: the available data show that the results for narrative summari
 
 You raise a valuable point, though, that we should be cautious about generalizing from studies of hypothetical scenarios to real-world outcomes. So what do the real-world data show?
 
-Scientists prefer *actual* female tenure-track applicants too. As I’ve noted elsewhere, “the proportion of women among tenure-track applicants increased substantially as jobseekers advanced through the process from applying to receiving job offers.”
-
-https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212
+Scientists prefer *actual* female tenure-track applicants too. As I’ve noted [elsewhere](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212), “the proportion of women among tenure-track applicants increased substantially as jobseekers advanced through the process from applying to receiving job offers.”
 
 This real-world preference for female applicants may come as a surprise to some. You wouldn’t learn about these real-world data by reading the introduction or discussion sections of the 2012 PNAS study, for instance. 
 
@@ -59,13 +57,11 @@ She acknowledged knowing about those real-world data, but quickly dismissed them
 
 Unfortunately, however, I’ve found that dismissing evidence simply because it’s “correlational” can stunt productive discussion. In one instance, an academic journal declined to even send a manuscript of mine out for peer review “due to the strictly correlational nature of the data.” No specific concerns were mentioned, other than the study being merely “correlational.”
 
-Moss-Racusin’s most recent paper on gender bias pretends that a scholarly debate doesn’t even exist. Her most recent paper cites an earlier paper by Ceci and Williams, but only to say that “among other factors (Ceci & Williams, 2011), gender bias may play a role in constraining women’s STEM opportunities.”
-
-dx.doi.org/10.1177/0361684314565777
+Moss-Racusin’s [most recent paper](dx.doi.org/10.1177/0361684314565777) on gender bias pretends that a scholarly debate doesn’t even exist. Her most recent paper cites an earlier paper by Ceci and Williams, but only to say that “among other factors (Ceci & Williams, 2011), gender bias may play a role in constraining women’s STEM opportunities.”
 
 Failing to acknowledge this debate prevents newcomers to this conversation from learning about the real-world, “correlational” data. All data points should be discussed, including both the earlier and new PNAS studies on gender bias. The real-world data, no doubt, have ambiguity attached to them. But they deserve discussion nevertheless. 
 
-WAS THE PEER REVIEW PROCESS RIGOROUS?
+# Was the peer review process rigorous?
 
 Peer review is a cornerstone of producing valid science. But was the peer review process rigorous in this case? I have some knowledge on that. 
 
@@ -81,9 +77,7 @@ That experiment more closely resembled the earlier 2012 PNAS paper and still fou
 
 That reviewer still has a few other concerns. For instance, the reviewer noted the importance of “true” audit studies, like Shelley Correll’s excellent work on motherhood discrimination. However, a “true” audit study might be impossible for the tenure-track hiring context because of the small size of academia.
 
-The PNAS study was notable for having seven reviewers because the norm is two. The earlier 2012 PNAS study had two reviewers. I’ve reviewed for PNAS myself (not on a gender bias study). The journal published that study with only myself and one other scholar as the peer reviewers. The journal’s website even notes that having two reviewers is common at PNAS.
-
-http://www.pnas.org/site/authors/guidelines.xhtml
+The PNAS study was notable for having seven reviewers because the norm is two. The earlier 2012 PNAS study had two reviewers. I’ve reviewed for PNAS myself (not on a gender bias study). The journal published that study with only myself and one other scholar as the peer reviewers. The [journal’s website](http://www.pnas.org/site/authors/guidelines.xhtml) even notes that having two reviewers is common at PNAS.
 
 So having seven reviewers is extremely uncommon. My guess is that the journal’s editorial board knew that the results would be controversial and therefore took heroic efforts to protect the reputation of the journal. PNAS has come under fire by multiple scientists who repeatedly criticize the journal for letting studies simply “slip by” and get published because of an old boy’s network. 
 
@@ -95,7 +89,7 @@ Now I embrace methodological scrutiny in the peer review process. Frankly, I’m
 
 I plan on independently analyzing the data myself, but I trust the integrity of the analyses based on the information that I’ve read so far. 
 
-SO WHAT’S MY OVERALL ASSESSMENT?
+# So what's my overall assessment? 
 
 Bloggers have brought up valid methodological concerns about the new PNAS paper. I am impressed with the time and effort put into producing detailed posts such as yours. However, my overall assessment is that these methodological concerns are not persuasive in the grand scheme. But other scholars may disagree. 
 
@@ -103,6 +97,4 @@ So that’s my take on the methods. I welcome your thoughts in response. I doubt
 
 But the current study’s diverse methods and robust results indicate that hiring STEM faculty is likely not one of those contexts.
 
-Disclaimer: Ceci was the editor of a study I recently published in Frontiers in Psychology. I have been in email conversation with Williams and Ceci, but did not send them a draft of this comment before posting. I was not asked by them to write this comment.
-
-dx.doi.org/10.3389/fpsyg.2015.00037
+Disclaimer: Ceci was the editor of [a study](dx.doi.org/10.3389/fpsyg.2015.00037) I recently published in Frontiers in Psychology. I have been in email conversation with Williams and Ceci, but did not send them a draft of this comment before posting. I was not asked by them to write this comment.
