@@ -43,13 +43,13 @@ title: Good news about hiring women in STEM, but, it’s not enough
 
 <p>In fact, women’s representation in math-intensive STEM fields is now <em>higher</em> at the <a href="http://dx.doi.org/10.3389/fpsyg.2015.00037">PhD</a> and <a href="http://dx.doi.org/10.1177/1529100614541236">assistant professor</a> level than bachelor’s level.</p>
 
-<p><figure class="align-center zoomable">
+<div align="center"><p><figure class="align-center zoomable">
         <a href="https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/78042/area14mp/image-20150415-24650-1arb2kd.png"><img width="500" alt="" src="https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/78042/width668/image-20150415-24650-1arb2kd.png"></a>
         <figcaption>
           <span class="caption">Source: WebCASPAR Integrated Science and Engineering Resource Data System (2014). Figure by Miller and Wai (2015). “pSTEM” stands for physical science, technology, engineering and mathematics.</span>
           <span class="attribution"><span class="license">Author provided</span></span>
         </figcaption>
-      </figure></p>
+      </figure></p></div>
       
 <p>Yet women are still scarce in some STEM fields, as Melinda Gates noted in a tweet referencing my study.</p>
 
