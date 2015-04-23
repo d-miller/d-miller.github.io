@@ -11,7 +11,7 @@ title: Good news about hiring women in STEM, but, it’s not enough
 
 <p>Scientists prefer women to similarly qualified men for tenure-track faculty positions, according to <a href="http://dx.doi.org/10.1073/pnas.1418878112">a new experiment</a> published in Proceedings of the National Academies of Sciences (PNAS).</p>
 
-<div align="center"><p><figure><iframe width="650" height="384" src="//www.youtube.com/embed/5f6rQfpd68o?wmode=transparent&amp;start=0" frameborder="0" allowfullscreen></iframe><figcaption>The researchers describe their hiring experiments.</figcaption></figure></p></div>
+<div style="margin-left: 50px;"><p><figure><iframe width="650" height="384" src="//www.youtube.com/embed/5f6rQfpd68o?wmode=transparent&amp;start=0" frameborder="0" allowfullscreen></iframe><figcaption>The researchers describe their hiring experiments.</figcaption></figure></p></div>
 
 <p>Cornell University researchers Wendy Williams and Stephen Ceci sent narrative summaries of hypothetical male and female tenure-track applicants to 873 science and engineering faculty across the US. Across a wide variety of conditions spanning five experiments, faculty raters selected female applicants over male applicants by a factor of two to one.</p>
 
