@@ -101,4 +101,4 @@ So that’s my take on the methods. I welcome your thoughts in response. I doubt
 
 But the current study’s diverse methods and robust results indicate that hiring STEM faculty is likely not one of those contexts.
 
-<div style="font-size: 4px;">Disclaimer: Ceci was the editor of [a study](dx.doi.org/10.3389/fpsyg.2015.00037) I recently published in Frontiers in Psychology. I have been in email conversation with Williams and Ceci, but did not send them a draft of this comment before posting. I was not asked by them to write this comment.</div>
+<div style="font-size: 9px;">Disclaimer: Ceci was the editor of [a study](dx.doi.org/10.3389/fpsyg.2015.00037) I recently published in Frontiers in Psychology. I have been in email conversation with Williams and Ceci, but did not send them a draft of this comment before posting. I was not asked by them to write this comment.</div>
