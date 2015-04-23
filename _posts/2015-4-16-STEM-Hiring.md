@@ -5,7 +5,7 @@ title: Good news about hiring women in STEM, but, it’s not enough
 
 <p>Scientists prefer women to similarly qualified men for tenure-track faculty positions, according to <a href="http://dx.doi.org/10.1073/pnas.1418878112">a new experiment</a> published in Proceedings of the National Academies of Sciences (PNAS).</p>
 
-<p><figure><iframe width="750" height="443" src="//www.youtube.com/embed/5f6rQfpd68o?wmode=transparent&amp;start=0" frameborder="0" allowfullscreen></iframe><figcaption>The researchers describe their hiring experiments.</figcaption></figure></p>
+<p><figure><iframe width="700" height="414" src="//www.youtube.com/embed/5f6rQfpd68o?wmode=transparent&amp;start=0" frameborder="0" allowfullscreen></iframe><figcaption>The researchers describe their hiring experiments.</figcaption></figure></p>
 
 <p>Cornell University researchers Wendy Williams and Stephen Ceci sent narrative summaries of hypothetical male and female tenure-track applicants to 873 science and engineering faculty across the US. Across a wide variety of conditions spanning five experiments, faculty raters selected female applicants over male applicants by a factor of two to one.</p>
 
@@ -43,14 +43,14 @@ title: Good news about hiring women in STEM, but, it’s not enough
 
 <p>In fact, women’s representation in math-intensive STEM fields is now <em>higher</em> at the <a href="http://dx.doi.org/10.3389/fpsyg.2015.00037">PhD</a> and <a href="http://dx.doi.org/10.1177/1529100614541236">assistant professor</a> level than bachelor’s level.</p>
 
--<p><figure class="align-center zoomable">
--        <a href="https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/78042/area14mp/image-20150415-24650-1arb2kd.png"><img alt="" src="https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/78042/width668/image-20150415-24650-1arb2kd.png"></a>
--        <figcaption>
--          <span class="caption">Source: WebCASPAR Integrated Science and Engineering Resource Data System (2014). Figure by Miller and Wai (2015). “pSTEM” stands for physical science, technology, engineering and mathematics.</span>
--          <span class="attribution"><span class="license">Author provided</span></span>
--        </figcaption>
--      </figure></p>
--      
+<p><figure class="align-center zoomable">
+        <a href="https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/78042/area14mp/image-20150415-24650-1arb2kd.png"><img alt="" src="https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/78042/width668/image-20150415-24650-1arb2kd.png"></a>
+        <figcaption>
+          <span class="caption">Source: WebCASPAR Integrated Science and Engineering Resource Data System (2014). Figure by Miller and Wai (2015). “pSTEM” stands for physical science, technology, engineering and mathematics.</span>
+          <span class="attribution"><span class="license">Author provided</span></span>
+        </figcaption>
+      </figure></p>
+      
 <p>Yet women are still scarce in some STEM fields, as Melinda Gates noted in a tweet referencing my study.</p>
 
 <p><blockquote class="twitter-tweet" lang="en">
