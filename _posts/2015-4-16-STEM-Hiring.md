@@ -3,6 +3,12 @@ layout: post
 title: Good news about hiring women in STEM, but, it’s not enough
 ---
 
+<style>
+    figcaption {
+        font-size: 12px;
+    }
+</style>
+
 <p>Scientists prefer women to similarly qualified men for tenure-track faculty positions, according to <a href="http://dx.doi.org/10.1073/pnas.1418878112">a new experiment</a> published in Proceedings of the National Academies of Sciences (PNAS).</p>
 
 <p><figure><iframe width="700" height="414" src="//www.youtube.com/embed/5f6rQfpd68o?wmode=transparent&amp;start=0" frameborder="0" allowfullscreen></iframe><figcaption>The researchers describe their hiring experiments.</figcaption></figure></p>
