@@ -53,11 +53,11 @@ title: Good news about hiring women in STEM, but, it’s not enough
       
 <p>Yet women are still scarce in some STEM fields, as Melinda Gates noted in a tweet referencing my study.</p>
 
-<p><blockquote class="twitter-tweet" lang="en">
+<div align="center"><p><blockquote class="twitter-tweet" lang="en">
         <a href="https://twitter.com/melindagates/status/570285946626822144"></a>
       </blockquote>
       <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </p>
+    </p></div>
 
 <p>Women are underrepresented in these fields because of <a href="http://dx.doi.org/10.1177/1529100614541236">factors</a> such as <a href="http://dx.doi.org/10.1126/science.1261375">cultural beliefs</a> that operate at the bachelor’s level and below, not because of bias in tenure-track hiring or graduate mentoring.</p>
 
