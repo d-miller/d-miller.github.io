@@ -5,9 +5,6 @@ permalink: /pubs/
 
 ## Journal Publications
 
-**Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). [Women’s representation in science predicts national
-gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_.
-
 **Miller, D. I.**, & Wai, J. (2015). [The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
 men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontiers in Psychology_, _6_, 36. Media coverage: [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [InsideHigerEd](https://www.insidehighered.com/news/2015/02/18/research-suggests-pipeline-science-talent-may-leak-men-and-women-same-rate), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Science](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem). Also see [my op-ed](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science), published in InsideHigherEd.
 
