@@ -3,6 +3,8 @@ layout: page
 permalink: /pubs/
 ---
 
+[Link to Google Scholar profile.](https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en)
+
 ## Journal Publications
 
 **Miller, D. I.**, & Wai, J. (2015). [The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
