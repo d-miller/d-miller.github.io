@@ -42,13 +42,13 @@ headerTiles.selectAll("rect").style("cursor", "pointer");
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
-header.append("text").text("% Women").attr("x", xPrct).on("click", rankPrct);
-header.append("text").text("Change in %").attr("x", xChange).on("click", rankChange);
+header.append("text").text("Science Majors").attr("x", xPrct).on("click", rankPrct);
+header.append("text").text("Researchers").attr("x", xChange).on("click", rankChange);
 header.append("text").text("Explicit").attr("x", xNumF).on("click", rankNumF);
 header.append("text").text("Implicit").attr("x", xTotal).on("click", rankTotal);
 var subHead = svg.append("g").attr("class", "subHead").attr("transform", "translate(" + pad.left + "," + ySubHead + ")");
-subHead.append("text").text("(2011-2013)").attr("x", xPrct).on("click", rankPrct);
-subHead.append("text").text("(compared to 2008-2010)").attr("x", xChange).on("click", rankChange);
+subHead.append("text").text("% Women").attr("x", xPrct).on("click", rankPrct);
+subHead.append("text").text("% Women").attr("x", xChange).on("click", rankChange);
 subHead.append("text").text("Stereotypes").attr("x", xNumF).on("click", rankNumF);
 subHead.append("text").text("Stereotypes").attr("x", xTotal).on("click", rankTotal);
 header.selectAll("text").style("cursor", "pointer");
