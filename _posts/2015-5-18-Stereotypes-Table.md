@@ -9,16 +9,14 @@ This interactive table accompanies the manuscript, ["Women's Representation in S
 <script src="../assets/test/lib/d3.v3.min.js"></script>
 <link rel="stylesheet" href="../assets/test/styles/styles.css">
 
-  <div id="content" style="margin-top: -20px;"> 
-    <div id="table" style="padding-top: 70px;">
-      <div id="titleCustom">
-        <h1><strong>Global Gender-Science Stereotypes</strong></h1>
-        <h3>(Click header labels to resort)</h3>
-      </div>
-      <div class="top25" style="text-align: center;"></div>
-      <script src="../assets/test/js/top25.js"></script>
-    </div>
+<div id="table" style="padding-top: 0px;">
+  <div id="titleCustom">
+    <h1><strong>Global Gender-Science Stereotypes</strong></h1>
+    <h3>(Click header labels to resort)</h3>
   </div>
+  <div class="top25" style="text-align: center;"></div>
+  <script src="../assets/test/js/top25.js"></script>
+</div>
 
 
 Zuleyka, thank you for your engaging and well researched perspective. On Twitter, [you mentioned](https://twitter.com/OtherSociology/status/588590370834894850) that you were interested in my take on the study’s methods. So here are my thoughts.
