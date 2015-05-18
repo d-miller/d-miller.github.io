@@ -11,10 +11,9 @@ I respond to [Dr. Zuleyka Zevallos’s critique](http://othersociologist.com/201
 <link rel="stylesheet" href="../assets/test/styles/styles.css">
 
   <div id="content" style="margin-top: -20px;"> 
-    <!-- Top 25 rankings -->
     <div id="table" style="padding-top: 70px;">
       <div id="titleCustom">
-        <h1><strong>Gender-Science Stereotypes Across The World</strong></h1>
+        <h1><strong>Global Gender-Science Stereotypes</strong></h1>
         <h3>(Click header labels to resort)</h3>
       </div>
       <div class="top25" style="text-align: center;"></div>
