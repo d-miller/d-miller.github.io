@@ -14,7 +14,7 @@ I respond to [Dr. Zuleyka Zevallos’s critique](http://othersociologist.com/201
     <!-- Top 25 rankings -->
     <div id="table" style="padding-top: 70px;">
       <div id="titleCustom">
-        <h1><strong>Ranking of Elite C.S. Programs By Gender Diversity</strong></h1>
+        <h1><strong>Gender-Science Stereotypes Across The World</strong></h1>
         <h3>(Click header labels to resort)</h3>
       </div>
       <div class="top25" style="text-align: center;"></div>
