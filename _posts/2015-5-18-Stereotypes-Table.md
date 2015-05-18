@@ -3,9 +3,8 @@ layout: post
 title: Interactive Table - Gender-Science Stereotypes Across The World
 ---
 
-I respond to [Dr. Zuleyka Zevallos’s critique](http://othersociologist.com/2015/04/16/myth-about-women-in-science/) of the [PNAS study](http://dx.doi.org/10.1073/pnas.1418878112) on STEM faculty hiring bias [[her response](http://othersociologist.com/2015/04/16/myth-about-women-in-science/#comment-10552); [my rebuttal](http://d-miller.github.io/PNAS-Debate/#comment-1988072969)]. 
+This interactive table accompanies the manuscript, ["Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations"](assets/MillerEaglyLinn2015.pdf).
 
-*******
 
 <script src="../assets/test/lib/d3.v3.min.js"></script>
 <link rel="stylesheet" href="../assets/test/styles/styles.css">
