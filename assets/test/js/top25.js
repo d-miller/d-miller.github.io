@@ -8,8 +8,8 @@ var xName = 20;
 
 var xPrct = 520;
 var xChange = 640;
-var xNumF = 230;
-var xTotal = 350;
+var xNumF = 260;
+var xTotal = 380;
 
 
 var rectW = 80;
