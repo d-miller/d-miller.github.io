@@ -42,7 +42,7 @@ headerTiles.selectAll("rect").style("cursor", "pointer");
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
-header.append("text").text("Science Majors").attr("x", xPrct).on("click", rankPrct);
+header.append("text").text("Sci. Majors").attr("x", xPrct).on("click", rankPrct);
 header.append("text").text("Researchers").attr("x", xChange).on("click", rankChange);
 header.append("text").text("Explicit").attr("x", xNumF).on("click", rankNumF);
 header.append("text").text("Implicit").attr("x", xTotal).on("click", rankTotal);
