@@ -111,7 +111,8 @@ d3.csv("data/top25.csv", function(data) {
   g.selectAll("text.rank").data(data).enter().append("text")
     .attr("class", "rank")
     .text(function(d) { return d.rank + "."; })
-    .attr("y", function(d) { return vertSpace*(d.rank - 0.5); });
+    .attr("y", function(d) { return vertSpace*(d.rank - 0.5); })
+    .attr("x", 5);
 
   /////////////////////////////////
   //  DYNAMIC POSITION ELEMENTS  //
