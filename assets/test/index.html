@@ -1,0 +1,155 @@
+<HTML>
+<head>
+  <script src='lib/mapbox.js'></script>
+  <script src="lib/d3.v3.min.js"></script>
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src='js/nav.js'></script>
+
+  <link href="lib/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+  <link href='styles/leafletCustom.css' rel='stylesheet' />
+</head>
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">Women in Tech</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li id="link1" num="1" class="active"><a href="#story">Story</a></li>
+          <li id="link2" num="2"><a href="#table">Interactive Table</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://d-miller.github.io/about" target="blank_">By David Miller</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="content" style="margin-top: -20px;"> 
+
+    <!-- Elite programs story -->
+    <div id="story" style="padding-top: 70px;">
+    <div id="titleCustom">
+      <h1><strong>Elite Schools Are Leading Recruitment of Women Into Tech</strong></h1>
+    </div>
+
+    <div id="eliteText" style="width: 750px; margin-left: auto; margin-right: auto; margin-top: 10px">
+    
+      <p>Barriers preventing women from pursuing computing fields are <a href="http://www.aauw.org/research/solving-the-equation/" target="blank_">increasing</a>, despite the <a href="https://www.whitehouse.gov/the-press-office/2015/03/23/fact-sheet-president-obama-announces-over-240-million-new-stem-commitmen" target="blank_">millions of dollars</a> that are spent every year to reverse this trend.</p>
+
+      <p>Women earned only 18% of the U.S.'s bachelor's degrees in computer and information sciences in 2013, down from 27% a decade prior. The numbers are even worse for data restricted to "pure" computer science (C.S.), which excludes related but distinct fields like information technology and computer graphics (see graph below).</p>
+
+      <p>"We're going backwards in a field that's supposed to be all about going forward," said presidential candidate Hillary Clinton, discussing this issue in a <a href="http://recode.net/2015/02/24/watch-the-full-video-of-kara-swishers-interview-with-hillary-rodham-clinton-video/" target="_blank">February interview</a>.</p>
+
+      <p>However, buried in these data is a glimmer of hope. Several elite C.S. programs like Harvey Mudd, Stanford, and University of Washington are unlocking the secrets about how to reverse these troubling trends. At these elite programs, women's share of C.S. degrees has been slowly but steadily increasing during the past five years.</p>
+
+      <div class="ggvis" style="text-align: center;">
+      <object type="image/svg+xml" data="img/top25.svg">Your browser does not support SVG</object>
+      </div>
+      <br>
+      <p id="showRanking" style="color: #337ab7; cursor: pointer;">[How were elite programs defined?]</p>
+      <div id="ranking" style="display: none">
+        <ul>
+          <li>The graph above represents programs on U.S. News and World Report's <a href="http://grad-schools.usnews.rankingsandreviews.com/best-graduate-schools/top-science-schools/computer-science-rankings" target="blank_">2014 list</a> of top 25 C.S. programs.</li>
+          <li>Similar trends were found using four other discipline-specific ranking systems: <a href="http://www.shanghairanking.com/SubjectCS2014.html" target="blank_">Academic Ranking of World Universities'</a>, <a href="http://tuvalu.santafe.edu/~aaronc/facultyhiring/" target="blank_">faculty hiring patterns</a>, <a href="http://phds.org/rankings/computer-science" target="blank_">National Research Council's</a>, and <a href="http://www.bizjournals.com/sanjose/news/2013/12/17/the-top-10-colleges-that-fuel-the.html?page=all" target="blank_">top producers of Silicon Valley workers</a>.</li>
+        </ul>
+      </div>
+
+       <script>
+        var displayRanking = false;
+        d3.select("#showRanking").on("click", toggleMethods);
+        function toggleMethods(d) {
+          if (!displayRanking) {
+            d3.select("#ranking").style("display", "block");
+            d3.select("#showRanking").text("Hide explanation of elite programs.");
+            displayRanking = true;
+          } else {
+            d3.select("#ranking").style("display", "none");
+            d3.select("#showRanking").text("[How were elite programs defined?]");
+            displayRanking = false;
+          }
+        }
+      </script>
+
+      <p>This trend is especially good news for tech giants like Google and Microsoft that extensively recruit from elite C.S. programs. In the past, these companies have found proportionally less women at elite C.S. programs than elsewhere. However, this situation has reversed in the past five years.</p>
+
+      <p>Private schools such as MIT and Stanford contributed the most to these encouraging trends, but two elite public schools also enjoyed recent success: University of California at Berkeley and University of Washington. At Berkeley, <a href="http://www.wired.com/2014/02/berkeley-women/" target="blank_">women even outnumbered men</a> in taking an introductory computer science course last year.</p>
+
+      <p>Although elite programs improved as a group, many specific programs were stagnant. Among <a href="http://grad-schools.usnews.rankingsandreviews.com/best-graduate-schools/top-science-schools/computer-science-rankings" target="blank_">top 25 C.S. programs</a>, women earned less than 10 percent of recent degrees at four schools: Georgia Tech, Purdue, University of Massachusetts at Amherst, and University of Wisconsin at Madison. Trends for those schools were flat in recent years.</p>
+
+      <p>Harvey Mudd College is now leading efforts to spread <a href="http://www.npr.org/blogs/alltechconsidered/2013/05/01/178810710/How-One-College-Is-Closing-The-Tech-Gender-Gap" target="blank_">its recent success</a> in recruiting women to C.S. Along with the Anita Borg Institute, Harvey Mudd president Maria Klawe leads the <a href="http://anitaborg.org/news/the-anita-borg-institute-and-harvey-mudd-college-launch-initiative-to-increase-the-diversity-in-computer-science-undergraduate-majors-at-2014-clinton-global-initiative-annual-meeting/" target="blank_">Building, Recruiting and Inclusion for Diversity (BRAID) initiative</a> that aims to increase gender and racial diversity in C.S. at 15 universities.</p>
+
+      <p>The BRAID initiative provides participating universities with $30,000 per year over three years to support their efforts. In turn, these institutions provide data on what recruitment strategies work most effectively.</p>
+
+      <p id="showBRAID" style="color: #337ab7; cursor: pointer;">[What universities are participating in the BRAID initiative?]</p>
+        <div id="BRAID" style="display: none">
+          <table>
+            <col style="width: 330px;"><col style="width: 180px;">
+            <thead><tr><th>Participating BRAID Institution</th><th>Women's Share of C.S. Degrees (2011-2013)</th></th></thead>
+            <tr><td>Arizona State University</td><td><div style="background: rgb(103,169,207)">5.8%</div></td></tr>
+            <tr><td>Missouri University of Science and Technology</td><td><div style="background: rgb(103,169,207)">8.1%</div></td></tr>
+            <tr><td>New Jersey Institute of Technology</td><td><div style="background: rgb(103,169,207)">8.0%</div></td></tr>
+            <tr><td>University of California, Irvine</td><td><div style="background: rgb(209,229,240)">10.5%</div></td></tr>
+            <tr><td>University of Illinois at Chicago</td><td><div style="background: rgb(209,229,240)">11.0%</div></td></tr>
+            <tr><td>University of Maryland, Baltimore County</td><td><div style="background: rgb(209,229,240)">12.9%</div></td></tr>
+            <tr><td>University of Maryland, College Park</td><td><div style="background: rgb(209,229,240)">12.5%</div></td></tr>
+            <tr><td>University of Nebraska-Lincoln</td><td><div style="background: rgb(103,169,207)">7.3%</div></td></tr>
+            <tr><td>University of North Texas</td><td><div style="background: rgb(103,169,207)">7.5%</div></td></tr>
+            <tr><td>University of Rochester</td><td><div style="background: rgb(209,229,240)">14.6%</div></td></tr>
+            <tr><td>University of South Carolina</td><td><div style="background: rgb(209,229,240)">12.5%</div></td></tr>
+            <tr><td>University of Texas at El Paso</td><td><div style="background: rgb(239,138,98)">20.4%</div></td></tr>
+            <tr><td>University of Vermont</td><td><div style="background: rgb(103,169,207)">6.0%</div></td></tr>
+            <tr><td>University of Wisconsin-Milwaukee</td><td><div style="background: rgb(103,169,207)">6.2%</div></td></tr>
+            <tr><td>Villanova University</td><td><div style="background: rgb(239,138,98)">22.8%</div></td></tr>
+          </table>
+          <br>
+        </div>
+        <script>
+          var displayBRAID = false;
+          d3.select("#showBRAID").on("click", toggleMethods);
+          function toggleMethods(d) {
+            if (!displayBRAID) {
+              d3.select("#BRAID").style("display", "block");
+              d3.select("#showBRAID").text("Hide list of participating BRAID institutions.");
+              displayBRAID = true;
+            } else {
+              d3.select("#BRAID").style("display", "none");
+              d3.select("#showBRAID").text("[What schools are participating in the BRAID initiative?]");
+              displayBRAID = false;
+            }
+          }
+        </script>
+
+        <p>In the long run, the initiative aims to identify effective strategies for increasing diversity at any C.S. program in the nation. At Harvey Mudd, <a href="http://www.npr.org/blogs/alltechconsidered/2013/05/01/178810710/How-One-College-Is-Closing-The-Tech-Gender-Gap" target="blank_">promising strategies</a> included emphasizing the societal relevance of computing in introductory courses, making those courses less intimidating, and providing networking and undergraduate research opportunities. 
+        </p>
+      </div><!--eliteText-->
+    </div><!--elite-->
+
+
+
+    <!-- Top 25 rankings -->
+    <div id="table" style="padding-top: 70px;">
+      <div id="titleCustom">
+        <h1><strong>Ranking of Elite C.S. Programs By Gender Diversity</strong></h1>
+        <h3>(Click header labels to resort)</h3>
+      </div>
+      <div class="top25" style="text-align: center;"></div>
+      <script src="js/top25.js"></script>
+      <div id="tableNote">
+        NOTE: This list of elite programs was based on U.S. News and World Report's <a href="http://grad-schools.usnews.rankingsandreviews.com/best-graduate-schools/top-science-schools/computer-science-rankings" target="blank_">2014 ranking</a> of computer science programs. Princeton was a top 25 school, but <a href="">IPEDS</a> did not have specific data for its computer science program. U.S. News' list excludes, by definition, liberals art colleges such as Harvey Mudd College. If included, Harvey Mudd would top this list at 37.0% women.
+      </div>
+    </div>
+  </div>
+</body>
+</HTML>
