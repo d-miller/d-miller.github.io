@@ -171,27 +171,6 @@ d3.csv("data/top25.csv", function(data) {
       .attr("x", xTotal)
       .style("font-size", function(d) { return sizeTotal(d.total); });
 
-    //change percent bars
-    s.append("rect")
-      .attr("class", "change")
-      .attr("x", xChange+40)
-      .attr("y", function(d) { return (d.incr==0) ?  0 : - changeH(Math.abs(d.change)); })
-      .attr("width", 5)
-      .attr("height", function(d) { return changeH(Math.abs(d.change)); })
-      .style("fill", function(d) { return (d.incr==1) ? scaleRB6[0] : scaleRB6[5]; });
-    s.append("line")
-      .attr("class", "change")
-      .attr({x1: xChange+40-3, x2: xChange+40+8, class: "change"})
-      .style({"stroke-width": 1, stroke: "#111"});
-
-    //change percent bars
-    /*s.append("rect")
-      .attr("class", "change")
-      .attr("x", xPrct+40)
-      .attr("y", function(d) { return 7-prctBar(Math.abs(d.prct)); })
-      .attr("width", 5)
-      .attr("height", function(d) { return prctBar(Math.abs(d.prct)); });*/
-
   });
 
 });
