@@ -135,21 +135,12 @@ d3.csv("data/top25.csv", function(data) {
       .text(function(d) { return d.abbrev; })
       .attr("x", xName);
 
-    //percent women background
-    s.append("rect")
-      .attr("class", "prct")
-      .attr("x", xPrct - rectW/2)
-      .attr("y", -rectH/2)
-      .attr("width", rectW)
-      .attr("height", rectH)
-      .style("fill", function(d) { return colors(d.prct); });
-
     //percent women text
     s.append("text")
       .attr("class", "prct")
       .text(function(d) { return d.prctStr; })
       .attr("x", xPrct)
-      .style("fill", function(d) { return (d.prct > 25) ? "#fcfcfc" : "#333"; });
+      .style("fill", "#333");
 
     //change percent text
     s.append("text")
