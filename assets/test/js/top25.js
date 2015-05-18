@@ -6,8 +6,8 @@ var pad = { left: 10, right: 0, top: 60, bottom: 10 };
 var vertSpace = 45;
 var xName = 15;
 
-var xPrct = 550;
-var xChange = 670;
+var xPrct = 520;
+var xChange = 640;
 var xNumF = 230;
 var xTotal = 350;
 
@@ -155,15 +155,15 @@ d3.csv("data/top25.csv", function(data) {
     s.append("text")
       .attr("class", "numF")
       .text(function(d) { return d.numF; })
-      .attr("x", xNumF)
-      .style("font-size", function(d) { return sizeNumF(d.numF); });
+      .attr("x", xNumF);
+      //.style("font-size", function(d) { return sizeNumF(d.numF); });
 
     //total number text
     s.append("text")
       .attr("class", "total")
       .text(function(d) { return d.total; })
-      .attr("x", xTotal)
-      .style("font-size", function(d) { return sizeTotal(d.total); });
+      .attr("x", xTotal);
+      //.style("font-size", function(d) { return sizeTotal(d.total); });
 
   });
 
