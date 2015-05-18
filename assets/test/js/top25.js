@@ -1,7 +1,7 @@
 
 //positioning settings
 var width = 740;
-var height = 2000;
+var height = 3000;
 var pad = { left: 10, right: 0, top: 60, bottom: 10 };
 var vertSpace = 45;
 var xName = 20;
@@ -144,26 +144,30 @@ d3.csv("data/top25.csv", function(data) {
       .attr("class", "prct")
       .text(function(d) { return d.prctStr; })
       .attr("x", xPrct)
-      .style("fill", "#333");
+      .style("fill", "#333")
+      .style("font-size", 25);
 
     //change percent text
     s.append("text")
       .attr("class", "change")
       .text(function(d) { return d.changeStr; })
-      .attr("x", xChange);
+      .attr("x", xChange)
+      .style("font-size", 25);
 
     //number women text
     s.append("text")
       .attr("class", "numF")
       .text(function(d) { return d.numF; })
-      .attr("x", xNumF);
+      .attr("x", xNumF)
+      .style("font-size", 25);
       //.style("font-size", function(d) { return sizeNumF(d.numF); });
 
     //total number text
     s.append("text")
       .attr("class", "total")
       .text(function(d) { return d.total; })
-      .attr("x", xTotal);
+      .attr("x", xTotal)
+      .style("font-size", 25);
       //.style("font-size", function(d) { return sizeTotal(d.total); });
 
   });
