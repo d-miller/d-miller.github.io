@@ -5,10 +5,13 @@ var height = 1200;
 var pad = { left: 10, right: 0, top: 60, bottom: 10 };
 var vertSpace = 45;
 var xName = 15;
-var xPrct = 230;
-var xChange = 350;
-var xNumF = 550;
-var xTotal = 670;
+
+var xPrct = 550;
+var xChange = 670;
+var xNumF = 230;
+var xTotal = 350;
+
+
 var rectW = 80;
 var rectH = 35;
 var yHeader = 20;
