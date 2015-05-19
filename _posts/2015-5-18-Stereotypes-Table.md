@@ -3,7 +3,7 @@ layout: post
 title: Interactive Table - Gender-Science Stereotypes Across The World
 ---
 
-This interactive table accompanies the manuscript, ["Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations"](assets/MillerEaglyLinn2015.pdf).
+This interactive table accompanies the manuscript, ["Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations"]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf).
 
 
 <script src="../assets/test/lib/d3.v3.min.js"></script>
