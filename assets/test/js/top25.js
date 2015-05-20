@@ -36,8 +36,8 @@ var svg = d3.select(".top25").append("svg")
 var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",0)");
 var activeTile = headerTiles.append("rect").attr({x: xPrct-45, y: 7, width: 90, height: 43, class: "prct"}).style("fill", "#eee").on("click", rankPrct);
 headerTiles.append("rect").attr({x: xChange-70, y: 7, width: 140, height: 43, fill: "white", class: "change"}).on("click", rankChange);
-headerTiles.append("rect").attr({x: xNumF-65, y: 7, width: 130, height: 43, fill: "white", class: "numF"}).on("click", rankNumF);
-headerTiles.append("rect").attr({x: xTotal-37, y: 7, width: 74, height: 43, fill: "white", class: "total"}).on("click", rankTotal);
+headerTiles.append("rect").attr({x: xNumF-45, y: 7, width: 90, height: 43, fill: "white", class: "numF"}).on("click", rankNumF);
+headerTiles.append("rect").attr({x: xTotal-45, y: 7, width: 90, height: 43, fill: "white", class: "total"}).on("click", rankTotal);
 headerTiles.selectAll("rect").style("cursor", "pointer");
 
 //create header text
