@@ -38,6 +38,7 @@ headerTiles.append("rect").attr({x: xPrct-60,  y: 7, height: 43, width: 120, fil
 headerTiles.append("rect").attr({x: xChange-60, y: 7, width: 120, height: 43, fill: "white", class: "change"}).on("click", rankChange);
 headerTiles.selectAll("rect").style("cursor", "pointer");
 activeTile.style("fill", "#eee");
+rankNumF();
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
@@ -52,6 +53,7 @@ subHead.append("text").text("Stereotypes").attr("x", xNumF).on("click", rankNumF
 subHead.append("text").text("Stereotypes").attr("x", xTotal).on("click", rankTotal);
 header.selectAll("text").style("cursor", "pointer");
 subHead.selectAll("text").style("cursor", "pointer");
+
 //event handlers for resorting the rows
 function rankPrct() {
   activeTile.style("fill", "white");
