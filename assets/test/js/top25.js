@@ -1,7 +1,7 @@
 
 //positioning settings
 var width = 740;
-var height = 3500;
+var height = 3200;
 var pad = { left: 10, right: 0, top: 60, bottom: 10 };
 var vertSpace = 45;
 var xName = 20;
@@ -18,8 +18,6 @@ var yHeader = 20;
 var ySubHead = 40;
 
 //define scales
-var scaleRB6 = ['rgb(178,24,43)','rgb(239,138,98)','rgb(253,219,199)','rgb(209,229,240)','rgb(103,169,207)','rgb(33,102,172)'];
-var colors = d3.scale.quantize().domain([30, 0]).range(scaleRB6);
 var sizeNumF = d3.scale.linear().domain([10, 100]).range([11, 30]);
 var sizeTotal = d3.scale.linear().domain([50, 500]).range([11, 30]);
 var changeH = d3.scale.linear().domain([0, 13]).range([0, 18]);
@@ -34,10 +32,10 @@ var svg = d3.select(".top25").append("svg")
 
 //create header (background) tiles
 var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",0)");
-var activeTile = headerTiles.append("rect").attr({x: xPrct-60, y: 7, width: 120, height: 43, class: "prct"}).style("fill", "#eee").on("click", rankPrct);
-headerTiles.append("rect").attr({x: xChange-60, y: 7, width: 120, height: 43, fill: "white", class: "change"}).on("click", rankChange);
-headerTiles.append("rect").attr({x: xNumF-45, y: 7, width: 90, height: 43, fill: "white", class: "numF"}).on("click", rankNumF);
+var activeTile = headerTiles.append("rect").attr({x: xNumF-45, y: 7, width: 90, height: 43, fill: "white", class: "numF"}).on("click", rankNumF);
 headerTiles.append("rect").attr({x: xTotal-45, y: 7, width: 90, height: 43, fill: "white", class: "total"}).on("click", rankTotal);
+headerTiles.append("rect").attr({x: xPrct-60, y: 7, height: 43, width: 120, class: "prct"}).style("fill", "#eee").on("click", rankPrct);
+headerTiles.append("rect").attr({x: xChange-60, y: 7, width: 120, height: 43, fill: "white", class: "change"}).on("click", rankChange);
 headerTiles.selectAll("rect").style("cursor", "pointer");
 
 //create header text
