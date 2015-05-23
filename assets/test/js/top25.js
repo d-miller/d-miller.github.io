@@ -1,7 +1,7 @@
 
 //positioning settings
 var width = 740;
-var height = 2900;
+var height = 2950;
 var pad = { left: 10, right: 0, top: 60, bottom: 10 };
 var vertSpace = 45;
 var xName = 20;
