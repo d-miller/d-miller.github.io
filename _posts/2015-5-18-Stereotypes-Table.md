@@ -3,7 +3,7 @@ layout: post
 title: Interactive Table - Gender-Science Stereotypes Across The World
 ---
 
-This interactive table was mentioned by [_Science_](http://news.sciencemag.org/education/2015/04/women-best-men-stem-faculty-hiring-study) and accompanies the manuscript, ["Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations"]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), published in _Journal of Educational Psychology_.
+This interactive table was mentioned by [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) and accompanies the manuscript, ["Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations"]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), published in _Journal of Educational Psychology_.
 
 
 <script src="../assets/test/lib/d3.v3.min.js"></script>
