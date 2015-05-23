@@ -61,7 +61,7 @@ function rankPrct() {
   activeTile.style("fill", "#eee");
   d3.selectAll("g.row")
     .transition().duration(800)
-    .attr("transform", function(d) { return "translate(0," + vertSpace*(+d.rank - 0.5) + ")"; });
+    .attr("transform", function(d) { return "translate(0," + vertSpace*(+d.rankPrct - 0.5) + ")"; });
 }
 function rankChange() {
   activeTile.style("fill", "white");
