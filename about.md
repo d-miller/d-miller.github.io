@@ -17,7 +17,7 @@ I strengthened my data skills through University of Chicago’s [Eric and Wendy 
 
 I'm a NSF Graduate Research Fellow, and [my research](https://northwestern.academia.edu/DavidMiller) has been covered by national and international news venues including [Chicago Tribune](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [Nature](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [Psychology Today](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we), [Quartz](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/), [Science](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias), [The Guardian](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), [U.S. News](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem), and [Yahoo News](http://news.yahoo.com/gender-science-stereotype-strongest-holland-082246004.html).
 
-I’ve also written for [public audiences](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). 
+My writing for broad audiences has appeared in [InsideHigherEd](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) and [Quartz](qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/).
 
 ### Contact me
 
