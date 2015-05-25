@@ -23,7 +23,9 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 ## Peer-Reviewed Conference Proceedings
 
-Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/Aguiar2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
+Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). [A machine learning framework to identify students at risk of adverse academic outcomes]({{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf). In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
+
+Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/AguiarEtAl2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
 
 Matuk, C. F., McElhaney, K. W., **Miller, D. I.**, Chen, J. K., Lim-Breitbart, J., Terashima, H., … , Linn, M. C. (2013). [Reflectively prototyping a tool for exchanging ideas]({{ site.baseurl }}/assets/Matuk2013.pdf). In _Proceedings of the 10th International Conference on Computer Supported Collaborative Learning_ (pp. 101-104). Madison, WI: International Society of the Learning Sciences.
 
