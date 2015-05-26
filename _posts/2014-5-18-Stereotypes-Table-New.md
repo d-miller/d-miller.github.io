@@ -45,25 +45,6 @@ Here's some example Tweets.
   <a href="https://twitter.com/benmschmidt/status/563754577359814656"></a>
 </blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
 
-<div align="center"><p><blockquote class="twitter-tweet" lang="en">
-  <a href="https://twitter.com/girlmeetsvoice/status/575413471799607296"></a>
-</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
-
-<div align="center"><p><blockquote class="twitter-tweet" lang="en">
-  <a href="https://twitter.com/AndreiCimpian/status/563766644783464448"></a>
-</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
-
-<div align="center"><p><blockquote class="twitter-tweet" lang="en">
-  <a href="https://twitter.com/crampell/status/564513761566806016"></a>
-</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
-
-<div align="center"><p><blockquote class="twitter-tweet" lang="en">
-  <a href="https://twitter.com/criener/status/563759767777452032"></a>
-</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
-
-<div align="center"><p><blockquote class="twitter-tweet" lang="en">
-  <a href="https://twitter.com/BethAV/status/563770468495556609	"></a>
-</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
 
 This example demonstrates the power of social media. In an email to me, Schmidt shared the backstory behind this visualization: it caused a stir on Twitter when he first shared it there, a New York Times reporter contacted him a few hours later, and then other media outlets started to pick up the story too. Major outlets therefore helped highlight the website, but it all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
 
