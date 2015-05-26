@@ -7,7 +7,7 @@ Want to use interactive graphics to help amplify your research? This post talks 
 
 ## Three examples of interactive graphics in the news
 
-This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender diversity in science. I discuss three examples here, and then later talk about how I made the table for [my new international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes [click here to jump to the table]. 
+This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender bias in science. I discuss three examples here, and then later talk about how I made the table for [my new international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes [click here to jump to the table]. 
 
 ### Example #1: Interactive table [D3.js]
 
