@@ -9,7 +9,7 @@ Want to use interactive graphics to help amplify your research? This post talks 
 
 This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender bias in science. I discuss three examples here, describe my international study in more depth, and then present the interactive table [click here to jump to the table]. A follow-up post will talk about how I made the table. 
 
-### Example #1: Interactive table [D3.js]
+### Example #1: Interactive table [[D3.js](http://d-miller.github.io/Why-Learn-D3/)]
 
 My latest research finds that stereotypes associating science with men prevail worldwide, even in supposedly “gender-equal” nations like Denmark and Norway ([PDF](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf); [press release](http://www.northwestern.edu/newscenter/stories/2015/05/gender-science-stereotypes-persist-across-the-world.html)). I created an interactive table using the [JavaScript library D3.js](http://d3js.org/) to show what nations have the strongest stereotypes. 
 
@@ -29,7 +29,7 @@ Don’t expect reporters to always directly contact you about your study, especi
 
 Hence, include critical information about your study in the press release and, if appropriate, provide links to informative interactive graphics. And keep in mind that simple graphics can be quite effective. 
 
-### Example #2: Interactive graphs [D3.js] 
+### Example #2: Interactive graphs [[D3.js](http://d-miller.github.io/Why-Learn-D3/)] 
 
 Benjamin Schmidt at Northeastern University made [this interactive graphic](http://benschmidt.org/profGender/) about gendered language in teacher reviews. The graphic, also created using D3.js, received extensive attention both through [social media](https://twitter.com/benmschmidt/status/563754577359814656) and major outlets such as [_New York Times_](http://www.nytimes.com/2015/02/07/upshot/is-the-professor-bossy-or-brilliant-much-depends-on-gender.html).
 
@@ -78,6 +78,8 @@ In an email to me, Schmidt shared the backstory behind this visualization: it ca
 Major outlets therefore helped highlight the website, but the media attention all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
 
 The example Tweets, in part, show why 
+
+### Example #3: Interactive graphs [[Shiny package in R](http://shiny.rstudio.com/)]
 
 ## The study: Gender-science stereotypes prevail worldwide
 
