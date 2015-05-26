@@ -41,9 +41,8 @@ Here’s an example screenshot relating to [recent research](http://www.sciencem
 
 Here's some example Tweets.
 
-<div align="center"><p><blockquote class="twitter-tweet" lang="en">
-  <a href="https://twitter.com/benmschmidt/status/563754577359814656"></a>
-</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/davidimiller">@davidimiller</a> You are welcome. Thanks for writing about the topic.</p>&mdash; Sofie Sandell (@Soffi_Propp) <a href="https://twitter.com/Soffi_Propp/status/603097611881607168">May 26, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 This example demonstrates the power of social media. In an email to me, Schmidt shared the backstory behind this visualization: it caused a stir on Twitter when he first shared it there, a New York Times reporter contacted him a few hours later, and then other media outlets started to pick up the story too. Major outlets therefore helped highlight the website, but it all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
