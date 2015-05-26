@@ -23,6 +23,26 @@ In this case, the table helped provide reporters with information about internat
 
 So how did the reporters know about my website? [Northwestern University’s press release](http://www.northwestern.edu/newscenter/stories/2015/05/gender-science-stereotypes-persist-across-the-world.html) mentioned it. So here's a tip: if you’ve made awesome graphics for your research, work with your university’s or company’s public relations office to promote it.
 
+Such graphics might also increase the chances that reporters will cover your study. And if reporters do cover your study, those graphics can help provide critical information, as my example demonstrates. 
+
+Don’t expect reporters to always directly contact you about your study, especially because the news world can be quite fast paced. For instance, [_U.S. News_](http://www.usnews.com/news/blogs/data-mine/2015/05/18/stem-gender-stereotypes-common-across-the-world) covered my study three hours after the press release came out (and yes, the reporter wrote the coverage in just those three hours). 
+
+Hence, include critical information about your study in the press release and, if appropriate, provide links to informative interactive graphics. And keep in mind that simple graphics can be quite effective. 
+
+### Example #2: Interactive graphs [D3.js] 
+
+Benjamin Schmidt at Northeastern University made [this interactive graphic](http://benschmidt.org/profGender/) about gendered language in teacher reviews. The graphic, also created using D3.js, received extensive attention both through [social media](https://twitter.com/benmschmidt/status/563754577359814656) and major outlets such as [_New York Times_](http://www.nytimes.com/2015/02/07/upshot/is-the-professor-bossy-or-brilliant-much-depends-on-gender.html).
+
+Here’s an example screenshot relating to [recent research](http://www.sciencemag.org/content/347/6219/262) of Sarah-Jane Leslie at Princeton University and her colleagues about gender stereotypes that imbue men, not women, with intellectual “genius.” 
+
+[[RELATED RESEARCH: Describing Applicants in Gendered Language Might Influence Academic Science Hiring]](http://www.americanscientist.org/blog/pub/gendered-language-science-hiring)
+
+Here's some example Tweets.
+
+<div align="center"><p><blockquote class="twitter-tweet" lang="en">
+  <a href="https://twitter.com/melindagates/status/570285946626822144"></a>
+</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+
 <script src="../assets/test/lib/d3.v3.min.js"></script>
 <link rel="stylesheet" href="../assets/test/styles/styles.css">
 
