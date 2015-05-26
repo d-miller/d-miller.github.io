@@ -33,7 +33,7 @@ Hence, include critical information about your study in the press release and, i
 
 Benjamin Schmidt at Northeastern University made [this interactive graphic](http://benschmidt.org/profGender/) about gendered language in teacher reviews. The graphic, also created using D3.js, received extensive attention both through [social media](https://twitter.com/benmschmidt/status/563754577359814656) and major outlets such as [_New York Times_](http://www.nytimes.com/2015/02/07/upshot/is-the-professor-bossy-or-brilliant-much-depends-on-gender.html).
 
-Here’s an example screenshot relating to [recent research](http://www.sciencemag.org/content/347/6219/262) of Sarah-Jane Leslie at Princeton University and her colleagues about gender stereotypes that imbue men, not women, with intellectual “genius.” 
+Here’s an example screenshot relating to [recent research](http://www.sciencemag.org/content/347/6219/262) about gender stereotypes that imbue men, not women, with intellectual “genius.” 
 
 <div align="center"><img src="../images/prof-gender.png" /></div>
 
