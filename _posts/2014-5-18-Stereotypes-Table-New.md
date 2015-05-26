@@ -5,7 +5,7 @@ title: Amplify Your Data Using Interactive Graphics
 
 Want to use interactive graphics to help amplify your research? This post talks about how to do that, using [my new international research](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) as an example. Most recently, [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) mentioned the interactive table I created for that study.
 
-## Three example of interactive graphics in the news
+## Three examples of interactive graphics in the news
 
 This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender diversity in science. I discuss three examples here, and then later talk about how I made the table for [my new international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes [click here to jump to the table]. 
 
