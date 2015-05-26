@@ -7,7 +7,7 @@ Want to use interactive graphics to help amplify your research? This post talks 
 
 ## Two examples of interactive graphics in the news
 
-This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender bias in science. I discuss two examples here, describe my international study in more depth, and then present the interactive table [click here to jump to the table]. A follow-up post will talk about how I made the table. 
+This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender bias in science. I discuss two examples here, describe my international study in more depth, and then present the interactive table. A follow-up post will talk about how I made the table. 
 
 ### Example #1: Interactive table [[D3.js](http://d-miller.github.io/Why-Learn-D3/)]
 
@@ -15,7 +15,7 @@ My latest research finds that stereotypes associating science with men prevail w
 
 [[RELATED POST: 5 Reasons to Learn D3.js]](http://d-miller.github.io/Why-Learn-D3/)
 
-You might be surprised to learn what nation had the strongest stereotypes out of all 66 nations studied! [jump to table]
+You might be surprised to learn what nation had the strongest stereotypes out of all 66 nations studied! 
 
 I love that the table is so simple (just one interactive control!), yet directly influenced news coverage in [_Pacific Standard_](http://www.psmag.com/health-and-behavior/when-it-comes-to-female-scientists-seeing-is-believing), [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias), [_U.S. News_](http://www.usnews.com/news/blogs/data-mine/2015/05/18/stem-gender-stereotypes-common-across-the-world), and [_Yahoo News_](http://news.yahoo.com/gender-science-stereotype-strongest-holland-082246004.html). This example demonstrates an important point: simple graphics can sometimes present information more effectively than graphics with many distracting bells and whistles.  
 
