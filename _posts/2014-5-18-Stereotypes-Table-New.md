@@ -94,10 +94,6 @@ Here are the details about the study that the interactive table accompanies.
 
 The numbers below for stereotypes can simply be interpreted as standardized national averages. Larger numbers for the first two columns means stronger stereotypes associating science with men. National averages exceeding 0.5 can be considered moderate to large, as explained further in [the manuscript](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) (p. 4).
 
-What do the below numbers for stereotypes mean?
-
-* Quote from manuscript: "For both explicit and implicit stereotype measures, positive scores indicated male–science associations, negative scores indicated female–science associations, and scores of 0 indicated neutral gender–science associations (e.g., an explicit response of 'neither male nor female'). To facilitate comparison across the two stereotype measures, each measure’s raw scores were standardized by dividing by the standard deviation of all individual scores across the globe. These standardized scores are identical to z-scores if z-scores were computed without first subtracting the population mean. Hence, for both stereotype measures, a standardized score of 0.5 represented a response that differed 0.5 standard deviations in the male direction from neutral gender–science associations, with standard deviation representing variability across individuals. This approach has the advantage that the magnitude of stereotypes can be interpreted in Cohen’s d effect size units (for an example meta-analytic application, see Koenig, Eagly, Mitchell, & Ristikari, 2011, masculinity-femininity paradigm). Hence, national averages exceeding 0.5 can be considered moderate to large."
-
 <script src="../assets/test/lib/d3.v3.min.js"></script>
 <link rel="stylesheet" href="../assets/test/styles/styles.css">
 
