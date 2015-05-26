@@ -79,15 +79,15 @@ Major outlets therefore helped highlight the website, but the media attention al
 
 The example Tweets, in part, show why 
 
-## The international study: Gender-science stereotypes prevail worldwide
+## The study: Gender-science stereotypes prevail worldwide
 
 Here are the details about the study that the interactive table accompanies.
 
-* **The study**: “Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations", in press in Journal of Educational Psychology.
-*	**The data**: Through a website called Project Implicit, nearly 350,000 individuals in 66 nations completed measures of gender-science stereotypes, making the study the largest ever of its kind. The manuscript discusses characteristics of the sample in detail. 
+* **The study**: [“Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations,"](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) in press at _Journal of Educational Psychology_.
+*	**The data**: Through a website called [Project Implicit](https://implicit.harvard.edu/implicit/takeatest.html), nearly 350,000 individuals in 66 nations completed measures of gender-science stereotypes, making the study the largest ever of its kind. The paper discusses sample characteristics in detail. 
 *	**Two measures of stereotypes**: Participants both (a) rated how much they associated science with males or females (an “explicit” measure), and (b) completed a computerized task assessing how quickly they associated science words such as “math” and “physics” with male words such as “boy” and “man” (an “implicit” measure).
-*	**The findings**: Stereotypes associating science with men prevailed worldwide, even in supposedly “gender-equal” nations like Denmark and Norway. See the interactive table for which nation was #1 (you might be surprised!). Though pervasive, these stereotypes were weaker in nations with more women among science majors and researchers. 
-*	**Additional information (findings)**: The main academic contribution of the study is essentially “the more women in science, the weaker stereotypes (with some nuance).” If you’re researcher in social psychology or a related field, you may be very interested in the nuance! So check out the manuscript if you’re enticed by phrases like “associative-propositional model” and “social role theory” (I mean, who wouldn’t be?). 
+*	**The findings**: Stereotypes associating science with men prevailed worldwide, even in supposedly “gender-equal” nations like Denmark and Norway. See the table for which nation was #1 (you might be surprised!). Though pervasive, these stereotypes were weaker in nations with more female science majors and researchers. 
+*	**Additional information (findings)**: The main academic contribution of the study is essentially “the more women in science, the weaker stereotypes (with some nuance).” If you’re researcher in social psychology or a related field, you may be very interested in the nuance! So check out [the manuscript](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) if you’re enticed by phrases like “associative-propositional model” and “social role theory” (I mean, who wouldn’t be?). 
 *	**Additional information (data)**: And check out the supplemental materials or raw data for you data nerds out there. Expect discussion of sexy things like “mixed-effects meta-regression models” and “unstandardized beta coefficients.” I spent much time gathering data about characteristics of the nations (e.g., measures of gender equity, economic development, prevalence of scientists), so please use my dataset if it’s helpful for an international data project of your own!
 
 
