@@ -37,6 +37,8 @@ Here’s an example screenshot relating to [recent research](http://www.sciencem
 
 [[RELATED RESEARCH: Describing Applicants in Gendered Language Might Influence Academic Science Hiring]](http://www.americanscientist.org/blog/pub/gendered-language-science-hiring)
 
+<div align="center"><img src="../images/prof-gender.png" /></div>
+
 Here's some example Tweets.
 
 <div align="center"><p><blockquote class="twitter-tweet" lang="en">
