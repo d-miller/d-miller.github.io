@@ -3,11 +3,11 @@ layout: post
 title: Amplify Your Data Using Interactive Graphics
 ---
 
-Want to use interactive graphics to help amplify your research? This post talks about how to do that, using [my new international research](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) and two other projects as examples. Most recently, [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) mentioned the interactive table I created for my international study.
+Want to use interactive graphics to help amplify your research? This post talks about how to do that, using [my new international research](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) and one other project as examples. Most recently, [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) mentioned the interactive table I created for my international study.
 
-## Three examples of interactive graphics in the news
+## Two examples of interactive graphics in the news
 
-This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender bias in science. I discuss three examples here, describe my international study in more depth, and then present the interactive table [click here to jump to the table]. A follow-up post will talk about how I made the table. 
+This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender bias in science. I discuss two examples here, describe my international study in more depth, and then present the interactive table [click here to jump to the table]. A follow-up post will talk about how I made the table. 
 
 ### Example #1: Interactive table [[D3.js](http://d-miller.github.io/Why-Learn-D3/)]
 
