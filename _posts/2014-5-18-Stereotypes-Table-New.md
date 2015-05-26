@@ -5,11 +5,11 @@ title: Amplify Your Data Using Interactive Graphics
 
 Want to use interactive graphics to help amplify your research? This post talks about how to do that, using [my new international research](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) as an example. Most recently, [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) mentioned the interactive table I created for that study.
 
-# How interactive graphics can amplify your data: Three examples
+## Three example of interactive graphics
 
 This post aims to reach both people looking to learn more about (a) interactive graphics and (b) gender diversity in science. I discuss three examples here, and then later talk about how I made the table for [my new international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes [click here to jump to the table]. 
 
-## Example #1: Interactive table [D3.js]
+### Example #1: Interactive table [D3.js]
 
 My latest research finds that stereotypes associating science with men prevail worldwide, even in supposedly “gender-equal” nations like Denmark and Norway ([PDF](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf); [press release](http://www.northwestern.edu/newscenter/stories/2015/05/gender-science-stereotypes-persist-across-the-world.html)). I created an interactive table using the JavaScript library D3.js to show what nations have the strongest stereotypes. 
 
