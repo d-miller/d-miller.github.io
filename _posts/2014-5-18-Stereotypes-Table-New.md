@@ -51,6 +51,25 @@ Here's some example Tweets.
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
+<div align="center">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Just search for &quot;genius&quot; and &quot;brilliant&quot; in this database of student evals of male and female profs | <a href="http://t.co/xovednJEzN">http://t.co/xovednJEzN</a> via <a href="https://twitter.com/ecsalomon">@ecsalomon</a></p>&mdash; Andrei Cimpian (@AndreiCimpian) <a href="https://twitter.com/AndreiCimpian/status/563766644783464448">February 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div align="center">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">chart shows words used to describe male v female professors in online reviews <a href="http://t.co/dNwuT9YaNC">http://t.co/dNwuT9YaNC</a> &quot;fat,&quot; &quot;boring&quot; more often used for men</p>&mdash; Catherine Rampell (@crampell) <a href="https://twitter.com/crampell/status/564513761566806016">February 8, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div align="center">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Also interesting to compare fields. E.g. - word: &quot;caring&quot; - gender dif, yes, but check dif btw edu &amp; econ <a href="http://t.co/25Fcl14MAe">http://t.co/25Fcl14MAe</a></p>&mdash; Cedar Riener (@criener) <a href="https://twitter.com/criener/status/563759767777452032">February 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div align="center">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Huge gender difference for &quot;sweet&quot;. I don&#39;t like getting that one on evals even though I know the students mean well. <a href="http://t.co/E7KQzSelwf">http://t.co/E7KQzSelwf</a></p>&mdash; Beth Visser PhD (@BethAV) <a href="https://twitter.com/BethAV/status/563770468495556609">February 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 This example demonstrates the power of social media. In an email to me, Schmidt shared the backstory behind this visualization: it caused a stir on Twitter when he first shared it there, a New York Times reporter contacted him a few hours later, and then other media outlets started to pick up the story too. Major outlets therefore helped highlight the website, but it all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
 
