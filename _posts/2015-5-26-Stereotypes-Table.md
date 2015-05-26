@@ -75,7 +75,7 @@ Here's some example Tweets.
 
 This example demonstrates the power of social media. 
 
-In an email to me, Schmidt shared the backstory behind this visualization: it caused a stir on Twitter when he first shared it there, a New York Times reporter contacted him a few hours later, and then other media outlets started to pick up the story.
+In an email to me, Schmidt shared the backstory behind this visualization: it caused a stir on Twitter when he first shared it there, a _New York Times_ reporter contacted him a few hours later, and then other media outlets started to pick up the story.
 
 Major outlets therefore helped highlight the website, but the media attention all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
 
