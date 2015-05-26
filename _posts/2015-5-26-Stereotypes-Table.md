@@ -92,8 +92,8 @@ Here are the details about the study that the interactive table (example #1) acc
 
 The numbers below for stereotypes can simply be interpreted as standardized national averages. Larger numbers for the first two columns means stronger stereotypes associating science with men. National averages exceeding 0.5 can be considered moderate to large, as explained further in [the manuscript](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) (p. 4).
 
-<script src="../assets/test/lib/d3.v3.min.js"></script>
-<link rel="stylesheet" href="../assets/test/styles/styles.css">
+<script src="../assets/Stereotypes-Table/d3.v3.min.js"></script>
+<link rel="stylesheet" href="../assets/Stereotypes-Table/styles.css">
 
 <div id="table" style="padding-top: 0px;">
   <div id="titleCustom">
@@ -101,5 +101,6 @@ The numbers below for stereotypes can simply be interpreted as standardized nati
     <h3>(Click header labels to resort)</h3>
   </div>
   <div class="top25" style="text-align: center;"></div>
-  <script src="../assets/test/js/top25.js"></script>
+  <script src="../assets/Stereotypes-Table/top25.js"></script>
 </div>
+
