@@ -77,13 +77,9 @@ In an email to me, Schmidt shared the backstory behind this visualization: it ca
 
 Major outlets therefore helped highlight the website, but the media attention all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
 
-The example Tweets, in part, show why 
-
-### Example #3: Interactive graphs [[Shiny package in R](http://shiny.rstudio.com/)]
-
 ## The study: Gender-science stereotypes prevail worldwide
 
-Here are the details about the study that the interactive table accompanies.
+Here are the details about the study that the interactive table (example #1) accompanies.
 
 * **The study**: [“Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations,"](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) in press at _Journal of Educational Psychology_.
 *	**The data**: Through a website called [Project Implicit](https://implicit.harvard.edu/implicit/takeatest.html), nearly 350,000 individuals in 66 nations completed measures of gender-science stereotypes, making the study the largest ever of its kind. The paper discusses sample characteristics in detail. 
