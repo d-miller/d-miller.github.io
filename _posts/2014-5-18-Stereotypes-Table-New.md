@@ -25,7 +25,7 @@ So how did the reporters know about my website? [Northwestern University’s pre
 
 Such graphics might also increase the chances that reporters will cover your study. And if reporters do cover your study, those graphics can help provide critical information, as my example demonstrates. 
 
-Don’t expect reporters to always directly contact you about your study, especially because the news world can be quite fast paced. For instance, [_U.S. News_](http://www.usnews.com/news/blogs/data-mine/2015/05/18/stem-gender-stereotypes-common-across-the-world) covered my study three hours after the press release came out (and yes, the reporter wrote the coverage in just those three hours). 
+Don’t expect reporters to always directly contact you about your study, especially because the news world can be quite fast paced. Reporters might not have the time to contact you. [_U.S. News_](http://www.usnews.com/news/blogs/data-mine/2015/05/18/stem-gender-stereotypes-common-across-the-world), for instance, covered my study three hours after the press release came out (and yes, the reporter wrote the coverage in just those three hours). 
 
 Hence, include critical information about your study in the press release and, if appropriate, provide links to informative interactive graphics. And keep in mind that simple graphics can be quite effective. 
 
