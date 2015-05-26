@@ -40,8 +40,30 @@ Here’s an example screenshot relating to [recent research](http://www.sciencem
 Here's some example Tweets.
 
 <div align="center"><p><blockquote class="twitter-tweet" lang="en">
-  <a href="https://twitter.com/melindagates/status/570285946626822144"></a>
+  <a href="https://twitter.com/benmschmidt/status/563754577359814656"></a>
 </blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+
+<div align="center"><p><blockquote class="twitter-tweet" lang="en">
+  <a href="https://twitter.com/girlmeetsvoice/status/575413471799607296"></a>
+</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+
+<div align="center"><p><blockquote class="twitter-tweet" lang="en">
+  <a href="https://twitter.com/AndreiCimpian/status/563766644783464448"></a>
+</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+
+<div align="center"><p><blockquote class="twitter-tweet" lang="en">
+  <a href="https://twitter.com/crampell/status/564513761566806016"></a>
+</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+
+<div align="center"><p><blockquote class="twitter-tweet" lang="en">
+  <a href="https://twitter.com/criener/status/563759767777452032"></a>
+</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+
+<div align="center"><p><blockquote class="twitter-tweet" lang="en">
+  <a href="https://twitter.com/BethAV/status/563770468495556609	"></a>
+</blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p></div>
+
+
 
 <script src="../assets/test/lib/d3.v3.min.js"></script>
 <link rel="stylesheet" href="../assets/test/styles/styles.css">
