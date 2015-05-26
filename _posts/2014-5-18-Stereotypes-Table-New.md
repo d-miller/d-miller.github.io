@@ -46,6 +46,12 @@ Here's some example Tweets.
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
+<div align="center">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">New charts <a href="https://twitter.com/girlwpen">@girlwpen</a> show <a href="https://twitter.com/hashtag/genderbias?src=hash">#genderbias</a> in teacher reviews <a href="http://t.co/i9VljBdUNw">http://t.co/i9VljBdUNw</a> Men called &quot;geniuses&quot; Women? “bossy&quot; <a href="http://t.co/PiZf0ju9Pt">http://t.co/PiZf0ju9Pt</a></p>&mdash; deborahsiegel (@girlmeetsvoice) <a href="https://twitter.com/girlmeetsvoice/status/575413471799607296">March 10, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
 This example demonstrates the power of social media. In an email to me, Schmidt shared the backstory behind this visualization: it caused a stir on Twitter when he first shared it there, a New York Times reporter contacted him a few hours later, and then other media outlets started to pick up the story too. Major outlets therefore helped highlight the website, but it all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
 
 So how did the reporters know about my website? [Northwestern University’s press release](http://www.northwestern.edu/newscenter/stories/2015/05/gender-science-stereotypes-persist-across-the-world.html) mentioned it. So here's a tip: if you’ve made awesome graphics for your research, work with your university’s or company’s public relations office to promote it.
