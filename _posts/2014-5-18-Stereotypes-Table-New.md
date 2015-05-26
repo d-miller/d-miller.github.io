@@ -35,9 +35,9 @@ Benjamin Schmidt at Northeastern University made [this interactive graphic](http
 
 Here’s an example screenshot relating to [recent research](http://www.sciencemag.org/content/347/6219/262) of Sarah-Jane Leslie at Princeton University and her colleagues about gender stereotypes that imbue men, not women, with intellectual “genius.” 
 
-[[RELATED RESEARCH: Describing Applicants in Gendered Language Might Influence Academic Science Hiring]](http://www.americanscientist.org/blog/pub/gendered-language-science-hiring)
-
 <div align="center"><img src="../images/prof-gender.png" /></div>
+
+[[RELATED RESEARCH: Describing Applicants in Gendered Language Might Influence Academic Science Hiring]](http://www.americanscientist.org/blog/pub/gendered-language-science-hiring)
 
 Here's some example Tweets.
 
