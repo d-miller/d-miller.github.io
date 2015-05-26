@@ -82,6 +82,11 @@ The example Tweets, in part, show why
 ## The international study: Gender-science stereotypes prevail worldwide
 
 Here are the details about the study that the interactive table accompanies.
+
+* Item 1
+* Item 2
+* Item 3
+
 * **The study**: “Women's Representation in Science Predicts Gender-Science Stereotypes: Evidence From 66 nations", in press in Journal of Educational Psychology.
 *	The data: Through a website called Project Implicit, nearly 350,000 individuals in 66 nations completed measures of gender-science stereotypes, making the study the largest ever of its kind. The manuscript discusses characteristics of the sample in detail. 
 *	Two measures of stereotypes: Participants both (a) rated how much they associated science with males or females (an “explicit” measure), and (b) completed a computerized task assessing how quickly they associated science words such as “math” and “physics” with male words such as “boy” and “man” (an “implicit” measure).
