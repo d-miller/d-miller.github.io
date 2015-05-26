@@ -41,8 +41,12 @@ Here’s an example screenshot relating to [recent research](http://www.sciencem
 
 Here's some example Tweets.
 
+<div align="center">
+
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">How do student evaluations describe men and women differently? Test your theories here: <a href="http://t.co/yLLOcpXZ7u">http://t.co/yLLOcpXZ7u</a> <a href="http://t.co/v6OlkjiosU">pic.twitter.com/v6OlkjiosU</a></p>&mdash; Benjamin Schmidt (@benmschmidt) <a href="https://twitter.com/benmschmidt/status/563754577359814656">February 6, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
 
 
 This example demonstrates the power of social media. In an email to me, Schmidt shared the backstory behind this visualization: it caused a stir on Twitter when he first shared it there, a New York Times reporter contacted him a few hours later, and then other media outlets started to pick up the story too. Major outlets therefore helped highlight the website, but it all started with [a well-crafted Tweet](https://twitter.com/benmschmidt/status/563754577359814656).
