@@ -41,7 +41,7 @@ Here’s an example screenshot relating to [recent research](http://www.sciencem
 
 Here's some example Tweets.
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/davidimiller">@davidimiller</a> You are welcome. Thanks for writing about the topic.</p>&mdash; Sofie Sandell (@Soffi_Propp) <a href="https://twitter.com/Soffi_Propp/status/603097611881607168">May 26, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">How do student evaluations describe men and women differently? Test your theories here: <a href="http://t.co/yLLOcpXZ7u">http://t.co/yLLOcpXZ7u</a> <a href="http://t.co/v6OlkjiosU">pic.twitter.com/v6OlkjiosU</a></p>&mdash; Benjamin Schmidt (@benmschmidt) <a href="https://twitter.com/benmschmidt/status/563754577359814656">February 6, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
