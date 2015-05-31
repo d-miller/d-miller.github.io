@@ -7,7 +7,7 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px;} </style>
 
-## Popular Press
+<h2 style="margin-top: 1em;">Popular Press</h2>
 
 Miller, D. I. (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393). _The Conversation_. 
 
