@@ -3,7 +3,7 @@ layout: page
 permalink: /pubs/
 ---
 
-<div style="font-size: 2em;"><a href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar profile.</a></div>
+<div style="font-size: 1.4em;"><a href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar profile.</a></div>
 
 ## Popular Press
 
