@@ -6,6 +6,7 @@ permalink: /pubs/
 <div style="font-size: 1.6em;"><a href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar profile.</a></div>
 <br>
 
+
 ## Popular Press
 
 Miller, D. I. (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393). _The Conversation_. Discusses my international study on gender-science stereotypes, published in [_Journal of Educational Psychology_](http://dx.doi.org/10.1037/edu0000005).
@@ -15,8 +16,6 @@ Miller, D. I. (2015, April 16). [Some good news about hiring women in STEM doesn
 Miller, D. I. (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. Discusses my study on gender gaps in doctoral persistence, published in [_Frontiers in Psychology_](http://dx.doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain why women are underrepresented in science and technology fields.  
 
 ## Academic Publications
-
-<style> ul {position: relative; top: -10px;} </style>
 
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_. 
 
