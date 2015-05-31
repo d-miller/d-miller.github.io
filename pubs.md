@@ -4,7 +4,7 @@ permalink: /pubs/
 ---
 
 <div style="font-size: 1.6em;"><a href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar profile.</a></div>
-<br><br>
+<br>
 
 ## Popular Press
 
