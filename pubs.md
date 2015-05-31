@@ -9,15 +9,15 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Popular Press</h2>
 
-Miller, D. I. (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
+*Miller, D. I.* (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
 * Discusses my international study on gender-science stereotypes, published in [_Journal of Educational Psychology_](http://dx.doi.org/10.1037/edu0000005).
 
-Miller, D. I. (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
+*Miller, D. I.* (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
 
 * Discusses others' research, most notably [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
 
-Miller, D. I. (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
+*Miller, D. I.* (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
 
 * Discusses my study on gender gaps in doctoral persistence, published in [_Frontiers in Psychology_](http://dx.doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain why women are underrepresented in science and technology fields.  
 
