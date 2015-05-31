@@ -3,7 +3,7 @@ layout: page
 permalink: /pubs/
 ---
 
-<div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar profile.</a></div>
+<div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile.</a></div>
 
 <style> ul {position: relative; top: -12px;} </style>
 
@@ -12,10 +12,12 @@ permalink: /pubs/
 **Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
 * Discusses my international study on gender-science stereotypes, published in [_Journal of Educational Psychology_](http://dx.doi.org/10.1037/edu0000005).
+* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
 
 **Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
 
 * Discusses others' research, most notably [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
+* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
 
 **Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
 
@@ -25,7 +27,7 @@ permalink: /pubs/
 
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_. 
 
-* I wrote [this popular press article](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) for _The Conversation_ (see [guidelines for republishing](https://theconversation.com/us/republishing-guidelines)). 
+* I wrote [this popular press article](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) for _The Conversation_. This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)). 
 * Media coverage: [_Ars Technica_](http://arstechnica.com/science/2015/05/bias-against-women-in-science-persists-even-in-egalitarian-societies/), [_Business Standard_](http://www.business-standard.com/article/news-ians/gender-science-stereotype-strongest-in-holland-115051900492_1.html) (Indian outlet), [_ChicagoInno_](http://chicagoinno.streetwise.co/2015/05/26/guess-which-country-is-least-likely-to-associate-women-with-stem-fields/), [_Daily Northwestern_](http://dailynorthwestern.com/2015/05/18/campus/stereotypes-associating-science-with-men-persist-around-the-world-study-shows/), [_Dutch News_](http://www.dutchnews.nl/news/archives/2015/05/the-dutch-consider-science-is-a-male-profession/) (Dutch outlet), [_eldario.es_](http://www.eldiario.es/sociedad/Holanda-Noruega-Suecia-machistas-cientificas_0_391261145.html) (Spanish outlet; written in Spanish), [_Futurity_](http://www.futurity.org/women-in-science-stereotypes-927882/), [_Inside Higher Ed_](https://www.insidehighered.com/quicktakes/2015/05/19/gender-stereotypes-and-science-around-world), [_LabOnline_](http://www.labonline.com.au/content/lab-business/news/largest-ever-study-into-gender-stereotypes-in-science-759159113) (Australian outlet), [_Pacific Standard_](http://www.psmag.com/health-and-behavior/when-it-comes-to-female-scientists-seeing-is-believing), [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias), [_Science Daily_](http://www.sciencedaily.com/releases/2015/05/150518141915.htm), [_U.S. News_](http://www.usnews.com/news/blogs/data-mine/2015/05/18/stem-gender-stereotypes-common-across-the-world), [_Yahoo News_](http://news.yahoo.com/gender-science-stereotype-strongest-holland-082246004.html). 
 
 **Miller, D. I.**, & Wai, J. (2015). [The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
