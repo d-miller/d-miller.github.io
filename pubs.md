@@ -9,7 +9,7 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Popular Press</h2>
 
-Miller, D. I. (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393). _The Conversation_. 
+Miller, D. I. (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
 * Discusses my international study on gender-science stereotypes, published in [_Journal of Educational Psychology_](http://dx.doi.org/10.1037/edu0000005).
 
