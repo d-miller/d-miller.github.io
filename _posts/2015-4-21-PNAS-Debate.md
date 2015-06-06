@@ -3,7 +3,7 @@ layout: post
 title: Robust Preference for Female Faculty Applicants
 ---
 
-I respond to [Dr. Zuleyka Zevallos’s critique](http://othersociologist.com/2015/04/16/myth-about-women-in-science/) of the [PNAS study](http://dx.doi.org/10.1073/pnas.1418878112) on STEM faculty hiring bias [[her response](http://othersociologist.com/2015/04/16/myth-about-women-in-science/#comment-10552); [my rebuttal](http://d-miller.github.io/PNAS-Debate/#comment-1988072969)]. PNAS authors responded in [Huffington Post](http://www.huffingtonpost.com/wendy-m-williams/) (**UPDATE: [part 4](http://www.huffingtonpost.com/wendy-m-williams/women-scientists-academic_2_b_7480318.html) posted June 1st, 2015**), in [American Scientist](http://www.americanscientist.org/blog/pub/gendered-language-science-hiring), and on [their website](http://www.human.cornell.edu/hd/ciws/upload/pnasaddtlresources-williamsceci_20150513.pdf) to the broader [social media debate](https://storify.com/kejames/still-a).
+I respond to [Dr. Zuleyka Zevallos’s critique](http://othersociologist.com/2015/04/16/myth-about-women-in-science/) of the [PNAS study](http://dx.doi.org/10.1073/pnas.1418878112) on STEM faculty hiring bias [[her response](http://othersociologist.com/2015/04/16/myth-about-women-in-science/#comment-10552); [my rebuttal](http://d-miller.github.io/PNAS-Debate/#comment-1988072969)]. PNAS authors responded in _Huffington Post_ ([five-part response](http://www.huffingtonpost.com/wendy-m-williams/)), in [_American Scientist_](http://www.americanscientist.org/blog/pub/gendered-language-science-hiring), and on [their website](http://www.human.cornell.edu/hd/ciws/upload/pnasaddtlresources-williamsceci_20150513.pdf) to the broader [social media debate](https://storify.com/kejames/still-a).
 
 *******
 
