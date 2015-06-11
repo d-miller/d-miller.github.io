@@ -7,27 +7,7 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<h2 style="margin-top: 1em;">Popular Press</h2>
-
-**Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
-
-* Reports on [a nationally representative, longitudinal study](http://dx.doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
-* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
-
-**Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
-
-* Discusses my international study on gender-science stereotypes, published in [_Journal of Educational Psychology_](http://dx.doi.org/10.1037/edu0000005).
-
-**Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
-
-* Discusses others' research, most notably [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
-* 24,000+ page views across original and republishing outlets. 
-
-**Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
-
-* Discusses [my study on gender gaps in doctoral persistence](http://dx.doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain why women are underrepresented in science and technology fields.  
-
-## Academic Publications
+<h2 style="margin-top: 1em;">Academic Publications</h2>
 
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_. 
 
@@ -54,6 +34,25 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 * Media coverage: [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
 
+## Popular Press
+
+**Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
+
+* Reports on [a nationally representative, longitudinal study](http://dx.doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
+* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
+
+**Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
+
+* Discusses my international study on gender-science stereotypes, published in [_Journal of Educational Psychology_](http://dx.doi.org/10.1037/edu0000005).
+
+**Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
+
+* Discusses others' research, most notably [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
+* 24,000+ page views across original and republishing outlets. 
+
+**Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
+
+* Discusses [my study on gender gaps in doctoral persistence](http://dx.doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain why women are underrepresented in science and technology fields. 
 
 ## Peer-Reviewed Conference Proceedings
 
