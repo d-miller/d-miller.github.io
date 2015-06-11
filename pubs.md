@@ -44,11 +44,12 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 **Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
 * Discusses my international study on gender-science stereotypes, published in [_Journal of Educational Psychology_](http://dx.doi.org/10.1037/edu0000005).
+* Republished by [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), _Quartz_, and [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/).
 
 **Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
 
 * Discusses others' research, most notably [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
-* 24,000+ page views across original and republishing outlets. 
+* 24,000+ page views across original and republishing outlets including [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/). 
 
 **Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
 
