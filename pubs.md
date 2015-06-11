@@ -7,7 +7,7 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<h2 style="margin-top: 1em;">Academic Publications</h2>
+<h2 style="margin-top: 1em;" id="academic">Academic Publications</h2>
 
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_. 
 
@@ -34,7 +34,7 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 * Media coverage: [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
 
-## Popular Press
+<h2 id="press">Popular Press</h2>
 
 **Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
 
