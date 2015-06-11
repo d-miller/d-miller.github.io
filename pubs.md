@@ -43,7 +43,7 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 **Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
-* Discusses [my _Journal of Educational Psychology_ study](http://dx.doi.org/10.1037/edu0000005) on gender-science stereotypes.
+* Discusses [my international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes.
 * Republished by [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), [_Quartz_](http://qz.com/414869/in-2015-most-people-still-think-man-when-they-think-scientist/), [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/), and [_The New Zealand Herald_](http://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=11463443).
 
 **Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
