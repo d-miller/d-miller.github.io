@@ -27,4 +27,6 @@ My writings on this blog or other popular press express my own opinions. These w
 
 ## Contact me
 
-[dmiller@u.northwestern.edu](mailto:dmiller@u.northwestern.edu)
+Email: [dmiller@u.northwestern.edu](mailto:dmiller@u.northwestern.edu)
+
+Twitter: [@davidimiller](https://twitter.com/davidimiller)
