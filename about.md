@@ -21,7 +21,7 @@ I also write for popular press and am a contributing writer for [_The Conversati
 
 ### Disclaimer
 
-My writings on this blog or other popular press express my own opinions. These writings do not represent the views of Northwestern University, my advisors, or anyone else employed at Northwestern. 
+My writings on this blog or other popular press express my own opinions. These writings do not represent the views of Northwestern University or anyone else employed there including my advisors. 
 
 ### Contact me
 
