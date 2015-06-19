@@ -19,6 +19,10 @@ I'm a NSF Graduate Research Fellow, and [my research](https://scholar.google.com
 
 I also write for popular press and am a contributing writer for [_The Conversation_](https://theconversation.com/). My writing has also appeared in [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem), [_Inside Higher Ed_](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science), [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/), [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/), and [_World Economic Forum_](https://agenda.weforum.org/2015/06/why-we-need-to-challenge-beliefs-about-innate-talent-in-stem/).
 
+### Disclaimer
+
+My writings on this blog or other popular press express my own opinions. These writings do not represent the views of Northwestern University, my advisors, or anyone else employed at Northwestern. 
+
 ### Contact me
 
 [dmiller@u.northwestern.edu](mailto:dmiller@u.northwestern.edu)
