@@ -25,6 +25,6 @@ I also write for popular press and am a contributing writer for [_The Conversati
 
 My writings on this blog or other popular press express my own opinions. These writings do not represent the views of Northwestern University or anyone else employed there including my advisors. 
 
-### Contact me
+## Contact me
 
 [dmiller@u.northwestern.edu](mailto:dmiller@u.northwestern.edu)
