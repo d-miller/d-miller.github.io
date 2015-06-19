@@ -3,11 +3,13 @@ layout: page
 permalink: /about/
 ---
 
+### About my blog 
+
 My blog broadly targets people looking to strengthen their data skills, as detailed [here](http://d-miller.github.io/Introducing-Blog/). Data visualization and machine learning will be core topics, in particular. The posts are intended to reach people even with beginner technical skills. 
 
 I'll likely also talk about interesting data and research, especially about diversity in science and technology fields. 
 
-## About me
+### About me
 
 I'm a Northwestern psychology Ph.D. student, [currently investigating](http://journal.frontiersin.org/article/10.3389/fpsyg.2015.00037/full) how and why some students move into and out of science and technology fields. My C.V. is [here]({{ site.baseurl }}/assets/MillerCV.pdf).
 
