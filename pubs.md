@@ -38,10 +38,16 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 ## Popular Press
 
+**Miller, D. I.** (2015, July 10). [Tech companies spend big money on bias training—but it hasn’t improved diversity numbers](https://theconversation.com/tech-companies-spend-big-money-on-bias-training-but-it-hasnt-improved-diversity-numbers-44411). _The Conversation_. 
+
+* Discusses why bias training hasn't been changing diversity in tech and how to fix that problem using the latest psychological research. 
+* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
+
 **Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
 
 * Reports on [a nationally representative, longitudinal study](http://dx.doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
-* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
+* 49,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem) and [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem). 
+
 
 **Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
