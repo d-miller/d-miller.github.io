@@ -11,7 +11,7 @@ I'll likely also talk about interesting data and research, especially about dive
 
 ## About me
 
-I'm a Northwestern psychology Ph.D. student, [currently investigating](http://journal.frontiersin.org/article/10.3389/fpsyg.2015.00037/full) how and why some students move into and out of science and technology fields. Top academic journals have published my research including [_Journal of Educational Psychology_](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) and [_Trends in Cognitive Sciences_](http://d-miller.github.io/assets/MillerHalpern2014.pdf). My C.V. is [here]({{ site.baseurl }}/assets/MillerCV.pdf).
+I'm a Northwestern psychology Ph.D. student, [currently investigating](http://journal.frontiersin.org/article/10.3389/fpsyg.2015.00037/full) how and why some students move into and out of science and technology fields. Academic journals such as [_Journal of Educational Psychology_](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) and [_Trends in Cognitive Sciences_](http://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My C.V. is [here]({{ site.baseurl }}/assets/MillerCV.pdf).
 
 Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
