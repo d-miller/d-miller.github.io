@@ -24,7 +24,7 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontier
 
 **Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]({{ site.baseurl }}/assets/MillerHalpern2014.pdf). _Trends in Cognitive Sciences_, _18_, 37-45. 
 
-* 35+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
+* 40+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
 
 **Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
 undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. 
@@ -46,13 +46,13 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 **Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
 
 * Reports on [a nationally representative, longitudinal study](http://dx.doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
-* 49,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem) and [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem). 
+* 50,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem) and [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem). 
 
 
 **Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
 * Discusses [my international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes.
-* Republished by [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), [_Quartz_](http://qz.com/414869/in-2015-most-people-still-think-man-when-they-think-scientist/), [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/), and [_The New Zealand Herald_](http://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=11463443).
+* 10,000+ page views across original and republishing outlets including [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), [_Quartz_](http://qz.com/414869/in-2015-most-people-still-think-man-when-they-think-scientist/), [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/), and [_The New Zealand Herald_](http://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=11463443).
 
 **Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
 
