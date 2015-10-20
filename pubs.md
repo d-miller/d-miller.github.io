@@ -38,10 +38,16 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 ## Popular Press
 
+**Miller, D. I.** (2015, October 13). [Men and women biased about studies of STEM gender bias – in opposite directions](https://theconversation.com/men-and-women-biased-about-studies-of-stem-gender-bias-in-opposite-directions-48924). _The Conversation_. 
+
+* Discusses [a _PNAS_ study](http://www.pnas.org/cgi/doi/10.1073/pnas.1510649112) showing men, especially those in STEM, are less likely to believe the evidence of gender bias against women in science. Women are also biased against gender bias research, but in the opposite direction.  
+* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
+
+
 **Miller, D. I.** (2015, July 10). [Tech companies spend big money on bias training—but it hasn’t improved diversity numbers](https://theconversation.com/tech-companies-spend-big-money-on-bias-training-but-it-hasnt-improved-diversity-numbers-44411). _The Conversation_. 
 
 * Discusses why bias training hasn't been changing diversity in tech and how to fix that problem using the latest psychological research. 
-* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
+
 
 **Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
 
