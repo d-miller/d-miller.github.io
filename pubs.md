@@ -63,7 +63,7 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 **Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
 
 * Discusses [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
-* 24,000+ page views across original and republishing outlets including [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/). 
+* 25,000+ page views across original and republishing outlets including [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/). 
 
 **Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
 
