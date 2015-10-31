@@ -9,7 +9,7 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
-**Miller, D. I.**, Eagly, A. H., & Linn, M. C. (in press). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_. 
+**Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_, _107_, 631-644. doi: 10.1037/edu0000005
 
 * **My writing:** I wrote [this popular press article](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) about the study for _The Conversation_.
 * **Press release:** [Northwestern University](http://www.northwestern.edu/newscenter/stories/2015/05/gender-science-stereotypes-persist-across-the-world.html), [UC Berkeley](http://newscenter.berkeley.edu/2015/06/02/u-s-in-middle-on-gender-science-stereotyping-list/)
