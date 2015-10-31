@@ -36,6 +36,21 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 
 * **Media coverage:** [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
 
+## Peer-Reviewed Conference Proceedings
+
+Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). [A machine learning framework to identify students at risk of adverse academic outcomes]({{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf). In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
+
+Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/AguiarEtAl2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
+
+Matuk, C. F., McElhaney, K. W., **Miller, D. I.**, Chen, J. K., Lim-Breitbart, J., Terashima, H., … , Linn, M. C. (2013). [Reflectively prototyping a tool for exchanging ideas]({{ site.baseurl }}/assets/Matuk2013.pdf). In _Proceedings of the 10th International Conference on Computer Supported Collaborative Learning_ (pp. 101-104). Madison, WI: International Society of the Learning Sciences.
+
+Matuk, C. F., McElhaney, K. W., Chen, J. K., **Miller, D. I.**, Lim-Breitbart, J., & Linn, M. C. (2012). [The Idea Manager: A tool to scaffold students in documenting, sorting, and distinguishing ideas during science inquiry]({{ site.baseurl }}/assets/Matuk2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
+
+McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using the Idea Manager to promote coherent understanding of inquiry investigations]({{ site.baseurl }}/assets/McElhaney2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
+
+**Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
+
+
 ## Popular Press
 
 **Miller, D. I.** (2015, October 13). [Men and women biased about studies of STEM gender bias – in opposite directions](https://theconversation.com/men-and-women-biased-about-studies-of-stem-gender-bias-in-opposite-directions-48924). _The Conversation_. 
@@ -68,17 +83,3 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 **Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
 
 * Discusses [my study on gender gaps in doctoral persistence](http://dx.doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain why women are underrepresented in science and technology fields. 
-
-## Peer-Reviewed Conference Proceedings
-
-Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). [A machine learning framework to identify students at risk of adverse academic outcomes]({{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf). In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
-
-Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/AguiarEtAl2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
-
-Matuk, C. F., McElhaney, K. W., **Miller, D. I.**, Chen, J. K., Lim-Breitbart, J., Terashima, H., … , Linn, M. C. (2013). [Reflectively prototyping a tool for exchanging ideas]({{ site.baseurl }}/assets/Matuk2013.pdf). In _Proceedings of the 10th International Conference on Computer Supported Collaborative Learning_ (pp. 101-104). Madison, WI: International Society of the Learning Sciences.
-
-Matuk, C. F., McElhaney, K. W., Chen, J. K., **Miller, D. I.**, Lim-Breitbart, J., & Linn, M. C. (2012). [The Idea Manager: A tool to scaffold students in documenting, sorting, and distinguishing ideas during science inquiry]({{ site.baseurl }}/assets/Matuk2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
-
-McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using the Idea Manager to promote coherent understanding of inquiry investigations]({{ site.baseurl }}/assets/McElhaney2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
-
-**Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
