@@ -66,7 +66,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 **Miller, D. I.** (2015, July 10). [Tech companies spend big money on bias training—but it hasn’t improved diversity numbers](https://theconversation.com/tech-companies-spend-big-money-on-bias-training-but-it-hasnt-improved-diversity-numbers-44411). _The Conversation_. 
 
 * Discusses why bias training hasn't been changing diversity in tech and how to fix that problem using the latest psychological research.
-* Republished by [_U.S. News_](http://www.usnews.com/news/articles/2015/07/29/can-bias-training-really-improve-diversity-in-tech) with edits.
+* Republished by [_Business Insider_](http://www.businessinsider.com/companies-are-spending-millions-on-bias-training-that-isnt-working-2015-7) and recrafted for [_U.S. News_](http://www.usnews.com/news/articles/2015/07/29/can-bias-training-really-improve-diversity-in-tech).
 
 
 **Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
