@@ -60,7 +60,6 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should write for the public](https://theconversation.com/heres-why-academics-should-write-for-the-public-50874). _The Conversation_.
 
 * 15,000+ page views across original and republishing outlets including [_Huffington Post_](http://www.huffingtonpost.com/the-conversation-us/heres-why-academics-shoul_b_8687718.html) and [_Quartz_](http://qz.com/562922/all-academics-should-be-required-to-take-a-creative-writing-course/).
-* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
 
 **Miller, D. I.** (2015, October 13). [Men and women biased about studies of STEM gender bias – in opposite directions](https://theconversation.com/men-and-women-biased-about-studies-of-stem-gender-bias-in-opposite-directions-48924). _The Conversation_. 
 
