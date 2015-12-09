@@ -57,10 +57,15 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 ## Popular Press
 
+Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should write for the public](https://theconversation.com/heres-why-academics-should-write-for-the-public-50874). _The Conversation_.
+
+* 15,000+ page views across original and republishing outlets including [_Huffington Post_](http://www.huffingtonpost.com/the-conversation-us/heres-why-academics-shoul_b_8687718.html) and [_Quartz_](http://qz.com/562922/all-academics-should-be-required-to-take-a-creative-writing-course/).
+* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
+
 **Miller, D. I.** (2015, October 13). [Men and women biased about studies of STEM gender bias – in opposite directions](https://theconversation.com/men-and-women-biased-about-studies-of-stem-gender-bias-in-opposite-directions-48924). _The Conversation_. 
 
 * Discusses [a _PNAS_ study](http://www.pnas.org/cgi/doi/10.1073/pnas.1510649112) showing men, especially those in STEM, are less likely to believe the evidence of gender bias against women in science. Women are also biased against gender bias research, but in the opposite direction.  
-* This article is free to republish ([guidelines here](https://theconversation.com/us/republishing-guidelines)).
+* 10,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/men-and-women-biased-about-studies-stem-gender-bias-opposite-directions).
 
 
 **Miller, D. I.** (2015, July 10). [Tech companies spend big money on bias training—but it hasn’t improved diversity numbers](https://theconversation.com/tech-companies-spend-big-money-on-bias-training-but-it-hasnt-improved-diversity-numbers-44411). _The Conversation_. 
