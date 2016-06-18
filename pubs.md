@@ -9,8 +9,6 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
-
-
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_, _107_, 631-644. doi: 10.1037/edu0000005
 
 * Profiled by [_Science_ magazine](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) (over 2,300 Facebook shares)
