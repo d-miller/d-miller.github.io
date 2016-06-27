@@ -9,6 +9,10 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (in press). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_. doi: 10.1017/S0033291715002317
+
+* I was the statistical expert on multilevel modelling for this study.
+
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_, _107_, 631-644. doi: 10.1037/edu0000005
 
 * Profiled by [_Science_ magazine](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) (over 2,300 Facebook shares)
