@@ -5,11 +5,11 @@ permalink: /about/
 
 ## About my blog 
 
-My blog broadly targets people looking to strengthen their data skills, as detailed [here](http://d-miller.github.io/Introducing-Blog/). The posts aim to reach people even with beginner technical skills. I'll also talk about interesting data and research, especially about diversity in science and technology. 
+My blog broadly targets people looking to strengthen their data skills, as detailed [here]({{ site.baseurl }}/Introducing-Blog/). The posts aim to reach people even with beginner technical skills. I'll also talk about interesting data and research, especially about diversity in science and technology. 
 
 ## About me
 
-I'm a Northwestern psychology Ph.D. student and NSF Graduate Research Fellow ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)), currently investigating how and why some students move into and out of science and technology fields. Academic journals such as [_Journal of Educational Psychology_](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) and [_Trends in Cognitive Sciences_](http://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research.
+I'm a Northwestern psychology Ph.D. student and NSF Graduate Research Fellow ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)), currently investigating how and why some students move into and out of science and technology fields. Academic journals such as [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), [_Perspectives in Psychological Science_]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
 
 Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
