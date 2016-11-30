@@ -9,11 +9,13 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (in press). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Archives of Sexual Behavior_. doi: 10.1017/S0033291715002317
+Eagly, A. H., & **Miller, D. I.** (2016). [Scientific eminence: Where are the women?]({{ site.baseurl }}/assets/EaglyMiller2016.pdf). _Perspectives in Psychological Science_, _11_, 899-904. doi: 10.1177/1745691616663918
+
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (in press). [Sexual arousal patterns of autogynephilic male dross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_. doi: 10.1007/s10508-016-0826-z
 
 * I was the statistical expert on multilevel modelling for this study.
 
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, . doi: 10.1017/S0033291715002317
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. doi: 10.1017/S0033291715002317
 
 * I was the statistical expert on multilevel modelling for this study.
 
