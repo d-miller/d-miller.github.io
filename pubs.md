@@ -63,6 +63,10 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 ## Popular Press
 
+**Miller, D. I.** (2016, June 15). [LGBT equality doesn’t exist – but here’s how to fight for it](https://theconversation.com/lgbt-equality-doesnt-exist-but-heres-how-to-fight-for-it-60977). _The Conversation_.
+
+**Miller, D. I.** (2015, February 4). [Intersectionality: how gender interacts with other social identities to shape bias](https://theconversation.com/intersectionality-how-gender-interacts-with-other-social-identities-to-shape-bias-53724). _The Conversation_.
+
 Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should write for the public](https://theconversation.com/heres-why-academics-should-write-for-the-public-50874). _The Conversation_.
 
 * 15,000+ page views across original and republishing outlets including [_Huffington Post_](http://www.huffingtonpost.com/the-conversation-us/heres-why-academics-shoul_b_8687718.html) and [_Quartz_](http://qz.com/562922/all-academics-should-be-required-to-take-a-creative-writing-course/).
