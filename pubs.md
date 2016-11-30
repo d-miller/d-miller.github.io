@@ -9,7 +9,11 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (in press). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_. doi: 10.1017/S0033291715002317
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (in press). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Archives of Sexual Behavior_. doi: 10.1017/S0033291715002317
+
+* I was the statistical expert on multilevel modelling for this study.
+
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, . doi: 10.1017/S0033291715002317
 
 * I was the statistical expert on multilevel modelling for this study.
 
