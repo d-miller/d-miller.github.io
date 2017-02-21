@@ -9,8 +9,16 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male dross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. doi: 10.1007/s10508-016-0826-z
+ 
+* I was the statistical expert on multilevel modelling for this study.
+
 Eagly, A. H., & **Miller, D. I.** (2016). [Scientific eminence: Where are the women?]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) _Perspectives in Psychological Science_, _11_, 899-904. doi: 10.1177/1745691616663918
 
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. doi: 10.1017/S0033291715002317
+ 
+ * I was the statistical expert on multilevel modelling for this study.
+ 
 **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_, _107_, 631-644. doi: 10.1037/edu0000005
 
 * Profiled by [_Science_ magazine](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) (over 2,300 Facebook shares)
@@ -55,9 +63,11 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 ## Popular Press
 
+**Miller, D. I.** (2017, February 1). [Stereotypes can hold boys back in school, too](https://theconversation.com/stereotypes-can-hold-boys-back-in-school-too-72035). _The Conversation_.
+
 **Miller, D. I.** (2016, June 15). [LGBT equality doesn’t exist – but here’s how to fight for it](https://theconversation.com/lgbt-equality-doesnt-exist-but-heres-how-to-fight-for-it-60977). _The Conversation_.
 
-**Miller, D. I.** (2015, February 4). [Intersectionality: how gender interacts with other social identities to shape bias](https://theconversation.com/intersectionality-how-gender-interacts-with-other-social-identities-to-shape-bias-53724). _The Conversation_.
+**Miller, D. I.** (2016, February 4). [Intersectionality: how gender interacts with other social identities to shape bias](https://theconversation.com/intersectionality-how-gender-interacts-with-other-social-identities-to-shape-bias-53724). _The Conversation_.
 
 Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should write for the public](https://theconversation.com/heres-why-academics-should-write-for-the-public-50874). _The Conversation_.
 
