@@ -3,8 +3,6 @@ layout: page
 permalink: /about/
 ---
 
-## About my blog 
-
 My blog broadly targets people looking to strengthen their data skills, as detailed [here]({{ site.baseurl }}/Introducing-Blog/). The posts aim to reach people even with beginner technical skills. I'll also talk about interesting data and research, especially about diversity in science and technology. 
 
 ## About me
