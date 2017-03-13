@@ -9,7 +9,7 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male dross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. doi: 10.1007/s10508-016-0826-z
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. doi: 10.1007/s10508-016-0826-z
  
 * I was the statistical expert on multilevel modelling for this study.
 
