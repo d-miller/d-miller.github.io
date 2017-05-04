@@ -46,6 +46,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 Uttal, D. H., **Miller, D. I.**, & Newcombe, N. S. (2013). [Exploring and enhancing spatial thinking: Links to
 STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Current Directions in Psychological Science_, _22_, 367-373. doi: 10.1177/0963721413484756
 
+* 50+ citations according to [Google Scholar](https://scholar.google.com/scholar?cites=17410950570026817282).
 * **Media coverage:** [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
 
 ## Peer-Reviewed Conference Proceedings
