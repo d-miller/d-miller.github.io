@@ -13,7 +13,7 @@ Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual
  
 * I was the statistical expert on multilevel modelling for this study.
 
-Eagly, A. H., & **Miller, D. I.** (2016). [Scientific eminence: Where are the women?]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) _Perspectives in Psychological Science_, _11_, 899-904. doi: 10.1177/1745691616663918
+Eagly, A. H., & **Miller, D. I.** (2016). [Scientific eminence: Where are the women?]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) _Perspectives in Psychological Science_, _11_, 899-904. doi:10.1177/1745691616663918
 
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. doi:10.1017/S0033291715002317
  
