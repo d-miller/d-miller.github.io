@@ -9,17 +9,17 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Academic Publications</h2>
 
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. doi: 10.1007/s10508-016-0826-z
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. doi:10.1007/s10508-016-0826-z
  
 * I was the statistical expert on multilevel modelling for this study.
 
 Eagly, A. H., & **Miller, D. I.** (2016). [Scientific eminence: Where are the women?]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) _Perspectives in Psychological Science_, _11_, 899-904. doi: 10.1177/1745691616663918
 
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. doi: 10.1017/S0033291715002317
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. doi:10.1017/S0033291715002317
  
  * I was the statistical expert on multilevel modelling for this study.
  
-**Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_, _107_, 631-644. doi: 10.1037/edu0000005
+**Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf). _Journal of Educational Psychology_, _107_, 631-644. doi:10.1037/edu0000005
 
 * 50+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1797850991118317730).
 * Profiled by [_Science_ magazine](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) (over 2,300 Facebook shares)
@@ -27,24 +27,24 @@ Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who ar
 * **Other selected media coverage:** [_APA Monitor_](http://www.apa.org/monitor/2015/09/upfront-profession.aspx), [_Ars Technica_](http://arstechnica.com/science/2015/05/bias-against-women-in-science-persists-even-in-egalitarian-societies/), [_Business Standard_](http://www.business-standard.com/article/news-ians/gender-science-stereotype-strongest-in-holland-115051900492_1.html) (Indian outlet), [_Dutch News_](http://www.dutchnews.nl/news/archives/2015/05/the-dutch-consider-science-is-a-male-profession/) (Dutch outlet), [_eldario.es_](http://www.eldiario.es/sociedad/Holanda-Noruega-Suecia-machistas-cientificas_0_391261145.html) (Spanish outlet; written in Spanish), [_LabOnline_](http://www.labonline.com.au/content/lab-business/news/largest-ever-study-into-gender-stereotypes-in-science-759159113) (Australian outlet), [Northwestern University](http://www.northwestern.edu/newscenter/stories/2015/05/gender-science-stereotypes-persist-across-the-world.html) (press release), [_Ozy_](http://www.ozy.com/acumen/the-place-that-doesnt-believe-in-female-scientists/61186), [_Pacific Standard_](http://www.psmag.com/health-and-behavior/when-it-comes-to-female-scientists-seeing-is-believing), [_Quartz_](http://qz.com/414869/in-2015-most-people-still-think-man-when-they-think-scientist/), [_scientias.nl_](http://www.scientias.nl/de-wetenschapper-is-in-nederland-nog-steeds-een-man/) (Dutch outlet; written in Dutch), [_The New Zealand Herald_](http://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=11463443) (New Zealand outlet), [_U.S. News_](http://www.usnews.com/news/blogs/data-mine/2015/05/18/stem-gender-stereotypes-common-across-the-world), [_Yahoo News_](http://news.yahoo.com/gender-science-stereotype-strongest-holland-082246004.html)
 
 **Miller, D. I.**, & Wai, J. (2015). [The bachelor’s to Ph.D. STEM pipeline no longer leaks more women than
-men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontiers in Psychology_, _6_, 36. doi: 10.3389/fpsyg.2015.00037
+men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontiers in Psychology_, _6_, 36. doi:10.3389/fpsyg.2015.00037
 
 * Profiled by [_Nature_ News](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939) (over 3,500 Facebook shares)
 * **My writing:** I wrote [this op-ed](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for _Inside Higher Ed_ about why we should end the "leaky pipeline" metaphor for explaining the low numbers of women in science and engineering.
 * **Other selected media coverage:** [_Chicago Tribune_](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [_Live Science_](http://www.livescience.com/51179-women-discrimination-in-science.html), [Northwestern University](http://www.northwestern.edu/newscenter/stories/2015/02/think-again-about-gender-gap-in-science.html) (press release), [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/), [_Science_](http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2015_02_24/caredit.a1500052), [_The Guardian_](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem), [_Yahoo News_](https://news.yahoo.com/tim-hunts-boys-club-women-still-face-challenges-151338424.html)
 
-**Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]({{ site.baseurl }}/assets/MillerHalpern2014.pdf). _Trends in Cognitive Sciences_, _18_, 37-45. doi: 10.1016/j.tics.2013.10.011
+**Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]({{ site.baseurl }}/assets/MillerHalpern2014.pdf). _Trends in Cognitive Sciences_, _18_, 37-45. doi:10.1016/j.tics.2013.10.011
 
 * 100+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
 
 **Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
-undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. doi: 10.1016/j.lindif.2012.03.012
+undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. doi:10.1016/j.lindif.2012.03.012
 
 * 50+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
 Uttal, D. H., **Miller, D. I.**, & Newcombe, N. S. (2013). [Exploring and enhancing spatial thinking: Links to
-STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Current Directions in Psychological Science_, _22_, 367-373. doi: 10.1177/0963721413484756
+STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Current Directions in Psychological Science_, _22_, 367-373. doi:10.1177/0963721413484756
 
 * 50+ citations according to [Google Scholar](https://scholar.google.com/scholar?cites=17410950570026817282).
 * **Media coverage:** [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
