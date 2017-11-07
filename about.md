@@ -7,7 +7,7 @@ I'm a Northwestern psychology Ph.D. candidate and NSF Graduate Research Fellow (
 
 Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
-I strengthened my data skills through University of Chicago’s [Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/) where I worked on [a machine learning project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school.
+I further strengthened my data skills through University of Chicago’s [Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/) where I worked on [a machine learning project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school.
 
 ## Media attention
 
