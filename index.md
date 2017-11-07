@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I'm a Northwestern psychology Ph.D. candidate planning to graduate in Spring 2018 ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)), studying how and why students move into and out of science and technology fields. Academic journals such as [Journal of Educational Psychology]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), [Perspectives in Psychological Science]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) and [Trends in Cognitive Sciences]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
+I'm a Northwestern psychology Ph.D. candidate planning to graduate in Spring 2018 ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)), studying how and why students move into and out of science and technology fields. Academic journals such as [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), [_Perspectives in Psychological Science_]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
 
 Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
