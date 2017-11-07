@@ -21,7 +21,7 @@ My blog broadly targets people looking to strengthen their data skills, as detai
 
 ## Disclaimer
 
-My writings on this blog or other popular press outlets solely represent my own personal opinions. These writings do not represent the views of Northwestern University or anyone else employed there including my advisors. 
+My writings on my blog or popular press outlets solely represent my own personal opinions. These writings do not represent the views of Northwestern University or anyone else employed there including my advisors. 
 
 ## Contact me
 
