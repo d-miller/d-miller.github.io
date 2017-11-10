@@ -2,11 +2,11 @@
 layout: default
 ---
 
-I'm a Northwestern psychology Ph.D. candidate planning to graduate in Spring 2018 ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)), studying how and why students move into and out of science and technology fields. Academic journals such as [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), [_Perspectives in Psychological Science_]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
+I'm a Northwestern psychology Ph.D. candidate and NSF Graduate Research Fellow, planning to graduate in Spring 2018 ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)). My dissertation analyzes nationally representative longitudinal datasets to study how and why students move into and out of science and technology fields. Academic journals such as [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), [_Perspectives in Psychological Science_]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
 
 Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
-I further strengthened my data skills through University of Chicago’s [Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/) where I worked on [a machine learning project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school.
+I strengthened my data skills through University of Chicago’s [Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/) where I worked on [a machine learning project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school.
 
 ## Media attention
 
