@@ -11,6 +11,8 @@ permalink: /pubs/
 
 **Miller, D. I.**, Nolla, K. M., Eagly, A. H., & Uttal, D. H. (accepted). The development of children’s gender-science stereotypes: A meta-analysis of five decades of U.S. Draw-A-Scientist studies. _Child Development_.
 
+Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (under review). Teachers’ spatial skills across disciplines and education levels: Exploring nationally representative data. _Archives of Scientific Psychology_.
+
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. doi:10.1007/s10508-016-0826-z
  
 * I was the statistical expert on multilevel modelling for this study.
