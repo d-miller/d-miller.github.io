@@ -7,7 +7,7 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<h2 style="margin-top: 1em;">Academic Publications</h2>
+<h2 style="margin-top: 1em;">Journal Articles</h2>
 
 **Miller, D. I.**, Nolla, K. M., Eagly, A. H., & Uttal, D. H. (in press). The development of children’s gender-science stereotypes: A meta-analysis of five decades of U.S. Draw-A-Scientist studies. _Child Development_. doi:10.1111/cdev.13039
 
