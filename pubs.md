@@ -9,7 +9,7 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Journal Articles</h2>
 
-# **Miller, D. I.**, Nolla, K. M., Eagly, A. H., & Uttal, D. H. (in press). The development of children’s gender-science stereotypes: A meta-analysis of five decades of U.S. Draw-A-Scientist studies. _Child Development_. doi:10.1111/cdev.13039
+[//]: # **Miller, D. I.**, Nolla, K. M., Eagly, A. H., & Uttal, D. H. (in press). The development of children’s gender-science stereotypes: A meta-analysis of five decades of U.S. Draw-A-Scientist studies. _Child Development_. doi:10.1111/cdev.13039
 
 Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (in press). Teachers’ spatial skills across disciplines and education levels: Exploring nationally representative data. _Archives of Scientific Psychology_.
 
