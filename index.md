@@ -2,6 +2,8 @@
 layout: default
 ---
 
+**UPDATE: I'm extremely excited to say that I will be an educational researcher at [American Institutes for Research](https://www.air.org/) after earning my Ph.D. in June 2018!**
+
 I'm a Northwestern psychology Ph.D. candidate and NSF Graduate Research Fellow, planning to graduate in June 2018 ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)). My dissertation analyzes nationally representative longitudinal datasets to study transitions into and out of science and engineering. Academic journals such as [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), [_Perspectives in Psychological Science_]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
 
 Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
