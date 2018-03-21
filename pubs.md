@@ -74,6 +74,8 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 ## Popular Press
 
+**Miller, D. I.** (2018, March 20). [Kids draw female scientists more often than they did decades ago](https://blogs.scientificamerican.com/voices/kids-draw-female-scientists-more-often-than-they-did-decades-ago/). _Scientific American_.
+
 **Miller, D. I.** (2017, February 1). [Stereotypes can hold boys back in school, too](https://theconversation.com/stereotypes-can-hold-boys-back-in-school-too-72035). _The Conversation_.
 
 **Miller, D. I.** (2016, June 15). [LGBT equality doesn’t exist – but here’s how to fight for it](https://theconversation.com/lgbt-equality-doesnt-exist-but-heres-how-to-fight-for-it-60977). _The Conversation_.
