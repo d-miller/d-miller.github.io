@@ -79,7 +79,11 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 **Miller, D. I.** (2017, February 1). [Stereotypes can hold boys back in school, too](https://theconversation.com/stereotypes-can-hold-boys-back-in-school-too-72035). _The Conversation_.
 
+* Republished by [_Associated Press_](https://apnews.com/6111c62cc6914dd09c24d63ad4dd41f3/stereotypes-can-hold-boys-back-school-too) and [_Quillette_](http://quillette.com/2017/02/06/stereotypes-can-hold-boys-back-in-school-too/).
+
 **Miller, D. I.** (2016, June 15). [LGBT equality doesn’t exist – but here’s how to fight for it](https://theconversation.com/lgbt-equality-doesnt-exist-but-heres-how-to-fight-for-it-60977). _The Conversation_.
+
+* Republished by [_Associated Press_](https://apnews.com/f49b74a27cd340568d590eb66633008e/lgbt-equality-doesnt-exist-%E2%80%93-heres-how-fight-it) and [_Raw Story_](https://www.rawstory.com/2016/06/lgbt-equality-doesnt-exist-but-heres-how-to-fight-for-it/).
 
 **Miller, D. I.** (2016, February 4). [Intersectionality: how gender interacts with other social identities to shape bias](https://theconversation.com/intersectionality-how-gender-interacts-with-other-social-identities-to-shape-bias-53724). _The Conversation_.
 
