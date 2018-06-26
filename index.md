@@ -2,11 +2,9 @@
 layout: default
 ---
 
-**UPDATE: I'm extremely excited to say that I will be an educational researcher at [American Institutes for Research](https://www.air.org/) after earning my Ph.D. in June 2018!**
+Starting July 2018, I'm a researcher at American Institutes for Researcher, focusing on science, technology, engineering, and mathematics (STEM) education ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)). Leading academic journals such as [_Child Development_]({{ site.baseurl }}/assets/MillerDAST.pdf), [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
 
-I'm a Northwestern psychology Ph.D. candidate and NSF Graduate Research Fellow, expecting to graduate in June 2018 ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf)). My dissertation analyzes nationally representative longitudinal datasets to study transitions into and out of science and engineering. Leading academic journals such as [_Child Development_]({{ site.baseurl }}/assets/MillerDAST.pdf), [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
-
-Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
+I earned my doctorate at Northwestern University in June 2018, and my dissertation analyzed nationally representative longitudinal datasets to study transitions into and out of STEM. Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
 I strengthened my data skills through University of Chicago’s [Eric and Wendy Schmidt Data Science for Social Good Summer Fellowship](http://dssg.io/) where I worked on [a machine learning project](http://dssg.io/2014/11/20/mcps-models-struggling-students.html) to improve student success in high school.
 
