@@ -44,7 +44,7 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontier
 
 **Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]({{ site.baseurl }}/assets/MillerHalpern2014.pdf). _Trends in Cognitive Sciences_, _18_, 37-45. doi:10.1016/j.tics.2013.10.011
 
-* 150+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
+* 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
 
 **Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
 undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. doi:10.1016/j.lindif.2012.03.012
