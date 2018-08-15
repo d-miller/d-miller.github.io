@@ -4,8 +4,8 @@ permalink: /pubs/
 ---
 
 <style>
-    #wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
-    #frame { width: 800px; height: 520px; border: 1px solid black; }
+    #wrap { width: 800px; height: 390px; padding: 0; overflow: hidden; }
+    #frame { width: 800px; height: 520px; }
     #frame {
         -ms-zoom: 0.75;
         -moz-transform: scale(0.75);
@@ -17,7 +17,7 @@ permalink: /pubs/
     }
 </style>
 <div id="thewrap">
-<iframe id="theframe" src="https://dimillerair.shinyapps.io/NevadaPeerMatchPrototype/"></iframe>
+<iframe id="theframe" src="https://dimillerair.shinyapps.io/NevadaPeerMatchPrototype/" width="800px" frameborder="0"></iframe>
 </div>
 
 
