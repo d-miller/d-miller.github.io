@@ -3,24 +3,6 @@ layout: page
 permalink: /pubs/
 ---
 
-<style>
-    #wrap { width: 800px; height: 390px; padding: 0; overflow: hidden; }
-    #frame { width: 800px; height: 520px; }
-    #frame {
-        -ms-zoom: 0.75;
-        -moz-transform: scale(0.75);
-        -moz-transform-origin: 0 0;
-        -o-transform: scale(0.75);
-        -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.75);
-        -webkit-transform-origin: 0 0;
-    }
-</style>
-<div id="thewrap">
-<iframe id="theframe" src="https://dimillerair.shinyapps.io/NevadaPeerMatchPrototype/" width="800px" height="800px" frameborder="0"></iframe>
-</div>
-
-
 <div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile (<i>h</i> index = 10)</a></div>
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
@@ -140,3 +122,21 @@ Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should 
 **Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
 
 * Discusses [my study on gender gaps in doctoral persistence](http://dx.doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain the low numbers of women in science and engineering. 
+
+
+<style>
+    #wrap { width: 800px; height: 390px; padding: 0; overflow: hidden; }
+    #frame { width: 800px; height: 520px; }
+    #frame {
+        -ms-zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: 0 0;
+    }
+</style>
+<div id="thewrap">
+<iframe id="theframe" src="https://dimillerair.shinyapps.io/NevadaPeerMatchPrototype/" width="800px" height="800px" frameborder="0"></iframe>
+</div>
