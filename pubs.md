@@ -16,8 +16,8 @@ permalink: /pubs/
         -webkit-transform-origin: 0 0;
     }
 </style>
-<div id="wrap">
-<iframe id="frame" src="https://dimillerair.shinyapps.io/NevadaPeerMatchPrototype/"></iframe>
+<div id="thewrap">
+<iframe id="theframe" src="https://dimillerair.shinyapps.io/NevadaPeerMatchPrototype/"></iframe>
 </div>
 
 
