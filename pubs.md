@@ -3,6 +3,24 @@ layout: page
 permalink: /pubs/
 ---
 
+<style>
+    #wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
+    #frame { width: 800px; height: 520px; border: 1px solid black; }
+    #frame {
+        -ms-zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: 0 0;
+    }
+</style>
+<div id="wrap">
+<iframe id="frame" src="https://dimillerair.shinyapps.io/NevadaPeerMatchPrototype/"></iframe>
+</div>
+
+
 <div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile (<i>h</i> index = 10)</a></div>
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
