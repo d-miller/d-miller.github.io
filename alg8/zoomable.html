@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>8th Grade Algebra</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+
+.mapboxgl-ctrl-geocoder {
+	min-width: 300px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.85em;
+  margin: 10px;
+  text-align: left;
+}
+
+/**
+* Create a position for the map
+* on the page */
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/**
+* Set rules for how the map overlays
+* (info box and legend) will be displayed
+* on the page. */
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+#features {
+  top: 0;
+  height: 150px;
+  margin-top: 60px;
+  width: 300px;
+}
+
+#features table {
+  margin-left: 5px;
+}
+
+#legend {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  height: 150px;
+  margin-bottom: 40px;
+  width: 100px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+<div id='map'></div>
+<div class='map-overlay' id='features'>
+	<h2>8th Graders Taking Algebra</h2>
+	<div id='pd'><p>Hover over a state</p></div>
+</div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/d-miller/cjnlygvni0qg12sln4hyecxsa',
+  center: [-100.971267, 37.922667],
+  zoom: 3.8
+});
+
+map.getCanvas().style.cursor = 'default';
+
+map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken
+}));
+
+map.on('load', function() {
+  map.on('mousemove', function(e) {
+
+  var states = map.queryRenderedFeatures(e.point, {
+    layers: ['state']
+  });
+
+  var districts = map.queryRenderedFeatures(e.point, {
+    layers: ['district']
+  });
+
+  var schools = map.queryRenderedFeatures(e.point, {
+    layers: ['school']
+  });
+  //console.log(states);
+
+  //if a state is highlighted
+  if (states.length > 0) {
+
+  	//add a data table and show state rate
+    $('#pd').html("<table><tr>" + 
+    	"<td>" + Math.round(100*states[0].properties.alg8) + "%</td>" +
+    	"<td>" + states[0].properties.name + "</td>" +
+    	"</tr></table>");
+
+    //if districts are shown and one is hovered over...
+    if (districts.length > 0) {
+
+    	//figure out what to show for the district rate
+    	var districtRate = districts[0].properties.alg8;
+    	if (districtRate == -99) {
+    		districtRate = "N/A";
+    	} else {
+    		districtRate = Math.round(100*districtRate) + "%";
+    	}
+
+    	//add a row to the table with district rate
+    	$('#pd tbody').html($('#pd tbody').html() + '<tr><td>' + districtRate + 
+    	"</td><td>" + districts[0].properties.name + '</td></tr>');
+
+
+    	//if zoom level is high enough to show schools
+    	if (map.getZoom() > 8) {
+    		if (schools.length > 0) {
+    			console.log(schools[0]);
+    			$('#pd tbody').html($('#pd tbody').html() + '<tr><td>' + Math.round(schools[0].properties.prct) + "%" +
+    			"</td><td>" + schools[0].properties.name + '</td></tr>');
+    		}
+    	} else {
+    		$('#pd').html($('#pd').html() + '<p>Zoom to show schools</p>');
+    	}
+
+    //if no districts highlighted
+    } else {
+    	$('#pd').html($('#pd').html() + '<p>Zoom to show districts</p>');
+    }
+
+
+  //if no states highlighted
+  } else {
+    $('#pd').html('<p>Hover over a state</p>');
+  }
+});
+});
+
+
+
+
+</script>
+
+</body>
+</html>
