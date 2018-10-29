@@ -152,7 +152,7 @@ display: none !important;
 mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/d-miller/cjnlygvni0qg12sln4hyecxsa',
+  style: 'mapbox://styles/d-miller/cjnub6dhl21bn2rprjjmnp0xa',
   center: [-100.971267, 37.922667],
   zoom: 3.8,
   pitchWithRotate: false
@@ -177,31 +177,31 @@ map.touchZoomRotate.disableRotation();
 
 map.on('load', function() {
 
-    //add boundaries upon hover
-    map.addSource("states", {
-        "type": "geojson",
-        "data": "https://raw.githubusercontent.com/mapbox/geojson-vt/master/test/fixtures/us-states.json"
-        //"type": "vector",
-        //"url": "mapbox://d-miller.1vix9iet"
+    map.addSource("districts", {
+        "type": "vector",
+        "url": "mapbox://d-miller.dyd6gdjh"
     });
 
+    // The feature-state dependent fill-opacity expression will render the hover effect
+    // when a feature's hover state is set to true.
     map.addLayer({
-        "id": "state-borders",
-        "type": "fill",
-        "source": "states",
-        "source-layer": "map_added-bmoocc",
+        "id": "district-borders",
+        "type": "line",
+        "source": "districts",
+        "source-layer": "district_added",
         "layout": {},
         "paint": {
             "line-color": "black",
             "line-width": ["case",
                 ["boolean", ["feature-state", "hover"], false],
-                2,
+                3,
                 0
             ]
         }
     });
 
-  var hoveredStateId =  null;
+
+  var hoverDistrict =  null;
   map.on('mousemove', function(e) {
 
     var states = map.queryRenderedFeatures(e.point, {
@@ -235,6 +235,12 @@ map.on('load', function() {
       //if districts are shown and one is hovered over...
       if (districts.length > 0) {
 
+        //update hover effect
+        if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
+        hoverDistrict = districts[0].properties.id;
+        map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: true});
+
+
       	//figure out what to show for the district rate
       	var districtRate = districts[0].properties.alg8;
       	if (districtRate == -99) {
@@ -267,14 +273,22 @@ map.on('load', function() {
       //if no districts highlighted
       } else {
       	$('#pd').html($('#pd').html() + '<p>Zoom to show districts</p>');
+
+        //update hover effect
+        if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
+        hoverDistrict = null;
+
       }
 
 
     //if no states highlighted
     } else {
       $('#pd').html('<p>Hover over a state</p>');
-      //if (hoveredStateId) map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: false});
-      //if (hoveredStateId) map.setFeatureState({source: 'states', sourceLayer: "map_added-bmoocc", id: hoveredStateId}, { hover: false});
+
+      //update hover effect
+      if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
+      hoverDistrict = null;
+
 
     }
   });
