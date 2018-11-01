@@ -62,16 +62,22 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6);
   margin-right: 10px;
   font-family: Arial, sans-serif;
   overflow: auto;
   border-radius: 3px;
 }
 
+
 .mapboxgl-ctrl-compass {
 display: none !important;
 }
+
+.mapboxgl-popup-content {
+  width: 200px;
+}
+
 
 #features {
   
@@ -96,9 +102,14 @@ display: none !important;
   padding: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   line-height: 18px;
-  height: 150px;
-  margin-bottom: 40px;
-  width: 100px;
+  height: 160px;
+  margin-bottom: 10px;
+  width: 130px;
+}
+
+#legendTitle {
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .legend-key {
@@ -106,6 +117,7 @@ display: none !important;
   border-radius: 20%;
   width: 10px;
   height: 10px;
+  margin-left: 5px;
   margin-right: 5px;
 }
 
@@ -114,12 +126,19 @@ display: none !important;
 <body>
 
 <div id='map'></div>
-<div class='map-overlay' id='features'>
-	<h2>8th Graders Taking Algebra</h2>
-	<div id='pd'><p>Hover over a state</p></div>
-  <!--<div class='map-overlay' id='legend'></div>-->
+<div class="map-overlay" id="legend">
+  <div id="legendTitle">Grade 8 Algebra Enrollment Rate</div>
+  <!--<div id="legendTitle">Black (vs. White) Students' Rate of Taking Grade 8 Algebra</div>-->
+  <div><span class="legend-key" style="background-color: #dadaeb;"></span><span>0-9%</span></div>
+  <div><span class="legend-key" style="background-color: #bcbddc;"></span><span>10-19%</span></div>
+  <div><span class="legend-key" style="background-color: #9e9ac8;"></span><span>20-29%</span></div>
+  <div><span class="legend-key" style="background-color: #807dba;"></span><span>30-39%</span></div>
+  <div><span class="legend-key" style="background-color: #6a51a3;"></span><span>40-49%</span></div>
+  <div><span class="legend-key" style="background-color: #4a1486;"></span><span>50+%</span></div></div>
+<!--<div class='map-overlay' id='features'>
+  <div class='map-overlay' id='legend'></div>
 
-  <!--Map legend for circles
+  Map legend for circles
       <div id='legend'>
         <div class="info legend leaflet-control"> 
           <div class="title" style="margin-top: -5px">Grade 8 Enrollment</div>
@@ -145,8 +164,8 @@ display: none !important;
             <i style="background: rgb(178,24,43);"></i> 25+%<br>
           </div>
         </div>
-      </div>-->
-</div>
+      </div>
+</div>-->
 
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
@@ -201,6 +220,18 @@ map.on('load', function() {
     });
 
 
+  // Create a popup, but don't add it to the map yet.
+  var popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+  });
+
+
+  //description text
+  var alg8text = " of 8th graders were enrolled in Algebra I in the 2015-16 school year"
+
+
+
   var hoverDistrict =  null;
   map.on('mousemove', function(e) {
 
@@ -219,18 +250,21 @@ map.on('load', function() {
     //if a state is highlighted
     if (states.length > 0) {
 
-      //deselect old hovered state, update with new
-      //if (hoveredStateId) map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: false});
-      //if (hoveredStateId) map.setFeatureState({source: 'states', sourceLayer: "map_added-bmoocc", id: hoveredStateId}, { hover: false});
-      hoveredStateId = states[0].properties.id;
-      //map.setFeatureState({source: 'states', id: hoveredStateId}, { hover: true});
-      //map.setFeatureState({source: 'states', sourceLayer: "map_added-bmoocc", id: hoveredStateId}, { hover: true});
+      //update the popup
+      //console.log(districts[0]);
+      stateRate = Math.round(100*states[0].properties.alg8) + "%"
+      tableHTML = "<tr>" + 
+                  "<td>" + stateRate + "</td>" +
+                  "<td>" + "State average" + "</td>" +
+                  //"<td>" + states[0].properties.name + "</td>" +
+                  "</tr>";
 
-    	//add a data table and show state rate
-      $('#pd').html("<table><tr>" + 
-      	"<td>" + Math.round(100*states[0].properties.alg8) + "%</td>" +
-      	"<td>" + states[0].properties.name + "</td>" +
-      	"</tr></table>");
+      headerHTML = "<h3 style='text-align: center;'>" + states[0].properties.name + "</h3>";
+      popup.setLngLat(e.lngLat)
+                 .setHTML(headerHTML + stateRate + alg8text)
+                 //.setHTML(headerHTML + "<table>" + tableHTML + "</table>")
+                 //.setHTML("<table>" + tableHTML + "</table>")
+                 .addTo(map);
 
       //if districts are shown and one is hovered over...
       if (districts.length > 0) {
@@ -240,7 +274,6 @@ map.on('load', function() {
         hoverDistrict = districts[0].properties.id;
         map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: true});
 
-
       	//figure out what to show for the district rate
       	var districtRate = districts[0].properties.alg8;
       	if (districtRate == -99) {
@@ -249,31 +282,36 @@ map.on('load', function() {
       		districtRate = Math.round(100*districtRate) + "%";
       	}
 
-      	//add a row to the table with district rate
-      	$('#pd tbody').html($('#pd tbody').html() + '<tr><td>' + districtRate + 
-      	"</td><td>" + districts[0].properties.name + '</td></tr>');
+        //update the popup
+        //tableHTML = tableHTML + "<tr><td>" + districtRate + "</td><td>"
+        //                      + districts[0].properties.name + "</td></tr>";
+        tableHTML = "<tr><td>" + districtRate + "</td><td>District average</td></tr>" + tableHTML;
+        headerHTML = "<h3 style='text-align: center;'>" + districts[0].properties.name + "</h3>";
+        popup.setLngLat(e.lngLat)
+                 //.setHTML(headerHTML + "<table>" + tableHTML + "</table>")
+                 .setHTML(headerHTML + districtRate + alg8text)
+                 .addTo(map);
 
       	//if zoom level is high enough to show schools
       	if (map.getZoom() > 8) {
       		if (schools.length > 0) {
-      			$('#pd tbody').html($('#pd tbody').html() + '<tr><td>' + Math.round(schools[0].properties.prct) + "%" +
-      			"</td><td>" + schools[0].properties.name + '</td></tr>');
 
-
-            /*var popup = new mapboxgl.Popup({ offset: [0, -15] })
-                .setLngLat(schools[0].geometry.coordinates)
-                .setHTML('<h3>Im a popup!</h3><p>')
-                .setLngLat(schools[0].geometry.coordinates)
-                .addTo(map);*/
+            //update the popup
+            schoolRate = Math.round(100*schools[0].properties.alg8) + "%";
+            tableHTML = "<tr><td>" + schoolRate + "</td><td>School</td></tr>" + tableHTML;
+            headerHTML = "<h3 style='text-align: center;'>" + schools[0].properties.name + "</h3>";
+            //tableHTML = tableHTML + "<tr><td>" + schoolRate + "</td><td>"
+            //                  + schools[0].properties.name + "</td></tr>";
+            popup.setLngLat(schools[0].geometry.coordinates)
+                 .setHTML(headerHTML + schoolRate + alg8text)
+                 //.setHTML(headerHTML + "<table>" + tableHTML + "</table>")
+                 .addTo(map);
       		}
       	} else {
-      		$('#pd').html($('#pd').html() + '<p>Zoom to show schools</p>');
       	}
 
       //if no districts highlighted
       } else {
-      	$('#pd').html($('#pd').html() + '<p>Zoom to show districts</p>');
-
         //update hover effect
         if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
         hoverDistrict = null;
@@ -283,13 +321,13 @@ map.on('load', function() {
 
     //if no states highlighted
     } else {
-      $('#pd').html('<p>Hover over a state</p>');
 
       //update hover effect
       if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
       hoverDistrict = null;
 
-
+      //remove the popup
+      popup.remove();
     }
   });
 });
