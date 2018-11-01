@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>8th Grade Algebra</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+
+.mapboxgl-ctrl-geocoder {
+	min-width: 300px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.85em;
+  margin: 10px;
+  text-align: left;
+}
+
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib,
+.mapboxgl-ctrl-logo {
+  display: none;
+}
+
+
+/*table styling*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+td, th {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+/**
+* Create a position for the map
+* on the page */
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/**
+* Set rules for how the map overlays
+* (info box and legend) will be displayed
+* on the page. */
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+.mapboxgl-ctrl-compass {
+  display: none !important;
+}
+
+.mapboxgl-popup-content {
+  width: 200px;
+}
+
+
+#features {
+  
+  height: 150px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  /*padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  height: 150px;
+  margin-bottom: 40px;
+  width: 100px;*/
+}
+
+#features table {
+  margin-left: 5px;
+}
+
+#legend {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  height: 190px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+#legendTitle {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+  </style>
+</head>
+<body>
+
+<div id='map'></div>
+
+<div class="map-overlay" id="legend">
+  <div id="legendTitle">Black (vs. White) Grade 8 Algebra Enrollment Rate</div>
+  <!--<div id="legendTitle">Black (vs. White) Students' Rate of Taking Grade 8 Algebra</div>-->
+  <div><span class="legend-key" style="background-color: #b2182b;"></span><span>51+% lower</span></div>
+  <div><span class="legend-key" style="background-color: #d65f4c;"></span><span>31-50% lower</span></div>
+  <div><span class="legend-key" style="background-color: #f4a582;"></span><span>11-30% lower</span></div>
+  <div><span class="legend-key" style="background-color: #fddcc9;"></span><span>1-10% lower</span></div>
+  <div><span class="legend-key" style="background-color: #d1e5f0;"></span><span>0-9% higher</span></div>
+  <div><span class="legend-key" style="background-color: #92c5de;"></span><span>10-29% higher</span></div>
+  <div><span class="legend-key" style="background-color: #4191c3;"></span><span>30-49% higher</span></div>
+  <div><span class="legend-key" style="background-color: #2166ac;"></span><span>50+% higher</span></div>
+</div>
+
+<!--<div class='map-overlay' id='features'>
+  <div class='map-overlay' id='legend'></div>
+
+  Map legend for circles
+      <div id='legend'>
+        <div class="info legend leaflet-control"> 
+          <div class="title" style="margin-top: -5px">Grade 8 Enrollment</div>
+           <div class="size">
+            <div style="width: 8px;    height: 8px; margin-left: 6.6px; margin-top: 8px"></div><br>
+            <div style="width: 13.8px; height: 13.8px; margin-left: 3.7px;"></div><br>
+            <div style="width: 17.8px; height: 17.8px;  margin-left: 1.7px;"></div><br>
+            <div style="width: 21.2px; height: 21.2px;"></div><br>
+          </div>
+          <div class="labelLegend">
+            <div style="top: 33px;">0-24</div>
+            <div style="top: 51px;">25-49</div>
+            <div style="top: 73px;">50-74</div>
+            <div style="top: 98px;">75+</div>
+          </div>
+          <div class="title">Percent Algebra</div>
+          <div class="circles">
+            <i style="background: rgb(33,102,172);"></i> 0-5%<br>
+            <i style="background: rgb(103,169,207)"></i> 5-10%<br>
+            <i style="background: rgb(209,229,240);"></i> 10-15%<br>
+            <i style="background: rgb(253,219,199);"></i> 15-20%<br>
+            <i style="background: rgb(239,138,98);"></i> 20-25%<br>
+            <i style="background: rgb(178,24,43);"></i> 25+%<br>
+          </div>
+        </div>
+      </div>
+</div>-->
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/d-miller/cjnux669g1ety2rp9joamzcsv',
+  center: [-100.971267, 37.922667],
+  zoom: 3.8,
+  pitchWithRotate: false
+});
+
+
+//minimum # of students to display a gap
+var gapMinN = 20;
+
+//message to put at bottom of tooltip note
+//var tooltipEnd = "<div style='font-size: 10px;'>Based on grade 8 students in the 2015-16 year.</div>";
+var tooltipEnd = "";
+
+
+
+//use a pointer cursor
+map.getCanvas().style.cursor = 'default';
+
+
+//add search bar
+map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken
+}));
+
+//zooming options
+var nav = new mapboxgl.NavigationControl();
+map.addControl(nav, 'top-right');
+map.dragRotate.disable();
+map.touchZoomRotate.disableRotation();
+
+
+//helper function that takes two proportions as input and 
+//outputs text description the difference between them
+function textGap(g1, g2, g1name, g2name) {
+
+  //get percentage strings
+  var g1perc = parseFloat((100*g1).toPrecision(2)) + "%";
+  var g2perc = parseFloat((100*g2).toPrecision(2)) + "%";
+
+  //these strings should be "N/A" if input proportion is -99 (missing)
+  if (g1 == -99) g1perc = "N/A";
+  if (g2 == -99) g2perc = "N/A";
+
+  //handle special cases involving 0%
+  if (g1==0 & g2==0) return "No " + g1name + " or " + g2name + " student took grade 8 algebra";
+  if (g1==0) return "No " + g1name + " took grade 8 algebra, but " + g2perc + " of " + g2name + " students did";
+  if (g2==0) return g1perc + " of " + g1name + " students took grade 8 algebra, but no " + g2name + " student did";
+
+  //if the rates were equal
+  if (g1 == g2) return g1name + " and " + g2name + " students were equally likely to grade 8 algebra (" + 
+                       g1perc + " vs. " + g2perc + ")";
+
+  //otherwise report the relative ratio
+  var diff = Math.abs(Math.round(100*(g1/g2 - 1)));
+  if (g1 < g2) diff = diff + "% less likely";
+  if (g1 > g2) diff = diff + "% more likely";
+  return g1name + " students were " + diff + " than " + g2name + 
+         " students to take grade 8 algebra (" + g1perc + " vs. " + g2perc + ")";
+}
+
+
+//helper function that takes two proportions as input and 
+//outputs a table HTML of them along with # of students
+function tableGap(g1, g2, g1name, g2name, g1n, g2n) {
+
+  //get percentage strings
+  var g1perc = parseFloat((100*g1).toPrecision(2)) + "%";
+  var g2perc = parseFloat((100*g2).toPrecision(2)) + "%";
+
+  //these strings should be "N/A" if input proportion is -99 (missing) or size is 0
+  if (g1 == -99 | g1n == 0) g1perc = "N/A";
+  if (g2 == -99 | g2n == 0) g2perc = "N/A";
+
+  //get HTML for each row
+  header = "<tr><th>Group</th><th>G8 Size</th><th>Rate</th></tr>";
+  g1row = "<tr><td>" + g1name + "</td><td>" + g1n + "</td><td>" + g1perc;
+  g2row = "<tr><td>" + g2name + "</td><td>" + g2n + "</td><td>" + g2perc;
+
+  //return the full table HTML
+  return "<table>" + header + g1row + g2row + "</table>";
+}
+
+//wrapper function that gets the entire description HTML
+//calls the textGap and tableGap functions
+function descripGap(g1, g2, g1name, g2name, g1n, g2n) {
+
+  //check minimum sample sizes (for now only adjust the text, not table)
+  if ((g1n < gapMinN) & (g2n < gapMinN)) return "Data reporting standards not met to estimate gap: too few " + g1name + " and " + g2name + " students" 
+                                                + "<br>" + tableGap(g1, g2, g1name, g2name, g1n, g2n) + tooltipEnd; 
+  if (g1n < gapMinN) return "Data reporting standards not met to estimate gap: too few " + g1name + " students" 
+                            + "<br>" + tableGap(g1, g2, g1name, g2name, g1n, g2n) + tooltipEnd;
+  if (g2n < gapMinN) return "Data reporting standards not met to estimate gap: too few " + g2name + " students" 
+                            + "<br>" + tableGap(g1, g2, g1name, g2name, g1n, g2n) + tooltipEnd;
+
+  //otherwise combine the text and table HTML
+  return textGap(g1, g2, g1name, g2name) + "<br>" +
+         tableGap(g1, g2, g1name, g2name, g1n, g2n) + tooltipEnd;
+}
+
+
+
+map.on('load', function() {
+
+    map.addSource("districts", {
+        "type": "vector",
+        "url": "mapbox://d-miller.dyd6gdjh"
+    });
+
+    // The feature-state dependent fill-opacity expression will render the hover effect
+    // when a feature's hover state is set to true.
+    map.addLayer({
+        "id": "district-borders",
+        "type": "line",
+        "source": "districts",
+        "source-layer": "district_added",
+        "layout": {},
+        "paint": {
+            "line-color": "black",
+            "line-width": ["case",
+                ["boolean", ["feature-state", "hover"], false],
+                3,
+                0
+            ]
+        }
+    });
+
+
+  // Create a popup, but don't add it to the map yet.
+  var popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+  });
+
+
+  //description text
+  var alg8text = " of 8th graders were enrolled in Algebra I in the 2015-16 school year"
+
+
+
+  var hoverDistrict =  null;
+  map.on('mousemove', function(e) {
+
+    var states = map.queryRenderedFeatures(e.point, {
+      layers: ['state']
+    });
+
+    var districts = map.queryRenderedFeatures(e.point, {
+      layers: ['district']
+    });
+
+    var schools = map.queryRenderedFeatures(e.point, {
+      layers: ['school']
+    });
+
+    //if a state is highlighted
+    if (states.length > 0) {
+
+      //update the popup
+      //console.log(districts[0]);
+      /*stateRate = Math.round(100*states[0].properties.alg8) + "%";
+      tableHTML = "<tr>" + 
+                  "<td>" + stateRate + "</td>" +
+                  "<td>" + "State average" + "</td>" +
+                  //"<td>" + states[0].properties.name + "</td>" +
+                  "</tr>";*/
+
+      headerHTML = "<h3 style='text-align: center;'>" + states[0].properties.name + "</h3>";
+
+      var props = states[0].properties;
+      var B = props.BL08_alg;
+      var W = props.WH08_alg;
+      var B_n = props.BL08;
+      var W_n = props.WH08;
+      var BW_n = props.BW_n;
+      //var BW_text = textGap(B, W, "Black", "White");
+      //var BW_table = tableGap(B, W, "Black", "White", B_n, W_n);
+
+
+      popup.setLngLat(e.lngLat)
+                  .setHTML(headerHTML + descripGap(B, W, "Black", "White", B_n, W_n))
+                 //.setHTML(headerHTML + BW_text + "<br>" + BW_table)
+                 //.setHTML(headerHTML + stateRate + alg8text)
+                 //.setHTML(headerHTML + "<table>" + tableHTML + "</table>")
+                 //.setHTML("<table>" + tableHTML + "</table>")
+                 .addTo(map);
+
+      //if districts are shown and one is hovered over...
+      if (districts.length > 0) {
+
+        //update hover effect
+        if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
+        hoverDistrict = districts[0].properties.id;
+        map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: true});
+
+      	//figure out what to show for the district rate
+      	var districtRate = districts[0].properties.alg8;
+      	if (districtRate == -99) {
+      		districtRate = "N/A";
+      	} else {
+      		districtRate = Math.round(100*districtRate) + "%";
+      	}
+
+        //update the popup
+        //tableHTML = tableHTML + "<tr><td>" + districtRate + "</td><td>"
+        //                      + districts[0].properties.name + "</td></tr>";
+        //tableHTML = "<tr><td>" + districtRate + "</td><td>District average</td></tr>" + tableHTML;
+        headerHTML = "<h3 style='text-align: center;'>" + districts[0].properties.name + "</h3>";
+
+
+        var props = districts[0].properties;
+        var B = props.BL08_alg;
+        var W = props.WH08_alg;
+        var B_n = props.BL08;
+        var W_n = props.WH08;
+        var BW_n = props.BW_n;
+        //var BW_text = textGap(B, W, "Black", "White");
+        //var BW_table = tableGap(B, W, "Black", "White", B_n, W_n);
+
+        popup.setLngLat(e.lngLat)
+                 //.setHTML(headerHTML + "<table>" + tableHTML + "</table>")
+                 //.setHTML(headerHTML + BW_text + "<br>" + BW_table)
+                 .setHTML(headerHTML + descripGap(B, W, "Black", "White", B_n, W_n))
+                 .addTo(map);
+
+      	//if zoom level is high enough to show schools
+      	if (map.getZoom() > 10.5) {
+      		if (schools.length > 0) {
+
+            //update the popup
+            /*schoolRate = Math.round(schools[0].properties.prct) + "%";
+            tableHTML = "<tr><td>" + schoolRate + "</td><td>School</td></tr>" + tableHTML;
+            headerHTML = "<h3 style='text-align: center;'>" + schools[0].properties.name + "</h3>";
+            //tableHTML = tableHTML + "<tr><td>" + schoolRate + "</td><td>"
+            //                  + schools[0].properties.name + "</td></tr>";
+            popup.setLngLat(schools[0].geometry.coordinates)
+                 .setHTML(headerHTML + schoolRate + alg8text)
+                 //.setHTML(headerHTML + "<table>" + tableHTML + "</table>")
+                 .addTo(map);*/
+
+            //update the popup
+            var props = schools[0].properties;
+            var B = props.BL08_alg;
+            var W = props.WH08_alg;
+            var B_n = props.BL08;
+            var W_n = props.WH08;
+            var BW_n = props.BW_n;
+            headerHTML = "<h3 style='text-align: center;'>" + schools[0].properties.name + "</h3>";
+
+            popup.setLngLat(schools[0].geometry.coordinates)
+                 //.setHTML(headerHTML + "<table>" + tableHTML + "</table>")
+                 //.setHTML(headerHTML + BW_text + "<br>" + BW_table)
+                 .setHTML(headerHTML + descripGap(B, W, "Black", "White", B_n, W_n))
+                 .addTo(map);
+        	}
+        } else {
+          //if no school is highlighted - do nothing for now
+      	}
+
+      //if no districts highlighted
+      } else {
+        //update hover effect
+        if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
+        hoverDistrict = null;
+
+      }
+
+
+    //if no states highlighted
+    } else {
+
+      //update hover effect
+      if (hoverDistrict) map.setFeatureState({source: 'districts', sourceLayer: "district_added", id: hoverDistrict}, { hover: false});
+      hoverDistrict = null;
+
+      //remove the popup
+      popup.remove();
+    }
+  });
+});
+
+
+
+
+</script>
+
+</body>
+</html>
