@@ -113,11 +113,10 @@ td, th {
   padding: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   line-height: 18px;
-  /*height: 135px;
   margin-bottom: 10px;
+  /*height: 135px;
   width: 250px;*/
   height: 160px;
-  margin-bottom: 10px;
   width: 130px;
 }
 
@@ -187,6 +186,20 @@ td, th {
 
 
 <script>
+
+/*
+NOTE TO SELF - things that change when overall rate <--> racial gap
+
+#legend CSS - lines 116-118 - height & weidth
+legend HTML - lines 172-178 - colors, values, title
+MB style - line 205 - different colors -- biggest change
+function used to output the tooltip HTML - descripGap() or descripOverall() - lines 480-530
+anchor for the tooltip - top/bottom vs. left
+*/
+
+
+
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
 var map = new mapboxgl.Map({
   container: 'map',
@@ -230,8 +243,6 @@ function getFeature(pos) {
   return {
     center: [geo_lon[pos], geo_lat[pos]],
     bbox: [geo_lon[pos]-off, geo_lat[pos]-off, geo_lon[pos]+off, geo_lat[pos]+off],
-    //"bbox": [-97.9383829999999, 30.098659, -97.5614889999999, 30.516863],
-    //"center": [-97.7559964, 30.3071816],
     geometry: {
       type: "Point",
       coordinates: [geo_lon[pos], geo_lat[pos]]
