@@ -85,7 +85,7 @@ td, th {
   display: none;
 }
 
-#shinyApp {
+.altContent {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -267,6 +267,10 @@ table {
         <h3>Chicago - Hispanic-White Gap</h3>
         <p>The achievement gap between white and minority students within Chicago Public Schools has shrunk, according to new scores from a national assessment. But that shift wasn’t caused by upswings in black and Hispanic student scores, but rather drops by white students. Results from the 2017 National Assessment of Educational Progress show white fourth- and eighth-grade students performed more than 3 percent worse on math and reading tests than they did in 2015, while minority students generally showed slight improvements over the same time period.</p>
     </section>
+    <section id='Neighborhoods' data-altDiv="ChiNeigh">
+        <h3>Chicago Neighborhoods</h3>
+        <p>The achievement gap between white and minority students within Chicago Public Schools has shrunk, according to new scores from a national assessment. But that shift wasn’t caused by upswings in black and Hispanic student scores, but rather drops by white students. Results from the 2017 National Assessment of Educational Progress show white fourth- and eighth-grade students performed more than 3 percent worse on math and reading tests than they did in 2015, while minority students generally showed slight improvements over the same time period.</p>
+    </section>
     <section id='Graphics' data-altDiv="shinyApp">
         <h3>Interactive Graphics</h3>
         <p>The achievement gap between white and minority students within Chicago Public Schools has shrunk, according to new scores from a national assessment. But that shift wasn’t caused by upswings in black and Hispanic student scores, but rather drops by white students. Results from the 2017 National Assessment of Educational Progress show white fourth- and eighth-grade students performed more than 3 percent worse on math and reading tests than they did in 2015, while minority students generally showed slight improvements over the same time period.</p>
@@ -326,8 +330,11 @@ table {
   </div>
 </div>
 
-<div id="shinyApp" class="hidden">
+<div id="shinyApp" class="altContent hidden">
   <iframe width="100%" height="100%" src="https://dimillerair.shinyapps.io/alg8graphs/" frameborder="0"></iframe>
+</div>
+<div id="ChiNeigh" class="altContent hidden">
+  <iframe width="100%" height="100%" src="https://d-miller.github.io/alg8/Chicago.html" frameborder="0"></iframe>
 </div>
 
 
@@ -692,6 +699,10 @@ map.on('load', function() {
       //don't do anything if active chapter
       if (chapter.id === activeChapter.id) return;
 
+      //if the last div was an alternative one, hide it
+      var lastDiv = $(activeChapter).attr("data-altDiv");
+      if (typeof lastDiv !== "undefined") $("#" + lastDiv).addClass("hidden");
+
       //check if a non-map div is supposed to be shown
       var showDiv = $(chapter).attr("data-altDiv");
       if (typeof showDiv !== "undefined") {
@@ -705,15 +716,9 @@ map.on('load', function() {
       }
 
       //otherwise make sure the map is shown
-      var lastDiv = $(activeChapter).attr("data-altDiv");
-      if (typeof lastDiv !== "undefined") {
-        //$("#map").removeClass("hidden");
-        //$(".map-overlay").removeClass("hidden");
-        $("#map").css("opacity", 1);
-        $(".map-overlay").css("opacity", 1);
-        $("#" + lastDiv).addClass("hidden");
-      }
-
+      $("#map").css("opacity", 1);
+      $(".map-overlay").css("opacity", 1);
+     
       //otherwise fly to the new location using data-pos HTML attribute
       map.flyTo(JSON.parse($(chapter).attr("data-pos")));
 
