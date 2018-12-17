@@ -298,11 +298,13 @@ table {
 
 <div class="map-overlay" id="legend">
   <fieldset>
-    <label>Grade 8 Algebra Enrollment</label>
+    <label>Grade 8 Algebra</label>
     <select id='displayVar' name='displayVar'>
-      <option value='overall'>Overall rate</option>
-      <option value='BW'>Black-White gap</option>
-      <option value='HW'>Hispanic-White gap</option>
+      <option value='overall'>Overall enrollment rate</option>
+      <option value='WB'>White-Black enrollment gap</option>
+      <option value='WB_access'>White-Black access gap</option>
+      <option value='WH'>White-Hisp. enrollment gap</option>
+      <option value='WH_access'>White-Hisp. access gap</option>
     </select>
   </fieldset>
   
@@ -352,15 +354,15 @@ var overall = {legend: genKey("#dadaeb", "0-9%<") +
               };
 overall.school_fill = overall.fill;
 
-//display properties for Black-White gap
-var BW = {legend: genKey("#008837", "White much higher (-15+ pp)") + 
-                  genKey("#a6dba0", "White higher (-5 to -15 pp)") + 
+//display properties for White-Black enrollment gap
+var WB = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
+                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
                   genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
-                  genKey("#92c5de", "Black higher (+5 to +15 pp)") + 
-                  genKey("#0571b0", "Black much higher (+15+ pp)"),
-          fill: ["case", ["has", "BW_n"], 
-                  ["case", [ ">", ["get", "BW_n"], 10],
-                    ["step", ["get", "BW_diff"],
+                  genKey("#a6dba0", "Black higher (-5 to -15 pp)") + 
+                  genKey("#008837", "Black much higher (-15+ pp)"),
+          fill: ["case", ["has", "WB_n"], 
+                  ["case", [ ">", ["get", "WB_n"], 10],
+                    ["step", ["get", "WB_diff"],
                       "hsla(0, 0%, 0%, 0)", 
                       -1, "#008837", 
                       -0.15, "#a6dba0",
@@ -372,15 +374,55 @@ var BW = {legend: genKey("#008837", "White much higher (-15+ pp)") +
           school_fill: "#3b3b3b"
           };
 
-//display properties for Hispanic-White gap
-var HW = {legend: genKey("#008837", "White much higher (-15+ pp)") + 
-                  genKey("#a6dba0", "White higher (-5 to -15 pp)") + 
+//display properties for White-Black access gap
+var WB_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
+                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
                   genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
-                  genKey("#92c5de", "Hisp. higher (+5 to +15 pp)") + 
-                  genKey("#0571b0", "Hisp. much higher (+15+ pp)"),
-          fill: ["case", ["has", "HW_n"], 
-                  ["case", [ ">", ["get", "HW_n"], 10],
-                    ["step", ["get", "HW_diff"],
+                  genKey("#a6dba0", "Black higher (-5 to -15 pp)") + 
+                  genKey("#008837", "Black much higher (-15+ pp)"),
+          fill: ["case", ["has", "WB_n"], 
+                  ["case", [ ">", ["get", "WB_n"], 10],
+                    ["step", ["get", "WB_access"],
+                      "hsla(0, 0%, 0%, 0)", 
+                      -1, "#008837", 
+                      -0.15, "#a6dba0",
+                      -0.05, "#bfbfbf",
+                      0.05, "#92c5de",
+                      0.15, "#0571b0"],
+                    "hsla(0, 0%, 0%, 0)"],
+                  "hsla(0, 0%, 0%, 0)"],
+          school_fill: "#3b3b3b"
+          };
+
+//display properties for White-Hisp. enrollment gap
+var WH = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
+                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
+                  genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
+                  genKey("#a6dba0", "Hisp. higher (-5 to -15 pp)") + 
+                  genKey("#008837", "Hisp. much higher (-15+ pp)"),
+          fill: ["case", ["has", "WH_n"], 
+                  ["case", [ ">", ["get", "WH_n"], 10],
+                    ["step", ["get", "WH_diff"],
+                      "hsla(0, 0%, 0%, 0)", 
+                      -1, "#008837", 
+                      -0.15, "#a6dba0",
+                      -0.05, "#bfbfbf",
+                      0.05, "#92c5de",
+                      0.15, "#0571b0"],
+                    "hsla(0, 0%, 0%, 0)"],
+                  "hsla(0, 0%, 0%, 0)"],
+          school_fill: "#3b3b3b"
+          };
+
+//display properties for White-Hisp. access gap
+var WH_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
+                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
+                  genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
+                  genKey("#a6dba0", "Hisp. higher (-5 to -15 pp)") + 
+                  genKey("#008837", "Hisp. much higher (-15+ pp)"),
+          fill: ["case", ["has", "WH_n"], 
+                  ["case", [ ">", ["get", "WH_n"], 10],
+                    ["step", ["get", "WH_access"],
                       "hsla(0, 0%, 0%, 0)", 
                       -1, "#008837", 
                       -0.15, "#a6dba0",
@@ -393,7 +435,11 @@ var HW = {legend: genKey("#008837", "White much higher (-15+ pp)") +
           };
 
 //combine display properties into one master object
-var displayProps = {overall: overall, BW: BW, HW: HW};
+var displayProps = {overall: overall, 
+                    WB: WB, 
+                    WB_access: WB_access,
+                    WH: WH, 
+                    WH_access: WH_access};
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
 var map = new mapboxgl.Map({
@@ -483,22 +529,24 @@ map.touchZoomRotate.disableRotation();
 function textGap(props) {
 
   //determine variable names based on the chosen display variable
-  if (displayVar === "BW") {
-    var v1 = "BL";
-    var v2 = "WH";
+  if (displayVar === "WB") {
+    var v1 = "BL08_alg_p";
+    var v2 = "WH08_alg_p";
     var g1name = "Black";
     var g2name = "White";
   }
-  if (displayVar === "HW") {
-    var v1 = "HI";
-    var v2 = "WH";
+  if (displayVar === "WB_access") return "";
+  if (displayVar === "WH_access") return "";
+  if (displayVar === "WH") {
+    var v1 = "HI08_alg_p";
+    var v2 = "WH08_alg_p";
     var g1name = "Hispanic";
     var g2name = "White";
   }
 
   //get data
-  var g1 = props[v1 + "08_alg_p"];
-  var g2 = props[v2 + "08_alg_p"];
+  var g1 = props[v1];
+  var g2 = props[v2];
 
   //get percentage strings
   var g1perc = parseFloat((100*g1).toPrecision(2)) + "%";
@@ -530,26 +578,45 @@ function textGap(props) {
 function tableGap(props, schoolLevel) {
 
   //determine variable names based on the chosen display variable
-  if (displayVar === "BW") {
-    var v1 = "BL";
-    var v2 = "WH";
+  if (displayVar === "WB") {
+    var v1 = "BL08_alg_p";
+    var v2 = "WH08_alg_p";
     var g1name = "Black";
     var g2name = "White";
+    var g1n = props["BL08"];
+    var g2n = props["WH08"];
   }
-  if (displayVar === "HW") {
-    var v1 = "HI";
-    var v2 = "WH";
+  if (displayVar === "WB_access") {
+    var v1 = "BL08_access_p";
+    var v2 = "WH08_access_p";
+    var g1name = "Black";
+    var g2name = "White";
+    var g1n = props["BL08"];
+    var g2n = props["WH08"];
+  }
+  if (displayVar === "WH") {
+    var v1 = "HI08_alg_p";
+    var v2 = "WH08_alg_p";
     var g1name = "Hisp.";
     var g2name = "White";
+    var g1n = props["HI08"];
+    var g2n = props["WH08"];
+  }
+  if (displayVar === "WH_access") {
+    var v1 = "HI08_access_p";
+    var v2 = "WH08_access_p";
+    var g1name = "Hisp.";
+    var g2name = "White";
+    var g1n = props["HI08"];
+    var g2n = props["WH08"];
   }
 
   //get data
   var all = props.G08_alg_p;
-  var g1 = props[v1 + "08_alg_p"];
-  var g2 = props[v2 + "08_alg_p"];
+  var g1 = props[v1];
+  var g2 = props[v2];
   var all_n = props.G08;
-  var g1n = props[v1 + "08"];
-  var g2n = props[v2 + "08"];
+
 
   //get percentage strings
   var all_perc = parseFloat((100*all).toPrecision(2)) + "%";
@@ -630,8 +697,10 @@ function describeOverall(props) {
 var displayVar = "overall"; 
 function tooltipHTML(props, schoolLevel) {
   if (displayVar === "overall") return describeOverall(props);
-  if (displayVar === "BW") return describeGap(props, schoolLevel);
-  if (displayVar === "HW") return describeGap(props, schoolLevel);
+  if (displayVar === "WB") return describeGap(props, schoolLevel);
+  if (displayVar === "WH") return describeGap(props, schoolLevel);
+  if (displayVar === "WB_access") return describeGap(props, schoolLevel);
+  if (displayVar === "WH_access") return describeGap(props, schoolLevel);
 }
 
 //helper functions for handling hover highlighting events
@@ -821,11 +890,11 @@ map.on('load', function() {
   //add the sources for states and districts
   map.addSource("states", {
       "type": "vector",
-      "url": "mapbox://d-miller.9dkqlipn"
+      "url": "mapbox://d-miller.9kxhea4q"
   });
   map.addSource("districts", {
       "type": "vector",
-      "url": "mapbox://d-miller.1n4ly36r"
+      "url": "mapbox://d-miller.2r746qu6"
   });
 
   // The feature-state dependent fill-opacity expression will render the hover effect
