@@ -3,7 +3,7 @@
 var width = 880;
 var vertSpace = 22;
 var height = 101.5*vertSpace+5;
-var pad = { left: 10, right: 0, top: 90, bottom: 10 };
+var pad = { left: 10, right: 0, top: 110, bottom: 10 };
 var xName = 20;
 
 var xMajor = 520;
@@ -34,16 +34,23 @@ var svg = d3.select(".top25").append("svg")
 //create header (background) tiles
 var tileW = 200;
 var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",0)");
-var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 40, width: tileW, fill: "white", class: "enroll"}).on("click", rankEnroll);
-headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 40, fill: "white", class: "access"}).on("click", rankAccess);
+var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, fill: "white", class: "enroll"}).on("click", rankEnroll);
+headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, fill: "white", class: "access"}).on("click", rankAccess);
 headerTiles.selectAll("rect").style("cursor", "pointer");
 activeTile.style("fill", "#eee");
 rankEnroll();
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
-header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).style("font-size", 24).on("click", rankEnroll);
-header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).style("font-size", 24).on("click", rankAccess);
+header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).on("click", rankEnroll);
+header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).on("click", rankAccess);
+
+
+//add text about ranking and re-ranking
+var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", rankEnroll);
+var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", rankAccess);
+
+//use pointer cursor to suggest clickability
 header.selectAll("text").style("cursor", "pointer");
 
 //event handlers for resorting the rows
@@ -53,6 +60,10 @@ function rankEnroll() {
   activeTile.style("fill", "white");
   activeTile = d3.select(".headerTile .enroll");
   activeTile.style("fill", "#eee");
+
+  //update the rank text at top
+  if (enrollRankText) enrollRankText.text("(Ranked)");
+  if (accessRankText) accessRankText.text("(Click here to rerank)");
 
   //figure out new ranking based on the active minority group
   var newRank;
@@ -73,6 +84,10 @@ function rankAccess() {
   activeTile.style("fill", "white");
   activeTile = d3.select(".headerTile .access");
   activeTile.style("fill", "#eee");
+
+  //update the rank text at top
+  if (accessRankText) accessRankText.text("(Ranked)");
+  if (enrollRankText) enrollRankText.text("(Click here to rerank)");
 
   //figure out new ranking based on the active minority group
   var newRank;
@@ -282,7 +297,7 @@ var xLegendGap = 100
 var BL_color = "#56B4E9";
 var WH_color = "#999999";
 var HI_color = "#E69F00";
-var legend = g.append("g").attr("class", "legend").attr("transform", "translate(100,-50)");
+var legend = g.append("g").attr("class", "legend").attr("transform", "translate(100,-70)");
 legend.append("rect").attr({x: -15, y: -15, width: xLegendGap+70, height: 30, fill: "#eee"}).attr("class", "WB").on("click", WB_gap);
 legend.append("circle").attr("cx", 0).attr("cy", 0).attr("r", 5).style("fill", "#56B4E9").on("click", WB_gap);
 legend.append("circle").attr("cx", xLegendGap).attr("cy", 0).attr("r", 5).style("fill", "#999999").on("click", WB_gap);

@@ -67,8 +67,13 @@ text.highlightText {
 
   .header text {
     font-weight: bold;
+    font-size: 24px;
   }
 
+  .header text.rerankText {
+    font-weight: normal;
+    font-size: 14px;
+  }
 
 
 
