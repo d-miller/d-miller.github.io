@@ -306,7 +306,7 @@ legend.append("text").text("Gap (click to change):").attr("x", -15).attr("y", -2
 
 
 //load data...
-d3.csv("district_top100.csv", function(data) {
+d3.csv("table_top100.csv", function(data) {
 
 	//console.log(data)
 
