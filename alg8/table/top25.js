@@ -33,10 +33,10 @@ var svg = d3.select(".top25").append("svg")
 
 //create header (background) tiles
 var tileW = 200;
-var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",0)");
-var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, fill: "white", class: "enroll"}).on("click", rankEnroll);
-headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, fill: "white", class: "access"}).on("click", rankAccess);
-headerTiles.selectAll("rect").style("cursor", "pointer");
+var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",2)");
+var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, fill: "#eee", class: "enroll"}).on("click", rankEnroll);
+headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, fill: "#eee", class: "access"}).on("click", rankAccess);
+headerTiles.selectAll("rect").style("cursor", "pointer").attr("stroke", "#333").attr("stroke-width", ".75").attr("opacity",0);
 activeTile.style("fill", "#eee");
 rankEnroll();
 
@@ -57,9 +57,9 @@ header.selectAll("text").style("cursor", "pointer");
 function rankEnroll() {
 
   //update the active tile
-  activeTile.style("fill", "white");
+  activeTile.style("opacity", "0");
   activeTile = d3.select(".headerTile .enroll");
-  activeTile.style("fill", "#eee");
+  activeTile.style("opacity", "1");
 
   //update the rank text at top
   if (enrollRankText) enrollRankText.text("(Ranked)");
@@ -81,9 +81,9 @@ function rankEnroll() {
 function rankAccess() {
 
   //update the active tile
-  activeTile.style("fill", "white");
+  activeTile.style("opacity", 0);
   activeTile = d3.select(".headerTile .access");
-  activeTile.style("fill", "#eee");
+  activeTile.style("opacity", 1);
 
   //update the rank text at top
   if (accessRankText) accessRankText.text("(Ranked)");
@@ -117,8 +117,8 @@ var transitioning = false;
 function WB_gap() {
 	activeM = "BL";
 	transitioning = true;
-	d3.select(".legend rect.WB").attr("fill", "#eee");
-	d3.select(".legend rect.WH").attr("fill", "white");
+	d3.select(".legend rect.WB").attr("opacity", 1);
+	d3.select(".legend rect.WH").attr("opacity", 0);
 
 	//change the dot text (a mess I know - might clean up later)
 	g.selectAll(".highlightText.mGrp.enroll").transition().duration(800)
@@ -152,8 +152,8 @@ function WB_gap() {
 function WH_gap() {
 	activeM = "HI";
 	transitioning = true;
-	d3.select(".legend rect.WB").attr("fill", "white");
-	d3.select(".legend rect.WH").attr("fill", "#eee");
+	d3.select(".legend rect.WB").attr("opacity", 0);
+	d3.select(".legend rect.WH").attr("opacity", 1);
 
 	//change the dot text (a mess I know - might clean up later)
 	g.selectAll(".highlightText.mGrp.enroll").transition().duration(800)
@@ -298,14 +298,14 @@ var BL_color = "#56B4E9";
 var WH_color = "#999999";
 var HI_color = "#E69F00";
 var legend = g.append("g").attr("class", "legend").attr("transform", "translate(100,-70)");
-legend.append("rect").attr({x: -15, y: -15, width: xLegendGap+70, height: 30, fill: "#eee"}).attr("class", "WB").on("click", WB_gap);
+legend.append("rect").attr({x: -15, y: -15, width: xLegendGap+70, height: 30, fill: "#eee", opacity:1}).attr("stroke", "#333").attr("stroke-width", ".75").attr("class", "WB").on("click", WB_gap);
 legend.append("circle").attr("cx", 0).attr("cy", 0).attr("r", 5).style("fill", "#56B4E9").on("click", WB_gap);
 legend.append("circle").attr("cx", xLegendGap).attr("cy", 0).attr("r", 5).style("fill", "#999999").on("click", WB_gap);
 legend.append("text").text("Black").attr("x", 8).on("click", WB_gap);
 legend.append("text").text("White").attr("x", xLegendGap+8).on("click", WB_gap);
 
 var yLegendGap = 30;
-legend.append("rect").attr({x: -15, y: -15+yLegendGap, width: xLegendGap+70, height: 30, fill: "white"}).attr("class", "WH").on("click", WH_gap);
+legend.append("rect").attr({x: -15, y: -15+yLegendGap, width: xLegendGap+70, height: 30, fill: "#eee",opacity:0}).attr("stroke", "#333").attr("stroke-width", ".75").attr("class", "WH").on("click", WH_gap);
 legend.append("circle").attr("cx", 0).attr("cy", yLegendGap).attr("r", 5).style("fill", "#E69F00").on("click", WH_gap);
 legend.append("circle").attr("cx", xLegendGap).attr("cy", yLegendGap).attr("r", 5).style("fill", "#999999").on("click", WH_gap);
 legend.append("text").text("Hispanic").attr("x", 8).attr("y", yLegendGap).on("click", WH_gap);
