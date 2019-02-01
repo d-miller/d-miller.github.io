@@ -1,6 +1,6 @@
 
 //positioning settings
-var width = 880;
+var width = 880+125;
 var vertSpace = 22;
 var height = 101.5*vertSpace+5;
 var pad = { left: 10, right: 0, top: 110, bottom: 10 };
@@ -223,9 +223,19 @@ function highlightDistrict() {
 	//make data point text visible
 	grp.selectAll("text.highlightText").style("opacity", 1);
 
+	//add text about the size of the groups
+	var d = grp.datum();
+	//console.log(d.BL08)
+	if (activeM === "BL") var mText = d3.format(",")(d.BL08) + " Black students";
+	if (activeM === "HI") var mText = d3.format(",")(d.HI08) + " Hisp. students";
+	var wText = d3.format(",")(d.WH08) + " White students"
+	mSize.attr("transform", grp.attr("transform")).text(mText);
+	wSize.attr("transform", grp.attr("transform")).text(wText);
 }
 function unhighlightDistrict() {
 	var grp = d3.select(this.parentNode);
+	mSize.text("");
+	wSize.text("");
 	if (activeDistrict) if (grp.data()[0].id === activeDistrict.data()[0].id) return; 
 	grp.select("rect").attr("fill-opacity", 0);
 	if (!transitioning) grp.selectAll("circle").transition().duration(150).attr("r", 5);
@@ -320,10 +330,13 @@ legend.selectAll("rect").style("cursor", "pointer");
 legend.append("text").text("Gap (click to change):").attr("x", -15).attr("y", -28).attr("class", "title");
 
 
+//add text indicating numbers of students
+var mSize = g.append("text").attr("x", padGraph2 + panelW + 35).attr("y", vertSpace*(-.3)).style("font-size", 11).style("text-anchor", "start");
+var wSize = g.append("text").attr("x", padGraph2 + panelW + 35).attr("y", vertSpace*(0.3)).style("font-size", 11).style("text-anchor", "start");
+
+
 //load data...
 d3.csv("table_top100.csv", function(data) {
-
-	//console.log(data)
 
   ///////////////////////////////
   //  FIXED POSITION ELEMENTS  //
