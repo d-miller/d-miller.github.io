@@ -387,13 +387,22 @@ d3.csv("table_top100.csv", function(data) {
        	fill: "black", "fill-opacity": 0
        })
 
-    //district name
-    row.append("text")
-      .attr("class", "name")
-      .text(function(d) { return d.name; })
-      .attr("x", padGraph1-12)
-      .style("font-size",14)
-      .style("text-anchor", "end");
+    //district name (separately position statename and the first row)
+    if (+d.rank === 0) row.append("text").attr("class", "name").text(d.name).attr("x", padGraph1-10);
+    if (+d.rank !== 0) {
+   		row.append("text").attr("class", "name")
+      		.text(d.name.slice(0,-2))
+      		.attr("x", padGraph1-32);
+    	row.append("text").attr("class", "name")
+      		.text(d.name.slice(-2))
+      		.attr("x", padGraph1-19)
+      		.style("text-anchor", "middle");
+    }
+
+    /*row.append("text").attr("class", "name")
+      .text(function(d) { return (d.rank == 0) ? "" : d.name.slice(0,-2); })
+      .attr("x", padGraph1-12);*/
+
 
     //line - graph 1
     row.append("line")
