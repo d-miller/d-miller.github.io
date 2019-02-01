@@ -5,7 +5,8 @@
   }
 
   .top25 text.name {
-    text-anchor: start;
+    text-anchor: end;
+    font-size: 14px;
   }
 
 .top25 text {
