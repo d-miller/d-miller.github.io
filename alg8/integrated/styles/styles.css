@@ -10,10 +10,9 @@
   padding-top: 42px; 
 }
 
-#titleCustom {
-  padding-top: 70px; 
-  padding-bottom: 20px; 
-  margin-top: -28px;
+.field-name-field-resource-authors {
+  position: relative;
+  top: -25px;
 }
 
 /* todo: resolve differences here */
@@ -54,6 +53,8 @@
   min-width: 300px;
   margin-bottom: 10px;
   float: right;
+  position: relative;
+  top: 15px;
 }
 
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib,
@@ -194,7 +195,7 @@
 }*/
 .AIRlogo {
     background-image: url('https://www.air.org/sites/all/themes/f1ux/images/homepage-refresh/logo.png');
-    background-size: 125px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-clip: border-box;
     transition: background-size 0.2s;
@@ -208,6 +209,9 @@
     overflow: hidden;
     text-indent: 100%;
     white-space:nowrap;
+    position: relative;
+    top: 6px;
+    left: -9px;
 }
 
 
