@@ -1,0 +1,447 @@
+#navContainer {
+  max-width: 1200px;
+}
+
+#block-boxes-air-footer-copyright {
+  float: right;
+}
+
+#titleCustom {
+  padding-top: 42px; 
+}
+
+.field-name-field-resource-authors {
+  position: relative;
+  top: -25px;
+}
+
+/* todo: resolve differences here */
+#content {
+  	width: 750px; 
+  	margin-left: auto; 
+  	margin-right: auto;
+  	margin-top: 10px;
+  	font-size: 14px;
+  	line-height: 1.5em;
+  	font-family: Helvetica Neue;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* imported from map CSS */
+
+#extMapCntrls {
+  margin-top: 20px;
+}
+#extMapCntrls #extMapLegend {
+    float: left;
+}
+#extMapCntrls #geocoderDiv {
+    float: right;
+}
+#extMapCntrls #clear {
+    clear: both;
+}
+
+#extMapCntrls #extMapLegend fieldset {
+  border: 0;
+}
+
+.mapboxgl-ctrl-geocoder {
+  min-width: 300px;
+  margin-bottom: 10px;
+  float: right;
+  position: relative;
+  top: 15px;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib,
+.mapboxgl-ctrl-logo {
+  display: none;
+}
+
+.mapboxgl-ctrl-compass {
+  display: none !important;
+}
+
+.mapboxgl-popup-content {
+  width: 200px;
+  pointer-events: none;
+  border-radius: 10px;
+  padding: 5px 6px 10px 15px;
+}
+
+
+
+/*.mapboxgl-popup-content table th {
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: bold;
+    padding: 0;
+}*/
+
+
+#map .mapboxgl-popup-content,
+#map .mapboxgl-popup-content h3 {
+  font-family: Helvetica;
+}
+
+#map h3 {
+  margin: 10px;
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*table styling*/
+#map table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  border-collapse: collapse;
+
+}
+#map td, th {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
+
+#map th {
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+/**
+* Create a position for the map
+* on the page */
+/*#map {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}*/
+
+#map {
+    /*width: 75%;*/
+    width: 750px;
+    height: 450px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+}
+
+
+/**
+* Set rules for how the map overlays
+* (info box and legend) will be displayed
+* on the page. */
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.6);
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+#map table {
+  margin-top: 10px;
+}
+
+
+
+#mapLegend {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  margin-bottom: 10px;
+  height: 180px;
+  width: 210px;
+}
+
+#mapLegend select {
+  margin-bottom: 10px;
+}
+
+#mapLegend .legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#mapLegend #legendContent {
+  font-size: 13px;
+}
+
+
+/*.AIRlogo {
+  width: 150px;
+}*/
+.AIRlogo {
+    background-image: url('https://www.air.org/sites/all/themes/f1ux/images/homepage-refresh/logo.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+
+    display: block;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+    position: relative;
+    top: 6px;
+    left: -9px;
+}
+
+
+
+/* imported from dot plot CSS */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+
+#charts {
+  padding: 10px 0;
+}
+
+.chart {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.chart .title {
+  font-size: 13px;
+  float: none;
+}
+
+text {
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+
+.brush rect.extent {
+  fill: steelblue;
+  fill-opacity: .125;
+}
+
+.brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+
+.reset {
+  font-size: smaller;
+  float: right;
+  margin-right: 10px;
+}
+
+.background.bar {
+  fill: #ccc;
+}
+
+.foreground.bar {
+  fill: steelblue;
+}
+
+aside {
+  position: relative;
+  font-size: smaller;
+  padding: 5px;
+  width: 220px;
+}
+
+#map *, .chart *, .top100 * {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
+}
+
+
+.top100 text.name {
+  text-anchor: end;
+  font-size: 12px;
+}
+
+.top100 text.name.state {
+  text-anchor: middle;
+}
+
+.top100 text {
+	text-anchor: middle;
+  dominant-baseline: central;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+
+
+line.axisBorder {
+	stroke-width: 1;
+	stroke: #888;
+}
+
+.top100 .row text.highlightText {
+	font-size: 11px;
+  opacity: 0;
+}
+
+
+
+.top100 .row.highlighted text.highlightText {
+  opacity: 1;
+}
+
+.top100 .row text {
+  cursor: pointer;
+}
+
+.top100 .row line {
+  stroke-width: 1px;
+  stroke: #888;
+}
+
+.top100 .row.highlighted line {
+  stroke-width: 2px;
+}
+
+
+.top100 .row circle {
+  r: 5;
+}
+
+.top100 .row.highlighted circle {
+  r: 9;
+}
+
+.top100 .row rect {
+  fill: black;
+  fill-opacity: 0;
+}
+
+.top100 .row.highlighted rect {
+  fill-opacity: 0.1;
+}
+
+.top100 text.rank {
+  font-size: 13px;
+}
+
+
+.background {
+	fill: none;
+  pointer-events: all;
+}
+
+text.prct {
+  font-size: 25px;
+}
+
+text.change {
+  font-size: 20px;
+}
+
+.subHead text {
+  font-size: 12px;
+  fill: #999;
+}
+
+.header text {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header text.rerankText {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.legend text {
+	font-size: 14px;
+	text-anchor: start;
+}
+
+.legend .title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.legend .labelLegend div {
+	margin-left: 25px;
+	padding: 0;
+	position: absolute;
+}
+
+.legend .size div {
+	margin: 0;
+	margin-bottom: -12px;
+	padding: 0;
+	border-radius: 50%;
+	border: 1.5px solid black;
+}
+
+
+
+
