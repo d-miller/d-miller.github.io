@@ -10,6 +10,19 @@
   padding-top: 42px; 
 }
 
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-fixed-top {
+  max-height: 10px;
+}
+
 .field-name-field-resource-authors {
   position: relative;
   top: -25px;
@@ -211,7 +224,7 @@
     white-space:nowrap;
     position: relative;
     top: 6px;
-    left: -9px;
+    left: 40px;
 }
 
 
