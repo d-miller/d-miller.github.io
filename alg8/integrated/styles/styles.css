@@ -1,7 +1,13 @@
+#navContainer {
+  max-width: 1200px;
 }
 
+#block-boxes-air-footer-copyright {
+  float: right;
 }
 
+#titleCustom {
+  padding-top: 42px; 
 }
 
 #titleCustom {
