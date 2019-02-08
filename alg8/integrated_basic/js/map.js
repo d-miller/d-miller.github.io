@@ -786,11 +786,11 @@ map.on('load', function() {
   map.on('mousemove', function(e) { hoverPoint(e.lngLat, true); });
 
   //reset if mouse is moved over the document, but not map
-  d3.selectAll(":not(#map)").on('mouseover', function(e) {
+  document.addEventListener("mouseover", function(){
     if (hoverByMouse) {
       hoverDistrict(null);
       hoverState(null);
       popup.remove();
     }
-  })
+  });
 });
