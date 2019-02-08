@@ -65,12 +65,15 @@
   <script src='js/nav.js'></script>
   <link rel="stylesheet" href="styles/styles.css">
 
+
+
+
 </head>
 <body>
 
   <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container" id="navContainer">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -78,29 +81,43 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand">8th Grade Algebra</a>
+        <a class="navbar-brand"><a class="AIRlogo" href="https://www.air.org/" target="_blank"></a></a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li id="link1" num="1" class="active"><a href="#framing">Framing the Problem</a></li>
           <li id="link2" num="2"><a href="#enrollGap">Enrollment Gaps</a></li>
           <li id="link3" num="3"><a href="#accessGap">Differential Access</a></li>
-          <li id="link4" num="4"><a href="#priorAch">Prior Achievement</a></li>
+          <li id="link4" num="4"><a href="#priorAch">Differential Placement</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <!--<ul class="nav navbar-nav navbar-right">
           <li><a href="http://d-miller.github.io/about" target="blank_">American Institutes for Research</a></li>
-        </ul>
+        </ul>-->
       </div>
     </div>
   </nav>
+
+
 
   <div id="content"> 
 
     <div id="titleCustom">
       <h1>The 8th Grade Algebra Problem: Racial/Ethnic Gaps in Access and Enrollment</h1>
-      <h3>Whitney Cade, Ryan Eisner, David Miller, Jordan Rickles, Nick Sorensen</h3>
+      <div class="field field-name-field-resource-authors field-type-text field-label-hidden">
+        <div class="field-items">
+          <div class="field-item even">
+            <a href="https://www.air.org/person/whitney-cade">Whitney Cade</a>, 
+            <a href="https://www.linkedin.com/in/ryaneisner/">Ryan Eisner</a>, 
+            <a href="https://d-miller.github.io/">David Miller</a>, 
+            <a href="https://www.air.org/person/jordan-rickles">Jordan Rickles</a>,
+            and <a href="https://www.air.org/person/nicholas-sorensen">Nicholas Sorensen</a>
+          </div>
+        </div>
+      </div>
     </div>
+      <img src="img/usDept.jpg" width="750"/>
 
+      <br><br>
       <p>If a student wants a STEM career, there’s no better first step than taking Algebra in eighth grade. However, our analysis of recently released data indicate that African American and Hispanic students aren’t taking this pivotal course at the same rate as their White peers, with large enrollment gaps occurring in districts across the nation.</p>
 
       <p>For the first time, the 2015-16 wave of <a href="https://www2.ed.gov/about/offices/list/ocr/docs/crdc-2015-16.html" target="blank)">U.S. Department of Education’s Civil Rights Data Collection</a> asked every U.S. public school district to report 8th grade algebra enrollment disaggregated by race and ethnicity. This population-wide dataset provided an unprecedented opportunity to examine how enrollment gaps vary at a fine level of detail.</p>
@@ -109,7 +126,7 @@
 
     <div id="framing">
 
-      <h1>Why does it matter if a student doesn’t take eighth grade Algebra?</h1>
+      <h3>Why does it matter if a student doesn’t take eighth grade Algebra?</h3>
 
       <p>Although typically offered in ninth grade, students who enroll in eighth grade Algebra position themselves to take important classes like Calculus before the end of high school. Students who do not take Algebra early but want to take Calculus are forced to play “catch up” by doubling up on classes (if allowed) or taking summer school. Many consider higher-level math like Calculus to be an important precursor to a STEM career; taking Calculus has been strongly linked to increased interest in <a href="https://files.eric.ed.gov/fulltext/EJ1034751.pdf" target="blank_">STEM careers</a> and eventually obtaining a <a href="https://www.tandfonline.com/doi/full/10.1080/10824660701601266?needAccess=true" target="blank_">STEM degree</a>. For these reasons, eighth grade Algebra is often seen as a “gatekeeper” course to higher-level math courses. Some, such as activist and educator Bob Moses, even consider early access to algebra to be <a href="https://files.eric.ed.gov/fulltext/ED385437.pdf">a civil right</a> given its importance. With lower enrollment rates, African American and Hispanic students may be at a disadvantage when it comes to obtaining a STEM degree.</p>
 
@@ -118,7 +135,7 @@
     </div>
 
     <div id="enrollGap">
-      <h1>White Students Enroll in 8th Grade Algebra More Often, But Gaps Vary Widely</h1>
+      <h3>White Students Enroll in 8th Grade Algebra at Higher Rates, But Gaps Vary Widely Across the Nation</h3>
 
       <p>Across the nation, White students are more likely to enroll in 8th grade algebra than their Black and Hispanic classmates. In the 2015-16 school year, 17% of Black and 18% of Hispanic eighth grade students took the course, compared to 29% of White students, corresponding to a 12-percentage point enrollment gap for Black versus White students and 11-point gap for Hispanic versus White students.</p>
 
@@ -153,7 +170,7 @@
     </div>
 
     <div id="accessGap">
-      <h1>Who Has Opportunity to Take 8th Grade Algebra?</h1>
+      <h3>Who Has Opportunity to Take 8th Grade Algebra?</h3>
 
       <p>Black and Hispanic students may lack access to eighth grade algebra if they attend schools that do not offer it. Inequities in funding, teacher placement, and other resources <a href="http://blogs.edweek.org/edweek/curriculum/2016/06/black_latino_students_lack_access_high_level_math_science_data.html" target="blank_">could prevent</a> schools from offering the course, depriving students of the opportunity to even consider taking it. Hence, gaps in access could explain gaps in enrollment. We found that access gaps vary widely across districts, though most 8th grade students attend schools offering the course.</p>
 
@@ -207,7 +224,7 @@
     </div>
 
     <div id="priorAch">
-      <h1>Differential Placement</h1>
+      <h3>Differential Placement</h3>
 
       <p>Attending a middle school that offers Algebra I does not imply that all students will take Algebra I. How students select or are placed into algebra in 8th grade differs across districts and schools, but prior math achievement is usually an important factor for placement (citations?). If course placement decisions are dictated by prior achievement, with higher achieving students placed in an algebra course and lower achieving students placed in a standard 8th grade math course, then racial gaps in achievement that exist prior to 8th grade could account for gaps in algebra enrollment.</p>
 
