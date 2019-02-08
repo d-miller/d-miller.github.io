@@ -225,7 +225,7 @@ map.touchZoomRotate.disableRotation();
 map.scrollZoom.disable();
 
 //add the horizontal legend
-var legendW = 308;
+var legendW = 326;
 var legendH = 25;
 var legendPad = {left: 8, right: 15};
 d3.select("#extMapLegend fieldset")
