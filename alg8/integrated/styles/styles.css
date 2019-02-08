@@ -68,6 +68,19 @@
 
 
 
+/*.mapboxgl-popup-content table th {
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: bold;
+    padding: 0;
+}*/
+
+
+#map .mapboxgl-popup-content,
+#map .mapboxgl-popup-content h3 {
+  font-family: Helvetica;
+}
+
 #map h3 {
   margin: 10px;
   font-size: 1em;
@@ -82,11 +95,22 @@
   margin-right: auto;
   padding-top: 10px;
   padding-bottom: 0px;
+  border-collapse: collapse;
+
 }
 #map td, th {
   text-align: center;
   padding-left: 5px;
   padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
+
+#map th {
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: bold;
 }
 
 /**
