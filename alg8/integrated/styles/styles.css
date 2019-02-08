@@ -36,7 +36,6 @@
   	margin-top: 10px;
   	font-size: 14px;
   	line-height: 1.5em;
-  	font-family: Helvetica Neue;
 }
 
 .content {
@@ -96,10 +95,7 @@
 }*/
 
 
-#map .mapboxgl-popup-content,
-#map .mapboxgl-popup-content h3 {
-  font-family: Helvetica;
-}
+
 
 #map h3 {
   margin: 10px;
@@ -158,17 +154,7 @@
 * Set rules for how the map overlays
 * (info box and legend) will be displayed
 * on the page. */
-.map-overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.6);
-  margin-right: 10px;
-  font-family: Arial, sans-serif;
-  overflow: auto;
-  border-radius: 3px;
-}
+
 
 #map table {
   margin-top: 10px;
@@ -277,7 +263,6 @@
 }
 
 text {
-    font-family: Helvetica;
     font-size: 16px;
 }
 
@@ -341,7 +326,6 @@ aside {
 }
 
 .axis text {
-  font-family: sans-serif;
   font-size: 11px;
 }
 
