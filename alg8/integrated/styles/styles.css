@@ -1,27 +1,21 @@
-#navContainer {
-  max-width: 1200px;
-}
 
-#block-boxes-air-footer-copyright {
-  float: right;
+/* General layout */
+#content {
+  width: 750px; 
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 #titleCustom {
   padding-top: 30px;
 }
 
-
 .field-name-field-resource-authors {
   position: relative;
   top: -25px;
 }
 
-/* todo: resolve differences here */
-#content {
-  width: 750px; 
-  margin-left: auto; 
-  margin-right: auto;
-}
+
 
 
 /* imported from map CSS */

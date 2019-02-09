@@ -106,10 +106,10 @@
   </header>
   <!--end of copied and pasted AIR header-->
 
-
-
+  <!--CSS centers 750 pixel width div-->
   <div id="content"> 
 
+    <!--CSS adds 30 pixels to the top (title looked too close to the header to my eye)-->
     <div id="titleCustom">
       <h1>The 8th Grade Algebra Problem: Racial/Ethnic Gaps in Access and Enrollment</h1>
       <div class="field field-name-field-resource-authors field-type-text field-label-hidden">
@@ -124,15 +124,23 @@
         </div>
       </div>
     </div>
-      <img src="img/usDept.jpg" width="750"/>
+    
+    <!--IMPORTANT: This image is merely a placeholder for now. We need to find a different stock 
+    photo. We don't own the copyrights for this one.-->
+    <img src="img/usDept.jpg" width="750"/>
 
-      <br><br>
-      <p>If a student wants a STEM career, there’s no better first step than taking Algebra in eighth grade. However, our analysis of recently released data indicate that African American and Hispanic students aren’t taking this pivotal course at the same rate as their White peers, with large enrollment gaps occurring in districts across the nation.</p>
+    <br><br>
+    <p>If a student wants a STEM career, there’s no better first step than taking Algebra in eighth grade. However, our analysis of recently released data indicate that African American and Hispanic students aren’t taking this pivotal course at the same rate as their White peers, with large enrollment gaps occurring in districts across the nation.</p>
 
-      <p>For the first time, the 2015-16 wave of <a href="https://www2.ed.gov/about/offices/list/ocr/docs/crdc-2015-16.html" target="blank)">U.S. Department of Education’s Civil Rights Data Collection</a> asked every U.S. public school district to report 8th grade algebra enrollment disaggregated by race and ethnicity. This population-wide dataset provided an unprecedented opportunity to examine how enrollment gaps vary at a fine level of detail.</p>
+    <p>For the first time, the 2015-16 wave of <a href="https://www2.ed.gov/about/offices/list/ocr/docs/crdc-2015-16.html" target="blank)">U.S. Department of Education’s Civil Rights Data Collection</a> asked every U.S. public school district to report 8th grade algebra enrollment disaggregated by race and ethnicity. This population-wide dataset provided an unprecedented opportunity to examine how enrollment gaps vary at a fine level of detail.</p>
 
-      <p>We analyzed these data, along with enrollment data from the Common Core of Data and achievement data from the Stanford Educational Data Archive (SEDA), to study how racial and ethnic disparities in 8th grade algebra enrollment and opportunity vary across the nation.</p>
+    <p>We analyzed these data, along with enrollment data from the Common Core of Data and achievement data from the Stanford Educational Data Archive (SEDA), to study how racial and ethnic disparities in 8th grade algebra enrollment and opportunity vary across the nation.</p>
 
+    <!--I'm hoping that we can have a persistent navigation bar with links to these outer div content containers
+        See this Bootstrap-based navbar for an example: http://d-miller.github.io/alg8/integrated_navbar/
+        Could start with the standard AIR header at first, then change to a navigation bar after scrolling down
+        E.g., see how the header changes after scrolling down here: https://www2.ed.gov/datastory/stem/algebra/index.html
+    -->
     <div id="framing">
 
       <h3>Why does it matter if a student doesn’t take eighth grade Algebra?</h3>
@@ -141,8 +149,9 @@
 
       <p>Critically, students do not decide to take 8th grade algebra: schools typically place students into the course if they are deemed ready and if the school offers the course. Hence, student enrollment rates are largely determined at the school level. However, a few states have policies which govern the math courses students can take. For instance, <a href="https://www.revisor.mn.gov/statutes/cite/120B/pdf" target="blank_">Minnesota mandates</a> that students complete Algebra by the end of eighth grade, essentially enacting an “Algebra for all” model. California had been moving towards an Algebra for all approach since the late 90s, with their school board formalizing this policy in 2008 by requiring eighth grade Algebra. Within a few years of this decision, the requirement was overturned as the state moved to Common Core math, effectively shifting Algebra to ninth grade for nearly all students.</p>
 
-    </div>
+    </div><!--end of #framing-->
 
+    <!--Ideally navigation bar could link to this section-->
     <div id="enrollGap">
       <h3>White Students Enroll in 8th Grade Algebra at Higher Rates, But Gaps Vary Widely Across the Nation</h3>
 
@@ -150,34 +159,34 @@
 
       <p>However, these gaps vary considerably across the nation. The map below allows users to explore geographic variation at state and district levels. The White-Black gap exceeds 15 percentage points in 22 states, with Pennsylvania showing the highest state-level gap. Only one state, Idaho, had a greater percentage of Black 8th graders enrolled in algebra than White 8th graders.</p>
  
+      <!--Interactive map controls-->
+      <div id="extMapCntrls">
+        <div id="extMapLegend">  
+          <fieldset>
+            <label>Select display:</label>
+            <select id='displayVar' name='displayVar'>
+              <option value='WB'>White – Black enrollment gap</option>
+              <option value='WB_access'>White – Black access gap</option>
+              <option value='WH'>White – Hisp. enrollment gap</option>
+              <option value='WH_access'>White – Hisp. access gap</option>
+              <option value='overall'>Overall enrollment rate</option>
+            </select>
+          </fieldset>
+        </div>
+        <div id="geocoderDiv"></div>
+        <div id="clear"></div>
+      </div><!--end of #extMapCntrls-->
 
-
-
-    
-<!-- Interactive map -->
-<div id="extMapCntrls">
-  <div id="extMapLegend">  
-    <fieldset>
-      <label>Select display:</label>
-      <select id='displayVar' name='displayVar'>
-        <option value='WB'>White – Black enrollment gap</option>
-        <option value='WB_access'>White – Black access gap</option>
-        <option value='WH'>White – Hisp. enrollment gap</option>
-        <option value='WH_access'>White – Hisp. access gap</option>
-        <option value='overall'>Overall enrollment rate</option>
-      </select>
-    </fieldset>
-  </div>
-  <div id="geocoderDiv"></div>
-  <div id="clear"></div>
-</div>
-<div id='map'></div>
-<script src='js/map.js'></script>
+      <!--Interactive map container and JS code-->
+      <div id='map'></div>
+      <script src='js/map.js'></script>
 
       <br>
       <p>Though these enrollment gaps are easy to find, identifying their source is harder. Below, we dive deeper into two possible sources of this gap: differential access to schools with eighth grade Algebra and differential placement in schools that offer the course.</p>
-    </div>
 
+    </div><!--end of #enrollGap-->
+
+    <!--Ideally navigation bar could link to this section-->
     <div id="accessGap">
       <h3>Who Has Opportunity to Take 8th Grade Algebra?</h3>
 
@@ -228,6 +237,7 @@
       <p>For the districts with large access gaps, one starting point could be to examine the factors such as teacher placement or resource allocation that lead to large gaps in opportunity. However, our analysis also shows that simply providing access to all students does not ensure equal rates of participation. Districts must also examine the within-school placement decisions that lead to large gaps in enrollment.</p>
     </div>
 
+    <!--Ideally navigation bar could link to this section-->
     <div id="priorAch">
       <h3>Differential Placement</h3>
 
@@ -247,61 +257,126 @@
 
       <p>More indepth research is needed to identify these factors, and understand how they promote or hinder equitable access to advanced mathematics. [Could insert something about our work in Elk Grove, Chicago, and Oakland. Could also insert something from Rickles, 2011.]</p>
 
-
-
-    </div>
-
-
-
-  </div>
+    </div><!--end of #priorAch-->
+  </div><!--end of #content-->
 
 
 <br><br><br><br><br>
 
 
-<!--copied and pasted AIR footer-->
-<footer class="footer" role="contentinfo">
-      <div class="footer-top">
+  <!--copied and pasted AIR footer-->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
       <div class="footer-top-border"></div>
-        <div class="region-footer-top l-constrain">  <div id="block-boxes-air-footer-tagline" class="block block-boxes-simple  block-boxes-air-footer-tagline block--boxes block--boxes-air-footer-tagline">      <div id="boxes-box-air_footer_tagline" class="boxes-box"><div class="boxes-box-content"><h2>RESEARCH. EVALUATION. APPLICATION. <strong>IMPACT</strong>.</h2></div></div>  </div><div id="block-boxes-air-footer-about" class="block block-boxes-simple  block-boxes-air-footer-about block--boxes block--boxes-air-footer-about">      <div id="boxes-box-air_footer_about" class="boxes-box"><div class="boxes-box-content"><h2><a href="https://www.air.org/about-us">About Us</a></h2>
-<p><a href="https://www.air.org/content/overview">About AIR</a><br><a href="https://www.air.org/page/board-directors">Board of Directors</a><br><a href="https://www.air.org/page/leadership">Leadership</a><br><a href="https://www.air.org/experts">Experts</a><br><a href="https://www.air.org/page/our-clients">Clients</a><br><a href="https://www.air.org/page/contracting-air">Contracting with AIR</a><br><a href="https://www.air.org/contact">Contact Us</a></p>
-</div></div>  </div><div id="block-boxes-air-footer-expertise" class="block block-boxes-simple  block-boxes-air-footer-expertise block--boxes block--boxes-air-footer-expertise">      <div id="boxes-box-air_footer_expertise" class="boxes-box"><div class="boxes-box-content"><h2><a href="https://www.air.org/expertise">Our Work</a></h2>
-<p><a href="https://www.air.org/page/air-assessment">AIR Assessment</a><br><a href="https://www.air.org/topic/education">Education</a><br><a href="https://www.air.org/topic/health">Health</a><br><a href="https://www.air.org/topic/international">International</a><br><a href="https://www.air.org/topic/workforce">Workforce</a></p>
-</div></div>  </div><div id="block-boxes-air-footer-our-work" class="block block-boxes-simple  block-boxes-air-footer-our-work block--boxes block--boxes-air-footer-our-work">      <div id="boxes-box-air_footer_our_work" class="boxes-box"><div class="boxes-box-content"><h2><a href="https://www.air.org/services">Client Services</a></h2>
-<p><a href="https://www.air.org/page/air-assessment">Student Assessment</a><br><a href="https://www.air.org/page/research-and-evaluation">Research and Evaluation</a><br><a href="https://www.air.org/page/technical-assistance-capacity-building">Policy, Practice, and<br>
-  Systems Change</a></p>
-<h2><a href="https://www.air.org/news-events">News &amp; Events</a></h2>
-<h2><a href="https://www.air.org/page/careers">Careers at AIR</a></h2>
-</div></div>  </div><div id="block-boxes-air-footer-other-links" class="block block-boxes-simple  block-boxes-air-footer-other-links block--boxes block--boxes-air-footer-other-links">      <div id="boxes-box-air_footer_other_links" class="boxes-box"><div class="boxes-box-content"><br></div></div>  </div><div id="block-search-form--2" class="block  block-search-form--2 block--search block--search-form">      <form action="/" method="post" id="search-block-form--2" accept-charset="UTF-8"><div class="container-inline">
-      <h2 class="element-invisible">Search form</h2>
-    <div class="form-item form-item--searchfield form-item--search-block-form">
-  <label class="form-item__label element-invisible" for="edit-search-block-form--4">Search </label>
- <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--4" name="search_block_form" value="" size="15" maxlength="128" class="form-text form-search" placeholder="Search AIR">
-</div>
-<div class="form-actions" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Search" class="button button--submit"></div><input type="hidden" name="form_build_id" value="form-Swf4WfDpUGFZQqm0WxSPhnc3y2LKjLqB0Z3f1IQKRyk">
-<input type="hidden" name="form_id" value="search_block_form">
-</div>
-</form>  </div><div id="block-boxes-air-footer-newsletter-form" class="block block-boxes-simple  block-boxes-air-footer-newsletter-form block--boxes block--boxes-air-footer-newsletter-form">      <div id="boxes-box-air_footer_newsletter_form" class="boxes-box"><div class="boxes-box-content"><form action="/page/newsletter-signup" method="_GET"><label>Stay informed about AIR's work</label><br><input class="input" name="signup[email]" placeholder="enter your email address" type="text"><input class="submit" value="Submit" type="submit">&nbsp;</form></div></div>  </div><div id="block-boxes-air-footer-social-links" class="block block-boxes-simple  block-boxes-air-footer-social-links block--boxes block--boxes-air-footer-social-links">      <div id="boxes-box-air_footer_social_links" class="boxes-box"><div class="boxes-box-content"><h2 class="title">Connect</h2>
-<p><a class="facebook-icon" href="http://www.facebook.com/pages/American-Institutes-for-Research-AIR/93244499633?ref=share" target="_blank">Facebook</a><a class="twitter-icon" href="https://www.air.org/twitter/" target="_blank">Twitter</a><a class="linkedin-icon" href="https://www.linkedin.com/company/american-institutes-for-research" target="_blank">Linkedin</a><a class="youtube-icon" href="http://www.youtube.com/user/AmInstForResearch" target="_blank">YouTube</a><a class="pinterest-icon" href="https://www.pinterest.com/aminstresearch" target="_blank">Pinterest</a><a class="rss-icon" href="https://www.air.org/rss" target="_blank">RSS</a></p>
-</div></div>  </div>  </div>    </div>
-        <div class="footer-bottom">
-        <div class="region-footer-bottom l-constrain">  <span class="site-name">
-  <a class="site-name__link" href="https://www.air.org/" rel="home">
-    <h1 class="site-name__text">American Institutes for Research</h1>
-  </a>
-</span>
-<div id="block-boxes-air-footer-logo-contact" class="block block-boxes-simple  block-boxes-air-footer-logo-contact block--boxes block--boxes-air-footer-logo-contact">      <div id="boxes-box-air_footer_logo_contact" class="boxes-box"><div class="boxes-box-content"><div class="footer-address">1000 Thomas Jefferson Street, NW<br>
-  Washington, DC 20007</div>
-<div class="footer-phone-fax">Call: (202) 403-5000<br>
-  Fax: (855) 459-6213</div>
-</div></div>  </div><div id="block-boxes-air-footer-copyright" class="block block-boxes-simple  block-boxes-air-footer-copyright block--boxes block--boxes-air-footer-copyright">      <div id="boxes-box-air_footer_copyright" class="boxes-box"><div class="boxes-box-content"><p>© 2019 American Institutes for Research. All rights reserved.</p>
-</div></div>  </div><div id="block-menu-block-4" class="block  block-menu-block-4 block--menu-block block--menu-block-4">      <ul class="nav nav--menu-footer-menu nav--menu-block-4 has-parent-mlid-0 is-level-1 has-depth-1">
-  <li class="nav__item nav__item--first menu-mlid-1676"><a href="https://www.air.org/page/privacy-policy" class="nav__link">Privacy Policy</a></li>
-<li class="nav__item nav__item--last menu-mlid-1677"><a href="https://www.air.org/sitemap" title="Display a site map with RSS feeds." class="nav__link">Sitemap</a></li>
-</ul>
-  </div>  </div>    </div>
+      <div class="region-footer-top l-constrain">
+        <div id="block-boxes-air-footer-tagline" class="block block-boxes-simple  block-boxes-air-footer-tagline block--boxes block--boxes-air-footer-tagline">
+          <div id="boxes-box-air_footer_tagline" class="boxes-box">
+            <div class="boxes-box-content">
+              <h2>RESEARCH. EVALUATION. APPLICATION. <strong>IMPACT</strong>.</h2>
+            </div>
+          </div>
+        </div>
+        <div id="block-boxes-air-footer-about" class="block block-boxes-simple  block-boxes-air-footer-about block--boxes block--boxes-air-footer-about">
+          <div id="boxes-box-air_footer_about" class="boxes-box">
+            <div class="boxes-box-content">
+              <h2><a href="https://www.air.org/about-us">About Us</a></h2>
+              <p><a href="https://www.air.org/content/overview">About AIR</a><br><a href="https://www.air.org/page/board-directors">Board of Directors</a><br><a href="https://www.air.org/page/leadership">Leadership</a><br><a href="https://www.air.org/experts">Experts</a><br><a href="https://www.air.org/page/our-clients">Clients</a><br><a href="https://www.air.org/page/contracting-air">Contracting with AIR</a><br><a href="https://www.air.org/contact">Contact Us</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="block-boxes-air-footer-expertise" class="block block-boxes-simple  block-boxes-air-footer-expertise block--boxes block--boxes-air-footer-expertise">
+          <div id="boxes-box-air_footer_expertise" class="boxes-box">
+            <div class="boxes-box-content">
+              <h2><a href="https://www.air.org/expertise">Our Work</a></h2>
+              <p><a href="https://www.air.org/page/air-assessment">AIR Assessment</a><br><a href="https://www.air.org/topic/education">Education</a><br><a href="https://www.air.org/topic/health">Health</a><br><a href="https://www.air.org/topic/international">International</a><br><a href="https://www.air.org/topic/workforce">Workforce</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="block-boxes-air-footer-our-work" class="block block-boxes-simple  block-boxes-air-footer-our-work block--boxes block--boxes-air-footer-our-work">
+          <div id="boxes-box-air_footer_our_work" class="boxes-box">
+            <div class="boxes-box-content">
+              <h2><a href="https://www.air.org/services">Client Services</a></h2>
+              <p><a href="https://www.air.org/page/air-assessment">Student Assessment</a><br><a href="https://www.air.org/page/research-and-evaluation">Research and Evaluation</a><br><a href="https://www.air.org/page/technical-assistance-capacity-building">Policy, Practice, and<br>Systems Change</a></p>
+              <h2><a href="https://www.air.org/news-events">News &amp; Events</a></h2>
+              <h2><a href="https://www.air.org/page/careers">Careers at AIR</a></h2>
+            </div>
+          </div>
+        </div>
+        <div id="block-boxes-air-footer-other-links" class="block block-boxes-simple  block-boxes-air-footer-other-links block--boxes block--boxes-air-footer-other-links">
+          <div id="boxes-box-air_footer_other_links" class="boxes-box">
+            <div class="boxes-box-content"><br></div>
+          </div>
+        </div>
+        <div id="block-search-form--2" class="block  block-search-form--2 block--search block--search-form">
+          <form action="/" method="post" id="search-block-form--2" accept-charset="UTF-8">
+            <div class="container-inline">
+              <h2 class="element-invisible">Search form</h2>
+              <div class="form-item form-item--searchfield form-item--search-block-form">
+                <label class="form-item__label element-invisible" for="edit-search-block-form--4">Search </label>
+                <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--4" name="search_block_form" value="" size="15" maxlength="128" class="form-text form-search" placeholder="Search AIR">
+              </div>
+              <div class="form-actions" id="edit-actions--2">
+                <input type="submit" id="edit-submit--2" name="op" value="Search" class="button button--submit">
+              </div>
+              <input type="hidden" name="form_build_id" value="form-Swf4WfDpUGFZQqm0WxSPhnc3y2LKjLqB0Z3f1IQKRyk">
+              <input type="hidden" name="form_id" value="search_block_form">
+            </div>
+          </form>
+        </div>
+        <div id="block-boxes-air-footer-newsletter-form" class="block block-boxes-simple  block-boxes-air-footer-newsletter-form block--boxes block--boxes-air-footer-newsletter-form">
+          <div id="boxes-box-air_footer_newsletter_form" class="boxes-box">
+            <div class="boxes-box-content">
+              <form action="/page/newsletter-signup" method="_GET">
+              <label>Stay informed about AIR's work</label>
+                <br>
+                <input class="input" name="signup[email]" placeholder="enter your email address" type="text">
+                <input class="submit" value="Submit" type="submit">&nbsp;
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="block-boxes-air-footer-social-links" class="block block-boxes-simple  block-boxes-air-footer-social-links block--boxes block--boxes-air-footer-social-links">
+          <div id="boxes-box-air_footer_social_links" class="boxes-box">
+            <div class="boxes-box-content">
+              <h2 class="title">Connect</h2>
+              <p><a class="facebook-icon" href="http://www.facebook.com/pages/American-Institutes-for-Research-AIR/93244499633?ref=share" target="_blank">Facebook</a><a class="twitter-icon" href="https://www.air.org/twitter/" target="_blank">Twitter</a><a class="linkedin-icon" href="https://www.linkedin.com/company/american-institutes-for-research" target="_blank">Linkedin</a><a class="youtube-icon" href="http://www.youtube.com/user/AmInstForResearch" target="_blank">YouTube</a><a class="pinterest-icon" href="https://www.pinterest.com/aminstresearch" target="_blank">Pinterest</a><a class="rss-icon" href="https://www.air.org/rss" target="_blank">RSS</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="region-footer-bottom l-constrain">
+        <span class="site-name">
+          <a class="site-name__link" href="https://www.air.org/" rel="home">
+            <h1 class="site-name__text">American Institutes for Research</h1>
+          </a>
+        </span>
+        <div id="block-boxes-air-footer-logo-contact" class="block block-boxes-simple  block-boxes-air-footer-logo-contact block--boxes block--boxes-air-footer-logo-contact">
+          <div id="boxes-box-air_footer_logo_contact" class="boxes-box">
+            <div class="boxes-box-content">
+              <div class="footer-address">1000 Thomas Jefferson Street, NW<br>Washington, DC 20007</div>
+              <div class="footer-phone-fax">Call: (202) 403-5000<br>Fax: (855) 459-6213</div>
+            </div>
+          </div>
+        </div>
+        <div id="block-boxes-air-footer-copyright" class="block block-boxes-simple  block-boxes-air-footer-copyright block--boxes block--boxes-air-footer-copyright">
+          <div id="boxes-box-air_footer_copyright" class="boxes-box">
+            <div class="boxes-box-content">
+              <p>© 2019 American Institutes for Research. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div id="block-menu-block-4" class="block  block-menu-block-4 block--menu-block block--menu-block-4">
+          <ul class="nav nav--menu-footer-menu nav--menu-block-4 has-parent-mlid-0 is-level-1 has-depth-1">
+            <li class="nav__item nav__item--first menu-mlid-1676"><a href="https://www.air.org/page/privacy-policy" class="nav__link">Privacy Policy</a></li>
+            <li class="nav__item nav__item--last menu-mlid-1677"><a href="https://www.air.org/sitemap" title="Display a site map with RSS feeds." class="nav__link">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
-<!--end of copied and pasted AIR footer-->
+  <!--end of copied and pasted AIR footer-->
 
 
 </body>
