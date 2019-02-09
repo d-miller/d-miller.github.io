@@ -1,44 +1,46 @@
 
+
+
 //helper function for generating the legend key HTML
 function genKey(color, text) { 
   return '<div><span class="legend-key" style="background-color: ' + color + ';"></span><span>' + text + '</span></div>'; 
 }
 
 //display properties for overall rates
-var overall = {legend: genKey("#dadaeb", "0-9%<") + 
+var all_enroll = {legend: genKey("#dadaeb", "0-9%<") + 
                        genKey("#bcbddc", "10-19%") + 
                        genKey("#9e9ac8", "20-29%") + 
                        genKey("#807dba", "30-39%") + 
                        genKey("#6a51a3", "40-49%") + 
                        genKey("#4a1486", "50+%"),
 
-          legendCuts: [.1, .2, .3, .4, .5],
+          legendCuts: [.2, .4, .7],
           legendEnds: [0, 1],
           legendAddEnds: true,
           legendTickFormat: d3.format("%"),
-          legendColors: ["#dadaeb", "#bcbddc", "#9e9ac8", "#807dba","#6a51a3","#4a1486"],
+          legendTitle: "Overall Enrollment Rate",
+          legendColors: ["#cbc9e2", "#9e9ac8", "#756bb1", "#54278f"],
 
                 fill: ["case", ["has", "G08_alg_p"],
                         ["step", ["get", "G08_alg_p"],
                           "hsla(0, 57%, 36%, 0)", 
-                          0, "#dadaeb", 
-                          0.1, "#bcbddc", 
+                          0, "#cbc9e2", 
                           0.2, "#9e9ac8", 
-                          0.3, "#807dba", 
-                          0.4, "#6a51a3", 
-                          0.5, "#4a1486"],
+                          0.4, "#756bb1", 
+                          0.7, "#6a51a3"],
                         "hsla(0, 57%, 36%, 0)"]
               };
-overall.school_fill = overall.fill;
+all_enroll.school_fill = all_enroll.fill;
 
 //display properties for White-Black enrollment gap
-var WB = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
+var WB_enroll = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
                   genKey("#92c5de", "White higher (+5 to +15 pp)") + 
                   genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
                   genKey("#a6dba0", "Black higher (-5 to -15 pp)") + 
                   genKey("#008837", "Black much higher (-15+ pp)"),
           legendCuts: [-15, -5, 5, 15],
           legendEnds: [-27.5, 27.5],
+          legendTitle: "White – Black Enrollment Gap",
           legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
           fill: ["case", ["has", "WB_n"], 
                   ["case", [ ">", ["get", "WB_n"], 10],
@@ -62,6 +64,7 @@ var WB_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") +
                   genKey("#008837", "Black much higher (-15+ pp)"),
           legendCuts: [-15, -5, 5, 15],
           legendEnds: [-27.5, 27.5],
+          legendTitle: "White – Black Access Gap",
           legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
           fill: ["case", ["has", "WB_n"], 
                   ["case", [ ">", ["get", "WB_n"], 10],
@@ -78,13 +81,14 @@ var WB_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") +
           };
 
 //display properties for White-Hisp. enrollment gap
-var WH = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
+var WH_enroll = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
                   genKey("#92c5de", "White higher (+5 to +15 pp)") + 
                   genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
                   genKey("#a6dba0", "Hisp. higher (-5 to -15 pp)") + 
                   genKey("#008837", "Hisp. much higher (-15+ pp)"),
           legendCuts: [-15, -5, 5, 15],
           legendEnds: [-27.5, 27.5],
+          legendTitle: "White – Hispanic Enrollment Gap",
           legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
           fill: ["case", ["has", "WH_n"], 
                   ["case", [ ">", ["get", "WH_n"], 10],
@@ -108,6 +112,7 @@ var WH_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") +
                   genKey("#008837", "Hisp. much higher (-15+ pp)"),
           legendCuts: [-15, -5, 5, 15],
           legendEnds: [-27.5, 27.5],
+          legendTitle: "White – Hispanic Access Gap",
           legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
           fill: ["case", ["has", "WH_n"], 
                   ["case", [ ">", ["get", "WH_n"], 10],
@@ -124,17 +129,17 @@ var WH_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") +
           };
 
 //combine display properties into one master object
-var displayProps = {overall: overall, 
-                    WB: WB, 
+var displayProps = {all_enroll: all_enroll, 
+                    WB_enroll: WB_enroll, 
                     WB_access: WB_access,
-                    WH: WH, 
+                    WH_enroll: WH_enroll, 
                     WH_access: WH_access};
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/d-miller/cjo9mgywm0i682rmwoflwdov8',
-  center: [-97, 39.5],
+  center: [-97.7, 38],
   zoom: 3.1,
   pitchWithRotate: false
 });
@@ -227,26 +232,33 @@ map.touchZoomRotate.disableRotation();
 map.scrollZoom.disable();
 
 //add the horizontal legend
-var legendW = 326;
-var legendH = 25;
-var legendPad = {left: 8, right: 15};
-d3.select("#extMapLegend fieldset")
-  .style("padding-left", legendPad.left + "px");
+var legendW = 200;
+var legendH = 43;
+var legendPad = {left: 10, right: 15};
+/*d3.select("#extMapLegend fieldset")
+  .style("padding-left", legendPad.left + "px");*/
 
-changeLegend(WB, true);
+changeLegend(WB_enroll, true);
 function changeLegend(props, draw) {
 
   if (draw) {
-    d3.select("#extMapLegend")
+    d3.select("#mapLegendSVG")
       .append("svg")
         .attr("width", legendW + legendPad.left + legendPad.right)
         .attr("height", legendH)
+      /*.append("rect")
+        .attr("width", legendW + legendPad.right)
+        .attr("height", legendH)
+        .attr("fill", "white");*/
+    d3.select("#mapLegendSVG svg")
       .append("g")
         .attr("class", "mapLegend")
-        .attr("transform", "translate(" + legendPad.left + ", 0)");
+        .attr("transform", "translate(" + legendPad.left + ", 20)")
+      .append("text")
+        .attr("class", "caption");
   }  
 
-  var svg = d3.select("#extMapLegend svg")
+  var svg = d3.select("#mapLegendSVG svg")
   var g = svg.select("g");
   var cuts = props.legendCuts;
   var ends = props.legendEnds; 
@@ -298,14 +310,13 @@ function changeLegend(props, draw) {
     .attr("fill", d => color(d[0]));
 
   //add legend values
-  /*g.append("text")
-      .attr("class", "caption")
+  g.select("text.caption")
       .attr("x", x.range()[0])
       .attr("y", -6)
       .attr("fill", "#000")
       .attr("text-anchor", "start")
       .attr("font-weight", "bold")
-      .text(title);*/
+      .text(props.legendTitle);
 
 
 }
@@ -336,7 +347,7 @@ function changeLegend(props, draw) {
 function textGap(props) {
 
   //determine variable names based on the chosen display variable
-  if (displayVar === "WB") {
+  if (displayVar === "WB_enroll") {
     var v1 = "BL08_alg_p";
     var v2 = "WH08_alg_p";
     var g1name = "Black";
@@ -344,7 +355,7 @@ function textGap(props) {
   }
   if (displayVar === "WB_access") return "";
   if (displayVar === "WH_access") return "";
-  if (displayVar === "WH") {
+  if (displayVar === "WH_enroll") {
     var v1 = "HI08_alg_p";
     var v2 = "WH08_alg_p";
     var g1name = "Hispanic";
@@ -385,7 +396,7 @@ function textGap(props) {
 function tableGap(props, schoolLevel) {
 
   //determine variable names based on the chosen display variable
-  if (displayVar === "WB") {
+  if (displayVar === "WB_enroll") {
     var v1 = "BL08_alg_p";
     var v2 = "WH08_alg_p";
     var g1name = "Black";
@@ -401,7 +412,7 @@ function tableGap(props, schoolLevel) {
     var g1n = props["BL08"];
     var g2n = props["WH08"];
   }
-  if (displayVar === "WH") {
+  if (displayVar === "WH_enroll") {
     var v1 = "HI08_alg_p";
     var v2 = "WH08_alg_p";
     var g1name = "Hisp.";
@@ -501,11 +512,11 @@ function describeOverall(props) {
 }
 
 //wrapper function that calls describeGap() or describeOverall() depending on the display var
-var displayVar = "overall"; 
+var displayVar = "all_enroll"; 
 function tooltipHTML(props, schoolLevel) {
-  if (displayVar === "overall") return describeOverall(props);
-  if (displayVar === "WB") return describeGap(props, schoolLevel);
-  if (displayVar === "WH") return describeGap(props, schoolLevel);
+  if (displayVar === "all_enroll") return describeOverall(props);
+  if (displayVar === "WB_enroll") return describeGap(props, schoolLevel);
+  if (displayVar === "WH_enroll") return describeGap(props, schoolLevel);
   if (displayVar === "WB_access") return describeGap(props, schoolLevel);
   if (displayVar === "WH_access") return describeGap(props, schoolLevel);
 }
@@ -641,7 +652,7 @@ map.on('load', function() {
 
   // The feature-state dependent fill-opacity expression will render the hover effect
   // when a feature's hover state is set to true.
-  var defaultProps = displayProps.overall;
+  var defaultProps = displayProps.all_enroll;
   map.addLayer({
       "id": "state-borders",
       "type": "line",
@@ -774,13 +785,33 @@ map.on('load', function() {
 
 
   //initialize White-Blank enrollment gap
-  changeDisplayVar("WB");
+  changeDisplayVar("WB_enroll");
+
+  //add event listeners to the map buttons
+  d3.selectAll(".m-button.map-button").on("click", function() {
+
+      //if the active button was pressed, do nothing
+      if (d3.select(this).classed("active")) return;
+
+      //update the active button under the relevant div
+      var div = d3.select(this.parentElement.parentElement);
+      div.select(".active").classed("active", false);
+      d3.select(this).classed("active", true);
+
+      //update the display variable
+      var comp = d3.select(".map-button-wrapper.compare .active").attr("value");
+      var meas = d3.select(".map-button-wrapper.measure .active").attr("value");
+      var newVar = comp + "_" + meas;
+      if (newVar === "all_access") newVar = "all_enroll"; //haven't yet added this var
+      changeDisplayVar(newVar);
+    })
+
 
   //change display if another variable has been selected
-  d3.select("select#displayVar").on("change", function() {
+  /*d3.select("select#displayVar").on("change", function() {
     var newVar = d3.select(this).node().value;
     changeDisplayVar(newVar);
-  });
+  });*/
 
   //handle moving the mouse cursor over the map
   map.on('mousemove', function(e) { hoverPoint(e.lngLat, true); });

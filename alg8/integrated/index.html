@@ -106,7 +106,7 @@
   </header>
   <!--end of copied and pasted AIR header-->
 
-  <!--CSS centers 750 pixel width div-->
+  <!--CSS centers 750 pixel width div. Let's discuss ideal width & resizing behavior.-->
   <div id="content"> 
 
     <!--CSS adds 30 pixels to the top (title looked too close to the header to my eye)-->
@@ -157,26 +157,57 @@
 
       <p>However, these gaps vary considerably across the nation. The map below allows users to explore geographic variation at state and district levels. The White-Black gap exceeds 15 percentage points in 22 states, with Pennsylvania showing the highest state-level gap. Only one state, Idaho, had a greater percentage of Black 8th graders enrolled in algebra than White 8th graders.</p>
  
+
+      <!--I changed the interactive controls but keeping this in the comments,
+      if I want to later use it
+      <fieldset id="mapDisplayVar">
+        <label>Select display:</label>
+        <select id='displayVar' name='displayVar'>
+          <option value='WB_enroll'>White – Black enrollment gap</option>
+          <option value='WB_access'>White – Black access gap</option>
+          <option value='WH_enroll'>White – Hisp. enrollment gap</option>
+          <option value='WH_access'>White – Hisp. access gap</option>
+          <option value='all_enroll'>Overall enrollment rate</option>
+        </select>
+      </fieldset>-->
+
+
       <!--Interactive map controls-->
       <div id="extMapCntrls">
         <div id="extMapLegend">  
-          <fieldset>
-            <label>Select display:</label>
-            <select id='displayVar' name='displayVar'>
-              <option value='WB'>White – Black enrollment gap</option>
-              <option value='WB_access'>White – Black access gap</option>
-              <option value='WH'>White – Hisp. enrollment gap</option>
-              <option value='WH_access'>White – Hisp. access gap</option>
-              <option value='overall'>Overall enrollment rate</option>
-            </select>
-          </fieldset>
+
+
+ <div class="map-buttons-container">
+      <div class="map-button-wrapper compare">
+        <h5>Comparison</h5>
+        <div>
+          <div class="m-button map-button active" value="WB">White – Black</div>
+          <div class="m-button map-button" value="WH">White – Hisp.</div>
+          <div class="m-button map-button" value="all">Overall rate</div>
+        </div>
+      </div>
+
+      <div class="map-button-wrapper measure">
+        <h5>Measure</h5>
+        <div>
+          <div class="m-button map-button active" value="enroll">Enrollment</div>
+          <div class="m-button map-button" value="access">Access</div>
+        </div>
+      </div>
+    </div>
+
+
         </div>
         <div id="geocoderDiv"></div>
         <div id="clear"></div>
       </div><!--end of #extMapCntrls-->
 
       <!--Interactive map container and JS code-->
-      <div id='map'></div>
+      <div id='map'>
+        <div class="mapboxgl-ctrl-bottom-right">
+          <div id="mapLegendSVG"></div>
+        </div>
+      </div>
       <script src='js/map.js'></script>
 
       <br>
@@ -373,6 +404,6 @@
     </div>
   </footer>
   <!--end of copied and pasted AIR footer-->
-  
+
 </body>
 </html>
