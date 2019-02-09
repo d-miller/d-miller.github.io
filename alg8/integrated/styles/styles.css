@@ -7,21 +7,9 @@
 }
 
 #titleCustom {
-  padding-top: 42px; 
+  padding-top: 30px;
 }
 
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-.navbar-fixed-top {
-  max-height: 10px;
-}
 
 .field-name-field-resource-authors {
   position: relative;
@@ -30,35 +18,28 @@
 
 /* todo: resolve differences here */
 #content {
-  	width: 750px; 
-  	margin-left: auto; 
-  	margin-right: auto;
-  	margin-top: 10px;
-  	font-size: 14px;
-  	line-height: 1.5em;
+  width: 750px; 
+  margin-left: auto; 
+  margin-right: auto;
 }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
 
 /* imported from map CSS */
-
 #extMapCntrls {
   margin-top: 20px;
 }
 #extMapCntrls #extMapLegend {
-    float: left;
+  float: left;
 }
 #extMapCntrls #geocoderDiv {
-    float: right;
+  float: right;
 }
 #extMapCntrls #clear {
-    clear: both;
+  clear: both;
+}
+
+#extMapCntrls #extMapLegend fieldset {
+  border: 0;
 }
 
 .mapboxgl-ctrl-geocoder {
@@ -86,16 +67,10 @@
 }
 
 
-
-/*.mapboxgl-popup-content table th {
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: bold;
-    padding: 0;
+/*#map .mapboxgl-popup-content,
+#map .mapboxgl-popup-content h3 {
+  font-family: Helvetica;
 }*/
-
-
-
 
 #map h3 {
   margin: 10px;
@@ -149,18 +124,9 @@
     border: 1px solid grey;
 }
 
-
-/**
-* Set rules for how the map overlays
-* (info box and legend) will be displayed
-* on the page. */
-
-
 #map table {
   margin-top: 10px;
 }
-
-
 
 #mapLegend {
   padding: 10px;
@@ -189,10 +155,8 @@
 }
 
 
+
 /*.AIRlogo {
-  width: 150px;
-}*/
-.AIRlogo {
     background-image: url('https://www.air.org/sites/all/themes/f1ux/images/homepage-refresh/logo.png');
     background-size: 150px;
     background-repeat: no-repeat;
@@ -210,12 +174,18 @@
     white-space:nowrap;
     position: relative;
     top: 6px;
-    left: 40px;
-}
-
+    left: -9px;
+}*/
 
 
 /* imported from dot plot CSS */
+.collapsibleContent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
 
 .collapsible {
   background-color: #777;
@@ -263,7 +233,8 @@
 }
 
 text {
-    font-size: 16px;
+  font-family: Helvetica;
+  font-size: 16px;
 }
 
 
@@ -326,6 +297,7 @@ aside {
 }
 
 .axis text {
+  font-family: sans-serif;
   font-size: 11px;
 }
 
@@ -434,7 +406,3 @@ text.change {
 	border-radius: 50%;
 	border: 1.5px solid black;
 }
-
-
-
-

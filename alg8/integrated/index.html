@@ -6,94 +6,84 @@
   <link rel="shortcut icon" href="https://www.air.org/sites/all/themes/f1ux/favicon.ico" />
 
 
-  <!-- jQuery, needed for Bootstrap -->
-  <!-- Version 1.11.2 is old, but unexpected error occurs for most recent version --> 
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="js/jquery.detectfont.js"></script>
-
-  <!-- Bootstrap Version 3.3.7 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
   <!--AIR CSS-->
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_TJwcvofy9svPkq--9lOPwWK3Eyie-qnFATKBwUOQGjs.css" media="all" />
-<!--[if gte IE 9]><!-->
-<link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_CXVIRGWGjdTSD2Y-HXwipyNK3wzIneTjLqHaXJHLi6A.css" media="all" />
-<!--<![endif]-->
+  <!--[if gte IE 9]><!-->
+  <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_CXVIRGWGjdTSD2Y-HXwipyNK3wzIneTjLqHaXJHLi6A.css" media="all" />
+  <!--<![endif]-->
 
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css__FdncicepYZa4zf9jebEeI-T6zW7309gU_IEVXqBZoE.css" media="all" />
-<![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css__FdncicepYZa4zf9jebEeI-T6zW7309gU_IEVXqBZoE.css" media="all" />
+  <![endif]-->
 
-<!--[if lt IE 9]><!-->
-<link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_OAkdG_Bj--sU53NiEEYTIa2sZPQx2AWUA1fI9_Zodns.css" media="all" />
-<!--<![endif]-->
-
-
+  <!--[if lt IE 9]><!-->
+  <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_OAkdG_Bj--sU53NiEEYTIa2sZPQx2AWUA1fI9_Zodns.css" media="all" />
+  <!--<![endif]-->
 
 
-  <!-- D3 version 3, used primarly for dot plot and histograms -->
-  <!-- Version 5 is the most current version but I adapted code that was 
+  <!-- custom JS and CSS for visualizations -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- 152 KB: D3 version 3, used primarly for dot plot and histograms
+  Version 5 is the most current version but I adapted code that was 
   written for v3, and wpdating the code for v5 would be time consuming-->
   <script src="https://d3js.org/d3.v3.min.js"></script>
 
-  <!-- Crossfilter library, used for the filtering functionality in the histograms -->
+  <!-- 10 KB: Crossfilter library, used for the filtering functionality in the histograms -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
 
-  <!-- Core Mapbox library -->
+  <!-- 700 KB: Core Mapbox library: JavaScript and CSS -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
 
-  <!-- Geocoder Mapbox library -->
+  <!-- 77 KB: Geocoder Mapbox library: JavaScript and CSS -->
   <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
   <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
-
-
-
-  <!--Plotly libraries - very bulky I know...-->
-  <!--<script src="plotly/htmlwidgets-1.2/htmlwidgets.js"></script>
-  <script src="plotly/plotly-binding-4.8.0/plotly.js"></script>
-  <script src="plotly/typedarray-0.1/typedarray.min.js"></script>
-  <script src="plotly/jquery-1.11.3/jquery.min.js"></script>
-  <link href="plotly/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-  <script src="plotly/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-  <link href="plotly/plotly-htmlwidgets-css-1.39.2/plotly-htmlwidgets.css" rel="stylesheet" />
-  <script src="plotly/plotly-main-1.39.2/plotly-latest.min.js"></script>-->
-
-  <!-- custom code and styling -->
-  <script src='js/nav.js'></script>
-  <link rel="stylesheet" href="styles/styles.css">
-
-
-
 
 </head>
 <body>
 
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <a class="navbar-brand AIRlogo" href="https://www.air.org/" target="_blank"></a>
-    <div class="container" id="navContainer">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li id="link1" num="1" class="active"><a href="#framing">Framing the Problem</a></li>
-          <li id="link2" num="2"><a href="#enrollGap">Enrollment Gaps</a></li>
-          <li id="link3" num="3"><a href="#accessGap">Differential Access</a></li>
-          <li id="link4" num="4"><a href="#priorAch">Differential Placement</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+
+<!--copied and pasted AIR header-->
+<header class="header" role="banner">
+        <div class="region-header l-constrain">  <div id="block-menu-block-3" class="block  block-menu-block-3 block--menu-block block--menu-block-3">      <ul class="nav nav--menu-utility-menu nav--menu-block-3 has-parent-mlid-0 is-level-1 has-depth-1">
+  <li class="nav__item nav__item--first menu-mlid-12056"><a href="https://www.air.org/about-us" title="" class="nav__link">About Us</a></li>
+<li class="nav__item menu-mlid-3006"><a href="https://www.air.org/page/careers" title="Work at AIR" class="nav__link">Careers</a></li>
+<li class="nav__item nav__item--last menu-mlid-1681"><a href="https://www.air.org/contact" class="nav__link">Contact</a></li>
+</ul>
+  </div><div id="block-search-form" class="block  block-search-form block--search block--search-form">      <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-item--searchfield form-item--search-block-form">
+  <label class="form-item__label element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text form-search" placeholder="Search AIR">
+</div>
+<div class="form-actions" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="button button--submit"></div><input type="hidden" name="form_build_id" value="form-H2ZG9w6_nbpca91zgji8RKwz6S4HxPxfSIQ6h9BuPZA">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</form>  </div><span class="site-name">
+  <a class="site-name__link" href="https://www.air.org/" rel="home">
+    <h1 class="site-name__text">American Institutes for Research</h1>
+  </a>
+</span>
+<div id="block-menu-block-2" class="block  block-menu-block-2 block--menu-block block--menu-block-2">      <ul class="nav nav--main-menu nav--menu-block-2 has-parent-mlid-0 is-level-1 has-depth-2">
+  <li class="nav__item nav__item--first is-expanded menu-mlid-12061"><a href="https://www.air.org/expertise" title="" class="nav__link">Our Work</a><ul class="nav nav--subnav"><li class="nav__item nav__item--first has-children menu-mlid-11996"><a href="https://www.air.org/page/air-assessment" title="" class="nav__link">AIR Assessment</a></li>
+<li class="nav__item menu-mlid-12001"><a href="https://www.air.org/topic/education" title="" class="nav__link">Education</a></li>
+<li class="nav__item menu-mlid-12011"><a href="https://www.air.org/topic/health" title="" class="nav__link">Health</a></li>
+<li class="nav__item menu-mlid-12016"><a href="https://www.air.org/topic/international" title="" class="nav__link">International</a></li>
+<li class="nav__item menu-mlid-12021"><a href="https://www.air.org/topic/workforce" title="" class="nav__link">Workforce</a></li>
+<li class="nav__item nav__item--last menu-mlid-12026"><a href="https://www.air.org/expertise" title="" class="nav__link">ALL TOPICS &gt;</a></li>
+</ul></li>
+<li class="nav__item is-expanded menu-mlid-12031"><a href="https://www.air.org/services" title="" class="nav__link">Our Services</a><ul class="nav nav--subnav"><li class="nav__item nav__item--first menu-mlid-12036"><a href="https://www.air.org/page/air-assessment" title="" class="nav__link">Student Assessment</a></li>
+<li class="nav__item menu-mlid-12041"><a href="https://www.air.org/page/research-and-evaluation" title="" class="nav__link">Research and Evaluation</a></li>
+<li class="nav__item nav__item--last menu-mlid-12046"><a href="https://www.air.org/page/policy-practice-and-systems-change" title="" class="nav__link">Policy, Practice, and Systems Change</a></li>
+</ul></li>
+<li class="nav__item menu-mlid-12051"><a href="https://www.air.org/experts" title="" class="nav__link">Our Experts</a></li>
+<li class="nav__item nav__item--last menu-mlid-4911"><a href="https://www.air.org/news-events" title="" class="nav__link">News &amp; Events</a></li>
+</ul>
+  </div>  </div>  </header>
+<!--end of copied and pasted AIR header-->
 
 
 
@@ -184,20 +174,20 @@
   <!--Crossfilter histograms for the dot plot-->
   <aside id="totals"><span id="active">-</span> of <span id="total">-</span> districts selected.</aside>
   <button class="collapsible">Filter by Number of Students</button>
-    <div class="content">
+    <div class="collapsibleContent">
       <div class="chart" id="BL08_log"></div>
       <div class="chart" id="HI08_log"></div>
       <div class="chart" id="WH08_log"></div>
       <div class="chart" id="G08_log"></div>
     </div>
   <button class="collapsible">Filter by Racial Demographics</button>
-    <div class="content">
+    <div class="collapsibleContent">
       <div class="chart" id="BL_perc"></div>
       <div class="chart" id="HI_perc"></div>
       <div class="chart" id="WH_perc"></div>
     </div>
   <button class="collapsible">Filter by Racial/Ethnic Gap</button>
-    <div class="content">
+    <div class="collapsibleContent">
       <div class="chart" id="WB_diff"></div>
       <div class="chart" id="WH_diff"></div>
       <div class="chart" id="WB_access"></div>
@@ -206,10 +196,8 @@
 
   <!--Dot plot-->
     <br>
-  <div id="table" style="padding-top: 0px;">
-    <div class="top100"></div>
-  </div>
-  <script src="js/top25.js"></script>
+  <div id="dotPlot"><div class="top100"></div></div>
+  <script src="js/top100.js"></script>
   <script src='js/filter.js'></script>
   <script src="js/collapsible.js"></script>
 
@@ -250,6 +238,9 @@
 
 
 <br><br><br><br><br>
+
+
+<!--copied and pasted AIR footer-->
 <footer class="footer" role="contentinfo">
       <div class="footer-top">
       <div class="footer-top-border"></div>
@@ -262,13 +253,13 @@
   Systems Change</a></p>
 <h2><a href="https://www.air.org/news-events">News &amp; Events</a></h2>
 <h2><a href="https://www.air.org/page/careers">Careers at AIR</a></h2>
-</div></div>  </div><div id="block-boxes-air-footer-other-links" class="block block-boxes-simple  block-boxes-air-footer-other-links block--boxes block--boxes-air-footer-other-links">      <div id="boxes-box-air_footer_other_links" class="boxes-box"><div class="boxes-box-content"><br></div></div>  </div><div id="block-search-form--2" class="block  block-search-form--2 block--search block--search-form">      <form action="/news/press-release/air-and-hispanic-education-coalition-co-sponsor-capitol-hill-briefing-key-issues" method="post" id="search-block-form--2" accept-charset="UTF-8"><div class="container-inline">
+</div></div>  </div><div id="block-boxes-air-footer-other-links" class="block block-boxes-simple  block-boxes-air-footer-other-links block--boxes block--boxes-air-footer-other-links">      <div id="boxes-box-air_footer_other_links" class="boxes-box"><div class="boxes-box-content"><br></div></div>  </div><div id="block-search-form--2" class="block  block-search-form--2 block--search block--search-form">      <form action="/" method="post" id="search-block-form--2" accept-charset="UTF-8"><div class="container-inline">
       <h2 class="element-invisible">Search form</h2>
     <div class="form-item form-item--searchfield form-item--search-block-form">
   <label class="form-item__label element-invisible" for="edit-search-block-form--4">Search </label>
  <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--4" name="search_block_form" value="" size="15" maxlength="128" class="form-text form-search" placeholder="Search AIR">
 </div>
-<div class="form-actions" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Search" class="button button--submit"></div><input type="hidden" name="form_build_id" value="form-5sfej9Im_u1Ts806Ben8dZHlnGtVr4RJTEdhKQviFLI">
+<div class="form-actions" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Search" class="button button--submit"></div><input type="hidden" name="form_build_id" value="form-Swf4WfDpUGFZQqm0WxSPhnc3y2LKjLqB0Z3f1IQKRyk">
 <input type="hidden" name="form_id" value="search_block_form">
 </div>
 </form>  </div><div id="block-boxes-air-footer-newsletter-form" class="block block-boxes-simple  block-boxes-air-footer-newsletter-form block--boxes block--boxes-air-footer-newsletter-form">      <div id="boxes-box-air_footer_newsletter_form" class="boxes-box"><div class="boxes-box-content"><form action="/page/newsletter-signup" method="_GET"><label>Stay informed about AIR's work</label><br><input class="input" name="signup[email]" placeholder="enter your email address" type="text"><input class="submit" value="Submit" type="submit">&nbsp;</form></div></div>  </div><div id="block-boxes-air-footer-social-links" class="block block-boxes-simple  block-boxes-air-footer-social-links block--boxes block--boxes-air-footer-social-links">      <div id="boxes-box-air_footer_social_links" class="boxes-box"><div class="boxes-box-content"><h2 class="title">Connect</h2>
@@ -285,12 +276,14 @@
 <div class="footer-phone-fax">Call: (202) 403-5000<br>
   Fax: (855) 459-6213</div>
 </div></div>  </div><div id="block-boxes-air-footer-copyright" class="block block-boxes-simple  block-boxes-air-footer-copyright block--boxes block--boxes-air-footer-copyright">      <div id="boxes-box-air_footer_copyright" class="boxes-box"><div class="boxes-box-content"><p>© 2019 American Institutes for Research. All rights reserved.</p>
-</div></div>  </div>
-
-
-
-</div>    </div>
+</div></div>  </div><div id="block-menu-block-4" class="block  block-menu-block-4 block--menu-block block--menu-block-4">      <ul class="nav nav--menu-footer-menu nav--menu-block-4 has-parent-mlid-0 is-level-1 has-depth-1">
+  <li class="nav__item nav__item--first menu-mlid-1676"><a href="https://www.air.org/page/privacy-policy" class="nav__link">Privacy Policy</a></li>
+<li class="nav__item nav__item--last menu-mlid-1677"><a href="https://www.air.org/sitemap" title="Display a site map with RSS feeds." class="nav__link">Sitemap</a></li>
+</ul>
+  </div>  </div>    </div>
   </footer>
+<!--end of copied and pasted AIR footer-->
+
 
 </body>
 </html>

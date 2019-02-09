@@ -210,10 +210,12 @@ map.addControl(new MapboxGeocoder({
 }));
 
 //move the geocoder outside the map div
-//$("#map").before($(".mapboxgl-ctrl-geocoder"));
-//$("#extMapCntrls").append($(".mapboxgl-ctrl-geocoder"));
-$("#geocoderDiv").append($(".mapboxgl-ctrl-geocoder"));
+var geocoderContent = document.getElementsByClassName("mapboxgl-ctrl-geocoder")[0];
+document.getElementById("geocoderDiv").append(geocoderContent);
 
+//the above code could be move elegant by using jQuery (commented line below)
+//but I wanted to reduce the number of JS libraries/remove dependencies
+//$("#geocoderDiv").append($(".mapboxgl-ctrl-geocoder"));
 
 //add zoom controls
 var nav = new mapboxgl.NavigationControl();
@@ -619,7 +621,6 @@ function changeDisplayVar(newVar) {
 
   //change the legend
   changeLegend(newS, false);
-  //$("#legendContent").html(newS.legend);
 
   //change the tooltip - changes what function tooltipHTML() uses
   displayVar = newVar;
@@ -776,21 +777,20 @@ map.on('load', function() {
   changeDisplayVar("WB");
 
   //change display if another variable has been selected
-  $(document).ready(function() {
-    $("select").on("change", function() {
-      changeDisplayVar($(this).val());
-    });
+  d3.select("select#displayVar").on("change", function() {
+    var newVar = d3.select(this).node().value;
+    changeDisplayVar(newVar);
   });
 
   //handle moving the mouse cursor over the map
   map.on('mousemove', function(e) { hoverPoint(e.lngLat, true); });
 
   //reset if mouse is moved over the document, but not map
-  $(document).on('mouseover', function(e) {
+  document.addEventListener("mouseover", function(){
     if (hoverByMouse) {
       hoverDistrict(null);
       hoverState(null);
       popup.remove();
     }
-  })
+  });
 });
