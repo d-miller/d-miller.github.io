@@ -142,13 +142,11 @@
         E.g., see how the header changes after scrolling down here: https://www2.ed.gov/datastory/stem/algebra/index.html
     -->
     <div id="framing">
-
       <h3>Why does it matter if a student doesn’t take eighth grade Algebra?</h3>
 
       <p>Although typically offered in ninth grade, students who enroll in eighth grade Algebra position themselves to take important classes like Calculus before the end of high school. Students who do not take Algebra early but want to take Calculus are forced to play “catch up” by doubling up on classes (if allowed) or taking summer school. Many consider higher-level math like Calculus to be an important precursor to a STEM career; taking Calculus has been strongly linked to increased interest in <a href="https://files.eric.ed.gov/fulltext/EJ1034751.pdf" target="blank_">STEM careers</a> and eventually obtaining a <a href="https://www.tandfonline.com/doi/full/10.1080/10824660701601266?needAccess=true" target="blank_">STEM degree</a>. For these reasons, eighth grade Algebra is often seen as a “gatekeeper” course to higher-level math courses. Some, such as activist and educator Bob Moses, even consider early access to algebra to be <a href="https://files.eric.ed.gov/fulltext/ED385437.pdf">a civil right</a> given its importance. With lower enrollment rates, African American and Hispanic students may be at a disadvantage when it comes to obtaining a STEM degree.</p>
 
       <p>Critically, students do not decide to take 8th grade algebra: schools typically place students into the course if they are deemed ready and if the school offers the course. Hence, student enrollment rates are largely determined at the school level. However, a few states have policies which govern the math courses students can take. For instance, <a href="https://www.revisor.mn.gov/statutes/cite/120B/pdf" target="blank_">Minnesota mandates</a> that students complete Algebra by the end of eighth grade, essentially enacting an “Algebra for all” model. California had been moving towards an Algebra for all approach since the late 90s, with their school board formalizing this policy in 2008 by requiring eighth grade Algebra. Within a few years of this decision, the requirement was overturned as the state moved to Common Core math, effectively shifting Algebra to ninth grade for nearly all students.</p>
-
     </div><!--end of #framing-->
 
     <!--Ideally navigation bar could link to this section-->
@@ -183,7 +181,6 @@
 
       <br>
       <p>Though these enrollment gaps are easy to find, identifying their source is harder. Below, we dive deeper into two possible sources of this gap: differential access to schools with eighth grade Algebra and differential placement in schools that offer the course.</p>
-
     </div><!--end of #enrollGap-->
 
     <!--Ideally navigation bar could link to this section-->
@@ -196,38 +193,39 @@
 
       <p>These national gaps in access, however, cannot explain the national gaps in enrollment. The graph below demonstrates this point by comparing enrollment gaps among all schools (left side) versus schools offering early algebra (right side). The enrollment gaps on the graph’s right side cannot be attributed to differential access because, by definition, 100% of students at those schools had access. As expected, overall enrollment rates are higher when restricting analyses to the subset of schools offering the course. However, the enrollment gaps are just as large.</p>
 
+      <!--This graph will undergo some editing. Leaving in as a placeholder for now-->
       <img src="img/access.png" width="750"/>
 
       <br><br>
       <p>Although access gaps cannot explain overall national enrollment gaps, a closer analysis reveals that differential access remains an important problem in several specific districts, underscoring the importance of basing decisions on local data. We illustrate this point by showing gaps for the top 100 largest districts based on total grade 8 enrollment size.</p>
 
-  <!--Crossfilter histograms for the dot plot-->
-  <aside id="totals"><span id="active">-</span> of <span id="total">-</span> districts selected.</aside>
-  <button class="collapsible">Filter by Number of Students</button>
-    <div class="collapsibleContent">
-      <div class="chart" id="BL08_log"></div>
-      <div class="chart" id="HI08_log"></div>
-      <div class="chart" id="WH08_log"></div>
-      <div class="chart" id="G08_log"></div>
-    </div>
-  <button class="collapsible">Filter by Racial Demographics</button>
-    <div class="collapsibleContent">
-      <div class="chart" id="BL_perc"></div>
-      <div class="chart" id="HI_perc"></div>
-      <div class="chart" id="WH_perc"></div>
-    </div>
-  <button class="collapsible">Filter by Racial/Ethnic Gap</button>
-    <div class="collapsibleContent">
-      <div class="chart" id="WB_diff"></div>
-      <div class="chart" id="WH_diff"></div>
-      <div class="chart" id="WB_access"></div>
-      <div class="chart" id="WH_access"></div>
-    </div>
+      <!--Crossfilter histograms for the dot plot-->
+      <aside id="totals"><span id="active">-</span> of <span id="total">-</span> districts selected.</aside>
+      <button class="collapsible">Filter by Number of Students</button>
+        <div class="collapsibleContent">
+          <div class="chart" id="BL08_log"></div>
+          <div class="chart" id="HI08_log"></div>
+          <div class="chart" id="WH08_log"></div>
+          <div class="chart" id="G08_log"></div>
+        </div>
+      <button class="collapsible">Filter by Racial Demographics</button>
+        <div class="collapsibleContent">
+          <div class="chart" id="BL_perc"></div>
+          <div class="chart" id="HI_perc"></div>
+          <div class="chart" id="WH_perc"></div>
+        </div>
+      <button class="collapsible">Filter by Racial/Ethnic Gap</button>
+        <div class="collapsibleContent">
+          <div class="chart" id="WB_diff"></div>
+          <div class="chart" id="WH_diff"></div>
+          <div class="chart" id="WB_access"></div>
+          <div class="chart" id="WH_access"></div>
+        </div>
 
-  <!--Dot plot-->
-    <br>
-  <div id="dotPlot"><div class="top100"></div></div>
-  <script src="js/histogramDotPlot.js"></script>
+      <!--Dot plot container and JS code-->
+      <br>
+      <div id="dotPlot"><div class="top100"></div></div>
+      <script src="js/histogramDotPlot.js"></script>
 
       <br>
       <p>Differential access cannot explain many of large enrollment gaps because, in many districts, near-100% of Black and White students have access to early algebra.</p>
@@ -235,7 +233,7 @@
       <p>However, the right side of the graphic also demonstrates clear exceptions to this general rule. For instance, Chicago Public Schools had the largest Black-White access gap among all of the top 100 largest school districts. In that district, 37% of Black eighth grade students attended schools offering early algebra, compared to 93% of White students, representing a 60-point gap in access. The graph shows other districts with large access gaps such as Atlanta City School District (41-point gap), DeKalb County School District (23-point gap), and San Antonio Independent School District (20-point gap).</p>
 
       <p>For the districts with large access gaps, one starting point could be to examine the factors such as teacher placement or resource allocation that lead to large gaps in opportunity. However, our analysis also shows that simply providing access to all students does not ensure equal rates of participation. Districts must also examine the within-school placement decisions that lead to large gaps in enrollment.</p>
-    </div>
+    </div><!--end of #accessGap-->
 
     <!--Ideally navigation bar could link to this section-->
     <div id="priorAch">
@@ -249,21 +247,19 @@
 
       <p>District 8th grade algebra enrollment gaps, however, are only moderately related to existing test score gaps. Differences in test score gaps across districts account for about 18% of the differences in white-black enrollment gaps and 11% of the differences in white-Hispanic enrollment gaps.</p>
 
-      <!--<iframe frameborder="0" width="750" height="400" seamless="seamless" scrolling="no" src="BW_scatter.html"></iframe>-->
+      <!--We're going to add an interactive scatterplot, but integrating this one proved challenging even with a simple iframe.
+      I'm going to look further into it.-->
+      <!--<iframe frameborder="0" width="750" height="400" seamless="seamless" scrolling="no" src="http://d-miller.github.io/alg8/integrated/BW_scatter.html"></iframe>-->
 
       <p>In other words, even when looking at districts where the test score gap is similar, the enrollment gap can differ widely across those districts. For example, the white-black test score gap is approximately 2.5 grade levels in Howard County (MD), Broward County (FL), and Dallas (TX), but the enrollment gap in those districts is, respectively, 3 points, 15 points, and 35 points.</p>
 
       <p>Because enrollment gaps do not directly mirror test score gaps in most districts, other factors besides differences in prior achievement likely contribute to enrollment gaps. For example, state and district math curriculum policies and the ways in which districts and schools determine “readiness” for advanced math courses can play an important role.</p>
 
       <p>More indepth research is needed to identify these factors, and understand how they promote or hinder equitable access to advanced mathematics. [Could insert something about our work in Elk Grove, Chicago, and Oakland. Could also insert something from Rickles, 2011.]</p>
-
     </div><!--end of #priorAch-->
   </div><!--end of #content-->
 
-
-<br><br><br><br><br>
-
-
+  <br><br><br><br><br>
   <!--copied and pasted AIR footer-->
   <footer class="footer" role="contentinfo">
     <div class="footer-top">
@@ -377,7 +373,6 @@
     </div>
   </footer>
   <!--end of copied and pasted AIR footer-->
-
-
+  
 </body>
 </html>
