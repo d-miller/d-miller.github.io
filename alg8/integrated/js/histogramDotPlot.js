@@ -441,7 +441,6 @@ var xName = 20;
 var rectW = 80;
 var rectH = 35;
 var yHeader = 20;
-var ySubHead = 40;
 
 var panelW = 200;
 
