@@ -274,8 +274,6 @@ map.touchZoomRotate.disableRotation();
 map.scrollZoom.disable();
 
 //add the horizontal legend
-
-
 changeLegend(WB_enroll, true);
 function changeLegend(props, draw) {
 
@@ -576,6 +574,14 @@ function describeOverall(props) {
 //wrapper function that calls describeGap() or describeOverall() depending on the display var
 var displayVar = "all_enroll"; 
 function tooltipHTML(props, schoolLevel) {
+
+  //if there's no G08 variable, that means data reporting standards were not met
+  if (typeof props.G08 === "undefined") {
+    var headerHTML = "<h3 style='text-align: center;'>" + props.name + "</h3>";
+    return headerHTML + "<p>Data reporting standards not met</p>";
+  }
+
+  //otherwise choose function based on display variable
   if (displayVar === "all_enroll") return describeOverall(props);
   if (displayVar === "all_access") return describeOverall(props);
   if (displayVar === "WB_enroll") return describeGap(props, schoolLevel);
