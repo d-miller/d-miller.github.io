@@ -61,11 +61,11 @@
 
 
 // (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
-d3.csv('data/table_all.csv', (error, data) => {
+d3.csv('data/table_all.csv', function(data) {
 
   // A little coercion, since the CSV is untyped.
   // todo: update how stats based on < 10 students is handled
-  data.forEach((d, i) => {
+  data.forEach(function(d) {
 
     //address the gaps first
     d.WB_diff = (+d.WH08_alg_p - +d.BL08_alg_p)*100;
@@ -112,7 +112,7 @@ function createCharts(data, chartSettings) {
   // Create the crossfilter for the relevant dimensions and groups.
   cf = crossfilter(data);
   const all = cf.groupAll();
-  G08_dim = cf.dimension(d => +d.G08);
+  G08_dim = cf.dimension(function(d) { return +d.G08; });
 
   //create array of charts
   const charts = [];
@@ -129,8 +129,14 @@ function createCharts(data, chartSettings) {
     var interval =  (s.max - s.min) * (binI / s.width);
 
     //get other information to create the chart
-    var dim = cf.dimension(d => Math.max(s.min + 0.5*interval, Math.min(s.max-0.5*interval, +d[s.varName])));
-    var group = dim.group(d => Math.floor(d/interval) * interval);
+    var dimFunc = function(d) {
+      return Math.max(s.min + 0.5*interval, Math.min(s.max-0.5*interval, +d[s.varName]));
+    }
+    var groupFunc = function(d) {
+      return Math.floor(d/interval) * interval;
+    }
+    var dim = cf.dimension(dimFunc);
+    var group = dim.group(groupFunc);
     var xScale = d3.scale.linear().domain([s.min, s.max]).rangeRound([0, s.width]);
 
     //create the new chart
