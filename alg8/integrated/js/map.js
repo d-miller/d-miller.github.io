@@ -9,6 +9,8 @@ var schlSourceLayer = "school-8i3ui3";
 
 //maximum fill opacity of states & districts
 var mapOpacity = .8;
+var minzoomDist = 3.6;
+var maxzoomState = 4.1;
 
 //legend display properties
 var legendW = 200;
@@ -756,7 +758,7 @@ map.on('load', function() {
         "line-color": "black",
         "line-width": ["case",
             ["boolean", ["feature-state", "hover"], false],
-            3,
+            1.5,
             0
         ]
     }
@@ -774,16 +776,16 @@ map.on('load', function() {
               ["linear"],
               ["zoom"],
               0, "hsl(0, 0%, 60%)",
-              6, "hsl(0, 0%, 60%)",
-              7, "#666"
+              minzoomDist, "hsl(0, 0%, 60%)",
+              maxzoomState, "#666"
           ],
           "fill-opacity": [
               "interpolate",
               ["linear"],
               ["zoom"],
               0, mapOpacity,
-              6, mapOpacity,
-              7, 0
+              minzoomDist, mapOpacity,
+              maxzoomState, 0
           ]
       }
   }, "admin-3-4-boundaries-bg");
@@ -793,7 +795,7 @@ map.on('load', function() {
     "metadata": {},
     "source": "districts",
     "source-layer": "districts",
-    "minzoom": 6,
+    "minzoom": minzoomDist,
     "filter": ["==", "$type", "Polygon"],
     "layout": {},
     "paint": {
@@ -802,11 +804,18 @@ map.on('load', function() {
         "interpolate",
           ["linear"],
           ["zoom"],
-            0, 0.5,
-            8, 0.5,
-            11, 4
+            0, 0,
+            minzoomDist, 0,
+            11, 3
         ],
-      "line-opacity": 0.6
+      "line-opacity": [
+        "interpolate",
+          ["linear"],
+          ["zoom"],
+            0, 0.3,
+            minzoomDist, 0.3,
+            11, 0.6
+        ]
     }      
   });
   map.addLayer({
@@ -814,14 +823,14 @@ map.on('load', function() {
     "type": "line",
     "source": "districts",
     "source-layer": "districts",
-    "minzoom": 6,
+    "minzoom": minzoomDist,
     "filter": ["==", "$type", "Polygon"],
     "layout": {},
     "paint": {
         "line-color": "black",
         "line-width": ["case",
             ["boolean", ["feature-state", "hover"], false],
-            3,
+            1.5,
             0
         ]
     }
@@ -832,7 +841,7 @@ map.on('load', function() {
       "type": "fill",
       "source": "districts",
       "source-layer": "districts",
-      "minzoom": 6,
+      "minzoom": minzoomDist,
       "layout": {},
       "paint": {
           "fill-color": defaultProps.fill,
@@ -841,8 +850,8 @@ map.on('load', function() {
               ["linear"],
               ["zoom"],
               0, 0,
-              6, 0,
-              7, mapOpacity,
+              minzoomDist, 0,
+              maxzoomState, mapOpacity,
               10, mapOpacity,
               12, 0.5
           ],
