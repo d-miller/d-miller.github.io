@@ -156,51 +156,29 @@
       <p>Across the nation, White students are more likely to enroll in 8th grade algebra than their Black and Hispanic classmates. In the 2015-16 school year, 17% of Black and 18% of Hispanic eighth grade students took the course, compared to 29% of White students, corresponding to a 12-percentage point enrollment gap for Black versus White students and 11-point gap for Hispanic versus White students.</p>
 
       <p>However, these gaps vary considerably across the nation. The map below allows users to explore geographic variation at state and district levels. The White-Black gap exceeds 15 percentage points in 10 states (and Washington, D.C.), with Pennsylvania showing the highest state-level gap. Only one state, Idaho, had a greater percentage of Black 8th graders enrolled in algebra than White 8th graders.</p>
- 
-
-      <!--I changed the interactive controls but keeping this in the comments,
-      if I want to later use it
-      <fieldset id="mapDisplayVar">
-        <label>Select display:</label>
-        <select id='displayVar' name='displayVar'>
-          <option value='WB_enroll'>White – Black enrollment gap</option>
-          <option value='WB_access'>White – Black access gap</option>
-          <option value='WH_enroll'>White – Hisp. enrollment gap</option>
-          <option value='WH_access'>White – Hisp. access gap</option>
-          <option value='all_enroll'>Overall enrollment rate</option>
-        </select>
-      </fieldset>-->
 
       <h2 id="mapTitle">White – Black Gap in 8th Grade Algebra Enrollment</h2>
 
       <!--Interactive map controls-->
       <div id="extMapCntrls">
-        <div id="extMapLegend">  
-
-
- <div class="map-buttons-container">
-      <div class="map-button-wrapper compare">
-        <h5>Comparison</h5>
-        <div>
-          <div class="m-button map-button active" value="WB">White – Black</div>
-          <div class="m-button map-button" value="WH">White – Hisp.</div>
-          <div class="m-button map-button" value="all">Overall rate</div>
-        </div>
-      </div>
-
-      <div class="map-button-wrapper measure">
-        <h5>Measure</h5>
-        <div>
-          <div class="m-button map-button active" value="enroll">Enrollment</div>
-          <div class="m-button map-button" value="access">Access</div>
-        </div>
-      </div>
-    </div>
-
-
+        <div class="map-buttons-container">
+          <div class="map-button-wrapper compare">
+            <h5>Comparison</h5>
+            <div>
+              <div class="m-button map-button active" value="WB">White – Black</div>
+              <div class="m-button map-button" value="WH">White – Hisp.</div>
+              <div class="m-button map-button" value="all">Overall rate</div>
+            </div>
+          </div>
+          <div class="map-button-wrapper measure">
+            <h5>Measure</h5>
+            <div>
+              <div class="m-button map-button active" value="enroll">Enrollment</div>
+              <div class="m-button map-button" value="access">Access</div>
+            </div>
+          </div>
         </div>
         <div id="geocoderDiv"></div>
-        <div id="clear"></div>
       </div><!--end of #extMapCntrls-->
 
       <!--Interactive map container and JS code-->
