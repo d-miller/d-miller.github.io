@@ -278,8 +278,8 @@ aside {
 ****************/
 
 /* 4.1: General text 
-dominant-baseline is commented out because
-IE doesn't support it: https://github.com/openstreetmap/iD/issues/3020
+dominant-baseline is commented because IE doesn't support it: 
+https://github.com/openstreetmap/iD/issues/3020
 */
 .top100 text {
   text-anchor: middle;
