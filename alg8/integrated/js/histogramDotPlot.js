@@ -960,6 +960,10 @@ function updateRow(d) {
 // LOAD DATA AND DRAW GRAPHS //
 ///////////////////////////////
 
+//hack because IE doesn't support dominant-baseline CSS
+//https://github.com/openstreetmap/iD/issues/3020
+d3.selectAll(".top100 text").attr("dy", "0.6ex");
+
 //load data...
 var data;
 d3.csv("data/table_top100.csv", function(dataCSV) {
@@ -1011,6 +1015,10 @@ d3.csv("data/table_top100.csv", function(dataCSV) {
 
   	//for each row, draw it
   	rows.each(drawRow);
+
+    //hack because IE doesn't support dominant-baseline CSS
+    //https://github.com/openstreetmap/iD/issues/3020
+    d3.selectAll(".top100 text").attr("dy", "0.6ex");
 
 }); //ends the loading data callback
 
