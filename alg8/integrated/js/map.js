@@ -3,7 +3,7 @@ var mapStyle = "mapbox://styles/d-miller/cjry6bv1a2dvy1ftegyvp6753";
 //var stateSource = "mapbox://d-miller.9kxhea4q";
 //var distSource = "mapbox://d-miller.2r746qu6";
 var stateSource = "mapbox://d-miller.8sa9h84b";
-var distSource = "mapbox://d-miller.dxv0zvpl";
+var distSource = "mapbox://d-miller.0185gp4e";
 var schlSource = "mapbox://d-miller.5h19yk8k";
 var schlSourceLayer = "school-8i3ui3";
 
