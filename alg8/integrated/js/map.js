@@ -177,6 +177,9 @@ var displayProps = {all_enroll: all_enroll,
                     WH_enroll: WH_enroll, 
                     WH_access: WH_access};
 
+//sets the default map
+var displayVar = "WB_enroll"; 
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
 var map = new mapboxgl.Map({
   container: 'map',
@@ -372,27 +375,6 @@ function changeLegend(props, draw) {
   }
 }
 
-
-//updates the legend given an object with display properties
-/*function updateLegend(props) {
-  var svg = d3.select("#extMapLegend svg")
-  var g = svg.select("g");
-  var width = svg.attr("width");
-  const color = d3.scale.threshold()
-    .domain(props.cuts)
-    .range(props.colors);
-  
-  const x = d3.scale.linear()
-      .domain(props.legendEnds)
-      .rangeRound([0, width]);
-
-  //figure out the buckets of range values
-  //use "ends" for the first bucket's start and last bucket's end
-  var buckets = color.range().map(d => color.invertExtent(d))
-  buckets[0][0] = ends[0];
-  buckets[buckets.length-1][1] = ends[1];
-}*/
-
 //helper function that takes two proportions as input and 
 //outputs text describetion the difference between them
 function textGap(props) {
@@ -572,7 +554,6 @@ function describeOverall(props) {
 }
 
 //wrapper function that calls describeGap() or describeOverall() depending on the display var
-var displayVar = "all_enroll"; 
 function tooltipHTML(props, schoolLevel) {
 
   //if there's no G08 variable, that means data reporting standards were not met
@@ -712,6 +693,9 @@ function changeDisplayVar(newVar) {
 //when the map loads...
 map.on('load', function() {
 
+  //default map is set by initial defintion of displayVar
+  var defaultProps = displayProps[displayVar];
+
   //add the sources for states and districts
   map.addSource("states", {
       "type": "vector",
@@ -728,9 +712,6 @@ map.on('load', function() {
 
   // The feature-state dependent fill-opacity expression will render the hover effect
   // when a feature's hover state is set to true.
-  //var defaultProps = displayProps.all_enroll;
-  var defaultProps = displayProps.WB_enroll;
-
   map.addLayer({
       "id": "state-borders",
       "type": "line",
@@ -925,10 +906,6 @@ map.on('load', function() {
             },
             "paint": {"text-opacity": ["step", ["zoom"], 0, 12, 1]}
         });
-
-
-  //initialize White-Blank enrollment gap
-  changeDisplayVar("WB_enroll");
 
   //add event listeners to the map buttons
   d3.selectAll(".m-button.map-button").on("click", function() {
