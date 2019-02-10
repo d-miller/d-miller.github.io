@@ -7,6 +7,26 @@ var distSource = "mapbox://d-miller.dxv0zvpl";
 var schlSource = "mapbox://d-miller.5h19yk8k";
 var schlSourceLayer = "school-8i3ui3";
 
+//maximum fill opacity of states & districts
+var mapOpacity = .8;
+
+//legend display properties
+var legendW = 200;
+var legendH = 53;
+var legendPad = {left: 15, right: 15};
+var blackNotes = [
+  {x: -10, y: 18, text:"Black", textA: "start"}, 
+  {x: -10, y: 29, text:"higher", textA: "start"}, 
+  {x: legendW+10, y: 18, text:"White", textA: "end"}, 
+  {x: legendW+10, y: 29, text:"higher", textA: "end"}
+];
+var hispNotes = [
+  {x: -10, y: 18, text:"Hispanic", textA: "start"}, 
+  {x: -10, y: 29, text:"higher", textA: "start"}, 
+  {x: legendW+10, y: 18, text:"White", textA: "end"}, 
+  {x: legendW+10, y: 29, text:"higher", textA: "end"}
+];
+
 //display properties for overall rates
 //var allC = ['#dadaeb','#bcbddc','#9e9ac8','#756bb1','#54278f'];
 var allC = ['#cbc9e2','#9e9ac8','#756bb1','#54278f'];
@@ -62,7 +82,8 @@ var WB_enroll = {
   topTitle: "White – Black Gap in 8th Grade Algebra Enrollment",
   legendCuts: [-15, -5, 5, 15],
   legendEnds: [-27.5, 27.5],
-  legendTitle: "White – Black Enrollment Gap",
+  legendTitle: "Enrollment Gap",
+  legendNotes: blackNotes,
   legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
     fill: ["case", ["has", "WB_n"], 
       ["case", [ ">", ["get", "WB_n"], 10],
@@ -83,7 +104,8 @@ var WB_access = {
   topTitle: "White – Black Gap in Access to 8th Grade Algebra",
   legendCuts: [-15, -5, 5, 15],
   legendEnds: [-27.5, 27.5],
-  legendTitle: "White – Black Access Gap",
+  legendTitle: "Access Gap",
+  legendNotes: blackNotes,
   legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
   fill: ["case", ["has", "WB_n"], 
           ["case", [ ">", ["get", "WB_n"], 10],
@@ -104,7 +126,8 @@ var WH_enroll = {
   topTitle: "White – Hispanic Gap in 8th Grade Algebra Enrollment",
   legendCuts: [-15, -5, 5, 15],
   legendEnds: [-27.5, 27.5],
-  legendTitle: "White – Hispanic Enrollment Gap",
+  legendTitle: "Enrollment Gap",  
+  legendNotes: hispNotes,
   legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
   fill: ["case", ["has", "WH_n"], 
           ["case", [ ">", ["get", "WH_n"], 10],
@@ -125,7 +148,8 @@ var WH_access = {
   topTitle: "White – Hispanic Gap in Access to 8th Grade Algebra",
   legendCuts: [-15, -5, 5, 15],
   legendEnds: [-27.5, 27.5],
-  legendTitle: "White – Hispanic Access Gap",
+  legendTitle: "Access Gap",
+  legendNotes: hispNotes,
   legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
   fill: ["case", ["has", "WH_n"], 
           ["case", [ ">", ["get", "WH_n"], 10],
@@ -246,24 +270,27 @@ map.touchZoomRotate.disableRotation();
 map.scrollZoom.disable();
 
 //add the horizontal legend
-var legendW = 200;
-var legendH = 43;
-var legendPad = {left: 10, right: 15};
-/*d3.select("#extMapLegend fieldset")
-  .style("padding-left", legendPad.left + "px");*/
+
 
 changeLegend(WB_enroll, true);
 function changeLegend(props, draw) {
 
   if (draw) {
+
+    //add SVG container and background rectangle
     d3.select("#mapLegendSVG")
       .append("svg")
         .attr("width", legendW + legendPad.left + legendPad.right)
         .attr("height", legendH)
-      /*.append("rect")
-        .attr("width", legendW + legendPad.right)
+      .append("rect")
+        .attr("width", legendW + legendPad.left + legendPad.right)
         .attr("height", legendH)
-        .attr("fill", "white");*/
+        .attr("fill", "white")
+        .attr("rx", 4)
+        .attr("ry", 4)
+        .attr("fill-opacity", 0.8);
+
+    //add grouping element and text for the title
     d3.select("#mapLegendSVG svg")
       .append("g")
         .attr("class", "mapLegend")
@@ -272,8 +299,7 @@ function changeLegend(props, draw) {
         .attr("class", "caption");
   }  
 
-  var svg = d3.select("#mapLegendSVG svg")
-  var g = svg.select("g");
+  var g = d3.select("#mapLegendSVG g");
   var cuts = props.legendCuts;
   var ends = props.legendEnds; 
   var colors = props.legendColors;
@@ -291,7 +317,6 @@ function changeLegend(props, draw) {
   var buckets = color.range().map(d => color.invertExtent(d))
   buckets[0][0] = ends[0];
   buckets[buckets.length-1][1] = ends[1];
-
 
   //add tick values for the end if requested
   var ticks = cuts.slice()
@@ -313,26 +338,36 @@ function changeLegend(props, draw) {
       .remove();
 
   //add the color rectangle
-  g.selectAll("rect").remove();
-  g.selectAll("rect")
+  g.selectAll("rect.colorRect").remove();
+  g.selectAll("rect.colorRect")
    .data(buckets)
    .enter()
    .append("rect")
+    .attr("class", "colorRect")
     .attr("height", 8)
     .attr("x", d => x(d[0]))
     .attr("width", d => x(d[1]) - x(d[0]))
-    .attr("fill", d => color(d[0]));
+    .attr("fill", d => color(d[0]))
+    .attr("fill-opacity", mapOpacity);
 
-  //add legend values
+  //add legend title
   g.select("text.caption")
-      .attr("x", x.range()[0])
       .attr("y", -6)
-      .attr("fill", "#000")
-      .attr("text-anchor", "start")
       .attr("font-weight", "bold")
       .text(props.legendTitle);
 
-
+  //add text notes
+  g.selectAll("text.notes").remove();
+  if (props.legendNotes) {
+    g.selectAll("text.notes")
+    .data(props.legendNotes).enter()
+    .append("text")
+      .attr("class", "notes")
+      .attr("x", d => d.x)
+      .attr("y", d => d.y)
+      .attr("text-anchor", d => d.textA)
+      .text(d => d.text);
+  }
 }
 
 
@@ -746,8 +781,8 @@ map.on('load', function() {
               "interpolate",
               ["linear"],
               ["zoom"],
-              0, 0.8,
-              6, 0.8,
+              0, mapOpacity,
+              6, mapOpacity,
               7, 0
           ]
       }
@@ -807,8 +842,8 @@ map.on('load', function() {
               ["zoom"],
               0, 0,
               6, 0,
-              7, 0.8,
-              10, 0.8,
+              7, mapOpacity,
+              10, mapOpacity,
               12, 0.5
           ],
           "fill-outline-color": "hsla(0, 0%, 60%, 0)"
