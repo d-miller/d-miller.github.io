@@ -23,6 +23,11 @@
     });
   }
 
+  //Internet Explorer doesn't support Math.log10, so define it here if not already done so
+  Math.log10 = Math.log10 || function(x) {
+    return Math.log(x) * Math.LOG10E;
+  };  
+
   //for some reason, can't adjust the scale to anything different than d3.scale.linear(), so instead
   //create a hack by simply changing the input variables and tick format - more cumbersome, but
   //can't currently figure out how to change the scale, so this works for now
