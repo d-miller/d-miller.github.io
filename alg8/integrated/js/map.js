@@ -207,7 +207,7 @@ var geo_lat = [];
 var geo_lon = [];
 var geo_name = [];
 var geo_schl = [];
-d3.csv("https://raw.githubusercontent.com/d-miller/d-miller.github.io/master/alg8/data/geoLoc.csv", function(d) {
+d3.csv("data/geoLoc.csv", function(d) {
   d.forEach(function(d) {      //comment this line if using D3 version 5
     geo_lat.push(+d.lat);
     geo_lon.push(+d.lon);
@@ -319,7 +319,7 @@ function changeLegend(props, draw) {
 
   //figure out the buckets of range values
   //use "ends" for the first bucket's start and last bucket's end
-  var buckets = color.range().map(d => color.invertExtent(d))
+  var buckets = color.range().map(function(d) { return color.invertExtent(d); })
   buckets[0][0] = ends[0];
   buckets[buckets.length-1][1] = ends[1];
 
@@ -350,9 +350,9 @@ function changeLegend(props, draw) {
    .append("rect")
     .attr("class", "colorRect")
     .attr("height", 8)
-    .attr("x", d => x(d[0]))
-    .attr("width", d => x(d[1]) - x(d[0]))
-    .attr("fill", d => color(d[0]))
+    .attr("x", function(d) { return x(d[0]); })
+    .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+    .attr("fill", function(d) { return color(d[0]); })
     .attr("fill-opacity", mapOpacity);
 
   //add legend title
@@ -368,10 +368,10 @@ function changeLegend(props, draw) {
     .data(props.legendNotes).enter()
     .append("text")
       .attr("class", "notes")
-      .attr("x", d => d.x)
-      .attr("y", d => d.y)
-      .attr("text-anchor", d => d.textA)
-      .text(d => d.text);
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y; })
+      .attr("text-anchor", function(d) { return d.textA; })
+      .text(function(d) { return d.text; });
   }
 }
 
