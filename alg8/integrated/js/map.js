@@ -8,10 +8,12 @@ var schlSource = "mapbox://d-miller.5h19yk8k";
 var schlSourceLayer = "school-8i3ui3";
 
 //display properties for overall rates
-var allC = ['#dadaeb','#bcbddc','#9e9ac8','#756bb1','#54278f'];
+//var allC = ['#dadaeb','#bcbddc','#9e9ac8','#756bb1','#54278f'];
+var allC = ['#cbc9e2','#9e9ac8','#756bb1','#54278f'];
 var all_enroll = {
   topTitle: "8th Grade Algebra Enrollment",
-  legendCuts: [.2, .4, .6, .8],
+  //legendCuts: [.2, .4, .6, .8],
+  legendCuts: [.2, .4, .7],
   legendEnds: [0, 1],
   legendAddEnds: true,
   legendTickFormat: d3.format("%"),
@@ -23,8 +25,10 @@ var all_enroll = {
             0, allC[0], 
             0.2, allC[1], 
             0.4, allC[2], 
-            0.6, allC[3],
-            0.8, allC[4]],
+            0.7, allC[3]
+            //0.6, allC[3],
+            //0.8, allC[4]
+            ],
           "hsla(0, 57%, 36%, 0)"]
 };
 all_enroll.school_fill = all_enroll.fill;
@@ -32,7 +36,8 @@ all_enroll.school_fill = all_enroll.fill;
 //display properties for overall access
 var all_access = {
   topTitle: "Access to 8th Grade Algebra",
-  legendCuts: [.2, .4, .6, .8],
+  //legendCuts: [.2, .4, .6, .8],
+  legendCuts: [.2, .4, .7],
   legendEnds: [0, 1],
   legendAddEnds: true,
   legendTickFormat: d3.format("%"),
@@ -44,8 +49,10 @@ var all_access = {
             0, allC[0], 
             0.2, allC[1], 
             0.4, allC[2], 
-            0.6, allC[3],
-            0.8, allC[4]],
+            0.7, allC[3]
+            //0.6, allC[3],
+            //0.8, allC[4]
+            ],
           "hsla(0, 57%, 36%, 0)"]
 };
 all_access.school_fill = all_access.fill;
