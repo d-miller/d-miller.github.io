@@ -1,135 +1,142 @@
-
-
-
-//helper function for generating the legend key HTML
-function genKey(color, text) { 
-  return '<div><span class="legend-key" style="background-color: ' + color + ';"></span><span>' + text + '</span></div>'; 
-}
+//Mapbox IDs
+var mapStyle = "mapbox://styles/d-miller/cjry6bv1a2dvy1ftegyvp6753";
+//var stateSource = "mapbox://d-miller.9kxhea4q";
+//var distSource = "mapbox://d-miller.2r746qu6";
+var stateSource = "mapbox://d-miller.8sa9h84b";
+var distSource = "mapbox://d-miller.dxv0zvpl";
+var schlSource = "mapbox://d-miller.5h19yk8k";
+var schlSourceLayer = "school-8i3ui3";
 
 //display properties for overall rates
-var all_enroll = {legend: genKey("#dadaeb", "0-9%<") + 
-                       genKey("#bcbddc", "10-19%") + 
-                       genKey("#9e9ac8", "20-29%") + 
-                       genKey("#807dba", "30-39%") + 
-                       genKey("#6a51a3", "40-49%") + 
-                       genKey("#4a1486", "50+%"),
-
-          legendCuts: [.2, .4, .7],
-          legendEnds: [0, 1],
-          legendAddEnds: true,
-          legendTickFormat: d3.format("%"),
-          legendTitle: "Overall Enrollment Rate",
-          legendColors: ["#cbc9e2", "#9e9ac8", "#756bb1", "#54278f"],
-
-                fill: ["case", ["has", "G08_alg_p"],
-                        ["step", ["get", "G08_alg_p"],
-                          "hsla(0, 57%, 36%, 0)", 
-                          0, "#cbc9e2", 
-                          0.2, "#9e9ac8", 
-                          0.4, "#756bb1", 
-                          0.7, "#6a51a3"],
-                        "hsla(0, 57%, 36%, 0)"]
-              };
+var allC = ['#dadaeb','#bcbddc','#9e9ac8','#756bb1','#54278f'];
+var all_enroll = {
+  topTitle: "8th Grade Algebra Enrollment",
+  legendCuts: [.2, .4, .6, .8],
+  legendEnds: [0, 1],
+  legendAddEnds: true,
+  legendTickFormat: d3.format("%"),
+  legendTitle: "Overall Enrollment Rate",
+  legendColors: allC,
+  fill: ["case", ["has", "G08_alg_p"],
+          ["step", ["get", "G08_alg_p"],
+            "hsla(0, 57%, 36%, 0)", 
+            0, allC[0], 
+            0.2, allC[1], 
+            0.4, allC[2], 
+            0.6, allC[3],
+            0.8, allC[4]],
+          "hsla(0, 57%, 36%, 0)"]
+};
 all_enroll.school_fill = all_enroll.fill;
 
+//display properties for overall access
+var all_access = {
+  topTitle: "Access to 8th Grade Algebra",
+  legendCuts: [.2, .4, .6, .8],
+  legendEnds: [0, 1],
+  legendAddEnds: true,
+  legendTickFormat: d3.format("%"),
+  legendTitle: "Overall Access Rate",
+  legendColors: allC,
+  fill: ["case", ["has", "G08_access_p"],
+          ["step", ["get", "G08_access_p"],
+            "hsla(0, 57%, 36%, 0)", 
+            0, allC[0], 
+            0.2, allC[1], 
+            0.4, allC[2], 
+            0.6, allC[3],
+            0.8, allC[4]],
+          "hsla(0, 57%, 36%, 0)"]
+};
+all_access.school_fill = all_access.fill;
+
 //display properties for White-Black enrollment gap
-var WB_enroll = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
-                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
-                  genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
-                  genKey("#a6dba0", "Black higher (-5 to -15 pp)") + 
-                  genKey("#008837", "Black much higher (-15+ pp)"),
-          legendCuts: [-15, -5, 5, 15],
-          legendEnds: [-27.5, 27.5],
-          legendTitle: "White – Black Enrollment Gap",
-          legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
-          fill: ["case", ["has", "WB_n"], 
-                  ["case", [ ">", ["get", "WB_n"], 10],
-                    ["step", ["get", "WB_diff"],
-                      "hsla(0, 0%, 0%, 0)", 
-                      -1, "#008837", 
-                      -0.15, "#a6dba0",
-                      -0.05, "#bfbfbf",
-                      0.05, "#92c5de",
-                      0.15, "#0571b0"],
-                    "hsla(0, 0%, 0%, 0)"],
-                  "hsla(0, 0%, 0%, 0)"],
-          school_fill: "#3b3b3b"
-          };
+var WB_enroll = {
+  topTitle: "White – Black Gap in 8th Grade Algebra Enrollment",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "White – Black Enrollment Gap",
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+    fill: ["case", ["has", "WB_n"], 
+      ["case", [ ">", ["get", "WB_n"], 10],
+        ["step", ["get", "WB_diff"],
+          "hsla(0, 0%, 0%, 0)", 
+          -1, "#008837", 
+          -0.15, "#a6dba0",
+          -0.05, "#bfbfbf",
+          0.05, "#92c5de",
+          0.15, "#0571b0"],
+        "hsla(0, 0%, 0%, 0)"],
+      "hsla(0, 0%, 0%, 0)"],
+  school_fill: "#3b3b3b"
+};
 
 //display properties for White-Black access gap
-var WB_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
-                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
-                  genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
-                  genKey("#a6dba0", "Black higher (-5 to -15 pp)") + 
-                  genKey("#008837", "Black much higher (-15+ pp)"),
-          legendCuts: [-15, -5, 5, 15],
-          legendEnds: [-27.5, 27.5],
-          legendTitle: "White – Black Access Gap",
-          legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
-          fill: ["case", ["has", "WB_n"], 
-                  ["case", [ ">", ["get", "WB_n"], 10],
-                    ["step", ["get", "WB_access"],
-                      "hsla(0, 0%, 0%, 0)", 
-                      -1, "#008837", 
-                      -0.15, "#a6dba0",
-                      -0.05, "#bfbfbf",
-                      0.05, "#92c5de",
-                      0.15, "#0571b0"],
-                    "hsla(0, 0%, 0%, 0)"],
-                  "hsla(0, 0%, 0%, 0)"],
-          school_fill: "#3b3b3b"
-          };
+var WB_access = {
+  topTitle: "White – Black Gap in Access to 8th Grade Algebra",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "White – Black Access Gap",
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+  fill: ["case", ["has", "WB_n"], 
+          ["case", [ ">", ["get", "WB_n"], 10],
+            ["step", ["get", "WB_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"],
+  school_fill: "#3b3b3b"
+  };
 
 //display properties for White-Hisp. enrollment gap
-var WH_enroll = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
-                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
-                  genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
-                  genKey("#a6dba0", "Hisp. higher (-5 to -15 pp)") + 
-                  genKey("#008837", "Hisp. much higher (-15+ pp)"),
-          legendCuts: [-15, -5, 5, 15],
-          legendEnds: [-27.5, 27.5],
-          legendTitle: "White – Hispanic Enrollment Gap",
-          legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
-          fill: ["case", ["has", "WH_n"], 
-                  ["case", [ ">", ["get", "WH_n"], 10],
-                    ["step", ["get", "WH_diff"],
-                      "hsla(0, 0%, 0%, 0)", 
-                      -1, "#008837", 
-                      -0.15, "#a6dba0",
-                      -0.05, "#bfbfbf",
-                      0.05, "#92c5de",
-                      0.15, "#0571b0"],
-                    "hsla(0, 0%, 0%, 0)"],
-                  "hsla(0, 0%, 0%, 0)"],
-          school_fill: "#3b3b3b"
-          };
+var WH_enroll = {
+  topTitle: "White – Hispanic Gap in 8th Grade Algebra Enrollment",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "White – Hispanic Enrollment Gap",
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+  fill: ["case", ["has", "WH_n"], 
+          ["case", [ ">", ["get", "WH_n"], 10],
+            ["step", ["get", "WH_diff"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"],
+  school_fill: "#3b3b3b"
+  };
 
 //display properties for White-Hisp. access gap
-var WH_access = {legend: genKey("#0571b0", "White much higher (+15+ pp)") + 
-                  genKey("#92c5de", "White higher (+5 to +15 pp)") + 
-                  genKey("#bfbfbf", "About the same (-5 to +5 pp)") + 
-                  genKey("#a6dba0", "Hisp. higher (-5 to -15 pp)") + 
-                  genKey("#008837", "Hisp. much higher (-15+ pp)"),
-          legendCuts: [-15, -5, 5, 15],
-          legendEnds: [-27.5, 27.5],
-          legendTitle: "White – Hispanic Access Gap",
-          legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
-          fill: ["case", ["has", "WH_n"], 
-                  ["case", [ ">", ["get", "WH_n"], 10],
-                    ["step", ["get", "WH_access"],
-                      "hsla(0, 0%, 0%, 0)", 
-                      -1, "#008837", 
-                      -0.15, "#a6dba0",
-                      -0.05, "#bfbfbf",
-                      0.05, "#92c5de",
-                      0.15, "#0571b0"],
-                    "hsla(0, 0%, 0%, 0)"],
-                  "hsla(0, 0%, 0%, 0)"],
-          school_fill: "#3b3b3b"
-          };
+var WH_access = {
+  topTitle: "White – Hispanic Gap in Access to 8th Grade Algebra",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "White – Hispanic Access Gap",
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+  fill: ["case", ["has", "WH_n"], 
+          ["case", [ ">", ["get", "WH_n"], 10],
+            ["step", ["get", "WH_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"],
+  school_fill: "#3b3b3b"
+  };
 
 //combine display properties into one master object
 var displayProps = {all_enroll: all_enroll, 
+                    all_access: all_access, 
                     WB_enroll: WB_enroll, 
                     WB_access: WB_access,
                     WH_enroll: WH_enroll, 
@@ -138,7 +145,7 @@ var displayProps = {all_enroll: all_enroll,
 mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/d-miller/cjo9mgywm0i682rmwoflwdov8',
+  style: mapStyle,
   center: [-97.7, 38],
   zoom: 3.1,
   pitchWithRotate: false
@@ -500,21 +507,31 @@ function describeGap(props, schoolLevel) {
 
 //gives describetion of the overall rate
 var alg8text = " of 8th graders were enrolled in Algebra I in the 2015-16 school year"
+var alg8text_access = " of 8th graders had access to Algebra I in the 2015-16 school year"
+
 function describeOverall(props) {
 
   //header name
   var headerHTML = "<h3 style='text-align: center;'>" + props.name + "</h3>";
 
   //get rate
-  var rate = Math.round(100*props.G08_alg_p) + "%"
- 
-  return headerHTML + rate + alg8text;
+  if (displayVar === "all_enroll") {
+    var rate = Math.round(100*props.G08_alg_p) + "%";
+    return headerHTML + rate + alg8text;
+  }
+
+  //get rate
+  if (displayVar === "all_access") {
+    var rate = Math.round(100*props.G08_access_p) + "%";
+    return headerHTML + rate + alg8text_access;
+  }
 }
 
 //wrapper function that calls describeGap() or describeOverall() depending on the display var
 var displayVar = "all_enroll"; 
 function tooltipHTML(props, schoolLevel) {
   if (displayVar === "all_enroll") return describeOverall(props);
+  if (displayVar === "all_access") return describeOverall(props);
   if (displayVar === "WB_enroll") return describeGap(props, schoolLevel);
   if (displayVar === "WH_enroll") return describeGap(props, schoolLevel);
   if (displayVar === "WB_access") return describeGap(props, schoolLevel);
@@ -625,6 +642,9 @@ function changeDisplayVar(newVar) {
   //get the new display settings
   var newS = displayProps[ newVar ];
 
+  //change the map title
+  d3.select("#mapTitle").html(newS.topTitle);
+
   //redraw the colors
   map.setPaintProperty("state", "fill-color", newS.fill);
   map.setPaintProperty("district", "fill-color", newS.fill);
@@ -643,16 +663,22 @@ map.on('load', function() {
   //add the sources for states and districts
   map.addSource("states", {
       "type": "vector",
-      "url": "mapbox://d-miller.9kxhea4q"
+      "url": stateSource
   });
   map.addSource("districts", {
       "type": "vector",
-      "url": "mapbox://d-miller.2r746qu6"
+      "url": distSource
+  });
+  map.addSource("schools", {
+      "type": "vector",
+      "url": schlSource
   });
 
   // The feature-state dependent fill-opacity expression will render the hover effect
   // when a feature's hover state is set to true.
-  var defaultProps = displayProps.all_enroll;
+  //var defaultProps = displayProps.all_enroll;
+  var defaultProps = displayProps.WB_enroll;
+
   map.addLayer({
       "id": "state-borders",
       "type": "line",
@@ -782,6 +808,64 @@ map.on('load', function() {
       }
   }, "admin-3-4-boundaries-bg");
 
+  map.addLayer({
+    "id": "school",
+    "type": "circle",
+    "source": "schools",
+    "source-layer": schlSourceLayer,
+    "minzoom": 8,
+    "filter": ["==", "$type", "Point"],
+    "layout": {},
+      "paint": {
+        "circle-opacity": [
+          "interpolate",
+            ["linear"],
+            ["zoom"],
+            0, 0,
+            10, 0,
+            11, 1
+        ],
+        "circle-radius": [
+          "step",
+          ["get", "G08"],
+          3, 
+          25, 5, 
+          50, 6.5,
+          75, 8,
+          1574, 8
+        ],
+                "circle-stroke-color": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    "hsla(0, 4%, 32%, 0)",
+                    10,
+                    "hsla(0, 4%, 32%, 0)",
+                    11,
+                    "hsl(0, 4%, 32%)"
+                ],
+                "circle-stroke-width": 2,
+                "circle-color": defaultProps.fill
+            }
+        });
+
+  
+  map.addLayer({
+            "id": "schoolname",
+            "type": "symbol",
+            "source": "schools",
+            "source-layer": schlSourceLayer,
+            "minzoom": 8,
+            "filter": ["==", "$type", "Point"],
+            "layout": {
+                "text-field": ["to-string", ["get", "name"]],
+                "text-offset": [0, 2],
+                "text-size": ["step", ["zoom"], 0, 11, 11],
+                "text-allow-overlap": true
+            },
+            "paint": {"text-opacity": ["step", ["zoom"], 0, 12, 1]}
+        });
 
 
   //initialize White-Blank enrollment gap
@@ -801,9 +885,7 @@ map.on('load', function() {
       //update the display variable
       var comp = d3.select(".map-button-wrapper.compare .active").attr("value");
       var meas = d3.select(".map-button-wrapper.measure .active").attr("value");
-      var newVar = comp + "_" + meas;
-      if (newVar === "all_access") newVar = "all_enroll"; //haven't yet added this var
-      changeDisplayVar(newVar);
+      changeDisplayVar(comp + "_" + meas);
     })
 
 

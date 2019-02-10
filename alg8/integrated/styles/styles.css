@@ -20,6 +20,12 @@
 
 /* imported from map CSS */
 
+#mapTitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .m-button:last-child {
     border-radius: 0 3px 3px 0;
 }
@@ -68,11 +74,6 @@
 #extMapCntrls {
   position: relative;
 }
-#extMapCntrls fieldset {
-  position: relative;
-  top: 10px;
-  left: -8px;
-}
 #extMapCntrls .map-buttons-container {
   float: left;
 }
@@ -95,10 +96,6 @@
 
 #mapLegendSVG, #mapLegendSVG .axis text {
   font-size: 10px;  
-}
-
-fieldset#mapDisplayVar {
-  border: 0;
 }
 
 .mapboxgl-ctrl-geocoder {
