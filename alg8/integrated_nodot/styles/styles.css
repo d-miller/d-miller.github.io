@@ -1,0 +1,379 @@
+
+/* Outline:
+
+1. General layout
+2. Map
+  2.1. Title & controls container
+  2.2. Top left buttons
+  2.3. Top right geocoder
+  2.4. Main map container
+  2.5. Map popup content
+  2.6. Bottom right legend
+  2.7. Remove unwanted elements
+3. Filter histograms
+  3.1. Text at top
+  3.2. Collapsible containers
+  3.3. Text on top of charts
+  3.4. Main charts
+  3.5. Filtering brush
+4. Dot plot
+  4.1. General text
+  4.2. Top title, axis, legend
+  4.3. Individual rows
+  4.4. Highlighted row changes
+  4.5. Misc. body text not under .row group 
+*/
+
+/**********************
+** 1: GENERAL LAYOUT **
+***********************/
+
+#content {
+  max-width: 750px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#titleCustom {
+  padding-top: 30px;
+}
+
+.field-name-field-resource-authors {
+  position: relative;
+  top: -25px;
+}
+
+/*disable AIR's CSS transitions for
+selected interactive graphics*/
+#map *, .chart *, .top100 * {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
+}
+
+/* axis rules apply to both map and dot plot */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 11px;
+}
+
+/***********
+** 2: MAP **
+***********/
+
+/* 2.1: title & controls container */
+#mapTitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#extMapCntrls {
+  position: relative;
+  margin-bottom: 5px;
+  /*left: -100px;
+  width: 950px;*/
+}
+
+/* 2.2: Buttons on top left */
+.map-buttons-container {
+  max-width: 700px;
+}
+.map-button-wrapper {
+  display: inline-block;
+  margin-right: 20px;
+}
+.map-button-wrapper h5 {
+  font-size: .8em;
+  text-align: left;
+  margin: 0 0 5px 1px;
+}
+.m-button {
+  padding: 5px 11px;
+  text-align: center;
+  float: left;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+  font-size: .8em;
+}
+.m-button:first-child {
+  border-left: 1px solid #e2e2e2;
+  border-radius: 3px 0 0 3px;
+}
+.m-button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.m-button.active {
+  background-color: #bbb;
+  border: 1px solid rgba(0,0,0,.2);
+}
+.m-button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* 2.3: Geocoder on top right */
+#extMapCntrls #geocoderDiv {
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+}
+.mapboxgl-ctrl-geocoder {
+  min-width: 290px;
+  max-width: 350px;
+}
+.mapboxgl-ctrl-geocoder input[type='text'] {
+  height: 34px;
+}
+.mapboxgl-ctrl-geocoder .geocoder-icon-search {
+  top: 7px;
+}
+
+
+/* 2.4: Main map div container 
+Change this to change width/height
+By default, map will fill the div */
+#map {
+  /*width: 950px;
+  left: -100px;*/
+  /*width: 95%;
+  margin: 10px;*/
+  width: 100%;
+  height: 450px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
+}
+
+/* 2.5: Map popup content */
+.mapboxgl-popup-content {
+  width: 200px;
+  pointer-events: none;
+  border-radius: 10px;
+  padding: 5px 6px 10px 15px;
+}
+.mapboxgl-popup-content h3 {
+  margin: 10px;
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.mapboxgl-popup-content table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  border-collapse: collapse;
+}
+.mapboxgl-popup-content td, th {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
+.mapboxgl-popup-content th {
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
+}
+.mapboxgl-popup-content table {
+  margin-top: 10px;
+}
+
+/* 2.6: Legend on bottom right */
+#mapLegendSVG {
+  margin-right: 5px;
+}
+#mapLegendSVG, #mapLegendSVG .axis text {
+  font-size: 10px;  
+}
+
+/* 2.7: Remove unwanted elements */
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib,
+.mapboxgl-ctrl-logo {
+  display: none;
+}
+.mapboxgl-ctrl-compass {
+  display: none !important;
+}
+
+/*************************
+** 3: FILTER HISTOGRAMS **
+**************************/
+
+/* 3.1: Text at top */
+aside {
+  position: relative;
+  font-size: smaller;
+  padding: 5px;
+  width: 220px;
+}
+
+/* 3.2: Collapsible containers */ 
+.collapsibleContent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.collapsible.active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible.active:after {
+  content: "\2212";
+}
+
+/* 3.3: Text on top of charts */
+.chart .title {
+  font-size: 13px;
+  float: none;
+}
+.reset {
+  font-size: smaller;
+  float: right;
+  margin-right: 10px;
+}
+
+/* 3.4: Main charts */
+.chart {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.background {
+  fill: none;
+  pointer-events: all;
+}
+.background.bar {
+  fill: #ccc;
+}
+.foreground.bar {
+  fill: steelblue;
+}
+
+/* 3.5: Filtering brush */
+.brush rect.extent {
+  fill: steelblue;
+  fill-opacity: .125;
+}
+.brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+
+/****************
+** 4: DOT PLOT **
+****************/
+
+/* 4.1: General text 
+dominant-baseline is commented because IE doesn't support it: 
+https://github.com/openstreetmap/iD/issues/3020
+*/
+.top100 text {
+  text-anchor: middle;
+  /*dominant-baseline: central;*/
+}
+
+/* 4.2: Top title, axis, legend */
+.top100 .header text {
+  font-weight: bold;
+  font-size: 24px;
+}
+.top100 .header text.rerankText {
+  font-weight: normal;
+  font-size: 14px;
+}
+.top100 .headerTile, .top100 .legend{
+  cursor: pointer;
+}
+.top100 .headerTile rect,
+.top100 .legend rect {
+  stroke: #333;
+  stroke-width: .75;
+  opacity: 0;
+  fill: #eee;
+}
+.top100 .headerTile rect.active,
+.top100 .legend rect.active {
+  opacity: 1;
+}
+.top100 line.axisBorder {
+  stroke-width: 1;
+  stroke: #888;
+}
+.top100 .legend text {
+  font-size: 14px;
+  text-anchor: start;
+}
+.top100 .legend .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* 4.3: Individual rows */
+.top100 .row line {
+  stroke-width: 1px;
+  stroke: #888;
+}
+.top100 .row rect {
+  fill-opacity: 0;
+}
+.top100 .row text.highlightText {
+  text-anchor: middle;
+  font-size: 11px;
+  opacity: 0;
+}
+.top100 .row text.name {
+  text-anchor: end;
+  font-size: 12px;
+}
+.top100 .row text.name.state {
+  text-anchor: middle;
+}
+
+/* 4.4: Highlighted row changes */
+.top100 .row.highlighted text.highlightText {
+  opacity: 1;
+}
+.top100 .row.highlighted line {
+  stroke-width: 2px;
+}
+.top100 .row.highlighted rect {
+  fill-opacity: 0.1;
+}
+
+/* 4.5: Misc. body text not under .row group */
+.top100 text.rank {
+  font-size: 13px;
+}
+.top100 text.size {
+  font-size: 11px;
+  text-anchor: start;
+}
