@@ -261,7 +261,7 @@ map.addControl(new MapboxGeocoder({
 
 //move the geocoder outside the map div
 var geocoderContent = document.getElementsByClassName("mapboxgl-ctrl-geocoder")[0];
-//document.getElementById("geocoderDiv").append(geocoderContent);
+document.getElementById("geocoderDiv").append(geocoderContent);
 
 //the above code could be move elegant by using jQuery (commented line below)
 //but I wanted to reduce the number of JS libraries/remove dependencies
