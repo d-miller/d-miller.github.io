@@ -119,8 +119,16 @@ selected interactive graphics*/
   right: 0; 
 }
 .mapboxgl-ctrl-geocoder {
-  min-width: 200px;
+  min-width: 290px;
+  max-width: 350px;
 }
+.mapboxgl-ctrl-geocoder input[type='text'] {
+  height: 34px;
+}
+.mapboxgl-ctrl-geocoder .geocoder-icon-search {
+  top: 7px;
+}
+
 
 /* 2.4: Main map div container 
 Change this to change width/height

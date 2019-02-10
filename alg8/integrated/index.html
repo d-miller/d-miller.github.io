@@ -22,10 +22,7 @@
   <!--End of copied and pasted AIR CSS-->
 
 
-  <!--NEEDED LIBRARIES AND CSS FOR INTERACTIVE GRAPHICS-->
-  <!-- custom JS and CSS for visualizations -->
-  <link rel="stylesheet" href="styles/styles.css">
-
+  <!-- NEEDED LIBRARIES AND CSS FOR INTERACTIVE GRAPHICS -->
   <!-- 152 KB: D3 version 3, used primarly for dot plot and histograms
   Version 5 is the most current version but I adapted code that was 
   written for v3, and wpdating the code for v5 would be time consuming-->
@@ -42,6 +39,11 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
   <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
   <!--END OF LIBRARIES AND CSS FOR INTERACTIVE GRAPHICS-->
+
+  <!-- CUSTOM CSS FOR VISUALIZATIONS -->
+  <!-- This should be placed *after* loading the libraries, so that 
+  any CSS library rules can be overriden by these custom rules -->
+  <link rel="stylesheet" href="styles/styles.css">
 
 </head>
 <body>
