@@ -259,13 +259,21 @@ map.addControl(new MapboxGeocoder({
   placeholder: "Search for a school or district"
 }));
 
-//move the geocoder outside the map div
-var geocoderContent = document.getElementsByClassName("mapboxgl-ctrl-geocoder")[0];
-document.getElementById("geocoderDiv").appendChild(geocoderContent);
+//dynamically place the geocoder inside or outside the map depending on the window width
+function placeGeocoder() {
 
-//the above code could be move elegant by using jQuery (commented line below)
-//but I wanted to reduce the number of JS libraries/remove dependencies
-//$("#geocoderDiv").append($(".mapboxgl-ctrl-geocoder"));
+  var geocoder = d3.select(".mapboxgl-ctrl-geocoder")[0][0];
+  var insideMap = d3.select(".mapboxgl-ctrl-top-right")[0][0];
+  var outsideMap = d3.select("#geocoderDiv")[0][0];
+
+  if (window.innerWidth >= 725) outsideMap.appendChild(geocoder);
+  if (window.innerWidth < 725) insideMap.appendChild(geocoder);
+}
+
+
+//make initial placement and update with window resizing
+placeGeocoder();
+d3.select(window).on('resize', placeGeocoder);
 
 //add zoom controls
 var nav = new mapboxgl.NavigationControl();
