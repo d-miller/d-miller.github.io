@@ -309,6 +309,20 @@ https://github.com/openstreetmap/iD/issues/3020
   font-weight: normal;
   font-size: 14px;
 }
+.top100 .headerTile, .top100 .legend{
+  cursor: pointer;
+}
+.top100 .headerTile rect,
+.top100 .legend rect {
+  stroke: #333;
+  stroke-width: .75;
+  opacity: 0;
+  fill: #eee;
+}
+.top100 .headerTile rect.active,
+.top100 .legend rect.active {
+  opacity: 1;
+}
 .top100 line.axisBorder {
   stroke-width: 1;
   stroke: #888;
@@ -321,6 +335,7 @@ https://github.com/openstreetmap/iD/issues/3020
   font-size: 16px;
   font-weight: bold;
 }
+
 
 /* 4.3: Individual rows */
 .top100 .row line {

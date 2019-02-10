@@ -481,23 +481,27 @@ var g = svg.append("g").attr("transform", "translate(" + pad.left + ", " + pad.t
 //  HEADERS  //
 ///////////////
 
+//event handlers & attribute properties
+var updateEnroll = function() { updateRank("enroll"); };
+var updateAccess = function() { updateRank("access"); };
+//var tileAttr = 
+
 //create header (background) tiles
 //var tileW = 200;
 var tileW = panelW;
 var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",2)");
-var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, fill: "#eee", class: "enroll"}).on("click", function() { updateRank("enroll"); });
-headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, fill: "#eee", class: "access"}).on("click", function() { updateRank("access"); });
-headerTiles.selectAll("rect").style("cursor", "pointer").attr("stroke", "#333").attr("stroke-width", ".75").attr("opacity",0);
-activeTile.style("fill", "#eee").style("opacity", 1);
+var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, class: "enroll", value: "enroll"}).on("click", updateEnroll);
+headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, class: "access", value: "access"}).on("click", updateAccess);
+activeTile.classed("active", true);
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
-header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).on("click", function() { updateRank("enroll"); });
-header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).on("click", function() { updateRank("access"); });
+header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).on("click", updateEnroll);
+header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).on("click", updateAccess);
 
 //add text about ranking and re-ranking
-var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", function() { updateRank("enroll"); });
-var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", function() { updateRank("access"); });
+var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", updateEnroll);
+var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", updateAccess);
 
 //use pointer cursor to suggest clickability
 header.selectAll("text").style("cursor", "pointer");
@@ -533,70 +537,65 @@ g.append("text").attr("x", padGraph2 + panelW/2).attr("y", -30).text("Has Access
 //add a legend
 var xLegendGap = 100
 var legend = g.append("g").attr("class", "legend").attr("transform", "translate(70,-70)");
+var updateBL = function() { updateGap("BL"); };
+var updateHI = function() { updateGap("HI"); };
+
 legend.append("rect")
-	.attr({x: -15, y: -15, width: xLegendGap+70, height: 30, fill: "#eee", opacity:1})
+	.attr({x: -15, y: -15, width: xLegendGap+70, height: 30})
 	.attr("stroke", "#333")
 	.attr("stroke-width", ".75")
-	.attr("class", "BL")
-	.on("click", function() { updateGap("BL"); });
+  .attr("class", "BL")
+	.attr("value", "BL")
+  .classed("active", true)
+	.on("click", updateBL);
 legend.append("circle")
-	.attr("cx", 0)
-	.attr("cy", 0)
 	.attr("r", 5)
 	.style("fill", grpColors["BL"])
-	.on("click", function() { updateGap("BL"); });
+	.on("click", updateBL);
 legend.append("circle")
 	.attr("cx", xLegendGap)
-	.attr("cy", 0).attr("r", 5)
+	.attr("r", 5)
 	.style("fill", grpColors["WH"])
-	.on("click", function() { updateGap("BL"); });
+	.on("click", updateBL);
 legend.append("text")
 	.text("Black")
 	.attr("x", 8)
-	.on("click", function() { updateGap("BL"); });
+	.on("click", updateBL);
 legend.append("text")
 	.text("White")
 	.attr("x", xLegendGap+8)
-	.on("click", function() { updateGap("BL"); });
+	.on("click", updateBL);
 
 var yLegendGap = 30;
 legend.append("rect")
-	.attr({x: -15, y: -15+yLegendGap, width: xLegendGap+70, height: 30, fill: "#eee",opacity:0})
-	.attr("stroke", "#333")
-	.attr("stroke-width", ".75")
-	.attr("class", "HI")
-	.on("click", function() { updateGap("HI"); });
+	.attr({x: -15, y: -15+yLegendGap, width: xLegendGap+70, height: 30})
+	.attr("value", "HI")
+  .attr("class", "HI")
+	.on("click", updateHI);
 legend.append("circle")
-	.attr("cx", 0)
 	.attr("cy", yLegendGap)
 	.attr("r", 5)
 	.style("fill", grpColors["HI"])
-	.on("click", function() { updateGap("HI"); });
+	.on("click", updateHI);
 legend.append("circle")
 	.attr("cx", xLegendGap)
 	.attr("cy", yLegendGap)
 	.attr("r", 5)
 	.style("fill", grpColors["WH"])
-	.on("click", function() { updateGap("HI"); });
+	.on("click", updateHI);
 legend.append("text")
 	.text("Hispanic")
 	.attr("x", 8)
 	.attr("y", yLegendGap)
-	.on("click", function() { updateGap("HI"); });
+	.on("click", updateHI);
 legend.append("text")
 	.text("White")
 	.attr("x", xLegendGap+8)
 	.attr("y", yLegendGap)
-	.on("click", function() { updateGap("HI"); });
-
-//add a mouse cursor for legend elements
-legend.selectAll("text").style("cursor", "pointer");
-legend.selectAll("circle").style("cursor", "pointer");
-legend.selectAll("rect").style("cursor", "pointer");
+	.on("click", updateHI);
 
 //add legend title
 legend.append("text").text("Gap (click to change):").attr("x", -15).attr("y", -28).attr("class", "title");
-
 
 //add text indicating numbers of students (x position will be set later)
 var mSize = g.append("text").attr("y", vertSpace*(-.3)).attr("class", "size");
@@ -613,14 +612,14 @@ updateDotplot = function(newData) {
 	//reassign the global data
 	//make sure data it's sorted alphabetically (breaks ties)
 	data = newData
-  	data.sort(function(a, b){return 2*(a.name > b.name)-1;});
+  data.sort(function(a, b){return 2*(a.name > b.name)-1;});
 
-  	//resize the SVG container
+  //resize the SVG container
 	svg.attr("height", pad.top + vertSpace*(data.length + 1.5));
 
 	//rebind the data to the district rows
 	var rows = g.selectAll("g.row.district")
-				.data(data, function(d) { return +d.id; });
+				      .data(data, function(d) { return +d.id; });
 
 	//grab the data for the enter selection data
 	//this seems like a overly complicated way to do this, but I couldn't
@@ -699,22 +698,21 @@ function newRanks(data, varName) {
 var rankedVar = "WB_diff";
 function updateRank(varName, delay) {
 
-	//if no update, update by the active tile (could happen after changing the gap)
-	if (typeof varName === "undefined" || varName == null) varName = activeTile.attr("class");
+	//if no update, update by the active tile (could happen after changing the gap)aa
+	if (typeof varName === "undefined" || varName == null) varName = activeTile.attr("value");
 	if (typeof delay   === "undefined" || delay == null)   delay = 1500;
 
 	//update the active tile
-	activeTile.style("opacity", 0);
-	activeTile = d3.select(".headerTile ." + varName)
-				   .style("opacity", 1);
+	activeTile.classed("active", false);
+	activeTile = d3.select(".headerTile ." + varName).classed("active", true);
 
-  	//update the rank text at top
-  	if (accessRankText) accessRankText.text((varName === "access") ? "(Ranked)" : "(Click here to rerank)");
-  	if (enrollRankText) enrollRankText.text((varName === "enroll") ? "(Ranked)" : "(Click here to rerank)");
+  //update the rank text at top
+  if (accessRankText) accessRankText.text((varName === "access") ? "(Ranked)" : "(Click here to rerank)");
+  if (enrollRankText) enrollRankText.text((varName === "enroll") ? "(Ranked)" : "(Click here to rerank)");
 
-  	//figure out new ranking based on the active minority group
+  //figure out new ranking based on the active minority group
  	if (varName === "enroll") var end = "diff";
-  	if (varName === "access") var end = "access";
+  if (varName === "access") var end = "access";
  	if (activeM === "BL") rankedVar = "WB_" + end;
  	if (activeM === "HI") rankedVar = "WH_" + end;
  	newRanks(data, rankedVar);
@@ -732,8 +730,8 @@ function updateGap(mGrp) {
 
 	//update record keeping & legend
 	activeM = mGrp;
-	d3.selectAll(".legend rect").attr("opacity", 0);
-	d3.select(".legend rect." + mGrp).attr("opacity", 1);
+	d3.selectAll(".legend rect").classed("active", false);
+	d3.select(".legend rect." + mGrp).classed("active", true);
 
 	//helper function that updates one of the two graphs
 	function updateOneGraph(classes, padding, varName1, varName2) {
