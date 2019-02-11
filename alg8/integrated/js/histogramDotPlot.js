@@ -462,9 +462,19 @@ var padGraph1 = 302;
 var padGraph2 = 533;
 
 //create container elements
-var svg = d3.select(".top100").append("svg")
+/*var svg = d3.select(".top100").append("svg")
             .attr("width", width + pad.left + pad.right)
-            .attr("height", height + pad.top + pad.bottom);
+            .attr("height", height + pad.top + pad.bottom);*/
+
+var w = width + pad.left + pad.right;
+var h = height + pad.top + pad.bottom;
+var svg = d3.select('.top100').append("svg")
+    .attr("width", '100%')
+    .attr("height", '100%')
+    .attr('viewBox','0 0 '+w+' '+h)
+    //.attr('preserveAspectRatio','xMinYMin')
+    //.append("g")
+    //.attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
 
 //colors to for different groups 
 //(BL = Black, WH = White, HI = Hispanic)
@@ -615,7 +625,9 @@ updateDotplot = function(newData) {
   data.sort(function(a, b){return 2*(a.name > b.name)-1;});
 
   //resize the SVG container
-	svg.attr("height", pad.top + vertSpace*(data.length + 1.5));
+	//svg.attr("height", pad.top + vertSpace*(data.length + 1.5));
+  var h = pad.top + vertSpace*(data.length + 1.5);
+  svg.attr('viewBox','0 0 '+w+' '+h);
 
 	//rebind the data to the district rows
 	var rows = g.selectAll("g.row.district")
@@ -637,7 +649,7 @@ updateDotplot = function(newData) {
 	//move the exit() selection off the SVG
 	var delay = 500;
 	exitRows.transition().duration(delay)
-		.attr("transform", function(d) { return "translate(0," + (+svg.attr("height") + vertSpace) + ")"; });
+		.attr("transform", function(d) { return "translate(0," + (h + vertSpace) + ")"; });
 
 	//after the exit() selection has moved off the SVG...
 	setTimeout(function() {
