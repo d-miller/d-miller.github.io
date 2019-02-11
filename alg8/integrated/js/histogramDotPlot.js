@@ -15,8 +15,8 @@ function resizeDotplot() {
 
   //margin = one half of the extra space beyond parent width
   var avail = (ww-pW)/2 + pW;
-  if (avail < maxW)  dotP.style("width", avail + "px")
-  if (avail >= maxW) dotP.style("width", maxW + "px")
+  var dotW = (avail > maxW) ? maxW : avail;
+  dotP.style("width", dotW + "px");
 }
 resizeDotplot();
 
@@ -35,12 +35,6 @@ d3.select(window).on('resize', function() {
 //wrap all code inside a function to control namespace
 //and prevent accidental overwriting of other JS code
 (function() {
-
-/*  var oldFunc = d3.select(window).on('resize');
-d3.select(window).on('resize', function() {
-  oldFunc();
-  console.log("het")
-});*/
 
   //add event listeners to the collapsible content div holders for the charts
   var coll = document.getElementsByClassName("collapsible");
@@ -504,7 +498,7 @@ var h = height + pad.top + pad.bottom;
 var svg = d3.select('.top100').append("svg")
     .attr("width", '100%')
     .attr("height", '100%')
-    .attr('viewBox','0 0 '+w+' '+h)
+    .attr('viewBox','0 0 ' + w + ' ' + h)
     //.attr('preserveAspectRatio','xMinYMin')
     //.append("g")
     //.attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
@@ -644,6 +638,36 @@ legend.append("text").text("Gap (click to change):").attr("x", -15).attr("y", -2
 var mSize = g.append("text").attr("y", vertSpace*(-.3)).attr("class", "size");
 var wSize = g.append("text").attr("y", vertSpace*(0.3)).attr("class", "size");
 
+//hide the size text if the window width is too small (e.g., on mobile devices,
+//we need as much width as possible)
+var showTextWW = 500;
+function showSizeText() {
+
+  //need to resize the SVG, but need to know the current view box
+  var box = svg.attr('viewBox').split(" ");
+  
+  //hide text and SVG x viewport for small window widths
+  if (window.innerWidth < showTextWW) {
+    g.selectAll("text.size").style("opacity", 0);
+    box[2] = w-150;
+    svg.attr('viewBox', box.join(" "));
+  }
+
+  //default for large window widths
+  if (window.innerWidth >= showTextWW) {
+    g.selectAll("text.size").style("opacity", 1);
+    box[2] = w;
+    svg.attr('viewBox', box.join(" "));
+  }
+}
+showSizeText();
+
+//add another event handler function for resizing
+var oldFunc2 = d3.select(window).on('resize');
+d3.select(window).on('resize', function() {
+  oldFunc2();
+  showSizeText();;
+});
 
 ///////////////////////////////////
 //  FUNCTIONS FOR UPDATING DATA  //
@@ -660,7 +684,9 @@ updateDotplot = function(newData) {
   //resize the SVG container
 	//svg.attr("height", pad.top + vertSpace*(data.length + 1.5));
   var h = pad.top + vertSpace*(data.length + 1.5);
-  svg.attr('viewBox','0 0 '+w+' '+h);
+  var box = svg.attr('viewBox').split(" ");
+  box[3] = h;
+  svg.attr('viewBox',box.join(" "));
 
 	//rebind the data to the district rows
 	var rows = g.selectAll("g.row.district")
