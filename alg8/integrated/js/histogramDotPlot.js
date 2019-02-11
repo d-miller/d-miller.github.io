@@ -5,14 +5,18 @@
 //allow the dot plot to be wide than the parent container div,
 //but not larger than the window size
 var maxW = 910;
-//var cW = 750;
-var cW = +d3.select(d3.select("#dotPlot").node().parentNode).style("width").slice(0,-2)
 function resizeDotplot() {
+
+  //get the width of the parent div and window width
+  var dotP = d3.select("#dotPlot");
+  var parentDiv = dotP.node().parentNode;
+  var pW = +d3.select(parentDiv).style("width").slice(0,-2);
   var ww = window.innerWidth;
-  var extraW = (ww-cW)/2;
-  var avail = extraW*(extraW > 0) + cW;
-  if (avail < maxW)  d3.select("#dotPlot").style("width", avail + "px")
-  if (avail >= maxW) d3.select("#dotPlot").style("width", maxW + "px")
+
+  //margin = one half of the extra space beyond parent width
+  var avail = (ww-pW)/2 + pW;
+  if (avail < maxW)  dotP.style("width", avail + "px")
+  if (avail >= maxW) dotP.style("width", maxW + "px")
 }
 resizeDotplot();
 
@@ -31,6 +35,12 @@ d3.select(window).on('resize', function() {
 //wrap all code inside a function to control namespace
 //and prevent accidental overwriting of other JS code
 (function() {
+
+/*  var oldFunc = d3.select(window).on('resize');
+d3.select(window).on('resize', function() {
+  oldFunc();
+  console.log("het")
+});*/
 
   //add event listeners to the collapsible content div holders for the charts
   var coll = document.getElementsByClassName("collapsible");
