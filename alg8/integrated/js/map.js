@@ -189,6 +189,15 @@ var map = new mapboxgl.Map({
   pitchWithRotate: false
 });
 
+//fit map to bounds of the U.S.
+map.fitBounds([[
+  -128.36981493664626,
+  22.191963485309472
+], [
+  -67.03018506334698,
+  51.0167844023409
+]]);
+
 // disable map zoom when using scroll
 //map.scrollZoom.disable();
 
