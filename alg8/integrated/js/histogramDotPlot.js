@@ -1,9 +1,29 @@
+///////////////////////////////
+// RESPONSIVE DOT PLOT WIDTH //
+///////////////////////////////
 
+//allow the dot plot to be wide than the parent container div,
+//but not larger than the window size
+var maxW = 910;
+
+//910-750 = 160
+function resizeDotplot() {
+  if (window.innerWidth < maxW) d3.select("#dotPlot").style("width", window.innerWidth + "px")
+  if (window.innerWidth >= maxW) d3.select("#dotPlot").style("width", maxW + "px")
+}
+resizeDotplot();
+
+//add an event listener for resizing the dot plot based on 
+//resizig the window
+var oldFunc = d3.select(window).on('resize');
+d3.select(window).on('resize', function() {
+  oldFunc();
+  resizeDotplot();
+});
 
 /////////////////////////////////////////////////////////
 // USE D3 and CROSSFILTER FOR THE FILTERING HISTOGRAMS //
 /////////////////////////////////////////////////////////
-
 
 //wrap all code inside a function to control namespace
 //and prevent accidental overwriting of other JS code
