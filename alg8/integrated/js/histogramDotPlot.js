@@ -649,7 +649,7 @@ function showSizeText() {
   //hide text and SVG x viewport for small window widths
   if (window.innerWidth < showTextWW) {
     g.selectAll("text.size").style("opacity", 0);
-    box[2] = w-150;
+    box[2] = w-135;
     svg.attr('viewBox', box.join(" "));
   }
 

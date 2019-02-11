@@ -686,7 +686,6 @@ function hoverPoint(point, byMouse) {
 
 
 //helper function for changing the display variable
-
 function changeDisplayVar(newVar) {
 
   //get the new display settings
