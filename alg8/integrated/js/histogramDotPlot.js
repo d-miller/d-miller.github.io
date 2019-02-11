@@ -1,4 +1,7 @@
-
+//detect if using Internet Explorer
+//https://jsfiddle.net/alvaroAV/svvz7tkn/
+var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1;
+  
 /////////////////////////////////////////////////////////
 // USE D3 and CROSSFILTER FOR THE FILTERING HISTOGRAMS //
 /////////////////////////////////////////////////////////
@@ -640,11 +643,13 @@ showSizeText();
 //annoying - IE needs me to also explicitly set the height 
 //of the container height or else it will set it to 150px
 function setDotDivH() {
-  var dotP = d3.select("#dotPlot");
-  var box = svg.attr('viewBox').split(" ");
-  var dotW = dotP.style("width").slice(0,-2);
-  var dotH = dotW * box[3] / box[2];
-  dotP.style("height", dotH + "px");
+  if (IE) {
+    var dotP = d3.select("#dotPlot");
+    var box = svg.attr('viewBox').split(" ");
+    var dotW = dotP.style("width").slice(0,-2);
+    var dotH = dotW * box[3] / box[2];
+    dotP.style("height", dotH + "px");
+  }
 }
 
 //allow the dot plot to be wide than the parent container div,
