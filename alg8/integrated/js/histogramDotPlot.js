@@ -1,32 +1,3 @@
-///////////////////////////////
-// RESPONSIVE DOT PLOT WIDTH //
-///////////////////////////////
-
-//allow the dot plot to be wide than the parent container div,
-//but not larger than the window size
-var maxW = 910;
-function resizeDotplot() {
-
-  //get the width of the parent div and window width
-  var dotP = d3.select("#dotPlot");
-  var parentDiv = dotP.node().parentNode;
-  var pW = +d3.select(parentDiv).style("width").slice(0,-2);
-  var ww = window.innerWidth;
-
-  //margin = one half of the extra space beyond parent width
-  var avail = (ww-pW)/2 + pW;
-  var dotW = (avail > maxW) ? maxW : avail;
-  dotP.style("width", dotW + "px");
-}
-resizeDotplot();
-
-//add an event listener for resizing the dot plot based on 
-//resizig the window
-var oldFunc = d3.select(window).on('resize');
-d3.select(window).on('resize', function() {
-  oldFunc();
-  resizeDotplot();
-});
 
 /////////////////////////////////////////////////////////
 // USE D3 and CROSSFILTER FOR THE FILTERING HISTOGRAMS //
@@ -638,6 +609,10 @@ legend.append("text").text("Gap (click to change):").attr("x", -15).attr("y", -2
 var mSize = g.append("text").attr("y", vertSpace*(-.3)).attr("class", "size");
 var wSize = g.append("text").attr("y", vertSpace*(0.3)).attr("class", "size");
 
+///////////////////////////////
+// RESPONSIVE DOT PLOT WIDTH //
+///////////////////////////////
+
 //hide the size text if the window width is too small (e.g., on mobile devices,
 //we need as much width as possible)
 var showTextWW = 500;
@@ -662,11 +637,45 @@ function showSizeText() {
 }
 showSizeText();
 
-//add another event handler function for resizing
-var oldFunc2 = d3.select(window).on('resize');
+//annoying - IE needs me to also explicitly set the height 
+//of the container height or else it will set it to 150px
+function setDotDivH() {
+  var dotP = d3.select("#dotPlot");
+  var box = svg.attr('viewBox').split(" ");
+  var dotW = dotP.style("width").slice(0,-2);
+  var dotH = dotW * box[3] / box[2];
+  dotP.style("height", dotH + "px");
+}
+
+//allow the dot plot to be wide than the parent container div,
+//but not larger than the window size
+var maxW = 910;
+function resizeDotplot() {
+
+  //get the width of the parent div and window width
+  var dotP = d3.select("#dotPlot");
+  var parentDiv = dotP.node().parentNode;
+  var pW = +d3.select(parentDiv).style("width").slice(0,-2);
+  var ww = window.innerWidth;
+
+  //margin = one half of the extra space beyond parent width
+  var avail = (ww-pW)/2 + pW;
+  var dotW = (avail > maxW) ? maxW : avail;
+  dotP.style("width", dotW + "px");
+
+  //annoying - IE needs me to also explicitly set the height 
+  //of the container height or else it will set it to 150px
+  setDotDivH();
+}
+resizeDotplot();
+
+//add an event listener for resizing the dot plot based on 
+//resizig the window
+var oldFunc = d3.select(window).on('resize');
 d3.select(window).on('resize', function() {
-  oldFunc2();
+  oldFunc();
   showSizeText();;
+  resizeDotplot();
 });
 
 ///////////////////////////////////
@@ -687,6 +696,7 @@ updateDotplot = function(newData) {
   var box = svg.attr('viewBox').split(" ");
   box[3] = h;
   svg.attr('viewBox',box.join(" "));
+  setDotDivH();
 
 	//rebind the data to the district rows
 	var rows = g.selectAll("g.row.district")
