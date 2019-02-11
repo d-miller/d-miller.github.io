@@ -5,11 +5,14 @@
 //allow the dot plot to be wide than the parent container div,
 //but not larger than the window size
 var maxW = 910;
-
-//910-750 = 160
+//var cW = 750;
+var cW = +d3.select(d3.select("#dotPlot").node().parentNode).style("width").slice(0,-2)
 function resizeDotplot() {
-  if (window.innerWidth < maxW) d3.select("#dotPlot").style("width", window.innerWidth + "px")
-  if (window.innerWidth >= maxW) d3.select("#dotPlot").style("width", maxW + "px")
+  var ww = window.innerWidth;
+  var extraW = (ww-cW)/2;
+  var avail = extraW*(extraW > 0) + cW;
+  if (avail < maxW)  d3.select("#dotPlot").style("width", avail + "px")
+  if (avail >= maxW) d3.select("#dotPlot").style("width", maxW + "px")
 }
 resizeDotplot();
 
