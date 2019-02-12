@@ -40,6 +40,9 @@
   <!-- 77 KB: Geocoder Mapbox library: JavaScript and CSS -->
   <script src='//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
   <link rel='stylesheet' href='//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  <!-- jQuery-->
+  <script src='//code.jquery.com/jquery-3.3.1.min.js'></script>
   <!--END OF LIBRARIES AND CSS FOR INTERACTIVE GRAPHICS-->
 
   <!-- CUSTOM CSS FOR VISUALIZATIONS -->
@@ -150,28 +153,103 @@ display: none;
     background-size: contain;">
       </a>
   </span>
+
+
+
+    <div class="navlinks">
+        <a href="#framing" class="active">Framing the Problem</a>
+        <a href="#enrollGap">Enrollment Gaps</a>
+        <a href="#accessGap">Differential Access</a>
+        <a href="#priorAch">Differential Placement</a>
+    </div>
+
+
  </div>
 
- <script>
+<script>
+//jQuery for smooth transitions
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-window.onscroll = function() {
-  //var y = d3.select("#stickyHeader")[0][0].getBoundingClientRect().y
-  var h = d3.select("header")[0][0].getBoundingClientRect();
-  var y = h.height + h.top;
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  if (y < 50) {
-    d3.select("#stickyHeader").style("display", null)
-    d3.select("header").style("visibility", "hidden")
-  }
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(this.hash).offset().top - 70
+      }, 800);
+    } // End if
+  });
 
-  if (y >= 50) {
-    d3.select("#stickyHeader").style("display", "none")
-    d3.select("header").style("visibility", null)
-  }
+  var navlinks = d3.selectAll(".navlinks a");
+  var navIDs = [];
+  navlinks.each(function(d) { navIDs.push(d3.select(this).attr("href")); });
+  var navPos = [];
+  navIDs.forEach(function(d) { navPos.push($(d).position().top - 80); });
+
+  var section = 0;
+  window.onscroll = function() {
+
+    //get current HTML position
+    var curr = $(document).scrollTop();
+    var newSection = 0;
+    for (var i = 0; i < navPos.length; i++) if (curr > navPos[i]) newSection = i;
+      console.log(newSection);
+
+    if (section !== newSection) {
+      section = newSection;
+      $(".navlinks a.active").removeClass("active");
+      $(navlinks[0][section]).addClass("active"); 
+    }
+
+    var h = d3.select("header")[0][0].getBoundingClientRect();
+    var y = h.height + h.top;
+
+    if (y < 50) {
+      d3.select("#stickyHeader").style("display", null)
+      d3.select("header").style("visibility", "hidden")
+    }
+
+    if (y >= 50) {
+      d3.select("#stickyHeader").style("display", "none")
+      d3.select("header").style("visibility", null)
+    }
+  };
+});
+
+
+
+
+
+
+//for (var i = 0; i < i.length; i++) navIDs[]
+
+</script>
+
+ <style>
+.navlinks {
+  margin: 0 auto;
+  display: flex; 
+  justify-content: center;
+  font-size: 12px;
+  text-transform: uppercase;
 }
-
-
- </script>
+.navlinks a {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #002e60;
+  padding: 12px;
+  text-transform: uppercase;
+}
+.navlinks a.active {
+  background-color: #ccc;
+  /*color: #0071ec;*/
+}
+ </style>
 
   <!--CSS centers 750 pixel width div. Let's discuss ideal width & resizing behavior.-->
   <div id="content"> 
