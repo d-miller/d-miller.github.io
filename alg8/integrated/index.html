@@ -167,8 +167,27 @@ display: none;
  </div>
 
 <script>
+
+function checkHeader() {
+  var h = d3.select("header")[0][0].getBoundingClientRect();
+    var y = h.height + h.top;
+
+    if (y < 50) {
+      d3.select("#stickyHeader").style("display", null)
+      d3.select("header").style("visibility", "hidden")
+    }
+
+    if (y >= 50) {
+      d3.select("#stickyHeader").style("display", "none")
+      d3.select("header").style("visibility", null)
+    }
+}
+
 //jQuery for smooth transitions
 $(document).ready(function(){
+
+  checkHeader();
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -198,7 +217,6 @@ $(document).ready(function(){
     var curr = $(document).scrollTop();
     var newSection = 0;
     for (var i = 0; i < navPos.length; i++) if (curr > navPos[i]) newSection = i;
-      console.log(newSection);
 
     if (section !== newSection) {
       section = newSection;
@@ -206,18 +224,7 @@ $(document).ready(function(){
       $(navlinks[0][section]).addClass("active"); 
     }
 
-    var h = d3.select("header")[0][0].getBoundingClientRect();
-    var y = h.height + h.top;
-
-    if (y < 50) {
-      d3.select("#stickyHeader").style("display", null)
-      d3.select("header").style("visibility", "hidden")
-    }
-
-    if (y >= 50) {
-      d3.select("#stickyHeader").style("display", "none")
-      d3.select("header").style("visibility", null)
-    }
+    checkHeader();
   };
 });
 
@@ -250,6 +257,45 @@ $(document).ready(function(){
   background-color: #ccc;
   /*color: #0071ec;*/
 }
+@media only screen and (max-width: 930px) {
+  .navlinks {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .navlinks {
+    float: right;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .navlinks a {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .navlinks a {
+    font-size: 10px;
+    padding-top: 12px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navlinks a {
+    font-size: 9px;
+    padding: 12px 10px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .navlinks a {
+    padding: 12px 8px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .navlinks {
+    display: none;
+  }
+}
+
+
  </style>
 
   <!--CSS centers 750 pixel width div. Let's discuss ideal width & resizing behavior.-->
