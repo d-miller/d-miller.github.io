@@ -168,28 +168,49 @@ display: none;
 
 <script>
 
-function checkHeader() {
-  var h = d3.select("header")[0][0].getBoundingClientRect();
-    var y = h.height + h.top;
 
-    if (y < 50) {
-      d3.select("#stickyHeader").style("display", null)
-      d3.select("header").style("visibility", "hidden")
-    }
-
-    if (y >= 50) {
-      d3.select("#stickyHeader").style("display", "none")
-      d3.select("header").style("visibility", null)
-    }
-}
 
 //jQuery for smooth transitions
 $(document).ready(function(){
 
-  checkHeader();
+
+  var navlinks = d3.selectAll(".navlinks a");
+  var navIDs = [];
+  navlinks.each(function(d) { navIDs.push(d3.select(this).attr("href")); });
+
+
+  function checkHeader() {
+    var h = d3.select("header")[0][0].getBoundingClientRect();
+      var y = h.height + h.top;
+
+      if (y < 50) {
+        d3.select("#stickyHeader").style("display", null)
+        d3.select("header").style("visibility", "hidden")
+      }
+
+      if (y >= 50) {
+        d3.select("#stickyHeader").style("display", "none")
+        d3.select("header").style("visibility", null)
+      }
+  }
+
+
+  var section = 0;
+  function checkActiveNav() {
+    var curr = $(document).scrollTop();
+    var newSection = 0;
+    var navPos = [];
+    navIDs.forEach(function(d) { navPos.push($(d).position().top - 100); });
+    for (var i = 0; i < navPos.length; i++) if (curr > navPos[i]) newSection = i;
+    if (section !== newSection) {
+      section = newSection;
+      $(".navlinks a.active").removeClass("active");
+      $(navlinks[0][section]).addClass("active"); 
+    }
+  }
 
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $(".navlinks a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -204,27 +225,11 @@ $(document).ready(function(){
     } // End if
   });
 
-  var navlinks = d3.selectAll(".navlinks a");
-  var navIDs = [];
-  navlinks.each(function(d) { navIDs.push(d3.select(this).attr("href")); });
-  var navPos = [];
-  navIDs.forEach(function(d) { navPos.push($(d).position().top - 80); });
-
-  var section = 0;
+  checkHeader();
+  checkActiveNav();
   window.onscroll = function() {
-
-    //get current HTML position
-    var curr = $(document).scrollTop();
-    var newSection = 0;
-    for (var i = 0; i < navPos.length; i++) if (curr > navPos[i]) newSection = i;
-
-    if (section !== newSection) {
-      section = newSection;
-      $(".navlinks a.active").removeClass("active");
-      $(navlinks[0][section]).addClass("active"); 
-    }
-
     checkHeader();
+    checkActiveNav();
   };
 });
 
