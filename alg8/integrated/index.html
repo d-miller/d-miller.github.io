@@ -41,15 +41,18 @@
   <script src='//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
   <link rel='stylesheet' href='//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
 
-  <!-- jQuery-->
+  <!-- 85 KB: jQuery library used for navigation bar --> 
   <script src='//code.jquery.com/jquery-3.3.1.min.js'></script>
+
   <!--END OF LIBRARIES AND CSS FOR INTERACTIVE GRAPHICS-->
 
-  <!-- CUSTOM CSS FOR VISUALIZATIONS -->
+  <!-- CUSTOM STYLES AND CODE -->
   <!-- This should be placed *after* loading the libraries, so that 
   any CSS library rules can be overriden by these custom rules -->
   <link rel="stylesheet" href="styles/styles.css">
 
+  <!-- custom code for sticky navigation bar  -->
+  <script src='js/nav.js'></script>
 </head>
 <body>
 
@@ -117,191 +120,16 @@
   <!--end of copied and pasted AIR header-->
 
 
-
-<div id="stickyHeader" style="
-position: fixed;  
-
-width: 100%;
-top: 0;
-z-index: 10;
-height: 50px;
-background-color: #e7e8e9;
-background-image: url(//www.air.org/sites/all/themes/f1ux/images/nav-border.png); 
-background-position: bottom; 
-background-repeat: no-repeat;
-background-size: 100% 15%;
-
-display: none;
-
-  ">  
-  <span>
-      <a  href="/" rel="home" style="background-color: transparent;
-    color: transparent;
-    height: 32px;
-    overflow: hidden;
-    text-shadow: none;
-    width: 146px;
-    background-image: url(//www.air.org/sites/all/themes/f1ux/images/homepage-refresh/logo-sm.png);
-    background-repeat: no-repeat;
-    border: 0;
-    display: block;
-    left: .92857em;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: .5em;
-    background-size: contain;">
-      </a>
-  </span>
-
-
-
+  <!--custom navbar that appears after scrolled far enough-->
+  <div id="stickyHeader">  
+    <a  href="//www.air.org" id="navLogo"></a>  
     <div class="navlinks">
-        <a href="#framing" class="active">Framing the Problem</a>
-        <a href="#enrollGap">Enrollment Gaps</a>
-        <a href="#accessGap">Differential Access</a>
-        <a href="#priorAch">Differential Placement</a>
+      <a href="#framing" class="active">Framing the Problem</a>
+      <a href="#enrollGap">Enrollment Gaps</a>
+      <a href="#accessGap">Differential Access</a>
+      <a href="#priorAch">Differential Placement</a>
     </div>
-
-
- </div>
-
-<script>
-
-
-
-//jQuery for smooth transitions
-$(document).ready(function(){
-
-
-  var navlinks = d3.selectAll(".navlinks a");
-  var navIDs = [];
-  navlinks.each(function(d) { navIDs.push(d3.select(this).attr("href")); });
-
-
-  function checkHeader() {
-    var h = d3.select("header")[0][0].getBoundingClientRect();
-      var y = h.height + h.top;
-
-      if (y < 50) {
-        d3.select("#stickyHeader").style("display", null)
-        d3.select("header").style("visibility", "hidden")
-      }
-
-      if (y >= 50) {
-        d3.select("#stickyHeader").style("display", "none")
-        d3.select("header").style("visibility", null)
-      }
-  }
-
-
-  var section = 0;
-  function checkActiveNav() {
-    var curr = $(document).scrollTop();
-    var newSection = 0;
-    var navPos = [];
-    navIDs.forEach(function(d) { navPos.push($(d).position().top - 100); });
-    for (var i = 0; i < navPos.length; i++) if (curr > navPos[i]) newSection = i;
-    if (section !== newSection) {
-      section = newSection;
-      $(".navlinks a.active").removeClass("active");
-      $(navlinks[0][section]).addClass("active"); 
-    }
-  }
-
-  // Add smooth scrolling to all links
-  $(".navlinks a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(this.hash).offset().top - 65
-      }, 600);
-    } // End if
-  });
-
-  checkHeader();
-  checkActiveNav();
-  window.onscroll = function() {
-    checkHeader();
-    checkActiveNav();
-  };
-});
-
-
-
-
-
-
-//for (var i = 0; i < i.length; i++) navIDs[]
-
-</script>
-
- <style>
-.navlinks {
-  margin: 0 auto;
-  display: flex; 
-  justify-content: center;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.navlinks a {
-  color: #002e60;
-  padding: 12px;
-  text-transform: uppercase;
-}
-.navlinks a:hover {
-    text-decoration: none;
-}
-.navlinks a.active {
-  background-color: #ccc;
-  /*color: #0071ec;*/
-}
-@media only screen and (max-width: 930px) {
-  .navlinks {
-    margin-left: 100px;
-  }
-}
-@media only screen and (max-width: 830px) {
-  .navlinks {
-    float: right;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .navlinks a {
-    font-size: 11px;
-  }
-}
-@media only screen and (max-width: 740px) {
-  .navlinks a {
-    font-size: 10px;
-    padding-top: 12px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .navlinks a {
-    font-size: 9px;
-    padding: 12px 10px;
-  }
-}
-@media only screen and (max-width: 640px) {
-  .navlinks a {
-    padding: 12px 8px;
-  }
-}
-@media only screen and (max-width: 620px) {
-  .navlinks {
-    display: none;
-  }
-}
-
-
- </style>
+  </div>
 
   <!--CSS centers 750 pixel width div. Let's discuss ideal width & resizing behavior.-->
   <div id="content"> 
