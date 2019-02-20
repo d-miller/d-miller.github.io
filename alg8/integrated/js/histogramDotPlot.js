@@ -6,6 +6,15 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
 // USE D3 and CROSSFILTER FOR THE FILTERING HISTOGRAMS //
 /////////////////////////////////////////////////////////
 
+
+  //change display if another variable has been selected
+  $(document).ready(function() {
+    $("select").on("change", function() {
+      console.log($(this).val());
+    });
+  });
+
+
 //wrap all code inside a function to control namespace
 //and prevent accidental overwriting of other JS code
 (function() {
@@ -54,7 +63,7 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
     //{varName: "WH08_log", 100, min: 0, max: 10000, width: w, title: "Number of White 8th Graders"},
     {varName: "BL08_log", min: 0, max: 4.8, width: w, title: "Black Students", tickFormat: pwr10},
     {varName: "HI08_log", min: 0, max: 4.8, width: w, title: "Hispanic Students", tickFormat: pwr10},
-    {varName: "WH08_log", min: 0, max: 4.8, width: w, title: "White Students", tickFormat: pwr10},
+    //{varName: "WH08_log", min: 0, max: 4.8, width: w, title: "White Students", tickFormat: pwr10},
     {varName: "G08_log", min: 0, max: 4.8, width: w, title: "Total Number", tickFormat: pwr10},
     {varName: "BL_perc", min: 0, max: 100, width: w2, title: "Black Students (%)"},
     {varName: "HI_perc", min: 0, max: 100, width: w2, title: "Hispanic Students (%)"},
@@ -90,6 +99,9 @@ d3.csv('data/table_all.csv', function(data) {
     d.HI_perc = 100 * (+d.HI08 / +d.G08);
     d.WH_perc = 100 * (+d.WH08 / +d.G08);
 
+    //get the state name 
+    d.state = d.name.slice(-2);
+
     //then sample sizes
     d.BL08_log = logC(+d.BL08);
     d.HI08_log = logC(+d.HI08);
@@ -119,6 +131,7 @@ function createCharts(data, chartSettings) {
   cf = crossfilter(data);
   const all = cf.groupAll();
   G08_dim = cf.dimension(function(d) { return +d.G08; });
+  st_dim = cf.dimension(function(d) { return d.state; });
 
   //create array of charts
   const charts = [];
@@ -179,15 +192,26 @@ function createCharts(data, chartSettings) {
     if (rerender) renderAll();
   };
 
+  //filter by state
+  window.filterState = function(state) {
+    if (state === "all") st_dim.filterAll();
+    if (state !== "all") st_dim.filter(state);
+    renderAll();
+  }
+
   //preselect on at least 10 students in each group
   //accessing the max histogram value is a bit hack-ish right now but works
   filter("BL08_log", [logC(10), histograms[varIndex["BL08_log"]].max], false);
   filter("HI08_log", [logC(10), histograms[varIndex["HI08_log"]].max], false);
-  filter("WH08_log", [logC(10), histograms[varIndex["WH08_log"]].max], false);
+  //filter("WH08_log", [logC(10), histograms[varIndex["WH08_log"]].max], false);
+
+  //filter by at least 10 white students
+  cf.dimension(function(d) { return +d.WH08; }).filterRange([10, 1e6]);
 
   //preselect also based on top 100 largest districts
-  var top100min = d3.min(G08_dim.top(100), function(d) { return d.G08_log; });
-  filter("G08_log", [top100min, histograms[varIndex["WH08_log"]].max], false);
+  //var top100min = d3.min(G08_dim.top(100), function(d) { return d.G08_log; });
+  //filter("G08_log", [top100min, histograms[varIndex["WH08_log"]].max], false);
+  //G08_dim.filterRange([100,1000]);
 
   //render everything (and total)
   renderAll();

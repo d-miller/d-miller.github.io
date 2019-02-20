@@ -42,6 +42,16 @@
   position: relative;
   top: -25px;
 }
+fieldset {
+  border: 0;
+}
+fieldset label {
+  color: black;
+  text-transform: initial;
+  font-weight: bold;
+  font-size: 16px;
+}
+    
 
 /*disable AIR's CSS transitions for
 selected interactive graphics*/
@@ -293,8 +303,8 @@ By default, map will fill the div */
 aside {
   position: relative;
   font-size: smaller;
+  float: right;
   padding: 5px;
-  width: 220px;
 }
 
 /* 3.2: Collapsible containers */ 
