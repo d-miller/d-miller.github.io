@@ -35,7 +35,11 @@
 }
 
 #titleCustom {
-  padding-top: 15px;
+  padding-top: 20px;
+}
+* {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
 }
 
 .field-name-field-resource-authors {
@@ -44,6 +48,8 @@
 }
 fieldset {
   border: 0;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 fieldset label {
   color: black;
@@ -51,7 +57,12 @@ fieldset label {
   font-weight: bold;
   font-size: 16px;
 }
-    
+.graphTitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
 
 /*disable AIR's CSS transitions for
 selected interactive graphics*/
@@ -158,11 +169,6 @@ selected interactive graphics*/
 ***********/
 
 /* 2.1: title & controls container */
-#mapTitle {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
 #extMapCntrls {
   position: relative;
   margin-bottom: 5px;
@@ -302,8 +308,8 @@ By default, map will fill the div */
 /* 3.1: Text at top */
 aside {
   position: relative;
-  font-size: smaller;
   float: right;
+  font-size: smaller;
   padding: 5px;
 }
 
@@ -395,7 +401,7 @@ https://github.com/openstreetmap/iD/issues/3020
 /* 4.2: Top title, axis, legend */
 .top100 .header text {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
 }
 .top100 .header text.rerankText {
   font-weight: normal;
@@ -468,4 +474,47 @@ https://github.com/openstreetmap/iD/issues/3020
 .top100 text.size {
   font-size: 11px;
   text-anchor: start;
+}
+
+/*********************
+** 5: SCATTER PLOTS **
+**********************/
+
+/* 4.1: General text 
+dominant-baseline is commented because IE doesn't support it: 
+https://github.com/openstreetmap/iD/issues/3020
+*/
+#plotly-div {
+  height: 400px;
+}
+.hoverlayer * {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
+}
+/*.plot .lines * {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
+}*/
+/** {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
+}*/
+.plotly-notifier {
+  font-family: "lato",Arial,Helvetica,sans-serif;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.js-plotly-plot {
+  position: relative;
+}
+.hoverlayer path {
+  /*opacity: 0;*/
+}
+.hoverlayer .spikeline {
+  stroke: #888;
+  stroke-width: 1;
+}
+.hovertext text.nums {
+  /*opacity: 0;*/
 }
