@@ -245,7 +245,3 @@ $("#plotly-div")[0].on('plotly_unhover', function(data) {
 
 
 })();
-
-
-//Plotly.relayout('plotly-div', {dragmode: 'pan'})
-//Plotly.relayout('plotly-div', {dragmode: 'pan'})
