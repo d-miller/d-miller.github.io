@@ -37,10 +37,11 @@
 #titleCustom {
   padding-top: 20px;
 }
-* {
+/** {
   transition-duration: 0s;
   webkit-transition-duration: 0s;
-}
+}*/
+
 
 .field-name-field-resource-authors {
   position: relative;
@@ -487,7 +488,10 @@ https://github.com/openstreetmap/iD/issues/3020
 #plotly-div {
   height: 400px;
 }
-.hoverlayer * {
+#plotly-div * {
+  transition: opacity 0s, transform 0.5s, x 0.5s, y 0.5s;
+}
+#plotly-div .hoverlayer * {
   transition-duration: 0s;
   webkit-transition-duration: 0s;
 }

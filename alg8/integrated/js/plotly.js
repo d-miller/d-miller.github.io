@@ -185,6 +185,7 @@ Plotly.plot('plotly-div', {
 
 
 function makePan(e) {
+
   $(".modebar-btn[data-val=reset]").css("display", "inline-block");
   //$(".modebar-btn[data-title='Zoom out']").css("display", "inline-block");
 
@@ -192,11 +193,14 @@ function makePan(e) {
   Plotly.relayout('plotly-div', {dragmode: 'pan'});
   setTimeout(function() {
     $("#plotly-div").on('plotly_relayout', makeZoom);
+    $("#plotly-div *").css('transition', "0s");
   },200);
 }
 
 var xRange = layout.xaxis.range.slice();
 function makeZoom(event, d) {
+  //$("#plotly-div *").css('transition-duration', "0.2s");
+
   if ((d['xaxis.range[0]'] != xRange[0]) || (d['xaxis.range[1]'] != xRange[1])) return;
 
   $(".modebar-btn[data-val=reset]").css("display", "none");
@@ -207,6 +211,7 @@ function makeZoom(event, d) {
   Plotly.relayout('plotly-div', {dragmode: 'zoom'});
   setTimeout(function() {
     $("#plotly-div").on('plotly_relayout', makePan);
+    $("#plotly-div *").css('transition', "opacity 0s, transform 0.5s, x 0.5s, y 0.5s");
   }, 200);
 }
 
