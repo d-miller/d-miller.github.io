@@ -216,10 +216,17 @@ $(".modebar-btn[data-val=reset]").css("display", "none");
 
 
 //use my own formatting for the tooltip - definately hackish
-/*$("#plotly-div")[0].on('plotly_hover', function(data){
+$("#plotly-div")[0].on('plotly_hover', function(data) { 
+
+  var i = data.points[0].pointIndex;
+  var points = d3.selectAll("#plotly-div .points path");
+  if (data.points[0].curveNumber == 1) {
+    points.style("opacity", 0.2);
+    d3.select(points[0][i]).style("opacity", 1);
+  }
 
   //get default text properties
-  dflt = d3.select("#plotly-div .hovertext text.nums");
+  /*dflt = d3.select("#plotly-div .hovertext text.nums");
 
   //add new g with the custom HTML set by the text field
   d3.select("#plotly-div .hovertext")
@@ -227,8 +234,15 @@ $(".modebar-btn[data-val=reset]").css("display", "none");
       .attr("transform", "translate(" + dflt.attr("x") + "," + dflt.attr("y") + ")")
       .attr("text-anchor", dflt.attr("text-anchor"))
       .attr("style", dflt.attr("style"))
-    .html(data.points[0].text); //text field stores custom text
-});*/
+    .html(data.points[0].text); //text field stores custom text*/
+});
+
+$("#plotly-div")[0].on('plotly_unhover', function(data) { 
+  d3.selectAll("#plotly-div .points path")
+    .style("opacity", 0.5)
+});
+
+
 
 })();
 
