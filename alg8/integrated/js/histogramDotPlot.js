@@ -6,15 +6,6 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
 // USE D3 and CROSSFILTER FOR THE FILTERING HISTOGRAMS //
 /////////////////////////////////////////////////////////
 
-
-  //change display if another variable has been selected
-  $(document).ready(function() {
-    $("select").on("change", function() {
-      console.log($(this).val());
-    });
-  });
-
-
 //wrap all code inside a function to control namespace
 //and prevent accidental overwriting of other JS code
 (function() {
@@ -75,7 +66,7 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
 
 
 
-// (It's CSV, but GitHub Pages only gzip's JSON at the moment.)
+//load district-level data
 d3.csv('data/table_all.csv', function(data) {
 
   // A little coercion, since the CSV is untyped.
@@ -107,10 +98,13 @@ d3.csv('data/table_all.csv', function(data) {
     d.HI08_log = logC(+d.HI08);
     d.WH08_log = logC(+d.WH08);
     d.G08_log = logC(+d.G08);
-  });
 
-  //remove the nation
-  data.shift();
+    //get the enrollment rates for schools that offer it
+    d.WH08_alg_p_adj = (+d.WH08_alg_p / +d.WH08_access_p);
+    d.BL08_alg_p_adj = (+d.BL08_alg_p / +d.BL08_access_p);
+    d.HI08_alg_p_adj = (+d.HI08_alg_p / +d.HI08_access_p);
+    d.const1 = 1;
+  });
 
   //create the histograms
   createCharts(data, histograms, "#charts");
@@ -193,11 +187,17 @@ function createCharts(data, chartSettings) {
   };
 
   //filter by state
-  window.filterState = function(state) {
-    if (state === "all") st_dim.filterAll();
-    if (state !== "all") st_dim.filter(state);
+  d3.select("#stateDotPlot").on("change", function() {
+    var st = this.value;
+    if (st === "all") {
+      st_dim.filterAll();
+      d3.select("#dotTitle").html("Top 100 Largest Districts");
+    } else {
+      st_dim.filter(st);
+      d3.select("#dotTitle").html("Top 100 Largest Districts in " + this.selectedOptions[0].innerHTML);
+    }
     renderAll();
-  }
+  });
 
   //preselect on at least 10 students in each group
   //accessing the max histogram value is a bit hack-ish right now but works
@@ -211,7 +211,6 @@ function createCharts(data, chartSettings) {
   //preselect also based on top 100 largest districts
   //var top100min = d3.min(G08_dim.top(100), function(d) { return d.G08_log; });
   //filter("G08_log", [top100min, histograms[varIndex["WH08_log"]].max], false);
-  //G08_dim.filterRange([100,1000]);
 
   //render everything (and total)
   renderAll();
@@ -535,8 +534,8 @@ header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).on("c
 header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).on("click", updateAccess);
 
 //add text about ranking and re-ranking
-var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", updateEnroll);
-var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 22).attr("class", "rerankText").on("click", updateAccess);
+var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 20).attr("class", "rerankText").on("click", updateEnroll);
+var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 20).attr("class", "rerankText").on("click", updateAccess);
 
 //use pointer cursor to suggest clickability
 header.selectAll("text").style("cursor", "pointer");
@@ -571,7 +570,7 @@ g.append("text").attr("x", padGraph2 + panelW/2).attr("y", -30).text("Has Access
 
 //add a legend
 var xLegendGap = 100
-var legend = g.append("g").attr("class", "legend").attr("transform", "translate(70,-70)");
+var legend = g.append("g").attr("class", "legend").attr("transform", "translate(105,-80)");
 var updateBL = function() { updateGap("BL"); };
 var updateHI = function() { updateGap("HI"); };
 
@@ -630,7 +629,7 @@ legend.append("text")
 	.on("click", updateHI);
 
 //add legend title
-legend.append("text").text("Gap (click to change):").attr("x", -15).attr("y", -28).attr("class", "title");
+legend.append("text").text("Select gap:").attr("x", -108).attr("y", 15).attr("class", "title");
 
 //add text indicating numbers of students (x position will be set later)
 var mSize = g.append("text").attr("y", vertSpace*(-.3)).attr("class", "size");
@@ -730,6 +729,9 @@ updateDotplot = function(newData) {
 	//rebind the data to the district rows
 	var rows = g.selectAll("g.row.district")
 				      .data(data, function(d) { return +d.id; });
+
+  //make sure if there's matching elements, they aren't marked as exits
+  rows.classed("tempExit", false);
 
 	//grab the data for the enter selection data
 	//this seems like a overly complicated way to do this, but I couldn't
@@ -834,9 +836,15 @@ function updateRank(varName, delay) {
 }
 
 
+//event handler for using adjusted enrollment rates
+d3.select("#dotAdj").on("change", function() {
+  updateGap(activeM, this.checked);
+})
+
+
 //event handler for changing gap
 var activeM = "BL";
-function updateGap(mGrp) {
+function updateGap(mGrp, adj) {
 
 	//update record keeping & legend
 	activeM = mGrp;
@@ -848,7 +856,8 @@ function updateGap(mGrp) {
 
 		//update the position of the White dot text
 		g.selectAll(".highlightText.White." + classes).transition().duration(800)
-		 .attr("x", function(d) { return padding + textPlace(d[varName1], d[varName2])[0]});
+		 .attr("x", function(d) { return padding + textPlace(d[varName1], d[varName2])[0]})
+     .text(function(d) { return Math.round(d[varName1]*100) });
 
 		//update the position and value of the mGrp dot text
 		g.selectAll(".highlightText.mGrp." + classes).transition().duration(800)
@@ -860,14 +869,25 @@ function updateGap(mGrp) {
 		 .attr("cx", function(d) { return padding + xScale(d[varName2]); })
 		 .style("fill", grpColors[mGrp]);
 
-		//update the x2 position of the lines 
+    //update the position and color of White dot
+    g.selectAll("circle.White." + classes).transition().duration(800)
+     .attr("cx", function(d) { return padding + xScale(d[varName1]); });
+
+		//update the x1 and x2 positions of the lines 
 		g.selectAll(".row line." + classes).transition().duration(800)
+     .attr("x1", function(d) { return padding + xScale(d[varName1]); })
 		 .attr("x2", function(d) { return padding + xScale(d[varName2]); });
 	}
 
 	//update both graphs
+  if (adj) {
+    updateOneGraph("enroll", padGraph1, "WH08_alg_p" + "_adj", mGrp + "08_alg_p" + "_adj");
+    updateOneGraph("access", padGraph2, "const1", "const1");
+  } else {
     updateOneGraph("enroll", padGraph1, "WH08_alg_p",    mGrp + "08_alg_p");
     updateOneGraph("access", padGraph2, "WH08_access_p", mGrp + "08_access_p");
+  }
+
 
 	//then update the rank after a delay
 	setTimeout(updateRank, 800);
@@ -1078,6 +1098,14 @@ d3.csv("data/table_top100.csv", function(dataCSV) {
 
   	//make sure the data can be accessed globally
   	data = dataCSV;
+
+    //get the enrollment rates for schools that offer it
+    data.forEach(function(d) {
+      d.WH08_alg_p_adj = (+d.WH08_alg_p / +d.WH08_access_p);
+      d.BL08_alg_p_adj = (+d.BL08_alg_p / +d.BL08_access_p);
+      d.HI08_alg_p_adj = (+d.HI08_alg_p / +d.HI08_access_p);
+      d.const1 = 1;
+    });
 
   	//grab the national data and remove from district-level data
   	dataNation = data.shift();
