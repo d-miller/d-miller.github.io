@@ -954,11 +954,11 @@ map.on('load', function() {
   map.on('mousemove', function(e) { hoverPoint(e.lngLat, true); });
 
   //reset if mouse is moved over the document, but not map
-  /*document.addEventListener("mouseover", function(){
+  document.addEventListener("mouseover", function(){
     if (hoverByMouse) {
       hoverDistrict(null);
       hoverState(null);
       popup.remove();
     }
-  });*/
+  });
 });
