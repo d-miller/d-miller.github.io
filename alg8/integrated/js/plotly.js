@@ -233,7 +233,7 @@ $("#plotly-div")[0].on('plotly_hover', function(data) {
   dflt = d3.select("#plotly-div .hovertext text.nums");
 
   //add new g with the custom HTML set by the text field
-  var xTrans = +dflt.attr("x"); // + 2*Math.sign(+dflt.attr("x"));
+  var xTrans = +dflt.attr("x");
   var yTrans = +dflt.attr("y");
   d3.select("#plotly-div .hovertext")
     .append("g")
