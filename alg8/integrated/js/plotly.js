@@ -220,9 +220,10 @@ $(".modebar-btn[data-val=reset]").css("display", "none");
 //$(".modebar-btn[data-title='Zoom out']").css("display", "none");
 
 
+
+
 //use my own formatting for the tooltip - definately hackish
-var div = document.getElementById("plotly-div");
-div.on('plotly_hover', function(data) { 
+function highlightPoint(data) { 
 
   //make hovered point more opaque, non-hovered less opaque
   var d = data.points[0];
@@ -267,8 +268,11 @@ div.on('plotly_hover', function(data) {
   //now finally change the position of the tooltip
   tooltip.style("left", Math.round(x) + "px")
          .style("top",  Math.round(y) + "px");
-});
+}
 
+//bind the highlight point function to both hover and click events
+$("#plotly-div")[0].on('plotly_hover', highlightPoint);
+$("#plotly-div")[0].on('plotly_click', highlightPoint);
 
 //reset after hovering out
 $("#plotly-div")[0].on('plotly_unhover', function(data) { 
