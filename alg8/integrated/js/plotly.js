@@ -257,7 +257,7 @@ $("#plotly-div")[0].on('plotly_hover', function(data) {
   y += t[1];
 
   //vertically center the tooltip based 1/2 its height
-  y -= tooltip[0][0].clientHeight/2;
+  //y -= tooltip[0][0].clientHeight/2;
 
   //left position the tooltip if not enough room on the rightside
   x += 30;
