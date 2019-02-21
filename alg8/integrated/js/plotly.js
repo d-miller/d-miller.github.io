@@ -223,6 +223,9 @@ $(".modebar-btn[data-val=reset]").css("display", "none");
 //use my own formatting for the tooltip - definately hackish
 $("#plotly-div")[0].on('plotly_hover', function(data) { 
 
+  alert("got here!")
+
+
   //make hovered point more opaque, non-hovered less opaque
   var d = data.points[0];
   var i = d.pointIndex;
@@ -234,7 +237,6 @@ $("#plotly-div")[0].on('plotly_hover', function(data) {
 
   //don't create a custom HTML tooltip if there's another tooltip shown
   if (!d3.select("#plotly-div g.hovertext").empty()) return;
-  console.log("got here!")
 
   //change the tooltip HTML and then position it
   var tooltip = d3.select("#testTooltip");
@@ -259,7 +261,7 @@ $("#plotly-div")[0].on('plotly_hover', function(data) {
   y += t[1];
 
   //vertically center the tooltip based 1/2 its height
-  //y -= tooltip[0][0].clientHeight/2;
+  y -= tooltip[0][0].clientHeight/2;
 
   //left position the tooltip if not enough room on the rightside
   x += 30;
