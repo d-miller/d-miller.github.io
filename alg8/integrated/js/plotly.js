@@ -221,9 +221,10 @@ $(".modebar-btn[data-val=reset]").css("display", "none");
 
 
 //use my own formatting for the tooltip - definately hackish
-$("#plotly-div")[0].on('plotly_hover', function(data) { 
+var div = document.getElementById("plotly-div");
+div.on('plotly_hover', function(data) { 
 
-  alert("got here!")
+  alert("got here 2!")
 
 
   //make hovered point more opaque, non-hovered less opaque
