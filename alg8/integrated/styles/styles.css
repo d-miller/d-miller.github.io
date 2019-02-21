@@ -512,13 +512,13 @@ https://github.com/openstreetmap/iD/issues/3020
 .js-plotly-plot {
   position: relative;
 }
-.hoverlayer path {
-  /*opacity: 0;*/
-}
 .hoverlayer .spikeline {
   stroke: #888;
   stroke-width: 1;
 }
 .hovertext text.nums {
-  /*opacity: 0;*/
+  opacity: 0;
+}
+.hoverlayer text {
+  white-space: pre;
 }

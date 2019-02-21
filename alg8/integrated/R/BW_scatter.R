@@ -7,48 +7,24 @@
 ## revised 02.11.19 to use data from most recent district file
 
 rm(list=ls())
-setwd("~/Dropbox/AIR/alg8map/plotly/")
+setwd("H:/d-miller.github.io/alg8/integrated/R/")
 
 Sys.setenv("plotly_username"="dimiller")
 Sys.setenv("plotly_api_key"="Svn24TNgrUbdfm27g3Wq")
 
-table = '
-   <g id="columnGroup">
-<rect x="65" y="10" width="75" height="110" fill="gainsboro"/>
-<rect x="265" y="10" width="75" height="110" fill="gainsboro"/>
+dta <- read.csv("11_datastory_viz_data_n10.csv")
+db2 <- dta %>% filter(WB_n >=10 & is.na(mn_wbg_SEDA)==FALSE & top100==1)
 
-<text x="30" y="30" font-size="18px" font-weight="bold" fill="crimson">
-<tspan x="30" dy="1.5em">Q1</tspan>
-<tspan x="30" dy="1em">Q2</tspan>
-<tspan x="30" dy="1em">Q3</tspan>
-<tspan x="30" dy="1em">Q4</tspan>
+table = paste0('
+<text x="0" y="0">
+<tspan x="0" style="font-weight:bold;"> ',db2$name,' </tspan>
+<tspan x="0" dy="1.3em"> ', db2$BL08,' Black students </tspan>
+<tspan x="0" dy="1.3em"> ', db2$WH08,' White students </tspan>
 </text>
+')
 
-<text x="100" y="30" font-size="18px" text-anchor="middle">
-<tspan x="100" font-weight="bold" fill="crimson">Sales</tspan>
-<tspan x="100" dy="1.5em">$ 223</tspan>
-<tspan x="100" dy="1em">$ 183</tspan>
-<tspan x="100" dy="1em">$ 277</tspan>
-<tspan x="100" dy="1em">$ 402</tspan>
-</text>
-
-<text x="200" y="30" font-size="18px" text-anchor="middle">
-<tspan x="200" font-weight="bold" fill="crimson">Expenses</tspan>
-<tspan x="200" dy="1.5em">$ 195</tspan>
-<tspan x="200" dy="1em">$ 70</tspan>
-<tspan x="200" dy="1em">$ 88</tspan>
-<tspan x="200" dy="1em">$ 133</tspan>
-</text>
-
-<text x="300" y="30" font-size="18px" text-anchor="middle">
-<tspan x="300" font-weight="bold" fill="crimson">Net</tspan>
-<tspan x="300" dy="1.5em">$ 28</tspan>
-<tspan x="300" dy="1em">$ 113</tspan>
-<tspan x="300" dy="1em">$ 189</tspan>
-<tspan x="300" dy="1em">$ 269</tspan>
-</text>
-</g>
-'
+#remove new line breaks
+table = gsub("\r?\n|\r", "", table)
 
 ########################
 ## 0. SET UP PROGRAM ##
@@ -77,8 +53,8 @@ mGrp = list(
 
 # points for top 200 districts
 scat = function(data, xLim = c(-1.1, 6.1), yLim = c(-32, 52), apiName = NULL,
-                n = "BL08", x = "mn_wbg_SEDA", y = "WB_diff", xTitle = "White – Black Test Score Gap",
-                yTitle = "White – Black Enrollment Gap", gap = "WB", 
+                n = "BL08", x = "mn_wbg_SEDA", y = "WB_diff", xTitle = "White - Black Test Score Gap",
+                yTitle = "White - Black Enrollment Gap", gap = "WB", 
                 trend = NULL) {
   
   #get variables/name based on the gap
@@ -95,11 +71,16 @@ scat = function(data, xLim = c(-1.1, 6.1), yLim = c(-32, 52), apiName = NULL,
     size = 14,
     color = "black"
   )
+  f3 <- list(
+    family = '"lato",Arial,Helvetica,sans-serif',
+    size = 12,
+    color = "black"
+  )
   
   #add annotations
   annotations = list(
-    list(text = "↑ White higher", x = .85, y = 2.7, showarrow = FALSE, xanchor="left", xref="paper", font = list(size = 13)), 
-    list(text = "↓ Black higher", x = .85, y = -2.1, showarrow = FALSE, xanchor="left", xref="paper", font = list(size = 13))
+    list(text = "??? White higher", x = .85, y = 2.7, showarrow = FALSE, xanchor="left", xref="paper", font = list(size = 13)), 
+    list(text = "??? Black higher", x = .85, y = -2.1, showarrow = FALSE, xanchor="left", xref="paper", font = list(size = 13))
   )
   
   #axis options
@@ -123,7 +104,7 @@ scat = function(data, xLim = c(-1.1, 6.1), yLim = c(-32, 52), apiName = NULL,
               type = 'scatter', mode = 'lines',
               line = list(opacity = 0.5, color = "darkgrey", dash = "dot"),
               hoverinfo = 'text',
-              hoverlabel = list(bgcolor = "white", font = f2),
+              hoverlabel = list(bgcolor = "white", font = f3),
               hovertext = ~c("Prediction line"),
               text = paste0("<text>Prediction line</text>"))
     }
@@ -137,9 +118,9 @@ scat = function(data, xLim = c(-1.1, 6.1), yLim = c(-32, 52), apiName = NULL,
                             sizemode = "diameter", sizeref=2,
                             line = list(color = "#222")),
               hoverinfo = 'text',
-              hoverlabel = list(bgcolor = "white", font = f2),
-              #text = data$name,
-              text = paste0("<text>", data$name, "</text>"),
+              hoverlabel = list(bgcolor = "white", font = f3),
+              text = table,
+              #text = paste0("<text>", data$name, "</text>"),
               hovertext = ~paste("<b>", data$name, "</b>",
                             #"<br>Math test score gap:", format(round(x2,2),2),
                             #"<br>Enrollment gap:", format(round(y2,2),2),
@@ -169,8 +150,7 @@ scat = function(data, xLim = c(-1.1, 6.1), yLim = c(-32, 52), apiName = NULL,
 
 
 ## Create White-Black Scatterplot for Relationship Btw Test Gap and Enroll Gap
-dta <- read.csv("11_datastory_viz_data_n10.csv")
-db2 <- dta %>% filter(WB_n >=10 & is.na(mn_wbg_SEDA)==FALSE & top100==1)
+
 trend = function(x) .0196163 + .0575691*x
 scat(db2, trend = trend, gap="WB", apiName = "WB_scat2")
 
