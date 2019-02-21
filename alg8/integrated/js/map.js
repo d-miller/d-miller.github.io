@@ -396,6 +396,9 @@ function changeLegend(props, draw) {
 //outputs text describetion the difference between them
 function textGap(props) {
 
+  //disable for now...
+  return "";
+
   //determine variable names based on the chosen display variable
   if (displayVar === "WB_enroll") {
     var v1 = "BL08_alg_p";
@@ -506,10 +509,10 @@ function tableGap(props, schoolLevel) {
   if (g2n > 0 & g2n < gapMinN) g2perc = "-";
 
   //get HTML for each row
-  var header = "<tr><th>Group</th><th>G8 Size</th><th>Rate</th></tr>";
+  var header = "<tr><th>Group</th><th>Size</th><th>Rate</th></tr>";
   var all_row = "<tr><td>All</td><td>" + all_n + "</td><td>" + all_perc;
-  var g1row = "<tr><td>" + g1name + "</td><td>" + g1n + "</td><td>" + g1perc;
-  var g2row = "<tr><td>" + g2name + "</td><td>" + g2n + "</td><td>" + g2perc;
+  var g1row = "<tr><td>" + g1name + "</td><td>" + d3.format(",")(g1n) + "</td><td>" + g1perc;
+  var g2row = "<tr><td>" + g2name + "</td><td>" + d3.format(",")(g2n) + "</td><td>" + g2perc;
 
   //return the full table HTML
   if (schoolLevel) return "<table>" + header + all_row + g1row + g2row + "</table>";
@@ -532,17 +535,17 @@ function describeGap(props, schoolLevel) {
   var g2name = "White";
 
   //don't compute gap for individual schools
-  if (schoolLevel == true) return headerHTML + "Gap not computed for individual schools, but the " + 
-                                  "overall rate and demographics are reported:<br>" +
+  if (schoolLevel == true) return headerHTML + "<p>Gap not computed for individual schools, but the " + 
+                                  "overall rate and demographics are reported:</p>" +
                                   tableGap(props, true) + tooltipEnd;
 
   //check minimum sample sizes (for now only adjust the text, not table)
-  if ((g1n < gapMinN) & (g2n < gapMinN)) return headerHTML + "Data reporting standards not met to estimate gap: too few " + 
-                                                g1name + " and " + g2name + " students<br>" + tableGap(props) + tooltipEnd; 
-  if (g1n < gapMinN) return headerHTML + "Data reporting standards not met to estimate gap: too few " + 
-                            g1name + " students<br>" + tableGap(props) + tooltipEnd;
-  if (g2n < gapMinN) return headerHTML + "Data reporting standards not met to estimate gap: too few " + 
-                            g2name + " students<br>" + tableGap(props) + tooltipEnd;
+  if ((g1n < gapMinN) & (g2n < gapMinN)) return headerHTML + "<p>Data reporting standards not met to estimate gap: too few " + 
+                                                g1name + " and " + g2name + " students</p>" + tableGap(props) + tooltipEnd; 
+  if (g1n < gapMinN) return headerHTML + "<p>Data reporting standards not met to estimate gap: too few " + 
+                            g1name + " students</p>" + tableGap(props) + tooltipEnd;
+  if (g2n < gapMinN) return headerHTML + "<p>Data reporting standards not met to estimate gap: too few " + 
+                            g2name + " students</p>" + tableGap(props) + tooltipEnd;
 
   //otherwise combine the text and table HTML
   return headerHTML + textGap(props) + tableGap(props) + tooltipEnd;
@@ -951,11 +954,11 @@ map.on('load', function() {
   map.on('mousemove', function(e) { hoverPoint(e.lngLat, true); });
 
   //reset if mouse is moved over the document, but not map
-  document.addEventListener("mouseover", function(){
+  /*document.addEventListener("mouseover", function(){
     if (hoverByMouse) {
       hoverDistrict(null);
       hoverState(null);
       popup.remove();
     }
-  });
+  });*/
 });

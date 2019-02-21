@@ -15,16 +15,21 @@ Sys.setenv("plotly_api_key"="Svn24TNgrUbdfm27g3Wq")
 dta <- read.csv("11_datastory_viz_data_n10.csv")
 db2 <- dta %>% filter(WB_n >=10 & is.na(mn_wbg_SEDA)==FALSE & top100==1)
 
-table = paste0('
-<text x="0" y="0">
-<tspan x="0" style="font-weight:bold;"> ',db2$name,' </tspan>
-<tspan x="0" dy="1.3em"> ', db2$BL08,' Black students </tspan>
-<tspan x="0" dy="1.3em"> ', db2$WH08,' White students </tspan>
-</text>
-')
 
-#remove new line breaks
-table = gsub("\r?\n|\r", "", table)
+com = function(x) format(x, big.mark=",")
+tooltip = function(data) {
+  x = paste0('
+  <h3>', data$name, '</h3>
+  <table><tbody>
+    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>
+    <tr><td>Black</td><td>',com(data$BL08),'</td><td>',round(data$BL08_alg_p*100),'%</td></tr>
+    <tr><td>White</td><td>',com(data$WH08),'</td><td>',round(data$WH08_alg_p*100),'%</td></tr>
+  </tbody></table>
+  ')
+  
+  #remove new line breaks and return
+  gsub("\r?\n|\r", "", x)
+}
 
 ########################
 ## 0. SET UP PROGRAM ##
@@ -119,7 +124,7 @@ scat = function(data, xLim = c(-1.1, 6.1), yLim = c(-32, 52), apiName = NULL,
                             line = list(color = "#222")),
               hoverinfo = 'text',
               hoverlabel = list(bgcolor = "white", font = f3),
-              text = table,
+              text = tooltip(data),
               #text = paste0("<text>", data$name, "</text>"),
               hovertext = ~paste("<b>", data$name, "</b>",
                             #"<br>Math test score gap:", format(round(x2,2),2),
