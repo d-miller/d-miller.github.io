@@ -183,7 +183,8 @@ Plotly.plot('plotly-div', {
 
 
 
-
+//helper functions that make the interaction behavior panning after user 
+//zooms, and zooming once reset to the original axis ranges
 function makePan(e) {
 
   $(".modebar-btn[data-val=reset]").css("display", "inline-block");
@@ -229,7 +230,7 @@ function highlightPoint(data) {
   var d = data.points[0];
   var i = d.pointIndex;
   var points = d3.selectAll("#plotly-div .points path");
-  if (d.curveNumber == 1) {
+  if (d.data.mode === "markers") {
     points.style("opacity", 0.2);
     d3.select(points[0][i]).style("opacity", 1);
   }
@@ -243,18 +244,21 @@ function highlightPoint(data) {
   tooltip.select(".mapboxgl-popup-content")
          .html(data.points[0].text);
 
-  //get the hover x & y position
+  //get the data point's pixel x & y position
   //https://plot.ly/javascript/hover-events/
   var x = d.xaxis.l2p(d.x);
   var y = d.yaxis.l2p(d.y);
 
-  //but we need to translate by the g plot container 
+  //but we need to also translate by the g plot container
+  //parseTrans is a helper function for strings like "transform(30, 70)"
   function parseTrans(text) {
     var sep = text.indexOf(",") > -1 ? "," : " ";
     var x = +text.split("(")[1].split(sep)[0];
     var y = +text.split(sep)[1].split(")")[0];
     return [x, y];
   }
+
+  //get the transform from the SVG g plot container and apply to x & y positions
   var t = parseTrans(d3.selectAll("#plotly-div g.plot").attr("transform"));
   x += t[0];
   y += t[1];
@@ -281,7 +285,5 @@ $("#plotly-div")[0].on('plotly_unhover', function(data) {
   d3.select("#testTooltip")
     .style("display", "none");
 });
-
-
 
 })();
