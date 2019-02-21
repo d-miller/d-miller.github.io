@@ -233,7 +233,8 @@ $("#plotly-div")[0].on('plotly_hover', function(data) {
   }
 
   //don't create a custom HTML tooltip if there's another tooltip shown
-  if (d3.select("#plotly-div g.hoverlayer").html() !== "") return;
+  if (!d3.select("#plotly-div g.hovertext").empty()) return;
+  console.log("got here!")
 
   //change the tooltip HTML and then position it
   var tooltip = d3.select("#testTooltip");
@@ -248,8 +249,9 @@ $("#plotly-div")[0].on('plotly_hover', function(data) {
 
   //but we need to translate by the g plot container 
   function parseTrans(text) {
-    var x = +text.split("(")[1].split(",")[0];
-    var y = +text.split(",")[1].split(")")[0];
+    var sep = text.indexOf(",") > -1 ? "," : " ";
+    var x = +text.split("(")[1].split(sep)[0];
+    var y = +text.split(sep)[1].split(")")[0];
     return [x, y];
   }
   var t = parseTrans(d3.selectAll("#plotly-div g.plot").attr("transform"));
