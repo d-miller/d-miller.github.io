@@ -224,9 +224,6 @@ $(".modebar-btn[data-val=reset]").css("display", "none");
 var div = document.getElementById("plotly-div");
 div.on('plotly_hover', function(data) { 
 
-  alert("got here 2!")
-
-
   //make hovered point more opaque, non-hovered less opaque
   var d = data.points[0];
   var i = d.pointIndex;
