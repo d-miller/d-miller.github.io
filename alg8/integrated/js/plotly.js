@@ -189,6 +189,11 @@ function customPlotly(divName) {
   var div = document.getElementById(divName);
   var d3div = d3.select(div);
 
+  //insert HTML elements where needed
+  d3div.append("div").attr("class", "plotly-notifier");
+  d3div.append("div").attr("class", "mapboxgl-popup")
+       .append("div").attr("class", "mapboxgl-popup-content");
+
   //helper functions that make the interaction behavior panning after user 
   //zooms, and zooming once reset to the original axis ranges
   function makePan(e) {
@@ -237,7 +242,7 @@ function customPlotly(divName) {
     d3.select(points[0][i]).style("opacity", 1);
 
     //change the tooltip HTML and then position it
-    var tooltip = d3div.select("#testTooltip");
+    var tooltip = d3div.select(".mapboxgl-popup");
     tooltip.style("display", "block");
     tooltip.select(".mapboxgl-popup-content")
            .html(data.points[0].text);
@@ -280,7 +285,7 @@ function customPlotly(divName) {
   div.on('plotly_unhover', function(data) { 
     d3div.selectAll(".points path")
           .style("opacity", 0.5)
-    d3div.select("#testTooltip")
+    d3div.select(".mapboxgl-popup")
           .style("display", "none");
   });
 }

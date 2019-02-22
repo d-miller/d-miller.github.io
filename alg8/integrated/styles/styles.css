@@ -495,54 +495,33 @@ https://github.com/openstreetmap/iD/issues/3020
 dominant-baseline is commented because IE doesn't support it: 
 https://github.com/openstreetmap/iD/issues/3020
 */
-#plotly-div {
+.js-plotly-plot {
   height: 400px;
+  position: relative;
 }
-#plotly-div * {
+.js-plotly-plot * {
   transition: opacity 0s, transform 0.5s, x 0.5s, y 0.5s;
 }
-#plotly-div .hoverlayer * {
+.js-plotly-plot .hoverlayer * {
   transition-duration: 0s;
   webkit-transition-duration: 0s;
 }
-/*.plot .lines * {
-  transition-duration: 0s;
-  webkit-transition-duration: 0s;
-}*/
-/** {
-  transition-duration: 0s;
-  webkit-transition-duration: 0s;
-}*/
-.plotly-notifier {
+.js-plotly-plot .plotly-notifier {
   font-family: "lato",Arial,Helvetica,sans-serif;
   position: absolute;
   top: 0px;
   right: 10px;
 }
-.js-plotly-plot {
-  position: relative;
-}
-.hoverlayer .spikeline {
-  stroke: #888;
-  stroke-width: 1;
-}
-/*.hovertext text.nums {
-  opacity: 0;
-}*/
-.hoverlayer text {
-  white-space: pre;
-}
-#plotly-div #testTooltip {
+.js-plotly-plot .mapboxgl-popup {
   transition-duration: 0s;
   webkit-transition-duration: 0s;
   z-index: 1001;
   display: none;
 }
-#plotly-div .mapboxgl-popup-content {
+.js-plotly-plot .mapboxgl-popup-content {
   border:1px solid black;
   padding: 0px 0px 5px 0px;
 }
-#plotly-div #testTooltip h3 {
+.js-plotly-plot .mapboxgl-popup h3 {
   text-transform: none;
-
 }
