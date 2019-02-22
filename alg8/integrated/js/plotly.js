@@ -180,110 +180,112 @@ Plotly.plot('plotly-div', {
   layout: layout,
   config: config
 });
+customPlotly("plotly-div");
+
+//wrapper function that adds custom JS to a specified plotly div
+function customPlotly(divName) {
+
+  //get the div selection
+  var div = document.getElementById(divName);
+  var d3div = d3.select(div);
+
+  //helper functions that make the interaction behavior panning after user 
+  //zooms, and zooming once reset to the original axis ranges
+  function makePan(e) {
+
+    d3div.select(".modebar-btn[data-val=reset]").style("display", "inline-block");
+    $(div).unbind('plotly_relayout');
+    Plotly.relayout(divName, {dragmode: 'pan'});
+    $("#" + divName).on('plotly_relayout', makeZoom);
+    d3div.selectAll("*").style('transition', "0s");
+  }
+
+  var xRange = layout.xaxis.range.slice();
+  function makeZoom(event, d) {
+
+    //console.log(d['xaxis.range[0]'].toFixed(1) != xRange[0].toFixed(1))
+    //console.log(d['xaxis.range[1]'].toFixed(1) != xRange[1].toFixed(1))
+
+    //don't change back to zoom mode unless new axes are original axes
+    if (typeof d['xaxis.range[0]' === "undefined"]) return;
+    if ((d['xaxis.range[0]'].toFixed(1) != xRange[0].toFixed(1)) || 
+        (d['xaxis.range[1]'].toFixed(1) != xRange[1].toFixed(1))) return;
+    console.log("gothere!")
+
+    d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
+    $(div).unbind('plotly_relayout');
+    Plotly.relayout(divName, {dragmode: 'zoom'});
+    setTimeout(function() {
+      $(div).on('plotly_relayout', makePan);
+      d3div.selectAll("*").style('transition', "opacity 0s, transform 0.5s, x 0.5s, y 0.5s");
+    }, 200);
+  }
+
+  $(div).on('plotly_relayout', makePan);
+  d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
 
 
+  //use my own formatting for the tooltip - definately hackish
+  function highlightPoint(data) { 
 
-//helper functions that make the interaction behavior panning after user 
-//zooms, and zooming once reset to the original axis ranges
-function makePan(e) {
+    //don't do anything if not hovered over a dot
+    var d = data.points[0];
+    if (d.data.mode !== "markers") return;
 
-  $(".modebar-btn[data-val=reset]").css("display", "inline-block");
-  //$(".modebar-btn[data-title='Zoom out']").css("display", "inline-block");
-
-  $("#plotly-div").unbind('plotly_relayout');
-  Plotly.relayout('plotly-div', {dragmode: 'pan'});
-  setTimeout(function() {
-    $("#plotly-div").on('plotly_relayout', makeZoom);
-    $("#plotly-div *").css('transition', "0s");
-  },200);
-}
-
-var xRange = layout.xaxis.range.slice();
-function makeZoom(event, d) {
-  //$("#plotly-div *").css('transition-duration', "0.2s");
-
-  if ((d['xaxis.range[0]'] != xRange[0]) || (d['xaxis.range[1]'] != xRange[1])) return;
-
-  $(".modebar-btn[data-val=reset]").css("display", "none");
-  //$(".modebar-btn[data-title='Zoom out']").css("display", "none");
-
-
-  $("#plotly-div").unbind('plotly_relayout');
-  Plotly.relayout('plotly-div', {dragmode: 'zoom'});
-  setTimeout(function() {
-    $("#plotly-div").on('plotly_relayout', makePan);
-    $("#plotly-div *").css('transition', "opacity 0s, transform 0.5s, x 0.5s, y 0.5s");
-  }, 200);
-}
-
-$("#plotly-div").on('plotly_relayout', makePan);
-$(".modebar-btn[data-val=reset]").css("display", "none");
-//$(".modebar-btn[data-title='Zoom out']").css("display", "none");
-
-
-
-
-//use my own formatting for the tooltip - definately hackish
-function highlightPoint(data) { 
-
-  //make hovered point more opaque, non-hovered less opaque
-  var d = data.points[0];
-  var i = d.pointIndex;
-  var points = d3.selectAll("#plotly-div .points path");
-  if (d.data.mode === "markers") {
+    //make hovered point more opaque, non-hovered less opaque
+    var points = d3div.selectAll(".points path");
+    var i = d.pointIndex;
     points.style("opacity", 0.2);
     d3.select(points[0][i]).style("opacity", 1);
+
+    //change the tooltip HTML and then position it
+    var tooltip = d3div.select("#testTooltip");
+    tooltip.style("display", "block");
+    tooltip.select(".mapboxgl-popup-content")
+           .html(data.points[0].text);
+
+    //get the data point's pixel x & y position
+    //https://plot.ly/javascript/hover-events/
+    var x = d.xaxis.l2p(d.x);
+    var y = d.yaxis.l2p(d.y);
+
+    //but we need to also translate by the g plot container
+    //parseTrans is a helper function for strings like "transform(30, 70)"
+    function parseTrans(text) {
+      var sep = text.indexOf(",") > -1 ? "," : " ";
+      var x = +text.split("(")[1].split(sep)[0];
+      var y = +text.split(sep)[1].split(")")[0];
+      return [x, y];
+    }
+
+    //get the transform from the SVG g plot container and apply to x & y positions
+    var t = parseTrans(d3div.select("g.plot").attr("transform"));
+    x += t[0];
+    y += t[1];
+
+    //vertically center the tooltip based 1/2 its height
+    y -= tooltip[0][0].clientHeight/2;
+
+    //left position the tooltip if not enough room on the rightside
+    x += 30;
+
+    //now finally change the position of the tooltip
+    tooltip.style("left", Math.round(x) + "px")
+           .style("top",  Math.round(y) + "px");
   }
 
-  //don't create a custom HTML tooltip if there's another tooltip shown
-  if (!d3.select("#plotly-div g.hovertext").empty()) return;
+  //bind the highlight point function to both hover and click events
+  div.on('plotly_hover', highlightPoint);
+  div.on('plotly_click', highlightPoint);
 
-  //change the tooltip HTML and then position it
-  var tooltip = d3.select("#testTooltip");
-  tooltip.style("display", "block");
-  tooltip.select(".mapboxgl-popup-content")
-         .html(data.points[0].text);
-
-  //get the data point's pixel x & y position
-  //https://plot.ly/javascript/hover-events/
-  var x = d.xaxis.l2p(d.x);
-  var y = d.yaxis.l2p(d.y);
-
-  //but we need to also translate by the g plot container
-  //parseTrans is a helper function for strings like "transform(30, 70)"
-  function parseTrans(text) {
-    var sep = text.indexOf(",") > -1 ? "," : " ";
-    var x = +text.split("(")[1].split(sep)[0];
-    var y = +text.split(sep)[1].split(")")[0];
-    return [x, y];
-  }
-
-  //get the transform from the SVG g plot container and apply to x & y positions
-  var t = parseTrans(d3.selectAll("#plotly-div g.plot").attr("transform"));
-  x += t[0];
-  y += t[1];
-
-  //vertically center the tooltip based 1/2 its height
-  y -= tooltip[0][0].clientHeight/2;
-
-  //left position the tooltip if not enough room on the rightside
-  x += 30;
-
-  //now finally change the position of the tooltip
-  tooltip.style("left", Math.round(x) + "px")
-         .style("top",  Math.round(y) + "px");
+  //reset after hovering out
+  div.on('plotly_unhover', function(data) { 
+    d3div.selectAll(".points path")
+          .style("opacity", 0.5)
+    d3div.select("#testTooltip")
+          .style("display", "none");
+  });
 }
 
-//bind the highlight point function to both hover and click events
-$("#plotly-div")[0].on('plotly_hover', highlightPoint);
-$("#plotly-div")[0].on('plotly_click', highlightPoint);
-
-//reset after hovering out
-$("#plotly-div")[0].on('plotly_unhover', function(data) { 
-  d3.selectAll("#plotly-div .points path")
-    .style("opacity", 0.5)
-  d3.select("#testTooltip")
-    .style("display", "none");
-});
 
 })();
