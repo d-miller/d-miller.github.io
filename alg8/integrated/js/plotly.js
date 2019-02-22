@@ -196,21 +196,19 @@ function customPlotly(divName) {
     d3div.select(".modebar-btn[data-val=reset]").style("display", "inline-block");
     $(div).unbind('plotly_relayout');
     Plotly.relayout(divName, {dragmode: 'pan'});
-    $("#" + divName).on('plotly_relayout', makeZoom);
-    d3div.selectAll("*").style('transition', "0s");
+    setTimeout(function() {
+      $(div).on('plotly_relayout', makeZoom);
+      d3div.selectAll("*").style('transition', "0s");
+    }, 200);
   }
 
   var xRange = layout.xaxis.range.slice();
   function makeZoom(event, d) {
 
-    //console.log(d['xaxis.range[0]'].toFixed(1) != xRange[0].toFixed(1))
-    //console.log(d['xaxis.range[1]'].toFixed(1) != xRange[1].toFixed(1))
-
-    //don't change back to zoom mode unless new axes are original axes
-    if (typeof d['xaxis.range[0]' === "undefined"]) return;
+    //don't change back to zoom mode unless new axes are original
+    if (typeof d['xaxis.range[0]'] === "undefined") return;
     if ((d['xaxis.range[0]'].toFixed(1) != xRange[0].toFixed(1)) || 
         (d['xaxis.range[1]'].toFixed(1) != xRange[1].toFixed(1))) return;
-    console.log("gothere!")
 
     d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
     $(div).unbind('plotly_relayout');
