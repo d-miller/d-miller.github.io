@@ -243,34 +243,26 @@ function customPlotly(divName) {
 
     //change the tooltip HTML and then position it
     var tooltip = d3div.select(".mapboxgl-popup");
-    tooltip.style("display", "block");
-    tooltip.select(".mapboxgl-popup-content")
-           .html(data.points[0].text);
+    tooltip.style("display", "block")
+           .select(".mapboxgl-popup-content")
+              .html(data.points[0].text);
 
     //get the data point's pixel x & y position
     //https://plot.ly/javascript/hover-events/
     var x = d.xaxis.l2p(d.x);
     var y = d.yaxis.l2p(d.y);
 
-    //but we need to also translate by the g plot container
-    //parseTrans is a helper function for strings like "transform(30, 70)"
-    function parseTrans(text) {
-      var sep = text.indexOf(",") > -1 ? "," : " ";
-      var x = +text.split("(")[1].split(sep)[0];
-      var y = +text.split(sep)[1].split(")")[0];
-      return [x, y];
-    }
+    //but we need to also translate by the plot container
+    var container = d3.select(data.event.srcElement);
+    x += container.attr("x");
+    y += container.attr("y");
 
-    //get the transform from the SVG g plot container and apply to x & y positions
-    var t = parseTrans(d3div.select("g.plot").attr("transform"));
-    x += t[0];
-    y += t[1];
-
-    //vertically center the tooltip based 1/2 its height
+    //vertically center the tooltip based on 1/2 its height
     y -= tooltip[0][0].clientHeight/2;
 
     //left position the tooltip if not enough room on the rightside
-    x += 30;
+    x += d["marker.size"]/4;
+    x += 10;  
 
     //now finally change the position of the tooltip
     tooltip.style("left", Math.round(x) + "px")
