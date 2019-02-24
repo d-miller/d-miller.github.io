@@ -254,8 +254,8 @@ function customPlotly(divName) {
 
     //but we need to also translate by the plot container
     var container = d3.select(data.event.srcElement);
-    x += container.attr("x");
-    y += container.attr("y");
+    x += +container.attr("x");
+    y += +container.attr("y");
 
     //vertically center the tooltip based on 1/2 its height
     y -= tooltip[0][0].clientHeight/2;
