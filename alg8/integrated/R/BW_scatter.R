@@ -8,6 +8,7 @@
 
 rm(list=ls())
 setwd("H:/d-miller.github.io/alg8/integrated/R/")
+setwd("~/Dropbox/Github/d-miller.github.io/alg8/integrated/R/")
 
 Sys.setenv("plotly_username"="dimiller")
 Sys.setenv("plotly_api_key"="Svn24TNgrUbdfm27g3Wq")

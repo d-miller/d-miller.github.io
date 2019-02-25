@@ -1,286 +1,354 @@
-// You can reproduce this figure in plotly.js with the following code!
-
-// Learn more about plotly.js here: https://plot.ly/javascript/getting-started
-
-/* Here's an example minimal HTML template
- *
- * <!DOCTYPE html>
- *   <head>
- *     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
- *   </head>
- *   <body>
- *   <!-- Plotly chart will be drawn inside this div -->
- *   <div id="plotly-div"></div>
- *     <script>
- *     // JAVASCRIPT CODE GOES HERE
- *     </script>
- *   </body>
- * </html>
- */
-
-(function() {
-
-var config = {
-  displaylogo: false, 
-  collaborate: false,
-  modeBarButtonsToRemove: ["lasso2d", "toggleSpikelines", "hoverClosestCartesian",
-                           "pan2d", "zoom2d", "hoverCompareCartesian", "select2d", 
-                           "autoScale2d"]
-};
-
-var trace1, trace2, data, layout;
-
-trace1 = {
-  x: [-1.1, -1.06381909548, -1.02763819095, -0.991457286432, -0.95527638191, -0.919095477387, -0.882914572864, -0.846733668342, -0.810552763819, -0.774371859296, -0.738190954774, -0.702010050251, -0.665829145729, -0.629648241206, -0.593467336683, -0.557286432161, -0.521105527638, -0.484924623116, -0.448743718593, -0.41256281407, -0.376381909548, -0.340201005025, -0.304020100503, -0.26783919598, -0.231658291457, -0.195477386935, -0.159296482412, -0.123115577889, -0.0869346733668, -0.0507537688442, -0.0145728643216, 0.021608040201, 0.0577889447236, 0.0939698492462, 0.130150753769, 0.166331658291, 0.202512562814, 0.238693467337, 0.274874371859, 0.311055276382, 0.347236180905, 0.383417085427, 0.41959798995, 0.455778894472, 0.491959798995, 0.528140703518, 0.56432160804, 0.600502512563, 0.636683417085, 0.672864321608, 0.709045226131, 0.745226130653, 0.781407035176, 0.817587939698, 0.853768844221, 0.889949748744, 0.926130653266, 0.962311557789, 0.998492462312, 1.03467336683, 1.07085427136, 1.10703517588, 1.1432160804, 1.17939698492, 1.21557788945, 1.25175879397, 1.28793969849, 1.32412060302, 1.36030150754, 1.39648241206, 1.43266331658, 1.46884422111, 1.50502512563, 1.54120603015, 1.57738693467, 1.6135678392, 1.64974874372, 1.68592964824, 1.72211055276, 1.75829145729, 1.79447236181, 1.83065326633, 1.86683417085, 1.90301507538, 1.9391959799, 1.97537688442, 2.01155778894, 2.04773869347, 2.08391959799, 2.12010050251, 2.15628140704, 2.19246231156, 2.22864321608, 2.2648241206, 2.30100502513, 2.33718592965, 2.37336683417, 2.40954773869, 2.44572864322, 2.48190954774, 2.51809045226, 2.55427135678, 2.59045226131, 2.62663316583, 2.66281407035, 2.69899497487, 2.7351758794, 2.77135678392, 2.80753768844, 2.84371859296, 2.87989949749, 2.91608040201, 2.95226130653, 2.98844221106, 3.02462311558, 3.0608040201, 3.09698492462, 3.13316582915, 3.16934673367, 3.20552763819, 3.24170854271, 3.27788944724, 3.31407035176, 3.35025125628, 3.3864321608, 3.42261306533, 3.45879396985, 3.49497487437, 3.53115577889, 3.56733668342, 3.60351758794, 3.63969849246, 3.67587939698, 3.71206030151, 3.74824120603, 3.78442211055, 3.82060301508, 3.8567839196, 3.89296482412, 3.92914572864, 3.96532663317, 4.00150753769, 4.03768844221, 4.07386934673, 4.11005025126, 4.14623115578, 4.1824120603, 4.21859296482, 4.25477386935, 4.29095477387, 4.32713567839, 4.36331658291, 4.39949748744, 4.43567839196, 4.47185929648, 4.50804020101, 4.54422110553, 4.58040201005, 4.61658291457, 4.6527638191, 4.68894472362, 4.72512562814, 4.76130653266, 4.79748743719, 4.83366834171, 4.86984924623, 4.90603015075, 4.94221105528, 4.9783919598, 5.01457286432, 5.05075376884, 5.08693467337, 5.12311557789, 5.15929648241, 5.19547738693, 5.23165829146, 5.26783919598, 5.3040201005, 5.34020100503, 5.37638190955, 5.41256281407, 5.44874371859, 5.48492462312, 5.52110552764, 5.55728643216, 5.59346733668, 5.62964824121, 5.66582914573, 5.70201005025, 5.73819095477, 5.7743718593, 5.81055276382, 5.84673366834, 5.88291457286, 5.91909547739, 5.95527638191, 5.99145728643, 6.02763819095, 6.06381909548, 6.1], 
-  y: [-4.370971, -4.16268078894, -3.95439057789, -3.74610036683, -3.53781015578, -3.32951994472, -3.12122973367, -2.91293952261, -2.70464931156, -2.4963591005, -2.28806888945, -2.07977867839, -1.87148846734, -1.66319825628, -1.45490804523, -1.24661783417, -1.03832762312, -0.83003741206, -0.621747201005, -0.41345698995, -0.205166778894, 0.0031234321608, 0.211413643216, 0.419703854271, 0.627994065327, 0.836284276382, 1.04457448744, 1.25286469849, 1.46115490955, 1.6694451206, 1.87773533166, 2.08602554271, 2.29431575377, 2.50260596482, 2.71089617588, 2.91918638693, 3.12747659799, 3.33576680905, 3.5440570201, 3.75234723116, 3.96063744221, 4.16892765327, 4.37721786432, 4.58550807538, 4.79379828643, 5.00208849749, 5.21037870854, 5.4186689196, 5.62695913065, 5.83524934171, 6.04353955276, 6.25182976382, 6.46011997487, 6.66841018593, 6.87670039698, 7.08499060804, 7.2932808191, 7.50157103015, 7.70986124121, 7.91815145226, 8.12644166332, 8.33473187437, 8.54302208543, 8.75131229648, 8.95960250754, 9.16789271859, 9.37618292965, 9.5844731407, 9.79276335176, 10.0010535628, 10.2093437739, 10.4176339849, 10.625924196, 10.834214407, 11.0425046181, 11.2507948291, 11.4590850402, 11.6673752513, 11.8756654623, 12.0839556734, 12.2922458844, 12.5005360955, 12.7088263065, 12.9171165176, 13.1254067286, 13.3336969397, 13.5419871508, 13.7502773618, 13.9585675729, 14.1668577839, 14.375147995, 14.583438206, 14.7917284171, 15.0000186281, 15.2083088392, 15.4165990503, 15.6248892613, 15.8331794724, 16.0414696834, 16.2497598945, 16.4580501055, 16.6663403166, 16.8746305276, 17.0829207387, 17.2912109497, 17.4995011608, 17.7077913719, 17.9160815829, 18.124371794, 18.332662005, 18.5409522161, 18.7492424271, 18.9575326382, 19.1658228492, 19.3741130603, 19.5824032714, 19.7906934824, 19.9989836935, 20.2072739045, 20.4155641156, 20.6238543266, 20.8321445377, 21.0404347487, 21.2487249598, 21.4570151709, 21.6653053819, 21.873595593, 22.081885804, 22.2901760151, 22.4984662261, 22.7067564372, 22.9150466482, 23.1233368593, 23.3316270704, 23.5399172814, 23.7482074925, 23.9564977035, 24.1647879146, 24.3730781256, 24.5813683367, 24.7896585477, 24.9979487588, 25.2062389698, 25.4145291809, 25.622819392, 25.831109603, 26.0393998141, 26.2476900251, 26.4559802362, 26.6642704472, 26.8725606583, 27.0808508693, 27.2891410804, 27.4974312915, 27.7057215025, 27.9140117136, 28.1223019246, 28.3305921357, 28.5388823467, 28.7471725578, 28.9554627688, 29.1637529799, 29.372043191, 29.580333402, 29.7886236131, 29.9969138241, 30.2052040352, 30.4134942462, 30.6217844573, 30.8300746683, 31.0383648794, 31.2466550905, 31.4549453015, 31.6632355126, 31.8715257236, 32.0798159347, 32.2881061457, 32.4963963568, 32.7046865678, 32.9129767789, 33.1212669899, 33.329557201, 33.5378474121, 33.7461376231, 33.9544278342, 34.1627180452, 34.3710082563, 34.5792984673, 34.7875886784, 34.9958788894, 35.2041691005, 35.4124593116, 35.6207495226, 35.8290397337, 36.0373299447, 36.2456201558, 36.4539103668, 36.6622005779, 36.8704907889, 37.078781], 
-  error_x: {color: 'rgba(31,119,180,1)'}, 
-  error_y: {color: 'rgba(31,119,180,1)'}, 
-  hoverinfo: ['text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text'], 
-  hoverinfosrc: 'dimiller:4:b44fd1', 
-  hoverlabel: {
-    bgcolor: 'white', 
-    font: {
-      color: 'black', 
-      family: '"lato",Arial,Helvetica,sans-serif', 
-      size: 12
-    }
-  }, 
-  hovertext: ['Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line', 'Prediction line'], 
-  hovertextsrc: 'dimiller:4:feb498', 
-  line: {
-    color: 'darkgrey', 
-    dash: 'dot'
-  }, 
-  marker: {
-    color: 'rgba(31,119,180,1)', 
-    line: {color: 'rgba(31,119,180,1)'}
-  }, 
-  mode: 'lines', 
-  text: ['<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>', '<text>Prediction line</text>'], 
-  textsrc: 'dimiller:4:360d5d', 
-  type: 'scatter', 
-  xaxis: 'x', 
-  xsrc: 'dimiller:4:46f6f3', 
-  yaxis: 'y', 
-  ysrc: 'dimiller:4:0cce1a'
-};
-trace2 = {
-  x: [1.8651316, 5.5408401, 1.9655862, 2.2833786, 2.3364544, 1.1340086, 2.4469376, 1.7561698, 1.2528601, 1.5987816, 2.6821661, 1.6970823, 2.6165333, 4.7292032, 1.9900069, 1.0457125, 1.6068168, 2.441473, 2.1064775, 1.4684262, 1.6597376, 0.61888814, 2.9132805, 2.8710833, 2.3799958, 1.5991197, -0.17874527, 2.670063, 1.7172008, 2.4041224, 2.401372, 2.0279779, 1.5927191, 2.7352929, 1.8463202, 2.9624748, 4.0906916, 1.5329747, 1.6485233, 1.5176964, 2.1521907, 2.4884727, 4.0893211, 2.2457185, 2.1853838, 2.339313, 1.4837594, 2.2040558, 2.8771615, 2.081449, 2.3297253, 3.0084171, 1.9136848, 1.9417152, 1.63901, 3.3248048, 0.98815632, 1.7404718, 1.5859861, 2.1186256, 1.9453669, 2.2335486, 3.2220387, 1.829813, 1.8290319, 1.7591715, 1.8275962, 1.645334, 2.699935, 3.2124786, 2.637991, 1.0470715, 1.4711907, 2.6329083, 3.6862659, 4.2362461, 1.1050615, 1.5672703, 2.4009476, 2.2070799, 2.2071929, 2.9824533, 2.5663257, 2.6656127, 2.5429254, 2.4563694, 1.4861922, 2.4459643, 2.4829493, 2.609941, 2.6268337, 3.1416354, 2.7791138, 2.6261716, 3.2662194], 
-  y: [7.4034967, 45.816225, 20.504169, 19.679424, 13.924631, 7.9986952, 3.0500978, 0.31562001, 8.5549086, 15.84186, 2.2062957, 1.0923288, 14.161289, 17.603989, 6.1169535, 6.2127471, 18.00207, 31.33342, 17.288893, 6.7412376, 8.9194804, -21.9428, 2.3881322, 20.383553, 16.98117, 15.870759, 14.775454, 11.941735, 5.7119116, 29.402196, 14.909583, 8.3934925, -2.0533651, 25.80336, 12.732433, 17.839178, 10.027507, 8.866401, 19.341056, 8.7820515, 22.758432, 11.275168, 21.892776, 16.022468, 13.464616, 8.5939497, 24.849154, 13.731815, 9.610267, 19.391692, 16.128439, 18.455532, 17.30919, 20.441487, 15.757266, 30.31196, 6.8246827, 8.2558922, 17.326382, 11.969285, 18.217331, 5.7151981, 33.874092, 18.266943, 0.96406713, 10.984462, 12.165296, 20.181715, 24.145591, 6.7288756, 28.821442, -0.93564242, 30.190796, 17.150486, 19.39303, 13.7205, 8.9786448, 20.06536, 18.344304, 26.993906, 21.041662, 14.609307, 15.960254, 19.022286, 17.465961, 26.25322, 19.883679, 14.975242, 34.949267, 17.11937, 17.740299, 37.352651, 17.466611, 17.695697, 16.717903], 
-  error_x: {color: 'rgba(255,127,14,1)'}, 
-  error_y: {color: 'rgba(255,127,14,1)'}, 
-  hoverinfo: 'none',
-  //hoverinfo: ['text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text'], 
-  hoverinfosrc: 'dimiller:4:58bdc2', 
-  hoverlabel: {
-    bgcolor: 'white', 
-    font: {
-      color: 'black', 
-      family: '"lato",Arial,Helvetica,sans-serif', 
-      size: 12
-    }
-  }, 
-  hovertext: ['<b> Mobile County School District, AL </b> <br> 1962 Black students <br> 1703 White students', '<b> Atlanta City School District, GA </b> <br> 2783 Black students <br> 381 White students', '<b> Henrico County Public Schools, VA </b> <br> 1479 Black students <br> 1613 White students', '<b> Knox County School District, TN </b> <br> 593 Black students <br> 3279 White students', '<b> Baltimore City Public Schools, MD </b> <br> 4498 Black students <br> 391 White students', '<b> Columbus City School District, OH </b> <br> 2341 Black students <br> 914 White students', '<b> Howard County Public Schools, MD </b> <br> 937 Black students <br> 1738 White students', '<b> Forsyth County School District, GA </b> <br> 117 Black students <br> 2402 White students', '<b> Rutherford County School District, TN </b> <br> 661 Black students <br> 2190 White students', '<b> Virginia Beach City Public Schools, VA </b> <br> 1307 Black students <br> 2674 White students', '<b> Davis School District, UT </b> <br> 86 Black students <br> 4835 White students', '<b> Cleveland Municipal School District, OH </b> <br> 2252 Black students <br> 529 White students', '<b> Union County Public Schools, NC </b> <br> 440 Black students <br> 2367 White students', '<b> District of Columbia Public Schools, DC </b> <br> 2833 Black students <br> 362 White students', '<b> Baltimore County Public Schools, MD </b> <br> 3025 Black students <br> 3202 White students', '<b> Jordan School District, UT </b> <br> 55 Black students <br> 3645 White students', '<b> Frisco Independent School District, TX </b> <br> 436 Black students <br> 2141 White students', '<b> Anne Arundel County Public Schools, MD </b> <br> 1164 Black students <br> 3075 White students', '<b> Jefferson County School District, KY </b> <br> 2599 Black students <br> 3257 White students', '<b> Chesterfield County Public Schools, VA </b> <br> 1266 Black students <br> 2424 White students', '<b> Douglas County School District, CO </b> <br> 43 Black students <br> 3997 White students', '<b> Detroit City School District, MI </b> <br> 4225 Black students <br> 180 White students', '<b> Alpine School District, UT </b> <br> 52 Black students <br> 4987 White students', '<b> Guilford County Schools, NC </b> <br> 2262 Black students <br> 2053 White students', '<b> Greenville County School District, SC </b> <br> 1200 Black students <br> 3098 White students', '<b> Jefferson Parish School District, LA </b> <br> 1466 Black students <br> 983 White students', '<b> Clayton County School District, GA </b> <br> 2885 Black students <br> 103 White students', '<b> Cherry Creek School District, CO </b> <br> 455 Black students <br> 2332 White students', '<b> Duval County School District, FL </b> <br> 3554 Black students <br> 3015 White students', '<b> Plano Independent School District, TX </b> <br> 520 Black students <br> 1750 White students', '<b> Chandler Unified District, AZ </b> <br> 214 Black students <br> 1968 White students', '<b> Volusia County School District, FL </b> <br> 718 Black students <br> 2684 White students', '<b> Loudoun County Public Schools, VA </b> <br> 417 Black students <br> 3182 White students', '<b> Forsyth County Schools, NC </b> <br> 1235 Black students <br> 1720 White students', '<b> Capistrano Unified School District, CA </b> <br> 52 Black students <br> 2358 White students', '<b> Seminole County School District, FL </b> <br> 701 Black students <br> 2641 White students', '<b> Fulton County School District, GA </b> <br> 3055 Black students <br> 2186 White students', '<b> Hawaii Department of Education, HI </b> <br> 281 Black students <br> 1604 White students', '<b> Metropolitan Nashville Public School District, TN </b> <br> 2387 Black students <br> 1614 White students', '<b> Pasco County School District, FL </b> <br> 323 Black students <br> 3415 White students', '<b> Lewisville Independent School District, TX </b> <br> 419 Black students <br> 2082 White students', '<b> Manatee County School District, FL </b> <br> 447 Black students <br> 1820 White students', '<b> DeKalb County School District, GA </b> <br> 4586 Black students <br> 731 White students', '<b> Round Rock Independent School District, TX </b> <br> 370 Black students <br> 1660 White students', '<b> Elk Grove Unified School District, CA </b> <br> 671 Black students <br> 1053 White students', '<b> Milwaukee School District, WI </b> <br> 2841 Black students <br> 584 White students', '<b> Klein Independent School District, TX </b> <br> 543 Black students <br> 1346 White students', '<b> Fort Bend Independent School District, TX </b> <br> 1604 Black students <br> 1022 White students', '<b> Jefferson County School District, CO </b> <br> 60 Black students <br> 4208 White students', '<b> Conroe Independent School District, TX </b> <br> 292 Black students <br> 2283 White students', '<b> Collier County School District, FL </b> <br> 413 Black students <br> 1340 White students', '<b> Cobb County School District, GA </b> <br> 2766 Black students <br> 3350 White students', '<b> Katy Independent School District, TX </b> <br> 606 Black students <br> 2173 White students', '<b> Arlington Independent School District, TX </b> <br> 1173 Black students <br> 1039 White students', '<b> Washoe County School District, NV </b> <br> 106 Black students <br> 1961 White students', '<b> Wake County Schools, NC </b> <br> 2949 Black students <br> 6345 White students', '<b> Corona-Norco Unified School District, CA </b> <br> 228 Black students <br> 1153 White students', '<b> Polk County School District, FL </b> <br> 1458 Black students <br> 3033 White students', '<b> Prince William County Public Schools, VA </b> <br> 1352 Black students <br> 2248 White students', '<b> Mesa Unified District, AZ </b> <br> 215 Black students <br> 2447 White students', '<b> Garland Independent School District, TX </b> <br> 868 Black students <br> 870 White students', '<b> Tucson Unified District, AZ </b> <br> 232 Black students <br> 783 White students', '<b> Charlotte-Mecklenburg Schools, NC </b> <br> 4581 Black students <br> 3599 White students', '<b> Lee County School District, FL </b> <br> 958 Black students <br> 2980 White students', '<b> Philadelphia City School District, PA </b> <br> 6759 Black students <br> 1742 White students', '<b> Osceola County School District, FL </b> <br> 514 Black students <br> 1091 White students', '<b> San Bernardino City Unified School District, CA </b> <br> 475 Black students <br> 256 White students', '<b> Fairfax County Public Schools, VA </b> <br> 1424 Black students <br> 5529 White students', '<b> North East Independent School District, TX </b> <br> 397 Black students <br> 1486 White students', '<b> Montgomery County Public Schools, MD </b> <br> 2285 Black students <br> 3642 White students', '<b> Long Beach Unified School District, CA </b> <br> 859 Black students <br> 840 White students', '<b> Aldine Independent School District, TX </b> <br> 1060 Black students <br> 73 White students', '<b> San Antonio Independent School District, TX </b> <br> 243 Black students <br> 99 White students', '<b> Fresno Unified School District, CA </b> <br> 467 Black students <br> 539 White students', '<b> Austin Independent School District, TX </b> <br> 461 Black students <br> 1503 White students', '<b> Denver County School District, CO </b> <br> 823 Black students <br> 1184 White students', '<b> Pasadena Independent School District, TX </b> <br> 304 Black students <br> 244 White students', '<b> El Paso Independent School District, TX </b> <br> 170 Black students <br> 396 White students', '<b> Fort Worth Independent School District, TX </b> <br> 1320 Black students <br> 663 White students', '<b> Cypress-Fairbanks Independent School District, TX </b> <br> 1556 Black students <br> 2378 White students', '<b> Gwinnett County School District, GA </b> <br> 4519 Black students <br> 3635 White students', '<b> Palm Beach County School District, FL </b> <br> 3620 Black students <br> 4486 White students', '<b> Albuquerque Public Schools, NM </b> <br> 167 Black students <br> 1380 White students', '<b> San Diego City Unified School District, CA </b> <br> 828 Black students <br> 1986 White students', '<b> Orange County School District, FL </b> <br> 3730 Black students <br> 4022 White students', '<b> Hillsborough County School District, FL </b> <br> 3224 Black students <br> 5388 White students', '<b> Northside Independent School District, TX </b> <br> 546 Black students <br> 1441 White students', '<b> Broward County School District, FL </b> <br> 7539 Black students <br> 4404 White students', '<b> Dallas Independent School District, TX </b> <br> 2606 Black students <br> 441 White students', '<b> Houston Independent School District, TX </b> <br> 3663 Black students <br> 1272 White students', '<b> Clark County School District, NV </b> <br> 3457 Black students <br> 6859 White students', '<b> Chicago Public School District, IL </b> <br> 9941 Black students <br> 2329 White students', '<b> Dade County School District, FL </b> <br> 5517 Black students <br> 2166 White students', '<b> New York City Department Of Education, NY </b> <br> 19048 Black students <br> 10459 White students', '<b> Los Angeles Unified School District, CA </b> <br> 3533 Black students <br> 3666 White students'], 
-  hovertextsrc: 'dimiller:4:d4e387', 
-  line: {color: 'rgba(255,127,14,1)'}, 
-  marker: {
-    color: '#56B4E9', 
-    line: {color: '#222'}, 
-    opacity: 0.5, 
-    size: [35.8360633337, 41.6278482683, 31.8400585682, 22.1824862927, 51.4270070604, 38.6358151101, 26.4675191737, 12.9160046348, 23.1124447957, 30.2617616126, 11.8595898125, 38.0000366817, 19.8715620446, 41.9508496469, 43.1654362986, 10.5879364752, 19.8061356953, 28.868523575, 40.413472553, 29.8704512336, 10, 50.0117787067, 10.4475207746, 38.0720915132, 29.2269788478, 31.7240886426, 42.2837615903, 20.1143005143, 46.3253206177, 21.1226157853, 15.5258885628, 23.8556849253, 19.491179872, 29.5703575828, 10.4475207746, 23.6372062099, 43.3516940711, 16.9871142237, 38.9596829723, 17.8149370742, 19.5246664513, 19.9853465771, 51.8739919295, 18.679755618, 23.2450909201, 42.002264553, 21.4641468726, 32.9301330305, 10.8137070801, 17.2095880895, 19.4239649307, 41.5173677542, 22.364240202, 28.9586511273, 12.5592939795, 42.6894073242, 15.8483033879, 31.6524668268, 30.6842477982, 15.5492616063, 25.6811373274, 15.9385911313, 51.8487105934, 26.7010611617, 61.7964821242, 21.0322848666, 20.4318103991, 31.3458590948, 19.1517936629, 38.2372155761, 25.5762938461, 27.8006290144, 16.1829446614, 20.305624139, 20.2102736006, 25.1513241174, 17.4475589301, 14.437091433, 30.3845502735, 32.5167488614, 51.5340682765, 46.702555168, 14.3579772724, 25.2108958983, 47.3237170454, 44.3842757579, 21.5081568702, 64.9555744214, 40.4604437242, 46.9464815707, 45.7644847755, 73.7717112504, 56.3627953746, 100, 46.204558096], 
-    sizemode: 'diameter', 
-    sizeref: 2, 
-    sizesrc: 'dimiller:4:12e18f'
-  }, 
-  mode: 'markers', 
-  text: ['  <h3>Mobile County School District, AL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,962</td><td>10%</td></tr>    <tr><td>White</td><td> 1,703</td><td>17%</td></tr>  </tbody></table>  ', '  <h3>Atlanta City School District, GA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,783</td><td>5%</td></tr>    <tr><td>White</td><td>   381</td><td>51%</td></tr>  </tbody></table>  ', '  <h3>Henrico County Public Schools, VA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,479</td><td>21%</td></tr>    <tr><td>White</td><td> 1,613</td><td>42%</td></tr>  </tbody></table>  ', '  <h3>Knox County School District, TN</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   593</td><td>10%</td></tr>    <tr><td>White</td><td> 3,279</td><td>29%</td></tr>  </tbody></table>  ', '  <h3>Baltimore City Public Schools, MD</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 4,498</td><td>8%</td></tr>    <tr><td>White</td><td>   391</td><td>22%</td></tr>  </tbody></table>  ', '  <h3>Columbus City School District, OH</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,341</td><td>3%</td></tr>    <tr><td>White</td><td>   914</td><td>11%</td></tr>  </tbody></table>  ', '  <h3>Howard County Public Schools, MD</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   937</td><td>34%</td></tr>    <tr><td>White</td><td> 1,738</td><td>37%</td></tr>  </tbody></table>  ', '  <h3>Forsyth County School District, GA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   117</td><td>12%</td></tr>    <tr><td>White</td><td> 2,402</td><td>12%</td></tr>  </tbody></table>  ', '  <h3>Rutherford County School District, TN</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   661</td><td>5%</td></tr>    <tr><td>White</td><td> 2,190</td><td>14%</td></tr>  </tbody></table>  ', '  <h3>Virginia Beach City Public Schools, VA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,307</td><td>27%</td></tr>    <tr><td>White</td><td> 2,674</td><td>43%</td></tr>  </tbody></table>  ', '  <h3>Davis School District, UT</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>    86</td><td>7%</td></tr>    <tr><td>White</td><td> 4,835</td><td>9%</td></tr>  </tbody></table>  ', '  <h3>Cleveland Municipal School District, OH</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,252</td><td>2%</td></tr>    <tr><td>White</td><td>   529</td><td>3%</td></tr>  </tbody></table>  ', '  <h3>Union County Public Schools, NC</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   440</td><td>9%</td></tr>    <tr><td>White</td><td> 2,367</td><td>23%</td></tr>  </tbody></table>  ', '  <h3>District of Columbia Public Schools, DC</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,833</td><td>24%</td></tr>    <tr><td>White</td><td>   362</td><td>42%</td></tr>  </tbody></table>  ', '  <h3>Baltimore County Public Schools, MD</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,025</td><td>42%</td></tr>    <tr><td>White</td><td> 3,202</td><td>48%</td></tr>  </tbody></table>  ', '  <h3>Jordan School District, UT</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>    55</td><td>64%</td></tr>    <tr><td>White</td><td> 3,645</td><td>70%</td></tr>  </tbody></table>  ', '  <h3>Frisco Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   436</td><td>19%</td></tr>    <tr><td>White</td><td> 2,141</td><td>37%</td></tr>  </tbody></table>  ', '  <h3>Anne Arundel County Public Schools, MD</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,164</td><td>22%</td></tr>    <tr><td>White</td><td> 3,075</td><td>54%</td></tr>  </tbody></table>  ', '  <h3>Jefferson County School District, KY</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,599</td><td>8%</td></tr>    <tr><td>White</td><td> 3,257</td><td>25%</td></tr>  </tbody></table>  ', '  <h3>Chesterfield County Public Schools, VA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,266</td><td>76%</td></tr>    <tr><td>White</td><td> 2,424</td><td>83%</td></tr>  </tbody></table>  ', '  <h3>Douglas County School District, CO</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>    43</td><td>26%</td></tr>    <tr><td>White</td><td> 3,997</td><td>35%</td></tr>  </tbody></table>  ', '  <h3>Detroit City School District, MI</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 4,225</td><td>34%</td></tr>    <tr><td>White</td><td>   180</td><td>12%</td></tr>  </tbody></table>  ', '  <h3>Alpine School District, UT</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>    52</td><td>2%</td></tr>    <tr><td>White</td><td> 4,987</td><td>4%</td></tr>  </tbody></table>  ', '  <h3>Guilford County Schools, NC</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,262</td><td>14%</td></tr>    <tr><td>White</td><td> 2,053</td><td>34%</td></tr>  </tbody></table>  ', '  <h3>Greenville County School District, SC</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,200</td><td>12%</td></tr>    <tr><td>White</td><td> 3,098</td><td>29%</td></tr>  </tbody></table>  ', '  <h3>Jefferson Parish School District, LA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,466</td><td>12%</td></tr>    <tr><td>White</td><td>   983</td><td>27%</td></tr>  </tbody></table>  ', '  <h3>Clayton County School District, GA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,885</td><td>12%</td></tr>    <tr><td>White</td><td>   103</td><td>27%</td></tr>  </tbody></table>  ', '  <h3>Cherry Creek School District, CO</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   455</td><td>15%</td></tr>    <tr><td>White</td><td> 2,332</td><td>27%</td></tr>  </tbody></table>  ', '  <h3>Duval County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,554</td><td>18%</td></tr>    <tr><td>White</td><td> 3,015</td><td>24%</td></tr>  </tbody></table>  ', '  <h3>Plano Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   520</td><td>21%</td></tr>    <tr><td>White</td><td> 1,750</td><td>50%</td></tr>  </tbody></table>  ', '  <h3>Chandler Unified District, AZ</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   214</td><td>28%</td></tr>    <tr><td>White</td><td> 1,968</td><td>42%</td></tr>  </tbody></table>  ', '  <h3>Volusia County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   718</td><td>9%</td></tr>    <tr><td>White</td><td> 2,684</td><td>18%</td></tr>  </tbody></table>  ', '  <h3>Loudoun County Public Schools, VA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   417</td><td>51%</td></tr>    <tr><td>White</td><td> 3,182</td><td>49%</td></tr>  </tbody></table>  ', '  <h3>Forsyth County Schools, NC</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,235</td><td>18%</td></tr>    <tr><td>White</td><td> 1,720</td><td>44%</td></tr>  </tbody></table>  ', '  <h3>Capistrano Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>    52</td><td>15%</td></tr>    <tr><td>White</td><td> 2,358</td><td>28%</td></tr>  </tbody></table>  ', '  <h3>Seminole County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   701</td><td>30%</td></tr>    <tr><td>White</td><td> 2,641</td><td>47%</td></tr>  </tbody></table>  ', '  <h3>Fulton County School District, GA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,055</td><td>6%</td></tr>    <tr><td>White</td><td> 2,186</td><td>16%</td></tr>  </tbody></table>  ', '  <h3>Hawaii Department of Education, HI</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   281</td><td>21%</td></tr>    <tr><td>White</td><td> 1,604</td><td>30%</td></tr>  </tbody></table>  ', '  <h3>Metropolitan Nashville Public School District, TN</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,387</td><td>18%</td></tr>    <tr><td>White</td><td> 1,614</td><td>38%</td></tr>  </tbody></table>  ', '  <h3>Pasco County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   323</td><td>22%</td></tr>    <tr><td>White</td><td> 3,415</td><td>30%</td></tr>  </tbody></table>  ', '  <h3>Lewisville Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   419</td><td>14%</td></tr>    <tr><td>White</td><td> 2,082</td><td>37%</td></tr>  </tbody></table>  ', '  <h3>Manatee County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   447</td><td>9%</td></tr>    <tr><td>White</td><td> 1,820</td><td>20%</td></tr>  </tbody></table>  ', '  <h3>DeKalb County School District, GA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 4,586</td><td>7%</td></tr>    <tr><td>White</td><td>   731</td><td>29%</td></tr>  </tbody></table>  ', '  <h3>Round Rock Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   370</td><td>19%</td></tr>    <tr><td>White</td><td> 1,660</td><td>35%</td></tr>  </tbody></table>  ', '  <h3>Elk Grove Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   671</td><td>5%</td></tr>    <tr><td>White</td><td> 1,053</td><td>18%</td></tr>  </tbody></table>  ', '  <h3>Milwaukee School District, WI</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,841</td><td>1%</td></tr>    <tr><td>White</td><td>   584</td><td>10%</td></tr>  </tbody></table>  ', '  <h3>Klein Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   543</td><td>17%</td></tr>    <tr><td>White</td><td> 1,346</td><td>42%</td></tr>  </tbody></table>  ', '  <h3>Fort Bend Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,604</td><td>16%</td></tr>    <tr><td>White</td><td> 1,022</td><td>30%</td></tr>  </tbody></table>  ', '  <h3>Jefferson County School District, CO</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>    60</td><td>20%</td></tr>    <tr><td>White</td><td> 4,208</td><td>30%</td></tr>  </tbody></table>  ', '  <h3>Conroe Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   292</td><td>16%</td></tr>    <tr><td>White</td><td> 2,283</td><td>36%</td></tr>  </tbody></table>  ', '  <h3>Collier County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   413</td><td>28%</td></tr>    <tr><td>White</td><td> 1,340</td><td>44%</td></tr>  </tbody></table>  ', '  <h3>Cobb County School District, GA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,766</td><td>10%</td></tr>    <tr><td>White</td><td> 3,350</td><td>28%</td></tr>  </tbody></table>  ', '  <h3>Katy Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   606</td><td>25%</td></tr>    <tr><td>White</td><td> 2,173</td><td>42%</td></tr>  </tbody></table>  ', '  <h3>Arlington Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,173</td><td>23%</td></tr>    <tr><td>White</td><td> 1,039</td><td>43%</td></tr>  </tbody></table>  ', '  <h3>Washoe County School District, NV</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   106</td><td>19%</td></tr>    <tr><td>White</td><td> 1,961</td><td>35%</td></tr>  </tbody></table>  ', '  <h3>Wake County Schools, NC</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,949</td><td>22%</td></tr>    <tr><td>White</td><td> 6,345</td><td>52%</td></tr>  </tbody></table>  ', '  <h3>Corona-Norco Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   228</td><td>10%</td></tr>    <tr><td>White</td><td> 1,153</td><td>17%</td></tr>  </tbody></table>  ', '  <h3>Polk County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,458</td><td>11%</td></tr>    <tr><td>White</td><td> 3,033</td><td>19%</td></tr>  </tbody></table>  ', '  <h3>Prince William County Public Schools, VA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,352</td><td>22%</td></tr>    <tr><td>White</td><td> 2,248</td><td>39%</td></tr>  </tbody></table>  ', '  <h3>Mesa Unified District, AZ</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   215</td><td>17%</td></tr>    <tr><td>White</td><td> 2,447</td><td>29%</td></tr>  </tbody></table>  ', '  <h3>Garland Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   868</td><td>25%</td></tr>    <tr><td>White</td><td>   870</td><td>44%</td></tr>  </tbody></table>  ', '  <h3>Tucson Unified District, AZ</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   232</td><td>3%</td></tr>    <tr><td>White</td><td>   783</td><td>8%</td></tr>  </tbody></table>  ', '  <h3>Charlotte-Mecklenburg Schools, NC</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 4,581</td><td>16%</td></tr>    <tr><td>White</td><td> 3,599</td><td>50%</td></tr>  </tbody></table>  ', '  <h3>Lee County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   958</td><td>30%</td></tr>    <tr><td>White</td><td> 2,980</td><td>48%</td></tr>  </tbody></table>  ', '  <h3>Philadelphia City School District, PA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 6,759</td><td>2%</td></tr>    <tr><td>White</td><td> 1,742</td><td>3%</td></tr>  </tbody></table>  ', '  <h3>Osceola County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   514</td><td>27%</td></tr>    <tr><td>White</td><td> 1,091</td><td>38%</td></tr>  </tbody></table>  ', '  <h3>San Bernardino City Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   475</td><td>5%</td></tr>    <tr><td>White</td><td>   256</td><td>17%</td></tr>  </tbody></table>  ', '  <h3>Fairfax County Public Schools, VA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,424</td><td>40%</td></tr>    <tr><td>White</td><td> 5,529</td><td>60%</td></tr>  </tbody></table>  ', '  <h3>North East Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   397</td><td>29%</td></tr>    <tr><td>White</td><td> 1,486</td><td>53%</td></tr>  </tbody></table>  ', '  <h3>Montgomery County Public Schools, MD</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,285</td><td>43%</td></tr>    <tr><td>White</td><td> 3,642</td><td>50%</td></tr>  </tbody></table>  ', '  <h3>Long Beach Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   859</td><td>37%</td></tr>    <tr><td>White</td><td>   840</td><td>66%</td></tr>  </tbody></table>  ', '  <h3>Aldine Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,060</td><td>6%</td></tr>    <tr><td>White</td><td>    73</td><td>5%</td></tr>  </tbody></table>  ', '  <h3>San Antonio Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   243</td><td>17%</td></tr>    <tr><td>White</td><td>    99</td><td>47%</td></tr>  </tbody></table>  ', '  <h3>Fresno Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   467</td><td>13%</td></tr>    <tr><td>White</td><td>   539</td><td>30%</td></tr>  </tbody></table>  ', '  <h3>Austin Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   461</td><td>16%</td></tr>    <tr><td>White</td><td> 1,503</td><td>36%</td></tr>  </tbody></table>  ', '  <h3>Denver County School District, CO</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   823</td><td>65%</td></tr>    <tr><td>White</td><td> 1,184</td><td>79%</td></tr>  </tbody></table>  ', '  <h3>Pasadena Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   304</td><td>12%</td></tr>    <tr><td>White</td><td>   244</td><td>20%</td></tr>  </tbody></table>  ', '  <h3>El Paso Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   170</td><td>19%</td></tr>    <tr><td>White</td><td>   396</td><td>39%</td></tr>  </tbody></table>  ', '  <h3>Fort Worth Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,320</td><td>13%</td></tr>    <tr><td>White</td><td>   663</td><td>31%</td></tr>  </tbody></table>  ', '  <h3>Cypress-Fairbanks Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 1,556</td><td>25%</td></tr>    <tr><td>White</td><td> 2,378</td><td>52%</td></tr>  </tbody></table>  ', '  <h3>Gwinnett County School District, GA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 4,519</td><td>32%</td></tr>    <tr><td>White</td><td> 3,635</td><td>53%</td></tr>  </tbody></table>  ', '  <h3>Palm Beach County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,620</td><td>18%</td></tr>    <tr><td>White</td><td> 4,486</td><td>32%</td></tr>  </tbody></table>  ', '  <h3>Albuquerque Public Schools, NM</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   167</td><td>22%</td></tr>    <tr><td>White</td><td> 1,380</td><td>38%</td></tr>  </tbody></table>  ', '  <h3>San Diego City Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   828</td><td>15%</td></tr>    <tr><td>White</td><td> 1,986</td><td>34%</td></tr>  </tbody></table>  ', '  <h3>Orange County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,730</td><td>27%</td></tr>    <tr><td>White</td><td> 4,022</td><td>44%</td></tr>  </tbody></table>  ', '  <h3>Hillsborough County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,224</td><td>31%</td></tr>    <tr><td>White</td><td> 5,388</td><td>57%</td></tr>  </tbody></table>  ', '  <h3>Northside Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>   546</td><td>19%</td></tr>    <tr><td>White</td><td> 1,441</td><td>39%</td></tr>  </tbody></table>  ', '  <h3>Broward County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 7,539</td><td>17%</td></tr>    <tr><td>White</td><td> 4,404</td><td>32%</td></tr>  </tbody></table>  ', '  <h3>Dallas Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 2,606</td><td>21%</td></tr>    <tr><td>White</td><td>   441</td><td>56%</td></tr>  </tbody></table>  ', '  <h3>Houston Independent School District, TX</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,663</td><td>16%</td></tr>    <tr><td>White</td><td> 1,272</td><td>33%</td></tr>  </tbody></table>  ', '  <h3>Clark County School District, NV</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,457</td><td>11%</td></tr>    <tr><td>White</td><td> 6,859</td><td>28%</td></tr>  </tbody></table>  ', '  <h3>Chicago Public School District, IL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 9,941</td><td>18%</td></tr>    <tr><td>White</td><td> 2,329</td><td>55%</td></tr>  </tbody></table>  ', '  <h3>Dade County School District, FL</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 5,517</td><td>21%</td></tr>    <tr><td>White</td><td> 2,166</td><td>38%</td></tr>  </tbody></table>  ', '  <h3>New York City Department Of Education, NY</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td>19,048</td><td>18%</td></tr>    <tr><td>White</td><td>10,459</td><td>35%</td></tr>  </tbody></table>  ', '  <h3>Los Angeles Unified School District, CA</h3>  <table><tbody>    <tr><th>Group</th><th>Size</th><th>Rate</th></tr>    <tr><td>Black</td><td> 3,533</td><td>9%</td></tr>    <tr><td>White</td><td> 3,666</td><td>26%</td></tr>  </tbody></table>  '], 
-  textfont: {
-    size: [35.8360633337, 41.6278482683, 31.8400585682, 22.1824862927, 51.4270070604, 38.6358151101, 26.4675191737, 12.9160046348, 23.1124447957, 30.2617616126, 11.8595898125, 38.0000366817, 19.8715620446, 41.9508496469, 43.1654362986, 10.5879364752, 19.8061356953, 28.868523575, 40.413472553, 29.8704512336, 10, 50.0117787067, 10.4475207746, 38.0720915132, 29.2269788478, 31.7240886426, 42.2837615903, 20.1143005143, 46.3253206177, 21.1226157853, 15.5258885628, 23.8556849253, 19.491179872, 29.5703575828, 10.4475207746, 23.6372062099, 43.3516940711, 16.9871142237, 38.9596829723, 17.8149370742, 19.5246664513, 19.9853465771, 51.8739919295, 18.679755618, 23.2450909201, 42.002264553, 21.4641468726, 32.9301330305, 10.8137070801, 17.2095880895, 19.4239649307, 41.5173677542, 22.364240202, 28.9586511273, 12.5592939795, 42.6894073242, 15.8483033879, 31.6524668268, 30.6842477982, 15.5492616063, 25.6811373274, 15.9385911313, 51.8487105934, 26.7010611617, 61.7964821242, 21.0322848666, 20.4318103991, 31.3458590948, 19.1517936629, 38.2372155761, 25.5762938461, 27.8006290144, 16.1829446614, 20.305624139, 20.2102736006, 25.1513241174, 17.4475589301, 14.437091433, 30.3845502735, 32.5167488614, 51.5340682765, 46.702555168, 14.3579772724, 25.2108958983, 47.3237170454, 44.3842757579, 21.5081568702, 64.9555744214, 40.4604437242, 46.9464815707, 45.7644847755, 73.7717112504, 56.3627953746, 100, 46.204558096], 
-    sizesrc: 'dimiller:4:62933d'
-  }, 
-  textsrc: 'dimiller:4:e22d9e', 
-  type: 'scatter', 
-  xaxis: 'x', 
-  xsrc: 'dimiller:4:70d95e', 
-  yaxis: 'y', 
-  ysrc: 'dimiller:4:ac1a3f'
-};
-data = [trace1, trace2];
-layout = {
-  annotations: [
-    {
-      x: 0.85, 
-      y: 2.7, 
-      font: {size: 13}, 
-      showarrow: false, 
-      text: '↑ White higher', 
-      xanchor: 'left', 
-      xref: 'paper'
-    }, 
-    {
-      x: 0.85, 
-      y: -2.1, 
-      font: {size: 13}, 
-      showarrow: false, 
-      text: '↓ Black higher', 
-      xanchor: 'left', 
-      xref: 'paper'
-    }
-  ], 
-  font: {
-    color: 'black', 
-    family: '"lato",Arial,Helvetica,sans-serif', 
-    size: 14
-  }, 
-  hovermode: 'closest', 
-  margin: {
-    r: 10, 
-    t: 25, 
-    b: 40, 
-    l: 10
-  }, 
-  showlegend: false, 
-  xaxis: {
-    automargin: true, 
-    domain: [0, 1], 
-    nticks: 14, 
-    range: [-1.1, 6.1], 
-    showgrid: false, 
-    showline: true, 
-    ticks: 'outside', 
-    title: 'White — Black Test Score Gap', 
-    titlefont: {
-      color: 'black', 
-      family: '"lato",Arial,Helvetica,sans-serif', 
-      size: 18
-    }, 
-    zeroline: false
-  }, 
-  yaxis: {
-    automargin: true, 
-    domain: [0, 1], 
-    fixedrange: true, 
-    nticks: 14, 
-    range: [-32, 52], 
-    showgrid: false, 
-    showline: true, 
-    ticks: 'outside', 
-    title: 'White — Black Enrollment Gap', 
-    titlefont: {
-      color: 'black', 
-      family: '"lato",Arial,Helvetica,sans-serif', 
-      size: 18
-    }, 
-    zeroline: true
-  }
-};
-
-Plotly.plot('plotly-div', {
-  data: data,
-  layout: layout,
-  config: config
-});
-customPlotly("plotly-div");
-
-//wrapper function that adds custom JS to a specified plotly div
-function customPlotly(divName) {
-
-  //get the div selection
-  var div = document.getElementById(divName);
-  var d3div = d3.select(div);
-
-  //insert HTML elements where needed
-  d3div.append("div").attr("class", "plotly-notifier");
-  d3div.append("div").attr("class", "mapboxgl-popup")
-       .append("div").attr("class", "mapboxgl-popup-content");
-
-  //helper functions that make the interaction behavior panning after user 
-  //zooms, and zooming once reset to the original axis ranges
-  function makePan(e) {
-
-    d3div.select(".modebar-btn[data-val=reset]").style("display", "inline-block");
-    $(div).unbind('plotly_relayout');
-    Plotly.relayout(divName, {dragmode: 'pan'});
-    setTimeout(function() {
-      $(div).on('plotly_relayout', makeZoom);
-      d3div.selectAll("*").style('transition', "0s");
-    }, 200);
-  }
-
-  var xRange = layout.xaxis.range.slice();
-  function makeZoom(event, d) {
-
-    //don't change back to zoom mode unless new axes are original
-    if (typeof d['xaxis.range[0]'] === "undefined") return;
-    if ((d['xaxis.range[0]'].toFixed(1) != xRange[0].toFixed(1)) || 
-        (d['xaxis.range[1]'].toFixed(1) != xRange[1].toFixed(1))) return;
-
-    d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
-    $(div).unbind('plotly_relayout');
-    Plotly.relayout(divName, {dragmode: 'zoom'});
-    setTimeout(function() {
-      $(div).on('plotly_relayout', makePan);
-      d3div.selectAll("*").style('transition', "opacity 0s, transform 0.5s, x 0.5s, y 0.5s");
-    }, 200);
-  }
-
-  $(div).on('plotly_relayout', makePan);
-  d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
-
-
-  //use my own formatting for the tooltip - definately hackish
-  function highlightPoint(data) { 
-
-    //don't do anything if not hovered over a dot
-    var d = data.points[0];
-    if (d.data.mode !== "markers") return;
-
-    //make hovered point more opaque, non-hovered less opaque
-    var points = d3div.selectAll(".points path");
-    var i = d.pointIndex;
-    points.style("opacity", 0.2);
-    d3.select(points[0][i]).style("opacity", 1);
-
-    //change the tooltip HTML and then position it
-    var tooltip = d3div.select(".mapboxgl-popup");
-    tooltip.style("display", "block")
-           .select(".mapboxgl-popup-content")
-              .html(data.points[0].text);
-
-    //get the data point's pixel x & y position
-    //https://plot.ly/javascript/hover-events/
-    var x = d.xaxis.l2p(d.x);
-    var y = d.yaxis.l2p(d.y);
-
-    //but we need to also translate by the plot container
-    var container = d3.select(data.event.srcElement);
-    x += +container.attr("x");
-    y += +container.attr("y");
-
-    //vertically center the tooltip based on 1/2 its height
-    y -= tooltip[0][0].clientHeight/2;
-
-    //left position the tooltip if not enough room on the rightside
-    x += d["marker.size"]/4;
-    x += 10;  
-
-    //now finally change the position of the tooltip
-    tooltip.style("left", Math.round(x) + "px")
-           .style("top",  Math.round(y) + "px");
-  }
-
-  //bind the highlight point function to both hover and click events
-  div.on('plotly_hover', highlightPoint);
-  div.on('plotly_click', highlightPoint);
-
-  //reset after hovering out
-  div.on('plotly_unhover', function(data) { 
-    d3div.selectAll(".points path")
-          .style("opacity", 0.5)
-    d3div.select(".mapboxgl-popup")
-          .style("display", "none");
+//helper function will be used to return an array of 
+//variable values for a dataset formatted as JSON
+Array.prototype.get = function(name) {
+  var x = [];
+  this.forEach(function(d) {
+    x.push(d[name])
   });
+  return x;
 }
 
+//functions that returns a tooltip HTML
+var WB_enroll_tooltip = function(d) {
+  return  '<h3>' + d.name + '</h3>' +
+          '<table><tbody>' +
+            '<tr><th>Group</th><th>Size</th><th>Rate</th></tr>' +
+            '<tr><td>Black</td><td>' + d3.format(",")(+d.BL08) + '</td><td>' + Math.round(+d.BL08_alg_p*100) + '%</td></tr>' +
+            '<tr><td>White</td><td>' + d3.format(",")(+d.WH08) + '</td><td>' + Math.round(+d.WH08_alg_p*100) + '%</td></tr>' + 
+          '</tbody></table>';
+};
+var WB_access_tooltip = function(d) {
+  return  '<h3>' + d.name + '</h3>' +
+          '<table><tbody>' +
+            '<tr><th>Group</th><th>Size</th><th>Rate</th></tr>' +
+            '<tr><td>Black</td><td>' + d3.format(",")(+d.BL08) + '</td><td>' + Math.round(+d.BL08_access_p*100) + '%</td></tr>' +
+            '<tr><td>White</td><td>' + d3.format(",")(+d.WH08) + '</td><td>' + Math.round(+d.WH08_access_p*100) + '%</td></tr>' + 
+          '</tbody></table>';
+};
 
-})();
+d3.csv('data/table_top100.csv', function(data) {
+
+  //remove the nation
+  data.shift();
+
+  //multiply by 100 to get percentages
+  data.forEach(function(d) {
+    d.WB_diff = +d.WB_diff * 100;
+    d.WH_diff = +d.WH_diff * 100;
+    d.WB_access = +d.WB_access * 100;
+    d.WH_access = +d.WH_access * 100;
+  });
+
+
+
+  var WB_test_enroll = {
+    data: data,
+    tooltip: WB_enroll_tooltip,
+    lines: [
+      {func: function(x) { return 100*(.0196163 + .0575691*(+x)); }, 
+      text: 'Prediction line'},
+    ],
+    xLim: [-1.1, 6.1],
+    yLim: [-32, 52],
+    xTitle: 'White — Black Test Score Gap',
+    yTitle: 'White — Black Enrollment Gap',
+    xVar: "mn_wbg_SEDA",
+    yVar: "WB_diff",
+    sizeFunc: function(d) { return Math.max(5, Math.sqrt(+d.BL08)/3); },
+    dotColor: '#56B4E9',
+    divName: 'plotly-div'
+  };
+
+  var WB_seg_access = {
+    data: data,
+    tooltip: WB_access_tooltip,
+    lines: [
+      {func: function(x) { return 100*(+x); }, 
+      text: 'Maximum possible access gap'},
+      {func: function(x) { return -100*(+x); }, 
+      text: 'Maximum possible access gap'},
+    ],
+    xLim: [0, 1],
+    //yLim: [-40, 70],
+    yLim: [-100, 100],
+    xTitle: 'White — Black Segregation',
+    yTitle: 'White — Black Access Gap',
+    xVar: "WB_dissim",
+    yVar: "WB_access",
+    sizeFunc: function(d) { return Math.max(5, Math.sqrt(+d.BL08)/3); },
+    dotColor: '#56B4E9',
+    divName: 'complexAccess'
+  };
+
+  var WB_seg_access_simp = {
+    data: data,
+    tooltip: WB_access_tooltip,
+    lines: [],
+    xLim: [0, 1],
+    yLim: [-40, 70],
+    //yLim: [-100, 100],
+    xTitle: 'White — Black Segregation',
+    yTitle: 'White — Black Access Gap',
+    xVar: "WB_dissim",
+    yVar: "WB_access",
+    sizeFunc: function(d) { return Math.max(5, Math.sqrt(+d.BL08)/3); },
+    dotColor: '#56B4E9',
+    divName: 'simpleAccess'
+  };
+
+
+  scatterPlotly(WB_test_enroll);
+  scatterPlotly(WB_seg_access);
+  scatterPlotly(WB_seg_access_simp);
+
+});
+
+
+//s is shorthand for settings
+function scatterPlotly(s) {
+
+  //get a dataset with non-missing x and y values
+  var filtered = [];
+  s.data.forEach(function(d) {
+    if ((d[s.xVar] !== "") && (d[s.yVar] !== "")) filtered.push(d);
+  });
+
+  //initialize variables
+  var xLine = d3.range(s.xLim[0], s.xLim[1], (s.xLim[1] - s.xLim[0])/200);
+  xLine.push(s.xLim[1]);
+  var traces = [];
+
+  //add the lines
+  s.lines.forEach(function(line) {
+    traces.push({
+      x: xLine,
+      y: xLine.map(line.func),
+      hoverinfo: 'text',
+      hovertext: line.text,
+      hoverlabel: {
+        bgcolor: 'white', 
+        font: {
+          color: 'black', 
+          family: '"lato",Arial,Helvetica,sans-serif', 
+          size: 12
+        }
+      }, 
+      line: {
+        color: 'darkgrey', 
+        dash: 'dot'
+      }, 
+      mode: 'lines', 
+      type: 'scatter', 
+      xaxis: 'x', 
+      yaxis: 'y' 
+    })
+  });
+
+  //add the scatter points
+  traces.push({
+    x: filtered.get(s.xVar),
+    y: filtered.get(s.yVar),
+    hoverinfo: 'none',
+    marker: {
+      color: s.dotColor, 
+      line: {color: '#222'}, 
+      opacity: 0.5, 
+      size: filtered.map(s.sizeFunc),
+      sizemode: 'diameter'
+    }, 
+    mode: 'markers', 
+    text: filtered.map(s.tooltip),
+    type: 'scatter', 
+    xaxis: 'x', 
+    yaxis: 'y'
+  });
+
+  //specify the layout
+  var layout = {
+    annotations: [
+      {
+        x: 0.85, 
+        y: 2.7+.3, 
+        font: {size: 13}, 
+        showarrow: false, 
+        text: '↑ White higher', 
+        xanchor: 'left', 
+        xref: 'paper'
+      }, 
+      {
+        x: 0.85, 
+        y: -2.1-.4, 
+        font: {size: 13}, 
+        showarrow: false, 
+        text: '↓ Black higher', 
+        xanchor: 'left', 
+        xref: 'paper'
+      }
+    ], 
+    font: {
+      color: 'black', 
+      family: '"lato",Arial,Helvetica,sans-serif', 
+      size: 14
+    }, 
+    hovermode: 'closest', 
+    margin: {
+      r: 10, 
+      t: 25, 
+      b: 40, 
+      l: 10
+    }, 
+    showlegend: false, 
+    xaxis: {
+      automargin: true, 
+      domain: [0, 1], 
+      nticks: 14, 
+      range: s.xLim, 
+      showgrid: false, 
+      showline: true, 
+      ticks: 'outside', 
+      title: s.xTitle, 
+      titlefont: {
+        color: 'black', 
+        family: '"lato",Arial,Helvetica,sans-serif', 
+        size: 18
+      }, 
+      zeroline: false
+    }, 
+    yaxis: {
+      automargin: true, 
+      domain: [0, 1], 
+      fixedrange: true, 
+      nticks: 14, 
+      range: s.yLim, 
+      showgrid: false, 
+      showline: true, 
+      ticks: 'outside', 
+      title: s.yTitle, 
+      titlefont: {
+        color: 'black', 
+        family: '"lato",Arial,Helvetica,sans-serif', 
+        size: 18
+      }, 
+      zeroline: true
+    }
+  };
+
+  //suppress elements from modebar
+  var config = {
+    displaylogo: false, 
+    collaborate: false,
+    modeBarButtonsToRemove: ["lasso2d", "toggleSpikelines", "hoverClosestCartesian",
+                             "pan2d", "zoom2d", "hoverCompareCartesian", "select2d", 
+                             "autoScale2d"]
+  };
+
+  //first plot using Plotly's functions
+  Plotly.plot(s.divName, {
+    data: traces,
+    layout: layout,
+    config: config
+  });
+
+  //customize using code written below
+  customPlotly(s.divName);
+
+  //wrapper function that adds custom JS to a specified plotly div
+  function customPlotly(divName) {
+
+    //get the div selection
+    var div = document.getElementById(divName);
+    var d3div = d3.select(div);
+
+    //insert HTML elements where needed
+    d3div.append("div").attr("class", "plotly-notifier");
+    d3div.append("div").attr("class", "mapboxgl-popup")
+         .append("div").attr("class", "mapboxgl-popup-content");
+
+    //helper functions that make the interaction behavior panning after user 
+    //zooms, and zooming once reset to the original axis ranges
+    function makePan(e) {
+
+      d3div.select(".modebar-btn[data-val=reset]").style("display", "inline-block");
+      $(div).unbind('plotly_relayout');
+      Plotly.relayout(divName, {dragmode: 'pan'});
+      setTimeout(function() {
+        $(div).on('plotly_relayout', makeZoom);
+        d3div.selectAll("*").style('transition', "0s");
+      }, 200);
+    }
+
+    var xRange = s.xLim.slice();
+    function makeZoom(event, d) {
+
+      //don't change back to zoom mode unless new axes are original
+      if (typeof d['xaxis.range[0]'] === "undefined") return;
+      if ((d['xaxis.range[0]'].toFixed(1) != xRange[0].toFixed(1)) || 
+          (d['xaxis.range[1]'].toFixed(1) != xRange[1].toFixed(1))) return;
+
+      d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
+      $(div).unbind('plotly_relayout');
+      Plotly.relayout(divName, {dragmode: 'zoom'});
+      setTimeout(function() {
+        $(div).on('plotly_relayout', makePan);
+        d3div.selectAll("*").style('transition', "opacity 0s, transform 0.5s, x 0.5s, y 0.5s");
+      }, 200);
+    }
+
+    $(div).on('plotly_relayout', makePan);
+    d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
+
+
+    //use my own formatting for the tooltip - definately hackish
+    function highlightPoint(data) { 
+
+      //don't do anything if not hovered over a dot
+      var d = data.points[0];
+      if (d.data.mode !== "markers") return;
+
+      //make hovered point more opaque, non-hovered less opaque
+      var points = d3div.selectAll(".points path");
+      var i = d.pointIndex;
+      points.style("opacity", 0.2);
+      d3.select(points[0][i]).style("opacity", 1);
+
+      //change the tooltip HTML and then position it
+      var tooltip = d3div.select(".mapboxgl-popup");
+      tooltip.style("display", "block")
+             .select(".mapboxgl-popup-content")
+                .html(data.points[0].text);
+
+      //get the data point's pixel x & y position
+      //https://plot.ly/javascript/hover-events/
+      var x = d.xaxis.l2p(d.x);
+      var y = d.yaxis.l2p(d.y);
+
+      //but we need to also translate by the plot container
+      var container = d3.select(data.event.srcElement);
+      x += +container.attr("x");
+      y += +container.attr("y");
+
+      //vertically center the tooltip based on 1/2 its height
+      y -= tooltip[0][0].clientHeight/2;
+
+      //left position the tooltip if not enough room on the rightside
+      x += d["marker.size"]/2;
+      x += 10;  
+
+      //now finally change the position of the tooltip
+      tooltip.style("left", Math.round(x) + "px")
+             .style("top",  Math.round(y) + "px");
+    }
+
+    //bind the highlight point function to both hover and click events
+    div.on('plotly_hover', highlightPoint);
+    div.on('plotly_click', highlightPoint);
+
+    //reset after hovering out
+    div.on('plotly_unhover', function(data) { 
+      d3div.selectAll(".points path")
+            .style("opacity", 0.5)
+      d3div.select(".mapboxgl-popup")
+            .style("display", "none");
+    });
+  }
+}
