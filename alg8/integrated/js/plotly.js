@@ -169,7 +169,7 @@ function scatterPlotly(s) {
       {
         x: 0.85, 
         y: 2.7+.3, 
-        font: {size: 13}, 
+        font: {size: 11}, 
         showarrow: false, 
         text: '↑ White higher', 
         xanchor: 'left', 
@@ -178,7 +178,7 @@ function scatterPlotly(s) {
       {
         x: 0.85, 
         y: -2.1-.4, 
-        font: {size: 13}, 
+        font: {size: 11}, 
         showarrow: false, 
         text: '↓ Black higher', 
         xanchor: 'left', 
