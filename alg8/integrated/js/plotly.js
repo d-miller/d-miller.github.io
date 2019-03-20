@@ -298,7 +298,7 @@ function scatterPlotly(s) {
     d3div.select(".modebar-btn[data-val=reset]").style("display", "none");
 
 
-    //use my own formatting for the tooltip - definately hackish
+    //use my own formatting for the tooltip - a bit hackish
     function highlightPoint(data) { 
 
       //don't do anything if not hovered over a dot
@@ -312,27 +312,46 @@ function scatterPlotly(s) {
       d3.select(points[0][i]).style("opacity", 1);
 
       //change the tooltip HTML and then position it
+      //we use the class mapboxgl-popup so we can borrow CSS rules
+      //from the mapbox library, even though this visualization isn't
+      //implemented in it (selecting within the d3div ensures that we
+      //don't select a popup from other parts of the webpage such as the map)
       var tooltip = d3div.select(".mapboxgl-popup");
       tooltip.style("display", "block")
              .select(".mapboxgl-popup-content")
-                .html(data.points[0].text);
+                .html(data.points[0].text);       //we smuggle in HTML through the text property
 
       //get the data point's pixel x & y position
-      //https://plot.ly/javascript/hover-events/
+      //see: https://plot.ly/javascript/hover-events/
       var x = d.xaxis.l2p(d.x);
       var y = d.yaxis.l2p(d.y);
 
-      //but we need to also translate by the plot container
+      //translate by the plot container's starting position
       var container = d3.select(data.event.srcElement);
+
       x += +container.attr("x");
       y += +container.attr("y");
 
       //vertically center the tooltip based on 1/2 its height
       y -= tooltip[0][0].clientHeight/2;
 
-      //left position the tooltip if not enough room on the rightside
-      x += d["marker.size"]/2;
-      x += 10;  
+      //place the tooltip 10 pixels away from the bubble's extent
+      var padding = 10 + d["marker.size"]/2;
+
+      //left align x position if there's not enough space to the right
+      //to show the tooltip without going beyond the content div width
+      var contentW = d3.select("#content")[0][0].clientWidth;
+      var tooltipW = tooltip[0][0].clientWidth;
+      var leftAlign = x + padding + tooltipW + 5 > contentW;
+
+      //place to the right if left align isn't needed
+      //subtract from the x position if left alignment is needed
+      if (!leftAlign) {
+        x += padding;         
+      } else {
+        x -= padding;
+        x -= tooltipW;
+      }
 
       //now finally change the position of the tooltip
       tooltip.style("left", Math.round(x) + "px")

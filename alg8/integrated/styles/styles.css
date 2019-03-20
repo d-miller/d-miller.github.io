@@ -22,6 +22,7 @@
   4.3. Individual rows
   4.4. Highlighted row changes
   4.5. Misc. body text not under .row group 
+5. Plotly scatter plots
 */
 
 /**********************
@@ -487,14 +488,10 @@ https://github.com/openstreetmap/iD/issues/3020
   text-anchor: start;
 }
 
-/*********************
-** 5: SCATTER PLOTS **
-**********************/
+/****************************
+** 5: PLOTLY SCATTER PLOTS **
+****************************/
 
-/* 4.1: General text 
-dominant-baseline is commented because IE doesn't support it: 
-https://github.com/openstreetmap/iD/issues/3020
-*/
 .js-plotly-plot {
   height: 400px;
   position: relative;
