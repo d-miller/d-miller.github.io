@@ -90,7 +90,8 @@ selected interactive graphics*/
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10;
+  left: 0;
+  z-index: 999;
   height: 50px;
   background-color: #e7e8e9;
   background-image: url(//www.air.org/sites/all/themes/f1ux/images/nav-border.png); 
