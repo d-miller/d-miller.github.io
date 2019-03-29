@@ -1,3 +1,5 @@
+var baseURL = "//d-miller.github.io/alg8/a3902/";
+
 //helper function will be used to return an array of 
 //variable values for a dataset formatted as JSON
 Array.prototype.get = function(name) {
@@ -26,7 +28,7 @@ var WB_access_tooltip = function(d) {
           '</tbody></table>';
 };
 
-d3.csv('data/table_top100.csv', function(data) {
+d3.csv(baseURL + 'data/table_top100.csv', function(data) {
 
   //remove the nation
   data.shift();
