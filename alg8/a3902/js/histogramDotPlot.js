@@ -1,3 +1,5 @@
+var baseURL = "//d-miller.github.io/alg8/a3902/";
+
 //detect if using Internet Explorer
 //https://jsfiddle.net/alvaroAV/svvz7tkn/
 var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1;
@@ -67,7 +69,7 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
 
 
 //load district-level data
-d3.csv('data/table_all.csv', function(data) {
+d3.csv(baseURL + 'data/table_all.csv', function(data) {
 
   // A little coercion, since the CSV is untyped.
   // todo: update how stats based on < 10 students is handled
@@ -1094,7 +1096,7 @@ d3.selectAll(".top100 text").attr("dy", "0.6ex");
 
 //load data...
 var data;
-d3.csv("data/table_top100.csv", function(dataCSV) {
+d3.csv(baseURL + "data/table_top100.csv", function(dataCSV) {
 
   	//make sure the data can be accessed globally
   	data = dataCSV;

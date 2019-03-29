@@ -1,3 +1,5 @@
+var baseURL = "//d-miller.github.io/alg8/a3902/";
+
 //Mapbox IDs
 var mapStyle = "mapbox://styles/d-miller/cjry6bv1a2dvy1ftegyvp6753";
 //var stateSource = "mapbox://d-miller.9kxhea4q";
@@ -216,7 +218,7 @@ var geo_lat = [];
 var geo_lon = [];
 var geo_name = [];
 var geo_schl = [];
-d3.csv("data/geoLoc.csv", function(d) {
+d3.csv(baseURL + "data/geoLoc.csv", function(d) {
   d.forEach(function(d) {      //comment this line if using D3 version 5
     geo_lat.push(+d.lat);
     geo_lon.push(+d.lon);
