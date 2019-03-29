@@ -1,0 +1,316 @@
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='//api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <script src='//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+  <script src="//d3js.org/d3.v5.min.js"></script>
+  <link rel='stylesheet' href='//api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+  <link href='//api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+
+.mapboxgl-ctrl-geocoder {
+	min-width: 250px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.85em;
+  margin: 10px;
+  text-align: left;
+}
+
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib,
+.mapboxgl-ctrl-logo {
+  display: none;
+}
+
+
+/*table styling*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+td, th {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+/**
+* Create a position for the map
+* on the page */
+#map {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*.altContent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 75%;
+  margin-left: 25%;
+}*/
+
+/*#scrollStory {
+    width: 25%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}*/
+section {
+    padding:  25px 20px;
+    line-height: 15px;
+    margin-bottom: 400px;
+    /*border-bottom: 1px solid #ddd;*/
+    opacity: 1;
+    font-size: 15px;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 300px;
+}
+
+/**
+* Set rules for how the map overlays
+* (info box and legend) will be displayed
+* on the page. */
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  /* margin-right: 10px; */
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+.mapboxgl-ctrl-compass {
+  display: none !important;
+}
+
+.mapboxgl-popup-content {
+  width: 200px;
+  pointer-events: none;
+  border-radius: 10px;
+  padding: 5px 6px 10px 15px;
+}
+
+
+#features {
+  height: 150px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+}
+
+#features table {
+  margin-left: 5px;
+}
+
+#legend {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  margin-bottom: 10px;
+  /*height: 135px;
+  width: 250px;*/
+  /*height: 160px;
+  width: 130px;*/
+  height: 180px;
+  width: 210px;
+}
+
+/*#legendTitle {
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: center;
+}*/
+
+select {
+  margin-bottom: 10px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#legendContent {
+  font-size: 13px;
+}
+
+table {
+  margin-top: 10px;
+}
+
+.AIRlogo {
+    background-image: url('https://www.air.org/sites/all/themes/f1ux/images/homepage-refresh/logo.png');
+    background-size: 175px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+
+    display: block;
+    width: 190px;
+    /*max-width: 50%;*/
+    height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+}
+
+/*.AIRlogo2 {
+    background-image: url('https://www.air.org/sites/all/themes/f1ux/images/homepage-refresh/logo.png');
+    background-size: 175px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    position: fixed;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+
+    display: block;
+    width: 190px;
+    height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 100%;
+    white-space:nowrap;
+}*/
+
+  </style>
+<div style="position: relative;">
+<div id='map'>
+  <div class="mapboxgl-ctrl-top-left">
+    <div class="mapboxgl-ctrl" style="display: block;">
+      <a class="AIRlogo" href="https://www.air.org/" target="_blank"></a>
+    </div>
+  </div>
+</div>
+
+<!--<div id='scrollStory'>
+
+    <section id='nation' data-pos='{"center": [-95, 39], "zoom": 3.3}' data-display="overall">
+        <h3>The Nation</h3>
+        <p>Algebra is the foundation for students' future success in science, technology, engineering, and math. Do they have the opportunity to take it early? Using national data, we look at students' access to and enrollment in Algebra I in the 8th grade.</p><br><br><br><p>Scroll down to see more.</p>
+    </section>
+    <section id='Chicago' data-pos='{"center": [-87.6847, 41.8369], "zoom": 9}' data-display="overall" data-hover="true">
+        <h3>Chicago</h3>
+        <p>Data released Friday as part of the Illinois Report Card show 28.4 percent of the state's eighth-graders passed Algebra I — a figure some administrators question because the state only counted students in Algebra I classes labeled "enriched" or "honors," perhaps leaving out students who learned algebra in more general math courses. It's not clear from the data how many students took a qualifying algebra class and, of those students, how many passed. Still, a wide variance in passing rates at individual school districts across Chicago and its suburbs — from 97.1 percent in Schaumburg to 18 percent at Chicago Public Schools to 0.5 percent in Elmwood Park — has left school officials with opposing views on how the data should be interpreted. Some, such as those in Schaumburg District 54, see the measurement as affirmation of major steps taken to improve math instruction and support teachers in recent years.</p>
+    </section>
+    <section id='ChicagoBW' data-pos='{"center": [-87.6847, 41.8369], "zoom": 9}' data-display="BW" data-hover="true">
+        <h3>Chicago - Black-White Gap</h3>
+        <p>The achievement gap between white and minority students within Chicago Public Schools has shrunk, according to new scores from a national assessment. But that shift wasn’t caused by upswings in black and Hispanic student scores, but rather drops by white students. Results from the 2017 National Assessment of Educational Progress show white fourth- and eighth-grade students performed more than 3 percent worse on math and reading tests than they did in 2015, while minority students generally showed slight improvements over the same time period.</p>
+    </section>
+    <section id='ChicagoHW' data-pos='{"center": [-87.6847, 41.8369], "zoom": 9}' data-display="HW" data-hover="true">
+        <h3>Chicago - Hispanic-White Gap</h3>
+        <p>The achievement gap between white and minority students within Chicago Public Schools has shrunk, according to new scores from a national assessment. But that shift wasn’t caused by upswings in black and Hispanic student scores, but rather drops by white students. Results from the 2017 National Assessment of Educational Progress show white fourth- and eighth-grade students performed more than 3 percent worse on math and reading tests than they did in 2015, while minority students generally showed slight improvements over the same time period.</p>
+    </section>
+    <section id='Neighborhoods' data-altDiv="ChiNeigh">
+        <h3>Chicago Neighborhoods</h3>
+        <p>The achievement gap between white and minority students within Chicago Public Schools has shrunk, according to new scores from a national assessment. But that shift wasn’t caused by upswings in black and Hispanic student scores, but rather drops by white students. Results from the 2017 National Assessment of Educational Progress show white fourth- and eighth-grade students performed more than 3 percent worse on math and reading tests than they did in 2015, while minority students generally showed slight improvements over the same time period.</p>
+    </section>
+    <section id='Graphics' data-altDiv="shinyApp">
+        <h3>Interactive Graphics</h3>
+        <p>The achievement gap between white and minority students within Chicago Public Schools has shrunk, according to new scores from a national assessment. But that shift wasn’t caused by upswings in black and Hispanic student scores, but rather drops by white students. Results from the 2017 National Assessment of Educational Progress show white fourth- and eighth-grade students performed more than 3 percent worse on math and reading tests than they did in 2015, while minority students generally showed slight improvements over the same time period.</p>
+    </section>
+    <section id='Elk-Grove' data-pos='{"center": [-121.20435437560093, 38.438182464787275], "zoom": 9.5}' data-display="overall" data-hover="true">
+        <h3>Elk Grove</h3>
+        <p>The Elk Grove Unified School District (EGUSD) is the fifth-largest school district in California located in southern Sacramento County. EGUSD covers 320 square miles and includes 67 schools: 42 elementary schools, nine middle schools, nine high schools, four alternative education schools, one charter school, a special education school, an adult school, and a (K-8) virtual academy. Offering a multitude of educational programs, including over 40 career-themed academies and pathways within 14 industry sectors, we prepare our students for college and career by supporting them with the means to be creative problem solvers; self-aware, self-reliant, and self-disciplined; technically literate; effective communicators and collaborators; and engaged in the community as individuals with integrity. We integrate rigorous academics with career-based learning and real world workplace experiences and ensure that Every Student is Learning, in Every Classroom, in Every Subject, Every Day.</p>
+    </section>
+    <section id='Oakland' data-pos='{"center": [-83.3362, 42.5922], "zoom": 8}' data-display="overall">
+        <h3>Oakland</h3>
+        <p>Oakland Schools is a regional service agency that offers support services to school personnel that are best delivered regionally and provide cost, size and quality advantages to those we serve. Oakland Schools is an autonomous, tax-supported public school district governed by Michigan General School Laws and is one of 56 intermediate school districts (ISDs) established in Michigan in 1962.</p>
+    </section>
+    <section id='LA' data-pos='{"center": [-118.33539428707957, 34.06270401106458], "zoom": 9}' data-display="overall" data-hover="true">
+        <h3>LA County</h3>
+        <p>In January of this year (2013), the California Board of Education made a big decision regarding math Grade 8. This decision follows the SB 1200 previously released on September 27, 2012 which authorized the State Superintendent to recommend to the state board, and the state board to adopt, reject, or modify the adopted common core content standards for mathematics by March 30, 2013. In 2014-15, the course for Grade 8 mathematics will no longer be Algebra 1.  Instead, the Board decided to adopt the Grade 8 standards that came with the adopted Common Core State Standards (CCSS) as the course for Grade 8 mathematics students. These students will also be assessed on the CCSS standards using the SMARTER Balanced Assessments.  The CA Board of Education also decided that a pathway be included in the Mathematics Framework for students who are ready to take Algebra 1 at the middle school level. More details will be known when California Mathematics Framework is released this later this Fall (2013).</p>
+    </section>
+    <section id='Bay-Area' data-pos='{"center": [-122.0608, 37.6910], "zoom": 8}' data-display="overall">
+        <h3>Bay Area</h3>
+        <p>Four years ago, school district leaders did something counterintuitive in this tech-laden metropolis, where STEM isn't just a buzzword but practically a way of life. They got rid of accelerated middle-school math classes. Part of an ambitious project to end the relentless assignment of underserved students into lower-level math, the city now requires all students to take math courses of equal rigor through geometry, in classrooms that are no longer segregated by ability. That means no "honors" classes. No gifted track. No weighted GPAs until later in high school. No 8th grade Algebra 1.</p>
+    </section>
+    <section id='Seattle' data-pos='{"center": [-122.29909610641698, 47.63603389067313], "zoom": 9.5}' data-display="overall" data-hover="true">
+        <h3>Seattle</h3>
+        <p>Seattle Public Schools Mathematics Pathway is designed for prepare all Seattle students for college and careers, new high school graduation requirements, and state exams in Algebra I and Geometry. The recommended pathway from middle through high school is to complete the three-year middle school CMP2 sequence (Math 6, Math 7, and 8), followed by Algebra I, Geometry, Algebra II, and PreCalculus or a higher-level mathematics course.</p>
+    </section>
+    <section id='Minnesota' data-pos='{"center": [-93.5494684621491, 46.549767763263986], "zoom": 5.2}' data-display="overall" data-hover="true">
+        <h3>Minnesota</h3>
+        <p>Minnesota established a new high school graduation requirement that, beginning with the class of 2015, all students must complete an Algebra I credit by the end of eighth grade.</p>
+    </section>
+</div>-->
+
+
+<div class="map-overlay" id="legend">
+  <fieldset>
+    <label>Grade 8 Algebra</label>
+    <select id='displayVar' name='displayVar'>
+      <option value='overall'>Overall enrollment rate</option>
+      <option value='WB'>White-Black enrollment gap</option>
+      <option value='WB_access'>White-Black access gap</option>
+      <option value='WH'>White-Hisp. enrollment gap</option>
+      <option value='WH_access'>White-Hisp. access gap</option>
+    </select>
+  </fieldset>
+  
+  <div id="legendContent">
+    <div><span class="legend-key" style="background-color: #dadaeb;"></span><span>0-9%</span></div>
+    <div><span class="legend-key" style="background-color: #bcbddc;"></span><span>10-19%</span></div>
+    <div><span class="legend-key" style="background-color: #9e9ac8;"></span><span>20-29%</span></div>
+    <div><span class="legend-key" style="background-color: #807dba;"></span><span>30-39%</span></div>
+    <div><span class="legend-key" style="background-color: #6a51a3;"></span><span>40-49%</span></div>
+    <div><span class="legend-key" style="background-color: #4a1486;"></span><span>50+%</span></div>
+  </div>
+</div>
+
+<!--<div id="shinyApp" class="altContent hidden">
+  <iframe width="100%" height="100%" src="https://dimillerair.shinyapps.io/alg8graphs/" frameborder="0"></iframe>
+</div>
+<div id="ChiNeigh" class="altContent hidden">
+  <iframe width="100%" height="100%" src="https://d-miller.github.io/alg8/Chicago.html" frameborder="0"></iframe>
+</div>-->
+</div> <!-- position:relative; -->
