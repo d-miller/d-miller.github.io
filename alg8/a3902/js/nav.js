@@ -28,13 +28,18 @@ $(document).ready(function(){
     }
   }
 
+  //helper function that gets the y position of an element by ID
+  function getY(id) {
+    return $(id)[0].getBoundingClientRect().y + $(document).scrollTop();
+  }
+
   //highlight the active navigation link in the navbar
   var section = 0;
   function checkActiveNav() {
 
     //get the positions of each section
     var navPos = [];
-    navIDs.forEach(function(d) { navPos.push($(d).position().top - 100); });
+    navIDs.forEach(function(d) { navPos.push(getY(d) - 100); });
 
     //determine the active section based on the scroll position
     var curr = $(document).scrollTop();
