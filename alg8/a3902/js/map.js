@@ -535,9 +535,15 @@ function describeGap(props, schoolLevel) {
   var headerHTML = "<h3>" + props.name + "</h3>";
 
   //get data
-  var g1n = props.BL08;
+  if (displayVar.substr(0,2) === "WB") {
+    var g1n = props.BL08;
+    var g1name = "Black";
+  }
+  if (displayVar.substr(0,2) === "WH") {
+    var g1n = props.HI08;
+    var g1name = "Hispanic";
+  }
   var g2n = props.WH08;
-  var g1name = "Black";
   var g2name = "White";
 
   //don't compute gap for individual schools
