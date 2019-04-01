@@ -4,12 +4,16 @@ var baseURL = "//d-miller.github.io/alg8/a3902/";
 var mapStyle = "mapbox://styles/d-miller/cjry6bv1a2dvy1ftegyvp6753";
 //var stateSource = "mapbox://d-miller.9kxhea4q";
 //var distSource = "mapbox://d-miller.2r746qu6";
-var stateSource = "mapbox://d-miller.8sa9h84b";
+//var stateSource = "mapbox://d-miller.8sa9h84b";
+var stateSource = "mapbox://d-miller.6uuwaa0j"; //UPDATED 4.1.19
 //var distSource = "mapbox://d-miller.0185gp4e"; //D9 simplification
-var distSource = "mapbox://d-miller.ab3gzhrn"; //D10 simplification
+//var distSource = "mapbox://d-miller.ab3gzhrn"; //D10 simplification
+var distSource = "mapbox://d-miller.19j9ocla"; //D10 simplification - UPDATED 4.1.19
 
-var schlSource = "mapbox://d-miller.5h19yk8k";
-var schlSourceLayer = "school-8i3ui3";
+//var schlSource = "mapbox://d-miller.5h19yk8k";
+//var schlSourceLayer = "school-8i3ui3";
+var schlSource = "mapbox://d-miller.3o45xrpd"; //UPDATED 4.1.19
+var schlSourceLayer = "school-46sh67"; //UPDATED 4.1.19
 
 //maximum fill opacity of states & districts
 var mapOpacity = .8;
@@ -907,7 +911,7 @@ map.on('load', function() {
                     "hsl(0, 4%, 32%)"
                 ],
                 "circle-stroke-width": 2,
-                "circle-color": defaultProps.fill
+                "circle-color": defaultProps.school_fill
             }
         });
 
