@@ -56,7 +56,7 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
     //{varName: "WH08_log", 100, min: 0, max: 10000, width: w, title: "Number of White 8th Graders"},
     {varName: "BL08_log", min: 0, max: 4.8, width: w, title: "Black Students", tickFormat: pwr10},
     {varName: "HI08_log", min: 0, max: 4.8, width: w, title: "Hispanic Students", tickFormat: pwr10},
-    //{varName: "WH08_log", min: 0, max: 4.8, width: w, title: "White Students", tickFormat: pwr10},
+    {varName: "WH08_log", min: 0, max: 4.8, width: w, title: "White Students", tickFormat: pwr10},
     {varName: "G08_log", min: 0, max: 4.8, width: w, title: "Total Number", tickFormat: pwr10},
     {varName: "BL_perc", min: 0, max: 100, width: w2, title: "Black Students (%)"},
     {varName: "HI_perc", min: 0, max: 100, width: w2, title: "Hispanic Students (%)"},
