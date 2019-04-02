@@ -205,7 +205,7 @@ function createCharts(data, chartSettings) {
   //accessing the max histogram value is a bit hack-ish right now but works
   filter("BL08_log", [logC(10), histograms[varIndex["BL08_log"]].max], false);
   filter("HI08_log", [logC(10), histograms[varIndex["HI08_log"]].max], false);
-  //filter("WH08_log", [logC(10), histograms[varIndex["WH08_log"]].max], false);
+  filter("WH08_log", [logC(10), histograms[varIndex["WH08_log"]].max], false);
 
   //filter by at least 10 white students
   cf.dimension(function(d) { return +d.WH08; }).filterRange([10, 1e6]);
