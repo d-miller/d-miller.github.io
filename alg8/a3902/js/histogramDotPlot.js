@@ -513,6 +513,11 @@ var grpColors = {
 //create content SVG group
 var g = svg.append("g").attr("transform", "translate(" + pad.left + ", " + pad.top + ")");
 
+//general function to update the hover class
+function updateHover(selection, hovered) {
+  d3.select(selection).classed("hover", hovered);
+}
+
 ///////////////
 //  HEADERS  //
 ///////////////
@@ -532,12 +537,24 @@ activeTile.classed("active", true);
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
-header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).on("click", updateEnroll);
-header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).on("click", updateAccess);
+header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).attr("class", "enroll");
+header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).attr("class", "access");
 
 //add text about ranking and re-ranking
-var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 20).attr("class", "rerankText").on("click", updateEnroll);
-var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 20).attr("class", "rerankText").on("click", updateAccess);
+var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 20).attr("class", "rerankText enroll");
+var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 20).attr("class", "rerankText access");
+
+//custom event handlers
+function enrollHover()   { updateHover(".headerTile .enroll", true);  }
+function enrollUnhover() { updateHover(".headerTile .enroll", false); }
+function accessHover()   { updateHover(".headerTile .access", true);  }
+function accessUnhover() { updateHover(".headerTile .access", false); }
+
+//add event handlers
+headerTiles.selectAll(".enroll").on("click", updateEnroll).on("mouseover", enrollHover).on("mouseout", enrollUnhover);
+headerTiles.selectAll(".access").on("click", updateAccess).on("mouseover", accessHover).on("mouseout", accessUnhover);
+header.selectAll(".enroll").on("click", updateEnroll).on("mouseover", enrollHover).on("mouseout", enrollUnhover);
+header.selectAll(".access").on("click", updateAccess).on("mouseover", accessHover).on("mouseout", accessUnhover);
 
 //use pointer cursor to suggest clickability
 header.selectAll("text").style("cursor", "pointer");
@@ -570,6 +587,10 @@ g.append("g").attr("transform", "translate(" + padGraph2 + ",-3)")
 g.append("text").attr("x", padGraph1 + panelW/2).attr("y", -30).text("Enrolled in Grade 8 Algebra")
 g.append("text").attr("x", padGraph2 + panelW/2).attr("y", -30).text("Has Access to Early Algebra")
 
+////////////
+// LEGEND //
+////////////
+
 //add a legend
 var xLegendGap = 100
 var legend = g.append("g").attr("class", "legend").attr("transform", "translate(105,-80)");
@@ -582,53 +603,61 @@ legend.append("rect")
 	.attr("stroke-width", ".75")
   .attr("class", "BL")
 	.attr("value", "BL")
-  .classed("active", true)
-	.on("click", updateBL);
+  .classed("active", true);
 legend.append("circle")
 	.attr("r", 5)
-	.style("fill", grpColors["BL"])
-	.on("click", updateBL);
+  .attr("class", "BL")  
+	.style("fill", grpColors["BL"]);
 legend.append("circle")
 	.attr("cx", xLegendGap)
+  .attr("class", "BL")
 	.attr("r", 5)
-	.style("fill", grpColors["WH"])
-	.on("click", updateBL);
+	.style("fill", grpColors["WH"]);
 legend.append("text")
 	.text("Black")
-	.attr("x", 8)
-	.on("click", updateBL);
+  .attr("class", "BL")
+	.attr("x", 8);
 legend.append("text")
 	.text("White")
-	.attr("x", xLegendGap+8)
-	.on("click", updateBL);
+  .attr("class", "BL")
+	.attr("x", xLegendGap+8);
 
 var yLegendGap = 30;
 legend.append("rect")
 	.attr({x: -15, y: -15+yLegendGap, width: xLegendGap+70, height: 30})
 	.attr("value", "HI")
-  .attr("class", "HI")
-	.on("click", updateHI);
+  .attr("class", "HI");
 legend.append("circle")
 	.attr("cy", yLegendGap)
+  .attr("class", "HI")
 	.attr("r", 5)
-	.style("fill", grpColors["HI"])
-	.on("click", updateHI);
+	.style("fill", grpColors["HI"]);
 legend.append("circle")
 	.attr("cx", xLegendGap)
 	.attr("cy", yLegendGap)
+  .attr("class", "HI")
 	.attr("r", 5)
-	.style("fill", grpColors["WH"])
-	.on("click", updateHI);
+	.style("fill", grpColors["WH"]);
 legend.append("text")
 	.text("Hispanic")
+  .attr("class", "HI")
 	.attr("x", 8)
-	.attr("y", yLegendGap)
-	.on("click", updateHI);
+	.attr("y", yLegendGap);
 legend.append("text")
 	.text("White")
+  .attr("class", "HI")
 	.attr("x", xLegendGap+8)
-	.attr("y", yLegendGap)
-	.on("click", updateHI);
+	.attr("y", yLegendGap);
+
+//custom event handlers
+function BL_hoverGap()   { updateHover(".legend rect.BL", true);  }
+function BL_unhoverGap() { updateHover(".legend rect.BL", false); }
+function HI_hoverGap()   { updateHover(".legend rect.HI", true);  }
+function HI_unhoverGap() { updateHover(".legend rect.HI", false); }
+
+//add event handlers
+legend.selectAll(".BL").on("click", updateBL).on("mouseover", BL_hoverGap).on("mouseout", BL_unhoverGap);
+legend.selectAll(".HI").on("click", updateHI).on("mouseover", HI_hoverGap).on("mouseout", HI_unhoverGap);
 
 //add legend title
 legend.append("text").text("Select gap:").attr("x", -108).attr("y", 15).attr("class", "title");

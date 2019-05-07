@@ -436,6 +436,10 @@ https://github.com/openstreetmap/iD/issues/3020
   opacity: 0;
   fill: #eee;
 }
+.top100 .headerTile rect.hover,
+.top100 .legend rect.hover {
+  opacity: 0.4;
+}
 .top100 .headerTile rect.active,
 .top100 .legend rect.active {
   opacity: 1;
