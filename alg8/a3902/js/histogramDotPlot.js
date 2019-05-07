@@ -8,6 +8,9 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
 // USE D3 and CROSSFILTER FOR THE FILTERING HISTOGRAMS //
 /////////////////////////////////////////////////////////
 
+//define in a global context so it can be accessed across code sections
+var dotPlotResetStudentN;
+
 //wrap all code inside a function to control namespace
 //and prevent accidental overwriting of other JS code
 (function() {
@@ -201,11 +204,62 @@ function createCharts(data, chartSettings) {
     renderAll();
   });
 
-  //preselect on at least 10 students in each group
-  //accessing the max histogram value is a bit hack-ish right now but works
-  filter("BL08_log", [logC(10), histograms[varIndex["BL08_log"]].max], false);
-  filter("HI08_log", [logC(10), histograms[varIndex["HI08_log"]].max], false);
-  filter("WH08_log", [logC(10), histograms[varIndex["WH08_log"]].max], false);
+  //filters based on at least a minimum size per group 
+  //(e.g., at least 10 Black and 10 White students)
+  dotPlotResetStudentN = function(n, mGrp) {
+
+    //accessing the max histogram value is a bit hack-ish right now but works
+    filter(mGrp + "08_log", [logC(n), histograms[varIndex[mGrp + "08_log"]].max], false);
+    filter("WH08_log", [logC(n), histograms[varIndex["WH08_log"]].max], false);
+
+    //reset the other minority group filter
+    var otherGrp = (mGrp === "BL") ? "HI" : "BL";
+    filter(otherGrp + "08_log", [logC(0), histograms[varIndex[mGrp + "08_log"]].max], false);
+    renderAll();
+  }
+
+  //preselect on at least 50 students in each group
+  filter("BL08_log", [logC(50), histograms[varIndex["BL08_log"]].max], false);
+  filter("WH08_log", [logC(50), histograms[varIndex["WH08_log"]].max], false);
+  //filter("BL08_log", [logC(10), histograms[varIndex["BL08_log"]].max], false);
+
+  //filter based on racial demographics dropdown
+  dotPlotFilterDemograhics = function(selection, mGrp) {
+
+    //reset the other minority group filter
+    var otherGrp = (mGrp === "BL") ? "HI" : "BL";
+    filter(otherGrp + "_perc", [0, 100], false);
+
+    //if no restriction...
+    filter("WH_perc", [0, 100], false);
+    filter(mGrp + "_perc", [0, 100], false);
+
+    //if filter based on %Black or %Hispanic...
+    if (selection === "majorM" || selection === "predomM") {
+      filter("WH_perc", [0, 100], false);
+      var minlim = (selection === "majorM") ? 50 : 75;
+      filter(mGrp + "_perc", [minlim, 100], false);
+    }
+
+    //if filter based on %White...
+    if (selection === "majorW" || selection === "predomW") {
+      filter(mGrp + "_perc", [0, 100], false);
+      var minlim = (selection === "majorW") ? 50 : 75;
+      filter("WH_perc", [minlim, 100], false);
+    }
+
+    //update dot plot
+    renderAll();
+  }
+
+  //if the racial demographic drop-down changes...
+  d3.select("#dotPlotRacialDemo").on("change", function() {
+
+    //determine the active minority group and change the settings
+    var mGrp = d3.select("#dotPlot g.legend rect.active").attr("value");
+    dotPlotFilterDemograhics(this.value, mGrp);
+  });
+
 
   //filter by at least 10 white students
   cf.dimension(function(d) { return +d.WH08; }).filterRange([10, 1e6]);
@@ -882,6 +936,17 @@ function updateGap(mGrp, adj) {
 	d3.selectAll(".legend rect").classed("active", false);
 	d3.select(".legend rect." + mGrp).classed("active", true);
 
+
+  //update the minimum student size 
+  var minN = +d3.select("#dotPlotMinN")[0][0].value;
+  dotPlotResetStudentN(minN, mGrp);
+  dropDownText = ["At least 10 " + mName + " students and 10 White students",
+                  "At least 50 " + mName + " students and 50 White students",
+                  "At least 250 " + mName + " students and 250 White students"];
+  d3.selectAll("#dotPlotMinN option")
+    .data(dropDownText)
+    .text(function(d) { return d;});
+
 	//helper function that updates one of the two graphs
 	function updateOneGraph(classes, padding, varName1, varName2) {
 
@@ -923,6 +988,10 @@ function updateGap(mGrp, adj) {
 	//then update the rank after a delay
 	setTimeout(updateRank, 800);
 }
+
+d3.select("#dotPlotMinN").on("change", function() {
+  dotPlotResetStudentN(+this.value, activeM);
+});
 
 
 ////////////////////////////////////
