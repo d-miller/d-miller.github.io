@@ -964,9 +964,9 @@ function updateGap(mGrp, adj) {
   //update the minimum student size 
   var minN = +d3.select("#dotPlotMinN")[0][0].value;
   dotPlotResetStudentN(minN, mGrp);
-  dropDownText = ["At least 10 " + mName + " students and 10 White students",
-                  "At least 50 " + mName + " students and 50 White students",
-                  "At least 250 " + mName + " students and 250 White students"];
+  dropDownText = ["At least 10 " + mName + " and 10 White students",
+                  "At least 50 " + mName + " and 50 White students",
+                  "At least 250 " + mName + " and 250 White students"];
   d3.selectAll("#dotPlotMinN option")
     .data(dropDownText)
     .text(function(d) { return d;});
