@@ -48,8 +48,8 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
   var margin = {top: 10, right: 10, bottom: 20, left: 10};
   
   var histograms = [
-    {varName: "WB_diff",   min: -70, max: 70, width: w, title: "White-Black Enrollment Gap"},
-    {varName: "WH_diff",   min: -70, max: 70, width: w, title: "White-Hispanic Enrollment Gap"},
+    {varName: "WB_enroll",   min: -70, max: 70, width: w, title: "White-Black Enrollment Gap"},
+    {varName: "WH_enroll",   min: -70, max: 70, width: w, title: "White-Hispanic Enrollment Gap"},
     {varName: "WB_access", min: -70, max: 70, width: w, title: "White-Black Access Gap"},
     {varName: "WH_access", min: -70, max: 70, width: w, title: "White-Hispanic Access Gap"},
     //{varName: "BL08_log", min: 0, max: 10000, width: w, title: "Number of Black 8th Graders"},
@@ -76,8 +76,8 @@ d3.csv(baseURL + 'data/table_all.csv', function(data) {
   data.forEach(function(d) {
 
     //address the gaps first
-    d.WB_diff = (+d.WH08_alg_p - +d.BL08_alg_p)*100;
-    d.WH_diff = (+d.WH08_alg_p - +d.HI08_alg_p)*100;
+    d.WB_enroll = (+d.WH08_alg_p - +d.BL08_alg_p)*100;
+    d.WH_enroll = (+d.WH08_alg_p - +d.HI08_alg_p)*100;
     d.WB_access = (+d.WH08_access_p - +d.BL08_access_p)*100;
     d.WH_access = (+d.WH08_access_p - +d.HI08_access_p)*100;
     /*d.WB_suppress = (+d.WH08 < 10) || (+d.BL08 >= 10);
