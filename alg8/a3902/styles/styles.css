@@ -61,7 +61,14 @@ fieldset label {
 .graphTitle {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 3px;
+  color: black;
+}
+.graphSubtitle {
+  text-align: center;
+  margin-top: 0;
   margin-bottom: 10px;
+  font-size: 1em;
   color: black;
 }
 
