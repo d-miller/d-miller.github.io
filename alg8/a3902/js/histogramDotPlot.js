@@ -83,6 +83,11 @@ d3.csv(baseURL + 'data/table_all.csv', function(data) {
     d.WH_enroll = (+d.WH08_alg_p - +d.HI08_alg_p)*100;
     d.WB_access = (+d.WH08_access_p - +d.BL08_access_p)*100;
     d.WH_access = (+d.WH08_access_p - +d.HI08_access_p)*100;
+    d.WB_enroll_ratio = +d.WH08_alg_p / +d.BL08_alg_p;
+    d.WH_enroll_ratio = +d.WH08_alg_p / +d.HI08_alg_p;
+    d.WB_access_ratio = +d.WH08_access_p / +d.BL08_access_p;
+    d.WH_access_ratio = +d.WH08_access_p / +d.HI08_access_p;
+
     /*d.WB_suppress = (+d.WH08 < 10) || (+d.BL08 >= 10);
     d.WH_suppress = (+d.WH08 < 10) || (+d.HI08 >= 10);
     d.WB_diff = d.WB_suppress ? null : (+d.WH08_alg_p - +d.BL08_alg_p)*100;
@@ -891,9 +896,17 @@ function newRanks(data, varName) {
 	}
 }
 
+//functions to sort by the risk ratio or risk difference
+var rankRatio = false;
+d3.select("#dotPlotRankMetric").on("change", function() {
+  rankRatio = this.value === "ratio";
+  updateRank();
+});
+
+
 //event handlers for reranking the districts
-var rankedVar = "WB_diff";
-function updateRank(varName, delay) {
+var rankedVar = "WB_enroll";
+updateRank = function(varName, delay) {
 
 	//if no update, update by the active tile (could happen after changing the gap)aa
 	if (typeof varName === "undefined" || varName == null) varName = activeTile.attr("value");
@@ -907,11 +920,12 @@ function updateRank(varName, delay) {
   if (accessRankText) accessRankText.text((varName === "access") ? "(Ranked)" : "(Click here to rerank)");
   if (enrollRankText) enrollRankText.text((varName === "enroll") ? "(Ranked)" : "(Click here to rerank)");
 
+  //change to sorting by the risk ratio if requested
+  if (rankRatio) varName = varName + "_ratio";
+
   //figure out new ranking based on the active minority group
- 	if (varName === "enroll") var end = "diff";
-  if (varName === "access") var end = "access";
- 	if (activeM === "BL") rankedVar = "WB_" + end;
- 	if (activeM === "HI") rankedVar = "WH_" + end;
+ 	if (activeM === "BL") rankedVar = "WB_" + varName;
+ 	if (activeM === "HI") rankedVar = "WH_" + varName;
  	newRanks(data, rankedVar);
 
   	//rebind the data, update the vertical translation of the districts
@@ -936,6 +950,15 @@ function updateGap(mGrp, adj) {
 	d3.selectAll(".legend rect").classed("active", false);
 	d3.select(".legend rect." + mGrp).classed("active", true);
 
+
+  //update the text for the ranking metric drop down
+  if (mGrp === "BL") var mName = "Black";
+  if (mGrp === "HI") var mName = "Hispanic";
+  dropDownText = ["Rate difference (White − " + mName + " rate)",
+                  "Rate ratio (White / " + mName + " rate)"];
+  d3.selectAll("#dotPlotRankMetric option")
+    .data(dropDownText)
+    .text(function(d) { return d;});
 
   //update the minimum student size 
   var minN = +d3.select("#dotPlotMinN")[0][0].value;
@@ -1204,6 +1227,17 @@ d3.csv(baseURL + "data/table_top100.csv", function(dataCSV) {
       d.WH08_alg_p_adj = (+d.WH08_alg_p / +d.WH08_access_p);
       d.BL08_alg_p_adj = (+d.BL08_alg_p / +d.BL08_access_p);
       d.HI08_alg_p_adj = (+d.HI08_alg_p / +d.HI08_access_p);
+
+      //essentially rename from diff if needed (e.g., WB_diff -> WB_enroll)
+      if (typeof d.WB_enroll === "undefined") d.WB_enroll = d.WB_diff;
+      if (typeof d.WH_enroll === "undefined") d.WH_enroll = d.WH_diff;
+
+      //calculate relative risk (also change name for diff vs. enroll)
+      d.WB_enroll_ratio = +d.WH08_alg_p / +d.BL08_alg_p;
+      d.WH_enroll_ratio = +d.WH08_alg_p / +d.HI08_alg_p;
+      d.WB_access_ratio = +d.WH08_access_p / +d.BL08_access_p;
+      d.WH_access_ratio = +d.WH08_access_p / +d.HI08_access_p;
+
       d.const1 = 1;
     });
 
