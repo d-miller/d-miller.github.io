@@ -590,9 +590,8 @@ var updateAccess = function() { updateRank("access"); };
 //var tileW = 200;
 var tileW = panelW;
 var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",2)");
-var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, class: "enroll", value: "enroll"}).on("click", updateEnroll);
-headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, class: "access", value: "access"}).on("click", updateAccess);
-activeTile.classed("active", true);
+var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, class: "enroll active", value: "enroll"});
+headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, class: "access", value: "access"});
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
@@ -652,12 +651,13 @@ g.append("text").attr("x", padGraph2 + panelW/2).attr("y", -30).text("Has Access
 
 //add a legend
 var xLegendGap = 100
-var legend = g.append("g").attr("class", "legend").attr("transform", "translate(105,-80)");
+var legend = g.append("g").attr("class", "legend").attr("transform", "translate(105,-85)");
 var updateBL = function() { updateGap("BL"); };
 var updateHI = function() { updateGap("HI"); };
 
+var boxH = 30;
 legend.append("rect")
-	.attr({x: -15, y: -15, width: xLegendGap+70, height: 30})
+	.attr({x: -15, y: -boxH/2, width: xLegendGap+70, height: boxH})
 	.attr("stroke", "#333")
 	.attr("stroke-width", ".75")
   .attr("class", "BL")
@@ -681,9 +681,9 @@ legend.append("text")
   .attr("class", "BL")
 	.attr("x", xLegendGap+8);
 
-var yLegendGap = 30;
+var yLegendGap = 36;
 legend.append("rect")
-	.attr({x: -15, y: -15+yLegendGap, width: xLegendGap+70, height: 30})
+	.attr({x: -15, y: -boxH/2+yLegendGap, width: xLegendGap+70, height: boxH})
 	.attr("value", "HI")
   .attr("class", "HI");
 legend.append("circle")
@@ -928,17 +928,18 @@ updateRank = function(varName, delay) {
  	if (activeM === "HI") rankedVar = "WH_" + varName;
  	newRanks(data, rankedVar);
 
-  	//rebind the data, update the vertical translation of the districts
-  	d3.selectAll("g.row.district").data(data, function(d) { return +d.id; })
+  //rebind the data, update the vertical translation of the districts
+  d3.selectAll("g.row.district").data(data, function(d) { return +d.id; })
    	 .transition().duration(delay)
    	 .attr("transform", function(d) { return "translate(0," + vertSpace*(+d.rank + 1) + ")"; });
 }
 
 
 //event handler for using adjusted enrollment rates
-d3.select("#dotAdj").on("change", function() {
-  updateGap(activeM, this.checked);
+d3.select("#dotPlotSchoolPop").on("change", function() {
+  updateGap(activeM, this.value === "offering");
 })
+
 
 
 //event handler for changing gap
