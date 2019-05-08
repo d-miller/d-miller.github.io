@@ -211,7 +211,15 @@ function createCharts(data, chartSettings) {
 
   //filters based on at least a minimum size per group 
   //(e.g., at least 10 Black and 10 White students)
-  dotPlotResetStudentN = function(n, mGrp) {
+  dotPlotResetStudentN = function(duration, rerank) {
+
+    //set the default duration length
+    if (typeof duration === "undefined") var duration = 500;
+    if (typeof rerank === "undefined") var rerank = true;
+
+    //determine the current minimum group size and active minority group
+    var mGrp = d3.select("#dotPlot g.legend rect.active").attr("value");
+    var n = +d3.select("#dotPlotMinN")[0][0].value;
 
     //accessing the max histogram value is a bit hack-ish right now but works
     filter(mGrp + "08_log", [logC(n), histograms[varIndex[mGrp + "08_log"]].max], false);
@@ -220,8 +228,11 @@ function createCharts(data, chartSettings) {
     //reset the other minority group filter
     var otherGrp = (mGrp === "BL") ? "HI" : "BL";
     filter(otherGrp + "08_log", [logC(0), histograms[varIndex[mGrp + "08_log"]].max], false);
-    renderAll();
+    renderAll(duration, rerank);
   }
+
+  //reset the min. student N per group if the user changes the option
+  d3.select("#dotPlotMinN").on("change", function() { dotPlotResetStudentN(); });
 
   //preselect on at least 50 students in each group
   filter("BL08_log", [logC(50), histograms[varIndex["BL08_log"]].max], false);
@@ -287,21 +298,25 @@ function createCharts(data, chartSettings) {
   //updating the dot plot is processor-heavy, so we want to update
   //sparingly. Hence, update if no new updates within the last 100 ms
   var lastUpdate = new Date().getTime();
-  function sendData() {
+  function sendData(duration, rerank) {
+    if (typeof duration === "undefined") var duration = 500;
+    if (typeof rerank === "undefined") var rerank = true;
     lastUpdate = new Date().getTime();
     setTimeout(function() {
       var currTime = new Date().getTime();
       if ((currTime - lastUpdate) > 95) {
-        updateDotplot(G08_dim.top(100));
+        updateDotplot(G08_dim.top(100), duration, rerank);
       }
     }, 100);
   }
 
   // Whenever the brush moves, re-render everything
-  function renderAll() {
+  function renderAll(duration, rerank) {
+    if (typeof duration === "undefined") var duration = 500;
+    if (typeof rerank === "undefined") var rerank = true;
     chart.each(render);
     d3.select("#active").text(formatNumber(all.value()));
-    sendData();
+    sendData(duration, rerank);
   }
 
   window.reset = function(i) {
@@ -801,7 +816,12 @@ d3.select(window).on('resize', function() {
 ///////////////////////////////////
 
 //update the dataset that is displayed (public function)
-updateDotplot = function(newData) {
+updateDotplot = function(newData, duration, rerank) {
+
+  //set the default values
+  if (typeof duration === "undefined") var duration = 500;
+  if (typeof rerank === "undefined") var rerank = true;
+
 
 	//reassign the global data
 	//make sure data it's sorted alphabetically (breaks ties)
@@ -837,15 +857,14 @@ updateDotplot = function(newData) {
 	var newRows = g.selectAll("g.tempExit").data(enterData).classed("tempExit", false);
 
 	//move the exit() selection off the SVG
-	var delay = 500;
-	exitRows.transition().duration(delay)
+	exitRows.transition().duration(duration)
 		.attr("transform", function(d) { return "translate(0," + (h + vertSpace) + ")"; });
 
 	//after the exit() selection has moved off the SVG...
 	setTimeout(function() {
 		newRows.each(updateRow);
-		updateRank(null, delay);
-	}, delay);
+		if (rerank) updateRank(null, duration);
+	}, duration);
 
 	//this commented out code is more elegant but runs slower due to removing and 
 	//adding SVG elements (rather than just updating them)
@@ -906,11 +925,11 @@ d3.select("#dotPlotRankMetric").on("change", function() {
 
 //event handlers for reranking the districts
 var rankedVar = "WB_enroll";
-updateRank = function(varName, delay) {
+updateRank = function(varName, duration) {
 
 	//if no update, update by the active tile (could happen after changing the gap)aa
-	if (typeof varName === "undefined" || varName == null) varName = activeTile.attr("value");
-	if (typeof delay   === "undefined" || delay == null)   delay = 1500;
+	if (typeof varName  === "undefined" || varName == null)  varName = activeTile.attr("value");
+	if (typeof duration === "undefined" || duration == null) duration = 1500;
 
 	//update the active tile
 	activeTile.classed("active", false);
@@ -930,7 +949,7 @@ updateRank = function(varName, delay) {
 
   //rebind the data, update the vertical translation of the districts
   d3.selectAll("g.row.district").data(data, function(d) { return +d.id; })
-   	 .transition().duration(delay)
+   	 .transition().duration(duration)
    	 .attr("transform", function(d) { return "translate(0," + vertSpace*(+d.rank + 1) + ")"; });
 }
 
@@ -951,7 +970,6 @@ function updateGap(mGrp, adj) {
 	d3.selectAll(".legend rect").classed("active", false);
 	d3.select(".legend rect." + mGrp).classed("active", true);
 
-
   //update the text for the ranking metric drop down
   if (mGrp === "BL") var mName = "Black";
   if (mGrp === "HI") var mName = "Hispanic";
@@ -961,9 +979,7 @@ function updateGap(mGrp, adj) {
     .data(dropDownText)
     .text(function(d) { return d;});
 
-  //update the minimum student size 
-  var minN = +d3.select("#dotPlotMinN")[0][0].value;
-  dotPlotResetStudentN(minN, mGrp);
+  //update the minimum student size UI text
   dropDownText = ["At least 10 " + mName + " and 10 White students",
                   "At least 50 " + mName + " and 50 White students",
                   "At least 250 " + mName + " and 250 White students"];
@@ -999,23 +1015,29 @@ function updateGap(mGrp, adj) {
 		 .attr("x2", function(d) { return padding + xScale(d[varName2]); });
 	}
 
-	//update both graphs
-  if (adj) {
-    updateOneGraph("enroll", padGraph1, "WH08_alg_p" + "_adj", mGrp + "08_alg_p" + "_adj");
-    updateOneGraph("access", padGraph2, "const1", "const1");
-  } else {
-    updateOneGraph("enroll", padGraph1, "WH08_alg_p",    mGrp + "08_alg_p");
-    updateOneGraph("access", padGraph2, "WH08_access_p", mGrp + "08_access_p");
+	//update based on the student N sample simultanesouly but don't
+  //yet change the ranks (vertical positions) - save that for later
+  if (typeof dotPlotResetStudentN !== "undefined") {
+    dotPlotResetStudentN(0, false);
   }
 
+  //update both graphs after 200 ms delay
+  setTimeout(function() {
+    if (adj) {
+      updateOneGraph("enroll", padGraph1, "WH08_alg_p" + "_adj", mGrp + "08_alg_p" + "_adj");
+      updateOneGraph("access", padGraph2, "const1", "const1");
+    } else {
+      updateOneGraph("enroll", padGraph1, "WH08_alg_p",    mGrp + "08_alg_p");
+      updateOneGraph("access", padGraph2, "WH08_access_p", mGrp + "08_access_p");
+    }
+  }, 200);
 
-	//then update the rank after a delay
-	setTimeout(updateRank, 800);
+	//then update the rank after a delay, then update based on student N
+	setTimeout(updateRank, 1000);
+  //setTimeout(dotPlotResetStudentN, 2400);
 }
 
-d3.select("#dotPlotMinN").on("change", function() {
-  dotPlotResetStudentN(+this.value, activeM);
-});
+
 
 
 ////////////////////////////////////
