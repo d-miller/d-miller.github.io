@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en_US"
+    class="">
+  <head>
+    <base href="https://guts-cs4hs.appspot.com/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    
+  <title>
+    Project GUTS Online Professional Development Course -
+    
+      
+      Course
+    
+  </title>
+
+
+    <!-- The following translated strings are used in activity-generic.js and should be
+    declared before that file is imported. -->
+    <script>
+      // inline translations
+      var trans = {};
+
+      
+      trans.CHECK_ANSWER_TEXT =
+          " Check Answer ";
+
+      
+      trans.CHECK_ANSWERS_TEXT =
+          " Check Answers ";
+
+      
+      trans.SHOW_ANSWER_TEXT =
+          " Skip and Show Answer ";
+
+      
+      trans.SAVE_ANSWERS_TEXT =
+          " Save Answers ";
+
+      
+      trans.SAVE_DRAFT_TEXT =
+          " Save Draft ";
+
+      
+      trans.SUBMIT_ANSWERS_TEXT =
+          " Submit Answers ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_TEXT =
+          " Submit Assignment ";
+
+      
+      trans.SUBMIT_REVIEW_TEXT =
+          " Submit Review ";
+
+      
+      trans.SELECT_ANSWER_PROMPT =
+          " Please click one of the buttons for your answer. ";
+
+      
+      trans.ALL_CORRECT_TEXT =
+          " All your answers are correct! ";
+
+      
+      trans.NUM_CORRECT_TEXT =
+          " Number of questions you answered correctly ";
+
+      
+      trans.YOUR_SCORE_TEXT =
+          " You received a score on this assessment of ";
+
+      
+      trans.LESSONS_TO_REVIEW_TEXT =
+          " Here are lessons you could review to improve your score ";
+
+      
+      trans.PERFECT_SCORE_SAVE_TEXT =
+          " Congratulations! Press the \&#39;Submit Answers\&#39; button to submit your grade. ";
+
+      
+      trans.GENERIC_SAVE_TEXT =
+          " Press the \&#39;Submit Answers\&#39; button below to save your scores. You can also edit your answers above before clicking \&#39;Submit Answers\&#39;. ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_CONFIRMATION =
+          " Are you sure you want to submit this assignment? ";
+
+      
+      trans.SUBMIT_REVIEW_CONFIRMATION =
+          " Are you sure you want to submit this review? ";
+
+      
+      trans.CONFIRMATION_EXPLANATION =
+          " You cannot edit or delete it after you have done so. ";
+    </script>
+
+    
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/minimal.mobile.css" rel="stylesheet" type="text/css"
+        media="only screen and (max-device-width: 1024px)">
+
+  <!-- jQuery should be imported first -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script src="assets/lib/activity-generic-1.3.js"></script>
+
+  <script src="/modules/oeditor/resources/butterbar.js"></script>
+  <link rel="stylesheet" type="text/css"
+      href="/modules/oeditor/resources/butterbar.css" media="screen" />
+
+
+    
+      <link rel="stylesheet" href="/modules/i18n_dashboard/resources/css/global_i18n.css" type="text/css">
+    
+
+    
+
+    <script>
+      var eventXsrfToken = '';
+      
+      
+      
+
+      
+        var transientStudent = true;
+      
+    </script>
+
+    
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    
+
+    <script>
+      function gcb_edit_hook_point(key) {
+        window.location=('dashboard?action=edit_html_hook&key=' +
+            encodeURIComponent(key));
+      }
+      $(function() {
+        function parseJson(s) {
+          var xssiPrefix = ")]}'";
+          return JSON.parse(s.replace(xssiPrefix, ''));
+        }
+
+        $("#locale-select").change(function() {
+          var localeSelect = $("#locale-select");
+          var request = JSON.stringify({
+            xsrf_token: localeSelect.data("xsrf-token"),
+            payload: {
+              selected: localeSelect.val()
+            }
+          });
+          $.ajax({
+            url: "rest/locale",
+            type: "POST",
+            data: {request: request},
+            dataType: "text",
+            success: function(data) {
+              data = parseJson(data);
+              if (data.status == 200) {
+                window.location.reload();
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+    
+      <!-- Google Analytics.  This  boilerplate code is as emitted from
+           the Analytics page, except that IDs are templated and the
+           hostname is taken from the current page, not hardcoded. -->
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56297911-1', window.location.hostname);
+      ga('send', 'pageview');
+      </script>
+    
+
+    <!-- base.before_head_tag_ends -->
+  </head>
+
+  <body data-gcb-page-locale="en_US">
+
+    <div class="gcb-html-hook" id="base-after-body-tag-begins"><!-- base.after_body_tag_begins --></div>
+
+    <script>
+      // Course-Builder specific setup for Google Tag Manager.  Iff
+      // Tag Managers is enabled, the values in the dataLayer list of
+      // dicts is made available to Tag Manager macros.
+      dataLayer = [{
+        'course_title': 'Project GUTS Online Professional Development Course',
+        'event': 'default',  // Explicit value meaning not-really-set.
+        }];
+
+      function gcbSetPageInfo(dict) {
+        dataLayer.push(dict);
+      }
+
+      // Invoke page-specific block so that any calls to gcbReportPageInfo()
+      // are made before we hit the Tag Manager call, below.
+      
+  if ('gcbSetPageInfo' in window) {
+    gcbSetPageInfo({
+      'page_type': 'course',
+    });
+  }
+
+    </script>
+
+    
+        <!-- Google Tag Manager.  This boilerplate code is as generated by the
+             Tag Manager site, except that the ID is templated. -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PPXNZQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PPXNZQ');</script>
+        <!-- End Google Tag Manager -->
+    
+
+    <!-- ButterBar -->
+    <div class="gcb-butterbar-container">
+      <div id="gcb-butterbar-top" class="gcb-butterbar" style="margin-top:50px" aria-live="polite">
+        <p id="gcb-butterbar-message"></p>
+        <a id="gcb-butterbar-close">X</a>
+      </div>
+    </div>
+
+    <!-- logo bar -->
+    <div id="gcb-header" role="banner">
+      <div class="gcb-aux clearfix">
+        <p class="gcb-course-image">
+          <a href="./">
+            <img src="assets/img/projectGUTSlogo-small.png"
+                 alt="None">
+          </a>
+        </p>
+        <p class="gcb-title-header">
+          <a href="./">Do you have it?</a>
+        </p>
+        
+          <span class="plusone-button" id="plusone-3" style="height: 15px; width: 70px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial; ">
+            <g:plusone size="medium"></g:plusone>
+          </span>
+        
+
+        
+        <div class="gcb-pull-right" style="font-size: larger;">
+          
+          <a href="https://accounts.google.com/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://guts-cs4hs.appspot.com/course%253Fuse_last_location%253Dtrue">Login</a>
+        </div>
+        
+      </div>
+    </div>
+
+    
+  <!-- nav bar -->
+  <div class="gcb-nav gcb-complex" id="gcb-nav-x">
+    <div class="gcb-aux">
+      <ul class="clearfix">
+
+        <!-- left-aligned links in order -->
+        <div class="gcb-html-hook" id="base-after-navbar-begins"><!-- base.after_navbar_begins --></div>
+        <li >
+          
+          <a href="announcements">Announcements</a>
+        </li>
+        <li class='active'>
+          
+          <a href="course">Course</a>
+        </li>
+        
+          <li >
+            
+            <a href="forum">Forum</a>
+          </li>
+        
+
+        <!-- right-aligned links are in order -->
+        
+        
+        
+          <li >
+            
+            <a href="register">Registration</a>
+          </li>
+        
+        <div class="gcb-html-hook" id="base-before-navbar-ends"><!-- base.before_navbar_ends --> <!-- Here we enable the search module. --> <script src="/modules/search/assets/search.js"></script> <link href="/modules/search/assets/search.css" rel="stylesheet" type="text/css"/> <li class="gcb-pull-right"> <form action="search" class="gcb-search-form" method="get"> <input aria-label="Enter a search term" class="gcb-search-box" name="query" type="text"/> <input class="gcb-button gcb-search-button" type="submit" value="Search"/> </form> </li></div>
+      </ul>
+    </div>
+  </div>
+
+
+    <!-- top section -->
+    <div class="is-wrapper">
+      <div class="gcb-aux">
+        
+  <script>
+    
+    var regConfirmationMsg = "Thank you for registering for the course. Click the Announcements tab for important information.";
+    if(window.location.hash == '#registration_confirmation') {
+      cbShowMsgAutoHide(regConfirmationMsg);
+    }
+    
+    var regClosedMsg = "Registrations for this course are not open.";
+    if(window.location.hash == '#registration_closed') {
+      cbShowMsgAutoHide(regClosedMsg);
+    }
+  </script>
+  <div class="gcb-cols">
+    <div class="gcb-col-11 gcb-aside">
+      
+  <div class="gcb-col-5">
+
+
+  <h1 class="gcb-product-headers-large">
+    Project GUTS Online Professional Development Course
+  </h1>
+
+  <p class="gcb-product-headers">
+  NOTE:  This is the archived version of the course from 2014-2016 for the CURRENT course, go to <a href="guts-2017.appspot.com">guts-2017.appspot.com</a><br/><br/>Project GUTS&#39; Computer Science in Science curriculum makes it easy to integrate computer modeling and simulation into middle and high school science classrooms. Join us to learn about our curriculum, tools, and teaching practices that will help you engage your students in the powerful scientific practice of computational thinking!<br/><br/><br/>
+<a href="http://www.revolvermaps.com/?target=enlarge&amp;i=6og6hk0e7m4&amp;color=ff0000&amp;m=0"><img alt="Map" height="200" src="//rg.revolvermaps.com/h/m/a/0/ff0000/200/0/6og6hk0e7m4.png" style="border:0;" width="400"/></a>
+  </p>
+
+  <p class="gcb-bio-headers">
+    Irene A. Lee, Program Director, <a href="http://www.projectguts.org">Project GUTS</a><br>Paige Prescott, Program Manager, <a href="http://www.projectguts.org">Project GUTS</a><br>
+  </p>
+
+</div>
+
+
+  <div class="gcb-col-5">
+
+    
+      <img height="300"
+          alt="Project GUTS: Growing Up Thinking Scientifically"
+          src="assets/img/guts-cs4hs-splash480-Dot.png ">
+    
+
+  </div>
+
+
+      
+        
+  <div class="gcb-col-5">
+    <center>
+      
+        <a class="gcb-button gcb-button-large" href="register" role="button">
+          
+          Register
+        </a>
+      
+    </center>
+  </div>
+
+      
+    </div>
+</div>
+
+        <div class="gcb-html-hook" id="base-after-top-content-ends"><!-- base.after_top_content_ends --></div>
+
+        <!-- main section -->
+        
+  
+    <div style="margin-top: 20px;" class="gcb-cols">
+      <div class="gcb-col-1">
+      </div>
+      <div class="gcb-col-9">
+
+        <h1 class="gcb-schedule-headers">
+          
+          Schedule
+        </h1>
+        <div id="gcb-main" role="main">
+          <div class="gcb-nav gcb-nav-full" id="gcb-nav-y">
+            <ul>
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=1">Getting Started</a>
+          
+          
+            <span class="gcb-unit-description">
+              This unit is to be finished prior to the first day of class (April 25, 2016)
+            </span>
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+          
+            <a href="assessment?name=114">Participant survey</a>
+          
+          
+            <span class="gcb-unit-description">
+              Tell us about yourself and why you are taking this course
+            </span>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+          
+            <a href="assessment?name=115">Pre-course assessment</a>
+          
+          
+            <span class="gcb-unit-description">
+              This ungraded assessment will be used to assess course impact.
+            </span>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=10">Foundations</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=18">Module 1: Introduction to Computer Modeling and Simulation</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=30">Teaching Module 1</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=40">Module 2A: Greenhouse Gases and Climate Change</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=41">Teaching Module 2A</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=131">Module 2B: Water as a shared resource</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=144">Teaching Module 2B</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=42">Module 3: Ecosystems as Complex Adaptive Systems</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=43">Teaching Module 3</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=44">Module 4: Chemical Reactions </a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=45">Teaching Module 4</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=46">Final Project</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+          
+            <a href="assessment?name=130">Participant Post-survey</a>
+          
+          
+            <span class="gcb-unit-description">
+              Provide feedback on the course 
+            </span>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+          
+            <a href="assessment?name=116">Post-course assessment</a>
+          
+          
+            <span class="gcb-unit-description">
+              This ungraded assessment will be used to assess course impact. 
+            </span>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+              
+                
+      
+    
+
+    
+      
+    
+
+    
+      
+        
+        <li class=''><p class="gcb-top-content">
+          
+            <span class="gcb-progress-none"></span>
+          
+
+          
+              <a href="unit?unit=118">Credits</a>
+          
+          
+
+      
+          
+          </p>
+        </li>
+    
+              
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div class="gcb-html-hook" id="base-after-main-content-ends"><!-- base.after_main_content_ends --></div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div style="margin-top: 50px;" id="gcb-signature"></div>
+    <div class="gcb-footer" id="gcb-footer">
+      <div id="gcb-footer-local">
+        <div class="gcb-aux">
+        </div>
+      </div>
+      <div id="gcb-footer-global" role="contentinfo">
+        <div class="gcb-aux">
+          <ul>
+            <li>
+              <a href="http://www.projectguts.org" target="_blank">Project GUTS</a>
+            </li>
+            <li>
+              <a href="PRIVACY_POLICY_AND_TERMS_OF_SERVICE" target="_blank">
+                
+                Privacy &amp; Terms
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gcb-html-hook" id="base-before-body-tag-ends"><!-- base.before_body_tag_ends --></div>
+
+    
+    
+ </body>
+</html>
