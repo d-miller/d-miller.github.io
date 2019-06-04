@@ -25,6 +25,11 @@
 5. Plotly scatter plots
 */
 
+/*hide the text*/
+p, h3 {
+  visibility: hidden;
+}
+
 /**********************
 ** 1: GENERAL LAYOUT **
 ***********************/
