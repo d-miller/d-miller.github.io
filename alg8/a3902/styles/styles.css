@@ -26,7 +26,7 @@
 */
 
 /*hide the text*/
-p, h3 {
+p, div#content > div > h3 {
   visibility: hidden;
 }
 
