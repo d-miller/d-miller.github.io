@@ -8,6 +8,9 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
 // USE D3 and CROSSFILTER FOR THE FILTERING HISTOGRAMS //
 /////////////////////////////////////////////////////////
 
+//define in a global context so it can be accessed across code sections
+var dotPlotResetStudentN;
+
 //wrap all code inside a function to control namespace
 //and prevent accidental overwriting of other JS code
 (function() {
@@ -48,8 +51,8 @@ var IE = navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexO
   var margin = {top: 10, right: 10, bottom: 20, left: 10};
   
   var histograms = [
-    {varName: "WB_diff",   min: -70, max: 70, width: w, title: "White-Black Enrollment Gap"},
-    {varName: "WH_diff",   min: -70, max: 70, width: w, title: "White-Hispanic Enrollment Gap"},
+    {varName: "WB_enroll",   min: -70, max: 70, width: w, title: "White-Black Enrollment Gap"},
+    {varName: "WH_enroll",   min: -70, max: 70, width: w, title: "White-Hispanic Enrollment Gap"},
     {varName: "WB_access", min: -70, max: 70, width: w, title: "White-Black Access Gap"},
     {varName: "WH_access", min: -70, max: 70, width: w, title: "White-Hispanic Access Gap"},
     //{varName: "BL08_log", min: 0, max: 10000, width: w, title: "Number of Black 8th Graders"},
@@ -76,10 +79,15 @@ d3.csv(baseURL + 'data/table_all.csv', function(data) {
   data.forEach(function(d) {
 
     //address the gaps first
-    d.WB_diff = (+d.WH08_alg_p - +d.BL08_alg_p)*100;
-    d.WH_diff = (+d.WH08_alg_p - +d.HI08_alg_p)*100;
+    d.WB_enroll = (+d.WH08_alg_p - +d.BL08_alg_p)*100;
+    d.WH_enroll = (+d.WH08_alg_p - +d.HI08_alg_p)*100;
     d.WB_access = (+d.WH08_access_p - +d.BL08_access_p)*100;
     d.WH_access = (+d.WH08_access_p - +d.HI08_access_p)*100;
+    d.WB_enroll_ratio = +d.WH08_alg_p / +d.BL08_alg_p;
+    d.WH_enroll_ratio = +d.WH08_alg_p / +d.HI08_alg_p;
+    d.WB_access_ratio = +d.WH08_access_p / +d.BL08_access_p;
+    d.WH_access_ratio = +d.WH08_access_p / +d.HI08_access_p;
+
     /*d.WB_suppress = (+d.WH08 < 10) || (+d.BL08 >= 10);
     d.WH_suppress = (+d.WH08 < 10) || (+d.HI08 >= 10);
     d.WB_diff = d.WB_suppress ? null : (+d.WH08_alg_p - +d.BL08_alg_p)*100;
@@ -201,11 +209,73 @@ function createCharts(data, chartSettings) {
     renderAll();
   });
 
-  //preselect on at least 10 students in each group
-  //accessing the max histogram value is a bit hack-ish right now but works
-  filter("BL08_log", [logC(10), histograms[varIndex["BL08_log"]].max], false);
-  filter("HI08_log", [logC(10), histograms[varIndex["HI08_log"]].max], false);
-  filter("WH08_log", [logC(10), histograms[varIndex["WH08_log"]].max], false);
+  //filters based on at least a minimum size per group 
+  //(e.g., at least 10 Black and 10 White students)
+  dotPlotResetStudentN = function(duration, rerank) {
+
+    //set the default duration length
+    if (typeof duration === "undefined") var duration = 500;
+    if (typeof rerank === "undefined") var rerank = true;
+
+    //determine the current minimum group size and active minority group
+    var mGrp = d3.select("#dotPlot g.legend rect.active").attr("value");
+    var n = +d3.select("#dotPlotMinN")[0][0].value;
+
+    //accessing the max histogram value is a bit hack-ish right now but works
+    filter(mGrp + "08_log", [logC(n), histograms[varIndex[mGrp + "08_log"]].max], false);
+    filter("WH08_log", [logC(n), histograms[varIndex["WH08_log"]].max], false);
+
+    //reset the other minority group filter
+    var otherGrp = (mGrp === "BL") ? "HI" : "BL";
+    filter(otherGrp + "08_log", [logC(0), histograms[varIndex[mGrp + "08_log"]].max], false);
+    renderAll(duration, rerank);
+  }
+
+  //reset the min. student N per group if the user changes the option
+  d3.select("#dotPlotMinN").on("change", function() { dotPlotResetStudentN(); });
+
+  //preselect on at least 50 students in each group
+  filter("BL08_log", [logC(50), histograms[varIndex["BL08_log"]].max], false);
+  filter("WH08_log", [logC(50), histograms[varIndex["WH08_log"]].max], false);
+  //filter("BL08_log", [logC(10), histograms[varIndex["BL08_log"]].max], false);
+
+  //filter based on racial demographics dropdown
+  dotPlotFilterDemograhics = function(selection, mGrp) {
+
+    //reset the other minority group filter
+    var otherGrp = (mGrp === "BL") ? "HI" : "BL";
+    filter(otherGrp + "_perc", [0, 100], false);
+
+    //if no restriction...
+    filter("WH_perc", [0, 100], false);
+    filter(mGrp + "_perc", [0, 100], false);
+
+    //if filter based on %Black or %Hispanic...
+    if (selection === "majorM" || selection === "predomM") {
+      filter("WH_perc", [0, 100], false);
+      var minlim = (selection === "majorM") ? 50 : 75;
+      filter(mGrp + "_perc", [minlim, 100], false);
+    }
+
+    //if filter based on %White...
+    if (selection === "majorW" || selection === "predomW") {
+      filter(mGrp + "_perc", [0, 100], false);
+      var minlim = (selection === "majorW") ? 50 : 75;
+      filter("WH_perc", [minlim, 100], false);
+    }
+
+    //update dot plot
+    renderAll();
+  }
+
+  //if the racial demographic drop-down changes...
+  d3.select("#dotPlotRacialDemo").on("change", function() {
+
+    //determine the active minority group and change the settings
+    var mGrp = d3.select("#dotPlot g.legend rect.active").attr("value");
+    dotPlotFilterDemograhics(this.value, mGrp);
+  });
+
 
   //filter by at least 10 white students
   cf.dimension(function(d) { return +d.WH08; }).filterRange([10, 1e6]);
@@ -228,21 +298,25 @@ function createCharts(data, chartSettings) {
   //updating the dot plot is processor-heavy, so we want to update
   //sparingly. Hence, update if no new updates within the last 100 ms
   var lastUpdate = new Date().getTime();
-  function sendData() {
+  function sendData(duration, rerank) {
+    if (typeof duration === "undefined") var duration = 500;
+    if (typeof rerank === "undefined") var rerank = true;
     lastUpdate = new Date().getTime();
     setTimeout(function() {
       var currTime = new Date().getTime();
       if ((currTime - lastUpdate) > 95) {
-        updateDotplot(G08_dim.top(100));
+        updateDotplot(G08_dim.top(100), duration, rerank);
       }
     }, 100);
   }
 
   // Whenever the brush moves, re-render everything
-  function renderAll() {
+  function renderAll(duration, rerank) {
+    if (typeof duration === "undefined") var duration = 500;
+    if (typeof rerank === "undefined") var rerank = true;
     chart.each(render);
     d3.select("#active").text(formatNumber(all.value()));
-    sendData();
+    sendData(duration, rerank);
   }
 
   window.reset = function(i) {
@@ -513,6 +587,11 @@ var grpColors = {
 //create content SVG group
 var g = svg.append("g").attr("transform", "translate(" + pad.left + ", " + pad.top + ")");
 
+//general function to update the hover class
+function updateHover(selection, hovered) {
+  d3.select(selection).classed("hover", hovered);
+}
+
 ///////////////
 //  HEADERS  //
 ///////////////
@@ -526,18 +605,29 @@ var updateAccess = function() { updateRank("access"); };
 //var tileW = 200;
 var tileW = panelW;
 var headerTiles = svg.append("g").attr("class", "headerTile").attr("transform", "translate(" + pad.left + ",2)");
-var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, class: "enroll", value: "enroll"}).on("click", updateEnroll);
-headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, class: "access", value: "access"}).on("click", updateAccess);
-activeTile.classed("active", true);
+var activeTile = headerTiles.append("rect").attr({x: padGraph1+panelW/2-tileW/2, y: 0, height: 55, width: tileW, class: "enroll active", value: "enroll"});
+headerTiles.append("rect").attr({x: padGraph2+panelW/2-tileW/2, y: 0, width: tileW, height: 55, class: "access", value: "access"});
 
 //create header text
 var header = svg.append("g").attr("class", "header").attr("transform", "translate(" + pad.left + "," + yHeader + ")");
-header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).on("click", updateEnroll);
-header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).on("click", updateAccess);
+header.append("text").text("Enrollment Gap").attr("x", padGraph1+panelW/2).attr("class", "enroll");
+header.append("text").text("Access Gap").attr("x", padGraph2+panelW/2).attr("class", "access");
 
 //add text about ranking and re-ranking
-var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 20).attr("class", "rerankText").on("click", updateEnroll);
-var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 20).attr("class", "rerankText").on("click", updateAccess);
+var enrollRankText = header.append("text").text("(Ranked)").attr("x", padGraph1+panelW/2).attr("y", 20).attr("class", "rerankText enroll");
+var accessRankText = header.append("text").text("(Click here to rerank)").attr("x", padGraph2+panelW/2).attr("y", 20).attr("class", "rerankText access");
+
+//custom event handlers
+function enrollHover()   { updateHover(".headerTile .enroll", true);  }
+function enrollUnhover() { updateHover(".headerTile .enroll", false); }
+function accessHover()   { updateHover(".headerTile .access", true);  }
+function accessUnhover() { updateHover(".headerTile .access", false); }
+
+//add event handlers
+headerTiles.selectAll(".enroll").on("click", updateEnroll).on("mouseover", enrollHover).on("mouseout", enrollUnhover);
+headerTiles.selectAll(".access").on("click", updateAccess).on("mouseover", accessHover).on("mouseout", accessUnhover);
+header.selectAll(".enroll").on("click", updateEnroll).on("mouseover", enrollHover).on("mouseout", enrollUnhover);
+header.selectAll(".access").on("click", updateAccess).on("mouseover", accessHover).on("mouseout", accessUnhover);
 
 //use pointer cursor to suggest clickability
 header.selectAll("text").style("cursor", "pointer");
@@ -570,65 +660,78 @@ g.append("g").attr("transform", "translate(" + padGraph2 + ",-3)")
 g.append("text").attr("x", padGraph1 + panelW/2).attr("y", -30).text("Enrolled in Grade 8 Algebra")
 g.append("text").attr("x", padGraph2 + panelW/2).attr("y", -30).text("Has Access to Early Algebra")
 
+////////////
+// LEGEND //
+////////////
+
 //add a legend
 var xLegendGap = 100
-var legend = g.append("g").attr("class", "legend").attr("transform", "translate(105,-80)");
+var legend = g.append("g").attr("class", "legend").attr("transform", "translate(105,-85)");
 var updateBL = function() { updateGap("BL"); };
 var updateHI = function() { updateGap("HI"); };
 
+var boxH = 30;
 legend.append("rect")
-	.attr({x: -15, y: -15, width: xLegendGap+70, height: 30})
+	.attr({x: -15, y: -boxH/2, width: xLegendGap+70, height: boxH})
 	.attr("stroke", "#333")
 	.attr("stroke-width", ".75")
   .attr("class", "BL")
 	.attr("value", "BL")
-  .classed("active", true)
-	.on("click", updateBL);
+  .classed("active", true);
 legend.append("circle")
 	.attr("r", 5)
-	.style("fill", grpColors["BL"])
-	.on("click", updateBL);
+  .attr("class", "BL")  
+	.style("fill", grpColors["BL"]);
 legend.append("circle")
 	.attr("cx", xLegendGap)
+  .attr("class", "BL")
 	.attr("r", 5)
-	.style("fill", grpColors["WH"])
-	.on("click", updateBL);
+	.style("fill", grpColors["WH"]);
 legend.append("text")
 	.text("Black")
-	.attr("x", 8)
-	.on("click", updateBL);
+  .attr("class", "BL")
+	.attr("x", 8);
 legend.append("text")
 	.text("White")
-	.attr("x", xLegendGap+8)
-	.on("click", updateBL);
+  .attr("class", "BL")
+	.attr("x", xLegendGap+8);
 
-var yLegendGap = 30;
+var yLegendGap = 36;
 legend.append("rect")
-	.attr({x: -15, y: -15+yLegendGap, width: xLegendGap+70, height: 30})
+	.attr({x: -15, y: -boxH/2+yLegendGap, width: xLegendGap+70, height: boxH})
 	.attr("value", "HI")
-  .attr("class", "HI")
-	.on("click", updateHI);
+  .attr("class", "HI");
 legend.append("circle")
 	.attr("cy", yLegendGap)
+  .attr("class", "HI")
 	.attr("r", 5)
-	.style("fill", grpColors["HI"])
-	.on("click", updateHI);
+	.style("fill", grpColors["HI"]);
 legend.append("circle")
 	.attr("cx", xLegendGap)
 	.attr("cy", yLegendGap)
+  .attr("class", "HI")
 	.attr("r", 5)
-	.style("fill", grpColors["WH"])
-	.on("click", updateHI);
+	.style("fill", grpColors["WH"]);
 legend.append("text")
 	.text("Hispanic")
+  .attr("class", "HI")
 	.attr("x", 8)
-	.attr("y", yLegendGap)
-	.on("click", updateHI);
+	.attr("y", yLegendGap);
 legend.append("text")
 	.text("White")
+  .attr("class", "HI")
 	.attr("x", xLegendGap+8)
-	.attr("y", yLegendGap)
-	.on("click", updateHI);
+	.attr("y", yLegendGap);
+
+//custom event handlers
+function BL_hoverGap()   { updateHover(".legend rect.BL", true);  }
+function BL_unhoverGap() { updateHover(".legend rect.BL", false); }
+function HI_hoverGap()   { updateHover(".legend rect.HI", true);  }
+function HI_unhoverGap() { updateHover(".legend rect.HI", false); }
+
+//add event handlers
+legend.selectAll(".BL").on("click", updateBL).on("mouseover", BL_hoverGap).on("mouseout", BL_unhoverGap);
+legend.selectAll(".HI").on("click", updateHI).on("mouseover", HI_hoverGap).on("mouseout", HI_unhoverGap);
 
 //add legend title
 legend.append("text").text("Select gap:").attr("x", -108).attr("y", 15).attr("class", "title");
@@ -713,7 +816,12 @@ d3.select(window).on('resize', function() {
 ///////////////////////////////////
 
 //update the dataset that is displayed (public function)
-updateDotplot = function(newData) {
+updateDotplot = function(newData, duration, rerank) {
+
+  //set the default values
+  if (typeof duration === "undefined") var duration = 500;
+  if (typeof rerank === "undefined") var rerank = true;
+
 
 	//reassign the global data
 	//make sure data it's sorted alphabetically (breaks ties)
@@ -749,15 +857,14 @@ updateDotplot = function(newData) {
 	var newRows = g.selectAll("g.tempExit").data(enterData).classed("tempExit", false);
 
 	//move the exit() selection off the SVG
-	var delay = 500;
-	exitRows.transition().duration(delay)
+	exitRows.transition().duration(duration)
 		.attr("transform", function(d) { return "translate(0," + (h + vertSpace) + ")"; });
 
 	//after the exit() selection has moved off the SVG...
 	setTimeout(function() {
 		newRows.each(updateRow);
-		updateRank(null, delay);
-	}, delay);
+		if (rerank) updateRank(null, duration);
+	}, duration);
 
 	//this commented out code is more elegant but runs slower due to removing and 
 	//adding SVG elements (rather than just updating them)
@@ -808,13 +915,21 @@ function newRanks(data, varName) {
 	}
 }
 
+//functions to sort by the risk ratio or risk difference
+var rankRatio = false;
+d3.select("#dotPlotRankMetric").on("change", function() {
+  rankRatio = this.value === "ratio";
+  updateRank();
+});
+
+
 //event handlers for reranking the districts
-var rankedVar = "WB_diff";
-function updateRank(varName, delay) {
+var rankedVar = "WB_enroll";
+updateRank = function(varName, duration) {
 
 	//if no update, update by the active tile (could happen after changing the gap)aa
-	if (typeof varName === "undefined" || varName == null) varName = activeTile.attr("value");
-	if (typeof delay   === "undefined" || delay == null)   delay = 1500;
+	if (typeof varName  === "undefined" || varName == null)  varName = activeTile.attr("value");
+	if (typeof duration === "undefined" || duration == null) duration = 1500;
 
 	//update the active tile
 	activeTile.classed("active", false);
@@ -824,24 +939,26 @@ function updateRank(varName, delay) {
   if (accessRankText) accessRankText.text((varName === "access") ? "(Ranked)" : "(Click here to rerank)");
   if (enrollRankText) enrollRankText.text((varName === "enroll") ? "(Ranked)" : "(Click here to rerank)");
 
+  //change to sorting by the risk ratio if requested
+  if (rankRatio) varName = varName + "_ratio";
+
   //figure out new ranking based on the active minority group
- 	if (varName === "enroll") var end = "diff";
-  if (varName === "access") var end = "access";
- 	if (activeM === "BL") rankedVar = "WB_" + end;
- 	if (activeM === "HI") rankedVar = "WH_" + end;
+ 	if (activeM === "BL") rankedVar = "WB_" + varName;
+ 	if (activeM === "HI") rankedVar = "WH_" + varName;
  	newRanks(data, rankedVar);
 
-  	//rebind the data, update the vertical translation of the districts
-  	d3.selectAll("g.row.district").data(data, function(d) { return +d.id; })
-   	 .transition().duration(delay)
+  //rebind the data, update the vertical translation of the districts
+  d3.selectAll("g.row.district").data(data, function(d) { return +d.id; })
+   	 .transition().duration(duration)
    	 .attr("transform", function(d) { return "translate(0," + vertSpace*(+d.rank + 1) + ")"; });
 }
 
 
 //event handler for using adjusted enrollment rates
-d3.select("#dotAdj").on("change", function() {
-  updateGap(activeM, this.checked);
+d3.select("#dotPlotSchoolPop").on("change", function() {
+  updateGap(activeM, this.value === "offering");
 })
+
 
 
 //event handler for changing gap
@@ -852,6 +969,23 @@ function updateGap(mGrp, adj) {
 	activeM = mGrp;
 	d3.selectAll(".legend rect").classed("active", false);
 	d3.select(".legend rect." + mGrp).classed("active", true);
+
+  //update the text for the ranking metric drop down
+  if (mGrp === "BL") var mName = "Black";
+  if (mGrp === "HI") var mName = "Hispanic";
+  dropDownText = ["Rate difference (White − " + mName + " rate)",
+                  "Rate ratio (White / " + mName + " rate)"];
+  d3.selectAll("#dotPlotRankMetric option")
+    .data(dropDownText)
+    .text(function(d) { return d;});
+
+  //update the minimum student size UI text
+  dropDownText = ["At least 10 " + mName + " and 10 White students",
+                  "At least 50 " + mName + " and 50 White students",
+                  "At least 250 " + mName + " and 250 White students"];
+  d3.selectAll("#dotPlotMinN option")
+    .data(dropDownText)
+    .text(function(d) { return d;});
 
 	//helper function that updates one of the two graphs
 	function updateOneGraph(classes, padding, varName1, varName2) {
@@ -881,19 +1015,29 @@ function updateGap(mGrp, adj) {
 		 .attr("x2", function(d) { return padding + xScale(d[varName2]); });
 	}
 
-	//update both graphs
-  if (adj) {
-    updateOneGraph("enroll", padGraph1, "WH08_alg_p" + "_adj", mGrp + "08_alg_p" + "_adj");
-    updateOneGraph("access", padGraph2, "const1", "const1");
-  } else {
-    updateOneGraph("enroll", padGraph1, "WH08_alg_p",    mGrp + "08_alg_p");
-    updateOneGraph("access", padGraph2, "WH08_access_p", mGrp + "08_access_p");
+	//update based on the student N sample simultanesouly but don't
+  //yet change the ranks (vertical positions) - save that for later
+  if (typeof dotPlotResetStudentN !== "undefined") {
+    dotPlotResetStudentN(0, false);
   }
 
+  //update both graphs after 200 ms delay
+  setTimeout(function() {
+    if (adj) {
+      updateOneGraph("enroll", padGraph1, "WH08_alg_p" + "_adj", mGrp + "08_alg_p" + "_adj");
+      updateOneGraph("access", padGraph2, "const1", "const1");
+    } else {
+      updateOneGraph("enroll", padGraph1, "WH08_alg_p",    mGrp + "08_alg_p");
+      updateOneGraph("access", padGraph2, "WH08_access_p", mGrp + "08_access_p");
+    }
+  }, 200);
 
-	//then update the rank after a delay
-	setTimeout(updateRank, 800);
+	//then update the rank after a delay, then update based on student N
+	setTimeout(updateRank, 1000);
+  //setTimeout(dotPlotResetStudentN, 2400);
 }
+
+
 
 
 ////////////////////////////////////
@@ -1106,6 +1250,17 @@ d3.csv(baseURL + "data/table_top100.csv", function(dataCSV) {
       d.WH08_alg_p_adj = (+d.WH08_alg_p / +d.WH08_access_p);
       d.BL08_alg_p_adj = (+d.BL08_alg_p / +d.BL08_access_p);
       d.HI08_alg_p_adj = (+d.HI08_alg_p / +d.HI08_access_p);
+
+      //essentially rename from diff if needed (e.g., WB_diff -> WB_enroll)
+      if (typeof d.WB_enroll === "undefined") d.WB_enroll = d.WB_diff;
+      if (typeof d.WH_enroll === "undefined") d.WH_enroll = d.WH_diff;
+
+      //calculate relative risk (also change name for diff vs. enroll)
+      d.WB_enroll_ratio = +d.WH08_alg_p / +d.BL08_alg_p;
+      d.WH_enroll_ratio = +d.WH08_alg_p / +d.HI08_alg_p;
+      d.WB_access_ratio = +d.WH08_access_p / +d.BL08_access_p;
+      d.WH_access_ratio = +d.WH08_access_p / +d.HI08_access_p;
+
       d.const1 = 1;
     });
 

@@ -25,6 +25,11 @@
 5. Plotly scatter plots
 */
 
+/*hide the text*/
+p, div#content > div > h3 {
+  visibility: hidden;
+}
+
 /**********************
 ** 1: GENERAL LAYOUT **
 ***********************/
@@ -61,7 +66,14 @@ fieldset label {
 .graphTitle {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 3px;
+  color: black;
+}
+.graphSubtitle {
+  text-align: center;
+  margin-top: 0;
   margin-bottom: 10px;
+  font-size: 1em;
   color: black;
 }
 
@@ -428,6 +440,10 @@ https://github.com/openstreetmap/iD/issues/3020
   stroke-width: .75;
   opacity: 0;
   fill: #eee;
+}
+.top100 .headerTile rect.hover,
+.top100 .legend rect.hover {
+  opacity: 0.4;
 }
 .top100 .headerTile rect.active,
 .top100 .legend rect.active {

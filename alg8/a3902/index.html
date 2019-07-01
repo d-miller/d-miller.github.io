@@ -237,9 +237,12 @@
       <p>Although access gaps cannot explain overall national enrollment gaps, a closer analysis reveals that differential access remains an important problem in several specific districts, underscoring the importance of basing decisions on local data. We illustrate this point by showing gaps for the top 100 largest districts based on total grade 8 enrollment size.</p>
 
       <h2 id="dotTitle" class="graphTitle">Top 100 Largest Districts</h2>
+      <h2 id="dotTitle" class="graphSubtitle">(Based on Total Grade 8 Enrollment and Meeting Other Criteria in "Additional Display Options")</h2>
 
-      <button class="collapsible">Filter options</button>
+
+      <button class="collapsible">Additional display options</button>
       <div class="collapsibleContent">
+        <br>
         <fieldset>
           <label>Select state:</label>
           <select id='stateDotPlot' name='stateDotPlot'>
@@ -264,6 +267,12 @@
             <option value='KY'>Kentucky</option>
             <option value='LA'>Louisiana</option>
             <option value='ME'>Maine</option>
+            <option value='MD'>Maryland</option>
+            <option value='MA'>Massachusetts</option>
+            <option value='MI'>Michigan</option>
+            <option value='MN'>Minnesota</option>
+            <option value='MS'>Mississippi</option>
+            <option value='MO'>Missouri</option>
             <option value='MT'>Montana</option>
             <option value='NE'>Nebraska</option>
             <option value='NV'>Nevada</option>
@@ -276,12 +285,6 @@
             <option value='OH'>Ohio</option>
             <option value='OK'>Oklahoma</option>
             <option value='OR'>Oregon</option>
-            <option value='MD'>Maryland</option>
-            <option value='MA'>Massachusetts</option>
-            <option value='MI'>Michigan</option>
-            <option value='MN'>Minnesota</option>
-            <option value='MS'>Mississippi</option>
-            <option value='MO'>Missouri</option>
             <option value='PA'>Pennsylvania</option>
             <option value='RI'>Rhode Island</option>
             <option value='SC'>South Carolina</option>
@@ -297,7 +300,38 @@
             <option value='WY'>Wyoming</option>
           </select>
         </fieldset>
-        <input type="checkbox" id="dotAdj"> Restrict to schools that offered 8th grade algebra?<br>
+        <fieldset>
+          <label>Ranking metric:</label>
+          <select id='dotPlotRankMetric' name='dotPlotRankMetric'>
+            <option value='diff'>Difference (White − Black rate)</option>
+            <option value='ratio'>Ratio (White / Black rate)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>School population:</label>
+          <select id='dotPlotSchoolPop' name='dotPlotSchoolPop'>
+            <option value='all'>All traditional schools</option>
+            <option value='offering'>Traditional schools offering 8th grade algebra</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Minimum per group:</label>
+          <select id='dotPlotMinN' name='dotPlotMinN'>
+            <option value='10'>At least 10 Black and 10 White students</option>
+            <option value='50' selected="selected">At least 50 Black and 50 White students</option>
+            <option value='250'>At least 250 Black and 250 White students</option>
+          </select>
+        </fieldset>
+        <!--<fieldset>
+          <label>Racial demographics:</label>
+          <select id='dotPlotRacialDemo' name='dotPlotRacialDemo'>
+            <option value='all'>No demographic restriction</option>
+            <option value='majorM'>Majority Black (>50%)</option>
+            <option value='majorW'>Majority White (>50%)</option>
+            <option value='predomM'>Predominantly Black (>75%)</option>
+            <option value='predomW'>Predominantly White (>75%)</option>
+          </select>
+        </fieldset>-->
         <br>
       </div>
       <br>
@@ -322,8 +356,8 @@
         </div>
       <button class="collapsible">Filter by Racial/Ethnic Gap</button>
         <div class="collapsibleContent">
-          <div class="chart" id="WB_diff"></div>
-          <div class="chart" id="WH_diff"></div>
+          <div class="chart" id="WB_enroll"></div>
+          <div class="chart" id="WH_enroll"></div>
           <div class="chart" id="WB_access"></div>
           <div class="chart" id="WH_access"></div>
         </div>

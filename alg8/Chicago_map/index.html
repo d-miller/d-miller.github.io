@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>8th Grade Algebra</title>
+  <link rel="shortcut icon" href="https://www.air.org/sites/all/themes/f1ux/favicon.ico" />
+
+  <!--Copied and pasted AIR CSS-->
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_TJwcvofy9svPkq--9lOPwWK3Eyie-qnFATKBwUOQGjs.css" media="all" />
+  <!--[if gte IE 9]><!-->
+  <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_CXVIRGWGjdTSD2Y-HXwipyNK3wzIneTjLqHaXJHLi6A.css" media="all" />
+  <!--<![endif]-->
+
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css__FdncicepYZa4zf9jebEeI-T6zW7309gU_IEVXqBZoE.css" media="all" />
+  <![endif]-->
+
+  <!--[if lt IE 9]><!-->
+  <link rel="stylesheet" href="https://www.air.org/sites/default/files/css/css_OAkdG_Bj--sU53NiEEYTIa2sZPQx2AWUA1fI9_Zodns.css" media="all" />
+  <!--<![endif]-->
+  <!--End of copied and pasted AIR CSS-->
+
+</head>
+<body>
+
+
+
+  <!-- NEEDED LIBRARIES AND CSS FOR INTERACTIVE GRAPHICS -->
+  <!-- 152 KB: D3 version 3, used primarly for dot plot and histograms
+  Version 5 is the most current version but I adapted code that was 
+  written for v3, and wpdating the code for v5 would be time consuming-->
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+
+  <!-- 700 KB: Core Mapbox library: JavaScript and CSS -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- 77 KB: Geocoder Mapbox library: JavaScript and CSS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  <!-- 85 KB: jQuery library used for navigation bar --> 
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+
+  <!--END OF LIBRARIES AND CSS FOR INTERACTIVE GRAPHICS-->
+
+  <!-- CUSTOM STYLES AND CODE -->
+  <!-- This should be placed *after* loading the libraries, so that 
+  any CSS library rules can be overriden by these custom rules -->
+  <!--<link rel="stylesheet" href="styles/styles.css">-->
+  <style>
+
+/* Outline:
+
+1. General layout
+2. Map
+  2.1. Title & controls container
+  2.2. Top left buttons
+  2.3. Top right geocoder
+  2.4. Main map container
+  2.5. Map popup content
+  2.6. Bottom right legend
+  2.7. Remove unwanted elements
+3. Filter histograms
+  3.1. Text at top
+  3.2. Collapsible containers
+  3.3. Text on top of charts
+  3.4. Main charts
+  3.5. Filtering brush
+4. Dot plot
+  4.1. General text
+  4.2. Top title, axis, legend
+  4.3. Individual rows
+  4.4. Highlighted row changes
+  4.5. Misc. body text not under .row group 
+5. Plotly scatter plots
+*/
+
+/**********************
+** 1: GENERAL LAYOUT **
+***********************/
+
+#content, div.pane {
+  /*max-width: 750px;*/
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#titleCustom {
+  padding-top: 20px;
+}
+/** {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
+}*/
+
+.field-name-field-resource-authors {
+  position: relative;
+  top: -25px;
+}
+fieldset {
+  border: 0;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+fieldset label {
+  color: black;
+  text-transform: initial;
+  font-weight: bold;
+  font-size: 16px;
+}
+.graphTitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: black;
+}
+.graphSubtitle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: black;
+}
+
+/*disable AIR's CSS transitions for
+selected interactive graphics*/
+#map *, .chart *, .top100 * {
+  transition-duration: 0s;
+  webkit-transition-duration: 0s;
+}
+
+/* axis rules apply to both map and dot plot */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 11px;
+}
+
+
+/* persistent fixed header that appears after scrolled far enough */
+#stickyHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 50px;
+  background-color: #e7e8e9;
+  background-image: url(https://www.air.org/sites/all/themes/f1ux/images/nav-border.png); 
+  background-position: bottom; 
+  background-repeat: no-repeat;
+  background-size: 100% 15%;
+  display: block;
+}
+#navLogo {
+  height: 32px;
+  width: 146px;
+  background-image: url(https://www.air.org/sites/all/themes/f1ux/images/homepage-refresh/logo-sm.png);
+  background-repeat: no-repeat;
+  left: .92857em;
+  position: absolute;
+  top: .5em;
+  background-size: contain;
+}
+.navlinks {
+  display: flex; 
+  justify-content: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.navlinks a {
+  color: #002e60;
+  padding: 12px;
+}
+.navlinks a:hover {
+    text-decoration: none;
+}
+.navlinks a.active {
+  background-color: #ccc;
+}
+
+/*make sure the navbar looks good with smaller widths */
+@media only screen and (max-width: 930px) {
+  .navlinks {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .navlinks {
+    float: right;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .navlinks a {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .navlinks a {
+    font-size: 10px;
+    padding-top: 12px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navlinks a {
+    font-size: 9px;
+    padding: 12px 10px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .navlinks a {
+    padding: 12px 8px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .navlinks {
+    display: none;
+  }
+}
+
+
+/***********
+** 2: MAP **
+***********/
+
+/* 2.1: title & controls container */
+#extMapCntrls {
+  position: absolute;
+  padding: 10px;
+  z-index: 100;
+  top: 10px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  /*left: -100px;
+  width: 950px;*/
+}
+
+/* 2.2: Buttons on top left */
+.map-buttons-container {
+  max-width: 700px;
+}
+.map-button-wrapper {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.map-button-wrapper h5 {
+  font-size: .8em;
+  text-align: left;
+  margin: 0 0 5px 1px;
+}
+.m-button {
+  padding: 5px 11px;
+  text-align: center;
+  float: left;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+  font-size: .8em;
+}
+.m-button:first-child {
+  border-left: 1px solid #e2e2e2;
+  border-radius: 3px 0 0 3px;
+}
+.m-button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.m-button.active {
+  background-color: #bbb;
+  border: 1px solid rgba(0,0,0,.2);
+}
+.m-button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* 2.3: Geocoder on top right */
+#extMapCntrls #geocoderDiv {
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+}
+.mapboxgl-ctrl-geocoder {
+  min-width: 290px;
+  max-width: 350px;
+}
+.mapboxgl-ctrl-geocoder input[type='text'] {
+  height: 34px;
+}
+.mapboxgl-ctrl-geocoder .geocoder-icon-search {
+  top: 7px;
+}
+
+
+/* 2.4: Main map div container 
+Change this to change width/height
+By default, map will fill the div */
+#map {
+  /*width: 950px;
+  left: -100px;*/
+  /*width: 95%;
+  margin: 10px;*/
+  /*width: 100%;
+  height: 650px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;*/
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+}
+.mapboxgl-map {
+  font-family: "lato",Arial,Helvetica,sans-serif;
+}
+
+/* 2.5: Map popup content */
+.mapboxgl-popup-content {
+  width: 150px;
+  pointer-events: none;
+  border-radius: 10px;
+  padding: 5px 5px 7px 5px;
+  font-size: 12px;
+  color: black;
+}
+.mapboxgl-popup-content p {
+  padding-left: 5px;
+  line-height: 1.5em;
+}
+.mapboxgl-popup-content h3 {
+  margin: 10px 5px 10px 5px;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3em;
+}
+.mapboxgl-popup-content table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-collapse: collapse;
+}
+.mapboxgl-popup-content td, th {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 7px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
+.mapboxgl-popup-content th {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+.mapboxgl-popup-content table {
+  margin-top: 10px;
+}
+
+/* 2.6: Legend on bottom right */
+#mapLegendSVG {
+  margin-right: 5px;
+}
+#mapLegendSVG, #mapLegendSVG .axis text {
+  font-size: 10px;  
+}
+
+/* 2.7: Remove unwanted elements */
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib,
+.mapboxgl-ctrl-logo {
+  display: none;
+}
+.mapboxgl-ctrl-compass {
+  display: none !important;
+}
+
+
+  </style>
+
+  <!-- custom code for sticky navigation bar  -->
+  <!--<script src='js/nav.js'></script>-->
+
+  <!--CSS centers 750 pixel width div. Let's discuss ideal width & resizing behavior.-->
+  <div id="content"> 
+
+    <!--Ideally navigation bar could link to this section-->
+
+      <h2 id="mapTitle" class="graphTitle">White – Black Gap in 8th Grade Algebra Enrollment</h2>
+
+      <!--Interactive map controls-->
+      <div id="extMapCntrls">
+        <div class="map-buttons-container">
+          <div class="map-button-wrapper compare">
+            <h5>Comparison</h5>
+            <div>
+              <div class="m-button map-button active" value="all">Overall rate</div>
+              <div class="m-button map-button" value="WB">White – Black</div>
+              <div class="m-button map-button" value="WH">White – Hisp.</div>
+            </div>
+          </div>
+          <div class="map-button-wrapper measure">
+            <h5>Measure</h5>
+            <div>
+              <div class="m-button map-button active" value="enroll">Enrollment</div>
+              <div class="m-button map-button" value="access">Access</div>
+            </div>
+          </div>
+        </div>
+        <div id="geocoderDiv"></div>
+      </div><!--end of #extMapCntrls-->
+
+      <!--Interactive map container and JS code-->
+      <div id='map'>
+        <div class="mapboxgl-ctrl-bottom-right">
+          <div id="mapLegendSVG"></div>
+        </div>
+      </div>
+      <script>
+var baseURL = "https://d-miller.github.io/alg8/a3902/";
+
+//Mapbox IDs
+var mapStyle = "mapbox://styles/d-miller/cjry6bv1a2dvy1ftegyvp6753";
+//var stateSource = "mapbox://d-miller.9kxhea4q";
+//var distSource = "mapbox://d-miller.2r746qu6";
+//var stateSource = "mapbox://d-miller.8sa9h84b";
+var stateSource = "mapbox://d-miller.6uuwaa0j"; //UPDATED 4.1.19
+//var distSource = "mapbox://d-miller.0185gp4e"; //D9 simplification
+//var distSource = "mapbox://d-miller.ab3gzhrn"; //D10 simplification
+var distSource = "mapbox://d-miller.19j9ocla"; //D10 simplification - UPDATED 4.1.19
+
+//var schlSource = "mapbox://d-miller.5h19yk8k";
+//var schlSourceLayer = "school-8i3ui3";
+var schlSource = "mapbox://d-miller.2gdpnqri"; //Chicago only
+var schlSourceLayer = "school_Chicago-2s568u"; //UPDATED 4.1.19
+
+//maximum fill opacity of states & districts
+var mapOpacity = .8;
+var minzoomDist = 3.6;
+var maxzoomState = 4.1;
+
+//legend display properties
+var legendW = 200;
+var legendH = 53;
+var legendPad = {left: 15, right: 15};
+var blackNotes = [
+  {x: -10, y: 18, text:"Black", textA: "start"}, 
+  {x: -10, y: 29, text:"higher", textA: "start"}, 
+  {x: legendW+10, y: 18, text:"White", textA: "end"}, 
+  {x: legendW+10, y: 29, text:"higher", textA: "end"}
+];
+var hispNotes = [
+  {x: -10, y: 18, text:"Hispanic", textA: "start"}, 
+  {x: -10, y: 29, text:"higher", textA: "start"}, 
+  {x: legendW+10, y: 18, text:"White", textA: "end"}, 
+  {x: legendW+10, y: 29, text:"higher", textA: "end"}
+];
+
+//display properties for overall rates
+//var allC = ['#dadaeb','#bcbddc','#9e9ac8','#756bb1','#54278f'];
+var allC = ['#cbc9e2','#9e9ac8','#756bb1','#54278f'];
+var all_enroll = {
+  topTitle: "8th Grade Algebra Enrollment",
+  //legendCuts: [.2, .4, .6, .8],
+  legendCuts: [.2, .4, .7],
+  legendEnds: [0, 1],
+  legendAddEnds: true,
+  legendTickFormat: d3.format("%"),
+  legendTitle: "Overall Enrollment Rate",
+  legendColors: allC,
+  fill: ["case", ["has", "G08_alg_p"],
+          ["step", ["get", "G08_alg_p"],
+            "hsla(0, 57%, 36%, 0)", 
+            0, allC[0], 
+            0.2, allC[1], 
+            0.4, allC[2], 
+            0.7, allC[3]
+            //0.6, allC[3],
+            //0.8, allC[4]
+            ],
+          "hsla(0, 57%, 36%, 0)"]
+};
+all_enroll.school_fill = all_enroll.fill;
+
+//display properties for overall access
+var all_access = {
+  topTitle: "Access to 8th Grade Algebra",
+  //legendCuts: [.2, .4, .6, .8],
+  legendCuts: [.2, .4, .7],
+  legendEnds: [0, 1],
+  legendAddEnds: true,
+  legendTickFormat: d3.format("%"),
+  legendTitle: "Overall Access Rate",
+  legendColors: allC,
+  fill: ["case", ["has", "G08_access_p"],
+          ["step", ["get", "G08_access_p"],
+            "hsla(0, 57%, 36%, 0)", 
+            0, allC[0], 
+            0.2, allC[1], 
+            0.4, allC[2], 
+            0.7, allC[3]
+            //0.6, allC[3],
+            //0.8, allC[4]
+            ],
+          "hsla(0, 57%, 36%, 0)"]
+};
+all_access.school_fill = all_access.fill;
+
+//display properties for White-Black enrollment gap
+var WB_enroll = {
+  topTitle: "White – Black Gap in 8th Grade Algebra Enrollment",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "Enrollment Gap",
+  legendNotes: blackNotes,
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+    fill: ["case", ["has", "WB_n"], 
+      ["case", [ ">", ["get", "WB_n"], 10],
+        ["step", ["get", "WB_diff"],
+          "hsla(0, 0%, 0%, 0)", 
+          -1, "#008837", 
+          -0.15, "#a6dba0",
+          -0.05, "#bfbfbf",
+          0.05, "#92c5de",
+          0.15, "#0571b0"],
+        "hsla(0, 0%, 0%, 0)"],
+      "hsla(0, 0%, 0%, 0)"],
+  school_fill: ["case", ["has", "WB_n"], 
+          ["case", [ ">", ["get", "WB_n"], 10],
+            ["step", ["get", "WB_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"]
+  //school_fill: "#3b3b3b"
+};
+
+//display properties for White-Black access gap
+var WB_access = {
+  topTitle: "White – Black Gap in Access to 8th Grade Algebra",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "Access Gap",
+  legendNotes: blackNotes,
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+  fill: ["case", ["has", "WB_n"], 
+          ["case", [ ">", ["get", "WB_n"], 10],
+            ["step", ["get", "WB_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"],
+  school_fill: ["case", ["has", "WB_n"], 
+          ["case", [ ">", ["get", "WB_n"], 10],
+            ["step", ["get", "WB_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"]
+  //school_fill: "#3b3b3b"
+  };
+
+//display properties for White-Hisp. enrollment gap
+var WH_enroll = {
+  topTitle: "White – Hispanic Gap in 8th Grade Algebra Enrollment",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "Enrollment Gap",  
+  legendNotes: hispNotes,
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+  fill: ["case", ["has", "WH_n"], 
+          ["case", [ ">", ["get", "WH_n"], 10],
+            ["step", ["get", "WH_diff"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"],
+  school_fill: ["case", ["has", "WB_n"], 
+          ["case", [ ">", ["get", "WB_n"], 10],
+            ["step", ["get", "WB_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"]
+  //school_fill: "#3b3b3b"
+  };
+
+//display properties for White-Hisp. access gap
+var WH_access = {
+  topTitle: "White – Hispanic Gap in Access to 8th Grade Algebra",
+  legendCuts: [-15, -5, 5, 15],
+  legendEnds: [-27.5, 27.5],
+  legendTitle: "Access Gap",
+  legendNotes: hispNotes,
+  legendColors: ["#008837", "#a6dba0", "#bfbfbf", "#92c5de","#0571b0"],
+  fill: ["case", ["has", "WH_n"], 
+          ["case", [ ">", ["get", "WH_n"], 10],
+            ["step", ["get", "WH_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"],
+  school_fill: ["case", ["has", "WB_n"], 
+          ["case", [ ">", ["get", "WB_n"], 10],
+            ["step", ["get", "WB_access"],
+              "hsla(0, 0%, 0%, 0)", 
+              -1, "#008837", 
+              -0.15, "#a6dba0",
+              -0.05, "#bfbfbf",
+              0.05, "#92c5de",
+              0.15, "#0571b0"],
+            "hsla(0, 0%, 0%, 0)"],
+          "hsla(0, 0%, 0%, 0)"]
+  //school_fill: "#3b3b3b"
+  };
+
+//combine display properties into one master object
+var displayProps = {all_enroll: all_enroll, 
+                    all_access: all_access, 
+                    WB_enroll: WB_enroll, 
+                    WB_access: WB_access,
+                    WH_enroll: WH_enroll, 
+                    WH_access: WH_access};
+
+//sets the default map
+//var displayVar = "WB_enroll"; 
+var displayVar = "all_enroll"; 
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZC1taWxsZXIiLCJhIjoiVnlXU3Q2YyJ9.KCoT1vzItxIP3DEg_rgs8g';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: mapStyle,
+  center: [-87.7, 41.86],
+  zoom: 9.75,
+  pitchWithRotate: false
+});
+
+//fit map to bounds of the U.S.
+/*map.fitBounds([[
+  -86.99803874848419,
+  42.1182754937559
+], [
+  -88.26020125159773,
+  41.61816736113809
+]]);*/
+
+// disable map zoom when using scroll
+//map.scrollZoom.disable();
+
+//minimum # of students to display a gap
+var gapMinN = 10;
+
+//message to put at bottom of tooltip note
+var tooltipEnd = "";
+
+//use a pointer cursor
+map.getCanvas().style.cursor = 'default';
+
+
+//load data of schools' locations using D3 library
+var geo_lat = [41.8074, 41.698602, 41.933943, 41.972954, 41.929442, 41.657818, 41.769372, 41.811028, 41.834048, 42.010626, 41.741863, 41.739787, 41.983422, 41.91274, 41.945392, 41.748492, 41.771142, 41.705356, 41.754462, 41.774484, 41.95795, 41.798804, 41.971974, 41.808773, 41.885181, 41.958056, 41.949543, 41.92134, 41.710293, 41.729503, 41.950933, 41.765559, 42.003504, 41.761342, 41.75463, 41.960162, 41.930956, 41.949686, 41.699974, 41.824326, 41.81978, 41.882954, 41.664843, 41.897581, 41.975301, 41.917404, 41.798114, 41.938081, 41.714748, 41.72864, 41.912042, 41.828938, 41.795102, 41.739256, 41.82366, 41.884186, 41.75264, 41.903989, 41.934951, 41.947896, 41.783027, 41.741961, 41.793296, 41.78963, 41.653175, 41.904232, 41.687465, 41.84578, 41.77071, 41.882586, 41.88223, 41.8661, 41.975369, 41.91817, 41.807417, 41.94307, 41.879474, 42.01313, 41.896954, 41.801663, 41.77767, 41.867819, 41.654661, 41.951691, 41.992804, 41.693491, 41.676716, 41.741787, 41.810978, 41.899644, 41.745769, 41.955545, 41.845554, 41.962114, 41.852376, 41.742448, 41.700253, 41.685518, 41.802495, 41.923544, 41.77091, 41.822224, 41.745279, 41.905213, 41.762293, 41.878099, 41.87971, 41.942544, 41.795845, 41.973168, 41.95696, 41.95241, 41.743427, 41.88901, 41.830516, 41.780745, 41.84352, 41.915781, 41.65404, 41.779607, 41.696387, 41.739091, 41.858634, 41.726319, 41.781176, 41.774647, 42.004648, 41.999433, 41.97108, 41.994144, 41.805234, 41.88542, 41.875891, 41.906761, 41.689219, 41.829024, 41.715898, 41.780573, 41.879851, 41.979916, 41.710995, 42.009556, 41.849452, 41.785398, 41.730028, 41.738581, 41.6943, 41.906426, 41.866811, 41.86195, 41.818054, 41.797321, 41.917722, 41.897488, 42.020809, 41.871628, 41.706737, 41.9399, 41.706663, 41.975913, 41.837914, 41.725073, 41.922904, 41.976039, 41.813016, 41.94914, 41.952964, 41.719385, 41.870418, 41.738659, 41.775597, 41.662393, 41.812663, 41.849792, 41.780656, 41.686315, 41.945405, 41.807552, 41.852605, 41.753775, 41.923396, 41.718684, 41.793876, 41.757281, 41.942221, 41.899516, 41.99463, 41.839477, 41.808523, 41.807497, 41.878461, 41.79067, 41.815932, 41.793423, 41.861834, 41.68114, 41.983825, 41.838222, 41.793566, 41.79542, 41.82249, 41.893355, 41.733143, 41.860262, 41.7046, 41.766559, 41.937646, 41.939315, 41.871947, 41.874773, 41.733978, 41.939151, 41.984301, 41.867844, 41.90223, 41.87403, 41.862009, 41.749462, 42.017167, 41.858538, 41.850493, 41.697345, 41.87035, 41.725361, 41.927431, 41.803203, 41.776569, 42.003815, 41.765448, 41.78964, 41.72423, 41.891402, 41.798313, 41.945534, 41.784478, 41.809625, 41.913309, 41.90254, 41.696534, 41.86297, 41.86711, 41.77558, 41.855691, 41.8735, 41.746627, 41.907035, 41.797507, 41.92447, 41.782051, 41.940396, 41.842791, 41.931411, 41.877092, 41.934143, 41.91241, 41.906569, 41.908922, 41.933732, 41.841534, 41.759948, 41.907821, 41.748721, 41.916146, 41.774222, 41.716913, 41.95232, 41.856529, 41.922985, 41.773106, 41.914588, 41.830283, 41.97076, 41.767523, 41.89789, 41.968393, 41.878854, 41.669303, 41.73139, 41.891968, 41.81416, 41.929636, 41.9129, 41.692074, 41.783865, 41.889063, 41.696052, 41.702346, 41.921363, 41.949733, 41.798256, 41.825258, 41.892004, 41.851879, 41.738969, 41.941417, 41.914133, 41.78414, 41.798246, 41.744167, 41.697986, 41.905809, 41.88207, 41.961545, 41.92075, 41.989209, 41.89396, 41.754755, 41.76868, 41.994054, 41.978473, 41.857869, 41.891635, 41.774615, 41.742947, 41.669832, 41.972658, 41.766642, 41.769372, 41.768918, 41.786716, 41.787997, 41.983009, 41.858652, 41.855654, 41.83593, 41.856406, 41.98191, 41.900322, 41.852758, 41.858902, 41.860383, 41.87257, 41.8923, 41.957228, 41.761013, 41.929025, 41.920924, 41.906408, 41.775195, 41.965563, 41.918773, 41.688955, 41.760455, 41.961059, 41.792299, 41.804425, 41.941766, 41.942571, 41.764492, 42.015254, 41.90609, 41.752045, 41.847979, 41.735189, 41.907283, 41.901521, 41.84759, 41.991297, 41.79766, 41.913706, 41.941445, 41.717238, 41.80982, 41.75245, 41.844195, 41.799911, 41.790505, 41.806552, 41.691375, 41.864489, 41.880825, 41.905073, 41.708023, 41.958924, 41.865216, 41.994254, 41.866377, 41.767519, 41.884948, 41.848535, 41.758905, 41.746865, 41.995496, 41.912628, 41.883308, 41.744035, 41.87096, 41.711288, 41.989206, 41.984594, 41.892528, 41.794498, 41.760591, 41.76461, 41.715344, 41.847396, 41.73307, 41.948939, 41.77632, 41.883934, 41.725555, 41.799437, 41.786031, 41.88322, 41.720541, 41.971316, 41.716127, 41.7746, 41.854451, 41.843526, 41.892625, 41.726922, 41.687818, 41.728506, 41.964293, 41.869719, 41.82691, 41.765038, 41.906972, 42.003012, 41.748623, 41.684267, 41.672547, 41.840073, 41.850571, 42.007324, 41.814035, 41.914625, 41.906518, 41.878293, 41.841512];
+var geo_lon = [-87.740041, -87.53353, -87.656055, -87.71362, -87.646241, -87.606962, -87.634789, -87.59888, -87.65, -87.684601, -87.709642, -87.601036, -87.671085, -87.696221, -87.681316, -87.591259, -87.739875, -87.658389, -87.671156, -87.653346, -87.702224, -87.625084, -87.756916, -87.626702, -87.705013, -87.733475, -87.686731, -87.757891, -87.617049, -87.576513, -87.665134, -87.653007, -87.698035, -87.575906, -87.557304, -87.649439, -87.696153, -87.798928, -87.562387, -87.691961, -87.626809, -87.671122, -87.63847, -87.765668, -87.696624, -87.782125, -87.616467, -87.669715, -87.567054, -87.60747, -87.668767, -87.692551, -87.791262, -87.581104, -87.711501, -87.739157, -87.550571, -87.717847, -87.770019, -87.829764, -87.591035, -87.696815, -87.688432, -87.623281, -87.600803, -87.714182, -87.703734, -87.714836, -87.691951, -87.764971, -87.699208, -87.694787, -87.683138, -87.694391, -87.665701, -87.777157, -87.6273, -87.675161, -87.688622, -87.685776, -87.681367, -87.769991, -87.543899, -87.706287, -87.698525, -87.679449, -87.660175, -87.565156, -87.704502, -87.681518, -87.659894, -87.684051, -87.732272, -87.66373, -87.712488, -87.653623, -87.611599, -87.621798, -87.672206, -87.705138, -87.666661, -87.700281, -87.717261, -87.685684, -87.623467, -87.766002, -87.680581, -87.813521, -87.642333, -87.841332, -87.646195, -87.720821, -87.610469, -87.704721, -87.613418, -87.787716, -87.628681, -87.674561, -87.614327, -87.616944, -87.639789, -87.729486, -87.71582, -87.582727, -87.67532, -87.708448, -87.810777, -87.761044, -87.709341, -87.813692, -87.725578, -87.765881, -87.716304, -87.694426, -87.667671, -87.667685, -87.639232, -87.691668, -87.707982, -87.766236, -87.640258, -87.669845, -87.687407, -87.608558, -87.655035, -87.668162, -87.653021, -87.636001, -87.726279, -87.718441, -87.612225, -87.668454, -87.716974, -87.721829, -87.671509, -87.653362, -87.535048, -87.724821, -87.647077, -87.796064, -87.71894, -87.62321, -87.692991, -87.659514, -87.643618, -87.758838, -87.650637, -87.65236, -87.718408, -87.64515, -87.758257, -87.553513, -87.699611, -87.63402, -87.776588, -87.633298, -87.670543, -87.660951, -87.69613, -87.709006, -87.761927, -87.621182, -87.5868, -87.632376, -87.65758, -87.755972, -87.668512, -87.641091, -87.74598, -87.673249, -87.735682, -87.67213, -87.633728, -87.711236, -87.718251, -87.647334, -87.778853, -87.654032, -87.649376, -87.682781, -87.682131, -87.759468, -87.567618, -87.731658, -87.629831, -87.719404, -87.65386, -87.741, -87.683533, -87.6609, -87.646595, -87.675336, -87.701055, -87.680852, -87.640804, -87.70165, -87.703284, -87.669196, -87.678062, -87.652366, -87.704631, -87.696907, -87.702131, -87.676738, -87.735989, -87.589208, -87.641074, -87.668346, -87.641312, -87.778775, -87.63945, -87.746205, -87.602477, -87.690939, -87.657334, -87.671822, -87.637564, -87.673591, -87.62719, -87.713, -87.710966, -87.72905, -87.730553, -87.749701, -87.627644, -87.754319, -87.659906, -87.644257, -87.67221, -87.702278, -87.717384, -87.79552, -87.705375, -87.707845, -87.784198, -87.709853, -87.665144, -87.776308, -87.70527, -87.59055, -87.640143, -87.574958, -87.722135, -87.697245, -87.553321, -87.720436, -87.730639, -87.65745, -87.636882, -87.723542, -87.640988, -87.654668, -87.691398, -87.746705, -87.676392, -87.724524, -87.633878, -87.552866, -87.683447, -87.615581, -87.718831, -87.696205, -87.665296, -87.688321, -87.704804, -87.705368, -87.648172, -87.722398, -87.717162, -87.592656, -87.6675, -87.747294, -87.628822, -87.620847, -87.64471, -87.646648, -87.64816, -87.689316, -87.552824, -87.630842, -87.729694, -87.627621, -87.707406, -87.757807, -87.802573, -87.658481, -87.645958, -87.572987, -87.792499, -87.812286, -87.675254, -87.665259, -87.675359, -87.705322, -87.623284, -87.73891, -87.611518, -87.634789, -87.583169, -87.732372, -87.719779, -87.665973, -87.721433, -87.658114, -87.618651, -87.628322, -87.712627, -87.731926, -87.683393, -87.662376, -87.692707, -87.763401, -87.70808, -87.760414, -87.558006, -87.669244, -87.765812, -87.677666, -87.663631, -87.772682, -87.682851, -87.609255, -87.67656, -87.671062, -87.594445, -87.605396, -87.719314, -87.768418, -87.600307, -87.696774, -87.663401, -87.617629, -87.681046, -87.639638, -87.6829, -87.633968, -87.699742, -87.746299, -87.705142, -87.7992, -87.732913, -87.59631, -87.668883, -87.600075, -87.641225, -87.650319, -87.632031, -87.6898, -87.658587, -87.668579, -87.65951, -87.644177, -87.605442, -87.78245, -87.653867, -87.724429, -87.628956, -87.590216, -87.750744, -87.698075, -87.64923, -87.731849, -87.684574, -87.713157, -87.677338, -87.54264, -87.733007, -87.676155, -87.658507, -87.791583, -87.674217, -87.690447, -87.60686, -87.706073, -87.533188, -87.6962, -87.544914, -87.777839, -87.609121, -87.730157, -87.630486, -87.75972, -87.594294, -87.651311, -87.665875, -87.724876, -87.648132, -87.601271, -87.647912, -87.635142, -87.718684, -87.575184, -87.535969, -87.596525, -87.691936, -87.726923, -87.619831, -87.657933, -87.732098, -87.705825, -87.635426, -87.654992, -87.650535, -87.725322, -87.673645, -87.778733, -87.608676, -87.69998, -87.76727, -87.664013, -87.735361];
+var geo_name = ["Academy for Global Citizenship", "Addams Elem School", "Agassiz Elem School", "Albany Park Multicultural Elem", "Alcott Elem School", "Aldridge Elem School", "Amandla Charter School", "Ariel Elem Community Academy", "Armour Elem School", "Armstrong G Elem IntL Studies", "Ashburn Community Elem School", "Ashe Elem School", "Asian Human Srvcs-Passage Chrtr", "Aspira Charter Schools", "Audubon Elem School", "Avalon Park Elem School", "Azuela Elem School", "Barnard Elem Comp Math & Sci Ctr", "Barton Elem School", "Bass Elem School", "Bateman Elem School", "Beasley Elem Magnet Academic Ctr", "Beaubien Elem School", "Beethoven Elem School", "Beidler Elem School", "Belding Elem School", "Bell Elem School", "Belmont-Cragin Elem School", "Bennett Elem School", "Black Magnet Elem School", "Blaine Elem School", "Bond Elem School", "Boone Elem School", "Bouchet Elem Math & Science Acad", "Bradwell Comm Arts & Sci Elem Sch", "Brennemann Elem School", "Brentano Elem Math & Science Acad", "Bridge Elem School", "Bright Elem School", "Brighton Park Elem School", "Bronzeville Lighthouse Elem Chrtr", "Brown  W Elem School", "Brown R Elem Community Acad", "Brunson Math & Sci Specialty Elem", "Budlong Elem School", "Burbank Elem School", "Burke Elem School", "Burley Elem School", "Burnham Elem Inclusive Academy", "Burnside Elem Scholastic Academy", "Burr Elem School", "Burroughs Elem School", "Byrne Elem School", "Caldwell Elem Acad of Math & Sci", "Calmeca Acad Elem School", "Camelot Safe Acad - Garfield Park", "Camelot Safe Academy School", "Cameron Elem School", "Camras Elem School", "Canty Elem School", "Carnegie Elem School", "Carroll Elem School", "Carson Elem School", "Carter Elem School", "Carver Primary School", "Casals Elem School", "Cassell Elem School", "Castellanos Elem School", "Catalyst Charter - Maria ES", "Catalyst Charter-Circle Rock ES", "Cather Elem School", "Chalmers Elem Specialty School", "Chappell Elem School", "Chase Elem School", "Chavez Elem Multicultural Acad Ct", "Chicago Academy Elem School", "Chicago International Charter", "Chicago Math & Sci Elem Charter", "Chopin Elem School", "Christopher Elem School", "Claremont Academy Elem School", "Clark  G R Elem School", "Clay Elem School", "Cleveland Elem School", "Clinton Elem School", "Clissold Elem School", "Colemon J Elem Academy", "Coles Elem Language Academy", "Columbia Explorers Elem Academy", "Columbus Elem School", "Cook Elem School", "Coonley Elem School", "Corkery Elem School", "Courtenay Elem Language Arts Ctr", "Crown Elem Comm Acd Fine Arts Ctr", "Cuffe Math-Sci Tech Elem Academy", "Cullen Elem School", "Curtis Elem School", "Daley Elem Academy", "Darwin Elem School", "Davis M Magnet Elem School", "Davis N Elem School", "Dawes Elem School", "De Diego Elem Community Academy", "Deneen Elem School", "Depriest Elem School", "Dett Elem School", "Dever Elem School", "Dewey Elem Academy of Fine Arts", "Dirksen Elem School", "Disney Elem Magnet School", "Disney II Magnet HS", "Dixon Elem School", "Dodge Elem School", "Doolittle Elem School", "Dore Elem School", "Drake Elem School", "Drummond Elem School", "Dubois Elem School", "Dulles Elem School", "Dunne Technology Acad Elem Sch", "Durkin Park Elem School", "Dvorak Technology Acad Elem Sch", "Earhart Elem Opt for Knowl School", "Earle Elem School", "Eberhart Elem School", "Ebinger Elem School", "Edgebrook Elem School", "Edison Elem Regional Gifted Cntr", "Edison Park Elem School", "Edwards Elem School", "Ellington Elem School", "Ericson Elem Scholastic Academy", "Erie Elem Charter School", "Esmond Elem School", "Evergreen Academy Elem School", "Evers Elem School", "Fairfield Elem Academy", "Faraday Elem School", "Farnsworth Elem School", "Fernwood Elem School", "Field Elem School", "Finkl Elem School", "Fiske Elem School", "Fort Dearborn Elem School", "Foster Park Elem School", "Foundations College Prep Charter", "Franklin Elem Fine Arts Center", "Frazier Perspectives Magnet ES", "Frazier Prep Acad Charter ES", "Fuller Elem School", "Fulton Elem School", "Funston Elem School", "Galapagos Elem Charter School", "Gale Elem Community Academy", "Galileo Elem Math & Sci Schol Acd", "Gallistel Elem Language Academy", "Garcia Lorca Elem School", "Garvey  M Elem School", "Garvy  J Elem School", "Gary Elem School", "Gillespie Elem School", "Goethe Elem School", "Goudy Technology Academy", "Graham  A Elem School", "Gray Elem School", "Greeley Elem School", "Green  W Elem School", "Gregory Math & Sci Elem Academy", "Gresham Elem School", "Grimes Elem School", "Grissom Elem School", "Gunsaulus Elem Scholastic Academy", "Haines Elem School", "Hale Elem School", "Haley Elem Academy", "Hamilton Elem School", "Hamline Elem School", "Hammond Elem School", "Hampton Elem Fine & Perf Arts Sch", "Hanson Park Elem School", "Harlan Community Academy HS", "Harte Elem School", "Harvard Elem School", "Hawthorne Elem Scholastic Academy", "Hay Elem Community Academy", "Hayt Elem School", "Healy Elem School", "Hearst Elem School", "Hedges Elem School", "Hefferan Elem School", "Henderson Elem School", "Hendricks Elem Community Academy", "Hernandez Middle School", "Herzl Elem School", "Higgins Elem Community Academy", "Hitch Elem School", "Holden Elem School", "Holmes Elem School", "Horizon Sci Acad - Southwest Chtr", "Horizon Science Acad-McKinley Pk", "Howe Elem School", "Hoyne Elem School", "Hughes  C Elem School", "Hughes L Elem School", "Hurley Elem School", "Inter-American Elem Magnet School", "Intrinsic Charter High School", "Irving Elem School", "Jackson A Elem Language Acad", "Jackson M Elem School", "Jahn Elem School", "Jamieson Elem School", "Jefferson Alt High School", "Jenner Elem Academy of the Arts", "Jensen Elem Scholastic Academy", "Johnson Elem School", "Joplin Elem School", "Jordan Elem Community School", "Jungman Elem School", "Kanoon Elem Magnet School", "Keller Elem Gifted Magnet School", "Kellman Corporate Community Elem", "Kellogg Elem School", "Kelvyn Park High School", "Kenwood Academy High School", "Kershaw Elem School", "Kilmer Elem School", "King Academy of Social Justice", "Kinzie Elem School", "Kipling Elem School", "KIPP Chicago Charter Schools", "Kozminski Elem Community Academy", "Lane Technical High School", "Langford A Elem School", "Lara Elem Academy", "LaSalle Elem Language Academy", "LaSalle II Lang Acad Elem Sch", "Lavizzo Elem School", "Lawndale Elem Community Academy", "LEARN Charter Schools", "Lee Elem School", "Legacy Elem Charter School", "Leland Elem School", "Lenart Elem Regional Gifted Ctr", "Lewis Elem School", "Libby Elem School", "Lincoln Elem School", "Lindblom Math & Science Acad HS", "Linne Elem School", "Little Village Elem School", "Locke  J Elem School", "Locke A Elem Charter Academy", "Logandale Middle School", "Lovett Elem School", "Lowell Elem School", "Lozano Elem Bilingual & Intl Ctr", "Lyon Elem School", "Madero Middle School", "Madison Elem School", "Manierre Elem School", "Mann Elem School", "Marine Leadership Academy - Ames", "Marquette Elem School", "Marsh Elem School", "Marshall Middle School", "Mason Elem School", "Mayer Elem School", "Mays Elem Academy", "McAuliffe Elem School", "McClellan Elem School", "McCutcheon Elem School", "McKay Elem School", "McNair Elem School", "McPherson Elem School", "Melody Elem School", "Metcalfe Elem Community Academy", "Mireles Elem Academy", "Mitchell Elem School", "Mollison Elem School", "Monroe Elem School", "Moos Elem School", "Morgan Park High School", "Morrill Elem Math & Sci School", "Morton Elem Career Academy", "Mount Greenwood Elem School", "Mount Vernon Elem School", "Mozart Elem School", "Murphy Elem School", "Murray Elem Language Academy", "Namaste Elem Charter School", "Nash Elem School", "National Teachers Elem Academy", "Neil Elem School", "Nettelhorst Elem School", "Newberry Elem Math & Science Acad", "Nicholson Tech Acad Elem Sch", "Nightingale Elem School", "Ninos Heroes Elem Academic Ctr", "Nkrumah Academy Charter ES", "Nobel Elem School", "Noble Street Charter Schools", "North River Elem School", "Northwest Middle School", "Norwood Park Elem School", "Ogden Int High School", "Oglesby Elem School", "OKeeffe Elem School", "Onahan Elem School", "Oriole Park Elem School", "Orozco Elem Fine Arts & Sciences", "Otis Elem School", "OToole Elem School", "Owen Elem Scholastic Academy", "Owens Community Academy ES", "Palmer Elem School", "Park Manor Elem School", "Parker Elem Community Academy", "Parkside Elem Community Academy", "Pasteur Elem School", "Peck Elem School", "Peirce Elem Intl Studies School", "Penn Elem School", "Perez Elem School", "Pershing Elem Humanities Magnet", "Perspectives Charter High School", "Peterson Elem School", "Piccolo Elem Specialty School", "Pickard Elem School", "Pilsen Elem Community Academy", "Plamondon Elem School", "Plato Learning Acad  Elem School", "Polaris Elem Charter Academy", "Portage Park Elem School", "Powell Elem Paideia Comm Academy", "Prescott Elem School", "Prieto Math-Science Elem Sch", "Pritzker Elem School", "Providence-Englewood Elem Charter", "Prussing Elem School", "Pulaski Intl Sch of Chicago", "Pullman Elem School", "Randolph Elem School", "Ravenswood Elem School", "Ray Elem School", "Reavis Elem Math & Sci Spec Schl", "Reilly Elem School", "Reinberg Elem School", "Revere Elem School", "Rogers Elem School", "Rowe Elementary", "Ruggles Elem School", "Ruiz Elem School", "Ryder Elem Math & Sci Spec School", "Sabin Elem Magnet School", "Salazar Elem Bilingual Center", "Saucedo Elem Scholastic Academy", "Sauganash Elem School", "Sawyer Elem School", "Sayre Elem Language Academy", "Scammon Elem School", "Schmid Elem School", "Seward Elem Communication Arts Ac", "Shabazz International Chrtr Schls", "Sheridan Elem Math & Science Acad", "Sherman Elem School", "Sherwood Elem School", "Shields Middle School", "Shoop Math-Sci Tech Elem Academy", "Simpson Acad HS for Young Women", "Skinner Elem School", "Skinner North Elem Sch", "Smith  W Elem School", "Smyser Elem School", "Smyth  J Elem School", "Solomon Elem School", "South Loop Elem School", "South Shore Fine Arts Elem Sch", "Spencer Technology Acad Elem Sch", "Spry Elem Community School", "Stagg Elem School", "Stevenson Elem School", "Stone Elem Scholastic Academy", "Stowe Elem School", "Suder Montessori Elem Magnet Schl", "Sullivan Elem School", "Sumner Elem Math & Sci Comm Acad", "Sutherland Elem School", "Swift Elem Specialty School", "Taft High School", "Talcott Elem School", "Talman Elem School", "Tanner Elem School", "Tarkington Elem School", "Taylor Elem School", "Telpochcalli Elem School", "Thorp  J N Elem School", "Thorp  O A Elem Scholastic Acad", "Till Elem Math & Science Academy", "Tilton Elem School", "Turner-Drew Elem Language Academy", "Twain Elem School", "Univ of Chicago Charter Schools", "UNO Academy Charter Schools", "Vanderpoel Elem Magnet School", "Volta Elem School", "Wacker Elem School", "Wadsworth Elem School", "Walsh Elem School", "Ward  J Elem School", "Ward  L Elem School", "Warren Elem School", "Washington  G Elem School", "Washington  H Elem School", "Waters Elem School", "Webster Elem School", "Wells Preparatory Elem Academy", "Wentworth Elem School", "West Park Elem Academy", "West Ridge Elem School", "Westcott Elem School", "Whistler Elem School", "White Elem Career Academy", "Whitney Elem School", "Whittier Elem School", "Wildwood Elem School", "Woodson South Elem School", "Yates Elem School", "Young Elem School", "Young Magnet High School", "Zapata Elem Academy"];
+
+//takes index position and outputs a Carmen geojson format
+function getFeature(pos) {
+
+  //figure out the offset for the bounding box based on if it's a school or not
+  var off = .01;
+  var emoji = '📚 ';
+  //var off = geo_schl[pos] == 1 ? .01 : .25;
+  //var emoji = geo_schl[pos] == 1 ? '📚 ' : '🏫 ';
+
+  //return as Carmen geojson format: https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
+  return {
+    center: [geo_lon[pos], geo_lat[pos]],
+    bbox: [geo_lon[pos]-off, geo_lat[pos]-off, geo_lon[pos]+off, geo_lat[pos]+off],
+    geometry: {
+      type: "Point",
+      coordinates: [geo_lon[pos], geo_lat[pos]]
+    },
+    place_name: emoji + geo_name[pos],
+    place_type: ['school'],
+    properties: {},
+    type: "Feature"
+  }
+}
+
+//takes a search string and returns Carmen geojson format of matches
+//https://www.mapbox.com/mapbox-gl-js/example/forward-geocode-custom-data/
+//https://www.mapbox.com/mapbox-gl-js/example/mapbox-gl-geocoder-local-geocoder/
+function forwardGeocoder(query) {
+    var matchingFeatures = [];
+    for (var i = 0; i < geo_name.length; i++) {
+        // handle queries with different capitalization than the source data by calling toLowerCase()
+        if (geo_name[i].toLowerCase().search(query.toLowerCase()) !== -1) {
+            matchingFeatures.push(getFeature(i));
+        }
+    }
+    return matchingFeatures;
+}
+
+//add geocoder search feature
+map.addControl(new MapboxGeocoder({
+  accessToken: mapboxgl.accessToken,
+  localGeocoder: forwardGeocoder,
+  placeholder: "Search for a school"
+}));
+
+//dynamically place the geocoder inside or outside the map depending on the window width
+/*function placeGeocoder() {
+
+  var geocoder = d3.select(".mapboxgl-ctrl-geocoder")[0][0];
+  var insideMap = d3.select(".mapboxgl-ctrl-top-right")[0][0];
+  var outsideMap = d3.select("#geocoderDiv")[0][0];
+
+  if (window.innerWidth >= 725) outsideMap.appendChild(geocoder);
+  if (window.innerWidth < 725) insideMap.appendChild(geocoder);
+}
+
+
+//make initial placement and update with window resizing
+placeGeocoder();
+d3.select(window).on('resize', placeGeocoder);*/
+
+//add zoom controls
+var nav = new mapboxgl.NavigationControl();
+map.addControl(nav, 'top-right');
+map.dragRotate.disable();
+map.touchZoomRotate.disableRotation();
+
+// disable map zoom when using scroll
+map.scrollZoom.disable();
+
+//add the horizontal legend
+changeLegend(all_enroll, true);
+function changeLegend(props, draw) {
+
+  if (draw) {
+
+    //add SVG container and background rectangle
+    d3.select("#mapLegendSVG")
+      .append("svg")
+        .attr("width", legendW + legendPad.left + legendPad.right)
+        .attr("height", legendH)
+      .append("rect")
+        .attr("width", legendW + legendPad.left + legendPad.right)
+        .attr("height", legendH)
+        .attr("fill", "white")
+        .attr("rx", 4)
+        .attr("ry", 4)
+        .attr("fill-opacity", 0.8);
+
+    //add grouping element and text for the title
+    d3.select("#mapLegendSVG svg")
+      .append("g")
+        .attr("class", "mapLegend")
+        .attr("transform", "translate(" + legendPad.left + ", 20)")
+      .append("text")
+        .attr("class", "caption");
+  }  
+
+  var g = d3.select("#mapLegendSVG g");
+  var cuts = props.legendCuts;
+  var ends = props.legendEnds; 
+  var colors = props.legendColors;
+
+  const color = d3.scale.threshold()
+    .domain(cuts)
+    .range(colors)
+  
+  const x = d3.scale.linear()
+      .domain(ends)
+      .rangeRound([0, legendW]);
+
+  //figure out the buckets of range values
+  //use "ends" for the first bucket's start and last bucket's end
+  var buckets = color.range().map(function(d) { return color.invertExtent(d); })
+  buckets[0][0] = ends[0];
+  buckets[buckets.length-1][1] = ends[1];
+
+  //add tick values for the end if requested
+  var ticks = cuts.slice()
+  if (props.legendAddEnds) {
+    ticks.unshift(ends[0]);
+    ticks.push(ends[1]);
+  }
+
+  //add the ticks
+  g.select("g.axis").remove();
+  g.append("g").attr("class", "axis")
+    .call(d3.svg.axis()
+          .tickFormat(props.legendTickFormat)
+          .scale(x)
+          .orient("bottom")
+          .tickSize(13)
+          .tickValues(ticks))
+        .select(".domain")
+      .remove();
+
+  //add the color rectangle
+  g.selectAll("rect.colorRect").remove();
+  g.selectAll("rect.colorRect")
+   .data(buckets)
+   .enter()
+   .append("rect")
+    .attr("class", "colorRect")
+    .attr("height", 8)
+    .attr("x", function(d) { return x(d[0]); })
+    .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+    .attr("fill", function(d) { return color(d[0]); })
+    .attr("fill-opacity", mapOpacity);
+
+  //add legend title
+  g.select("text.caption")
+      .attr("y", -6)
+      .attr("font-weight", "bold")
+      .text(props.legendTitle);
+
+  //add text notes
+  g.selectAll("text.notes").remove();
+  if (props.legendNotes) {
+    g.selectAll("text.notes")
+    .data(props.legendNotes).enter()
+    .append("text")
+      .attr("class", "notes")
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y; })
+      .attr("text-anchor", function(d) { return d.textA; })
+      .text(function(d) { return d.text; });
+  }
+}
+
+//helper function that takes two proportions as input and 
+//outputs text describetion the difference between them
+function textGap(props) {
+
+  //disable for now...
+  return "";
+
+  //determine variable names based on the chosen display variable
+  if (displayVar === "WB_enroll") {
+    var v1 = "BL08_alg_p";
+    var v2 = "WH08_alg_p";
+    var g1name = "Black";
+    var g2name = "White";
+  }
+  if (displayVar === "WB_access") return "";
+  if (displayVar === "WH_access") return "";
+  if (displayVar === "WH_enroll") {
+    var v1 = "HI08_alg_p";
+    var v2 = "WH08_alg_p";
+    var g1name = "Hispanic";
+    var g2name = "White";
+  }
+
+  //get data
+  var g1 = props[v1];
+  var g2 = props[v2];
+
+  //get percentage strings
+  var g1perc = parseFloat((100*g1).toPrecision(2)) + "%";
+  var g2perc = parseFloat((100*g2).toPrecision(2)) + "%";
+
+  //these strings should be "N/A" if input proportion is -99 (missing)
+  if (g1 == -99) g1perc = "N/A";
+  if (g2 == -99) g2perc = "N/A";
+
+  //handle special cases involving 0%
+  if (g1==0 & g2==0) return "No " + g1name + " or " + g2name + " student took grade 8 algebra";
+  if (g1==0) return "No " + g1name + " took grade 8 algebra, but " + g2perc + " of " + g2name + " students did";
+  if (g2==0) return g1perc + " of " + g1name + " students took grade 8 algebra, but no " + g2name + " student did";
+
+  //if the rates were equal
+  if (g1 == g2) return g1name + " and " + g2name + " students were equally likely to grade 8 algebra (" + 
+                       g1perc + " vs. " + g2perc + ")";
+
+  //otherwise report the relative ratio
+  var diff = Math.abs(Math.round(100*(g1/g2 - 1)));
+  if (g1 < g2) diff = diff + "% less likely";
+  if (g1 > g2) diff = diff + "% more likely";
+  return g1name + " students were " + diff + " than " + g2name + 
+         " students to take grade 8 algebra (" + g1perc + " vs. " + g2perc + ")";
+}
+
+//helper function that takes two proportions as input and 
+//outputs a table HTML of them along with # of students
+function tableGap(props, schoolLevel) {
+
+  //determine variable names based on the chosen display variable
+  if (displayVar === "WB_enroll") {
+    var v1 = "BL08_alg_p";
+    var v2 = "WH08_alg_p";
+    var g1name = "Black";
+    var g2name = "White";
+    var g1n = props["BL08"];
+    var g2n = props["WH08"];
+  }
+  if (displayVar === "WB_access") {
+    var v1 = "BL08_access_p";
+    var v2 = "WH08_access_p";
+    var g1name = "Black";
+    var g2name = "White";
+    var g1n = props["BL08"];
+    var g2n = props["WH08"];
+  }
+  if (displayVar === "WH_enroll") {
+    var v1 = "HI08_alg_p";
+    var v2 = "WH08_alg_p";
+    var g1name = "Hisp.";
+    var g2name = "White";
+    var g1n = props["HI08"];
+    var g2n = props["WH08"];
+  }
+  if (displayVar === "WH_access") {
+    var v1 = "HI08_access_p";
+    var v2 = "WH08_access_p";
+    var g1name = "Hisp.";
+    var g2name = "White";
+    var g1n = props["HI08"];
+    var g2n = props["WH08"];
+  }
+
+  //get data
+  var all = props.G08_alg_p;
+  var g1 = props[v1];
+  var g2 = props[v2];
+  var all_n = props.G08;
+
+
+  //get percentage strings
+  var all_perc = parseFloat((100*all).toPrecision(2)) + "%";
+  var g1perc = parseFloat((100*g1).toPrecision(2)) + "%";
+  var g2perc = parseFloat((100*g2).toPrecision(2)) + "%";
+
+  //these strings should be "N/A" if input proportion is -99 (missing) or size is 0
+  if (all == -99 | all_n == 0) g1perc = "N/A";
+  if (g1 == -99 | g1n == 0) g1perc = "N/A";
+  if (g2 == -99 | g2n == 0) g2perc = "N/A";
+
+  //suppress if showing data for an individual school
+  if (schoolLevel) g1perc = "-";
+  if (schoolLevel) g2perc = "-";
+
+  //also suppress if >0 but less than minimum reporting n
+  if (all_n > 0 & all_n < gapMinN) all_perc = "-";
+  if (g1n > 0 & g1n < gapMinN) g1perc = "-";
+  if (g2n > 0 & g2n < gapMinN) g2perc = "-";
+
+  //get HTML for each row
+  var header = "<tr><th>Group</th><th>Size</th><th>Rate</th></tr>";
+  var all_row = "<tr><td>All</td><td>" + all_n + "</td><td>" + all_perc;
+  var g1row = "<tr><td>" + g1name + "</td><td>" + d3.format(",")(g1n) + "</td><td>" + g1perc;
+  var g2row = "<tr><td>" + g2name + "</td><td>" + d3.format(",")(g2n) + "</td><td>" + g2perc;
+
+  //return the full table HTML
+  if (schoolLevel) return "<table>" + header + all_row + g1row + g2row + "</table>";
+  return "<table>" + header + g1row + g2row + "</table>"; 
+}
+
+
+
+//wrapper function that gets the entire describetion HTML
+//calls the textGap and tableGap functions
+function describeGap(props, schoolLevel) {
+
+  //header name
+  var headerHTML = "<h3>" + props.name + "</h3>";
+
+  //get data
+  if (displayVar.substr(0,2) === "WB") {
+    var g1n = props.BL08;
+    var g1name = "Black";
+  }
+  if (displayVar.substr(0,2) === "WH") {
+    var g1n = props.HI08;
+    var g1name = "Hispanic";
+  }
+  var g2n = props.WH08;
+  var g2name = "White";
+
+  //don't compute gap for individual schools
+  if (schoolLevel == true) return headerHTML + "<p>Gap not computed for individual schools, but the " + 
+                                  "overall rate and demographics are reported:</p>" +
+                                  tableGap(props, true) + tooltipEnd;
+
+  //check minimum sample sizes (for now only adjust the text, not table)
+  if ((g1n < gapMinN) & (g2n < gapMinN)) return headerHTML + "<p>Data reporting standards not met to estimate gap: too few " + 
+                                                g1name + " and " + g2name + " students</p>" + tableGap(props) + tooltipEnd; 
+  if (g1n < gapMinN) return headerHTML + "<p>Data reporting standards not met to estimate gap: too few " + 
+                            g1name + " students</p>" + tableGap(props) + tooltipEnd;
+  if (g2n < gapMinN) return headerHTML + "<p>Data reporting standards not met to estimate gap: too few " + 
+                            g2name + " students</p>" + tableGap(props) + tooltipEnd;
+
+  //otherwise combine the text and table HTML
+  return headerHTML + textGap(props) + tableGap(props) + tooltipEnd;
+}
+
+//gives describetion of the overall rate
+var alg8text = " of 8th graders were enrolled in Algebra I in the 2015-16 school year"
+var alg8text_access = " of 8th graders had access to Algebra I in the 2015-16 school year"
+
+function describeOverall(props) {
+
+  //header name
+  var headerHTML = "<h3 style='text-align: center;'>" + props.name + "</h3>";
+
+  //get rate
+  if (displayVar === "all_enroll") {
+    var rate = Math.round(100*props.G08_alg_p) + "%";
+    return headerHTML + rate + alg8text;
+  }
+
+  //get rate
+  if (displayVar === "all_access") {
+    var rate = Math.round(100*props.G08_access_p) + "%";
+    return headerHTML + rate + alg8text_access;
+  }
+}
+
+//wrapper function that calls describeGap() or describeOverall() depending on the display var
+function tooltipHTML(props, schoolLevel) {
+
+  //if there's no G08 variable, that means data reporting standards were not met
+  if (typeof props.G08 === "undefined") {
+    var headerHTML = "<h3 style='text-align: center;'>" + props.name + "</h3>";
+    return headerHTML + "<p>Data reporting standards not met</p>";
+  }
+
+  //otherwise choose function based on display variable
+  if (displayVar === "all_enroll") return describeOverall(props);
+  if (displayVar === "all_access") return describeOverall(props);
+  if (displayVar === "WB_enroll") return describeGap(props, schoolLevel);
+  if (displayVar === "WH_enroll") return describeGap(props, schoolLevel);
+  if (displayVar === "WB_access") return describeGap(props, schoolLevel);
+  if (displayVar === "WH_access") return describeGap(props, schoolLevel);
+}
+
+//helper functions for handling hover highlighting events
+var hoveredState =  null;
+var hoveredDistrict =  null;
+function hoverState(newID) {
+  if (hoveredState) map.setFeatureState({source: 'states', sourceLayer: "states", id: hoveredState}, { hover: false});
+  hoveredState = newID;
+  if (newID) map.setFeatureState({source: 'states', sourceLayer: "states", id: newID}, { hover: true});
+}
+function hoverDistrict(newID) {
+  if (hoveredDistrict) map.setFeatureState({source: 'districts', sourceLayer: "districts", id: hoveredDistrict}, { hover: false});
+  hoveredDistrict = newID;
+  if (newID) map.setFeatureState({source: 'districts', sourceLayer: "districts", id: newID}, { hover: true});
+}
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false,
+    //anchor: "left",
+    offset: 10
+});
+
+//variable that will store whether the popup was created
+//by mouse hover or scrolling event
+var hoverByMouse = false;
+
+//helper function for hovering over a lat/lon point regardless 
+//if initiated by a mouse or other trigger (e.g., scroll)
+function hoverPoint(point, byMouse) {
+
+  //reset if point is null
+  if (point === null) {
+    //hoverDistrict(null);
+    //hoverState(null);
+    popup.remove();
+    return;
+  }
+
+  //update global variable
+  hoverByMouse = byMouse;
+  var xyCoord = map.project(point);
+
+  var schools = map.queryRenderedFeatures(xyCoord, { layers: ['school']   });
+  if (schools.length > 0) {
+
+    //update the popup
+    popup.setLngLat(schools[0].geometry.coordinates)
+         .setHTML(tooltipHTML(schools[0].properties))
+         .addTo(map);
+  } else {
+    //remove the popup
+    popup.remove();
+  }
+
+}
+
+
+//helper function for changing the display variable
+function changeDisplayVar(newVar) {
+
+  //get the new display settings
+  var newS = displayProps[ newVar ];
+
+  //change the map title
+  d3.select("#mapTitle").html(newS.topTitle);
+
+  //redraw the colors
+  //map.setPaintProperty("state", "fill-color", newS.fill);
+  //map.setPaintProperty("district", "fill-color", newS.fill);
+  map.setPaintProperty("school", "circle-color", newS.school_fill);
+
+  //change the legend
+  changeLegend(newS, false);
+
+  //change the tooltip - changes what function tooltipHTML() uses
+  displayVar = newVar;
+}
+
+//when the map loads...
+map.on('load', function() {
+
+  //default map is set by initial defintion of displayVar
+  var defaultProps = displayProps[displayVar];
+
+  //add the sources for states and districts
+  map.addSource("states", {
+      "type": "vector",
+      "url": stateSource
+  });
+  map.addSource("districts", {
+      "type": "vector",
+      "url": distSource
+  });
+  map.addSource("schools", {
+      "type": "vector",
+      "url": schlSource
+  });
+
+  // The feature-state dependent fill-opacity expression will render the hover effect
+  // when a feature's hover state is set to true.
+  map.addLayer({
+    "id": "district-borders",
+    "type": "line",
+    "metadata": {},
+    "source": "districts",
+    "source-layer": "districts",
+    "minzoom": minzoomDist,
+    "filter": ["==", "$type", "Polygon"],
+    "layout": {},
+    "paint": {
+      "line-color": "black",
+      "line-width": [
+        "match",
+        ["get", "id"],
+        [1709930],
+        3,
+        0
+      ],
+      "line-opacity": 0.6
+    }      
+  });
+
+  /*map.addLayer({
+      "id": "district",
+      "type": "fill",
+      "source": "districts",
+      "source-layer": "districts",
+      "minzoom": minzoomDist,
+      "layout": {},
+      "paint": {
+          "fill-color": defaultProps.fill,
+          "fill-opacity": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              0, 0,
+              minzoomDist, 0,
+              maxzoomState, mapOpacity,
+              10, mapOpacity,
+              12, 0.5
+          ],
+          "fill-outline-color": "hsla(0, 0%, 60%, 0)"
+      }
+  }, "admin-3-4-boundaries-bg");*/
+
+  map.addLayer({
+    "id": "school",
+    "type": "circle",
+    "source": "schools",
+    "source-layer": schlSourceLayer,
+    "minzoom": 8,
+    "filter": ["==", "$type", "Point"],
+    "layout": {},
+      "paint": {
+        "circle-opacity": 1,
+        "circle-radius": [
+          "step",
+          ["get", "G08"],
+          3*.75, 
+          25, 5*.75, 
+          50, 6.5*.75,
+          75, 8*.75,
+          1574, 8*.75
+        ],
+        "circle-stroke-color": "hsl(0, 4%, 32%)",
+        "circle-stroke-width": 2,
+        "circle-color": defaultProps.school_fill
+      }
+    });
+
+  
+  map.addLayer({
+            "id": "schoolname",
+            "type": "symbol",
+            "source": "schools",
+            "source-layer": schlSourceLayer,
+            "minzoom": 8,
+            "filter": ["==", "$type", "Point"],
+            "layout": {
+                "text-field": ["to-string", ["get", "name"]],
+                "text-offset": [0, 2],
+                "text-size": ["step", ["zoom"], 0, 11, 11],
+                "text-allow-overlap": true
+            },
+            "paint": {"text-opacity": ["step", ["zoom"], 0, 12, 1]}
+        });
+
+  //add event listeners to the map buttons
+  d3.selectAll(".m-button.map-button").on("click", function() {
+
+      //if the active button was pressed, do nothing
+      if (d3.select(this).classed("active")) return;
+
+      //update the active button under the relevant div
+      var div = d3.select(this.parentElement.parentElement);
+      div.select(".active").classed("active", false);
+      d3.select(this).classed("active", true);
+
+      //update the display variable
+      var comp = d3.select(".map-button-wrapper.compare .active").attr("value");
+      var meas = d3.select(".map-button-wrapper.measure .active").attr("value");
+      changeDisplayVar(comp + "_" + meas);
+    })
+
+
+  //change display if another variable has been selected
+  /*d3.select("select#displayVar").on("change", function() {
+    var newVar = d3.select(this).node().value;
+    changeDisplayVar(newVar);
+  });*/
+
+  //handle moving the mouse cursor over the map
+  map.on('mousemove', function(e) { hoverPoint(e.lngLat, true); });
+
+  //reset if mouse is moved over the document, but not map
+  document.addEventListener("mouseover", function(){
+    if (hoverByMouse) {
+      hoverDistrict(null);
+      //hoverState(null);
+      popup.remove();
+    }
+  });
+});
+      </script>
+</div>
+
+
+  
+
+</body>
+</html>
