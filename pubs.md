@@ -9,7 +9,7 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Journal Articles</h2>
 
-Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (in press). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018](({{ site.baseurl }}/assets/EaglyGenderMeta.pdf). _American Psychologist_. doi:10.1037/amp0000494 [[R code and data here](https://osf.io/g98c6/)]
+Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (in press). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl }}/assets/EaglyGenderMeta.pdf). _American Psychologist_. doi:10.1037/amp0000494 [[R code and data here](https://osf.io/g98c6/)]
 
 * **Media coverage (selected):** [_Business Insider_](https://www.businessinsider.com/women-versus-men-intelligence-competence-compassion-ambition-workplace-leadership-2019-7), [_Los Angeles Times_](https://www.latimes.com/science/story/2019-07-18/women-more-competent-than-men-study), [_Newsweek_](https://www.newsweek.com/women-competent-men-emotional-sensitive-1449961), [_Psychology Today_](https://www.psychologytoday.com/us/blog/the-athletes-way/201907/have-gender-stereotypes-changed-the-mid-20th-century), [_USA Today_](https://www.usatoday.com/story/news/nation/2019/07/18/differences-between-men-and-women-most-now-say-intelligence-equal/1767610001/), 
 
@@ -20,7 +20,7 @@ Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (in pres
 * I was also interviewed twice on radio for [_BBC World Service_](https://www.bbc.co.uk/worldserviceradio)
 * The study also received national TV coverage on _ABC News_ (see [16-second clip here](http://abcnews.go.com/Health/children-draw-scientists-women-study-shows/story?id=53885492)).
 
-Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (2018). [Teachers’ spatial skills across disciplines and education levels: Exploring nationally representative data]({{ site.baseurl }}/assets/AtitTeacherSpatial.pdf). _Archives of Scientific Psychology_, _6_(1), 130-137. doi:10.1037/arc0000041
+Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (2018). [Teachers’ spatial skills across disciplines and education levels: Exploring nationally representative data]({{ site.baseurl }}/assets/AtitTeacherSpatial.pdf). _Archives of Scientific Psychology_, _6_(1), 130-137. doi:10.1037/arc0000041 [[Supplemental materials here](http://supp.apa.org/psycarticles/supplemental/arc0000041/arc0000041_supp.html)]
 
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. doi:10.1007/s10508-016-0826-z
  
