@@ -3,7 +3,7 @@ layout: page
 permalink: /pubs/
 ---
 
-<div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile (<i>h</i> index = 10)</a></div>
+<div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile (<i>h</i> index = 11)</a></div>
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
