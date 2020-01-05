@@ -3,17 +3,17 @@ layout: page
 permalink: /pubs/
 ---
 
-<div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile (<i>h</i> index = 11)</a></div>
+<div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile (<i>h</i> index = 12)</a></div>
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
 <h2 style="margin-top: 1em;">Journal Articles</h2>
 
-**Miller, D. I.** (in press). [When do growth mindset interventions work?](https://doi.org/10.1016/j.tics.2019.08.005) _Trends in Cognitive Sciences_. doi:10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
-
 Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (in press). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl }}/assets/EaglyGenderMeta.pdf). _American Psychologist_. doi:10.1037/amp0000494 [[R code and data](https://osf.io/g98c6/)]
 
 * **Media coverage (selected):** [_Business Insider_](https://www.businessinsider.com/women-versus-men-intelligence-competence-compassion-ambition-workplace-leadership-2019-7), [_Los Angeles Times_](https://www.latimes.com/science/story/2019-07-18/women-more-competent-than-men-study), [_New York Times_](https://www.nytimes.com/2019/07/30/us/women-men-competence.html), [_Newsweek_](https://www.newsweek.com/women-competent-men-emotional-sensitive-1449961), [_Pacific Standard Magazine_](https://psmag.com/social-justice/americans-now-believe-women-are-as-competent-as-men-but-not-as-ambitious), [_Psychology Today_](https://www.psychologytoday.com/us/blog/the-athletes-way/201907/have-gender-stereotypes-changed-the-mid-20th-century), [_USA Today_](https://www.usatoday.com/story/news/nation/2019/07/18/differences-between-men-and-women-most-now-say-intelligence-equal/1767610001/)
+
+**Miller, D. I.** (2019). [When do growth mindset interventions work?](https://doi.org/10.1016/j.tics.2019.08.005) _Trends in Cognitive Sciences_, _23_(11), 910-912. doi:10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
 
 **Miller, D. I.**, Nolla, K. M., Eagly, A. H., & Uttal, D. H. (2018). [The development of children’s gender-science stereotypes: A meta-analysis of five decades of U.S. Draw-A-Scientist studies]({{ site.baseurl }}/assets/MillerDAST.pdf). _Child Development_, _89_(6), 1943-1955. doi:10.1111/cdev.13039 [[R code and data](https://osf.io/3awvj/)]
 
