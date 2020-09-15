@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I'm a researcher at American Institutes for Research, focusing on science, technology, engineering, and mathematics (STEM) education ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf) or [Google Scholar profile](https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en)). Leading academic journals such as [_Child Development_]({{ site.baseurl }}/assets/MillerDAST.pdf), [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
+I'm a researcher at [American Institutes for Research](https://www.air.org/person/david-i-miller), focusing on science, technology, engineering, and mathematics (STEM) education ([see C.V.]({{ site.baseurl }}/assets/MillerCV.pdf) or [Google Scholar profile](https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en)). Leading academic journals such as [_Child Development_]({{ site.baseurl }}/assets/MillerDAST.pdf), [_Journal of Educational Psychology_]({{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf), and [_Trends in Cognitive Sciences_]({{ site.baseurl }}/assets/MillerHalpern2014.pdf) have published my research.
 
 I earned my Ph.D. in psychology at Northwestern University in June 2018, and my dissertation analyzed nationally representative longitudinal datasets to study transitions into and out of STEM. Before Northwestern, I earned my B.S. in Mathematical Physics from Harvey Mudd College and then pursued science education research through UC Berkeley's [Technology Enhanced Learning in Science (TELS) Center](http://telscenter.org/). 
 
