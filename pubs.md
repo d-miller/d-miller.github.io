@@ -7,11 +7,15 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<h2 style="margin-top: 1em;">Journal Articles</h2>
+<h2 style="margin-top: 1em;">Publications</h2>
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code and data](https://osf.io/f9gud/)]
 
-Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (2020). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl }}/assets/EaglyGenderMeta.pdf). _American Psychologist_, _75_(3), 301–315. https://doi.org/10.1037/amp0000494 [[R code and data](https://osf.io/g98c6/)]
+**Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
+
+Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
+
+Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (2020). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl}}/assets/EaglyGenderMeta.pdf). _American Psychologist_, _75_(3), 301–315. https://doi.org/10.1037/amp0000494 [[R code and data](https://osf.io/g98c6/)]
 
 * **Media coverage (selected):** [_Business Insider_](https://www.businessinsider.com/women-versus-men-intelligence-competence-compassion-ambition-workplace-leadership-2019-7), [_Los Angeles Times_](https://www.latimes.com/science/story/2019-07-18/women-more-competent-than-men-study), [_New York Times_](https://www.nytimes.com/2019/07/30/us/women-men-competence.html), [_Newsweek_](https://www.newsweek.com/women-competent-men-emotional-sensitive-1449961), [_Pacific Standard Magazine_](https://psmag.com/social-justice/americans-now-believe-women-are-as-competent-as-men-but-not-as-ambitious), [_Psychology Today_](https://www.psychologytoday.com/us/blog/the-athletes-way/201907/have-gender-stereotypes-changed-the-mid-20th-century), [_USA Today_](https://www.usatoday.com/story/news/nation/2019/07/18/differences-between-men-and-women-most-now-say-intelligence-equal/1767610001/)
 
