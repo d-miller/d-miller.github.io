@@ -9,6 +9,13 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Publications</h2>
 
+**Miller, D. I.**, Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456 [[R code, data, and preregistration](https://osf.io/7mnsw/)]
+* Profiled by the [U.S. National Science Foundation](https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger).
+* **My writing:** I wrote [this op-ed article](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/) in _Scientific American_ about the study.
+* **Media coverage (selected):** [Education Week](https://www.edweek.org/teaching-learning/the-stem-stereotypes-that-hold-students-back-arent-what-you-think/2024/12), [Forbes](https://www.forbes.com/sites/josiecox/2024/12/09/kids-as-young-as-six-think-girls-are-worse-than-boys-at-computer-science/), [Mashable](https://mashable.com/article/stem-gender-stereotype), [NPR](https://bsky.app/profile/davidimiller.bsky.social/post/3lcvtxadq422f), [Talker News](https://talker.news/2024/12/09/study-shows-gender-stereotypes-in-stem-fields-start-early/) (republished across several local news outlets), and [The 74](https://www.the74million.org/article/girls-face-stereotypes-about-stem-abilities-as-early-as-6-study-finds/).
+
+Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code and data](https://osf.io/f9gud/)]
+
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code and data](https://osf.io/f9gud/)]
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
