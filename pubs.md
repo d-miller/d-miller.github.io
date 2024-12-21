@@ -9,7 +9,7 @@ permalink: /pubs/
 
 <h2 style="margin-top: 1em;">Publications</h2>
 
-**Miller, D. I.**, Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456 [[R code, data, and preregistration](https://osf.io/7mnsw/)]
+**Miller, D. I.**, Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456 [[R code and data](https://osf.io/29egh/), [preregistration](https://osf.io/8ktnj), and [interactive data app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/)]
 * Profiled by the [U.S. National Science Foundation](https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger).
 * **My writing:** I wrote [this op-ed article](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/) in _Scientific American_ about the study.
 * **Media coverage (selected):** [Education Week](https://www.edweek.org/teaching-learning/the-stem-stereotypes-that-hold-students-back-arent-what-you-think/2024/12), [Forbes](https://www.forbes.com/sites/josiecox/2024/12/09/kids-as-young-as-six-think-girls-are-worse-than-boys-at-computer-science/), [Mashable](https://mashable.com/article/stem-gender-stereotype), [NPR](https://bsky.app/profile/davidimiller.bsky.social/post/3lcvtxadq422f), [Talker News](https://talker.news/2024/12/09/study-shows-gender-stereotypes-in-stem-fields-start-early/) (republished across several local news outlets), and [The 74](https://www.the74million.org/article/girls-face-stereotypes-about-stem-abilities-as-early-as-6-study-finds/).
@@ -94,6 +94,8 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 
 ## Popular Press
+
+**Miller, D. I.** (2024, December 20). [Why six-year-olds think computing and engineering are ‘for boys’](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/). _Scientific American_.
 
 **Miller, D. I.** (2018, March 20). [Kids draw female scientists more often than they did decades ago](https://blogs.scientificamerican.com/voices/kids-draw-female-scientists-more-often-than-they-did-decades-ago/). _Scientific American_.
 
