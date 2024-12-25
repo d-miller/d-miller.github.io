@@ -19,7 +19,7 @@ Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022
 
 What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 
-* I wrote the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63) and appendices on statistical formulas (Appendices D, E, and F).
+* I wrote the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63) and appendices on statistical formulas (Appendices D, E, and F), which were peer-reviewed by members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team.
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
 
@@ -28,6 +28,10 @@ Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathem
 Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (2020). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl}}/assets/EaglyGenderMeta.pdf). _American Psychologist_, _75_(3), 301–315. https://doi.org/10.1037/amp0000494 [[R code and data](https://osf.io/g98c6/)]
 
 * **Media coverage (selected):** [_Business Insider_](https://www.businessinsider.com/women-versus-men-intelligence-competence-compassion-ambition-workplace-leadership-2019-7), [_Los Angeles Times_](https://www.latimes.com/science/story/2019-07-18/women-more-competent-than-men-study), [_New York Times_](https://www.nytimes.com/2019/07/30/us/women-men-competence.html), [_Newsweek_](https://www.newsweek.com/women-competent-men-emotional-sensitive-1449961), [_Pacific Standard Magazine_](https://psmag.com/social-justice/americans-now-believe-women-are-as-competent-as-men-but-not-as-ambitious), [_Psychology Today_](https://www.psychologytoday.com/us/blog/the-athletes-way/201907/have-gender-stereotypes-changed-the-mid-20th-century), [_USA Today_](https://www.usatoday.com/story/news/nation/2019/07/18/differences-between-men-and-women-most-now-say-intelligence-equal/1767610001/)
+
+* What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+
+* I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.
 
 **Miller, D. I.** (2019). [When do growth mindset interventions work?]({{ site.baseurl}}/assets/Miller2019.pdf) _Trends in Cognitive Sciences_, _23_(11), 910-912. https://doi.org/10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
 
