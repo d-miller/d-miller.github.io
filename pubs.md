@@ -17,6 +17,10 @@ permalink: /pubs/
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code and data](https://osf.io/f9gud/)]
 
+What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+
+* I wrote the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63) and appendices on statistical formulas (Appendices D, E, and F).
+
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
 
 Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
