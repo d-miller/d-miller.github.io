@@ -34,10 +34,10 @@ My own popular press writing has also appeared in outlets such as [_Associated P
 
 ## Employment
 
-* 2021-Present, Senior Researcher, American Institutes for Research
-* 2018-2021, Researcher, American Institutes for Research
-* 2012-2018, Graduate Student Researcher, Northwestern University
-* 2010-2012, Graduate Student Researcher, University of California–Berkeley
+* Senior Researcher, American Institutes for Research (2021–Present)
+* Researcher, American Institutes for Research (2018–2021)
+* Graduate Student Researcher, Northwestern University (2012–2018)
+* Graduate Student Researcher, University of California–Berkeley (2010–2012)
 
 ## Federal Research Grants (Total: $9,423,203)
 
