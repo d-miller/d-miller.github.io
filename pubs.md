@@ -108,9 +108,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 **Miller, D. I.** (2017, February 1). [Stereotypes can hold boys back in school, too](https://theconversation.com/stereotypes-can-hold-boys-back-in-school-too-72035). _The Conversation_.
 
-* 25,000+ page views across original and republishing outlets.
-
-* Republished by [_Associated Press_](https://apnews.com/6111c62cc6914dd09c24d63ad4dd41f3/stereotypes-can-hold-boys-back-school-too) and [_Quillette_](http://quillette.com/2017/02/06/stereotypes-can-hold-boys-back-in-school-too/).
+* 25,000+ page views across original and republishing outlets including the [_Associated Press_](https://apnews.com/6111c62cc6914dd09c24d63ad4dd41f3/stereotypes-can-hold-boys-back-school-too) and [_Quillette_](http://quillette.com/2017/02/06/stereotypes-can-hold-boys-back-in-school-too/).
 
 **Miller, D. I.** (2016, June 15). [LGBT equality doesn’t exist – but here’s how to fight for it](https://theconversation.com/lgbt-equality-doesnt-exist-but-heres-how-to-fight-for-it-60977). _The Conversation_.
 
