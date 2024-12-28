@@ -108,6 +108,8 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 **Miller, D. I.** (2017, February 1). [Stereotypes can hold boys back in school, too](https://theconversation.com/stereotypes-can-hold-boys-back-in-school-too-72035). _The Conversation_.
 
+* 25,000+ page views across original and republishing outlets.
+
 * Republished by [_Associated Press_](https://apnews.com/6111c62cc6914dd09c24d63ad4dd41f3/stereotypes-can-hold-boys-back-school-too) and [_Quillette_](http://quillette.com/2017/02/06/stereotypes-can-hold-boys-back-in-school-too/).
 
 **Miller, D. I.** (2016, June 15). [LGBT equality doesn’t exist – but here’s how to fight for it](https://theconversation.com/lgbt-equality-doesnt-exist-but-heres-how-to-fight-for-it-60977). _The Conversation_.
@@ -116,14 +118,16 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 **Miller, D. I.** (2016, February 4). [Intersectionality: how gender interacts with other social identities to shape bias](https://theconversation.com/intersectionality-how-gender-interacts-with-other-social-identities-to-shape-bias-53724). _The Conversation_.
 
+* 100,000+ page views on _The Conversation_ alone.
+
 Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should write for the public](https://theconversation.com/heres-why-academics-should-write-for-the-public-50874). _The Conversation_.
 
-* 20,000+ page views across original and republishing outlets including [_Huffington Post_](http://www.huffingtonpost.com/the-conversation-us/heres-why-academics-shoul_b_8687718.html) and [_Quartz_](http://qz.com/562922/all-academics-should-be-required-to-take-a-creative-writing-course/).
+* 30,000+ page views across original and republishing outlets including [_Huffington Post_](http://www.huffingtonpost.com/the-conversation-us/heres-why-academics-shoul_b_8687718.html) and [_Quartz_](http://qz.com/562922/all-academics-should-be-required-to-take-a-creative-writing-course/).
 
 **Miller, D. I.** (2015, October 13). [Men and women biased about studies of STEM gender bias – in opposite directions](https://theconversation.com/men-and-women-biased-about-studies-of-stem-gender-bias-in-opposite-directions-48924). _The Conversation_. 
 
 * Discusses [a _PNAS_ study](http://www.pnas.org/cgi/doi/10.1073/pnas.1510649112) showing men, especially those in STEM, are less likely to believe the evidence of gender bias against women in science. Women are also biased against gender bias research, but in the opposite direction.  
-* 15,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/men-and-women-biased-about-studies-stem-gender-bias-opposite-directions).
+* 35,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/men-and-women-biased-about-studies-stem-gender-bias-opposite-directions).
 
 
 **Miller, D. I.** (2015, July 10). [Tech companies spend big money on bias training—but it hasn’t improved diversity numbers](https://theconversation.com/tech-companies-spend-big-money-on-bias-training-but-it-hasnt-improved-diversity-numbers-44411). _The Conversation_. 
@@ -135,18 +139,18 @@ Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should 
 **Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
 
 * Reports on [a nationally representative, longitudinal study](http://dx.doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
-* 50,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem) and [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem). 
+* 60,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem) and [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem). 
 
 
 **Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 
 * Discusses [my international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes.
-* 10,000+ page views across original and republishing outlets including [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), [_Quartz_](http://qz.com/414869/in-2015-most-people-still-think-man-when-they-think-scientist/), [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/), and [_The New Zealand Herald_](http://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=11463443).
+* 25,000+ page views across original and republishing outlets including [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), [_Quartz_](http://qz.com/414869/in-2015-most-people-still-think-man-when-they-think-scientist/), [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/), and [_The New Zealand Herald_](http://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=11463443).
 
 **Miller, D. I.** (2015, April 16). [Some good news about hiring women in STEM doesn’t erase sex bias issue](https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212). _The Conversation_. 
 
 * Discusses [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
-* 25,000+ page views across original and republishing outlets including [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/). 
+* 30,000+ page views across original and republishing outlets including [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/). 
 
 **Miller, D. I.** (2015, March 3). [A metaphor to retire](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science). _Inside Higher Ed_. 
 
