@@ -42,4 +42,4 @@ My writings on my blog or popular press outlets solely represent my own personal
 
 Email: [dimiller@air.org](mailto:dimiller@air.org)
 
-Twitter: [@davidimiller](https://twitter.com/davidimiller)
+Bluesky: [davidimiller.bsky.social](https://davidimiller.bsky.social/)
