@@ -23,7 +23,9 @@ What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and stan
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
 
+
 Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
+
 
 Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (2020). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl}}/assets/EaglyGenderMeta.pdf). _American Psychologist_, _75_(3), 301–315. https://doi.org/10.1037/amp0000494 [[R code and data](https://osf.io/g98c6/)]
 
