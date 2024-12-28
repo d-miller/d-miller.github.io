@@ -110,12 +110,11 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 **Miller, D. I.** (2024, December 20). [Why six-year-olds think computing and engineering are ‘for boys’](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/). _Scientific American_.
 
-* Discusses my peer-reviewed meta-analysis on children's gender stereotypes about STEM and verbal abilities, which was published in [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf)
+* Discusses my [_Psychological Bulletin_ meta-analysis](https://psycnet.apa.org/fulltext/2025-50489-001.pdf) meta-analysis on children's gender stereotypes about STEM and verbal abilities. 
 
 **Miller, D. I.** (2018, March 20). [Kids draw female scientists more often than they did decades ago](https://blogs.scientificamerican.com/voices/kids-draw-female-scientists-more-often-than-they-did-decades-ago/). _Scientific American_.
 
-* Discusses my peer-reviewed meta-analysis on children's gender-science stereotypes, which was published in [_Child Development_]({{ site.baseurl }}/assets/MillerDAST.pdf).
-
+* Discusses my [_Child Development_ meta-analysis]({{ site.baseurl }}/assets/MillerDAST.pdf) on children's gender-science stereotypes.
 
 **Miller, D. I.** (2017, February 1). [Stereotypes can hold boys back in school, too](https://theconversation.com/stereotypes-can-hold-boys-back-in-school-too-72035). _The Conversation_.
 
