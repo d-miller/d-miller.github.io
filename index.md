@@ -16,6 +16,19 @@ My research ([Google Scholar profile](https://scholar.google.com/citations?user=
 
 My own popular press writing has also appeared in outlets such as [_Associated Press_](http://bigstory.ap.org/article/6111c62cc6914dd09c24d63ad4dd41f3/stereotypes-can-hold-boys-back-school-too), [_Business Insider_](http://www.businessinsider.com/companies-are-spending-millions-on-bias-training-that-isnt-working-2015-7), [_Huffington Post_](http://www.huffingtonpost.com/the-conversation-us/heres-why-academics-shoul_b_8687718.html), [_Inside Higher Ed_](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science), [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/), [_Scientific American_](https://blogs.scientificamerican.com/voices/kids-draw-female-scientists-more-often-than-they-did-decades-ago/), and [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem). While a graduate student at Northwestern, I reached over 350,000 readers as a contributing writer for [_The Conversation_](https://theconversation.com/), an outlet where content is written by academics, edited by journalists, and republished by other media outlets.
 
+## Education
+
+Ph.D., Psychology, Northwestern University, 2018
+* Dissertation title: "Characterizing Pathways for Joining STEM in College and Beyond"
+* Dissertation committee: David H. Uttal, Alice H. Eagly, Larry V. Hedges
+
+Graduate Training, Science Education Research, University of California, Berkeley, 2010-2012
+* Research Advisor: Marcia C. Linn
+
+B.S., Physics, Harvey Mudd College, 2010
+* B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
+* Thesis Advisor: Diane F. Halpern
+
 ## Federal Research Grants (Total: $9,423,203)
 
 Co-PI, National Science Foundation (NSF), [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
