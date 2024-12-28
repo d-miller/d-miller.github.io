@@ -22,12 +22,19 @@ Ph.D., Psychology, Northwestern University, 2018
 * Dissertation title: "Characterizing Pathways for Joining STEM in College and Beyond"
 * Dissertation committee: David H. Uttal, Alice H. Eagly, Larry V. Hedges
 
-Graduate Training, Science Education Research, University of California, Berkeley, 2010-2012
+Graduate Training, Science Education Research, University of California–Berkeley, 2010-2012
 * Research Advisor: Marcia C. Linn
 
 B.S., Physics, Harvey Mudd College, 2010
 * B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
 * Thesis Advisor: Diane F. Halpern
+
+## Employment
+
+2021-Present, Senior Researcher, American Institutes for Research
+2018-2021, Researcher, American Institutes for Research
+2012-2018, Graduate Student Researcher, Northwestern University
+2010-2012, Graduate Student Researcher, University of California–Berkeley
 
 ## Federal Research Grants (Total: $9,423,203)
 
