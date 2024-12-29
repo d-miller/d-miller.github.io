@@ -7,7 +7,7 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<h2 style="margin-top: 1em;">Publications</h2>
+<h2 style="margin-top: 1em;">Peer-Reviewed Journal Articles</h2>
 
 **Miller, D. I.**, Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456 [[R code/data](https://osf.io/29egh/), [preregistration](https://osf.io/8ktnj), and [interactive app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/)]
 * Selected as Editor's Choice for the December 2024 issue of _Psychological Bulletin_.
@@ -15,27 +15,11 @@ permalink: /pubs/
 * **My writing:** I wrote [this op-ed article](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/) in _Scientific American_ about the study.
 * **Media coverage (selected):** [Education Week](https://www.edweek.org/teaching-learning/the-stem-stereotypes-that-hold-students-back-arent-what-you-think/2024/12), [Forbes](https://www.forbes.com/sites/josiecox/2024/12/09/kids-as-young-as-six-think-girls-are-worse-than-boys-at-computer-science/), [Mashable](https://mashable.com/article/stem-gender-stereotype), [NPR](https://bsky.app/profile/davidimiller.bsky.social/post/3lcvtxadq422f), [Talker News](https://talker.news/2024/12/09/study-shows-gender-stereotypes-in-stem-fields-start-early/) (republished across several local news outlets), and [The 74](https://www.the74million.org/article/girls-face-stereotypes-about-stem-abilities-as-early-as-6-study-finds/).
 
-Hall J. A., & **Miller D. I.** (2024). [Meta-analysis](https://doi.org/10.1017/9781009170123.028). In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press. https://doi.org/10.1017/9781009170123.028
-
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code and data](https://osf.io/f9gud/)]
-
-What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
-
-* I wrote the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63) and appendices on statistical formulas (Appendices D, E, and F), which were peer-reviewed by members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team.
-
-**Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
-
-
-Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
-
 
 Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (2020). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl}}/assets/EaglyGenderMeta.pdf). _American Psychologist_, _75_(3), 301–315. https://doi.org/10.1037/amp0000494 [[R code and data](https://osf.io/g98c6/)]
 
 * **Media coverage (selected):** [_Business Insider_](https://www.businessinsider.com/women-versus-men-intelligence-competence-compassion-ambition-workplace-leadership-2019-7), [_Los Angeles Times_](https://www.latimes.com/science/story/2019-07-18/women-more-competent-than-men-study), [_New York Times_](https://www.nytimes.com/2019/07/30/us/women-men-competence.html), [_Newsweek_](https://www.newsweek.com/women-competent-men-emotional-sensitive-1449961), [_Pacific Standard Magazine_](https://psmag.com/social-justice/americans-now-believe-women-are-as-competent-as-men-but-not-as-ambitious), [_Psychology Today_](https://www.psychologytoday.com/us/blog/the-athletes-way/201907/have-gender-stereotypes-changed-the-mid-20th-century), [_USA Today_](https://www.usatoday.com/story/news/nation/2019/07/18/differences-between-men-and-women-most-now-say-intelligence-equal/1767610001/)
-
-What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
-
-* I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.
 
 **Miller, D. I.** (2019). [When do growth mindset interventions work?]({{ site.baseurl}}/assets/Miller2019.pdf) _Trends in Cognitive Sciences_, _23_(11), 910-912. https://doi.org/10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
 
@@ -52,8 +36,6 @@ Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (2018). [Teachers�
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. https://doi.org/10.1007/s10508-016-0826-z
  
 * I was the statistical expert on multilevel modelling for this study.
-
-**Miller, D. I.** (2016). [Sex difference research and cognitive abilities]({{ site.baseurl }}/assets/Miller2016.pdf). In N. A. Naples (Ed.), The Wiley-Blackwell Encyclopedia of Gender and Sexuality Studies. New York, NY: John Wiley & Sons, Ltd. https://doi.org/10.1002/9781118663219.wbegss098
 
 Eagly, A. H., & **Miller, D. I.** (2016). [Scientific eminence: Where are the women?]({{ site.baseurl }}/assets/EaglyMiller2016.pdf) _Perspectives in Psychological Science_, _11_, 899-904. https://doi.org/10.1177/1745691616663918
 
@@ -91,7 +73,23 @@ STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Curre
 * 50+ citations according to [Google Scholar](https://scholar.google.com/scholar?cites=17410950570026817282).
 * **Media coverage:** [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
 
-## Peer-Reviewed Conference Proceedings
+## Other Academic Publications
+
+Hall J. A., & **Miller D. I.** (2024). [Meta-analysis](https://doi.org/10.1017/9781009170123.028). In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press. https://doi.org/10.1017/9781009170123.028
+
+What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+
+* I wrote the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63) and appendices on statistical formulas (Appendices D, E, and F), which were peer-reviewed by members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team.
+
+**Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
+
+Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
+
+What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+
+* I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.
+
+**Miller, D. I.** (2016). [Sex difference research and cognitive abilities]({{ site.baseurl }}/assets/Miller2016.pdf). In N. A. Naples (Ed.), The Wiley-Blackwell Encyclopedia of Gender and Sexuality Studies. New York, NY: John Wiley & Sons, Ltd. https://doi.org/10.1002/9781118663219.wbegss098
 
 Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). [A machine learning framework to identify students at risk of adverse academic outcomes]({{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf). In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
 
@@ -106,7 +104,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 **Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
 
 
-## Popular Press
+## Popular Press Articles
 
 **Miller, D. I.** (2024, December 20). [Why six-year-olds think computing and engineering are ‘for boys’](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/). _Scientific American_.
 
