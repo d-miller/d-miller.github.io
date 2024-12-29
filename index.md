@@ -11,6 +11,16 @@ I lead a programmatic line of meta-analytic research funded by the U.S. National
 
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24). AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
+## Education
+
+**B.S., Physics,** Harvey Mudd College, 2010
+* B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
+* Thesis Advisor: Diane F. Halpern
+
+**Ph.D., Psychology,** Northwestern University, 2018
+* Dissertation title: "Characterizing Pathways for Joining STEM in College and Beyond"
+* Dissertation committee: David H. Uttal, Alice H. Eagly, Larry V. Hedges
+
 ## Academic and Personal History
 
 My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my senior thesis project on using spatial training to improve undergraduates' STEM learning. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) about my switch from physics to STEM education research.)
@@ -34,16 +44,6 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 My research has been covered by national and international news outlets including [_ABC News_](http://abcnews.go.com/Health/children-draw-scientists-women-study-shows/story?id=53885492), [_BBC News_](http://www.bbc.com/news/science-environment-43460528), [_Chicago Tribune_](http://www.chicagotribune.com/bluesky/originals/chi-david-miller-northwestern-women-stem-bsi-20150217-story.html), [_CNN_](https://www.cnn.com/2018/03/20/health/female-scientists-kids-drawings-trnd/index.html), [_Forbes_](https://www.forbes.com/sites/josiecox/2024/12/09/kids-as-young-as-six-think-girls-are-worse-than-boys-at-computer-science/), [_Nature_](http://www.nature.com/news/us-women-progress-to-phd-at-same-rate-as-men-1.16939), [_New York Times_](https://twitter.com/davidimiller/status/1000780471490490368), [_NPR_](https://bsky.app/profile/davidimiller.bsky.social/post/3lcvtxadq422f), [_Science_](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias), [_Smithsonian_](https://www.smithsonianmag.com/smart-news/kids-are-drawing-female-scientists-more-often-they-did-decades-ago-180968548/), [_TIME_](http://time.com/5201175/draw-a-scientist-studies/), [_The Atlantic_](https://www.theatlantic.com/science/archive/2018/03/what-we-learn-from-50-years-of-asking-children-to-draw-scientists/556025/), [_The Guardian_](http://www.theguardian.com/higher-education-network/2015/feb/19/dont-be-fooled-by-the-closing-gender-gap-in-science-phds), [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/02/17/report-no-leaky-pipeline-for-women-in-stem), [_Washington Post_](https://www.washingtonpost.com/news/speaking-of-science/wp/2018/03/20/only-3-in-10-children-asked-to-draw-a-scientist-drew-a-woman-but-thats-more-than-ever/?utm_term=.a320c11b856a), and [_Yahoo News_](http://news.yahoo.com/gender-science-stereotype-strongest-holland-082246004.html). I have also been interviewed twice on radio for [_BBC World Service_](https://www.bbc.co.uk/worldserviceradio). The National Science Foundation (NSF) has also [profiled my research](https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger).
 
 My own popular press writing has also appeared in outlets such as [_Associated Press_](http://bigstory.ap.org/article/6111c62cc6914dd09c24d63ad4dd41f3/stereotypes-can-hold-boys-back-school-too), [_Business Insider_](http://www.businessinsider.com/companies-are-spending-millions-on-bias-training-that-isnt-working-2015-7), [_Huffington Post_](http://www.huffingtonpost.com/the-conversation-us/heres-why-academics-shoul_b_8687718.html), [_Inside Higher Ed_](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science), [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/), [_Scientific American_](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/), and [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem). While a graduate student at Northwestern, I reached over 350,000 readers as a contributing writer for [_The Conversation_](https://theconversation.com/), an outlet where content is written by academics, edited by journalists, and republished by other media outlets.
-
-## Education
-
-**Ph.D., Psychology,** Northwestern University, 2018
-* Dissertation title: "Characterizing Pathways for Joining STEM in College and Beyond"
-* Dissertation committee: David H. Uttal, Alice H. Eagly, Larry V. Hedges
-
-**B.S., Physics,** Harvey Mudd College, 2010
-* B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
-* Thesis Advisor: Diane F. Halpern
 
 ## Employment
 
