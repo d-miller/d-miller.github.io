@@ -65,7 +65,7 @@ PI, National Science Foundation (NSF), [The Development of Gender Stereotypes Ab
 
 Co-PI, National Science Foundation (NSF), [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777), 2018-2022. [$739,452]
 
-PI, National Science Foundation (NSF), [Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList), 2011-2016. [$120,000]
+PI/Fellow, National Science Foundation (NSF), [Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList), 2011-2016. [$120,000]
 
 ## Disclaimer
 
