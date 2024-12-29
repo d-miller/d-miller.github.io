@@ -12,7 +12,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 
 ## Academic and Personal History
 
-My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand the varied ways of how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my senior thesis project on [using spatial training]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) to improve undergraduates' STEM learning. 
+My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my senior thesis project on [using spatial training]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) to improve undergraduates' STEM learning. 
 
 After earning my B.S. in Mathematical Physics, I pursued science education research through two years as a graduate student researcher working with science education researcher [Marcia Linn](https://bse.berkeley.edu/marcia-c-linn) at the University of California at Berkeley’s [Technology Enhanced Learning in Science (TELS) Center](https://wise-research.berkeley.edu/). 
 
