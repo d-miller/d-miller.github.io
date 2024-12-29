@@ -3,8 +3,6 @@ layout: default
 title: About
 ---
 
-New! Follow me on Bluesky: [davidimiller.bsky.social](https://davidimiller.bsky.social/)
-
 ## About My Current Position
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in science, technology, engineering, and mathematics (STEM), especially using research synthesis methods.
