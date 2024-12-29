@@ -4,7 +4,7 @@ layout: default
 
 ## About My Current Position
 
-I'm currently a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in science, technology, engineering, and mathematics (STEM), especially using research synthesis methods.
+I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in science, technology, engineering, and mathematics (STEM), especially using research synthesis methods.
 
 I currently lead a portfolio of work funded by the U.S. National Science Foundation (NSF) as Principal Investigator (PI) or co-PI on multiple NSF grants, including topics such as [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) STEM ability stereotypes, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in STEM higher education and workforce settings, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. 
 
@@ -16,13 +16,17 @@ My passion for STEM education research started as a physics major at Harvey Mudd
 
 After earning my B.S. in Mathematical Physics, I pursued science education research through two years as a graduate student researcher working with science education researcher [Marcia Linn](https://bse.berkeley.edu/marcia-c-linn) at the University of California at Berkeley’s [Technology Enhanced Learning in Science (TELS) Center](https://wise-research.berkeley.edu/). 
 
-I then earned my Ph.D. in psychology at Northwestern University with a doctoral dissertation that analyzed nationally representative longitudinal datasets to study transitions into and out of STEM, while working developmental psychologist [David Uttal](https://psychology.northwestern.edu/people/faculty/core/profiles/david-uttal.html) and social psychologist [Alice Eagly](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/eagly.html). During graduate school, I was an NSF Graduate Research Fellow, which gave me additional freedom to craft my own research agenda early in my doctoral training.
+I then earned my Ph.D. in psychology at Northwestern University with a dissertation that analyzed nationally representative longitudinal datasets to study transitions into and out of STEM, while working developmental psychologist [David Uttal](https://psychology.northwestern.edu/people/faculty/core/profiles/david-uttal.html) and social psychologist [Alice Eagly](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/eagly.html). During graduate school, I was an NSF Graduate Research Fellow, which gave me additional freedom to craft my own research agenda early in my doctoral training.
 
 Leading academic journals such as [_Child Development_](https://d-miller.github.io/assets/MillerDAST.pdf), [_Journal of Educational Psychology_](https://d-miller.github.io/assets/MillerEaglyLinn2015.pdf), [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf), and [_Trends in Cognitive Sciences_](https://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My research on gender diversity in STEM spans more than a decade, starting with my [published undergraduate research]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) on gender differences in spatial skills.
 
 ## Methodological Training and Contributions
 
-I’m a co-founder and co-director of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. My work largely uses quantitative methods for research synthesis and analyses of large-scale data sets, including data science approaches that I learned as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/). 
+I specialize in research synthesis and quantitative methods. I’m a co-founder and co-director of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. 
+
+I am a trained reviewer for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo) (certified in WWC Group Design Standards, Version 4.1 and 5.0), which synthesizes high-quality causal evidence of educational interventions. Through a past [federal contract](https://www.air.org/project/what-works-clearinghouse-statistics-website-and-training-swat) at AIR, I directly contributed to methodological innovations in the WWC's procedures, such as being lead author of Version 5.0 changes to the WWC's statistical formulas for effect sizes and standard erorrs ([Appendix E in the 5.0 Handbook](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=169)), while closely collaborating with methodologists [Larry Hedges](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/hedges.html) and [Ryan Williams](https://www.air.org/experts/person/ryan-williams).
+
+My work largely uses quantitative methods for research synthesis and analyses of large-scale data sets, including data science approaches that I learned as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/). 
 
 ## Media attention
 
