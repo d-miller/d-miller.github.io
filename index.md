@@ -13,13 +13,8 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 
 ## Education
 
-**B.S., Physics,** Harvey Mudd College, 2010
-* B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
-* Thesis Advisor: Diane F. Halpern
-
-**Ph.D., Psychology,** Northwestern University, 2018
-* Dissertation title: "Characterizing Pathways for Joining STEM in College and Beyond"
-* Dissertation committee: David H. Uttal, Alice H. Eagly, Larry V. Hedges
+* **B.S., Physics,** Harvey Mudd College, 2010
+* **Ph.D., Psychology,** Northwestern University, 2018
 
 ## Academic and Personal History
 
