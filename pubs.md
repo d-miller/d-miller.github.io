@@ -21,7 +21,7 @@ Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022
 
 Eagly, A. H., Nater, C., **Miller, D. I.**, Kaufmann, M., & Sczesny, S. (2020). [Gender stereotypes have changed: A cross-temporal meta-analysis of U.S. public opinion polls from 1946 to 2018]({{ site.baseurl}}/assets/EaglyGenderMeta.pdf). _American Psychologist_, _75_(3), 301–315. https://doi.org/10.1037/amp0000494 [[R code and data](https://osf.io/g98c6/)]
 
-* 1,200+ citation according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9738489628577108191).
+* 1,200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9738489628577108191).
 * **Media coverage (selected):** [_Business Insider_](https://www.businessinsider.com/women-versus-men-intelligence-competence-compassion-ambition-workplace-leadership-2019-7), [_Los Angeles Times_](https://www.latimes.com/science/story/2019-07-18/women-more-competent-than-men-study), [_New York Times_](https://www.nytimes.com/2019/07/30/us/women-men-competence.html), [_Newsweek_](https://www.newsweek.com/women-competent-men-emotional-sensitive-1449961), [_Pacific Standard Magazine_](https://psmag.com/social-justice/americans-now-believe-women-are-as-competent-as-men-but-not-as-ambitious), [_Psychology Today_](https://www.psychologytoday.com/us/blog/the-athletes-way/201907/have-gender-stereotypes-changed-the-mid-20th-century), [_USA Today_](https://www.usatoday.com/story/news/nation/2019/07/18/differences-between-men-and-women-most-now-say-intelligence-equal/1767610001/)
 
 **Miller, D. I.** (2019). [When do growth mindset interventions work?]({{ site.baseurl}}/assets/Miller2019.pdf) _Trends in Cognitive Sciences_, _23_(11), 910-912. https://doi.org/10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
@@ -67,18 +67,18 @@ Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, 
 
 **Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]({{ site.baseurl }}/assets/MillerHalpern2014.pdf). _Trends in Cognitive Sciences_, _18_, 37-45. https://doi.org/10.1016/j.tics.2013.10.011
 
-* 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
+* 750+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
 
 **Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
 undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. https://doi.org/10.1016/j.lindif.2012.03.012
 
-* 50+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
+* 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
 Uttal, D. H., **Miller, D. I.**, & Newcombe, N. S. (2013). [Exploring and enhancing spatial thinking: Links to
 STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Current Directions in Psychological Science_, _22_, 367-373. https://doi.org/10.1177/0963721413484756
 
-* 50+ citations according to [Google Scholar](https://scholar.google.com/scholar?cites=17410950570026817282).
+* 400+ citations according to [Google Scholar](https://scholar.google.com/scholar?cites=17410950570026817282).
 * **Media coverage:** [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
 
 Matuk, C. F., McElhaney, K. W., **Miller, D. I.**, Chen, J. K., Lim-Breitbart, J., Terashima, H., … , Linn, M. C. (2013). [Reflectively prototyping a tool for exchanging ideas]({{ site.baseurl }}/assets/Matuk2013.pdf). In _Proceedings of the 10th International Conference on Computer Supported Collaborative Learning_ (pp. 101-104). Madison, WI: International Society of the Learning Sciences.
