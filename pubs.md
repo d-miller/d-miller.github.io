@@ -8,7 +8,7 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<h2 style="margin-top: 1em;">Peer-Reviewed Journal Articles and Conference Proceedings</h2>
+<h2 style="margin-top: 1em;">Journal Articles and Conference Proceedings</h2>
 
 **Miller, D. I.**, Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456 [[R code/data](https://osf.io/29egh/), [preregistration](https://osf.io/8ktnj), and [interactive app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/)]
 * Selected as Editor's Choice for the December 2024 issue of _Psychological Bulletin_.
