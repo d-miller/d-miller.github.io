@@ -11,7 +11,7 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
 
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
-I am or have been senior personnel on eight federal research grants totaling over $9M, including as lead PI on five NSF grants specifically (see the list below).
+I am or have been senior personnel on eight federal research grants totaling over $9M, including as lead PI on five NSF grants (see the list below).
 
 ## Education
 
@@ -53,21 +53,21 @@ My own popular press writing has also appeared in outlets such as [_Associated P
 
 ## Federal Research Grants (Total: $9,423,203)
 
-Co-PI, National Science Foundation (NSF), [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
+Co-PI, NSF Mid-Scale Research Infrastructure Incubator, [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
 
-PI, National Science Foundation (NSF), [ECR Hub: Advancing the Long-Term Potential of Fundamental Research](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422), 2022-2027. [$4,999,995]
+PI, NSF ECR:Core and ECR:BCSER, [ECR Hub: Advancing the Long-Term Potential of Fundamental Research](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422), 2022-2027. [$4,999,995]
 
 Project Director, Institute of Education Sciences (IES), [Consequences of Selective Reporting Bias in Education Research](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730), 2022-2025. [$896,931]
 
-PI, National Science Foundation (NSF), [Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422), 2021-2025. [$1,167,066]
+PI, NSF ECR:Core, [Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422), 2021-2025. [$1,167,066]
 
-PI, National Science Foundation (NSF), [Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368), 2021-2025. [$500,000]
+PI, NSF IUSE, [Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368), 2021-2025. [$500,000]
 
-PI, National Science Foundation (NSF), [The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401), 2019-2024. [$499,831]
+PI, NSF ECR:Core, [The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401), 2019-2024. [$499,831]
 
-Co-PI, National Science Foundation (NSF), [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777), 2018-2022. [$739,452]
+Co-PI, NSF DRK-12, [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777), 2018-2022. [$739,452]
 
-PI, National Science Foundation (NSF), [Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList), 2011-2016. [$120,000]
+PI, [NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList), 2011-2016. [$120,000]
 
 ## Disclaimer
 
