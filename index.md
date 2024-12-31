@@ -28,7 +28,7 @@ Leading academic journals such as [_Child Development_](https://d-miller.github.
 
 Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerDAST.pdf' target='_blank'>Draw-A-Scientist meta-analysis</a>:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Methodological Training and Contributions
 
