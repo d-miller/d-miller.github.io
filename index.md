@@ -11,7 +11,7 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
 
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
-I am or have been senior personnel on eight federal research grants totaling more than $9M, including as lead PI on five NSF grants specifically.
+I am or have been senior personnel on eight federal research grants totaling more than $9M, including as lead PI on five NSF grants specifically (see the list below).
 
 ## Education
 
