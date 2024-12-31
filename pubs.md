@@ -7,7 +7,15 @@ permalink: /pubs/
 
 <style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<h2 style="margin-top: 1em;">Journal Articles and Conference Proceedings</h2>
+<h2 style="margin-top: 1em;">Manuscripts Under Review</h2>
+
+**Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
+
+Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
+
+Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
+
+## Journal Articles and Conference Proceedings
 
 **Miller, D. I.**, Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456 [[R code/data](https://osf.io/29egh/), [preregistration](https://osf.io/8ktnj), and [interactive app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/)]
 * Selected as Editor's Choice for the December 2024 issue of _Psychological Bulletin_ (impact factor = 17.3).
