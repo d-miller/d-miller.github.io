@@ -53,19 +53,19 @@ My own popular press writing has also appeared in outlets such as [_Associated P
 
 ## Federal Research Grants (Total: $9,423,203)
 
-Co-PI, NSF Mid-Scale Research Infrastructure Incubator, [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
+Co-PI, National Science Foundation (NSF MSRI Incubator), [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
 
-PI, NSF ECR:Core and ECR:BCSER, [ECR Hub: Advancing the Long-Term Potential of Fundamental Research](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422), 2022-2027. [$4,999,995]
+PI, National Science Foundation (NSF ECR:Core and ECR:BCSER), [ECR Hub: Advancing the Long-Term Potential of Fundamental Research](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422), 2022-2027. [$4,999,995]
 
 Project Director, Institute of Education Sciences (IES), [Consequences of Selective Reporting Bias in Education Research](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730), 2022-2025. [$896,931]
 
-PI, NSF ECR:Core, [Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422), 2021-2025. [$1,167,066]
+PI, National Science Foundation (NSF ECR:Core), [Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422), 2021-2025. [$1,167,066]
 
-PI, NSF IUSE, [Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368), 2021-2025. [$500,000]
+PI, National Science Foundation (NSF IUSE), [Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368), 2021-2025. [$500,000]
 
-PI, NSF ECR:Core, [The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401), 2019-2024. [$499,831]
+PI, National Science Foundation (NSF ECR:Core), [The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401), 2019-2024. [$499,831]
 
-Co-PI, NSF DRK-12, [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777), 2018-2022. [$739,452]
+Co-PI, National Science Foundation (NSF DRK-12), [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777), 2018-2022. [$739,452]
 
 PI, [NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList), 2011-2016. [$120,000]
 
