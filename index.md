@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-**<mark>December 2024 news: Check out <a href='https://d-miller.github.io/pubs/' target='_blank'>the publications tab</a> for my new meta-analysis in <i>Psychological Bulletin</i> and its associated media coverage!</mark>**
+<mark><b>December 2024 news:</b> Check out <a href='https://d-miller.github.io/pubs/' target='_blank'>the publications tab</a> for my new meta-analysis in <i>Psychological Bulletin</i> and its associated media coverage!</mark>
 
 ## About My Current Position
 
