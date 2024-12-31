@@ -26,6 +26,10 @@ After earning my B.S. in Mathematical Physics, I spent two years as a graduate s
 
 Leading academic journals such as [_Child Development_](https://d-miller.github.io/assets/MillerDAST.pdf), [_Journal of Educational Psychology_](https://d-miller.github.io/assets/MillerEaglyLinn2015.pdf), [_Journal of Research on Educational Effectiveness_](https://d-miller.github.io/assets/Williams2022.pdf), [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf), and [_Trends in Cognitive Sciences_](https://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My research on gender diversity in STEM spans more than a decade, starting with my [published undergraduate research]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) on gender differences in spatial skills. I aim to build bridges across multiple perspectives—including education, developmental psychology, social psychology, and sociology—to explain complex phenomena.
 
+Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerDAST.pdf' target='_blank'>Draw-A-Scientist meta-analysis</a>:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Methodological Training and Contributions
 
 I specialize in research synthesis and quantitative methods. I’m a co-founder of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. I'm an avid R programmer ([see here for recent code examples](https://osf.io/29egh/)) with more than 15 years of experience designing computer code for custom data analysis purposes, along with past experience in C, C++, HTML/CSS, JavaScript, Python, SPSS, and Stata. I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too.
