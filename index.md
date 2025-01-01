@@ -40,6 +40,18 @@ My quantitative training started as an undergraduate physics major, taking class
 
 Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incubating-use-artificial-intelligence-conducting-high-quality-research-syntheses) to use artificial intelligence to transform the practice of research synthesis, led by AIR (PI: [Josh Polanin](https://www.air.org/experts/person/joshua-r-polanin)) with diverse external collaborators, including leaders of two NSF-funded $20M AI Institutes. I am also the project director for [an IES-funded methods project](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730) on the consequences of selective reporting bias in education research, including developing new methods to account for selective reporting with dependent effects (PI: [Martyna Citkowicz](https://www.air.org/experts/person/martyna-citkowicz)).
 
+## Teaching Statistics and Methods
+
+I also love to demystify statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, other researchers, and the public. 
+
+My interest in teaching complex technical content started when I was a paid tutor for physics undergraduates during three of my four years at Harvey Mudd College. During graduate school, I was a teaching assistant for seven undergraduate psychology courses, often helping to weave discussion of methods into even content-focused courses.
+
+At AIR, I continued this teaching interest by co-developing webinars on highly technical updates to the WWC’s procedures, such as webinars on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45), [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc), and [statistical formulas](https://www.youtube.com/watch?v=DTCvPrCko18). For instance, after deriving novel statistical procedures for [this Version 4.1 Supplement](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf), I co-presented the changes to an audience of mostly PhD-level researchers and academic faculty ([slides here](https://ies.ed.gov/ncee/WWC/Docs/Multimedia/WWC-SWAT-SE-Suppl-508.pdf) or see below starting at 12:25):
+
+<iframe width="660" height="371" src="https://www.youtube.com/watch?v=DTCvPrCko18&t=744s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+With social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/), I recently co-authored [a book chapter](https://doi.org/10.1017/9781009170123.028) for the _Handbook of Research Methods in Social and Personality Psychology_; our chapter aimed to orient doctoral students to the latest advances in meta-analysis methodology.
+
 ## Dissemination to the Public
 
 I am passionate about ensuring that my work can be a public good. I therefore reach out to journalists and write my own popular press articles when I have new findings ready for public consumption. Often, these findings come from large-scale syntheses that seek to understand why some studies find different results than other studies, aiming to go beyond reporting on single studies without context (Coffee is good for you! Coffee is bad for you!).
