@@ -52,7 +52,7 @@ Leveraging my meta-analysis expertise, I recently co-launched the multi-institut
 
 QuEST training activities will include virtual webinars, week-long immersive training workshops, and ongoing mentorship for supporting students in pursuing independent synthesis projects aligned with their academic and professional aspirations. My co-PI role will be to co-create the QuEST program's overall direction, along with developing curriculum and delivering instruction for specific training events (PI: [Laura Michaelson](https://www.air.org/experts/person/laura-michaelson)).
 
-Relatedly, I just co-authored [a meta-analysis book chapter](https://doi.org/10.1017/9781009170123.028) with social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/) for the _Handbook of Research Methods in Social and Personality Psychology_; our target audience was doctoral students who want to start a meta-analysis (but haven't done one yet) or be an intelligent consumer of published meta-analyses.
+Relatedly, I just co-authored [a meta-analysis book chapter](https://doi.org/10.1017/9781009170123.028) with social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/) for the _Handbook of Research Methods in Social and Personality Psychology_; our target audience was doctoral students who want to start a meta-analysis (but haven't done one yet) or want to be an intelligent consumer of published meta-analyses.
 
 ## Dissemination to the Public
 
