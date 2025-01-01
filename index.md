@@ -42,15 +42,15 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 ## Teaching Statistics and Methods
 
-I also love to demystify statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, other researchers, and the public. 
+I also love to demystify statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, other researchers, and the public. My interest in teaching complex technical content started when I was a paid tutor for physics undergraduates during three of my four years at Harvey Mudd College. During graduate school, I was a teaching assistant for seven undergraduate psychology courses, often helping to weave discussion of methods into even content-focused courses.
 
-My interest in teaching complex technical content started when I was a paid tutor for physics undergraduates during three of my four years at Harvey Mudd College. During graduate school, I was a teaching assistant for seven undergraduate psychology courses, often helping to weave discussion of methods into even content-focused courses.
+At AIR, I continued this teaching interest by co-developing webinars on highly technical updates to the WWC’s procedures and standards, such as webinars on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc). For instance, after deriving novel standard error formulas for [this Version 4.1 Supplement](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf), I co-presented the changes to an audience of mostly PhD-level researchers and academic faculty ([slides here](https://ies.ed.gov/ncee/WWC/Docs/Multimedia/WWC-SWAT-SE-Suppl-508.pdf) or see below starting at 12:25):
 
-At AIR, I continued this teaching interest by co-developing webinars on highly technical updates to the WWC’s procedures, such as webinars on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc). For instance, after deriving novel statistical procedures for [this Version 4.1 Supplement](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf), I co-presented the changes to an audience of mostly PhD-level researchers and academic faculty ([slides here](https://ies.ed.gov/ncee/WWC/Docs/Multimedia/WWC-SWAT-SE-Suppl-508.pdf) or see below starting at 12:25):
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DTCvPrCko18?si=LO1RItDnKnxq3kfd&amp;start=744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="660" height="371" src="https://www.youtube.com/watch?v=DTCvPrCko18&t=744s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ADD QUEST PROJECT.
 
-With social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/), I recently co-authored [a book chapter](https://doi.org/10.1017/9781009170123.028) for the _Handbook of Research Methods in Social and Personality Psychology_; our chapter aimed to orient doctoral students to the latest advances in meta-analysis methodology.
+With social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/), I also recently co-authored [a book chapter](https://doi.org/10.1017/9781009170123.028) for the _Handbook of Research Methods in Social and Personality Psychology_; our chapter aimed to orient doctoral students to the latest advances in meta-analysis methodology. Furthermore, I embody my teaching orientation in my public engagement, as described next.
 
 ## Dissemination to the Public
 
