@@ -9,7 +9,7 @@ title: About
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
-I presently lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in STEM higher education and workforce settings, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on eight federal grants totaling over $9M, including as lead PI on five NSF grants (see the list below).
+I presently lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in STEM higher education and workforce settings, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine research and training grants totaling over $10M, including as lead PI on five NSF grants (see below).
 
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
@@ -73,7 +73,9 @@ Short and sweet. Covers some main points for STEM stereotypes, while leaving wit
 * Graduate Student Researcher, Northwestern University (2012–2018)
 * Graduate Student Researcher, University of California–Berkeley (2010–2012)
 
-## Federal Research Grants (Total: $9,423,203)
+## Research and Training Grants (Total: $10,423,203)
+
+Co-PI, AIR Opportunity Fund, [Quantitative Evidence Synthesis Training (QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3), 2024-2027. [$1,000,000]
 
 Co-PI, NSF MSRI Incubator, [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
 
