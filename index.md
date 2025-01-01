@@ -18,7 +18,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 * **B.S., Physics,** Harvey Mudd College, 2010
 * **Ph.D., Psychology,** Northwestern University, 2018
 
-## Academic and Personal History
+## Academic and Research History
 
 My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my senior thesis project on using spatial training to improve undergraduates' STEM learning. In my current work, I continue to use the robust mathematical and computer programming background that I first developed as a physics undergraduate. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for more.)
 
