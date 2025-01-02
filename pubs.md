@@ -107,8 +107,10 @@ Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022
 * The difference in random forest and meta-regression results suggested potential unmodeled nonlinearities and interactions in understanding the moderating role of intervention length and grade level.
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
+* Presented results to a group of about 20 NSF program officers and at the 2021 DRK-12 PI meeting.
 
 Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
+* Presented results to a group of about 20 NSF program officers and at the 2021 DRK-12 PI meeting.
 
 **Miller, D. I.** (2019). [When do growth mindset interventions work?]({{ site.baseurl}}/assets/Miller2019.pdf) _Trends in Cognitive Sciences_, _23_(11), 910-912. https://doi.org/10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
 * Not STEM-focused, but grouped here for its focus on improving academic achievement.
