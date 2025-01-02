@@ -13,7 +13,7 @@ My past and current work falls along three major lines of research:
 * Line 2: Improving STEM learning using research synthesis, educational technology, and spatial thinking.
 * Line 3: Advancing methodological innovation in education research syntheses.
 
-<h1 style="margin-top: 1em;">Line 1: Understanding Gender Gaps in STEM Using Large-Scale Data</h1>
+<h1 style="margin-top: 1em;">Line 1: Gender Gaps in STEM</h1>
 
 Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
 * Not STEM-focused, but grouped here given the gender and large-scale data focus.
@@ -57,7 +57,7 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontier
 **Miller, D. I.**, & Halpern, D. F. (2014). [The new science of cognitive sex differences]({{ site.baseurl }}/assets/MillerHalpern2014.pdf). _Trends in Cognitive Sciences_, _18_, 37-45. https://doi.org/10.1016/j.tics.2013.10.011
 * 750+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
 
-# Line 2: Improving STEM Learning Using Research Synthesis, Educational Technology, and Spatial Thinking
+# Line 2: Improving STEM Learning
 
 Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
 * Not STEM-focused, but grouped here for its focus on intervention evidence in education.
@@ -92,15 +92,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 **Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
 
-## Peer-Reviewed Conference Proceedings
-
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. https://doi.org/10.1007/s10508-016-0826-z
-* I was the statistical expert on multilevel modelling for this study.
-
-Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. https://doi.org/10.1017/S0033291715002317
-* I was the statistical expert on multilevel modelling for this study.
-
-# Line 3: Methodological Innovation in Research Syntheses
+# Line 3: Methodological Innovation
 
 **Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
 
@@ -111,6 +103,12 @@ What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and stan
 
 What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 * I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.
+
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. https://doi.org/10.1007/s10508-016-0826-z
+* I was the statistical expert on multilevel modelling for this study.
+
+Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. https://doi.org/10.1017/S0033291715002317
+* I was the statistical expert on multilevel modelling for this study.
 
 Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). [A machine learning framework to identify students at risk of adverse academic outcomes]({{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf). In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
 
