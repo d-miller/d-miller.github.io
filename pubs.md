@@ -86,7 +86,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 
 # Line 2: Improving STEM Learning
 
-🔗 Representative publication (I was the lead analyst):
+🔗 Representative publication (I was the lead data analyst and R coder):
 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" />
