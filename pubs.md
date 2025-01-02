@@ -101,7 +101,7 @@ Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapp
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
 * I was the lead data analyst and R coder.
-* Used my prior training in machine learning to apply random forest algorithms to better understand heterogeneity in mathematics intervention effects.
+* Used my machine learning training to apply random forests to explore heterogeneity in mathematics intervention effects, contrasting those results with multiple-moderator, meta-regression models.
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
 
@@ -147,8 +147,8 @@ Hall, J. A., & **Miller, D. I.** (2024). [Meta-analysis](https://doi.org/10.1017
 * Target audience: doctoral students who want to start a meta-analysis (but haven’t done one yet) or want to be an intelligent consumer of published meta-analyses.
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
-* Listed here for applying random forest algorithms to understand effect heterogeneity (also cross-listed under Line 2).
-* Was the lead data analyst and R coder.
+* Listed here for using random forests to explore effect heterogeneity (also cross-listed under Line 2).
+* Was the lead data analyst and R coder, leveraging my meta-analysis and machine learning expertise.
 
 What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=3). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 * I led the direction for recommending changes to Appendices D and E on statistical formulas for the What Works Clearinghouse (WWC), in close partnership with Ryan Williams, Qi Zhang, Larry Hedges, and contracting officers at the Institute of Education Sciences (IES).
