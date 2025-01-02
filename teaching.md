@@ -3,6 +3,8 @@ layout: page
 permalink: /teaching/
 ---
 
+<style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
+
 <h1 style="margin-top: 1em;">Prior Teaching Experience</h1>
 
 I especially enjoy teaching statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, and other researchers. My interest in conveying complex technical content started when I taught physics undergraduates as a paid tutor for three years at Harvey Mudd College's tutoring center. 
