@@ -298,12 +298,12 @@ nav {
   }
 }
 nav a {
-  margin-left: 20px;
+  margin-left: 10px;
   /*color: $darkGray;*/
   color: white;
   text-align: right;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-weight: 200;
+  /*letter-spacing: 1px;*/
 }
 @media screen and (max-width: 640px) {
   nav a {
