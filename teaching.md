@@ -19,7 +19,7 @@ At Northwestern, I was a graduate teaching assistant for seven undergraduate psy
 * Psych 298: Senior Honors Seminar (instructor: David Uttal)
 * Psych 339: Psychology of Gender (instructor: Alice Eagly)
 
-At AIR, I continued my teaching interests by co-developing webinars on updates to review procedures for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. Webinar topics included [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc).
+At AIR, I furthered my teaching interests by co-developing webinars on updates to review procedures for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. Webinar topics included [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc).
 
 After deriving new statistical formulas for [this Version 4.1 Supplement](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf), I co-presented the changes to nearly 150 webinar attendees who were mostly academic faculty or researchers with WWC certifications (see [slides here](https://ies.ed.gov/ncee/WWC/Docs/Multimedia/WWC-SWAT-SE-Suppl-508.pdf) or watch below starting at 12:25):
 
