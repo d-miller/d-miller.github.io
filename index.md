@@ -7,7 +7,7 @@ title: About
 
 # About My Current Position
 
-I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
+I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education sciences, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
 I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in postsecondary and workforce contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (see below later on this page).
 
