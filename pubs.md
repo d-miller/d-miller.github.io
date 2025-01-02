@@ -159,6 +159,12 @@ Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, 
 
 # Popular Press Articles
 
+🔗 Representative publication:
+
+<a href="https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/" target="_blank">
+  <img src="{{ site.baseurl}}/images/ResearchLine4.png" class="representative_pub" />
+</a>
+
 **Miller, D. I.** (2024, December 20). [Why six-year-olds think computing and engineering are ‘for boys’](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/). _Scientific American_.
 * Discusses my [_Psychological Bulletin_ meta-analysis](https://psycnet.apa.org/fulltext/2025-50489-001.pdf) meta-analysis on children's gender stereotypes about STEM and verbal abilities. 
 
