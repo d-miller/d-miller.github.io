@@ -24,10 +24,10 @@ Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psy
 # Education
 
 Ph.D., Psychology, Northwestern University, 2018
-* _Dissertation committee:_ David Uttal, Alice Eagly, Larry Hedges
+* Dissertation committee: David Uttal, Alice Eagly, Larry Hedges
 
 B.S., Physics, Harvey Mudd College, 2010
-* _Scholastic Distinction:_ B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
+* B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
 
 # Employment
 
