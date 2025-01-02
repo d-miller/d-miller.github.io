@@ -26,11 +26,16 @@ Check out this 1-minute NPR spot on my new meta-analysis in <a href='https://psy
 
 # Employment
 
-* Senior Researcher, American Institutes for Research (2021–Present)
+STEM education and psychology research:
+* Senior researcher, American Institutes for Research (2021–Present)
 * Researcher, American Institutes for Research (2018–2021)
-* Graduate Student Researcher, Northwestern University (2012–2018)
-* Graduate Student Researcher, University of California–Berkeley (2010–2012)
-* Undergraduate Physics Researcher, Harvey Mudd College (2007–2010)
+* Graduate student researcher, Northwestern University (2012–2018)
+* Graduate student researcher, UC – Berkeley (2010–2012)
+
+Undergraduate physics research:
+* Research intern, condensed matter physics, UC – Irvine (Summer 2009)
+* Research intern, high-energy particle physics, SUNY – Stony Brook (Summer 2008)
+* Research intern, astrophysics, Lowell Observatory (Summer 2007)
 
 # Academic and Research History
 
