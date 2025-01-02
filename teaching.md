@@ -23,9 +23,9 @@ At AIR, I continued my teaching interests by co-developing webinars on highly te
 
 I also co-developed WWC webinars on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc).
 
-# Ongoing Experience in Teaching Doctoral Students 
+# Ongoing Training of Doctoral Students 
 
-Leveraging my meta-analysis expertise, I recently co-launched the multi-institutional, $1M [Quantitative Evidence Synthesis Training (QuEST) program](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3) to support doctoral students in both exploring and mastering research synthesis methodologies. These doctoral students will come from social and behavioral science programs at three minority-serving institutions (MSIs) that are part of [AIR's Pipeline Partnership Program](https://www.air.org/project/airs-pipeline-partnership-program): Georgia State University, Howard University, and University of Texas at San Antonio. 
+Leveraging my meta-analysis expertise, I recently co-launched the multi-institutional, $1M [Quantitative Evidence Synthesis Training (QuEST) program](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3) to support doctoral students in exploring and mastering research synthesis methodologies. These doctoral students will come from social and behavioral science programs at three minority-serving institutions (MSIs) that are part of [AIR's Pipeline Partnership Program](https://www.air.org/project/airs-pipeline-partnership-program): Georgia State University, Howard University, and University of Texas at San Antonio. 
 
 QuEST training activities will include virtual webinars, week-long immersive training workshops, and ongoing mentorship for supporting students in pursuing independent synthesis projects aligned with their academic and professional aspirations. My co-PI role will be to co-create the QuEST program's overall direction, along with co-developing curriculum and delivering instruction for specific training events (PI: [Laura Michaelson](https://www.air.org/experts/person/laura-michaelson)).
 
