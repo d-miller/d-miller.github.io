@@ -42,11 +42,13 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 ## Representative Publications by Line of Research
 
 **Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
-* Guided by a detailed [76-page preregistration](https://osf.io/8ktnj).
-* Other open science practices: [R code/data](https://osf.io/29egh/) and [R Shiny app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/).
-* Profiled by the [National Science Foundation](https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger).
-* First publication from [my first NSF grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401) as lead PI at AIR.
-* (Other publications from that grant are in preparation.)
+<ul class="pub_bullet">
+<li>Guided by a detailed <a href="https://osf.io/8ktnj" target="_blank">76-page preregistration</a></li>
+<li>Other open science practices <a href="https://osf.io/29egh/" target="_blank">R code/data</a></li> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a></li>
+<li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a></li>
+<li>First publication from <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">my first NSF grant</a> as lead PI at AIR.</li>
+<li>(Other publications from that grant are in preparation.)</li>
+</ul>
 
 **Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
 <ul class="pub_bullet">
