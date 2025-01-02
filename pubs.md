@@ -15,6 +15,10 @@ img.representative_pub {
   border-width: 2px;
   border-color: #510062;
 }
+
+#line1, #line2, #line3, #line4 {
+  scroll-margin-top: 100px;
+}
 </style>
 
 My past and current work falls along three major lines of research:
