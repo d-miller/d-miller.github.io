@@ -54,7 +54,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 <ul class="pub_bullet">
 <li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
 <li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a>.</li>
-<li>Leveraged my prior machine learning training (e.g., as a past <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>.</li>
+<li>Leveraged my prior machine learning training (e.g., as a past <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>).</li>
 <li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
 </ul>
 
