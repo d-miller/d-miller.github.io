@@ -3,6 +3,8 @@ layout: default
 title: About
 ---
 
+<style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
+
 <mark><b>December 2024 news:</b> Check out <a href='https://d-miller.github.io/pubs/' target='_blank'>the publications tab</a> for my new meta-analysis in <i>Psychological Bulletin</i> and its associated media coverage!</mark>
 
 ## About My Current Position
