@@ -17,7 +17,7 @@ My past and current work falls along three major lines of research:
 
 A fourth category includes popular press articles for disseminating findings to the public.
 
-<h1>Line 1: Gender Gaps in STEM</h1>
+# Line 1: Gender Gaps in STEM
 
 Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
 * Not STEM-focused, but grouped here given the gender and large-scale data focus.
@@ -118,7 +118,7 @@ Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R.,
 
 Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/AguiarEtAl2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
 
-## Popular Press Articles
+# Popular Press Articles
 
 **Miller, D. I.** (2024, December 20). [Why six-year-olds think computing and engineering are ‘for boys’](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/). _Scientific American_.
 * Discusses my [_Psychological Bulletin_ meta-analysis](https://psycnet.apa.org/fulltext/2025-50489-001.pdf) meta-analysis on children's gender stereotypes about STEM and verbal abilities. 
@@ -142,16 +142,13 @@ Wai, J., & **Miller, D. I.** (2015, December 1). [Here’s why academics should 
 * Discusses [a _PNAS_ study](http://www.pnas.org/cgi/doi/10.1073/pnas.1510649112) showing men, especially those in STEM, are less likely to believe the evidence of gender bias against women in science. Women are also biased against gender bias research, but in the opposite direction.  
 * 35,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/men-and-women-biased-about-studies-stem-gender-bias-opposite-directions).
 
-
 **Miller, D. I.** (2015, July 10). [Tech companies spend big money on bias training—but it hasn’t improved diversity numbers](https://theconversation.com/tech-companies-spend-big-money-on-bias-training-but-it-hasnt-improved-diversity-numbers-44411). _The Conversation_. 
 * Discusses why bias training hasn't been changing diversity in tech and how to fix that problem using the latest psychological research.
 * Republished by [_Business Insider_](http://www.businessinsider.com/companies-are-spending-millions-on-bias-training-that-isnt-working-2015-7) and recrafted for [_U.S. News_](http://www.usnews.com/news/articles/2015/07/29/can-bias-training-really-improve-diversity-in-tech).
 
-
 **Miller, D. I.** (2015, June 9). [Beliefs about innate talent may dissuade students from STEM](https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967). _The Conversation_. 
 * Reports on [a nationally representative, longitudinal study](http://dx.doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
 * 60,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem), [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem), and [World Economic Forum](https://www.weforum.org/stories/2015/06/why-we-need-to-challenge-beliefs-about-innate-talent-in-stem/).
-
 
 **Miller, D. I.** (2015, May 28). [Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype?](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) _The Conversation_. 
 * Discusses [my international study](http://d-miller.github.io/assets/MillerEaglyLinn2015.pdf) on gender-science stereotypes.
