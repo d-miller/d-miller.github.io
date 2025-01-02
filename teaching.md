@@ -9,7 +9,7 @@ permalink: /teaching/
 
 I especially enjoy teaching statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, and other researchers. My interest in conveying complex technical content started when I taught physics to STEM majors as a paid tutor for three years at Harvey Mudd College's tutoring center. 
 
-At Northwestern, I was a graduate teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues in even content-focused courses:
+At Northwestern, I was a graduate teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues even in content-focused courses:
 
 * CogSci 211: Learning, Representation, and Reasoning (instructor: Dedre Gentner)
 * Psych 204: Social Psychology (instructor: Galen Bodenhausen)
