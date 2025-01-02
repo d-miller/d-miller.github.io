@@ -80,7 +80,7 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontier
 
 **Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
 undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. https://doi.org/10.1016/j.lindif.2012.03.012
-* Listed here for its investigation of gender gaps in spatial skills and physics outcomes (also cross-listed under Line 2).
+* Listed here for studying gender gaps in spatial skills and physics outcomes (also cross-listed under Line 2).
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
