@@ -25,7 +25,7 @@ My past and current work falls along three major lines of research:
 
 <ul style="top: 0px; font-size: 0.9em;">
   <li><a href="{{ site.baseurl}}/pubs/#line1"><b>Line 1:</b></a> Understanding gender gaps in STEM using large-scale data.</li>
-  <li><a href="{{ site.baseurl}}/pubs/#line2"><b>Line 2:</b></a> Improving STEM learning using synthesis, educational technology, and spatial thinking.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line2"><b>Line 2:</b></a> Improving STEM learning using syntheses, educational technology, and spatial training.</li>
   <li><a href="{{ site.baseurl}}/pubs/#line3"><b>Line 3:</b></a> Advancing methodological innovation in education and psychology research.</li>
 </ul>
 
