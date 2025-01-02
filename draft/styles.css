@@ -302,7 +302,7 @@ nav a {
   /*color: $darkGray;*/
   color: white;
   text-align: right;
-  font-weight: 200;
+  font-weight: 250;
   /*letter-spacing: 1px;*/
 }
 @media screen and (max-width: 640px) {
