@@ -61,7 +61,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 **Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 <ul class="pub_bullet">
 <li>I was the lead author for this official What Works Clearinghouse (WWC) supplement.</li>
-<li>Ryan Williams and Larry Hedges were co-authors.
+<li>Ryan Williams and Larry Hedges were co-authors.</li>
 <li>(The document itself does not list authors due to the nature of the federal contract.)</li>
 <li>Introduced new standard error equations for effect sizes based on adjusted mean differences.</li>
 <li>Was peer-reviewed by members of the WWC's Statistical, Technical, and Analysis Team (STAT).</li>
