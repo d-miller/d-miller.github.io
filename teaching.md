@@ -9,7 +9,7 @@ I especially enjoy teaching statistics and quantitative methods to diverse audie
 
 At Northwestern University, I was a graduate teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues in even content-focused courses:
 
-* Cog Sci 211: Learning, Representation, and Reasoning (instructor: Dedre Gentner)
+* CogSci 211: Learning, Representation, and Reasoning (instructor: Dedre Gentner)
 * Psych 204: Social Psychology (instructor: Galen Bodenhausen)
 * Psych 205: Research Methods (instructor: Ben Gorvine)
 * Psych 218: Developmental Psychology (instructor: Onnie Rogers)
@@ -21,7 +21,7 @@ At AIR, I continued my teaching interests by co-developing webinars on highly te
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/DTCvPrCko18?si=LO1RItDnKnxq3kfd&amp;start=744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Two other WWC webinars I co-developed focused on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc).
+I also co-developed WWC webinars on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc).
 
 # Ongoing Experience in Teaching Doctoral Students 
 
