@@ -53,8 +53,9 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 **Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
 <ul class="pub_bullet">
 <li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
-<li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a></li> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a></li>
-<li>I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellowship</a> to apply random forest algorithms to better understand heterogeneity in math intervention effects.</li>
+<li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a></li>
+<li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
+<li>Leveraged prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellowship</a>.</li>
 </ul>
 
 **Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
