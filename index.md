@@ -44,7 +44,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 * Other open science practices: [R code/data](https://osf.io/29egh/) and [R Shiny app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/).
 * Profiled by the [National Science Foundation](https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger).
 * First publication from [my first NSF grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401) as lead PI at AIR.
-* (Other publications from that grants are in preparation).
+* (Other publications from that grant are in preparation.)
 
 <br>
 **Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
