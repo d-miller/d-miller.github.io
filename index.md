@@ -55,10 +55,14 @@ My current work falls along three major lines of research:
 <ul class="pub_bullet">
 <li>Guided by a detailed <a href="https://osf.io/8ktnj" target="_blank">76-page preregistration</a>.</li>
 <li>Other open science practices: <a href="https://osf.io/29egh/" target="_blank">R code/data</a> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a>.</li>
-<li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a>.</li>
+<li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a> (and see below for an NPR spot).</li>
 <li>First publication from <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">my first NSF grant</a> as lead PI at AIR.</li>
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
+
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:c5xrowexysrnn6rn6piltqjz/app.bsky.feed.post/3lcvtxadq422f" data-bluesky-cid="bafyreigmi6zdk5hri5cx4kvxk2w5gvdx6dwuaqbktckxhbgooovnrt3jeq"><p lang="en">For a broader public audience, I thought this 1-minute NPR spot that aired today did a fantastic job.
+
+Short and sweet. Covers some main points for STEM stereotypes, while leaving with a takeaway about the need for targeted action and initiatives. Take a listen!<br><br><a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz/post/3lcvtxadq422f?ref_src=embed">[image or embed]</a></p>&mdash; Dr. David Miller 🏳️‍🌈 (<a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz?ref_src=embed">@davidimiller.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz/post/3lcvtxadq422f?ref_src=embed">December 9, 2024 at 5:11 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 
 **Line 2 example (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634.
 <ul class="pub_bullet">
