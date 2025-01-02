@@ -13,12 +13,6 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
 
 I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in postsecondary and workforce contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (see below later on this page).
 
-My current work falls along three major lines of research:
-
-* **Line 1:** Studying gender stereotypes and biases in STEM using large-scale data.
-* **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
-* **Line 3:** Advancing methodological innovation in education research syntheses.
-
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
 ## Education
@@ -27,6 +21,12 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 * **Ph.D., Psychology,** Northwestern University, 2018
 
 ## Representative Publications by Line of Research
+
+My current work falls along three major lines of research:
+
+* **Line 1:** Studying gender stereotypes and biases in STEM using large-scale data.
+* **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
+* **Line 3:** Advancing methodological innovation in education research syntheses.
 
 **Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
 <ul class="pub_bullet">
