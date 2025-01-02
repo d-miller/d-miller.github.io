@@ -26,19 +26,6 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 * **B.S., Physics,** Harvey Mudd College, 2010
 * **Ph.D., Psychology,** Northwestern University, 2018
 
-## Academic and Research History
-
-My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my thesis project on using spatial training to improve [long-term outcomes]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) for STEM undergraduates. In my current work, I continue to use the robust mathematical and computer programming background that I first developed as a physics undergraduate. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for more.)
-
-After earning my B.S. in Mathematical Physics, I spent two years as a graduate student working with science education researcher [Marcia Linn](https://bse.berkeley.edu/marcia-c-linn) at the University of California at Berkeley’s Technology Enhanced Learning in Science (TELS) Center, before moving to Northwestern University to earn my Ph.D. in psychology. At Northwestern, I conducted my dissertation on characterizing transitions into and out of STEM, while working with developmental psychologist [David Uttal](https://psychology.northwestern.edu/people/faculty/core/profiles/david-uttal.html) and social psychologist [Alice Eagly](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/eagly.html). During graduate school, I was an NSF Graduate Research Fellow, which gave me additional freedom to craft my own research agenda early in my doctoral training.
-
-Leading academic journals such as [_Child Development_](https://d-miller.github.io/assets/MillerDAST.pdf), [_Journal of Educational Psychology_](https://d-miller.github.io/assets/MillerEaglyLinn2015.pdf), [_Journal of Research on Educational Effectiveness_](https://d-miller.github.io/assets/Williams2022.pdf), [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf), and [_Trends in Cognitive Sciences_](https://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My research on gender diversity in STEM spans more than a decade, starting with my [published undergraduate research]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) on gender differences in spatial skills. 
-
-Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerDAST.pdf' target='_blank'>Draw-A-Scientist meta-analysis</a>:
-
-<iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<br>
 ## Representative Publications by Line of Research
 
 **Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
@@ -54,7 +41,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 <ul class="pub_bullet">
 <li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
 <li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a>.</li>
-<li>Leveraged my prior machine learning training (e.g., as a past <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>).</li>
+<li>Leveraged my past machine learning training (e.g., as a <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>).</li>
 <li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
 </ul>
 
@@ -67,6 +54,20 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 <li>Was peer-reviewed by members of the WWC's Statistical, Technical, and Analysis Team (STAT).</li>
 <li>For a memo to the STAT, I also wrote the derivations for the formulas using the delta method.</li>
 </ul>
+
+## Academic and Research History
+
+My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my thesis project on using spatial training to improve [long-term outcomes]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) for STEM undergraduates. In my current work, I continue to use the robust mathematical and computer programming background that I first developed as a physics undergraduate. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for more.)
+
+After earning my B.S. in Mathematical Physics, I spent two years as a graduate student working with science education researcher [Marcia Linn](https://bse.berkeley.edu/marcia-c-linn) at the University of California at Berkeley’s Technology Enhanced Learning in Science (TELS) Center, before moving to Northwestern University to earn my Ph.D. in psychology. At Northwestern, I conducted my dissertation on characterizing transitions into and out of STEM, while working with developmental psychologist [David Uttal](https://psychology.northwestern.edu/people/faculty/core/profiles/david-uttal.html) and social psychologist [Alice Eagly](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/eagly.html). During graduate school, I was an NSF Graduate Research Fellow, which gave me additional freedom to craft my own research agenda early in my doctoral training.
+
+Leading academic journals such as [_Child Development_](https://d-miller.github.io/assets/MillerDAST.pdf), [_Journal of Educational Psychology_](https://d-miller.github.io/assets/MillerEaglyLinn2015.pdf), [_Journal of Research on Educational Effectiveness_](https://d-miller.github.io/assets/Williams2022.pdf), [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf), and [_Trends in Cognitive Sciences_](https://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My research on gender diversity in STEM spans more than a decade, starting with my [published undergraduate research]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) on gender differences in spatial skills. 
+
+Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerDAST.pdf' target='_blank'>Draw-A-Scientist meta-analysis</a>:
+
+<iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
 
 ## Methodological Training and Contributions
 
