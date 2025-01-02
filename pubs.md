@@ -20,12 +20,12 @@ img.representative_pub {
 My past and current work falls along three major lines of research:
 
 <ul style="top: 0px; font-size: 0.9em;">
-  <li>Line 1: Understanding gender gaps in STEM using large-scale data.</li>
-  <li>Line 2: Improving STEM learning using synthesis, educational technology, and spatial thinking.</li>
-  <li>Line 3: Advancing methodological innovation in education and psychology research.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line1"><b>Line 1:</b></a> Understanding gender gaps in STEM using large-scale data.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line2"><b>Line 2:</b></a> Improving STEM learning using synthesis, educational technology, and spatial thinking.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line3"><b>Line 3:</b></a> Advancing methodological innovation in education and psychology research.</li>
 </ul>
 
-A fourth category includes popular press articles for disseminating findings to the public.
+A fourth category includes <a href="{{ site.baseurl}}/pubs/#line4"><b>popular press articles</b></a> for disseminating findings to the public.
 
 <h1 id="line1">Line 1: Gender Gaps in STEM</h1>
 
