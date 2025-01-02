@@ -20,7 +20,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 * **B.S., Physics,** Harvey Mudd College, 2010
 * **Ph.D., Psychology,** Northwestern University, 2018
 
-# Representative Publications by Line of Research
+# Representative Publications
 
 My current work falls along three major lines of research:
 
