@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-<style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
+<style> ul.pub_bullet {position: relative; top: -12px; font-size: 0.8em;} </style>
 
 <mark><b>December 2024 news:</b> Check out <a href='https://d-miller.github.io/pubs/' target='_blank'>the publications tab</a> for my new meta-analysis in <i>Psychological Bulletin</i> and its associated media coverage!</mark>
 
@@ -49,9 +49,11 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 * (Other publications from that grant are in preparation.)
 
 **Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
-* I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).
+<ul class="pub_bullet">
+<li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
 * Open science practices: [R code/data](https://osf.io/f9gud/) and [R Shiny app](https://airshinyapps.shinyapps.io/math_meta_database)
-<ul> I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.</ul>
+* I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.
+</ul>
 
 **Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 <ul>I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.</ul>
