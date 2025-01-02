@@ -13,9 +13,9 @@ I lead a programmatic line of meta-analytic research funded by the U.S. National
 
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
-<mark><b>December 2024 news:</b>Check out this 1-minute NPR spot on my new <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'><i>Psychological Bulletin</i> meta-analysis</a>:</mark>
+Check out this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'><i>Psychological Bulletin</i></a>:
 
-<video width="480" height="320" controls="controls">
+<video width="400" controls="controls">
 <source src="https://d-miller.github.io/assets/NPR_stereotypes.mp4" type="video/mp4">
 </video>
 
