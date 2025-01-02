@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 ---
 
-# Teaching Statistics and Methods
+<h1 style="margin-top: 1em;">Teaching Statistics and Methods</h1>
 
 I enjoy demystifying statistics and quantitative methods for diverse audiences, including undergraduates, graduate students, academic faculty, other researchers, and the public. My interest in conveying complex technical content started when I taught physics undergraduates as a paid tutor for three years at Harvey Mudd College's tutoring center. During graduate school, I was a teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues in even content-focused courses.
 
