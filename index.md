@@ -30,7 +30,7 @@ Check out this 1-minute NPR spot on my new meta-analysis in <a href='https://psy
 * Researcher, American Institutes for Research (2018–2021)
 * Graduate Student Researcher, Northwestern University (2012–2018)
 * Graduate Student Researcher, University of California–Berkeley (2010–2012)
-* Undergraduate Physics Tutor, Harvey Mudd College (2007–2010)
+* Undergraduate Physics Researcher, Harvey Mudd College (2007–2010)
 
 # Academic and Research History
 
