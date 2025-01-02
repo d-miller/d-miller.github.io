@@ -21,8 +21,8 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 
 # Education
 
-* B.S., Physics, Harvey Mudd College, 2010
 * Ph.D., Psychology, Northwestern University, 2018
+* B.S., Physics, Harvey Mudd College, 2010
 
 # Employment
 
@@ -44,7 +44,6 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<br>
 
 # Representative Publications
 
