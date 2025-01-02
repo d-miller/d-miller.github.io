@@ -27,7 +27,7 @@ My past and current work falls along three major lines of research:
 
 A fourth category includes popular press articles for disseminating findings to the public.
 
-# Line 1: Gender Gaps in STEM
+<h1 id="line1">Line 1: Gender Gaps in STEM</h1>
 
 🔗 Representative publication:
 
@@ -84,7 +84,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
-# Line 2: Improving STEM Learning
+<h1 id="line2">Line 2: Improving STEM Learning</h1>
 
 🔗 Representative publication (I was the lead data analyst and R coder):
 
@@ -125,7 +125,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 **Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
 
-# Line 3: Methodological Innovation
+<h1 id="line3">Line 3: Methodological Innovation</h1>
 
 🔗 Representative publication (I was the lead author, see below):
 
@@ -157,7 +157,7 @@ Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R.,
 
 Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/AguiarEtAl2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
 
-# Popular Press Articles
+<h1 id="line4">Popular Press Articles</h1>
 
 🔗 Representative publication:
 
