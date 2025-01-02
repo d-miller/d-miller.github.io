@@ -32,7 +32,7 @@ A fourth category includes popular press articles for disseminating findings to 
 🔗 Representative publication:
 
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" />
+  <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
 
 Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
@@ -89,7 +89,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 🔗 Representative publication (I was the lead data analyst and R coder):
 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" />
+  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
 
 Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
@@ -130,7 +130,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 🔗 Representative publication (I was the lead author, see below):
 
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" />
+  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
 
 **Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
