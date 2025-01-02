@@ -3,9 +3,7 @@ layout: default
 title: About
 ---
 
-<style> #represent_pubs {
-  ul {position: relative; top: -12px; font-size: 0.8em;} 
-}</style>
+<style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
 <mark><b>December 2024 news:</b> Check out <a href='https://d-miller.github.io/pubs/' target='_blank'>the publications tab</a> for my new meta-analysis in <i>Psychological Bulletin</i> and its associated media coverage!</mark>
 
@@ -43,7 +41,6 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 <br>
 ## Representative Publications by Line of Research
 
-<div id="represent_pubs">
 **Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
 * Guided by a detailed [76-page preregistration](https://osf.io/8ktnj).
 * Other open science practices: [R code/data](https://osf.io/29egh/) and [R Shiny app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/).
@@ -54,11 +51,10 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 **Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
 * I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).
 * Open science practices: [R code/data](https://osf.io/f9gud/) and [R Shiny app](https://airshinyapps.shinyapps.io/math_meta_database)
-* I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.
+<ul> I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.</ul>
 
 **Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
-* I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.
-</div>
+<ul>I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.</ul>
 
 ## Methodological Training and Contributions
 
