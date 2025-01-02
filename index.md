@@ -26,7 +26,13 @@ After earning my B.S. in Mathematical Physics, I spent two years as a graduate s
 
 Leading academic journals such as [_Child Development_](https://d-miller.github.io/assets/MillerDAST.pdf), [_Journal of Educational Psychology_](https://d-miller.github.io/assets/MillerEaglyLinn2015.pdf), [_Journal of Research on Educational Effectiveness_](https://d-miller.github.io/assets/Williams2022.pdf), [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf), and [_Trends in Cognitive Sciences_](https://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My research on gender diversity in STEM spans more than a decade, starting with my [published undergraduate research]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) on gender differences in spatial skills. 
 
-My work falls along three major lines of research:
+Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerDAST.pdf' target='_blank'>Draw-A-Scientist meta-analysis</a>:
+
+<iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Major Lines of Current Research
+
+My current work falls along three major lines of research:
 
 * **Line 1:** Studying gender biases and stereotypes in STEM using large-scale data sources.
 * **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
@@ -47,10 +53,6 @@ Representative publications include the following:
 * I leveraged my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in mathematics intervention effects.
 
 **Line 3:** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
-
-Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerDAST.pdf' target='_blank'>Draw-A-Scientist meta-analysis</a>:
-
-<iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Methodological Training and Contributions
 
