@@ -44,7 +44,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 **Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
 <ul class="pub_bullet">
 <li>Guided by a detailed <a href="https://osf.io/8ktnj" target="_blank">76-page preregistration</a></li>
-<li>Other open science practices <a href="https://osf.io/29egh/" target="_blank">R code/data</a></li> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a></li>
+<li>Other open science practices: <a href="https://osf.io/29egh/" target="_blank">R code/data</a></li> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a></li>
 <li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a></li>
 <li>First publication from <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">my first NSF grant</a> as lead PI at AIR.</li>
 <li>(Other publications from that grant are in preparation.)</li>
@@ -53,12 +53,14 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 **Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
 <ul class="pub_bullet">
 <li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
-* Open science practices: [R code/data](https://osf.io/f9gud/) and [R Shiny app](https://airshinyapps.shinyapps.io/math_meta_database)
-* I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.
+<li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a></li> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a></li>
+<li>I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellowship</a> to apply random forest algorithms to better understand heterogeneity in math intervention effects.</li>
 </ul>
 
 **Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
-<ul>I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.</ul>
+<ul class="pub_bullet">
+<li>I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.</li>
+</ul>
 
 ## Methodological Training and Contributions
 
