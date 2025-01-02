@@ -7,7 +7,7 @@ title: About
 
 <mark><b>December 2024 news:</b> Check out <a href='https://d-miller.github.io/pubs/' target='_blank'>the publications tab</a> for my new meta-analysis in <i>Psychological Bulletin</i> and its associated media coverage!</mark>
 
-## About My Current Position
+# About My Current Position
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
@@ -15,12 +15,13 @@ I lead a programmatic line of meta-analytic research funded by the U.S. National
 
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
-## Education
+# Education
 
 * **B.S., Physics,** Harvey Mudd College, 2010
 * **Ph.D., Psychology,** Northwestern University, 2018
 
-## Representative Publications by Line of Research
+<br>
+# Representative Publications by Line of Research
 
 My current work falls along three major lines of research:
 
@@ -56,7 +57,7 @@ My current work falls along three major lines of research:
 <li>For a memo to the STAT, I also wrote the derivations for the formulas using the delta method.</li>
 </ul>
 
-## Academic and Research History
+# Academic and Research History
 
 My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my thesis project on using spatial training to improve [long-term outcomes]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) for STEM undergraduates. In my current work, I continue to use the robust mathematical and computer programming background that I first developed as a physics undergraduate. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for more.)
 
@@ -70,7 +71,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 
 <br>
 
-## Methodological Training and Contributions
+# Methodological Training and Contributions
 
 I specialize in research synthesis and quantitative methods. I’m a co-founder of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. I'm an avid R programmer ([see here for recent code examples](https://osf.io/29egh/)) with more than 15 years of experience designing computer code for custom data analysis purposes, along with past experience in C, C++, HTML/CSS, JavaScript, Python, SPSS, and Stata. I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too.
 
@@ -80,7 +81,7 @@ My quantitative training started as an undergraduate physics major, taking class
 
 Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incubating-use-artificial-intelligence-conducting-high-quality-research-syntheses) to transform the practice of research synthesis using artificial intelligence such as large language models (PI: [Josh Polanin](https://www.air.org/experts/person/joshua-r-polanin)). To do so, we first aim to build new interdisciplinary partnerships (e.g., with leaders of two NSF-funded $20M AI Institutes). I am also the project director for [an IES-funded methods project](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730) on the consequences of selective reporting bias in education research, including developing new methods to account for dependent effects (PI: [Martyna Citkowicz](https://www.air.org/experts/person/martyna-citkowicz)).
 
-## Teaching Statistics and Methods
+# Teaching Statistics and Methods
 
 I enjoy demystifying statistics and quantitative methods for diverse audiences, including undergraduates, graduate students, academic faculty, other researchers, and the public. My interest in conveying complex technical content started when I taught physics undergraduates as a paid tutor for three years at Harvey Mudd College's tutoring center. During graduate school, I was a teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues in even content-focused courses.
 
@@ -94,7 +95,7 @@ QuEST training activities will include virtual webinars, week-long immersive tra
 
 Relatedly, I just co-authored [a meta-analysis book chapter](https://doi.org/10.1017/9781009170123.028) with social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/) for the _Handbook of Research Methods in Social and Personality Psychology_; our target audience was doctoral students who want to start a meta-analysis (but haven't done one yet) or want to be an intelligent consumer of published meta-analyses.
 
-## Dissemination to the Public
+# Dissemination to the Public
 
 I am passionate about ensuring that my work can be a public good. I therefore reach out to journalists and write my own popular press articles when I have new findings ready for public consumption, further drawing upon my interests in teaching others. Often, these findings come from large-scale syntheses that seek to understand why some studies find different results than other studies, aiming to go beyond reporting on single studies without context (Coffee is good for you! Coffee is bad for you!).
 
@@ -106,14 +107,14 @@ My own popular press writing has also appeared in outlets such as [_Associated P
 
 Short and sweet. Covers some main points for STEM stereotypes, while leaving with a takeaway about the need for targeted action and initiatives. Take a listen!<br><br><a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz/post/3lcvtxadq422f?ref_src=embed">[image or embed]</a></p>&mdash; Dr. David Miller 🏳️‍🌈 (<a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz?ref_src=embed">@davidimiller.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz/post/3lcvtxadq422f?ref_src=embed">December 9, 2024 at 5:11 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 
-## Employment History
+# Employment History
 
 * Senior Researcher, American Institutes for Research (2021–Present)
 * Researcher, American Institutes for Research (2018–2021)
 * Graduate Student Researcher, Northwestern University (2012–2018)
 * Graduate Student Researcher, University of California–Berkeley (2010–2012)
 
-## Research and Training Grants (Total: $10,422,702)
+# Research and Training Grants (Total: $10,422,702)
 
 Co-PI, AIR Opportunity Fund, [Quantitative Evidence Synthesis Training (QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3), 2024-2027. [$999,499]
 
@@ -133,7 +134,7 @@ Co-PI, NSF DRK-12, [Advancing Methods and Synthesizing Research in STEM Educatio
 
 PI, [NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList), 2011-2016. [$120,000]
 
-## Disclaimer
+# Disclaimer
 
 My writings on my blog or popular press outlets solely represent my own personal opinions. These writings do not represent the views of American Institutes for Research. 
 
