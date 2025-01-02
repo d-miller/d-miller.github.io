@@ -48,14 +48,13 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 * First publication from [my first NSF grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401) as lead PI at AIR.
 * (Other publications from that grant are in preparation.)
 
-<br>
 **Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
 * I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).
 * Open science practices: [R code/data](https://osf.io/f9gud/) and [R Shiny app](https://airshinyapps.shinyapps.io/math_meta_database)
 * I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.
 
-<br>
 **Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+* I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.
 
 ## Methodological Training and Contributions
 
