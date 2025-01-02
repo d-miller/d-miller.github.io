@@ -29,7 +29,7 @@ My current work falls along three major lines of research:
 * **Line 3:** Advancing methodological innovation in education research syntheses.
 
 <br>
-**Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396.
+**Line 1 example (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396.
 <ul class="pub_bullet">
 <li>Guided by a detailed <a href="https://osf.io/8ktnj" target="_blank">76-page preregistration</a>.</li>
 <li>Other open science practices: <a href="https://osf.io/29egh/" target="_blank">R code/data</a> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a>.</li>
@@ -38,7 +38,7 @@ My current work falls along three major lines of research:
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
 
-**Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634.
+**Line 2 example (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634.
 <ul class="pub_bullet">
 <li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
 <li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a>.</li>
@@ -46,7 +46,7 @@ My current work falls along three major lines of research:
 <li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
 </ul>
 
-**Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+**Line 3 example (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 <ul class="pub_bullet">
 <li>I was the lead author for this official What Works Clearinghouse (WWC) supplement.</li>
 <li>Ryan Williams and Larry Hedges were co-authors.</li>
