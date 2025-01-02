@@ -102,7 +102,10 @@ Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapp
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
 * I was the lead data analyst and R coder.
-* Used my machine learning training to apply random forests to explore heterogeneity in mathematics intervention effects, contrasting those results with multiple-moderator, meta-regression models.
+* Used my machine learning training to apply random forests to explore heterogeneity in mathematics intervention effects.
+* Contrasted the random forest results with those from meta-regression models that assumed linear effects and no interactions between moderators (traditional assumptions for most moderator analyses).
+* Applied robust variance estimation (RVE) using the _metafor_ and _clubSandwich_ R packages, while applying the correlated hierarchical effects (CHE) working model from [Pustejovsky and Tipton (2022)](https://doi.org/10.1007/s11121-021-01246-3).
+* Used multiple imputation to account for missing moderator data ([see R code here](https://osf.io/f9gud/), while using the _jomo_ R package to account for the multilevel data in the imputation process (effect sizes nested within studies).
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
 
@@ -150,6 +153,9 @@ Hall, J. A., & **Miller, D. I.** (2024). [Meta-analysis](https://doi.org/10.1017
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
 * Listed here for using random forests to explore effect heterogeneity (also cross-listed under Line 2).
 * Was the lead data analyst and R coder, leveraging my meta-analysis and machine learning expertise.
+* Implemented mixed-effects meta-regression models using the _metafor_ R package.
+* Applied robust variance estimation (RVE), using the correlated hierarchical effects (CHE) working model and _clubSandwich_ R package, following the latest recommendations from [Pustejovsky and Tipton (2022)](https://doi.org/10.1007/s11121-021-01246-3).
+* Used multiple imputation to account for missing moderator data ([see R code here](https://osf.io/f9gud/), while using the _jomo_ R package to account for the multilevel data in the imputation process (effect sizes nested within studies).
 
 What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=3). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 * I led the direction for recommending changes to Appendices D and E on statistical formulas for the What Works Clearinghouse (WWC), in close partnership with Ryan Williams, Qi Zhang, Larry Hedges, and contracting officers at the Institute of Education Sciences (IES).
