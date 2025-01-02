@@ -38,7 +38,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 
 ## Representative Publications
 
-**Line 1 (Gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
+**Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
 * Guided by a detailed [76-page preregistration](https://osf.io/8ktnj).
 * Other open science practices: [R code/data](https://osf.io/29egh/) and [R Shiny app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/).
 * Profiled by the [National Science Foundation](https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger).
@@ -52,7 +52,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 * I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.
 
 <br>
-**Line 3 (Methods innovations):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+**Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 
 ## Methodological Training and Contributions
 
