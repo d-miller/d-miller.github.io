@@ -17,7 +17,7 @@ My past and current work falls along three major lines of research:
 
 A fourth category includes popular press articles for disseminating findings to the public.
 
-<h1 style="margin-top: 1em;">Line 1: Gender Gaps in STEM</h1>
+<h1>Line 1: Gender Gaps in STEM</h1>
 
 Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
 * Not STEM-focused, but grouped here given the gender and large-scale data focus.
