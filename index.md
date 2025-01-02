@@ -9,17 +9,17 @@ title: About
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education sciences, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
-I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in STEM higher education and workforce contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (see list below).
+<div style="background-color: #E4E0EE; width: 175px; padding: 0px 10px 10px 10px; font-size: 12px; margin: 10px; float:right;">
 
-I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
-
-<div style="background-color: #E4E0EE; width: 300px; padding: 10px; font-size: 12px;">
-
-<p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
-  <video width="250" controls="controls">
+<p>Listen to this 1-minute NPR spot on my new study in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
+  <video width="150" height="100" controls="controls">
     <source src="https://d-miller.github.io/assets/NPR_stereotypes.mp4" type="video/mp4">
   </video>
 </div>
+
+I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in STEM higher education and workforce contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (see below).
+
+I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
 # Education
 
