@@ -5,8 +5,6 @@ title: About
 
 <style> ul.pub_bullet {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-<mark><b>December 2024 news:</b> Check out <a href='https://d-miller.github.io/pubs/' target='_blank'>the publications tab</a> for my new meta-analysis in <i>Psychological Bulletin</i> and its associated media coverage!</mark>
-
 # About My Current Position
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
@@ -14,6 +12,12 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
 I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in postsecondary and workforce contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (see below later on this page).
 
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
+
+<mark><b>December 2024 news:</b>Check out this 1-minute NPR spot on my new <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'><i>Psychological Bulletin</i> meta-analysis</a>:</mark>
+
+<video width="480" height="320" controls="controls">
+<source src="https://d-miller.github.io/assets/NPR_stereotypes.mp4" type="video/mp4">
+</video>
 
 # Education
 
@@ -55,14 +59,10 @@ My current work falls along three major lines of research:
 <ul class="pub_bullet">
 <li>Guided by a detailed <a href="https://osf.io/8ktnj" target="_blank">76-page preregistration</a>.</li>
 <li>Other open science practices: <a href="https://osf.io/29egh/" target="_blank">R code/data</a> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a>.</li>
-<li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a> (and see below for an NPR spot).</li>
+<li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a>.</li>
 <li>First publication from <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">my first NSF grant</a> as lead PI at AIR.</li>
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
-
-<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:c5xrowexysrnn6rn6piltqjz/app.bsky.feed.post/3lcvtxadq422f" data-bluesky-cid="bafyreigmi6zdk5hri5cx4kvxk2w5gvdx6dwuaqbktckxhbgooovnrt3jeq"><p lang="en">For a broader public audience, I thought this 1-minute NPR spot that aired today did a fantastic job.
-
-Short and sweet. Covers some main points for STEM stereotypes, while leaving with a takeaway about the need for targeted action and initiatives. Take a listen!<br><br><a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz/post/3lcvtxadq422f?ref_src=embed">[image or embed]</a></p>&mdash; Dr. David Miller 🏳️‍🌈 (<a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz?ref_src=embed">@davidimiller.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:c5xrowexysrnn6rn6piltqjz/post/3lcvtxadq422f?ref_src=embed">December 9, 2024 at 5:11 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 
 **Line 2 example (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634.
 <ul class="pub_bullet">
@@ -116,7 +116,7 @@ PI, [NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList
 
 My writings on my blog or popular press outlets solely represent my own personal opinions. These writings do not represent the views of American Institutes for Research. 
 
-## Contact me
+# Contact me
 
 Email: [dimiller@air.org](mailto:dimiller@air.org)
 
