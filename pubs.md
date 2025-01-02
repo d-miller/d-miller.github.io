@@ -5,7 +5,17 @@ permalink: /pubs/
 
 <div style="font-size: 1.6em;"><a target="_blank" href="https://scholar.google.com/citations?user=z8nFnRUAAAAJ&hl=en">Link to Google Scholar academic profile (<i>h</i> index = 16)</a></div>
 
-<style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
+<style> 
+ul {
+  position: relative; top: -12px; font-size: 0.8em;
+} 
+
+img.representative_pub {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #510062;
+}
+</style>
 
 My past and current work falls along three major lines of research:
 
@@ -19,8 +29,10 @@ A fourth category includes popular press articles for disseminating findings to 
 
 # Line 1: Gender Gaps in STEM
 
+🔗 Representative publication:
+
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine1.png" />
+  <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" />
 </a>
 
 Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
@@ -68,6 +80,12 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontier
 
 # Line 2: Improving STEM Learning
 
+🔗 Representative publication:
+
+<a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
+  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" />
+</a>
+
 Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
 * Not STEM-focused, but grouped here for its focus on intervention evidence in education.
 
@@ -102,6 +120,12 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 **Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
 
 # Line 3: Methodological Innovation
+
+🔗 Representative publication:
+
+<a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
+  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" />
+</a>
 
 **Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
 
