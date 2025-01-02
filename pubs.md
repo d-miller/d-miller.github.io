@@ -138,9 +138,9 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 </a>
 
 **Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
-* See page 1374 of the [_Psychological Bulletin_ article](https://psycnet.apa.org/fulltext/2025-50489-001.pdf#page=12) or Appendix E of the [preregistration](https://osf.io/8ktnj) for what this manuscript will describe and contextualize in further detail.
-* Developed a novel simulation-based approach for estimating the power of moderator tests in modern meta-analyses that use
+* Developed a simulation-based approach for estimating the power of moderator tests in modern meta-analyses that use
 multiple-moderator models and include multiple effect sizes per study.
+* See page 1374 of the [_Psychological Bulletin_ article](https://psycnet.apa.org/fulltext/2025-50489-001.pdf#page=12) or Appendix E of the [preregistration](https://osf.io/8ktnj) for what this manuscript will describe and contextualize in further detail.
 
 Hall, J. A., & **Miller, D. I.** (2024). [Meta-analysis](https://doi.org/10.1017/9781009170123.028). In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press. https://doi.org/10.1017/9781009170123.028
 * Target audience: doctoral students who want to start a meta-analysis (but haven’t done one yet) or want to be an intelligent consumer of published meta-analyses.
