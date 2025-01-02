@@ -54,13 +54,17 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 <ul class="pub_bullet">
 <li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
 <li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a>.</li>
+<li>Leveraged my prior machine learning training (e.g., as a past <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>.</li>
 <li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
-<li>Leveraged prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellowship</a>.</li>
 </ul>
 
 **Line 3 (Methods innovations in research synthesis):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 <ul class="pub_bullet">
-<li>I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.</li>
+<li>I was the lead author for this What Works Clearinghouse (WWC) supplement, with methodologists Ryan Williams and Larry Hedges as co-authors (the document itself does not list specific authors due to the nature of the federal contract.)</li>
+<li>Introduced new standard error equations for effect sizes based on adjusted mean differences.</li>
+<li>Was peer-reviewed by members of the WWC's Statistical, Technical, and Analysis Team (STAT).</li>
+<li>I wrote the derivations for the formulas the delta method for presenting to the WWC's STAT.</li>
+<li>I also led the computer programming efforts for using these formulas in official WWC reviews.</li>
 </ul>
 
 ## Methodological Training and Contributions
