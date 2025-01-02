@@ -102,10 +102,9 @@ Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapp
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
 * I was the lead data analyst and R coder.
-* Used my machine learning training to apply random forests to explore heterogeneity in mathematics intervention effects.
+* Used my machine learning training to apply random forests to explore heterogeneity in mathematics intervention effects using the _MetaForest_ R package.
 * Contrasted the random forest results with those from meta-regression models that assumed linear effects and no interactions between moderators (traditional assumptions for most moderator analyses).
-* Applied robust variance estimation (RVE) using the _metafor_ and _clubSandwich_ R packages, while applying the correlated hierarchical effects (CHE) working model from [Pustejovsky and Tipton (2022)](https://doi.org/10.1007/s11121-021-01246-3).
-* Used multiple imputation to account for missing moderator data ([see R code here](https://osf.io/f9gud/), while using the _jomo_ R package to account for the multilevel data in the imputation process (effect sizes nested within studies).
+* The difference in random forest and meta-regression results suggested potential unmodeled nonlinearities and interactions in understanding the moderating role of intervention length and grade level.
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
 
