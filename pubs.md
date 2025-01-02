@@ -151,11 +151,11 @@ What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and stan
 * Those sections (and the entire WWC handbook) were closely peer-reviewed by members of the What Works Clearinghouse's [Statistical, Technical, and Analysis Team](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=3).
 
 What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
-* I was the lead author for this official What Works Clearinghouse (WWC) supplement, with Ryan Williams and Larry Hedges as co-authors.
-* (The document itself does not list authors due to the nature of the federal contract.)
+* I drafted and revised this official What Works Clearinghouse (WWC) supplement, in close partnership with Ryan Williams and Larry Hedges.
+* (The document itself does not list specific authors due to the nature of the federal contract.)
 * Introduced new standard error equations for effect sizes based on adjusted mean differences.
 * Was peer-reviewed by members of the WWC's [Statistical, Technical, and Analysis Team (STAT)](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=3).
-* For a memo to the STAT, I also wrote the derivations for the formulas using the delta method.
+* For a memo to the STAT, I also wrote the derivations for the new formulas using the delta method.
 
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. https://doi.org/10.1007/s10508-016-0826-z
 * I was the statistical expert on multilevel modelling for this study.
