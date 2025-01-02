@@ -37,7 +37,6 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 <iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br>
-
 ## Representative Publications by Line of Research
 
 **Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
