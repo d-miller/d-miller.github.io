@@ -138,6 +138,9 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 </a>
 
 **Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
+* See page 1374 of the [_Psychological Bulletin_ article](https://psycnet.apa.org/fulltext/2025-50489-001.pdf#page=12) or Appendix E of the [preregistration](https://osf.io/8ktnj) for what this manuscript will describe and contextualize in further detail.
+* Developed a novel simulation-based approach for estimating the power of moderator tests in modern meta-analyses that use
+multiple-moderator models and include multiple effect sizes per study.
 
 Hall, J. A., & **Miller, D. I.** (2024). [Meta-analysis](https://doi.org/10.1017/9781009170123.028). In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press. https://doi.org/10.1017/9781009170123.028
 
@@ -158,8 +161,11 @@ Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who ar
 * I was the statistical expert on multilevel modelling for this study.
 
 Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). [A machine learning framework to identify students at risk of adverse academic outcomes]({{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf). In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
+* 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6756623852311683701).
+* Resulted from my machine learning training as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/).
 
 Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/AguiarEtAl2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
+* Resulted from my machine learning training as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/).
 
 <h1 id="line4">Popular Press Articles</h1>
 
