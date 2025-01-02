@@ -74,7 +74,7 @@ Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022
 Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
 
 **Miller, D. I.** (2019). [When do growth mindset interventions work?]({{ site.baseurl}}/assets/Miller2019.pdf) _Trends in Cognitive Sciences_, _23_(11), 910-912. https://doi.org/10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
-* Not a STEM-focused, but grouped here for its focus on intervention evidence in education.
+* Not STEM-focused, but grouped here for its focus on improving academic achievement.
 
 Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (2018). [Teachers’ spatial skills across disciplines and education levels: Exploring nationally representative data]({{ site.baseurl }}/assets/AtitTeacherSpatial.pdf). _Archives of Scientific Psychology_, _6_(1), 130-137. https://doi.org/10.1037/arc0000041 [[Supplemental materials](http://supp.apa.org/psycarticles/supplemental/arc0000041/arc0000041_supp.html)]
  
