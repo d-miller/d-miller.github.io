@@ -143,6 +143,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 multiple-moderator models and include multiple effect sizes per study.
 
 Hall, J. A., & **Miller, D. I.** (2024). [Meta-analysis](https://doi.org/10.1017/9781009170123.028). In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press. https://doi.org/10.1017/9781009170123.028
+* Target audience: doctoral students who want to start a meta-analysis (but haven’t done one yet) or want to be an intelligent consumer of published meta-analyses.
 
 What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 * I wrote the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63) and appendices on statistical formulas (Appendices D, E, and F), which were peer-reviewed by members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team.
