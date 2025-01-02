@@ -100,7 +100,8 @@ Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapp
 * Not STEM-focused, but grouped here for its focus on intervention evidence in education.
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
-* I was the lead analyst for this meta-analysis, including using my prior training in machine learning to apply random forest algorithms to better understand heterogeneity in mathematics intervention effects.
+* I was the lead data analyst and R coder.
+* Used my prior training in machine learning to apply random forest algorithms to better understand heterogeneity in mathematics intervention effects.
 
 **Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
 
@@ -145,6 +146,10 @@ multiple-moderator models and include multiple effect sizes per study.
 Hall, J. A., & **Miller, D. I.** (2024). [Meta-analysis](https://doi.org/10.1017/9781009170123.028). In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press. https://doi.org/10.1017/9781009170123.028
 * Target audience: doctoral students who want to start a meta-analysis (but haven’t done one yet) or want to be an intelligent consumer of published meta-analyses.
 
+Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
+* Listed here for applying random forest algorithms to understand effect heterogeneity (also cross-listed under Line 2).
+* Was the lead data analyst and R coder.
+
 What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=3). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 * I led the direction for recommending changes to Appendices D and E on statistical formulas for the What Works Clearinghouse (WWC), in close partnership with Ryan Williams, Qi Zhang, Larry Hedges, and contracting officers at the Institute of Education Sciences (IES).
 * I also drafted Appendices D–F, oversaw the revisions of text for all other technical appendices, and drafted the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63).
@@ -158,10 +163,10 @@ What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse p
 * For a memo to the STAT, I also wrote the derivations for the new formulas using the delta method.
 
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. https://doi.org/10.1007/s10508-016-0826-z
-* I was the statistical expert on multilevel modelling for this study.
+* I was the lead statistical expert and data analyst on using multilevel modelling for this study.
 
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). [Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women]({{ site.baseurl }}/assets/HsuEtAl2015.pdf). _Psychological Medicine_, _46_, 819–827. https://doi.org/10.1017/S0033291715002317
-* I was the statistical expert on multilevel modelling for this study.
+* I was the lead statistical expert and data analyst on using multilevel modelling for this study.
 
 Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). [A machine learning framework to identify students at risk of adverse academic outcomes]({{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf). In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6756623852311683701).
