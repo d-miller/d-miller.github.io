@@ -80,7 +80,7 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontier
 
 # Line 2: Improving STEM Learning
 
-🔗 Representative publication:
+🔗 Representative publication (I was the lead analyst):
 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" />
@@ -121,7 +121,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 
 # Line 3: Methodological Innovation
 
-🔗 Representative publication:
+🔗 Representative publication (I was the lead author, see below):
 
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" />
@@ -135,7 +135,11 @@ What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and stan
 * I wrote the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63) and appendices on statistical formulas (Appendices D, E, and F), which were peer-reviewed by members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team.
 
 What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
-* I was the lead author for this supplement that introduced new standard error equations for effect sizes based on adjusted mean differences. Members of the What Works Clearinghouse's Statistical, Technical, and Analysis Team peer-reviewed this supplement.
+* I was the lead author for this official What Works Clearinghouse (WWC) supplement, with Ryan Williams and Larry Hedges as co-authors.
+* (The document itself does not list authors due to the nature of the federal contract.)
+* Introduced new standard error equations for effect sizes based on adjusted mean differences.
+* Was peer-reviewed by members of the WWC's Statistical, Technical, and Analysis Team (STAT).
+* For a memo to the STAT, I also wrote the derivations for the formulas using the delta method.
 
 Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). [Sexual arousal patterns of autogynephilic male cross-dressers]({{ site.baseurl }}/assets/HsuInPress.pdf). _Archives of Sexual Behavior_, _46_, 247-253. https://doi.org/10.1007/s10508-016-0826-z
 * I was the statistical expert on multilevel modelling for this study.
