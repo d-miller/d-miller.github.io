@@ -27,6 +27,7 @@ My current work falls along three major lines of research:
 * **Line 1:** Studying gender stereotypes and biases in STEM using large-scale data.
 * **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
 * **Line 3:** Advancing methodological innovation in education research syntheses.
+<br>
 
 **Line 1 (STEM gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396.
 <ul class="pub_bullet">
