@@ -9,9 +9,9 @@ permalink: /pubs/
 
 My past and current work falls along three major lines of research:
 
-<ul style="font-size: 1em;">
+<ul style="font-size: 0.9em;">
   <li>Line 1: Understanding gender gaps in STEM using large-scale data.</li>
-  <li>Line 2: Improving STEM learning using research synthesis, educational technology, and spatial thinking.</li>
+  <li>Line 2: Improving STEM learning using synthesis, educational technology, and spatial thinking.</li>
   <li>Line 3: Advancing methodological innovation in education and psychology research.</li>
 </ul>
 
