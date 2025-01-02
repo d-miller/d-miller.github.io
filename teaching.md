@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 ---
 
-<style> ul {position: relative; top: -12px; font-size: 0.9em;} </style>
+<style> ul {position: relative; top: -6px; font-size: 0.9em;} </style>
 
 <h1 style="margin-top: 1em;">Prior Teaching Experience</h1>
 
