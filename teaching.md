@@ -7,7 +7,7 @@ permalink: /teaching/
 
 <h1 style="margin-top: 1em;">Prior Teaching Experience</h1>
 
-I especially enjoy teaching statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, and other researchers. My interest in conveying complex technical content started when I taught physics undergraduates as a paid tutor for three years at Harvey Mudd College's tutoring center. 
+I especially enjoy teaching statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, and other researchers. My interest in conveying complex technical content started when I taught physics to STEM majors as a paid tutor for three years at Harvey Mudd College's tutoring center. 
 
 At Northwestern, I was a graduate teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues in even content-focused courses:
 
