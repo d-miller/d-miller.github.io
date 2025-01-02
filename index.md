@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-<style> ul.pub_bullet {position: relative; top: -12px; font-size: 0.8em;} </style>
+<style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
 
 # About My Current Research Position
 
@@ -21,8 +21,9 @@ Check out this 1-minute NPR spot on my new meta-analysis in <a href='https://psy
 
 # Education
 
-* Ph.D., Psychology, Northwestern University, 2018
-* B.S., Physics, Harvey Mudd College, 2010
+Ph.D., Psychology, Northwestern University, 2018
+
+B.S., Physics, Harvey Mudd College, 2010
 
 # Employment
 
