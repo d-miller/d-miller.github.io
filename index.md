@@ -30,6 +30,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<br>
 
 ## Major Lines of Current Research
 
@@ -39,20 +40,23 @@ My current work falls along three major lines of research:
 * **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
 * **Line 3:** Advancing methodological innovation in research syntheses.
 
+<br>
 Representative publications include the following:
 
-**Line 1 (Gender stereotypes and biases)** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
+**Line 1 (Gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
 * Guided by a detailed [76-page preregistration](https://osf.io/8ktnj).
 * Other open science practices: [R code/data](https://osf.io/29egh/) and [R Shiny app](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/).
 * Profiled by the [National Science Foundation](https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger).
 * First publication from [my first NSF grant](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401) as lead PI at AIR.
 * (Other publications from that grants are in preparation).
 
-**Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
+<br>
+**Line 2 (STEM learning syntheses):** Williams, R., Citkowicz, M., Miller, D. I., Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072
 * I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).
 * Open science practices: [R code/data](https://osf.io/f9gud/) and [R Shiny app](https://airshinyapps.shinyapps.io/math_meta_database)
 * I used my prior training in machine learning (e.g., as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/)) to apply random forest algorithms to better understand heterogeneity in math intervention effects.
 
+<br>
 **Line 3 (Methods innovations):** What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 
 ## Methodological Training and Contributions
