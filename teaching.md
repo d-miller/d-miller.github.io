@@ -3,13 +3,27 @@ layout: page
 permalink: /teaching/
 ---
 
-<h1 style="margin-top: 1em;">Teaching Statistics and Methods</h1>
+<h1 style="margin-top: 1em;">Prior Teaching Experience</h1>
 
-I enjoy demystifying statistics and quantitative methods for diverse audiences, including undergraduates, graduate students, academic faculty, other researchers, and the public. My interest in conveying complex technical content started when I taught physics undergraduates as a paid tutor for three years at Harvey Mudd College's tutoring center. During graduate school, I was a teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues in even content-focused courses.
+I especially enjoy teaching statistics and quantitative methods to diverse audiences, including undergraduates, graduate students, academic faculty, and other researchers. My interest in conveying complex technical content started when I taught physics undergraduates as a paid tutor for three years at Harvey Mudd College's tutoring center. 
 
-At AIR, I continued this interest in teaching statistics by co-developing webinars on highly technical updates to the WWC’s procedures and standards, such as webinars on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc). For instance, after deriving novel statistical formulas for [this Version 4.1 Supplement](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf), I co-presented the changes to nearly 150 webinar attendees who were mostly academic faculty or researchers with WWC certifications (see [slides here](https://ies.ed.gov/ncee/WWC/Docs/Multimedia/WWC-SWAT-SE-Suppl-508.pdf) or watch below starting at 12:25):
+At Northwestern University, I was a graduate teaching assistant for seven undergraduate psychology courses, often helping to highlight methods issues in even content-focused courses:
+
+* Cog Sci 211: Learning, Representation, and Reasoning (instructor: Dedre Gentner)
+* Psych 204: Social Psychology (instructor: Galen Bodenhausen)
+* Psych 205: Research Methods (instructor: Ben Gorvine)
+* Psych 218: Developmental Psychology (instructor: Onnie Rogers)
+* Psych 218: Developmental Psychology (instructor: Sue Hespos)
+* Psych 298: Senior Honors Seminar (instructor: David Uttal)
+* Psych 339: Psychology of Gender (instructor: Alice Eagly)
+
+At AIR, I continued my teaching interests by co-developing webinars on highly technical updates to review procedures for U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. For instance, after deriving novel statistical formulas for [this Version 4.1 Supplement](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf), I co-presented the changes to nearly 150 webinar attendees who were mostly academic faculty or researchers with WWC certifications (see [slides here](https://ies.ed.gov/ncee/WWC/Docs/Multimedia/WWC-SWAT-SE-Suppl-508.pdf) or watch below starting at 12:25):
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/DTCvPrCko18?si=LO1RItDnKnxq3kfd&amp;start=744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Two other WWC webinars I co-developed focused on [missing data standards](https://ies.ed.gov/ncee/wwc/multimedia/45) and [web-based tools to review studies](https://www.youtube.com/watch?v=wF7YxxtJddc).
+
+# Ongoing Experience in Teaching Doctoral Students 
 
 Leveraging my meta-analysis expertise, I recently co-launched the multi-institutional, $1M [Quantitative Evidence Synthesis Training (QuEST) program](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3) to support doctoral students in both exploring and mastering research synthesis methodologies. These doctoral students will come from social and behavioral science programs at three minority-serving institutions (MSIs) that are part of [AIR's Pipeline Partnership Program](https://www.air.org/project/airs-pipeline-partnership-program): Georgia State University, Howard University, and University of Texas at San Antonio. 
 
@@ -17,7 +31,7 @@ QuEST training activities will include virtual webinars, week-long immersive tra
 
 Relatedly, I just co-authored [a meta-analysis book chapter](https://doi.org/10.1017/9781009170123.028) with social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/) for the _Handbook of Research Methods in Social and Personality Psychology_; our target audience was doctoral students who want to start a meta-analysis (but haven't done one yet) or want to be an intelligent consumer of published meta-analyses.
 
-# Dissemination to the Public
+# Ongoing Dissemination to the Public
 
 I am passionate about ensuring that my work can be a public good. I therefore reach out to journalists and write my own popular press articles when I have new findings ready for public consumption, further drawing upon my interests in teaching others. Often, these findings come from large-scale syntheses that seek to understand why some studies find different results than other studies, aiming to go beyond reporting on single studies without context (Coffee is good for you! Coffee is bad for you!).
 
