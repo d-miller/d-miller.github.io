@@ -24,7 +24,11 @@ My passion for STEM education research started as a physics major at Harvey Mudd
 
 After earning my B.S. in Mathematical Physics, I spent two years as a graduate student working with science education researcher [Marcia Linn](https://bse.berkeley.edu/marcia-c-linn) at the University of California at Berkeley’s Technology Enhanced Learning in Science (TELS) Center, before moving to Northwestern University to earn my Ph.D. in psychology. At Northwestern, I conducted my dissertation on characterizing transitions into and out of STEM, while working with developmental psychologist [David Uttal](https://psychology.northwestern.edu/people/faculty/core/profiles/david-uttal.html) and social psychologist [Alice Eagly](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/eagly.html). During graduate school, I was an NSF Graduate Research Fellow, which gave me additional freedom to craft my own research agenda early in my doctoral training.
 
-Leading academic journals such as [_Child Development_](https://d-miller.github.io/assets/MillerDAST.pdf), [_Journal of Educational Psychology_](https://d-miller.github.io/assets/MillerEaglyLinn2015.pdf), [_Journal of Research on Educational Effectiveness_](https://d-miller.github.io/assets/Williams2022.pdf), [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf), and [_Trends in Cognitive Sciences_](https://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My research on gender diversity in STEM spans more than a decade, starting with my [published undergraduate research]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) on gender differences in spatial skills. 
+Leading academic journals such as [_Child Development_](https://d-miller.github.io/assets/MillerDAST.pdf), [_Journal of Educational Psychology_](https://d-miller.github.io/assets/MillerEaglyLinn2015.pdf), [_Journal of Research on Educational Effectiveness_](https://d-miller.github.io/assets/Williams2022.pdf), [_Psychological Bulletin_](https://psycnet.apa.org/fulltext/2025-50489-001.pdf), and [_Trends in Cognitive Sciences_](https://d-miller.github.io/assets/MillerHalpern2014.pdf) have published my research. My research on gender diversity in STEM spans more than a decade, starting with my [published undergraduate research]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) on gender differences in spatial skills. My current work falls along three major lines of research:
+
+* **Line 1:** Studying gender stereotypes and biases in STEM using large-scale data.
+* **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
+* **Line 3:** Advancing methodological innovation in research syntheses.
 
 Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerDAST.pdf' target='_blank'>Draw-A-Scientist meta-analysis</a>:
 
@@ -32,16 +36,7 @@ Watch this Q&A about my prior <a href='https://d-miller.github.io/assets/MillerD
 
 <br>
 
-## Major Lines of Current Research
-
-My current work falls along three major lines of research:
-
-* **Line 1:** Studying gender stereotypes and biases in STEM using large-scale data.
-* **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
-* **Line 3:** Advancing methodological innovation in research syntheses.
-
-<br>
-Representative publications include the following:
+## Representative Publications
 
 **Line 1 (Gender stereotypes and biases):** Miller, D. I., Lauer, J. E., Tanenbaum, C., & Burr, L. (2024). [The development of children’s gender stereotypes about STEM and verbal abilities: A preregistered meta-analytic review of 98 studies](https://psycnet.apa.org/fulltext/2025-50489-001.pdf). _Psychological Bulletin_, _150_(12), 1363–1396. https://doi.org/10.1037/bul0000456
 * Guided by a detailed [76-page preregistration](https://osf.io/8ktnj).
