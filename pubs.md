@@ -19,6 +19,10 @@ A fourth category includes popular press articles for disseminating findings to 
 
 # Line 1: Gender Gaps in STEM
 
+<a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
+  <img src="{{ site.baseurl}}/images/ResearchLine1.png" />
+</a>
+
 Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
 * Not STEM-focused, but grouped here given the gender and large-scale data focus.
 
