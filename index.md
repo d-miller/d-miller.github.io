@@ -5,7 +5,7 @@ title: About
 
 <style> ul.pub_bullet {position: relative; top: -12px; font-size: 0.8em;} </style>
 
-# About My Current Position
+# About My Current Research Position
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education sciences, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
