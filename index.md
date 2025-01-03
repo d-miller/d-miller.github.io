@@ -12,7 +12,7 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
 <div style="background-color: #E4E0EE; width: 175px; padding: 0px 10px 10px 15px; font-size: 14px; margin: 10px; float:right;">
 
 <p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
-  <video width="150" height="52" controls="controls">
+  <video width="150" height="52" controls="controls" preload="auto">
     <source src="https://d-miller.github.io/assets/NPR_stereotypes.mp4" type="video/mp4">
   </video>
 </div>
