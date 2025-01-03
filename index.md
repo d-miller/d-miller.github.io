@@ -94,7 +94,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 <h4>2. Example of advancing methodological innovation in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more examples here</a>)</h4>
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
+  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul>
 <li>I was the lead author for this official What Works Clearinghouse (WWC) supplement.</li>
