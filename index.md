@@ -51,6 +51,10 @@ My research synthesis focus drives me to think about the big picture needs of ST
 
 # Partnership with the National Science Foundation
 
+<a href="https://ecrhub.org" target="_blank">
+  <img src="{{ site.baseurl}}/images/ECR_hub.png" width="300" />
+</a>
+
 I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's [ECR:Core](https://new.nsf.gov/funding/opportunities/ecrcore-edu-core-research) or [ECR:BCSER](https://new.nsf.gov/funding/opportunities/ehr-core-research-building-capacity-stem-education-research) programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening of about 400 scholars, to foster new relationships across disciplinary silos. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
 
 <img src="{{ site.baseurl}}/images/AERA2023_small.jpg" />
