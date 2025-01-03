@@ -8,6 +8,10 @@ ul {
   position: relative; top: -12px; font-size: 0.8em;
 } 
 
+td {
+  padding-right: 30px;
+}
+  
 img.representative_pub {
   border-style: solid;
   border-width: 2px;
@@ -41,16 +45,16 @@ B.S., Physics, Harvey Mudd College, 2010
 
 # Employment
 
-STEM education and psychology research:
-* Senior researcher, American Institutes for Research (2021–Present)
-* Researcher, American Institutes for Research (2018–2021)
-* Graduate student researcher, Northwestern University (2012–2018)
-* Graduate student researcher, UC – Berkeley (2010–2012)
-
-Undergraduate physics research:
-* Research intern, condensed matter physics, UC – Irvine (Summer 2009)
-* Research intern, high-energy particle physics, SUNY – Stony Brook (Summer 2008)
-* Research intern, astrophysics, Lowell Observatory (Summer 2007)
+<table>
+  <tr><td>Senior Researcher</td><td>American Institutes for Research</td><td>2021–Present</td></tr>
+  <tr><td>Researcher</td><td>American Institutes for Research</td><td>2018–2021</td></tr>
+  <tr><td>Graduate Student Researcher</td><td>Northwestern University</td><td>2012–2018</td></tr>
+  <tr><td>Data Science Fellow</td><td>Data Science for Social Good Summer Fellowship</td><td>Summer 2014</td></tr>
+  <tr><td>Graduate Student Researcher</td><td>UC – Berkeley</td><td>2010–2012</td></tr>
+  <tr><td>Undergraduate Physics Intern</td><td>UC – Irvine</td><td>Summer 2009</td></tr>
+  <tr><td>Undergraduate Physics Intern</td><td>SUNY – Stony Brook </td><td>Summer 2008</td></tr>
+  <tr><td>Undergraduate Physics Intern</td><td>Lowell Observatory</td><td>Summer 2007</td></tr>
+</table>
 
 # Academic and Research History
 
