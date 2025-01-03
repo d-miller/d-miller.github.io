@@ -60,7 +60,7 @@ B.S., Physics, Harvey Mudd College, 2010
 
 My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my thesis project on using spatial training to improve [long-term outcomes]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) for STEM undergraduates. In my current work, I continue to use the robust mathematical and computer programming background that I first developed as a physics undergraduate. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for more.)
 
-<img src="{{ site.baseurl}}/images/myjourney.png" />
+<img class="representative_pub" src="{{ site.baseurl}}/images/myjourney.png" />
 
 After earning my B.S. in physics, I spent two years as a graduate student working with science education researcher [Marcia Linn](https://bse.berkeley.edu/marcia-c-linn) at the University of California at Berkeley’s Technology Enhanced Learning in Science (TELS) Center, before moving to Northwestern University to earn my Ph.D. in psychology. At Northwestern, I conducted my dissertation on characterizing transitions into and out of STEM, while working with developmental psychologist [David Uttal](https://psychology.northwestern.edu/people/faculty/core/profiles/david-uttal.html) and social psychologist [Alice Eagly](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/eagly.html). During graduate school, I was an NSF Graduate Research Fellow, which gave me additional freedom to craft my own research agenda early in my doctoral training.
 
