@@ -23,7 +23,7 @@ img.representative_pub {
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education sciences, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
-<div style="background-color: #E4E0EE; width: 175px; padding: 0px 10px 10px 15px; font-size: 14px; margin: 10px; float:right;">
+<div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 14px;margin-left: 10px;margin-top: 7px;float:right;border-top: 5px solid #390145;">
 
 <p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
   <video width="150" height="52" controls="controls" preload="auto">
@@ -87,7 +87,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 <h4>2. Example of advancing methodological innovation in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more examples here</a>)</h4>
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="padding: 10px;" />
+  <img src="{{ site.baseurl}}/images/line3.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul>
 <li>I was the lead author for this official What Works Clearinghouse (WWC) supplement.</li>
@@ -100,7 +100,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 <h4>3. Example of improving STEM learning by contributing my research synthesis expertise (<a href="{{ site.baseurl}}/pubs/#line3" target="_blank">see more examples here</a>)</h4>
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
+  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul class="pub_bullet">
 <li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
@@ -115,7 +115,7 @@ I specialize in research synthesis and quantitative methods. I’m a co-founder 
 
 I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too, like this one:
 <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
+  <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="padding: 10px;" />
 </a>
 
 My quantitative training started as an undergraduate physics major, taking classes in linear algebra, multivariable calculus, and computer programming, which I applied during three summer research internships (in astrophysics, high-energy particle physics, and condensed matter physics). During graduate school, I learned data science approaches such as random forests and neural networks as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/). I later applied these machine learning methods to a [meta-analytic project]({{ site.baseurl }}/assets/Williams2022.pdf) on K-12 mathematics intervention effects.
