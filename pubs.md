@@ -84,7 +84,7 @@ men: A 30-year analysis]({{ site.baseurl }}/assets/MillerWai2015.pdf). _Frontier
 
 **Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
 undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. https://doi.org/10.1016/j.lindif.2012.03.012
-* Listed here for studying gender gaps in spatial skills and physics outcomes (also cross-listed under Line 2).
+* Listed here for studying gender gaps in spatial skills and physics outcomes (also cross-listed under Line 3).
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
@@ -104,7 +104,7 @@ Hall, J. A., & **Miller, D. I.** (2024). [Meta-analysis](https://doi.org/10.1017
 * Target audience: Doctoral students in social and personality psychology who want to start a meta-analysis (but haven’t done one yet) or want to be an intelligent consumer of published meta-analyses.
 
 Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
-* Listed here for using random forests to explore effect heterogeneity (also cross-listed under Line 2).
+* Listed here for using random forests to explore effect heterogeneity (also cross-listed under Line 3).
 * Was the lead data analyst and R coder, leveraging my meta-analysis and machine learning expertise.
 * Implemented mixed-effects meta-regression models using the _metafor_ R package.
 * Applied robust variance estimation (RVE), using the correlated hierarchical effects (CHE) working model and _clubSandwich_ R package, following the latest recommendations from [Pustejovsky and Tipton (2022)](https://doi.org/10.1007/s11121-021-01246-3).
