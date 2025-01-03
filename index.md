@@ -47,7 +47,7 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
 
 I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including synthesis projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about academic abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, gender biases in [higher education and workforce](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants ([see here]({{ site.baseurl }}/#grants)).
 
-My research synthesis focus drives me to think about the big picture needs of STEM education, ranging from early childhood to higher education and workforce development.
+My focus on research synthesis drives me to think about the big picture needs of STEM education, ranging from early childhood to higher education and workforce development.
 
 # Partnership with the National Science Foundation
 
