@@ -45,11 +45,11 @@ B.S., Physics, Harvey Mudd College, 2010
 
 # Employment
 
-<table>
+<table style="margin-top: 15px; margin-bottom: 25px;">
   <tr><td>Senior Researcher</td><td>American Institutes for Research</td><td>2021–Present</td></tr>
   <tr><td>Researcher</td><td>American Institutes for Research</td><td>2018–2021</td></tr>
   <tr><td>Graduate Student Researcher</td><td>Northwestern University</td><td>2012–2018</td></tr>
-  <tr><td>Data Science Fellow</td><td>Data Science for Social Good Summer Fellowship</td><td>Summer 2014</td></tr>
+  <tr><td>Data Science Fellow</td><td>University of Chicago</td><td>Summer 2014</td></tr>
   <tr><td>Graduate Student Researcher</td><td>UC – Berkeley</td><td>2010–2012</td></tr>
   <tr><td>Undergraduate Physics Intern</td><td>UC – Irvine</td><td>Summer 2009</td></tr>
   <tr><td>Undergraduate Physics Intern</td><td>SUNY – Stony Brook </td><td>Summer 2008</td></tr>
