@@ -66,8 +66,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<br>
-# Representative Publications (click the images)
+<h1 style="margin-top: 20px; margin-bottom: 15px;">Representative Publications (click the images)</h1> 
 
 <h4>1. Example of understanding variation in STEM gender stereotypes and biases using large-scale data (<a href="{{ site.baseurl}}/pubs/#line1" target="_blank">see more such publications here</a>)</h4>
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
@@ -82,7 +81,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
 
-<h4>2. Example of advancing methodological innovations in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more such publications here</a>)</h4>
+<h4>2. Example of advancing methodological innovation in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more such publications here</a>)</h4>
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
