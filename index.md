@@ -158,7 +158,7 @@ PI, [NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList
 
 # Disclaimer
 
-My writings on my blog or popular press outlets solely represent my own personal opinions. These writings do not represent the views of American Institutes for Research. 
+This website, my popular press articles, and social media posts solely represent my personal views, _not_ those of my employer or any other organization I work with.
 
 # Contact me
 
