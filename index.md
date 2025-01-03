@@ -121,6 +121,8 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 # Research and Training Grants (Total: $10,422,702)
 
+<img src="{{ site.baseurl}}/images/funding_sources.png" />
+
 Co-PI, AIR Opportunity Fund, [Quantitative Evidence Synthesis Training (QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3), 2024-2027. [$999,499]
 
 Co-PI, NSF MSRI Incubator, [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
