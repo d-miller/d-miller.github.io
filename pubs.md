@@ -25,8 +25,8 @@ My past and current work falls along three major lines of research:
 
 <ul style="top: 0px; font-size: 0.9em;">
   <li><a href="{{ site.baseurl}}/pubs/#line1"><b>Line 1:</b></a> Understanding gender gaps in STEM using large-scale data.</li>
-  <li><a href="{{ site.baseurl}}/pubs/#line2"><b>Line 2:</b></a> Improving STEM learning using syntheses, educational technology, and spatial training.</li>
-  <li><a href="{{ site.baseurl}}/pubs/#line3"><b>Line 3:</b></a> Advancing methodological innovation in education and psychology research.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line2"><b>Line 2:</b></a> Advancing methodological innovation in education and psychology research.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line3"><b>Line 3:</b></a> Improving STEM learning using syntheses, educational technology, and spatial training.</li>
 </ul>
 
 A fourth category includes <a href="{{ site.baseurl}}/pubs/#line4"><b>popular press articles</b></a> for disseminating findings to the public.
@@ -89,53 +89,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
-<h1 id="line2">Line 2: Improving STEM Learning</h1>
-
-🔗 Representative publication (I was the lead data analyst and R coder):
-
-<a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
-</a>
-
-Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
-* Not STEM-focused, but grouped here for its focus on intervention evidence in education.
-
-Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
-* I was the lead data analyst and R coder for this IES-funded meta-analysis.
-* Used my machine learning training to apply random forests to explore heterogeneity in mathematics intervention effects using the _MetaForest_ R package.
-* Contrasted the random forest results with those from meta-regression models that assumed linear effects and no interactions between moderators (traditional assumptions for most moderator analyses).
-* The difference in random forest and meta-regression results suggested potential unmodeled nonlinearities and interactions in understanding the moderating role of intervention length and grade level.
-
-**Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
-* Presented results to a group of about 20 NSF program officers and at the 2021 DRK-12 PI meeting.
-
-Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
-* Presented results to a group of about 20 NSF program officers and at the 2021 DRK-12 PI meeting.
-
-**Miller, D. I.** (2019). [When do growth mindset interventions work?]({{ site.baseurl}}/assets/Miller2019.pdf) _Trends in Cognitive Sciences_, _23_(11), 910-912. https://doi.org/10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
-* Not STEM-focused, but grouped here for its focus on improving academic achievement.
-
-Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (2018). [Teachers’ spatial skills across disciplines and education levels: Exploring nationally representative data]({{ site.baseurl }}/assets/AtitTeacherSpatial.pdf). _Archives of Scientific Psychology_, _6_(1), 130-137. https://doi.org/10.1037/arc0000041 [[Supplemental materials](http://supp.apa.org/psycarticles/supplemental/arc0000041/arc0000041_supp.html)]
- 
-**Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
-undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. https://doi.org/10.1016/j.lindif.2012.03.012
-* 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
-* **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
-
-Uttal, D. H., **Miller, D. I.**, & Newcombe, N. S. (2013). [Exploring and enhancing spatial thinking: Links to
-STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Current Directions in Psychological Science_, _22_, 367-373. https://doi.org/10.1177/0963721413484756
-* 400+ citations according to [Google Scholar](https://scholar.google.com/scholar?cites=17410950570026817282).
-* **Media coverage:** [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
-
-Matuk, C. F., McElhaney, K. W., **Miller, D. I.**, Chen, J. K., Lim-Breitbart, J., Terashima, H., … , Linn, M. C. (2013). [Reflectively prototyping a tool for exchanging ideas]({{ site.baseurl }}/assets/Matuk2013.pdf). In _Proceedings of the 10th International Conference on Computer Supported Collaborative Learning_ (pp. 101-104). Madison, WI: International Society of the Learning Sciences.
-
-Matuk, C. F., McElhaney, K. W., Chen, J. K., **Miller, D. I.**, Lim-Breitbart, J., & Linn, M. C. (2012). [The Idea Manager: A tool to scaffold students in documenting, sorting, and distinguishing ideas during science inquiry]({{ site.baseurl }}/assets/Matuk2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
-
-McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using the Idea Manager to promote coherent understanding of inquiry investigations]({{ site.baseurl }}/assets/McElhaney2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
-
-**Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
-
-<h1 id="line3">Line 3: Methodological Innovation</h1>
+<h1 id="line2">Line 2: Methodological Innovation</h1>
 
 🔗 Representative publication (I was the lead author, see below):
 
@@ -182,6 +136,52 @@ Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R.,
 
 Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, K., … , Ghani, R. (2015). [Who, when, why: A machine learning approach to prioritizing students at risk of not graduating high school on time]({{ site.baseurl }}/assets/AguiarEtAl2015.pdf). In _Proceedings of the 5th International Conference on Learning Analytics and Knowledge_. Poughkeepsie, NY: Society for Learning Analytics Research.
 * From my training as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/).
+
+<h1 id="line3">Line 3: Improving STEM Learning</h1>
+
+🔗 Representative publication (I was the lead data analyst and R coder):
+
+<a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
+  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
+</a>
+
+Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
+* Not STEM-focused, but grouped here for its focus on intervention evidence in education.
+
+Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). [Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments]({{ site.baseurl }}/assets/Williams2022.pdf). _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. https://doi.org/10.1080/19345747.2021.2009072 [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
+* I was the lead data analyst and R coder for this IES-funded meta-analysis.
+* Used my machine learning training to apply random forests to explore heterogeneity in mathematics intervention effects using the _MetaForest_ R package.
+* Contrasted the random forest results with those from meta-regression models that assumed linear effects and no interactions between moderators (traditional assumptions for most moderator analyses).
+* The difference in random forest and meta-regression results suggested potential unmodeled nonlinearities and interactions in understanding the moderating role of intervention length and grade level.
+
+**Miller, D. I.**, Pinerua, I., Margolin, J., & Gerdeman, D. (2022). [_Teachers' pedagogical content knowledge in mathematics and science: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/PCK2022.pdf). American Institutes for Research.
+* Presented results to a group of about 20 NSF program officers and at the 2021 DRK-12 PI meeting.
+
+Witherspoon, E., **Miller, D. I.**, Pinerua, I., & Gerdeman, D. (2022). [_Mathematical and scientific argumentation in PreK-12: A cross-disciplinary synthesis of recent DRK-12 projects_]({{ site.baseurl}}/assets/Argumentation2022.pdf). American Institutes for Research.
+* Presented results to a group of about 20 NSF program officers and at the 2021 DRK-12 PI meeting.
+
+**Miller, D. I.** (2019). [When do growth mindset interventions work?]({{ site.baseurl}}/assets/Miller2019.pdf) _Trends in Cognitive Sciences_, _23_(11), 910-912. https://doi.org/10.1016/j.tics.2019.08.005 [[link to preprint](https://psyarxiv.com/kjrxb)]
+* Not STEM-focused, but grouped here for its focus on improving academic achievement.
+
+Atit, K., **Miller, D. I.**, Newcombe, N. S., & Uttal, D. H. (2018). [Teachers’ spatial skills across disciplines and education levels: Exploring nationally representative data]({{ site.baseurl }}/assets/AtitTeacherSpatial.pdf). _Archives of Scientific Psychology_, _6_(1), 130-137. https://doi.org/10.1037/arc0000041 [[Supplemental materials](http://supp.apa.org/psycarticles/supplemental/arc0000041/arc0000041_supp.html)]
+ 
+**Miller, D. I.**, & Halpern, D. F. (2013). [Can spatial training improve long-term outcomes for gifted STEM
+undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and Individual Differences_, _26_, 141-152. https://doi.org/10.1016/j.lindif.2012.03.012
+* 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
+* **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
+
+Uttal, D. H., **Miller, D. I.**, & Newcombe, N. S. (2013). [Exploring and enhancing spatial thinking: Links to
+STEM achievement?]({{ site.baseurl }}/assets/UttalMillerNewcombe2013.pdf) _Current Directions in Psychological Science_, _22_, 367-373. https://doi.org/10.1177/0963721413484756
+* 400+ citations according to [Google Scholar](https://scholar.google.com/scholar?cites=17410950570026817282).
+* **Media coverage:** [_Global Cognition_](http://www.globalcognition.org/head-smart/building-spatial-thinking-improves-stem-success/), [_KQED MindShift_](http://blogs.kqed.org/mindshift/2013/07/why-we-need-to-value-spatial-creativity/), [_Quartz_](http://qz.com/151131/standardized-tests-discriminate-against-the-next-einsteins-and-teslas/)
+
+Matuk, C. F., McElhaney, K. W., **Miller, D. I.**, Chen, J. K., Lim-Breitbart, J., Terashima, H., … , Linn, M. C. (2013). [Reflectively prototyping a tool for exchanging ideas]({{ site.baseurl }}/assets/Matuk2013.pdf). In _Proceedings of the 10th International Conference on Computer Supported Collaborative Learning_ (pp. 101-104). Madison, WI: International Society of the Learning Sciences.
+
+Matuk, C. F., McElhaney, K. W., Chen, J. K., **Miller, D. I.**, Lim-Breitbart, J., & Linn, M. C. (2012). [The Idea Manager: A tool to scaffold students in documenting, sorting, and distinguishing ideas during science inquiry]({{ site.baseurl }}/assets/Matuk2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
+
+McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using the Idea Manager to promote coherent understanding of inquiry investigations]({{ site.baseurl }}/assets/McElhaney2012.pdf). In _Proceedings of the 11th International Conference of the Learning Sciences_. Sydney, Australia: International Society of the Learning Sciences.
+
+**Miller, D. I.**, & Halpern, D. F. (2011). [Spatial thinking in physics: Longitudinal impacts of 3-D spatial training]({{ site.baseurl }}/assets/MillerHalpern2011.pdf). In L. Carlson, C. Hoelscher, & T. Shipley (Eds.), _Proceedings of the 33rd Annual Conference of the Cognitive Science Society_ (pp. 3465-3470). Austin, TX: Cognitive Science Society. [This research was turned into a [full-length journal article]({{ site.baseurl }}/assets/MillerHalpern2013.pdf)]
 
 <h1 id="line4">Popular Press Articles</h1>
 
