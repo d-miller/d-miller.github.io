@@ -17,6 +17,10 @@ th {
   text-align: left;
   font-size: 16px;
 }
+
+h4 {
+  margin-bottom: -7px;
+}
   
 img.representative_pub {
   border-style: solid;
