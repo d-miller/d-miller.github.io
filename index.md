@@ -37,7 +37,7 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
   </video>
 </div>
 
-I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in STEM higher education and workforce contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (see below).
+I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about STEM and verbal abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, [gender biases](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) in STEM higher education and workforce contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants ([see here]({{ site.baseurl }}/#grants)).
 
 # Partnership with the National Science Foundation
 
@@ -137,7 +137,7 @@ I'm a trained reviewer for the U.S. Department of Education's [What Work Clearin
 
 Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incubating-use-artificial-intelligence-conducting-high-quality-research-syntheses) to transform the practice of research synthesis using artificial intelligence such as large language models (PI: [Josh Polanin](https://www.air.org/experts/person/joshua-r-polanin)). To do so, we first aim to build new interdisciplinary partnerships (e.g., with leaders of two NSF-funded $20M AI Institutes). I am also the project director for [an IES-funded methods project](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730) on the consequences of selective reporting bias in education research, including developing new methods to account for dependent effects (PI: [Martyna Citkowicz](https://www.air.org/experts/person/martyna-citkowicz)).
 
-# Research and Training Grants (Total: $10,422,702)
+<h1 id="grants">Research and Training Grants (Total: $10,422,702)</h1>
 
 <img src="{{ site.baseurl}}/images/funding_sources.png" />
 
