@@ -23,6 +23,10 @@ img.representative_pub {
   border-width: 2px;
   border-color: #510062;
 }
+
+#grants {
+  scroll-margin-top: 100px;
+}
 </style>
 
 # About My Current Research Position
