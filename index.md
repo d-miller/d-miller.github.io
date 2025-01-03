@@ -101,12 +101,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul>
-<li>I was the lead author for this official What Works Clearinghouse (WWC) supplement.</li>
-<li>Ryan Williams and Larry Hedges were co-authors.</li>
-<li>(The document itself does not list authors due to the nature of the federal contract.)</li>
-<li>Introduced new standard error equations for effect sizes based on adjusted mean differences.</li>
-<li>Was peer-reviewed by members of the WWC's Statistical, Technical, and Analysis Team (STAT).</li>
-<li>For a memo to the STAT, I also wrote the derivations for the formulas using the delta method.</li>
+<li>I was the lead author for this official WWC supplement, while closely working with Ryan Williams and Larry Hedges (<a href="{{ site.baseurl}}/pubs/#WWC_supplement" target="_blank">see here</a> for more detail).</li>
 </ul>
 
 <h4>3. Example of improving STEM learning by contributing my research synthesis expertise (<a href="{{ site.baseurl}}/pubs/#line3" target="_blank">see more examples here</a>)</h4>
