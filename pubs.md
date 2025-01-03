@@ -16,7 +16,7 @@ img.representative_pub {
   border-color: #510062;
 }
 
-#line1, #line2, #line3, #line4 {
+#line1, #line2, #line3, #line4, #WWC_supplement {
   scroll-margin-top: 100px;
 }
 </style>
@@ -115,7 +115,7 @@ What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and stan
 * I also drafted Appendices D–F, oversaw the revisions of text for all other technical appendices, and drafted the sections on standards for cluster-level assignment studies (pages 42-52 and 59-63).
 * Those sections (and the entire WWC handbook) were closely peer-reviewed by members of the What Works Clearinghouse's [Statistical, Technical, and Analysis Team](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=3).
 
-What Works Clearinghouse. (2020). [_Supplement to the What Works Clearinghouse procedures handbook, version 4.1_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
+<p id="WWC_supplement">What Works Clearinghouse. (2020). <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank"><i>Supplement to the What Works Clearinghouse procedures handbook, version 4.1</i></a>. U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).</p>
 * I drafted and revised this official What Works Clearinghouse (WWC) supplement, in close partnership with Ryan Williams, Larry Hedges, and contracting officers at the Institute of Education Sciences (IES).
 * (The document itself does not list specific authors due to the nature of the federal contract.)
 * Introduced new standard error equations for effect sizes based on adjusted mean differences.
