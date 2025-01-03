@@ -69,7 +69,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <br>
 # Representative Publications (click the images)
 
-<h4>Example of understanding variation in STEM gender stereotypes and biases using large-scale data (<a href="{{ site.baseurl}}/pubs/#line1" target="_blank">see more such publications here</a>)</h4>
+<h4>1. Example of understanding variation in STEM gender stereotypes and biases using large-scale data (<a href="{{ site.baseurl}}/pubs/#line1" target="_blank">see more such publications here</a>)</h4>
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
@@ -82,7 +82,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
 
-<h4>Example of advancing methodological innovations in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more such publications here</a>)</h4>
+<h4>2. Example of advancing methodological innovations in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more such publications here</a>)</h4>
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
@@ -95,7 +95,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>For a memo to the STAT, I also wrote the derivations for the formulas using the delta method.</li>
 </ul>
 
-<h4>Example of improving STEM learning by contributing my research synthesis expertise (<a href="{{ site.baseurl}}/pubs/#line3" target="_blank">see more such publications here</a>)</h4>
+<h4>3. Example of improving STEM learning by contributing my research synthesis expertise (<a href="{{ site.baseurl}}/pubs/#line3" target="_blank">see more such publications here</a>)</h4>
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
