@@ -14,6 +14,7 @@ td {
 
 th {
   font-weight: bold;
+  text-align: left;
 }
   
 img.representative_pub {
@@ -50,7 +51,7 @@ B.S., Physics, Harvey Mudd College, 2010
 # Employment
 
 <table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.8em;">
-  <tr><th>Job Title</td><td>Organization</td><td>Years</td></tr>
+  <tr><th>Job Title</th><th>Organization</th><th>Years</th></tr>
   <tr><td>Senior Researcher</td><td>American Institutes for Research</td><td>2021–Present</td></tr>
   <tr><td>Researcher</td><td>American Institutes for Research</td><td>2018–2021</td></tr>
   <tr><td>Graduate Student Researcher</td><td>Northwestern University</td><td>2012–2018</td></tr>
