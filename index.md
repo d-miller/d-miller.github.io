@@ -92,7 +92,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul class="pub_bullet">
-<li>Editor's Choice for the December 2024 issue of <i>Psychological Bulletin</i> (<a href="{{ site.baseurl}}/pubs/#line1" target="_blank">see here</a> for media coverage, including by <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a>, and the open science practices that our team used).</li>
+<li>Editor's Choice for the December 2024 issue of <i>Psychological Bulletin</i> (<a href="{{ site.baseurl}}/pubs/#line1" target="_blank">see here</a> for open science practices, in addition to the study's media coverage such as by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a>).</li>
 </ul>
 
 <h4>2. Example of advancing methodological innovation in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more examples here</a>)</h4>
