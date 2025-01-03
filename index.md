@@ -92,12 +92,8 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul class="pub_bullet">
-<li>Editor's Choice for the December 2024 issue of <i>Psychological Bulletin</i>.</li>
-<li>Guided by a detailed <a href="https://osf.io/8ktnj" target="_blank">76-page preregistration</a>.</li>
-<li>Other open science practices: <a href="https://osf.io/29egh/" target="_blank">R code/data</a> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a>.</li>
+<li>Editor's Choice for the December 2024 issue of <i>Psychological Bulletin</i> (<a href="{{ site.baseurl}}/pubs/#line1" target="_blank">see here</a> for media coverage and the open science practices that our team used).</li>
 <li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a>.</li>
-<li>First publication from <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">my first NSF grant</a> as lead PI at AIR.</li>
-<li>(Other publications from that grant are in preparation.)</li>
 </ul>
 
 <h4>2. Example of advancing methodological innovation in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more examples here</a>)</h4>
