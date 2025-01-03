@@ -64,10 +64,9 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 # Representative Publications (click the images)
 
-## Example of my research on understanding variation in gender stereotypes and biases in STEM using large-scale data ([see more such publications here]({{ site.baseurl}}/pubs/#line1)]
+**Example of my research on understanding variation in gender stereotypes and biases in STEM using large-scale data ([see more such publications here]({{ site.baseurl}}/pubs/#line1))**
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
@@ -79,7 +78,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
 
-## Example of my research on improving STEM learning by contributing my research synthesis expertise ([see more such publications here]({{ site.baseurl}}/pubs/#line2)]
+**Example of my research on improving STEM learning by contributing my research synthesis expertise ([see more such publications here]({{ site.baseurl}}/pubs/#line2))**
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
@@ -90,7 +89,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
 </ul>
 
-## Example of my research on advancing methodological innovations in education and psychology research syntheses ([see more such publications here]({{ site.baseurl}}/pubs/#line3)]
+**Example of my research on advancing methodological innovations in education and psychology research syntheses ([see more such publications here]({{ site.baseurl}}/pubs/#line3))**
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
