@@ -80,18 +80,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
 
-<h4>Example of improving STEM learning by contributing my research synthesis expertise (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more such publications here</a>)</h4>
-<a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
-</a>
-<ul class="pub_bullet">
-<li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
-<li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a>.</li>
-<li>Leveraged my past machine learning training (e.g., as a <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>).</li>
-<li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
-</ul>
-
-<h4>Example of advancing methodological innovations in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line3" target="_blank">see more such publications here</a>)</h4>
+<h4>Example of advancing methodological innovations in education and psychology research syntheses (<a href="{{ site.baseurl}}/pubs/#line2" target="_blank">see more such publications here</a>)</h4>
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
@@ -102,6 +91,17 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>Introduced new standard error equations for effect sizes based on adjusted mean differences.</li>
 <li>Was peer-reviewed by members of the WWC's Statistical, Technical, and Analysis Team (STAT).</li>
 <li>For a memo to the STAT, I also wrote the derivations for the formulas using the delta method.</li>
+</ul>
+
+<h4>Example of improving STEM learning by contributing my research synthesis expertise (<a href="{{ site.baseurl}}/pubs/#line3" target="_blank">see more such publications here</a>)</h4>
+<a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
+  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
+</a>
+<ul class="pub_bullet">
+<li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
+<li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a>.</li>
+<li>Leveraged my past machine learning training (e.g., as a <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>).</li>
+<li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
 </ul>
 
 # Methodological Training and Contributions
