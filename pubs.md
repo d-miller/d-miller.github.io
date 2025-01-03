@@ -93,7 +93,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
-<p style="font-size: 0.8em; margin-top: -16px;">☝️ Representative publication (I was the lead author, see below)</p>
+<p style="font-size: 0.8em; margin-top: -16px;">☝️ Representative publication (I was the lead author, <a href="{{site.baseurl}}/pubs/#WWC_supplement">see the note below</a>)</p>
 
 **Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
 * Developed a simulation-based approach for estimating the power of moderator tests in modern meta-analyses that use
