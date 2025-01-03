@@ -91,7 +91,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 <h1 id="line2">Line 2: Methodological Innovation</h1>
 
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
+  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <p style="font-size: 0.8em; margin-top: -16px;">☝️ Representative publication (I was the lead author, see below)</p>
 
@@ -138,7 +138,7 @@ Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, 
 <h1 id="line3">Line 3: Improving STEM Learning</h1>
 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
-  <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
+  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <p style="font-size: 0.8em; margin-top: -16px;">☝️ Representative publication (I was the lead data analyst and R coder):</p>
 
