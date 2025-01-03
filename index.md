@@ -115,7 +115,7 @@ I specialize in research synthesis and quantitative methods. I’m a co-founder 
 
 I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too, like this one:
 <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
-  <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="padding: 10px;" />
+  <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
 </a>
 
 My quantitative training started as an undergraduate physics major, taking classes in linear algebra, multivariable calculus, and computer programming, which I applied during three summer research internships (in astrophysics, high-energy particle physics, and condensed matter physics). During graduate school, I learned data science approaches such as random forests and neural networks as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/). I later applied these machine learning methods to a [meta-analytic project]({{ site.baseurl }}/assets/Williams2022.pdf) on K-12 mathematics intervention effects.
