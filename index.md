@@ -72,6 +72,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul class="pub_bullet">
+<li>Editor's Choice for the December 2024 issue of _Psychological Bulletin_.</li>
 <li>Guided by a detailed <a href="https://osf.io/8ktnj" target="_blank">76-page preregistration</a>.</li>
 <li>Other open science practices: <a href="https://osf.io/29egh/" target="_blank">R code/data</a> and <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">R Shiny app</a>.</li>
 <li>Profiled by the <a href="https://new.nsf.gov/news/what-age-do-children-begin-identifying-stem-answer-younger" target="_blank">National Science Foundation</a>.</li>
