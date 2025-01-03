@@ -36,7 +36,7 @@ A fourth category includes <a href="{{ site.baseurl}}/pubs/#line4"><b>popular pr
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
-☝️ Representative publication:
+<p style="font-size: 0.8em;">☝️ Representative publication</p>
 
 Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender stereotypes across nations reflect the social roles of women and men: Evidence from public opinion polls from 1995 and 2023.
 * Not STEM-focused, but grouped here given the gender and large-scale data focus.
@@ -93,7 +93,7 @@ undergraduates?]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) _Learning and 
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
-☝️ Representative publication (I was the lead author, see below):
+<p style="font-size: 0.8em;">☝️ Representative publication (I was the lead author, see below)</p>
 
 **Miller, D. I.** (under review). Power for moderator tests in modern meta-analyses: A simulation-based approach.
 * Developed a simulation-based approach for estimating the power of moderator tests in modern meta-analyses that use
@@ -140,7 +140,7 @@ Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
-☝️ Representative publication (I was the lead data analyst and R coder):
+<p style="font-size: 0.8em;">☝️ Representative publication (I was the lead data analyst and R coder):</p>
 
 Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
 * Not STEM-focused, but grouped here for its focus on intervention evidence in education.
@@ -185,7 +185,7 @@ McElhaney, K. W., Matuk, C. F., **Miller, D. I.**, & Linn, M. C. (2012). [Using 
 <a href="https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine4.png" class="representative_pub" />
 </a>
-☝️ Representative publication:
+<p style="font-size: 0.8em;">☝️ Representative publication:</p>
 
 **Miller, D. I.** (2024, December 20). [Why six-year-olds think computing and engineering are ‘for boys’](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/). _Scientific American_.
 * Discusses my [_Psychological Bulletin_ meta-analysis](https://psycnet.apa.org/fulltext/2025-50489-001.pdf) meta-analysis on children's gender stereotypes about STEM and verbal abilities. 
