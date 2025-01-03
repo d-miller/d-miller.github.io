@@ -9,7 +9,7 @@ ul {
 } 
 
 td {
-  padding-right: 30px;
+  padding-right: 35px;
 }
   
 img.representative_pub {
@@ -45,7 +45,7 @@ B.S., Physics, Harvey Mudd College, 2010
 
 # Employment
 
-<table style="margin-top: 15px; margin-bottom: 25px;">
+<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.8em;">
   <tr><td>Senior Researcher</td><td>American Institutes for Research</td><td>2021–Present</td></tr>
   <tr><td>Researcher</td><td>American Institutes for Research</td><td>2018–2021</td></tr>
   <tr><td>Graduate Student Researcher</td><td>Northwestern University</td><td>2012–2018</td></tr>
