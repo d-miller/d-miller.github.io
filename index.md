@@ -3,7 +3,17 @@ layout: default
 title: About
 ---
 
-<style> ul {position: relative; top: -12px; font-size: 0.8em;} </style>
+<style> 
+ul {
+  position: relative; top: -12px; font-size: 0.8em;
+} 
+
+img.representative_pub {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #510062;
+}
+</style>
 
 # About My Current Research Position
 
@@ -55,16 +65,9 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-# Representative Publications
+# Representative Publications (click the images)
 
-My current work falls along three major lines of research:
-
-* **Line 1:** Studying gender stereotypes and biases in STEM using large-scale data.
-* **Line 2:** Improving STEM learning by contributing my research synthesis expertise.
-* **Line 3:** Advancing methodological innovation in education research syntheses.
-
-<br>
-**🔗 Line 1 example (STEM gender stereotypes and biases):** 
+## Example of my research on understanding variation in gender stereotypes and biases in STEM using large-scale data ([see more such publications here]({{ site.baseurl}}/pubs/#line1)]
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
 </a>
@@ -76,7 +79,7 @@ My current work falls along three major lines of research:
 <li>(Other publications from that grant are in preparation.)</li>
 </ul>
 
-**🔗 Line 2 example (STEM learning syntheses):**
+## Example of my research on improving STEM learning by contributing my research synthesis expertise ([see more such publications here]({{ site.baseurl}}/pubs/#line2)]
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine2.png" class="representative_pub" style="padding: 10px;" />
 </a>
@@ -87,10 +90,11 @@ My current work falls along three major lines of research:
 <li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
 </ul>
 
-**🔗 Line 3 example (Methods innovations in research synthesis):** 
+## Example of my research on advancing methodological innovations in education and psychology research syntheses ([see more such publications here]({{ site.baseurl}}/pubs/#line3)]
 <a href="https://ies.ed.gov/ncee/wwc/Docs/referenceresources/WWC-41-Supplement-508_09212020.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
+<ul>
 <li>I was the lead author for this official What Works Clearinghouse (WWC) supplement.</li>
 <li>Ryan Williams and Larry Hedges were co-authors.</li>
 <li>(The document itself does not list authors due to the nature of the federal contract.)</li>
