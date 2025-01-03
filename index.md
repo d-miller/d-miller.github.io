@@ -112,7 +112,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul class="pub_bullet">
-<li>I was the lead data analyst and R coder, using my statistics and machine learning training to apply random forests and mixed-effects meta-regression models to explore heterogeneity in math intervention effects.
+<li>I was the lead data analyst and R coder, using my statistics and machine learning training to apply random forests and mixed-effects meta-regression models to explore heterogeneity in math intervention effects.</li>
 </ul>
 
 # Methodological Training and Contributions
