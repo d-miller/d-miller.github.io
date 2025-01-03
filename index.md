@@ -108,10 +108,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
 <ul class="pub_bullet">
-<li>I was the lead analyst for this meta-analysis funded by the Institute of Education Sciences (IES).</li>
-<li>Open science practices: <a href="https://osf.io/f9gud/" target="_blank">R code/data</a> and <a href="https://airshinyapps.shinyapps.io/math_meta_database" target="_blank">R Shiny app</a>.</li>
-<li>Leveraged my past machine learning training (e.g., as a <a href="https://www.datascienceforsocialgood.org/" target="_blank">Data Science for Social Good Summer Fellow</a>).</li>
-<li>Applied random forest algorithms to better understand heterogeneity in math intervention effects.</li>
+<li>I was the lead data analyst and R coder, using my statistics and machine learning training to apply random forests and mixed-effects meta-regression models to explore heterogeneity in math intervention effects.
 </ul>
 
 # Methodological Training and Contributions
