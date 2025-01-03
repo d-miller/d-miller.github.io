@@ -111,11 +111,12 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 # Methodological Training and Contributions
 
-I specialize in research synthesis and quantitative methods. I’m a co-founder of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. I'm an avid R programmer ([see here for recent code examples](https://osf.io/29egh/)) with more than 15 years of experience designing computer code for custom data analysis purposes, along with past experience in C, C++, HTML/CSS, JavaScript, Python, SPSS, and Stata. I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too.
+I specialize in research synthesis and quantitative methods. I’m a co-founder of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. I'm an avid R programmer ([see here for recent code examples](https://osf.io/29egh/)) with more than 15 years of experience designing computer code for custom data analysis purposes, along with past experience in C, C++, HTML/CSS, JavaScript, Python, SPSS, and Stata. 
 
-<div style="width: 175px; padding: 0px 10px 10px 15px; font-size: 14px; margin: 10px; float:right;">
-  <img src="{{ site.baseurl }}/images/DSSG.png" />
-</div>
+I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too, like this one:
+<a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
+  <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
+</a>
 
 My quantitative training started as an undergraduate physics major, taking classes in linear algebra, multivariable calculus, and computer programming, which I applied during three summer research internships (in astrophysics, high-energy particle physics, and condensed matter physics). During graduate school, I learned data science approaches such as random forests and neural networks as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/). I later applied these machine learning methods to a [meta-analytic project]({{ site.baseurl }}/assets/Williams2022.pdf) on K-12 mathematics intervention effects.
 
