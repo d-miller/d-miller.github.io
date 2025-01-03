@@ -27,7 +27,7 @@ img.representative_pub {
 
 I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit behavioral and social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across multiple perspectives—including education sciences, developmental psychology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
-<div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 14px;margin-left: 10px;margin-top: 7px;float:right;border-top: 5px solid #390145;">
+<div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 15px;margin-left: 10px;margin-top: 7px;float:right;border-top: 5px solid #390145;">
 
 <p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
   <video width="150" height="52" controls="controls" preload="auto">
