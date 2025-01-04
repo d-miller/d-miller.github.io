@@ -35,7 +35,7 @@ img.representative_pub {
 
 # About My Current Research Position
 
-I'm a senior researcher at the [American Institutes for Research](https://www.air.org/experts/person/david-i-miller) (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
+I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
 
 <div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 15px;margin-left: 10px;margin-top: 7px;float:right;border-top: 5px solid #390145;">
 
@@ -45,9 +45,9 @@ I'm a senior researcher at the [American Institutes for Research](https://www.ai
   </video>
 </div>
 
-I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including synthesis projects on [children's](https://nsf.gov/awardsearch/showAward?AWD_ID=1920401) gender stereotypes about academic abilities, [undergraduates'](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368) motivation and retention in STEM, gender biases in [higher education and workforce](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422) contexts, and using [artificial intelligence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651) to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants ([see here]({{ site.baseurl }}/#grants)).
+I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including synthesis projects on <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">children's</a> gender stereotypes about academic abilities, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368" target="_blank">undergraduates'</a> motivation and retention in STEM, gender biases in <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422" target="_blank">higher education and workforce</a> contexts, and using <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651" target="_blank">artificial intelligence</a> to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (<a href="{{ site.baseurl }}/#grants" target="_blank">see here</a>).
 
-My focus on research synthesis drives me to think about the big picture needs of STEM education, ranging from early childhood to higher education and workforce development. These syntheses aim to [inspire new lines](https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/) of primary data collection, while also informing long-standing debates and advancing innovation in research synthesis methodology.
+My focus on research synthesis drives me to think about the big picture needs of STEM education, ranging from early childhood to higher education and workforce development. These syntheses aim to <a href="https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/" target="_blank">inspire new lines</a> of primary data collection, while also informing long-standing debates and advancing innovation in research synthesis methodology.
 
 # Partnership with the National Science Foundation
 
