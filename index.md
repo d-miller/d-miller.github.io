@@ -75,7 +75,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 
 # Employment
 
-<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em;">
+<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 20px; border-collapse: separate;">
   <tr>
     <th>When</th>
     <th>What</th>
@@ -191,7 +191,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 <img src="{{ site.baseurl}}/images/funding_sources.png" />
 
-<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em;">
+<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 20px; border-collapse: separate;">
   <tr>
     <th style="width: 20%;">When</th>
     <th>My role</th>
@@ -250,7 +250,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
     <td>2011–2016</td>
     <td>PI/Fellow</td>
     <td>$120,000</td>
-    <td><a href="https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList" target = "_blank">NSF Graduate Research Fellowship</a></td>
+    <td>NSF GRFP, <a href="https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList" target = "_blank">NSF Graduate Research Fellowship</a></td>
   </tr>
 </table>
 
