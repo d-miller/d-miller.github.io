@@ -191,7 +191,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 <img src="{{ site.baseurl}}/images/funding_sources.png" />
 
-<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 20px; border-collapse: separate;">
+<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 25px; border-collapse: separate;">
   <tr>
     <th style="width: 20%;">When</th>
     <th>My role</th>
