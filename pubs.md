@@ -63,11 +63,11 @@ Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender
 * The study also received national TV coverage on _ABC News_ (see [16-second clip here](http://abcnews.go.com/Health/children-draw-scientists-women-study-shows/story?id=53885492)).
 * The syndicated news company, Ivanhoe Broadcast News, produced a [90-second TV news clip](https://www.youtube.com/watch?v=XWX7hEFFmlU&t=1s) for an initiative that reached [more than 40 million viewers](https://www.informalscience.org/news-views/child-trends-news-service-lessons-learned-cross-disciplinary-collaboration) on average.
 
-<a href="{{ site.baseurl }}/assets/Miller2016.pdf" target="_blank">[PDF]</a> **Miller, D. I.** (2016). Sex difference research and cognitive abilities. In N. A. Naples (Ed.), The Wiley-Blackwell Encyclopedia of Gender and Sexuality Studies. New York, NY: John Wiley & Sons, Ltd. https://doi.org/10.1002/9781118663219.wbegss098
+<a href="{{ site.baseurl }}/assets/Miller2016.pdf" target="_blank">[PDF]</a> **Miller, D. I.** (2016). Sex difference research and cognitive abilities. In N. A. Naples (Ed.), The Wiley-Blackwell Encyclopedia of Gender and Sexuality Studies. New York, NY: John Wiley & Sons, Ltd.
 
-<a href="{{ site.baseurl }}/assets/EaglyMiller2016.pdf" target="_blank">[PDF]</a> Eagly, A. H., & **Miller, D. I.** (2016). Scientific eminence: Where are the women? _Perspectives in Psychological Science_, _11_, 899-904. https://doi.org/10.1177/1745691616663918
+<a href="{{ site.baseurl }}/assets/EaglyMiller2016.pdf" target="_blank">[PDF]</a> Eagly, A. H., & **Miller, D. I.** (2016). Scientific eminence: Where are the women? _Perspectives in Psychological Science_, _11_, 899-904.
 
-<a href="{{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf" target="_blank">[PDF]</a> **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations. _Journal of Educational Psychology_, _107_, 631-644. https://doi.org/10.1037/edu0000005 [[R code/data](http://supp.apa.org/psycarticles/supplemental/edu0000005/edu0000005_supp.html)]
+<a href="{{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf" target="_blank">[PDF]</a> **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations. _Journal of Educational Psychology_, _107_, 631-644. [[R code/data](http://supp.apa.org/psycarticles/supplemental/edu0000005/edu0000005_supp.html)]
 * 650+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1797850991118317730).
 * Profiled by [_Science_ magazine](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) (over 2,300 Facebook shares)
 * **My writing:** I wrote [this popular press article](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) about the study for _The Conversation_.
@@ -83,7 +83,7 @@ men: A 30-year analysis. _Frontiers in Psychology_, _6_, 36.
 * 750+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14709471713279388069&as_sdt=5).
 
 <a href="{{ site.baseurl }}/assets/MillerHalpern2013.pdf" target="_blank">[PDF]</a> **Miller, D. I.**, & Halpern, D. F. (2013). Can spatial training improve long-term outcomes for gifted STEM
-undergraduates? _Learning and Individual Differences_, _26_, 141-152. https://doi.org/10.1016/j.lindif.2012.03.012
+undergraduates? _Learning and Individual Differences_, _26_, 141-152.
 * Listed here for studying gender gaps in spatial skills and physics outcomes (also cross-listed under Line 3).
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
@@ -214,7 +214,7 @@ STEM achievement? _Current Directions in Psychological Science_, _22_, 367-373.
 * Republished by [_Business Insider_](http://www.businessinsider.com/companies-are-spending-millions-on-bias-training-that-isnt-working-2015-7) and recrafted for [_U.S. News_](http://www.usnews.com/news/articles/2015/07/29/can-bias-training-really-improve-diversity-in-tech).
 
 <a href="https://theconversation.com/beliefs-about-innate-talent-may-dissuade-students-from-stem-42967" target="_blank">[LINK]</a> **Miller, D. I.** (2015, June 9). Beliefs about innate talent may dissuade students from STEM. _The Conversation_. 
-* Reports on [a nationally representative, longitudinal study](http://dx.doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
+* Reports on [a nationally representative, longitudinal study](https://doi.org/10.3389/fpsyg.2015.00530) finding that self-perceived abilities and growth mindsets predict who enters math-intensive majors. 
 * 60,000+ page views across original and republishing outlets including [_IFL Science_](http://www.iflscience.com/editors-blog/beliefs-about-innate-talent-may-dissuade-students-stem), [_U.S. News_](http://www.usnews.com/news/stem-solutions/articles/2015/07/10/fostering-a-growth-mindset-is-key-to-teaching-stem), and [World Economic Forum](https://www.weforum.org/stories/2015/06/why-we-need-to-challenge-beliefs-about-innate-talent-in-stem/).
 
 <a href="https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393" target="_blank">[LINK]</a> **Miller, D. I.** (2015, May 28). Most people think ‘man’ when they think ‘scientist’ – how can we kill the stereotype? _The Conversation_. 
@@ -222,8 +222,8 @@ STEM achievement? _Current Directions in Psychological Science_, _22_, 367-373.
 * 25,000+ page views across original and republishing outlets including [_Christian Science Monitor_](http://www.csmonitor.com/Technology/Breakthroughs-Voices/2015/0528/When-kids-hear-scientist-most-think-man.-How-can-we-end-this-stereotype), [_Quartz_](http://qz.com/414869/in-2015-most-people-still-think-man-when-they-think-scientist/), [_Raw Story_](http://www.rawstory.com/2015/05/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype/), [_The New Zealand Herald_](http://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=11463443), and [World Economic Forum](https://www.weforum.org/stories/2015/06/how-can-we-tackle-gender-stereotypes-in-science/).
 
 <a href="https://theconversation.com/some-good-news-about-hiring-women-in-stem-doesnt-erase-sex-bias-issue-40212" target="_blank">[LINK]</a> **Miller, D. I.** (2015, April 16). Some good news about hiring women in STEM doesn’t erase sex bias issue. _The Conversation_. 
-* Discusses [a _PNAS_ study](http://dx.doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
+* Discusses [a _PNAS_ study](https://doi.org/10.1073/pnas.1418878112) finding that scientists prefer to hire women over men among highly qualified tenure-track applicants. 
 * 30,000+ page views across original and republishing outlets including [_Quartz_](http://qz.com/385375/good-news-about-hiring-women-in-stem-but-its-not-enough/) and [World Economic Forum](https://www.weforum.org/stories/2015/04/why-are-women-still-under-represented-in-stem-fields/).
 
 <a href="https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science" target="_blank">[LINK]</a> **Miller, D. I.** (2015, March 3). A metaphor to retire. _Inside Higher Ed_. 
-* Discusses [my study on gender gaps in doctoral persistence](http://dx.doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain the low numbers of women in science and engineering.
+* Discusses [my study on gender gaps in doctoral persistence](https://doi.org/10.3389/fpsyg.2015.00037). The results challenge the "leaky pipeline" narrative commonly used to explain the low numbers of women in science and engineering.
