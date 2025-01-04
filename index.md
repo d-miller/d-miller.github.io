@@ -75,16 +75,52 @@ B.S., Physics, Harvey Mudd College, 2010
 
 # Employment
 
-<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.8em;">
-  <tr><th>Job Title</th><th>Organization</th><th>Years</th></tr>
-  <tr><td>Senior Researcher</td><td>American Institutes for Research</td><td>2021–Present</td></tr>
-  <tr><td>Researcher</td><td>American Institutes for Research</td><td>2018–2021</td></tr>
-  <tr><td>Graduate Student Researcher</td><td>Northwestern University</td><td>2012–2018</td></tr>
-  <tr><td>Data Science Fellow</td><td>University of Chicago</td><td>2014 (summer)</td></tr>
-  <tr><td>Graduate Student Researcher</td><td>UC – Berkeley</td><td>2010–2012</td></tr>
-  <tr><td>Undergraduate Physics Intern</td><td>UC – Irvine</td><td>2009 (summer)</td></tr>
-  <tr><td>Undergraduate Physics Intern</td><td>SUNY – Stony Brook </td><td>2008 (summer)</td></tr>
-  <tr><td>Undergraduate Physics Intern</td><td>Lowell Observatory</td><td>2007 (summer)</td></tr>
+<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em;">
+  <tr>
+    <th>When</th>
+    <th>What</th>
+    <th>Where</th>
+  </tr>
+  <tr>
+    <td>2021–Present</td>
+    <td>Senior Researcher</td>
+    <td>American Institutes for Research</td>
+  </tr>
+  <tr>
+    <td>2018–2021</td>
+    <td>Researcher</td>
+    <td>American Institutes for Research</td>
+  </tr>
+  <tr>
+    <td>2012–2018</td>
+    <td>Graduate Student Researcher</td>
+    <td>Northwestern University</td>
+  </tr>
+  <tr>
+    <td>2014 (summer)</td>
+    <td>Data Science Fellow</td>
+    <td>University of Chicago</td>
+  </tr>
+  <tr>
+    <td>2010–2012</td>
+    <td>Graduate Student Researcher</td>
+    <td>UC – Berkeley</td>
+  </tr>
+  <tr>
+    <td>2009 (summer)</td>
+    <td>Undergraduate Physics Intern</td>
+    <td>UC – Irvine</td>
+  </tr>
+  <tr>
+    <td>2008 (summer)</td>
+    <td>Undergraduate Physics Intern</td>
+    <td>SUNY – Stony Brook </td>
+  </tr>
+  <tr>
+    <td>2007 (summer)</td>
+    <td>Undergraduate Physics Intern</td>
+    <td>Lowell Observatory</td>
+  </tr>
 </table>
 
 # Academic and Research History
