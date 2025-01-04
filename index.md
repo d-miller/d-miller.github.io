@@ -34,7 +34,7 @@ img.representative_pub {
 
 #employment_table {
   margin-top: 15px; 
-  margin-bottom: 25px; 
+  margin-bottom: 10px; 
   font-size: 0.9em; 
 }
 
@@ -47,8 +47,7 @@ img.representative_pub {
 }
 
 #grants_table {
-  margin-top: 15px; 
-  margin-bottom: 25px; 
+  margin-top: 10px; 
   font-size: 0.9em; 
 }
 
@@ -57,7 +56,7 @@ img.representative_pub {
 }
 
 #grants_table th {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
   
 </style>
