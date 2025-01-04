@@ -205,7 +205,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 I specialize in research synthesis, quantitative methods, and causal inference. I’m a co‑founder of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. I'm an avid R programmer ([see here for recent code examples](https://osf.io/29egh/)) with more than 15 years of experience designing computer code for custom data analysis purposes, along with past experience in C, C++, HTML/CSS, JavaScript, Python, SPSS, and Stata. 
 
-I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too, like this one (click the image):
+I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too, like this one (click the image 👇):
 <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
   <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
 </a>
