@@ -67,10 +67,10 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 
 # Education
 
-Ph.D., Psychology, Northwestern University, 2018
+**Ph.D., Psychology**, Northwestern University, 2018
 * Dissertation committee: David Uttal, Alice Eagly, Larry Hedges
 
-B.S., Physics, Harvey Mudd College, 2010
+**B.S., Physics**, Harvey Mudd College, 2010
 * B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
 
 # Employment
