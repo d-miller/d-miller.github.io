@@ -15,7 +15,7 @@ td {
 th {
   font-weight: bold;
   text-align: left;
-  font-size: 16px;
+  font-size: 1.0em;
 }
 
 h4 {
