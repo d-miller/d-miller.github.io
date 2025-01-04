@@ -107,6 +107,11 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
     <td>UC – Berkeley</td>
   </tr>
   <tr>
+    <td>2007–2010</td>
+    <td>Physics Tutor for STEM Majors</td>
+    <td>Harvey Mudd College</td>
+  </tr>
+  <tr>
     <td>2009 (summer)</td>
     <td>Physics Research Assistant</td>
     <td>UC – Irvine</td>
