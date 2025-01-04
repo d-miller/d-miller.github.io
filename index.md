@@ -186,23 +186,68 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 <img src="{{ site.baseurl}}/images/funding_sources.png" />
 
-Co-PI, AIR Opportunity Fund, [Quantitative Evidence Synthesis Training (QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3), 2024-2027. [$999,499]
-
-Co-PI, NSF MSRI Incubator, [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651), 2024-2026. [$499,928]
-
-PI, NSF ECR:Core and ECR:BCSER, [ECR Hub: Advancing the Long-Term Potential of Fundamental Research](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422), 2022-2027. [$4,999,995]
-
-Project Director, Institute of Education Sciences (IES), [Consequences of Selective Reporting Bias in Education Research](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730), 2022-2025. [$896,931]
-
-PI, NSF ECR:Core, [Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422), 2021-2025. [$1,167,066]
-
-PI, NSF IUSE, [Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368), 2021-2025. [$500,000]
-
-PI, NSF ECR:Core, [The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401), 2019-2024. [$499,831]
-
-Co-PI, NSF DRK-12, [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777), 2018-2022. [$739,452]
-
-PI, [NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList), 2011-2016. [$120,000]
+<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em;">
+  <tr>
+    <th>When</th>
+    <th>My role</th>
+    <th>Amount</th>
+    <th>Grant information</th>
+  </tr>
+  <tr>
+    <td>2024–2027</td>
+    <td>Co-PI</td>
+    <td>$999,499</td>
+    <td>AIR Opportunity Fund, [Quantitative Evidence Synthesis Training (QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3)</td>
+  </tr>
+  <tr>
+    <td>2024–2026</td>
+    <td>Co-PI</td>
+    <td>$499,928</td>
+    <td>NSF MSRI Incubator, [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651)</td>
+  </tr>
+  <tr>
+    <td>2022–2027</td>
+    <td>PI</td>
+    <td>$4,999,995</td>
+    <td>NSF ECR:Core and ECR:BCSER, [ECR Hub: Advancing the Long-Term Potential of Fundamental Research](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422)</td>
+  </tr>
+  <tr>
+    <td>2022–2025</td>
+    <td>Project Director</td>
+    <td>$896,931</td>
+    <td>Institute of Education Sciences (IES), [Consequences of Selective Reporting Bias in Education Research](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730)</td>
+  </tr>
+  <tr>
+    <td>2021–2025</td>
+    <td>PI</td>
+    <td>$1,167,066</td>
+    <td>NSF ECR:Core, [Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422)</td>
+  </tr>
+  <tr>
+    <td>2021–2025</td>
+    <td>PI</td>
+    <td>$500,000</td>
+    <td>NSF IUSE, [Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368)</td>
+  </tr>
+  <tr>
+    <td>2019–2024</td>
+    <td>PI</td>
+    <td>$499,831</td>
+    <td>NSF ECR:Core, [The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401)</td>
+  </tr>
+  <tr>
+    <td>2018–2022</td>
+    <td>Co-PI</td>
+    <td>$739,452</td>
+    <td>NSF DRK-12, [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777)</td>
+  </tr>
+  <tr>
+    <td>2011–2016</td>
+    <td>PI/Fellow</td>
+    <td>$120,000</td>
+    <td>[NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList)</td>
+  </tr>
+</table>
 
 # Disclaimer
 
