@@ -100,7 +100,7 @@ undergraduates? _Learning and Individual Differences_, _26_, 141-152.
 multiple-moderator models and include multiple effect sizes per study.
 * See page 1374 of the [_Psychological Bulletin_ article](https://psycnet.apa.org/fulltext/2025-50489-001.pdf#page=12) or Appendix E of the [preregistration](https://osf.io/8ktnj) for what this manuscript will describe and contextualize in further detail.
 
-<a href="https://doi.org/10.1017/9781009170123.028" target="_blank">[LINK]</a> Hall, J. A., & **Miller, D. I.** (2024). Meta-analysis. In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press.
+<a href="{{ site.baseurl }}/assets/HallMiller2024.pdf" target="_blank">[PDF]</a> Hall, J. A., & **Miller, D. I.** (2024). Meta-analysis. In H. T. Reis, T. West, & C. M. Judd (Eds.), _Handbook of Research Methods in Social and Personality Psychology_ (pp. 678-704). Cambridge University Press.
 * Target audience: Doctoral students in social and personality psychology who want to start a meta-analysis (but haven’t done one yet) or want to be an intelligent consumer of published meta-analyses.
 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">[PDF]</a> Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022). Heterogeneity in mathematics intervention effects: Evidence from a meta-analysis of 191 randomized experiments. _Journal of Research on Educational Effectiveness_, _15_(3), 584-634. [[R code/data](https://osf.io/f9gud/) and [interactive app](https://airshinyapps.shinyapps.io/math_meta_database)]
