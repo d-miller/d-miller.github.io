@@ -31,6 +31,35 @@ img.representative_pub {
 #grants {
   scroll-margin-top: 100px;
 }
+
+#employment_table {
+  margin-top: 15px; 
+  margin-bottom: 25px; 
+  font-size: 0.9em; 
+}
+
+#employment_table td {
+  padding-bottom: 10px;
+}
+
+#employment_table th {
+  padding-bottom: 5px;
+}
+
+#grants_table {
+  margin-top: 15px; 
+  margin-bottom: 25px; 
+  font-size: 0.9em; 
+}
+
+#grants_table td {
+  padding-bottom: 25px;
+}
+
+#grants_table th {
+  padding-bottom: 5px;
+}
+  
 </style>
 
 # About My Current Research Position
@@ -75,7 +104,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 
 # Employment
 
-<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 10px; border-collapse: separate;">
+<table id="employment_table">
   <tr>
     <th>When</th>
     <th>What</th>
@@ -196,7 +225,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 <img src="{{ site.baseurl}}/images/funding_sources.png" />
 
-<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 25px; border-collapse: separate;">
+<table id="grants_table">
   <tr>
     <th style="width: 20%;">When</th>
     <th>My role</th>
