@@ -202,49 +202,49 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
     <td>2024–2027</td>
     <td>Co-PI</td>
     <td>$999,499</td>
-    <td>AIR Opportunity Fund, [Quantitative Evidence Synthesis Training (QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3)</td>
+    <td>AIR Opportunity Fund, <a href="QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3" target = "_blank">Quantitative Evidence Synthesis Training (QuEST)</a></td>
   </tr>
   <tr>
     <td>2024–2026</td>
     <td>Co-PI</td>
     <td>$499,928</td>
-    <td>NSF MSRI Incubator, [Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651)</td>
+    <td>NSF MSRI Incubator, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651" target = "_blank">Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses</a></td>
   </tr>
   <tr>
     <td>2022–2027</td>
     <td>PI</td>
     <td>$4,999,995</td>
-    <td>NSF ECR:Core and ECR:BCSER, [ECR Hub: Advancing the Long-Term Potential of Fundamental Research](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422)</td>
+    <td>NSF ECR:Core and ECR:BCSER, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422" target = "_blank">ECR Hub: Advancing the Long-Term Potential of Fundamental Research</a></td>
   </tr>
   <tr>
     <td>2022–2025</td>
     <td>Project Director</td>
     <td>$896,931</td>
-    <td>Institute of Education Sciences (IES), [Consequences of Selective Reporting Bias in Education Research](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730)</td>
+    <td>Institute of Education Sciences (IES), <a href="https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730" target = "_blank">Consequences of Selective Reporting Bias in Education Research</a></td>
   </tr>
   <tr>
     <td>2021–2025</td>
     <td>PI</td>
     <td>$1,167,066</td>
-    <td>NSF ECR:Core, [Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422)</td>
+    <td>NSF ECR:Core, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422" target = "_blank">Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence</a></td>
   </tr>
   <tr>
     <td>2021–2025</td>
     <td>PI</td>
     <td>$500,000</td>
-    <td>NSF IUSE, [Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368)</td>
+    <td>NSF IUSE, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368" target = "_blank">Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis</a></td>
   </tr>
   <tr>
     <td>2019–2024</td>
     <td>PI</td>
     <td>$499,831</td>
-    <td>NSF ECR:Core, [The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401)</td>
+    <td>NSF ECR:Core, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401" target = "_blank">The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis</a></td>
   </tr>
   <tr>
     <td>2018–2022</td>
     <td>Co-PI</td>
     <td>$739,452</td>
-    <td>NSF DRK-12, [Advancing Methods and Synthesizing Research in STEM Education](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777)</td>
+    <td>NSF DRK-12, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777" target = "_blank">Advancing Methods and Synthesizing Research in STEM Education</a></td>
   </tr>
   <tr>
     <td>2011–2016</td>
