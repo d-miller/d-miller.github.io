@@ -75,7 +75,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 
 # Employment
 
-<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 20px; border-collapse: separate;">
+<table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em; border-spacing: 0px 10px; border-collapse: separate;">
   <tr>
     <th>When</th>
     <th>What</th>
