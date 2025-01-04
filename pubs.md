@@ -123,10 +123,10 @@ multiple-moderator models and include multiple effect sizes per study.
 * For a memo to the STAT, I also wrote the derivations for the new formulas using the delta method.
 
 <a href="{{ site.baseurl }}/assets/HsuInPress.pdf" target="_blank">[PDF]</a> Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2017). Sexual arousal patterns of autogynephilic male cross-dressers. _Archives of Sexual Behavior_, _46_, 247-253.
-* I was the lead statistical expert and data analyst on using multilevel modelling for this study.
+* I was the lead statistical expert on using multilevel modeling for this study.
 
 <a href="{{ site.baseurl }}/assets/HsuEtAl2015.pdf" target="_blank">[PDF]</a> Hsu, K. J., Rosenthal, A. M., **Miller, D. I.**, & Bailey, J. M. (2016). Who are gynandromorphophilic men? Characterizing men with sexual interest in transgender women. _Psychological Medicine_, _46_, 819–827.
-* I was the lead statistical expert and data analyst on using multilevel modelling for this study.
+* I was the lead statistical expert on using multilevel modeling for this study.
 
 <a href="{{ site.baseurl }}/assets/LakkarajuEtAl2015.pdf" target="_blank">[PDF]</a> Lakkaraju, H., Aguiar, E., Shan, C., **Miller, D. I.**, Bhanpuri, N., Ghani, R., & Addison, K. L. (2015). A machine learning framework to identify students at risk of adverse academic outcomes. In _Proceedings of the 21st ACM SIGKDD Conference on Knowledge Discovery and Data Mining_. Sydney, Australia: Association for Computing Machinery.
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6756623852311683701).
