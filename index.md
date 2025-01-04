@@ -250,7 +250,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
     <td>2011–2016</td>
     <td>PI/Fellow</td>
     <td>$120,000</td>
-    <td>[NSF Graduate Research Fellowship](https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList)</td>
+    <td><a href="https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList" target = "_blank">NSF Graduate Research Fellowship</a></td>
   </tr>
 </table>
 
