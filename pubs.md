@@ -140,7 +140,7 @@ Aguiar, E., Lakkaraju, H., Bhanpuri, N., **Miller, D. I.**, Yuhas, B., Addison, 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
 </a>
-<p style="font-size: 0.8em; margin-top: -16px;">☝️ Representative publication (I was the lead data analyst and R coder):</p>
+<p style="font-size: 0.8em; margin-top: -16px;">☝️ Representative publication (I was the lead data analyst and R coder)</p>
 
 Taylor, J., **Miller, D. I.**, Michaelson, L., & Watson, K. (under review). Mapping the pipeline of intervention evidence in education.
 * Not STEM-focused, but grouped here for its focus on intervention evidence in education.
