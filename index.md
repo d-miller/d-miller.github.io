@@ -193,10 +193,10 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 <table style="margin-top: 15px; margin-bottom: 25px; font-size: 0.9em;">
   <tr>
-    <th>When</th>
+    <th style="width: 20%;">When</th>
     <th>My role</th>
     <th>Amount</th>
-    <th>Grant information</th>
+    <th>Funding source and title</th>
   </tr>
   <tr>
     <td>2024–2027</td>
