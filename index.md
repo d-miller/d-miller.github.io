@@ -227,7 +227,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 <table id="grants_table">
   <tr>
     <th style="width: 20%;">When</th>
-    <th>My role</th>
+    <th>Role</th>
     <th>Amount</th>
     <th>Funding source and title</th>
   </tr>
