@@ -67,7 +67,7 @@ Nater, C., **Miller, D. I.**, Eagly, A. H., & Sczesny, S. (under review). Gender
 
 <a href="{{ site.baseurl }}/assets/EaglyMiller2016.pdf" target="_blank">[PDF]</a> Eagly, A. H., & **Miller, D. I.** (2016). Scientific eminence: Where are the women? _Perspectives in Psychological Science_, _11_, 899-904. https://doi.org/10.1177/1745691616663918
 
-<a href="{{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf" target="_blank">[PDF]</a> **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). [Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations](). _Journal of Educational Psychology_, _107_, 631-644. https://doi.org/10.1037/edu0000005 [[R code and data](http://supp.apa.org/psycarticles/supplemental/edu0000005/edu0000005_supp.html)]
+<a href="{{ site.baseurl }}/assets/MillerEaglyLinn2015.pdf" target="_blank">[PDF]</a> **Miller, D. I.**, Eagly, A. H., & Linn, M. C. (2015). Women’s representation in science predicts national gender-science stereotypes: Evidence from 66 nations. _Journal of Educational Psychology_, _107_, 631-644. https://doi.org/10.1037/edu0000005 [[R code/data](http://supp.apa.org/psycarticles/supplemental/edu0000005/edu0000005_supp.html)]
 * 650+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1797850991118317730).
 * Profiled by [_Science_ magazine](http://news.sciencemag.org/social-sciences/2015/05/science-still-seen-male-profession-according-international-study-gender-bias) (over 2,300 Facebook shares)
 * **My writing:** I wrote [this popular press article](https://theconversation.com/most-people-think-man-when-they-think-scientist-how-can-we-kill-the-stereotype-42393) about the study for _The Conversation_.
