@@ -108,7 +108,7 @@ Williams, R., Citkowicz, M., **Miller, D. I.**, Lindsay, J., & Walters, K. (2022
 * Was the lead data analyst and R coder, leveraging my meta-analysis and machine learning expertise.
 * Implemented mixed-effects meta-regression models using the _metafor_ R package.
 * Applied robust variance estimation (RVE), using the correlated hierarchical effects (CHE) working model and _clubSandwich_ R package, following the latest recommendations from [Pustejovsky and Tipton (2022)](https://doi.org/10.1007/s11121-021-01246-3).
-* Used multiple imputation to account for missing moderator data ([see R code here](https://osf.io/f9gud/), while using the _jomo_ R package to account for the multilevel data in the imputation process (effect sizes nested within studies).
+* Used multiple imputation to account for missing moderator data ([see R code here](https://osf.io/f9gud/)), while using the _jomo_ R package to account for the multilevel data in the imputation process (effect sizes nested within studies).
 
 What Works Clearinghouse. (2022). [_What Works Clearinghouse procedures and standards handbook, version 5.0_](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=3). U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance (NCEE).
 * I led the direction for recommending changes to Appendices D and E on statistical formulas for the What Works Clearinghouse (WWC), in close partnership with Ryan Williams, Qi Zhang, Larry Hedges, and contracting officers at the Institute of Education Sciences (IES).
