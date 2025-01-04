@@ -212,7 +212,7 @@ I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereoty
 
 My quantitative training started as an undergraduate physics major, taking classes in linear algebra, multivariable calculus, and computer programming, which I applied during three full-time summer internships (in astrophysics, high-energy particle physics, and condensed matter physics). During graduate school, I learned data science approaches such as random forests and neural networks as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/). I later applied these machine learning methods to a [meta-analytic project]({{ site.baseurl }}/assets/Williams2022.pdf) on K-12 mathematics intervention effects.
 
-<div style="width: 420px; margin-left: 10px; margin-right: 20px; margin-top: 5px; float:right;">
+<div style="width: 420px; margin-left: 10px; margin-right: 15px; margin-top: 5px; float:right;">
   <img src="{{ site.baseurl }}/images/WWC_logo.png" />
 </div>
 
