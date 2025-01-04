@@ -289,7 +289,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
 
 # Disclaimer
 
-This website and my social media posts solely represent my personal views, _not_ those of my employer or any other organization I work with.
+This website and my social media posts solely represent my personal views, not those of my employer or any other organization I work with.
 
 # Contact me
 
