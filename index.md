@@ -108,17 +108,22 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
   </tr>
   <tr>
     <td>2009 (summer)</td>
-    <td>Undergraduate Physics Intern</td>
+    <td>Physics Research Assistant</td>
     <td>UC – Irvine</td>
   </tr>
   <tr>
     <td>2008 (summer)</td>
-    <td>Undergraduate Physics Intern</td>
+    <td>Physics Research Assistant</td>
     <td>SUNY – Stony Brook </td>
   </tr>
   <tr>
+    <td>2007–2008</td>
+    <td>Physics Research Assistant</td>
+    <td>Harvey Mudd College</td>
+  </tr>
+  <tr>
     <td>2007 (summer)</td>
-    <td>Undergraduate Physics Intern</td>
+    <td>Physics Research Assistant</td>
     <td>Lowell Observatory</td>
   </tr>
 </table>
