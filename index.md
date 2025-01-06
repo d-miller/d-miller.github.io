@@ -99,7 +99,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 * Dissertation committee: David Uttal, Alice Eagly, Larry Hedges
 
 **B.S., Physics**, Harvey Mudd College, 2010
-* B.S. with High Distinction; Dean’s List (2006 – 2010); Honors in Physics
+* Graduated with High Distinction; Dean’s List (2006–2010); Departmental Honors Physics
 
 # Employment
 
