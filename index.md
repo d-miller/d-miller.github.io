@@ -235,7 +235,7 @@ Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incu
     <td>2024–2027</td>
     <td>Co-PI</td>
     <td>$999,499</td>
-    <td>AIR Opportunity Fund, <a href="QuEST)](https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3" target = "_blank">Quantitative Evidence Synthesis Training (QuEST)</a></td>
+    <td>AIR Opportunity Fund, <a href="https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3" target = "_blank">Quantitative Evidence Synthesis Training (QuEST)</a></td>
   </tr>
   <tr>
     <td>2024–2026</td>
