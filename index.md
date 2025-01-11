@@ -71,6 +71,8 @@ img.representative_pub {
 
 <p>My research builds bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
 
+<p>My prior training in physics, data science, and quantitative methods enables me to advance methodological innovation, while investigating content-focused research questions.</p>
+
 <br>
 </div>
 
