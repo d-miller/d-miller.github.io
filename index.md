@@ -74,7 +74,7 @@ img.representative_pub {
 <br>
 </div>
 
-# About My Current Research
+# More About My Current Research
 
 
 <div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 15px;margin-left: 10px;margin-top: 15px;float:right;border-top: 5px solid #390145;">
