@@ -63,17 +63,21 @@ img.representative_pub {
 
 <div>
 
-<div style="width: 250px; margin-left: -5px; margin-right: 10px; margin-top: 15px; margin-bottom: -10px; float:left;">
-    <img src="{{ site.baseurl}}/images/MillerHeadshot.jpg" width="250" />
+<div style="width: 350px; margin-left: -5px; margin-right: 10px; margin-top: 15px; margin-bottom: -10px; float:left;">
+    <img src="{{ site.baseurl}}/images/MillerHeadshot.jpg" width="350" />
 </div>
 
-I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
+<p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in STEM fields.</p> 
+
+<p>I build bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
+
+<br>
 </div>
 
-# About My Current Research Position
+# About My Current Research
 
 
-<div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 15px;margin-left: 10px;margin-top: 7px;float:right;border-top: 5px solid #390145;">
+<div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 15px;margin-left: 10px;margin-top: 15px;float:right;border-top: 5px solid #390145;">
 
 <p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
   <video width="150" height="52" controls="controls" preload="auto">
