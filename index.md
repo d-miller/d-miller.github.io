@@ -69,9 +69,9 @@ img.representative_pub {
 
 <p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in science, technology, engineering, and mathematics (STEM) fields.</p> 
 
-<p>My research builds bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
+<p>My research <strong><i>builds bridges</i></strong> across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
 
-<p>My prior training in physics, data science, and quantitative methods enables me to advance methodological innovation, while investigating content-focused research questions.</p>
+<p>While investigating content-focused research questions, I also <strong><i>advance methodological innovation</i></strong> by drawing upon my prior training in physics, data science, and quantitative methods.</p>
 
 </div>
 
