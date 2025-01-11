@@ -100,7 +100,7 @@ My focus on research synthesis drives me to think about the big picture needs of
 
 # Partnership with the National Science Foundation
 
-<div style="width: 350px; margin-left: -5px; margin-right: 10px; margin-top: 15px; margin-bottom: -10px; float:left;">
+<div style="width: 375px; margin-left: -5px; margin-right: 10px; margin-top: 15px; margin-bottom: -10px; float:right;">
   <a href="https://ecrhub.org" target="_blank">
     <img src="{{ site.baseurl}}/images/ECR_hub.png" width="350" />
   </a>
