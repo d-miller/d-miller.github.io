@@ -61,7 +61,7 @@ img.representative_pub {
   
 </style>
 
-<div>
+<div style="display: inline-block;">
 
 <div style="width: 300px; margin-left: -5px; margin-right: 10px; margin-top: 5px; margin-bottom: -10px; float:left;">
     <img src="{{ site.baseurl}}/images/MillerHeadshot.jpg" width="290" />
