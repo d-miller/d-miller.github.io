@@ -76,7 +76,6 @@ img.representative_pub {
 <br>
 </div>
 
-<br>
 # Education
 
 **Ph.D., Psychology**, Northwestern University, 2018
@@ -86,7 +85,6 @@ img.representative_pub {
 * Graduated with High Distinction; Dean’s List (2006–2010); Departmental Honors Physics
 
 # More About My Current Research
-
 
 <div style="background-color: #E4E0EE;width: 270px;padding: 0px 10px 10px 15px;font-size: 17px;margin-left: 10px;margin-top: 15px;float:right;border-top: 5px solid #390145;">
 
@@ -115,66 +113,6 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 <p style="font-size: 0.5em; margin-top: -17px">
 <i>Left photo:</i> ECR Hub leaders meet with NSF leaders at the 2023 Annual Meeting of the American Educational Research Association (AERA). <i>Right photo:</i> I welcome more than 80 attendees for the <a href="https://ecrhub.org/resource/aera-2023-ecr-hub-booklet" target="_blank">ECR Hub's public launch</a> at AERA 2023, along with Dr. James Moore, the senior leader of NSF's Directorate for STEM Education (EDU). People in the left photo (from left to right): Andrea Nixon (NSF cognizant program officer for the ECR Hub), Ryan Williams (AIR), James Moore (NSF EDU Assistant Director), Roni Ellington (Morgan State University), Danielle Ferguson (AIR), Montrischa Williams (AIR), myself, Terri Pigott (Georgia State University), Joni Wackwitz (AIR), and Beth Tipton (Northwestern University).
 </p>
-
-# Employment
-
-<table id="employment_table">
-  <tr>
-    <th>When</th>
-    <th>What</th>
-    <th>Where</th>
-  </tr>
-  <tr>
-    <td>2021–Present</td>
-    <td>Senior Researcher</td>
-    <td>American Institutes for Research</td>
-  </tr>
-  <tr>
-    <td>2018–2021</td>
-    <td>Researcher</td>
-    <td>American Institutes for Research</td>
-  </tr>
-  <tr>
-    <td>2012–2018</td>
-    <td>Graduate Student Researcher</td>
-    <td>Northwestern University</td>
-  </tr>
-  <tr>
-    <td>2014 (summer)</td>
-    <td>Data Science Fellow</td>
-    <td>University of Chicago</td>
-  </tr>
-  <tr>
-    <td>2010–2012</td>
-    <td>Graduate Student Researcher</td>
-    <td>UC – Berkeley</td>
-  </tr>
-  <tr>
-    <td>2007–2010</td>
-    <td>Physics Tutor for STEM Majors</td>
-    <td>Harvey Mudd College</td>
-  </tr>
-  <tr>
-    <td>2009 (summer)</td>
-    <td>Physics Research Assistant</td>
-    <td>UC – Irvine</td>
-  </tr>
-  <tr>
-    <td>2008 (summer)</td>
-    <td>Physics Research Assistant</td>
-    <td>SUNY – Stony Brook </td>
-  </tr>
-  <tr>
-    <td>2007–2008</td>
-    <td>Physics Research Assistant</td>
-    <td>Harvey Mudd College</td>
-  </tr>
-  <tr>
-    <td>2007 (summer)</td>
-    <td>Physics Research Assistant</td>
-    <td>Lowell Observatory</td>
-  </tr>
-</table>
 
 # Academic and Research History
 
