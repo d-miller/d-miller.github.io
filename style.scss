@@ -231,15 +231,15 @@ img {
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 23px;
+  font-size: 32px;
   letter-spacing: 1px;
 }
 
 .site-description {
-  margin: -3px 0 0 0;
+  margin: -3px 0 5px 0;
   /*color: $gray;*/
   color: lightgrey;
-  font-size: 10px;
+  font-size: 15px;
 
   @include mobile {
     margin: 3px 0;
