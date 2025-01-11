@@ -61,26 +61,27 @@ img.representative_pub {
   
 </style>
 
-<div style="display: inline-block;">
+<div style="display: inline-block; margin-top: -25px;">
 
-<div style="width: 300px; margin-left: -5px; margin-right: 10px; margin-top: 5px; margin-bottom: -10px; float:left;">
+<div style="width: 300px; margin-left: -5px; margin-right: 10px; margin-top: 18px; margin-bottom: -10px; float:left;">
     <img src="{{ site.baseurl}}/images/MillerHeadshot.jpg" width="290" />
 </div>
 
-<p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in STEM fields.</p> 
+<p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in science, technology, engineering, and mathematics (STEM) fields.</p> 
 
 <p>My research builds bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
 
 <br>
 </div>
+<br> 
 
 # More About My Current Research
 
 
-<div style="background-color: #E4E0EE;width: 175px;padding: 0px 10px 10px 15px;font-size: 15px;margin-left: 10px;margin-top: 15px;float:right;border-top: 5px solid #390145;">
+<div style="background-color: #E4E0EE;width: 270px;padding: 0px 10px 10px 15px;font-size: 17px;margin-left: 10px;margin-top: 15px;float:right;border-top: 5px solid #390145;">
 
 <p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
-  <video width="150" height="52" controls="controls" preload="auto">
+  <video width="250" height="100" controls="controls" preload="auto">
     <source src="https://d-miller.github.io/assets/NPR_stereotypes.mp4" type="video/mp4">
   </video>
 </div>
