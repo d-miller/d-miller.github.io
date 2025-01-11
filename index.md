@@ -73,7 +73,6 @@ img.representative_pub {
 
 <br>
 </div>
-<br> 
 
 # Education
 
