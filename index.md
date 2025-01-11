@@ -73,7 +73,6 @@ img.representative_pub {
 
 <p>My prior training in physics, data science, and quantitative methods enables me to advance methodological innovation, while investigating content-focused research questions.</p>
 
-<br>
 </div>
 
 # Education
