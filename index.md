@@ -28,7 +28,7 @@ img.representative_pub {
   border-color: #510062;
 }
 
-#grants, #methods, #pubs {
+#grants, #methods, #pubs, #history {
   scroll-margin-top: 100px;
 }
 
@@ -69,9 +69,9 @@ img.representative_pub {
 
 <p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in science, technology, engineering, and mathematics (STEM) fields.</p> 
 
-<p>My research <a href="{{ site.baseurl }}/#pubs"><strong>builds bridges</strong></a> across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
+<p>My research <a href="{{ site.baseurl }}/#history"><strong>builds bridges</strong></a> across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
 
-<p>While investigating content-focused research questions, I also <a href="{{ site.baseurl }}/#grants"><strong>advance methodological innovation</strong></a> by drawing upon my prior training in physics, data science, and quantitative methods.</p>
+<p>While investigating content-focused research questions, I also <a href="{{ site.baseurl }}/#methods"><strong>advance methodological innovation</strong></a> by drawing upon my prior training in physics, data science, and quantitative methods.</p>
 
 </div>
 
@@ -113,7 +113,7 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 <i>Left photo:</i> ECR Hub leaders meet with NSF leaders at the 2023 Annual Meeting of the American Educational Research Association (AERA). <i>Right photo:</i> I welcome more than 80 attendees for the <a href="https://ecrhub.org/resource/aera-2023-ecr-hub-booklet" target="_blank">ECR Hub's public launch</a> at AERA 2023, along with Dr. James Moore, the senior leader of NSF's Directorate for STEM Education (EDU). People in the left photo (from left to right): Andrea Nixon (NSF cognizant program officer for the ECR Hub), Ryan Williams (AIR), James Moore (NSF EDU Assistant Director), Roni Ellington (Morgan State University), Danielle Ferguson (AIR), Montrischa Williams (AIR), myself, Terri Pigott (Georgia State University), Joni Wackwitz (AIR), and Beth Tipton (Northwestern University).
 </p>
 
-# Academic and Research History
+<h1 id="history">Academic and Research History</h1>
 
 My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my thesis project on using spatial training to improve [long-term outcomes]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) for STEM undergraduates. In my current work, I continue to use the robust mathematical and computer programming background that I first developed as an undergraduate. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for more.)
 
@@ -157,10 +157,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 I specialize in research synthesis, quantitative methods, and causal inference. I’m a co‑founder of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. I'm an avid R programmer ([see here for recent code examples](https://osf.io/29egh/)) with more than 15 years of experience designing computer code for custom data analysis purposes, along with past experience in C, C++, HTML/CSS, JavaScript, Python, SPSS, and Stata. 
 
-I love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/) too, like this one (click the image 👇):
-<a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
-  <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
-</a>
+Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incubating-use-artificial-intelligence-conducting-high-quality-research-syntheses) to transform the practice of research synthesis using artificial intelligence such as large language models (PI: [Josh Polanin](https://www.air.org/experts/person/joshua-r-polanin)). To do so, we first aim to build new interdisciplinary partnerships (e.g., with leaders of two NSF-funded $20M AI Institutes). I am also the project director for [an IES-funded methods project](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730) on the consequences of selective reporting bias in education research, including developing new methods to account for dependent effects (PI: [Martyna Citkowicz](https://www.air.org/experts/person/martyna-citkowicz)).
 
 My quantitative training started as an undergraduate physics major, taking classes in linear algebra, multivariable calculus, and computer programming, which I applied during three full-time summer internships (in astrophysics, high-energy particle physics, and condensed matter physics). During graduate school, I learned data science approaches such as random forests and neural networks as a 2014 fellow for University of Chicago’s [Data Science for Social Good Summer Fellowship](https://www.datascienceforsocialgood.org/). I later applied these machine learning methods to a [meta-analytic project]({{ site.baseurl }}/assets/Williams2022.pdf) on K-12 mathematics intervention effects.
 
@@ -170,7 +167,10 @@ My quantitative training started as an undergraduate physics major, taking class
 
 At AIR, I have worked for more than five years on large federal contracts for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. I have directly contributed to methodological innovations in the WWC's procedures and standards. For instance, I was the lead author of Version 5.0 changes to the WWC's statistical formulas for effect sizes and standard errors ([Appendix E in the 5.0 Handbook](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=169)), while closely collaborating with methodologists [Larry Hedges](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/hedges.html) and [Ryan Williams](https://www.air.org/experts/person/ryan-williams). I am also a trained study reviewer, with professional certifications in WWC Group Design Standards, Versions 4.1 and 5.0.
 
-Presently, I am co-PI on [a NSF-funded project](https://www.air.org/project/incubating-use-artificial-intelligence-conducting-high-quality-research-syntheses) to transform the practice of research synthesis using artificial intelligence such as large language models (PI: [Josh Polanin](https://www.air.org/experts/person/joshua-r-polanin)). To do so, we first aim to build new interdisciplinary partnerships (e.g., with leaders of two NSF-funded $20M AI Institutes). I am also the project director for [an IES-funded methods project](https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730) on the consequences of selective reporting bias in education research, including developing new methods to account for dependent effects (PI: [Martyna Citkowicz](https://www.air.org/experts/person/martyna-citkowicz)).
+I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_stereotypes/), like this one (click the image 👇):
+<a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
+  <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
+</a>
 
 <h1 id="grants">Research and Training Grants (Total: $10,422,702)</h1>
 
