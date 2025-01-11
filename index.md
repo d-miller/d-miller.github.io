@@ -88,7 +88,7 @@ img.representative_pub {
 
 <div style="background-color: #E4E0EE;padding: 0px 0px 5px 15px;font-size: 17px;margin-left: 0px;margin-top: 5px;border-top: 5px solid #390145;">
 
-<p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
+<p style="margin-bottom: 5px;">Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
   <video width="250" height="100" controls="controls" preload="auto">
     <source src="https://d-miller.github.io/assets/NPR_stereotypes.mp4" type="video/mp4">
   </video>
