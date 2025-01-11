@@ -28,7 +28,7 @@ img.representative_pub {
   border-color: #510062;
 }
 
-#grants {
+#grants, #methods, #pubs {
   scroll-margin-top: 100px;
 }
 
@@ -69,9 +69,9 @@ img.representative_pub {
 
 <p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in science, technology, engineering, and mathematics (STEM) fields.</p> 
 
-<p>My research <strong>builds bridges</strong> across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
+<p>My research <a href="{{ site.baseurl }}/#pubs"><strong>builds bridges</strong></a> across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
 
-<p>While investigating content-focused research questions, I also <strong>advance methodological innovation</strong> by drawing upon my prior training in physics, data science, and quantitative methods.</p>
+<p>While investigating content-focused research questions, I also <a href="{{ site.baseurl }}/#grants"><strong>advance methodological innovation</strong></a> by drawing upon my prior training in physics, data science, and quantitative methods.</p>
 
 </div>
 
@@ -127,7 +127,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/VNry-LP79-Y?si=FTdf9oN1mHmjNs6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h1 style="margin-top: 20px; margin-bottom: 15px;">Representative Publications (click the images)</h1> 
+<h1 id="pubs" style="margin-top: 20px; margin-bottom: 15px;">Representative Publications (click the images)</h1> 
 
 <h4>1. Example of understanding variation in STEM gender stereotypes and biases using large-scale data (<a href="{{ site.baseurl}}/pubs/#line1" target="_blank">see more examples here</a>)</h4>
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
@@ -153,7 +153,7 @@ Watch this Q&A about my prior Draw-A-Scientist meta-analysis in <a href='https:/
 <li>As the lead analyst and R coder, I applied my statistics and machine learning training to use random forests, meta-regression models, and multiple imputation to explore heterogeneity in math intervention effects.</li>
 </ul>
 
-# Methodological Training and Contributions
+<h1 id="methods">Methodological Training and Contributions</h1>
 
 I specialize in research synthesis, quantitative methods, and causal inference. I’m a co‑founder of [AIR's Methods of Synthesis and Integration Center (MOSAIC)](https://mosaic.air.org/), which supports methods innovation across evidence synthesis projects at AIR. I'm an avid R programmer ([see here for recent code examples](https://osf.io/29egh/)) with more than 15 years of experience designing computer code for custom data analysis purposes, along with past experience in C, C++, HTML/CSS, JavaScript, Python, SPSS, and Stata. 
 
