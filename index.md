@@ -74,6 +74,7 @@ img.representative_pub {
 <br>
 </div>
 
+<br>
 # Education
 
 **Ph.D., Psychology**, Northwestern University, 2018
