@@ -86,7 +86,7 @@ img.representative_pub {
 
 # More About My Current Research
 
-<div style="background-color: #E4E0EE;width: 270px;padding: 0px 10px 10px 15px;font-size: 17px;margin-left: 10px;margin-top: 15px;float:right;border-top: 5px solid #390145;">
+<div style="background-color: #E4E0EE;padding: 0px 0px 5px 15px;font-size: 17px;margin-left: 0px;margin-top: 5px;border-top: 5px solid #390145;">
 
 <p>Listen to this 1-minute NPR spot on my new meta-analysis in <a href='https://psycnet.apa.org/fulltext/2025-50489-001.pdf' target='_blank'> <i>Psychological Bulletin</i></a>:</p>
   <video width="250" height="100" controls="controls" preload="auto">
