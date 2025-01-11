@@ -64,7 +64,7 @@ img.representative_pub {
 <div>
 
 <div style="width: 250px; margin-left: -5px; margin-right: 10px; margin-top: 15px; margin-bottom: -10px; float:left;">
-    <img src="{{ site.baseurl}}/images/MillerHeadshot.png" width="250" />
+    <img src="{{ site.baseurl}}/images/MillerHeadshot.jpg" width="250" />
 </div>
 
 I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying gender diversity and broadening participation in STEM fields. I build bridges across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.
