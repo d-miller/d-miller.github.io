@@ -75,6 +75,14 @@ img.representative_pub {
 </div>
 <br> 
 
+# Education
+
+**Ph.D., Psychology**, Northwestern University, 2018
+* Dissertation committee: David Uttal, Alice Eagly, Larry Hedges
+
+**B.S., Physics**, Harvey Mudd College, 2010
+* Graduated with High Distinction; Dean’s List (2006–2010); Departmental Honors Physics
+
 # More About My Current Research
 
 
@@ -105,14 +113,6 @@ I also closely collaborate with NSF program officers as the lead PI for the [ECR
 <p style="font-size: 0.5em; margin-top: -17px">
 <i>Left photo:</i> ECR Hub leaders meet with NSF leaders at the 2023 Annual Meeting of the American Educational Research Association (AERA). <i>Right photo:</i> I welcome more than 80 attendees for the <a href="https://ecrhub.org/resource/aera-2023-ecr-hub-booklet" target="_blank">ECR Hub's public launch</a> at AERA 2023, along with Dr. James Moore, the senior leader of NSF's Directorate for STEM Education (EDU). People in the left photo (from left to right): Andrea Nixon (NSF cognizant program officer for the ECR Hub), Ryan Williams (AIR), James Moore (NSF EDU Assistant Director), Roni Ellington (Morgan State University), Danielle Ferguson (AIR), Montrischa Williams (AIR), myself, Terri Pigott (Georgia State University), Joni Wackwitz (AIR), and Beth Tipton (Northwestern University).
 </p>
-
-# Education
-
-**Ph.D., Psychology**, Northwestern University, 2018
-* Dissertation committee: David Uttal, Alice Eagly, Larry Hedges
-
-**B.S., Physics**, Harvey Mudd College, 2010
-* Graduated with High Distinction; Dean’s List (2006–2010); Departmental Honors Physics
 
 # Employment
 
