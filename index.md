@@ -97,22 +97,6 @@ I lead a programmatic line of meta-analytic research funded by the U.S. National
 
 My focus on research synthesis drives me to think about the big picture needs of STEM education, ranging from early childhood to higher education and workforce development. These syntheses aim to <a href="https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/" target="_blank">inspire new lines</a> of primary data collection, while also informing long-standing debates and advancing innovation in research synthesis methodology.
 
-# Partnership with the National Science Foundation
-
-<div style="width: 385px; margin-left: -5px; margin-right: 0px; margin-top: 15px; margin-bottom: -10px; float:right;">
-  <a href="https://ecrhub.org" target="_blank">
-    <img src="{{ site.baseurl}}/images/ECR_hub.png" width="360" />
-  </a>
-</div>
-
-I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/what-ecr-funds). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's ECR:Core or ECR:BCSER programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening that aimed to foster new relationships across disciplinary silos, with 400 attendees who represented more than $200M in ECR-funded projects. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
-
-<img src="{{ site.baseurl}}/images/AERA2023_small.jpg" />
-
-<p style="font-size: 0.5em; margin-top: -17px">
-<i>Left photo:</i> ECR Hub leaders meet with NSF leaders at the 2023 Annual Meeting of the American Educational Research Association (AERA). <i>Right photo:</i> I welcome more than 80 attendees for the <a href="https://ecrhub.org/resource/aera-2023-ecr-hub-booklet" target="_blank">ECR Hub's public launch</a> at AERA 2023, along with Dr. James Moore, the senior leader of NSF's Directorate for STEM Education (EDU). People in the left photo (from left to right): Andrea Nixon (NSF cognizant program officer for the ECR Hub), Ryan Williams (AIR), James Moore (NSF EDU Assistant Director), Roni Ellington (Morgan State University), Danielle Ferguson (AIR), Montrischa Williams (AIR), myself, Terri Pigott (Georgia State University), Joni Wackwitz (AIR), and Beth Tipton (Northwestern University).
-</p>
-
 <h1 id="history">Academic and Research History</h1>
 
 My passion for STEM education research started as a physics major at Harvey Mudd College, wanting to better understand how students learn scientific concepts and come to identify as scientists. I worked with cognitive psychologist [Diane Halpern](https://dianehalpern.com/) for my thesis project on using spatial training to improve [long-term outcomes]({{ site.baseurl }}/assets/MillerHalpern2013.pdf) for STEM undergraduates. In my current work, I continue to use the robust mathematical and computer programming background that I first developed as an undergraduate. (See [this essay](https://www.insidehighered.com/views/2015/03/03/essay-calls-ending-leaky-pipeline-metaphor-when-discussing-women-science) for more.)
@@ -171,6 +155,22 @@ I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_ste
 <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
   <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
 </a>
+
+# Partnership with the National Science Foundation
+
+<div style="width: 385px; margin-left: -5px; margin-right: 0px; margin-top: 15px; margin-bottom: -10px; float:right;">
+  <a href="https://ecrhub.org" target="_blank">
+    <img src="{{ site.baseurl}}/images/ECR_hub.png" width="360" />
+  </a>
+</div>
+
+I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/what-ecr-funds). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's ECR:Core or ECR:BCSER programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening that aimed to foster new relationships across disciplinary silos, with 400 attendees who represented more than $200M in ECR-funded projects. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
+
+<img src="{{ site.baseurl}}/images/AERA2023_small.jpg" />
+
+<p style="font-size: 0.5em; margin-top: -17px">
+<i>Left photo:</i> ECR Hub leaders meet with NSF leaders at the 2023 Annual Meeting of the American Educational Research Association (AERA). <i>Right photo:</i> I welcome more than 80 attendees for the <a href="https://ecrhub.org/resource/aera-2023-ecr-hub-booklet" target="_blank">ECR Hub's public launch</a> at AERA 2023, along with Dr. James Moore, the senior leader of NSF's Directorate for STEM Education (EDU). People in the left photo (from left to right): Andrea Nixon (NSF cognizant program officer for the ECR Hub), Ryan Williams (AIR), James Moore (NSF EDU Assistant Director), Roni Ellington (Morgan State University), Danielle Ferguson (AIR), Montrischa Williams (AIR), myself, Terri Pigott (Georgia State University), Joni Wackwitz (AIR), and Beth Tipton (Northwestern University).
+</p>
 
 <h1 id="grants">Research and Training Grants (Total: $10,422,702)</h1>
 
