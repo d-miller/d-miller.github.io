@@ -156,7 +156,7 @@ I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_ste
   <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
 </a>
 
-<h1 id="nsf_partnership">Methodological Training and Contributions</h1>
+<h1 id="nsf_partnership">Partnership with the National Science Foundation/h1>
 
 <div style="width: 385px; margin-left: -5px; margin-right: 0px; margin-top: 15px; margin-bottom: -10px; float:right;">
   <a href="https://ecrhub.org" target="_blank">
