@@ -93,7 +93,7 @@ img.representative_pub {
   </video>
 </div>
 
-I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including synthesis projects on <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">children's</a> gender stereotypes about academic abilities, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368" target="_blank">undergraduates'</a> motivation and retention in STEM, gender biases in <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422" target="_blank">higher education and workforce</a> contexts, and using <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651" target="_blank">artificial intelligence</a> to accelerate research synthesis. I am or have been senior personnel on nine large-scale grants totaling over $10M, including as lead PI on five NSF grants (<a href="{{ site.baseurl }}/#grants">see here</a>).
+I lead a programmatic line of meta-analytic research funded by the U.S. National Science Foundation (NSF), including synthesis projects on <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1920401" target="_blank">children's</a> gender stereotypes about academic abilities, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368" target="_blank">undergraduates'</a> motivation and retention in STEM, gender biases in <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422" target="_blank">higher education and workforce</a> contexts, and using <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651" target="_blank">artificial intelligence</a> to accelerate research synthesis.
 
 My focus on research synthesis drives me to think about the big picture needs of STEM education, ranging from early childhood to higher education and workforce development. These syntheses aim to <a href="https://www.scientificamerican.com/article/tech-stereotypes-discourage-girls-from-computing-and-engineering-as-early-as/" target="_blank">inspire new lines</a> of primary data collection, while also informing long-standing debates and advancing innovation in research synthesis methodology.
 
@@ -155,73 +155,6 @@ I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_ste
 <a href="https://d-miller.shinyapps.io/STEM_verbal_stereotypes/" target="_blank">
   <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
 </a>
-
-<h1 id="grants">Research and Training Grants (Total: $10,422,702)</h1>
-
-<img src="{{ site.baseurl}}/images/funding_sources.png" />
-
-<table id="grants_table">
-  <tr>
-    <th style="width: 20%;">When</th>
-    <th>Role</th>
-    <th>Amount</th>
-    <th>Funding source and title</th>
-  </tr>
-  <tr>
-    <td>2024–2027</td>
-    <td>Co-PI</td>
-    <td>$999,499</td>
-    <td>AIR Opportunity Fund, <a href="https://www.air.org/project/quantitative-evidence-synthesis-training-quest-air-pipeline-partnership-program-p3" target = "_blank">Quantitative Evidence Synthesis Training (QuEST)</a></td>
-  </tr>
-  <tr>
-    <td>2024–2026</td>
-    <td>Co-PI</td>
-    <td>$499,928</td>
-    <td>NSF MSRI Incubator, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425651" target = "_blank">Incubating the Use of Artificial Intelligence for Conducting High-Quality Research Syntheses</a></td>
-  </tr>
-  <tr>
-    <td>2022–2027</td>
-    <td>PI</td>
-    <td>$4,999,995</td>
-    <td>NSF ECR:Core and ECR:BCSER, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208422" target = "_blank">ECR Hub: Advancing the Long-Term Potential of Fundamental Research</a></td>
-  </tr>
-  <tr>
-    <td>2022–2025</td>
-    <td>Project Director</td>
-    <td>$896,931</td>
-    <td>Institute of Education Sciences (IES), <a href="https://ies.ed.gov/funding/grantsearch/details.asp?ID=5730" target = "_blank">Consequences of Selective Reporting Bias in Education Research</a></td>
-  </tr>
-  <tr>
-    <td>2021–2025</td>
-    <td>PI</td>
-    <td>$1,167,066</td>
-    <td>NSF ECR:Core, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2055422" target = "_blank">Identifying and Reducing Gender Bias in STEM: Systematically Synthesizing the Experimental Evidence</a></td>
-  </tr>
-  <tr>
-    <td>2021–2025</td>
-    <td>PI</td>
-    <td>$500,000</td>
-    <td>NSF IUSE, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2110368" target = "_blank">Improving Undergraduates’ Motivation and Retention in STEM Through Classroom Interventions: A Meta-Analysis</a></td>
-  </tr>
-  <tr>
-    <td>2019–2024</td>
-    <td>PI</td>
-    <td>$499,831</td>
-    <td>NSF ECR:Core, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1920401" target = "_blank">The Development of Gender Stereotypes About STEM Abilities: A Meta-Analysis</a></td>
-  </tr>
-  <tr>
-    <td>2018–2022</td>
-    <td>Co-PI</td>
-    <td>$739,452</td>
-    <td>NSF DRK-12, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1813777" target = "_blank">Advancing Methods and Synthesizing Research in STEM Education</a></td>
-  </tr>
-  <tr>
-    <td>2011–2016</td>
-    <td>PI/Fellow</td>
-    <td>$120,000</td>
-    <td>NSF GRFP, <a href="https://www.research.gov/grfp/AwardeeList.do?method=loadAwardeeList" target = "_blank">NSF Graduate Research Fellowship</a></td>
-  </tr>
-</table>
 
 # Disclaimer
 
