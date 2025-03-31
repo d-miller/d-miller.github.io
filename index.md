@@ -156,22 +156,6 @@ I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_ste
   <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
 </a>
 
-<h1 id="nsf_partnership">Partnership with the National Science Foundation</h1>
-
-<div style="width: 385px; margin-left: -5px; margin-right: 0px; margin-top: 15px; margin-bottom: -10px; float:right;">
-  <a href="https://ecrhub.org" target="_blank">
-    <img src="{{ site.baseurl}}/images/ECR_hub.png" width="360" />
-  </a>
-</div>
-
-I also closely collaborate with NSF program officers as the lead PI for the [ECR Hub](https://ecrhub.org/what-ecr-funds). This five-year resource center partners with NSF to support and grow communities of fundamental STEM education researchers across the nation who are funded or seek to be funded by NSF's ECR:Core or ECR:BCSER programs. One recent example includes organizing the [2024 ECR PI Meeting](https://ecrhub.org/ecrpi24), a two-day convening that aimed to foster new relationships across disciplinary silos, with 400 attendees who represented more than $200M in ECR-funded projects. AIR leads this center in [close collaboration](https://ecrhub.org/about-ecr-hub) with Georgia State University, Morgan State University, and Northwestern University.
-
-<img src="{{ site.baseurl}}/images/AERA2023_small.jpg" />
-
-<p style="font-size: 0.5em; margin-top: -17px">
-<i>Left photo:</i> ECR Hub leaders meet with NSF leaders at the 2023 Annual Meeting of the American Educational Research Association (AERA). <i>Right photo:</i> I welcome more than 80 attendees for the <a href="https://ecrhub.org/resource/aera-2023-ecr-hub-booklet" target="_blank">ECR Hub's public launch</a> at AERA 2023, along with Dr. James Moore, the senior leader of NSF's Directorate for STEM Education (EDU). People in the left photo (from left to right): Andrea Nixon (NSF cognizant program officer for the ECR Hub), Ryan Williams (AIR), James Moore (NSF EDU Assistant Director), Roni Ellington (Morgan State University), Danielle Ferguson (AIR), Montrischa Williams (AIR), myself, Terri Pigott (Georgia State University), Joni Wackwitz (AIR), and Beth Tipton (Northwestern University).
-</p>
-
 <h1 id="grants">Research and Training Grants (Total: $10,422,702)</h1>
 
 <img src="{{ site.baseurl}}/images/funding_sources.png" />
