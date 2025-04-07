@@ -162,6 +162,6 @@ This website and my social media posts solely represent my personal views, not t
 
 # Contact me
 
-Email: [dimiller@air.org](mailto:dimiller@air.org)
+Email: [david.isaac.miller@gmail.com](mailto:david.isaac.miller@gmail.com)
 
 Bluesky: [davidimiller.bsky.social](https://davidimiller.bsky.social/)
