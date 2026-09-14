@@ -163,10 +163,14 @@ At AIR, I have worked for more than five years on large federal contracts for th
 
 I have directly contributed to methodological innovations in the WWC's procedures and standards including:
 
+<div class="reg_bullets>
+
 * Led Version 5.0 changes to the WWC's statistical formulas for effect sizes and standard errors ([Appendix E in the 5.0 Handbook](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=169)), while closely collaborating with methodologists [Larry Hedges](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/hedges.html) and [Ryan Williams](https://www.air.org/experts/person/ryan-williams).
 * Co-led and was the lead author for revisions to the WWC's Version 5.0 standards for cluster-level assignment studies.
 * Created the review protocol for WWC practice guides on mathematics and science education in grades K-8.
 * Received professional certifications in WWC Group Design Standards, Versions 4.1 and 5.0.
+
+</div>
 
 # Disclaimer
 
