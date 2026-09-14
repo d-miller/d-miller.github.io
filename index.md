@@ -71,7 +71,7 @@ img.representative_pub {
 
 <p>My research <a href="{{ site.baseurl }}/#history">builds bridges</a> across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
 
-<p>I also draw upon my prior training in physics, data science, and quantitative methods to <a href="{{ site.baseurl }}/#methods">advance methodological innovation</a> and <a href="{{ site.baseurl }}/#clearinghouses">contribute to evidence clearinghouses</a>.</p>
+<p>I also draw upon my prior training in physics, data science, and quantitative methods to advance <a href="{{ site.baseurl }}/#methods">methodological innovation</a> and contribute to <a href="{{ site.baseurl }}/#clearinghouses">evidence clearinghouses</a>.</p>
 
 </div>
 
@@ -151,11 +151,13 @@ I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_ste
   <img src="{{ site.baseurl}}/images/Shiny_app.png" class="representative_pub" style="margin-top: 15px;" />
 </a>
 
+
+
+<h1 id="clearinghouses">Contributions to Evidence Clearinghouses</h1>
+
 <div style="width: 400px; margin-left: 10px; margin-right: 15px; margin-top: 5px; float:right;">
   <img src="{{ site.baseurl }}/images/WWC_logo.png" />
 </div>
-
-<h1 id="methods">Evidence Clearinghouse Experience</h1>
 
 At AIR, I have worked for more than five years on large federal contracts for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. I have directly contributed to methodological innovations in the WWC's procedures and standards. For instance, I was the lead author of Version 5.0 changes to the WWC's statistical formulas for effect sizes and standard errors ([Appendix E in the 5.0 Handbook](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=169)), while closely collaborating with methodologists [Larry Hedges](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/hedges.html) and [Ryan Williams](https://www.air.org/experts/person/ryan-williams). I co-led and was the lead author for revisions to the WWC's Version 5.0 standards for cluster-level assignment studies, in addition to creating the review protocol for a WWC practice guide on mathematics and science education in grades K-8. I am also a trained study reviewer, with professional certifications in WWC Group Design Standards, Versions 4.1 and 5.0.
 
