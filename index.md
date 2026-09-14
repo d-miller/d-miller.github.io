@@ -152,13 +152,13 @@ I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_ste
 
 <h1 id="clearinghouses">Contributions to Evidence Clearinghouses</h1>
 
+At AIR, I have worked for more than five years on large federal contracts for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. I have directly contributed to methodological innovations in the WWC’s procedures and standards across these years of experience.
+
 <div style="width: 400px; margin-top: 15px; ">
   <img src="{{ site.baseurl }}/images/WWC_logo.png" />
 </div>
 
-At AIR, I have worked for more than five years on large federal contracts for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. 
-
-I have directly contributed to methodological innovations in the WWC's procedures and standards. For instance, I led Version 5.0 changes to the WWC's statistical formulas for effect sizes and standard errors ([Appendix E in the 5.0 Handbook](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=169)), while closely collaborating with methodologists [Larry Hedges](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/hedges.html) and [Ryan Williams](https://www.air.org/experts/person/ryan-williams). I co-led and was the lead author for revisions to the WWC's Version 5.0 standards for cluster-level assignment studies, in addition to creating the review protocol for WWC practice guides on mathematics and science education in grades K-8. I also have professional certifications in WWC Group Design Standards, Versions 4.1 and 5.0.
+I led Version 5.0 changes to the WWC's statistical formulas for effect sizes and standard errors ([Appendix E in the 5.0 Handbook](https://ies.ed.gov/ncee/wwc/Docs/referenceresources/Final_WWC-HandbookVer5.0-0-508.pdf#page=169)), while closely collaborating with methodologists [Larry Hedges](https://www.ipr.northwestern.edu/who-we-are/faculty-experts/hedges.html) and [Ryan Williams](https://www.air.org/experts/person/ryan-williams). I co-led and was the lead author for revisions to the WWC's Version 5.0 standards for cluster-level assignment studies, in addition to creating the review protocol for WWC practice guides on mathematics and science education in grades K-8. I also have professional certifications in WWC Group Design Standards, Versions 4.1 and 5.0.
 
 </div>
 
