@@ -152,7 +152,7 @@ I also love to make [R Shiny apps](https://d-miller.shinyapps.io/STEM_verbal_ste
 
 <h1 id="clearinghouses">Contributions to Evidence Clearinghouses</h1>
 
-At AIR, I have worked for more than five years on large federal contracts for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions. I have directly contributed to methodological innovations in the WWC’s procedures and standards across these years of experience.
+At AIR, I have worked for more than five years on large federal contracts for the U.S. Department of Education's [What Work Clearinghouse (WWC)](https://ies.ed.gov/ncee/wwc/WhatWeDo), which synthesizes high-quality causal evidence of educational interventions, by directly contributing to methodological innovations in its procedures and standards.
 
 <div style="width: 400px; margin-top: 15px; ">
   <img src="{{ site.baseurl }}/images/WWC_logo.png" />
