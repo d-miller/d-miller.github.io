@@ -28,7 +28,7 @@ img.representative_pub {
   border-color: #510062;
 }
 
-#grants, #methods, #pubs, #history, #nsf_partnership {
+#grants, #methods, #pubs, #history, #nsf_partnership, #clearinghouses {
   scroll-margin-top: 100px;
 }
 
