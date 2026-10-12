@@ -1,0 +1,285 @@
+<HTML>
+<head>
+  <script src='lib/mapbox.js'></script>
+  <!--<script src="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.js"></script>-->
+
+
+  <script src="lib/d3.v3.min.js"></script>
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src='js/nav.js'></script>
+
+  <link href="lib/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+  <link href='styles/leafletCustom.css' rel='stylesheet' />
+</head>
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">NC Community Colleges</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li id="link1" num="1" class="active"><a href="#mapCS">Map</a></li>
+          <li id="link2" num="2"><a href="#action">Local Action</a></li>
+          <li id="link3" num="3"><a href="#expand">Other Indicators</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://d-miller.github.io/about" target="blank_">By David Miller (AIR)</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="content"> 
+
+    <!-- Interactive map -->
+    <div id="mapCS" style="padding-top: 70px; margin-top: -28px;">
+    	<div id="titleCustom">
+    	  <h1><strong>NC Communities Colleges as Drivers of STEM Workforce Development</strong></h1>
+    	  <h2 style="margin-top: 0px;">Federal Investments via NSF's Advanced Technologicals Education (ATE) Program Over the Past 5 Years</h2>
+        <h3 style="margin-top: 10px;">[DISCLAIMER: Intended only as an <i>example indicator</i> to spark ideas and discussion about dashboard development.]</h3>
+
+    	</div>
+
+      <div id="map">
+        <div id="map-ui">
+            <form class="toggle-year" action="">
+                <div>
+                    <input type="radio" class="radio"/>
+                    <label for="all" class="active" id="allButton">All</label>
+                </div>
+                <div>
+                    <input type="radio" class="radio" checked/>
+                    <label for="top25" id="top25Button">ATE</label>
+                </div>
+            </form>
+        </div>
+      </div>
+
+      <!--Map legend for circles-->
+      <div id='legend' style='display:none;'>
+        <div class="info legend leaflet-control"> 
+          <div class="title" style="margin-top: -5px">College Enrollment</div>
+           <div class="size">
+            <div style="width: 8px;    height: 8px; margin-left: 6.6px; margin-top: 7px"></div><br>
+            <div style="width: 13.8px; height: 13.8px; margin-left: 3.7px;"></div><br>
+            <div style="width: 17.8px; height: 17.8px;  margin-left: 1.7px;"></div><br>
+            <div style="width: 21.2px; height: 21.2px;"></div><br>
+          </div>
+          <div class="labelLegend">
+            <div style="top: 33px;"><1K</div>
+            <div style="top: 51px;">1-5K</div>
+            <div style="top: 73px;">5-10K</div>
+            <div style="top: 98px;">10K+</div>
+          </div>
+          <div class="title">$ ATE Awards</div>
+          <div class="circles">
+            <i style="background: rgb(255,255,255);"></i> $0<br>
+            <i style="background: rgb(255,209,213)"></i> $1-100K<br>
+            <i style="background: rgb(255,155,164);"></i> $100-500K<br>
+            <i style="background: rgb(244,99,111);"></i> $500K-1M<br>
+            <i style="background: rgb(211,51,69);"></i> $1M-5M<br>
+            <i style="background: rgb(178,24,43);"></i> $5M+<br>
+          </div>
+        </div>
+      </div>
+      
+      <!--Stepper for key geographic regions-->
+      <div class="g-view">
+    	<div class="g-stepper">
+    	  <button class="g-prev g-disabled">Prev</button>
+    	  <button class="g-next">Next</button>
+    	    <div class="g-steps">
+    	      <a class="g-step g-selected" data-num="0" data-title="Overall" data-text="NSF Advanced Technological Education (ATE) investments are concentrated in the Research Triangle, Piedmont Triad, and Charlotte metropolitan regions, with comparatively limited funding in rural western and southeastern NC. Community colleges also play key workforce training roles in three <a href='https://www.nsf.gov/funding/initiatives/regional-innovation-engines' target='_blank'>NSF-funded Regional Innovation Engines</a> in NC, an investment of up to $480M over 10 years.">Overall</a>
+
+    	      <a class="g-step" data-num="1" data-title="Research Triangle" data-text='In the Research Triangle region, more than $17M in NSF ATE federal investments at four community colleges over the past 5 years have spurred workforce development and regional economic growth in advanced manufacturing, biotechnology, cybersecurity, and electric vechiles, including a $10M+ center at Central Carolina Community College on environmental technologies.
+
+            <br><br><strong>Reach out to explore a partnership:</strong>
+
+            <ul style="font-size: 0.8em;">
+
+              <li><strong>Central Carolina:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2600081" target="_blank">Environmental and Natural Resource Technology (EARTh) Center</a> (contact: Andrew McMahan, amcmahan@cccc.edu)</li>
+
+              <li><strong>Central Carolina:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2410621" target="_blank">Establishing an Environmental and Natural Resources Technology Center</a> (contact: Andrew McMahan, amcmahan@cccc.edu)</li>
+
+              <li><strong>Johnston:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2201663" target="_blank">Expanding a Multi-skilled STEM Technician Pipeline to Meet Industry Needs</a> (contact: Melissa Robbins, mrobbins1@waketech.edu)</li> 
+
+              <li><strong>Johnston:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2348707" target="_blank">Implementing a Simulated Cyber Range Training Environment to Prepare Cyber Technicians</a> (contact: Kristopher Bradshaw, krbradshaw@johnstoncc.edu)</li> 
+
+              <li><strong>Johnston:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2452299" target="_blank">Integrating Soft Skills with Technical Skills to Produce Next-Generation Cybersecurity Technicians</a> (contact: Alan Gruver, aagruver@johnstoncc.edu)</li>
+
+              <li><strong>Nash:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2400694" target="_blank">Cultivating Cyber Safety Across Disciplines</a> (contact: Nakisha Floyd, nwfloyd583@nashcc.edu)</li>
+
+              <li><strong>Wake Tech:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2500068" target="_blank">Advancing Automation Curricula to Graduate Technicians to Meet Future Industry Needs</a> (contact: Lora Eddington, lmeddington@waketech.edu)</li> 
+
+              <li><strong>Wake Tech:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2329904" target="_blank">Broadening Participation in Plant/Agricultural Biotechnology through Stackable Credentials Leading to an Associate in Science Degree</a> (contact: Jill Mikulecky, jcmikulecky@waketech.edu)</li> 
+
+              <li><strong>Wake Tech:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2400407" target="_blank">Curriculum Integration in Training EVs (CITE)</a> (contact: Carl Stutz, cjstutz@waketech.edu)</li> 
+
+              <li><strong>Wake Tech:</strong> <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2202007" target="_blank">Preparing Students for the Industry 4.0 Technician Workforce</a> (contact: Edward Garner, epgarner@waketech.edu)</li></ul>'>Research Triangle</a>
+
+            <a class="g-step" data-num="2" data-title="Southeastern" data-text="Unlike those near the Research Triangle, community colleges in southeastern NC have received little NSF ATE funding. One notable exception is Southeastern Community College, where a $470,000 award supports training in electric vehicle technologies through curriculum development, faculty training, dual enrollment, industry partnerships, and apprenticeships.
+
+            <br><br><strong>Reach out to explore a partnership:</strong>
+
+            <ul style='font-size: 0.8em;'><li><strong>Southeastern:</strong> <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2500136' target='_blank' >Advancing Education in Electric Vehicle Technology</a> (contact: Johnny O'Connell, johnny025537@sccnc.edu)</li></ul>">Southeastern NC</a>
+
+    	      <a class="g-step" data-num="3" data-title="Eastern NC" data-text="Edgecombe Community College and Pitt Community College extend STEM technician training opportunities east of the Research Triangle through NSF ATE-funded projects on advanced manufacturing and biotechnology, emphasizing industry-aligned curricula, employer partnerships, and faculty training.
+
+            <br><br><strong>Reach out to explore a partnership:</strong>
+            <ul style='font-size: 0.8em;'>
+              <li><strong>Edgecombe:</strong> <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2300650' target='_blank'>Preparing Manufacturing Technicians for the Challenges of Industry 4.0</a> (contact: Merdikae Williams, williamsme@edgecombe.edu)</li>
+
+              <li><strong>Pitt:</strong> <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2600294' target='_blank' >Building a Quality Control Bioanalytical Lab Technician Pipeline Through Biotechnology Education and Industry Partnerships</a> (contact: Christina Weeks, cgweeks383@my.pittcc.edu)</li>
+            </ul>">Eastern NC</a>
+
+            <a class="g-step" data-num="4" data-title="Piedmont Triad" data-text="Forsyth Tech advances workforce training in the Piedmont Triad through both its NSF ATE project on AI technicians and its educational leadership role in the <a href='https://regenmedengine.com/partners/' target='_blank'>$160M NSF Regenerative Medicine Engine</a>. Alamance Community College also expands the region's biotechnology workforce through an NSF ATE-funded project to develop a new associate degree in biopharmaceutical quality.
+
+            <br><br><strong>Reach out to explore a partnership:</strong>
+            <ul style='font-size: 0.8em;'>
+              <li><strong>Forsyth Tech:</strong> <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2600140' target='_blank' >Building Employer-Driven Pathways for Artificial Intelligence Technicians</a> (contact: Melisa Bryant, jobryant@forsythtech.edu)</li>
+
+              <li><strong>Alamance:</strong> <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2553982' target='_blank' >Developing Biopharma Quality Technicians for the Biotechnology Workforce</a> (contact: Michelle Sabaoun, michelle.sabaoun@alamancecc.edu)</li>
+
+            </ul>">Piedmont Triad</a>
+
+    	      <a class="g-step" data-num="5" data-title="Charlotte Metro" data-text="In Charlotte's urban core, Central Piedmont Community College expands AI technician training through an NSF ATE project to strengthen its associate degree in AI, develop industry-aligned stackable certificates, and upskill and reskill current workers. However, NSF ATE-funded opportunities are notably limited among other community colleges in the broader Charlotte metro region.
+
+            <br><br><strong>Reach out to explore a partnership:</strong>
+            <ul style='font-size: 0.8em;'>
+              <li><strong>Central Piedmont:</strong> <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2500901' target='_blank' >Generating Artificial Intelligence Talent</a> (contact: Carl Arrington, carl.arrington@cpcc.edu)</li>
+            </ul>">Charlotte Metro</a>
+
+    	      
+
+    	      <a class="g-step" data-num="6" data-title="Western NC" data-text="Outside the Piedmont Triad and Charlotte metro regions, NSF ATE funding is scarce across rural western NC (e.g., Appalachia). However, Gaston College plays a key leadership role in workforce training for the <a href='https://regenmedengine.com/partners/' target='_blank'>$160M NSF Textile Innovation Engine</a>, which revitalizes domestic textile manufacturing through advanced materials research, AI-powered production, and textile recycling.">Western NC</a>
+    	      
+    	    </div><!--end of g-steps-->
+    	  </div><!--end of g-stepper-->
+
+    	  <span class="g-view-title"></span>
+    	  <span class="g-view-text"></span>
+    	</div><!--end of g-view-->
+
+      <!--Data sources and methodology
+      <div id="sources"><p style="margin-top: 10px;">Source: <a target="_blank" href="https://www.nsf.gov/awardsearch/simple-search/">Award Search Data</a>, U.S. National Science Foundation. -->
+
+      <script src="js/customMap.js"></script>
+    </div>
+
+
+
+    <!-- Local action story -->
+    <div id="action" style="padding-top: 30px;"></div>s
+    <div id="titleCustom">
+      <h2><strong>Mapping Existing Investments Could Spur Action Among Local STEM Companies</strong></h2>
+    </div>
+
+    <div id="actionText" style="width: 750px; margin-left: auto; margin-right: auto; margin-top: 10px">
+    
+      <p>A central question in Senator Chaudhuri's initial outreach and discussion strongly resonated with our AIR team: How can a STEM indicators dashboard <strong><i>spur action among local STEM businesses</i></strong>, rather than simply serve as a visualization exercise? That driving question led us to map federal investments in NC community colleges for the <i>example prototype</i> map above (while recognizing there obviously remains key K-12 indicators of interest too).</p>
+
+      <p><strong>Federal Investments Are a Catalyst for Local Workforce Growth</strong></p>
+
+      <p>The U.S. National Science Foundation (NSF) has been the leading federal funder for investing in STEM workforce training at community colleges via its <a href="https://www.nsf.gov/funding/opportunities/ate-advanced-technological-education" target="_blank">Advanced Technological Education (ATE) program</a>. In turn, Forsyth Tech in Winston-Salem, NC, has been a state and national leader in using NSF ATE investments to drive local economic growth and build partnerships with STEM businesses, such as through its <a href="https://www.biotechworkforce.org/" target="_blank">National Center for the Biotechnology Workforce</a>.</p>
+
+      <p>During a <a href="https://www.youtube.com/watch?v=XeTrQiQoHFA" target="_blank">Capitol Hill briefing</a> on Feb. 12, 2025, Forsyth Tech president Dr. Janet Spriggs shared how the college leveraged NSF funding to acquire and train students in using cutting-edge equipment such as "bioprinters" that can print synthetic tissues used in organ transplants. The college's overall goal is to create pathways out of poverty by preparing students for the workforce needs of current and emerging tech industries.</p>
+
+      <div style="margin-left: 40px;"><p>"Our business partners are with us at the front end of our curriculum development. Through our NSF grants, we are able to have our faculty service or earn fellowships with our business partners. And so our faculty are actually embedded in the companies working alongside the employers and learning exactly what skills we need to then come back and put into our curriculum...We're able to now support the current jobs that exist while at the same time being incredibly well prepared and already developing curriculum for the jobs that don't quite exist yet but that are right on the horizon."
+      <p style="text-align: right;">--Forsyth Tech president Dr. Janet Spriggs (<a href="https://www.youtube.com/watch?v=XeTrQiQoHFA" target="_blank">Feb. 12, 2025 Capitol Hill briefing</a>)</p></p></div>
+
+      Dr. Spriggs described a long list of partners including the workforce development boards from 16 different NC counties, businesses such as Johnson & Johnson and ProKidney, and universities such as North Carolina A&T and Wake Forest University. Most recently, Forsyth Tech is the workforce training lead for the <a href='https://regenmedengine.com/partners/' target='_blank'>NSF Regenerative Medicine Engine</a>, an investment worth up to $160M over 10 years focused on accelerating the development and commercialization of regenerative medicine technologies, including cell and tissue therapies.</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XeTrQiQoHFA?si=VrNWq_aVR8OYVY_x&amp;start=1712" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <br><br>
+
+      <p><strong>Inspiring Business Leaders to Address Opportunity Gaps</strong></p>
+
+      <p>Despite the phenomenal success of some NC community colleges, access to high-quality experiential learning opportunities is uneven across the state. For instance, NSF ATE investments are concentrated in the Research Triangle and Piedmont Triad regions, with comparatively limited funding in rural western and southeastern NC.</p>
+
+      <p>These opportuntiy gaps directly affect businesses' bottom line to attract, develop, and retain well-trained workers. Mapping areas of existing investment--and underinvestment--could inspire employers to take action. The map above includes the contact information for NSF ATE programs to spur concrete actions such as:
+        <ul>
+          <li>Recruiting from a specific community college (e.g., via a job fair)</li>
+          <li>Partnering with an existing program to provide work-based learning opportunities</li>
+          <li>Starting a new program at a local college modeled on success elsewhere in the state</li>
+        </ul>
+      </p>
+      <p>For instance, Raleigh-based employees at Infosys could help develop cybersecurity talent in nearby rural communities by partnering with Nash Community College's <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2400694' target='_blank'>cyber safety program</a> or Piedmont Community College's <a href='https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2500556' target='_blank'>AI cybersecurity workforce initiative</a>. The map above could help catalyze those connections, to the extent they do not already exist.</p>
+    </div>
+
+    <div id="expand" style="padding-top: 50px; width: 750px; margin-left: auto; margin-right: auto;">
+      <div id="titleCustom">
+        <h2><strong>Expanding the Map to Other Key STEM Indicators</strong></h2>
+        <br>
+      </div>
+
+      <p>The map above could be extended to incorporate other key STEM indicators of interest to NC business leaders, such as yearly counts of graduates from 2-year or 4-year programs in high-demand fields (e.g., biotechnology, data science), based on data from the <a href='https://nces.ed.gov/ipeds/survey-components/7' target='_blank'>Integrated Postsecondary Education Data System (IPEDS) Completions Survey</a>.</p>
+
+      <p>At the K-12 level, the <a href='https://civilrightsdata.ed.gov/data' target='_blank'>Civil Rights Data Collection (CRDC)</a> provides publicly available data on access to STEM courses:
+        <ul>
+          <li>Course offerings and enrollment in high school data science and AP computer science</li>
+          <li>Course offerings and enrollment in high school biology, chemistry, and physics</li>
+          <li>Course offerings and enrollment in grade 8 Algebra I and high school calculus</li>
+        </ul>
+      </p>
+
+      <p>We suspect that NC business leaders will find these K-12 access indicators (e.g., course offerings) more actionable than K-12 achievement indicators (e.g., test scores). For instance, despite having limited influence over how K-12 mathematics is taught, a local IT employer could directly support industry-aligned data science learning opportunities, either in high schools or through dual enrollment programs at local community colleges. The CRDC also <strong><i>reports STEM course enrollment at the individual school level, while disaggregating by student race/ethnicity, sex, English learner status, and disability</i></strong>, allowing for an in-depth study of how oppportunity gaps vary across geograhic regions.</p>
+
+      <p>Resource disparities in broadband access may also interest employers (e.g., especially IT companies), given how limited internet connectivity can pose unique challenges for STEM learning in rural regions (e.g., Appalachia). The CRDC reports school-level data for indicators such as <strong><i>fiber-optic connections, Wi-Fi access in every classroom, and school-issued devices for students to take home or use in the classroom.</i></strong></p>
+
+      <p>The August 2026 memo prepared by Education Commission of the States provides a wealth of other potential indicators and data sources to consider. In deciding what to feature, some critical questions include the following:
+        <ul>
+          <li>What is a STEM employer going to find compelling?</li>
+          <li>Would having too many indicators be overwhelming and limit the potential for taking focused action?</li>
+          <li>Is the data available with sufficient quality and granularity (e.g., state-level vs. school-level)?</li>
+        </ul>
+      </p>
+      <p>For instance, the pipeline of K-12 STEM educators is a critical issue, especially in rural areas, but the limited quality and relevance of current publicly available data may mean needing to postpone the inclusion of teacher workforce indicators. Before rushing to include current data, having conversations with business leaders might be worthwhile to first ask questions such as: "What information about local K-12 STEM teacher shortages would motivate your company to invest in a school partnership--and what kinds of support could you realistically provide?"</p>
+
+      <p><strong>Shortlist of Recommended STEM Indicators</strong></p>
+
+      <p>We recommend the following as a shortlist of priority indicators, which each have school-level, publicly available data:
+      <ul>
+        <li>Federal investments in STEM workforce development, especially for training in emerging technologies at commmunity colleges (source: <a href='https://www.nsf.gov/awardsearch/simple-search/' target='_blank'>NSF Award Search Data</a>)</li>
+        <li>Postsecondary degree attainment in high-demand STEM fields (source: <a href='https://nces.ed.gov/ipeds/survey-components/7' target='_blank'>IPEDS Completions Survey</a>)</li>
+        <li>Access to and enrollment in high school STEM courses (source: <a href='https://civilrightsdata.ed.gov/data' target='_blank'>CRDC</a>)</li>
+        <li>Resource disparities in internet connectivity (source: <a href='https://civilrightsdata.ed.gov/data' target='_blank'>CRDC</a>)</li>
+      </ul></p>
+
+      <p>Other potential indicators to consider include (e.g., perhaps for a Phase 2 expansion):
+        <ul>
+          <li>District-level STEM & CTE teacher vacancies in grades 9-12 (source: <a href='https://bi.nc.gov/t/DPI-EducatorRecruitmentandSupport/views/StateoftheTeachingProfession_17436102286420/SoTPDashboard?%3Aembed=y&%3AisGuestRedirectFromVizportal=y' target='_blank'>NCDPI State of Teaching Profession</a>)</li>
+          <li>CTE concentrations in STEM fields (see ECS memo)</li>
+          <li>STEM earnings and employment (see ECS memo)</li>
+          <li>Dual enrollment in STEM subjects (see ECS memo)</li>
+          <li>Restricted-use data from NC Department of Public Instruction</li>
+        </ul>
+      </p>
+
+      <p>Two indicators for earlier grade levels include (but may be of less immediate interest to STEM employers):
+        <ul>
+          <li>School-level access and enrollment in Algebra I in grade 8 (source: <a href='https://civilrightsdata.ed.gov/data' target='_blank'>CRDC</a>)</li>
+          <li>School-level math proficiency in grade 3 (source: <a href='https://www.dpi.nc.gov/districts-schools/accountability-and-testing/school-accountability-and-reporting/state-testing-results-green-book' target='_blank'>State Testing Results)</a></li>
+        </ul>
+      </p>
+
+
+
+
+      </div><!--eliteText-->
+    </div><!--elite-->
+  </div>
+</body>
+</HTML>
