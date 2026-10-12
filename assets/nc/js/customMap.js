@@ -100,7 +100,7 @@ buttonTop25.on("click", showTop25).style("cursor", "pointer");
 
 //add schools
 var colleges = {};
-d3.csv("data/nc.csv", function(csv) {
+d3.csv("data/NC.csv", function(csv) {
 	for (var i = 0; i < csv.length; i++) {
 
 		//grab data for individual school
