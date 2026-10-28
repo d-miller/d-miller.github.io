@@ -31,7 +31,7 @@ My past and current work falls along three major lines of research:
 
 A fourth category includes <a href="{{ site.baseurl}}/pubs/#line4"><b>popular press articles</b></a> for disseminating findings to the public.
 
-<h1 id="line1">Line 1: Gender Gaps in STEM</h1>
+<h1 id="line1">Line 1: Social Cognition and Learning Across Sociocultural Contexts</h1>
 
 <a href="https://psycnet.apa.org/fulltext/2025-50489-001.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine1.png" class="representative_pub" style="padding: 10px;" />
@@ -88,7 +88,7 @@ undergraduates? _Learning and Individual Differences_, _26_, 141-152.
 * 200+ citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10153432224759875272).
 * **Media coverage:** [_Association for Psychological Science Observer_](http://www.psychologicalscience.org/index.php/convention/longitudinal-impacts-of-3-d-spatial-training-among-gifted-stem-undergraduates.html), [_Psychology Today_](https://www.psychologytoday.com/blog/finding-the-next-einstein/201105/is-spatial-intelligence-essential-innovation-and-can-we)
 
-<h1 id="line2">Line 2: Improving STEM Learning</h1>
+<h1 id="line2">Line 2: Cognition and Learning in STEM Educational Contexts</h1>
 
 <a href="{{ site.baseurl }}/assets/Williams2022.pdf" target="_blank">
   <img src="{{ site.baseurl}}/images/ResearchLine3.png" class="representative_pub" style="padding: 10px;" />
