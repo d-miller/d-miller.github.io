@@ -67,7 +67,7 @@ img.representative_pub {
     <img src="{{ site.baseurl}}/images/MillerHeadshot.jpg" width="290" />
 </div>
 
-<p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit social science research organization, studying the psychological processes that shape learning and participation in STEM fields.</p> 
+<p>I'm a senior researcher at the <a href="https://www.air.org/experts/person/david-i-miller" target="_blank">American Institutes for Research</a> (AIR), a non-profit research institute, studying the cognitive, developmental, and social psychological processes that shape learning and participation in STEM fields.</p> 
 
 <p>My research <a href="{{ site.baseurl }}/#history">builds bridges</a> across diverse perspectives—including education sciences, developmental psychology, quantitative methodology, social psychology, and sociology—to explain complex phenomena and address pressing issues in STEM education.</p>
 
