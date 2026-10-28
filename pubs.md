@@ -25,8 +25,8 @@ My past and current work falls along three major lines of research:
 
 <ul style="top: 0px; font-size: 0.9em;">
   <li><a href="{{ site.baseurl}}/pubs/#line1"><b>Line 1:</b></a> Social cognition and learning across sociocultural contexts.</li>
-  <li><a href="{{ site.baseurl}}/pubs/#line3"><b>Line 2:</b></a> Cognition and learning in STEM educational contexts.</li>
-  <li><a href="{{ site.baseurl}}/pubs/#line2"><b>Line 3:</b></a> Advancing methodological innovation in education and psychology research.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line2"><b>Line 2:</b></a> Cognition and learning in STEM educational contexts.</li>
+  <li><a href="{{ site.baseurl}}/pubs/#line3"><b>Line 3:</b></a> Advancing methodological innovation in education and psychology research.</li>
 </ul>
 
 A fourth category includes <a href="{{ site.baseurl}}/pubs/#line4"><b>popular press articles</b></a> for disseminating findings to the public.
