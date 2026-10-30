@@ -31,7 +31,7 @@ QuEST training activities include virtual webinars, week-long immersive training
 
 Relatedly, I just co-authored [a meta-analysis book chapter](https://doi.org/10.1017/9781009170123.028) with social psychologist [Judith Hall](https://cos.northeastern.edu/people/judith-hall/) for the _Handbook of Research Methods in Social and Personality Psychology_; our target audience was doctoral students who want to start a meta-analysis (but haven't done one yet) or want to be an intelligent consumer of published meta-analyses.
 
-# Ongoing Dissemination to the Public
+<h1 id="media" style="scroll-margin-top: 100px;">Ongoing Dissemination to the Public</h1>
 
 I am passionate about ensuring that my work can be a public good. I therefore reach out to journalists and write my own popular press articles when I have new findings ready for public consumption, further drawing upon my interests in teaching others. Often, these findings come from large-scale syntheses that seek to understand why some studies find different results than other studies, aiming to go beyond reporting on single studies without context (Coffee is good for you! Coffee is bad for you!).
 
